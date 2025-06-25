@@ -1,4 +1,4 @@
-from code.downloaders.on_street_curb_management.nyc_base_downloader import NYCDataDownloader
+from code.downloaders.nyc_base_downloader import NYCDataDownloader
 
 class ParkingMetersDownloader(NYCDataDownloader):
     BASE_URL = "https://data.cityofnewyork.us/api/views/693u-uax6/rows.csv?accessType=DOWNLOAD"
