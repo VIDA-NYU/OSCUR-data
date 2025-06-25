@@ -71,7 +71,7 @@ integration_opportunities:
 map_algebra:
   raster_conversion:
     suitable_for_rasterization: true
-    recommended_cell_size: ""
-    interpolation_method: ""
+    recommended_cell_size: "10 meters"
+    interpolation_method: "point density (count)"
 
 data_name: "signals_markings_signs"
