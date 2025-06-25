@@ -1,4 +1,4 @@
-from code.downloaders.on_street_curb_management.nyc_base_downloader import NYCDataDownloader
+from code.downloaders.nyc_base_downloader import NYCDataDownloader
 
 class TruckRoutesDownloader(NYCDataDownloader):
     BASE_URL = "https://data.cityofnewyork.us/resource/jjja-shxy.csv?$limit=50000"
@@ -10,6 +10,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-    #DONE
