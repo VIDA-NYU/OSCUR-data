@@ -1,4 +1,4 @@
-from nyc_base_downloader import NYCDataDownloader
+from code.downloaders.nyc_base_downloader import NYCDataDownloader
 
 class CurbsDownloader(NYCDataDownloader):
     BASE_URL = "https://data.cityofnewyork.us/api/views/5xvt-8cbk/rows.csv?accessType=DOWNLOAD"
