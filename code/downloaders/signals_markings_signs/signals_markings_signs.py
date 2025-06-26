@@ -3,16 +3,16 @@ from code.downloaders.signals_markings_signs.traffic_signal_downloader import Tr
 from code.downloaders.signals_markings_signs.street_sign_downloader import StreetSignWorkOrdersDownloader
 
 def main():
-    print("📥 Downloading Accessible Pedestrian Signals...")
-    AccessiblePedestrianSignalsDownloader().download_csv("data/accessible_ped_signals.csv")
+    print("Downloading Accessible Pedestrian Signals...")
+    AccessiblePedestrianSignalsDownloader().download_csv("data/accessible_pedestrian_signals.csv")
 
-    print("📥 Downloading Traffic Signals...")
+    print("Downloading Traffic Signals...")
     TrafficSignal311Downloader().download_csv("data/traffic_signals.csv")
 
-    print("📥 Downloading Street Signs...")
-    StreetSignWorkOrdersDownloader().download_csv("data/street_signs.csv")
+    print("Downloading Street Signs...")
+    StreetSignWorkOrdersDownloader().download_csv("data/street_sign_work_orders.csv")
 
-    print("✅ All signals, markings, and signs data downloaded.")
+    print("All signals, markings, and signs data downloaded.")
 
 if __name__ == "__main__":
     main()
