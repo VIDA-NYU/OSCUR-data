@@ -13,23 +13,17 @@ code/processors/
 └── ...                                # Add one script per dataset as needed
 ```
 
-## How to Use
+## How to Use/Run
 
-It will depend on the post-processing needed for each dataset. Examples:
+It will depend on the post-processing needed for each dataset:
 
-### Speed Humps Dataset
-
-This script reads the raw Speed Humps dataset and extracts latitude and longitude from the `the_geom` column. These coordinates are added as new columns and saved in a new CSV file.
-
-**How to run:**
-
-### Speed Humps Dataset
+#### Speed Humps Dataset
 
 ```bash
 python speed_humps.py -i ../downloaders/data/speed_humps.csv -o processed_data/speed_humps_with_latlon.csv
 ```
 
-### On-Street Curb Management Dataset
+#### On-Street Curb Management Dataset
 
 This script processes the raw datasets for curbs, parking meters, loading zones, and truck routes, merging them into a unified dataset.
 ```bash
