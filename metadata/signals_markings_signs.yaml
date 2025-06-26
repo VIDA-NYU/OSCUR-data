@@ -2,36 +2,36 @@ dataset_id: "signals_markings_signs"
 name: "Signals, Signs, and Markings (NYC Combined)"
 description: >
   A unified, deduplicated dataset combining key NYC DOT spatial sources:
-  accessible pedestrian signal locations, street sign work orders, and traffic signal infrastructure.
+  accessible pedestrian signal locations, street sign work orders, and traffic signal 311 service requests.
   Each dataset is harmonized into point geometry, and duplicate feature IDs within each source are removed.
 
 source_organization:
   accessible_pedestrian_signals: "New York City Department of Transportation (NYC DOT)"
   street_sign_work_orders: "New York City Department of Transportation (NYC DOT)"
-  traffic_signals_arcgis: "Esri Open Data (ArcGIS Hub - New York Street Light Layer)"
+  traffic_signals_311: "New York City Department of Transportation (NYC DOT)"
 
 domain: "transportation"
 last_updated: "2025-06-11"
 update_frequency:
   accessible_pedestrian_signals: "Monthly"
   street_sign_work_orders: "Periodic"
-  traffic_signals_arcgis: "As available"
+  traffic_signals_311: "As available"
 
 access:
   primary_url: "https://data.cityofnewyork.us"
   api_endpoint:
     accessible_pedestrian_signals: "https://data.cityofnewyork.us/resource/de3m-c5p4.json"
     street_sign_work_orders: "https://data.cityofnewyork.us/resource/qt6m-xctn.json"
-    traffic_signals_arcgis: "https://hub.arcgis.com/datasets/uji::newyork-street-light/about"
+    traffic_signals_311: "https://data.cityofnewyork.us/resource/jwvp-gyiq.json"
   license: "Open Data License"
   file_format:
     accessible_pedestrian_signals: ["CSV", "JSON"]
     street_sign_work_orders: ["CSV", "JSON"]
-    traffic_signals_arcgis: ["Shapefile", "GeoJSON", "CSV"]
+    traffic_signals_311: ["CSV", "JSON"]
   rate_limits:
     accessible_pedestrian_signals: "Unknown"
     street_sign_work_orders: "Unknown"
-    traffic_signals_arcgis: "Unknown"
+    traffic_signals_311: "Unknown"
 
 spatial:
   geometry_type: "point"
@@ -42,21 +42,21 @@ temporal:
   temporal_type:
     accessible_pedestrian_signals: "installation"
     street_sign_work_orders: "maintenance activity"
-    traffic_signals_arcgis: "infrastructure snapshot"
+    traffic_signals_311: "311 request"
   temporal_resolution:
     accessible_pedestrian_signals: "monthly"
     street_sign_work_orders: "irregular"
-    traffic_signals_arcgis: "unknown"
+    traffic_signals_311: "irregular"
   time_column:
     accessible_pedestrian_signals: "Date_Insta"
     street_sign_work_orders: "CompletedDate"
-    traffic_signals_arcgis: "N/A"
+    traffic_signals_311: "Created Date"
 
 implementation:
   downloader_module:
     accessible_pedestrian_signals: "downloaders.signals_marking_signs.accessible_pedestrian_signals_downloader"
     street_sign_work_orders: "downloaders.signals_marking_signs.street_sign_work_orders_downloader"
-    traffic_signals_arcgis: "downloaders.signals_marking_signs.traffic_signals_downloader"
+    traffic_signals_311: "downloaders.signals_marking_signs.traffic_signal_downloader"
   processor_module: "processors.signals_markings_signs"
   example_notebook: "examples/signals_markings_signs.ipynb"
 
