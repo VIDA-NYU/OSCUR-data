@@ -1,4 +1,4 @@
-from nyc_base_downloader import NYCDataDownloader
+from code.downloaders.nyc_base_downloader import NYCDataDownloader
 
 
 class AccessiblePedestrianSignalsDownloader(NYCDataDownloader):
