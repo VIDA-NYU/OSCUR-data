@@ -8,9 +8,10 @@ This folder contains scripts for post-processing datasets downloaded in `code/do
 
 ```
 code/processors/
-├── process_speed_humps.py       # Post-processing Speed Humps dataset (CSV)
-├── README.md                    # This file
-└── ...                          # Add one script per dataset as needed
+├── process_speed_humps.py             # Post-processing Speed Humps dataset (CSV)
+├── on_street_curb_management.py       # Post-processing On Street Curb Management dataset (CSV)
+├── README.md                          # This file
+└── ...                                # Add one script per dataset as needed
 ```
 
 ## How to Use
