@@ -19,13 +19,19 @@ This architecture ensures that all downloaders behave consistently and makes add
 
 ```
 code/downloaders/
-├── nyc_base_downloader.py       # Base class for all NYC Open Data downloaders
-├── speed_humps.py               # Download Speed Humps dataset (CSV)
-├── raised_crosswalks.py         # Download Raised Crosswalks dataset (CSV)
-├── NYC_vehicle_collisions.py    # Download Vehicle Collisions (Crashes) dataset (CSV)
-├── nyc_311.py                   # Download NYC 311 Requests dataset (CSV)
-├── README.md                    # This file
-└── ...                          # Add one script per dataset as needed
+├── nyc_base_downloader.py            # Base class for all NYC Open Data downloaders
+├── speed_humps.py                    # Download Speed Humps dataset (CSV)
+├── raised_crosswalks.py              # Download Raised Crosswalks dataset (CSV)
+├── NYC_vehicle_collisions.py         # Download Vehicle Collisions (Crashes) dataset (CSV)
+├── nyc_311.py                        # Download NYC 311 Requests dataset (CSV)
+├── on_street_curb_management         # Folder containing download files for dataset
+    ├── curbs_downloader.py           # Download Curbs dataset (CSV)
+    ├── loading_zones_downloader.py   # Download Loading Zones dataset (CSV)
+    ├── on_street_curb_management.py  # Activates all download files
+    ├── parking_meters_downloader.py  # Download Parking Meters dataset (CSV)
+    ├── truck_routes_downloader.py    # Download Truck Routes dataset (CSV)
+├── README.md                         # This file
+└── ...                               # Add one script per dataset as needed
 ```
 
 ## Requirements
