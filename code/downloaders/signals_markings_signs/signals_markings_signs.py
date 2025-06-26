@@ -4,13 +4,13 @@ from code.downloaders.signals_markings_signs.street_sign_downloader import Stree
 
 def main():
     print("Downloading Accessible Pedestrian Signals...")
-    AccessiblePedestrianSignalsDownloader().download_csv("data/accessible_pedestrian_signals.csv")
+    AccessiblePedestrianSignalsDownloader().download_csv("data/signals_markings_signs/accessible_pedestrian_signals.csv")
 
     print("Downloading Traffic Signals...")
-    TrafficSignal311Downloader().download_csv("data/traffic_signals.csv")
+    TrafficSignal311Downloader().download_csv("data/signals_markings_signs/traffic_signals.csv")
 
     print("Downloading Street Signs...")
-    StreetSignWorkOrdersDownloader().download_csv("data/street_sign_work_orders.csv")
+    StreetSignWorkOrdersDownloader().download_csv("data/signals_markings_signs/street_sign_work_orders.csv")
 
     print("All signals, markings, and signs data downloaded.")
 
