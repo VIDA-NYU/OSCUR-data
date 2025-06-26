@@ -2,6 +2,7 @@ import argparse
 import pandas as pd
 import geopandas as gpd
 from shapely.wkt import loads
+import os
 
 """
 This script merges NYC curb geometry data with nearby parking meters, loading zones, and truck routes
@@ -93,6 +94,14 @@ def main():
 
     # === Final: Convert back to WGS84 and export ===
     final = joined.to_crs(WGS84)
+
+    # Ensure the output folder exists
+    output_folder = os.path.dirname(args.output)
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
+        print(f"Created folder: {output_folder}")
+
+    # Save the final dataset
     final.to_csv(args.output, index=False)
     print(f"SUCCESS: Final dataset saved ({len(final)} rows) at '{args.output}'")
 
