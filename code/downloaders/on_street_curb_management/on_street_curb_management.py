@@ -5,16 +5,16 @@ from code.downloaders.on_street_curb_management.truck_routes_downloader import T
 
 def main():
     print("Downloading curb segments...")
-    CurbsDownloader()
+    CurbsDownloader().download_csv("data/on_street_curb_management/curbs.csv")
 
     print("Downloading loading zones...")
-    LoadingZonesDownloader()
+    LoadingZonesDownloader().download_csv("data/on_street_curb_management/loading_zones.csv")
 
     print("Downloading parking meters...")
-    ParkingMetersDownloader()
+    ParkingMetersDownloader().download_csv("data/on_street_curb_management/parking_meters.csv")
 
     print("Downloading truck routes...")
-    TruckRoutesDownloader()
+    TruckRoutesDownloader().download_csv("data/on_street_curb_management/truck_routes.csv")
 
     print("✓ All curb management data downloaded successfully.")
 
