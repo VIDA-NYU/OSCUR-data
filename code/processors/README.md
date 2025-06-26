@@ -1,4 +1,3 @@
-
 # Data Processors
 
 
@@ -24,8 +23,22 @@ This script reads the raw Speed Humps dataset and extracts latitude and longitud
 
 **How to run:**
 
+### Speed Humps Dataset
+
 ```bash
-python process_speed_humps.py -i ../downloaders/data/speed_humps.csv -o ../downloaders/data/speed_humps_with_latlon.csv
+python speed_humps.py -i ../downloaders/data/speed_humps.csv -o processed_data/speed_humps_with_latlon.csv
+```
+
+### On-Street Curb Management Dataset
+
+This script processes the raw datasets for curbs, parking meters, loading zones, and truck routes, merging them into a unified dataset.
+```bash
+python on_street_curb_management.py \
+  --curbs ../downloaders/data/on_street_curb_management/curbs.csv \
+  --loading_zones ../downloaders/data/on_street_curb_management/loading_zones.csv \
+  --parking_meters ../downloaders/data/on_street_curb_management/parking_meters.csv \
+  --truck_routes ../downloaders/data/on_street_curb_management/truck_routes.csv \
+  --output processed_data/on_street_curb_management.csv
 ```
 
 ### Other Datasets
