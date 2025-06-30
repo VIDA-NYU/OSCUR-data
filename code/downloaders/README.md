@@ -24,12 +24,12 @@ code/downloaders/
 ├── raised_crosswalks.py         # Download Raised Crosswalks dataset (CSV)
 ├── NYC_vehicle_collisions.py    # Download Vehicle Collisions (Crashes) dataset (CSV)
 ├── nyc_311.py                   # Download NYC 311 Requests dataset (CSV)
-├── README.md                    # This file
 ├── signals_markings_signs/          # Folder for NYC traffic signals, signs, and APS
     ├── accessible_ped_signals_downloader.py   # Download Accessible Pedestrian Signals
     ├── traffic_signal_downloader.py           # Download Traffic Signals (311)
     ├── street_sign_downloader.py              # Download Street Sign Work Orders
     ├── signals_markings_signs.py              # Runs all signal/sign downloaders
+├── README.md                    # This file
 └── ...                          # Add one script per dataset as needed
 ```
 
