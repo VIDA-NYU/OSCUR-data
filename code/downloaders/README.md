@@ -19,13 +19,19 @@ This architecture ensures that all downloaders behave consistently and makes add
 
 ```
 code/downloaders/
-├── nyc_base_downloader.py       # Base class for all NYC Open Data downloaders
-├── speed_humps.py               # Download Speed Humps dataset (CSV)
-├── raised_crosswalks.py         # Download Raised Crosswalks dataset (CSV)
-├── NYC_vehicle_collisions.py    # Download Vehicle Collisions (Crashes) dataset (CSV)
-├── nyc_311.py                   # Download NYC 311 Requests dataset (CSV)
-├── README.md                    # This file
-└── ...                          # Add one script per dataset as needed
+├── nyc_base_downloader.py            # Base class for all NYC Open Data downloaders
+├── speed_humps.py                    # Download Speed Humps dataset (CSV)
+├── raised_crosswalks.py              # Download Raised Crosswalks dataset (CSV)
+├── NYC_vehicle_collisions.py         # Download Vehicle Collisions (Crashes) dataset (CSV)
+├── nyc_311.py                        # Download NYC 311 Requests dataset (CSV)
+├── on_street_curb_management         # Folder containing download files for dataset
+    ├── curbs_downloader.py           # Download Curbs dataset (CSV)
+    ├── loading_zones_downloader.py   # Download Loading Zones dataset (CSV)
+    ├── on_street_curb_management.py  # Activates all download files
+    ├── parking_meters_downloader.py  # Download Parking Meters dataset (CSV)
+    ├── truck_routes_downloader.py    # Download Truck Routes dataset (CSV)
+├── README.md                         # This file
+└── ...                               # Add one script per dataset as needed
 ```
 
 ## Requirements
@@ -57,6 +63,7 @@ mkdir -p data
 
 ### Example usage:
 
+#### Single Dataset Download
 **Basic usage:**
 ```bash
 python speed_humps.py -o data/speed_humps.csv
@@ -73,6 +80,30 @@ python speed_humps.py -o data/speed_humps.csv --app-token YOUR_TOKEN --timeout 3
 **Get help for any downloader:**
 ```bash
 python speed_humps.py --help
+```
+
+#### Multiple Datasets Download (Simultaneous)
+The `on_street_curb_management.py` script allows downloading multiple datasets simultaneously, including curbs, loading zones, parking meters, and truck routes.
+
+**Basic usage:**
+```bash
+python on_street_curb_management.py
+```
+
+By default, the datasets will be saved to the following paths:
+- `data/on_street_curb_management/curbs.csv`
+- `data/on_street_curb_management/loading_zones.csv`
+- `data/on_street_curb_management/parking_meters.csv`
+- `data/on_street_curb_management/truck_routes.csv`
+
+**Custom output paths:**
+You can specify custom output paths for each dataset:
+```bash
+python on_street_curb_management.py \
+  --curbs /custom/path/curbs.csv \
+  --loading_zones /custom/path/loading_zones.csv \
+  --parking_meters /custom/path/parking_meters.csv \
+  --truck_routes /custom/path/truck_routes.csv
 ```
 
 ## Base Class Benefits

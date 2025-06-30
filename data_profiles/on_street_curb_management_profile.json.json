@@ -1,0 +1,4617 @@
+{
+    "nb_rows": 221289,
+    "nb_profiled_rows": 221289,
+    "nb_columns": 75,
+    "columns": [
+        {
+            "name": "SOURCE_ID",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [
+                "http://schema.org/identifier"
+            ],
+            "unclean_values_ratio": 0.0,
+            "num_distinct_values": 206013,
+            "mean": 12339865177.151793,
+            "stddev": 5445750585.806084,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 0.0,
+                        "lte": 8225008826.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 9225003626.0,
+                        "lte": 14225007888.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 15225004559.0,
+                        "lte": 20225003459.0
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 11393,
+                        "bin_start": 0.0,
+                        "bin_end": 2122600185.1
+                    },
+                    {
+                        "count": 12155,
+                        "bin_start": 2122600185.1,
+                        "bin_end": 4245200370.2
+                    },
+                    {
+                        "count": 12207,
+                        "bin_start": 4245200370.2,
+                        "bin_end": 6367800555.299999
+                    },
+                    {
+                        "count": 22022,
+                        "bin_start": 6367800555.299999,
+                        "bin_end": 8490400740.4
+                    },
+                    {
+                        "count": 23911,
+                        "bin_start": 8490400740.4,
+                        "bin_end": 10613000925.5
+                    },
+                    {
+                        "count": 24991,
+                        "bin_start": 10613000925.5,
+                        "bin_end": 12735601110.599998
+                    },
+                    {
+                        "count": 23542,
+                        "bin_start": 12735601110.599998,
+                        "bin_end": 14858201295.699999
+                    },
+                    {
+                        "count": 34337,
+                        "bin_start": 14858201295.699999,
+                        "bin_end": 16980801480.8
+                    },
+                    {
+                        "count": 29240,
+                        "bin_start": 16980801480.8,
+                        "bin_end": 19103401665.899998
+                    },
+                    {
+                        "count": 27491,
+                        "bin_start": 19103401665.899998,
+                        "bin_end": 21226001851.0
+                    }
+                ]
+            }
+        },
+        {
+            "name": "FEAT_CODE",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "num_distinct_values": 1,
+            "mean": 2250.0,
+            "stddev": 0.0,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 2250.0,
+                        "lte": 2250.0
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 0,
+                        "bin_start": 2249.5,
+                        "bin_end": 2249.6
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 2249.6,
+                        "bin_end": 2249.7
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 2249.7,
+                        "bin_end": 2249.8
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 2249.8,
+                        "bin_end": 2249.9
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 2249.9,
+                        "bin_end": 2250.0
+                    },
+                    {
+                        "count": 221289,
+                        "bin_start": 2250.0,
+                        "bin_end": 2250.1
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 2250.1,
+                        "bin_end": 2250.2
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 2250.2,
+                        "bin_end": 2250.3
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 2250.3,
+                        "bin_end": 2250.4
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 2250.4,
+                        "bin_end": 2250.5
+                    }
+                ]
+            }
+        },
+        {
+            "name": "SUB_CODE",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "num_distinct_values": 1,
+            "mean": 225000.0,
+            "stddev": 0.0,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 225000.0,
+                        "lte": 225000.0
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 0,
+                        "bin_start": 224999.5,
+                        "bin_end": 224999.6
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 224999.6,
+                        "bin_end": 224999.7
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 224999.7,
+                        "bin_end": 224999.8
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 224999.8,
+                        "bin_end": 224999.9
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 224999.9,
+                        "bin_end": 225000.0
+                    },
+                    {
+                        "count": 221289,
+                        "bin_start": 225000.0,
+                        "bin_end": 225000.1
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 225000.1,
+                        "bin_end": 225000.2
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 225000.2,
+                        "bin_end": 225000.3
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 225000.3,
+                        "bin_end": 225000.4
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 225000.4,
+                        "bin_end": 225000.5
+                    }
+                ]
+            }
+        },
+        {
+            "name": "STATUS",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "num_distinct_values": 3,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "New",
+                        "count": 7628
+                    },
+                    {
+                        "bin": "Unchanged",
+                        "count": 189999
+                    },
+                    {
+                        "bin": "Updated",
+                        "count": 23662
+                    }
+                ]
+            }
+        },
+        {
+            "name": "SHAPE_Leng",
+            "structural_type": "http://schema.org/Float",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "mean": 294.0062951519597,
+            "stddev": 380.4277714799961,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 6.93844570461,
+                        "lte": 329.742160887
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 399.034808301,
+                        "lte": 1034.47740706
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 214012,
+                        "bin_start": 0.0720783570158,
+                        "bin_end": 1104.0210921013143
+                    },
+                    {
+                        "count": 6259,
+                        "bin_start": 1104.0210921013143,
+                        "bin_end": 2207.970105845613
+                    },
+                    {
+                        "count": 723,
+                        "bin_start": 2207.970105845613,
+                        "bin_end": 3311.9191195899116
+                    },
+                    {
+                        "count": 168,
+                        "bin_start": 3311.9191195899116,
+                        "bin_end": 4415.86813333421
+                    },
+                    {
+                        "count": 45,
+                        "bin_start": 4415.86813333421,
+                        "bin_end": 5519.817147078509
+                    },
+                    {
+                        "count": 61,
+                        "bin_start": 5519.817147078509,
+                        "bin_end": 6623.766160822807
+                    },
+                    {
+                        "count": 3,
+                        "bin_start": 6623.766160822807,
+                        "bin_end": 7727.715174567105
+                    },
+                    {
+                        "count": 11,
+                        "bin_start": 7727.715174567105,
+                        "bin_end": 8831.664188311404
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 8831.664188311404,
+                        "bin_end": 9935.613202055703
+                    },
+                    {
+                        "count": 7,
+                        "bin_start": 9935.613202055703,
+                        "bin_end": 11039.5622158
+                    }
+                ]
+            }
+        },
+        {
+            "name": "geometry",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Text"
+            ],
+            "plot": {
+                "type": "histogram_text",
+                "data": [
+                    {
+                        "bin": "40",
+                        "count": 11998887
+                    },
+                    {
+                        "bin": "73",
+                        "count": 9920923
+                    },
+                    {
+                        "bin": "74",
+                        "count": 2077964
+                    },
+                    {
+                        "bin": "multilinestring",
+                        "count": 221289
+                    },
+                    {
+                        "bin": "00390655755463",
+                        "count": 22
+                    }
+                ]
+            }
+        },
+        {
+            "name": "dist_to_loading",
+            "structural_type": "http://schema.org/Float",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.9978580046906986,
+            "mean": 12.065423716228443,
+            "stddev": 4.22405286979444,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 0.0432931730422196,
+                        "lte": 5.178647013039387
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 6.187229555614605,
+                        "lte": 11.729093469326836
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 12.495223346611285,
+                        "lte": 14.898513651911182
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 36,
+                        "bin_start": 0.0050353912380489,
+                        "bin_end": 1.5044420258971698
+                    },
+                    {
+                        "count": 4,
+                        "bin_start": 1.5044420258971698,
+                        "bin_end": 3.0038486605562906
+                    },
+                    {
+                        "count": 11,
+                        "bin_start": 3.0038486605562906,
+                        "bin_end": 4.5032552952154115
+                    },
+                    {
+                        "count": 6,
+                        "bin_start": 4.5032552952154115,
+                        "bin_end": 6.002661929874532
+                    },
+                    {
+                        "count": 9,
+                        "bin_start": 6.002661929874532,
+                        "bin_end": 7.502068564533652
+                    },
+                    {
+                        "count": 5,
+                        "bin_start": 7.502068564533652,
+                        "bin_end": 9.001475199192775
+                    },
+                    {
+                        "count": 13,
+                        "bin_start": 9.001475199192775,
+                        "bin_end": 10.500881833851896
+                    },
+                    {
+                        "count": 27,
+                        "bin_start": 10.500881833851896,
+                        "bin_end": 12.000288468511016
+                    },
+                    {
+                        "count": 69,
+                        "bin_start": 12.000288468511016,
+                        "bin_end": 13.499695103170136
+                    },
+                    {
+                        "count": 294,
+                        "bin_start": 13.499695103170136,
+                        "bin_end": 14.999101737829257
+                    }
+                ]
+            }
+        },
+        {
+            "name": "loading_order_number",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [],
+            "missing_values_ratio": 0.9978580046906986,
+            "num_distinct_values": 310
+        },
+        {
+            "name": "loading_record_type",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.9978580046906986,
+            "num_distinct_values": 1,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "Current",
+                        "count": 474
+                    }
+                ]
+            }
+        },
+        {
+            "name": "loading_order_type",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.9978580046906986,
+            "num_distinct_values": 2,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "P-",
+                        "count": 76
+                    },
+                    {
+                        "bin": "S-",
+                        "count": 398
+                    }
+                ]
+            }
+        },
+        {
+            "name": "loading_borough",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.9978580046906986,
+            "num_distinct_values": 5,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "Bronx",
+                        "count": 50
+                    },
+                    {
+                        "bin": "Brooklyn",
+                        "count": 139
+                    },
+                    {
+                        "bin": "Manhattan",
+                        "count": 98
+                    },
+                    {
+                        "bin": "Queens",
+                        "count": 177
+                    },
+                    {
+                        "bin": "Staten Island",
+                        "count": 10
+                    }
+                ]
+            }
+        },
+        {
+            "name": "loading_on_street",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [],
+            "missing_values_ratio": 0.9978580046906986,
+            "num_distinct_values": 218
+        },
+        {
+            "name": "loading_on_street_suffix",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [],
+            "missing_values_ratio": 0.9999909620451084,
+            "num_distinct_values": 2
+        },
+        {
+            "name": "loading_from_street",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [],
+            "missing_values_ratio": 0.9978580046906986,
+            "num_distinct_values": 178
+        },
+        {
+            "name": "loading_from_street_suffix",
+            "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
+            "semantic_types": []
+        },
+        {
+            "name": "loading_to_street",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [],
+            "missing_values_ratio": 0.9978580046906986,
+            "num_distinct_values": 174
+        },
+        {
+            "name": "loading_to_street_suffix",
+            "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
+            "semantic_types": []
+        },
+        {
+            "name": "loading_side_of_street",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.9978580046906986,
+            "num_distinct_values": 4,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "E",
+                        "count": 85
+                    },
+                    {
+                        "bin": "N",
+                        "count": 139
+                    },
+                    {
+                        "bin": "S",
+                        "count": 90
+                    },
+                    {
+                        "bin": "W",
+                        "count": 160
+                    }
+                ]
+            }
+        },
+        {
+            "name": "loading_order_completed_on_date",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/DateTime"
+            ],
+            "missing_values_ratio": 0.9978580046906986,
+            "num_distinct_values": 151,
+            "plot": {
+                "type": "histogram_temporal",
+                "data": [
+                    {
+                        "count": 12,
+                        "date_start": "2019-09-12T00:00:00",
+                        "date_end": "2020-04-08T00:00:00"
+                    },
+                    {
+                        "count": 0,
+                        "date_start": "2020-04-08T00:00:00",
+                        "date_end": "2020-11-03T00:00:00"
+                    },
+                    {
+                        "count": 22,
+                        "date_start": "2020-11-03T00:00:00",
+                        "date_end": "2021-05-31T00:00:00"
+                    },
+                    {
+                        "count": 24,
+                        "date_start": "2021-05-31T00:00:00",
+                        "date_end": "2021-12-26T00:00:00"
+                    },
+                    {
+                        "count": 6,
+                        "date_start": "2021-12-26T00:00:00",
+                        "date_end": "2022-07-23T00:00:00"
+                    },
+                    {
+                        "count": 68,
+                        "date_start": "2022-07-23T00:00:00",
+                        "date_end": "2023-02-17T00:00:00"
+                    },
+                    {
+                        "count": 110,
+                        "date_start": "2023-02-17T00:00:00",
+                        "date_end": "2023-09-14T00:00:00"
+                    },
+                    {
+                        "count": 100,
+                        "date_start": "2023-09-14T00:00:00",
+                        "date_end": "2024-04-10T00:00:00"
+                    },
+                    {
+                        "count": 63,
+                        "date_start": "2024-04-10T00:00:00",
+                        "date_end": "2024-11-05T00:00:00"
+                    },
+                    {
+                        "count": 69,
+                        "date_start": "2024-11-05T00:00:00",
+                        "date_end": "2025-06-02T00:00:00"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "loading_sign_code",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.9978580046906986,
+            "num_distinct_values": 9,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "PS-732E",
+                        "count": 4
+                    },
+                    {
+                        "bin": "PS-732EA",
+                        "count": 148
+                    },
+                    {
+                        "bin": "PS-733EA",
+                        "count": 110
+                    },
+                    {
+                        "bin": "SI-2090G",
+                        "count": 104
+                    },
+                    {
+                        "bin": "SI-2091G",
+                        "count": 98
+                    }
+                ]
+            }
+        },
+        {
+            "name": "loading_sign_description",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Text"
+            ],
+            "missing_values_ratio": 0.9978580046906986,
+            "plot": {
+                "type": "histogram_text",
+                "data": [
+                    {
+                        "bin": "loading",
+                        "count": 474
+                    },
+                    {
+                        "bin": "symbol",
+                        "count": 376
+                    },
+                    {
+                        "bin": "nlz",
+                        "count": 272
+                    },
+                    {
+                        "bin": "only",
+                        "count": 272
+                    },
+                    {
+                        "bin": "monday",
+                        "count": 269
+                    }
+                ]
+            }
+        },
+        {
+            "name": "loading_sign_size",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.9978580046906986,
+            "num_distinct_values": 3,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "018 X 018",
+                        "count": 268
+                    },
+                    {
+                        "bin": "018 X 024",
+                        "count": 4
+                    },
+                    {
+                        "bin": "09.5 X 014",
+                        "count": 202
+                    }
+                ]
+            }
+        },
+        {
+            "name": "loading_sign_design_voided_on_date",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration",
+                "http://schema.org/DateTime"
+            ],
+            "missing_values_ratio": 0.9990871665559518,
+            "num_distinct_values": 1,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "2023-04-20T00:00:00.000",
+                        "count": 202
+                    }
+                ]
+            }
+        },
+        {
+            "name": "loading_sign_location",
+            "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
+            "semantic_types": []
+        },
+        {
+            "name": "loading_distance_from_intersection",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.9978580046906986,
+            "num_distinct_values": 218,
+            "mean": 240.74261603375527,
+            "stddev": 228.27666887126733,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 41.0,
+                        "lte": 196.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 252.0,
+                        "lte": 508.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 550.0,
+                        "lte": 936.0
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 217,
+                        "bin_start": 5.0,
+                        "bin_end": 106.2
+                    },
+                    {
+                        "count": 70,
+                        "bin_start": 106.2,
+                        "bin_end": 207.4
+                    },
+                    {
+                        "count": 35,
+                        "bin_start": 207.4,
+                        "bin_end": 308.6
+                    },
+                    {
+                        "count": 34,
+                        "bin_start": 308.6,
+                        "bin_end": 409.8
+                    },
+                    {
+                        "count": 45,
+                        "bin_start": 409.8,
+                        "bin_end": 511.0
+                    },
+                    {
+                        "count": 33,
+                        "bin_start": 511.0,
+                        "bin_end": 612.2
+                    },
+                    {
+                        "count": 19,
+                        "bin_start": 612.2,
+                        "bin_end": 713.4
+                    },
+                    {
+                        "count": 12,
+                        "bin_start": 713.4,
+                        "bin_end": 814.6
+                    },
+                    {
+                        "count": 5,
+                        "bin_start": 814.6,
+                        "bin_end": 915.8000000000001
+                    },
+                    {
+                        "count": 4,
+                        "bin_start": 915.8000000000001,
+                        "bin_end": 1017.0
+                    }
+                ]
+            }
+        },
+        {
+            "name": "loading_arrow_direction",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.9987663191573011,
+            "num_distinct_values": 4,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "East",
+                        "count": 97
+                    },
+                    {
+                        "bin": "North",
+                        "count": 29
+                    },
+                    {
+                        "bin": "South",
+                        "count": 40
+                    },
+                    {
+                        "bin": "West",
+                        "count": 107
+                    }
+                ]
+            }
+        },
+        {
+            "name": "loading_facing_direction",
+            "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
+            "semantic_types": []
+        },
+        {
+            "name": "loading_sheeting_type",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.9978580046906986,
+            "num_distinct_values": 1,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "PNTD",
+                        "count": 474
+                    }
+                ]
+            }
+        },
+        {
+            "name": "loading_support",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.9978580046906986,
+            "num_distinct_values": 4,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "DR",
+                        "count": 239
+                    },
+                    {
+                        "bin": "LP",
+                        "count": 18
+                    },
+                    {
+                        "bin": "SAME",
+                        "count": 215
+                    },
+                    {
+                        "bin": "WP",
+                        "count": 2
+                    }
+                ]
+            }
+        },
+        {
+            "name": "loading_sign_notes",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Text"
+            ],
+            "missing_values_ratio": 0.9989018884806746,
+            "plot": {
+                "type": "histogram_text",
+                "data": [
+                    {
+                        "bin": "back",
+                        "count": 304
+                    },
+                    {
+                        "bin": "to",
+                        "count": 300
+                    },
+                    {
+                        "bin": "face",
+                        "count": 148
+                    },
+                    {
+                        "bin": "with",
+                        "count": 148
+                    },
+                    {
+                        "bin": "si",
+                        "count": 148
+                    }
+                ]
+            }
+        },
+        {
+            "name": "loading_sign_x_coord",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.9978580046906986,
+            "num_distinct_values": 324,
+            "mean": 1002608.2046413502,
+            "stddev": 14105.363573417411,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 987068.0,
+                        "lte": 1001317.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 1005440.0,
+                        "lte": 1025710.0
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 8,
+                        "bin_start": 954309.0,
+                        "bin_end": 962146.5
+                    },
+                    {
+                        "count": 2,
+                        "bin_start": 962146.5,
+                        "bin_end": 969984.0
+                    },
+                    {
+                        "count": 11,
+                        "bin_start": 969984.0,
+                        "bin_end": 977821.5
+                    },
+                    {
+                        "count": 19,
+                        "bin_start": 977821.5,
+                        "bin_end": 985659.0
+                    },
+                    {
+                        "count": 86,
+                        "bin_start": 985659.0,
+                        "bin_end": 993496.5
+                    },
+                    {
+                        "count": 110,
+                        "bin_start": 993496.5,
+                        "bin_end": 1001334.0
+                    },
+                    {
+                        "count": 61,
+                        "bin_start": 1001334.0,
+                        "bin_end": 1009171.5
+                    },
+                    {
+                        "count": 107,
+                        "bin_start": 1009171.5,
+                        "bin_end": 1017009.0
+                    },
+                    {
+                        "count": 54,
+                        "bin_start": 1017009.0,
+                        "bin_end": 1024846.5
+                    },
+                    {
+                        "count": 16,
+                        "bin_start": 1024846.5,
+                        "bin_end": 1032684.0
+                    }
+                ]
+            }
+        },
+        {
+            "name": "loading_sign_y_coord",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.9978580046906986,
+            "num_distinct_values": 324,
+            "mean": 209003.58860759492,
+            "stddev": 23893.35507614808,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 150422.0,
+                        "lte": 191973.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 199319.0,
+                        "lte": 225517.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 231726.0,
+                        "lte": 260081.0
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 9,
+                        "bin_start": 149014.0,
+                        "bin_end": 160154.3
+                    },
+                    {
+                        "count": 24,
+                        "bin_start": 160154.3,
+                        "bin_end": 171294.6
+                    },
+                    {
+                        "count": 38,
+                        "bin_start": 171294.6,
+                        "bin_end": 182434.9
+                    },
+                    {
+                        "count": 45,
+                        "bin_start": 182434.9,
+                        "bin_end": 193575.2
+                    },
+                    {
+                        "count": 71,
+                        "bin_start": 193575.2,
+                        "bin_end": 204715.5
+                    },
+                    {
+                        "count": 123,
+                        "bin_start": 204715.5,
+                        "bin_end": 215855.8
+                    },
+                    {
+                        "count": 82,
+                        "bin_start": 215855.8,
+                        "bin_end": 226996.09999999998
+                    },
+                    {
+                        "count": 16,
+                        "bin_start": 226996.09999999998,
+                        "bin_end": 238136.4
+                    },
+                    {
+                        "count": 41,
+                        "bin_start": 238136.4,
+                        "bin_end": 249276.7
+                    },
+                    {
+                        "count": 25,
+                        "bin_start": 249276.7,
+                        "bin_end": 260417.0
+                    }
+                ]
+            }
+        },
+        {
+            "name": "dist_to_meter",
+            "structural_type": "http://schema.org/Float",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.9326265652608128,
+            "mean": 3.218922174899835,
+            "stddev": 8.04391885033415,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 1.4526464552079863e-06,
+                        "lte": 0.0001941397192386
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 12544,
+                        "bin_start": 4.1490743465446755e-10,
+                        "bin_end": 2.9998551280773604
+                    },
+                    {
+                        "count": 177,
+                        "bin_start": 2.9998551280773604,
+                        "bin_end": 5.999710255739814
+                    },
+                    {
+                        "count": 168,
+                        "bin_start": 5.999710255739814,
+                        "bin_end": 8.999565383402267
+                    },
+                    {
+                        "count": 151,
+                        "bin_start": 8.999565383402267,
+                        "bin_end": 11.99942051106472
+                    },
+                    {
+                        "count": 166,
+                        "bin_start": 11.99942051106472,
+                        "bin_end": 14.999275638727173
+                    },
+                    {
+                        "count": 184,
+                        "bin_start": 14.999275638727173,
+                        "bin_end": 17.999130766389627
+                    },
+                    {
+                        "count": 241,
+                        "bin_start": 17.999130766389627,
+                        "bin_end": 20.99898589405208
+                    },
+                    {
+                        "count": 270,
+                        "bin_start": 20.99898589405208,
+                        "bin_end": 23.998841021714533
+                    },
+                    {
+                        "count": 347,
+                        "bin_start": 23.998841021714533,
+                        "bin_end": 26.998696149376986
+                    },
+                    {
+                        "count": 661,
+                        "bin_start": 26.998696149376986,
+                        "bin_end": 29.99855127703944
+                    }
+                ]
+            }
+        },
+        {
+            "name": "meter_ObjectID",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [
+                "http://schema.org/identifier"
+            ],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.9326265652608128,
+            "num_distinct_values": 12744,
+            "mean": 7766.699979877926,
+            "stddev": 4485.076574971683,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 258.0,
+                        "lte": 4836.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 5347.0,
+                        "lte": 10010.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 10547.0,
+                        "lte": 15298.0
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 1493,
+                        "bin_start": 1.0,
+                        "bin_end": 1556.9
+                    },
+                    {
+                        "count": 1514,
+                        "bin_start": 1556.9,
+                        "bin_end": 3112.8
+                    },
+                    {
+                        "count": 1472,
+                        "bin_start": 3112.8,
+                        "bin_end": 4668.700000000001
+                    },
+                    {
+                        "count": 1465,
+                        "bin_start": 4668.700000000001,
+                        "bin_end": 6224.6
+                    },
+                    {
+                        "count": 1496,
+                        "bin_start": 6224.6,
+                        "bin_end": 7780.5
+                    },
+                    {
+                        "count": 1516,
+                        "bin_start": 7780.5,
+                        "bin_end": 9336.400000000001
+                    },
+                    {
+                        "count": 1507,
+                        "bin_start": 9336.400000000001,
+                        "bin_end": 10892.300000000001
+                    },
+                    {
+                        "count": 1476,
+                        "bin_start": 10892.300000000001,
+                        "bin_end": 12448.2
+                    },
+                    {
+                        "count": 1513,
+                        "bin_start": 12448.2,
+                        "bin_end": 14004.1
+                    },
+                    {
+                        "count": 1457,
+                        "bin_start": 14004.1,
+                        "bin_end": 15560.0
+                    }
+                ]
+            }
+        },
+        {
+            "name": "meter_Meter Number",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.9326265652608128,
+            "num_distinct_values": 12742,
+            "mean": 2839475.9722986114,
+            "stddev": 1247366.3670036204,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 1033082.0,
+                        "lte": 2262731.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 3013689.0,
+                        "lte": 3593019.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 4033085.0,
+                        "lte": 5043014.0
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 4641,
+                        "bin_start": 1013002.0,
+                        "bin_end": 1490729.0
+                    },
+                    {
+                        "count": 54,
+                        "bin_start": 1490729.0,
+                        "bin_end": 1968456.0
+                    },
+                    {
+                        "count": 1673,
+                        "bin_start": 1968456.0,
+                        "bin_end": 2446183.0
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 2446183.0,
+                        "bin_end": 2923910.0
+                    },
+                    {
+                        "count": 2808,
+                        "bin_start": 2923910.0,
+                        "bin_end": 3401637.0
+                    },
+                    {
+                        "count": 1117,
+                        "bin_start": 3401637.0,
+                        "bin_end": 3879364.0
+                    },
+                    {
+                        "count": 3168,
+                        "bin_start": 3879364.0,
+                        "bin_end": 4357091.0
+                    },
+                    {
+                        "count": 1079,
+                        "bin_start": 4357091.0,
+                        "bin_end": 4834818.0
+                    },
+                    {
+                        "count": 364,
+                        "bin_start": 4834818.0,
+                        "bin_end": 5312545.0
+                    },
+                    {
+                        "count": 5,
+                        "bin_start": 5312545.0,
+                        "bin_end": 5790272.0
+                    }
+                ]
+            }
+        },
+        {
+            "name": "meter_Status",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.9326265652608128,
+            "num_distinct_values": 4,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "Active",
+                        "count": 12987
+                    },
+                    {
+                        "bin": "Inactive",
+                        "count": 888
+                    },
+                    {
+                        "bin": "Planned",
+                        "count": 22
+                    },
+                    {
+                        "bin": "Retired",
+                        "count": 1012
+                    }
+                ]
+            }
+        },
+        {
+            "name": "meter_Pay By Cell Number",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.9326265652608128,
+            "num_distinct_values": 11494,
+            "mean": 277791.4171305923,
+            "stddev": 137071.45101000144,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 101162.0,
+                        "lte": 114577.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 205756.0,
+                        "lte": 338798.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 403814.0,
+                        "lte": 509890.0
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 2,
+                        "bin_start": 0.0,
+                        "bin_end": 52571.1
+                    },
+                    {
+                        "count": 2131,
+                        "bin_start": 52571.1,
+                        "bin_end": 105142.2
+                    },
+                    {
+                        "count": 2564,
+                        "bin_start": 105142.2,
+                        "bin_end": 157713.3
+                    },
+                    {
+                        "count": 701,
+                        "bin_start": 157713.3,
+                        "bin_end": 210284.4
+                    },
+                    {
+                        "count": 972,
+                        "bin_start": 210284.4,
+                        "bin_end": 262855.5
+                    },
+                    {
+                        "count": 2157,
+                        "bin_start": 262855.5,
+                        "bin_end": 315426.6
+                    },
+                    {
+                        "count": 1764,
+                        "bin_start": 315426.6,
+                        "bin_end": 367997.7
+                    },
+                    {
+                        "count": 1339,
+                        "bin_start": 367997.7,
+                        "bin_end": 420568.8
+                    },
+                    {
+                        "count": 2926,
+                        "bin_start": 420568.8,
+                        "bin_end": 473139.89999999997
+                    },
+                    {
+                        "count": 353,
+                        "bin_start": 473139.89999999997,
+                        "bin_end": 525711.0
+                    }
+                ]
+            }
+        },
+        {
+            "name": "meter_Meter_Hours",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Text"
+            ],
+            "missing_values_ratio": 0.9326446411705959,
+            "plot": {
+                "type": "histogram_text",
+                "data": [
+                    {
+                        "bin": "mon",
+                        "count": 15808
+                    },
+                    {
+                        "bin": "pas",
+                        "count": 14984
+                    },
+                    {
+                        "bin": "sat",
+                        "count": 14392
+                    },
+                    {
+                        "bin": "1900",
+                        "count": 13368
+                    },
+                    {
+                        "bin": "hr",
+                        "count": 10365
+                    }
+                ]
+            }
+        },
+        {
+            "name": "meter_Parking_Facility_Name",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [],
+            "missing_values_ratio": 0.9994622416839517,
+            "num_distinct_values": 15
+        },
+        {
+            "name": "meter_Facility",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.933060387095608,
+            "num_distinct_values": 3,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "ON Street",
+                        "count": 2
+                    },
+                    {
+                        "bin": "Off Street",
+                        "count": 114
+                    },
+                    {
+                        "bin": "On Street",
+                        "count": 14697
+                    }
+                ]
+            }
+        },
+        {
+            "name": "meter_Borough",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.9326265652608128,
+            "num_distinct_values": 5,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "Bronx",
+                        "count": 1670
+                    },
+                    {
+                        "bin": "Brooklyn",
+                        "count": 3923
+                    },
+                    {
+                        "bin": "Manhattan",
+                        "count": 4698
+                    },
+                    {
+                        "bin": "Queens",
+                        "count": 4265
+                    },
+                    {
+                        "bin": "Staten Island",
+                        "count": 353
+                    }
+                ]
+            }
+        },
+        {
+            "name": "meter_On_Street",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.9326265652608128,
+            "num_distinct_values": 1400,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "2 AVENUE",
+                        "count": 209
+                    },
+                    {
+                        "bin": "3 AVENUE",
+                        "count": 289
+                    },
+                    {
+                        "bin": "5 AVENUE",
+                        "count": 226
+                    },
+                    {
+                        "bin": "BROADWAY",
+                        "count": 560
+                    },
+                    {
+                        "bin": "NORTHERN BOULEVARD",
+                        "count": 211
+                    }
+                ]
+            }
+        },
+        {
+            "name": "meter_Side_of_Street",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.9326265652608128,
+            "num_distinct_values": 10,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "C",
+                        "count": 38
+                    },
+                    {
+                        "bin": "E",
+                        "count": 3905
+                    },
+                    {
+                        "bin": "N",
+                        "count": 3504
+                    },
+                    {
+                        "bin": "S",
+                        "count": 3519
+                    },
+                    {
+                        "bin": "W",
+                        "count": 3925
+                    }
+                ]
+            }
+        },
+        {
+            "name": "meter_From_Street",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [],
+            "missing_values_ratio": 0.9326265652608128,
+            "num_distinct_values": 2270
+        },
+        {
+            "name": "meter_To_Street",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [],
+            "missing_values_ratio": 0.9326265652608128,
+            "num_distinct_values": 2275
+        },
+        {
+            "name": "meter_Latitude",
+            "structural_type": "http://schema.org/Float",
+            "semantic_types": [
+                "http://schema.org/latitude"
+            ],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.9326265652608128,
+            "mean": 40.727239663840095,
+            "stddev": 0.07386425671602304,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 40.5780522618992,
+                        "lte": 40.6825710469
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 40.6954271493769,
+                        "lte": 40.7794293806457
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 40.8008810255287,
+                        "lte": 40.8871836025632
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 41,
+                        "bin_start": 40.523495262565,
+                        "bin_end": 40.5621549914169
+                    },
+                    {
+                        "count": 643,
+                        "bin_start": 40.5621549914169,
+                        "bin_end": 40.6008147202688
+                    },
+                    {
+                        "count": 1782,
+                        "bin_start": 40.6008147202688,
+                        "bin_end": 40.6394744491207
+                    },
+                    {
+                        "count": 1149,
+                        "bin_start": 40.6394744491207,
+                        "bin_end": 40.6781341779726
+                    },
+                    {
+                        "count": 2270,
+                        "bin_start": 40.6781341779726,
+                        "bin_end": 40.7167939068245
+                    },
+                    {
+                        "count": 4049,
+                        "bin_start": 40.7167939068245,
+                        "bin_end": 40.755453635676396
+                    },
+                    {
+                        "count": 2701,
+                        "bin_start": 40.755453635676396,
+                        "bin_end": 40.7941133645283
+                    },
+                    {
+                        "count": 666,
+                        "bin_start": 40.7941133645283,
+                        "bin_end": 40.8327730933802
+                    },
+                    {
+                        "count": 1195,
+                        "bin_start": 40.8327730933802,
+                        "bin_end": 40.8714328222321
+                    },
+                    {
+                        "count": 413,
+                        "bin_start": 40.8714328222321,
+                        "bin_end": 40.910092551084
+                    }
+                ]
+            }
+        },
+        {
+            "name": "meter_Longitude",
+            "structural_type": "http://schema.org/Float",
+            "semantic_types": [
+                "http://schema.org/longitude"
+            ],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.9326265652608128,
+            "mean": -73.93255417460007,
+            "stddev": 0.0725636397297636,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": -74.0342051235544,
+                        "lte": -73.9591749223916
+                    }
+                },
+                {
+                    "range": {
+                        "gte": -73.9534045151681,
+                        "lte": -73.8786514504012
+                    }
+                },
+                {
+                    "range": {
+                        "gte": -73.867255060823,
+                        "lte": -73.7399754836347
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 11,
+                        "bin_start": -74.2160474282141,
+                        "bin_end": -74.1644997750148
+                    },
+                    {
+                        "count": 147,
+                        "bin_start": -74.1644997750148,
+                        "bin_end": -74.1129521218155
+                    },
+                    {
+                        "count": 195,
+                        "bin_start": -74.1129521218155,
+                        "bin_end": -74.06140446861619
+                    },
+                    {
+                        "count": 377,
+                        "bin_start": -74.06140446861619,
+                        "bin_end": -74.0098568154169
+                    },
+                    {
+                        "count": 6081,
+                        "bin_start": -74.0098568154169,
+                        "bin_end": -73.9583091622176
+                    },
+                    {
+                        "count": 3292,
+                        "bin_start": -73.9583091622176,
+                        "bin_end": -73.9067615090183
+                    },
+                    {
+                        "count": 2255,
+                        "bin_start": -73.9067615090183,
+                        "bin_end": -73.85521385581899
+                    },
+                    {
+                        "count": 1784,
+                        "bin_start": -73.85521385581899,
+                        "bin_end": -73.8036662026197
+                    },
+                    {
+                        "count": 531,
+                        "bin_start": -73.8036662026197,
+                        "bin_end": -73.7521185494204
+                    },
+                    {
+                        "count": 236,
+                        "bin_start": -73.7521185494204,
+                        "bin_end": -73.7005708962211
+                    }
+                ]
+            }
+        },
+        {
+            "name": "meter_X",
+            "structural_type": "http://schema.org/Float",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.9326265652608128,
+            "mean": 1002936.0427160733,
+            "stddev": 20110.697518755183,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 975798.084477216,
+                        "lte": 997639.387579307
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 999862.801439553,
+                        "lte": 1021399.4306103
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 1023211.08610772,
+                        "lte": 1057038.02599964
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 11,
+                        "bin_start": 924185.650300726,
+                        "bin_end": 938489.7669024094
+                    },
+                    {
+                        "count": 146,
+                        "bin_start": 938489.7669024094,
+                        "bin_end": 952793.8835040927
+                    },
+                    {
+                        "count": 196,
+                        "bin_start": 952793.8835040927,
+                        "bin_end": 967098.0001057761
+                    },
+                    {
+                        "count": 354,
+                        "bin_start": 967098.0001057761,
+                        "bin_end": 981402.1167074596
+                    },
+                    {
+                        "count": 6063,
+                        "bin_start": 981402.1167074596,
+                        "bin_end": 995706.233309143
+                    },
+                    {
+                        "count": 3321,
+                        "bin_start": 995706.233309143,
+                        "bin_end": 1010010.3499108263
+                    },
+                    {
+                        "count": 2260,
+                        "bin_start": 1010010.3499108263,
+                        "bin_end": 1024314.4665125097
+                    },
+                    {
+                        "count": 1783,
+                        "bin_start": 1024314.4665125097,
+                        "bin_end": 1038618.5831141932
+                    },
+                    {
+                        "count": 534,
+                        "bin_start": 1038618.5831141932,
+                        "bin_end": 1052922.6997158765
+                    },
+                    {
+                        "count": 241,
+                        "bin_start": 1052922.6997158765,
+                        "bin_end": 1067226.81631756
+                    }
+                ]
+            }
+        },
+        {
+            "name": "meter_Y",
+            "structural_type": "http://schema.org/Float",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.9326265652608128,
+            "mean": 204245.23531298467,
+            "stddev": 26914.338171760577,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 149888.402372897,
+                        "lte": 187802.967291638
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 192505.849290058,
+                        "lte": 223247.857031643
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 231061.460170805,
+                        "lte": 262518.025866479
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 41,
+                        "bin_start": 130074.111292899,
+                        "bin_end": 144153.1388434488
+                    },
+                    {
+                        "count": 652,
+                        "bin_start": 144153.1388434488,
+                        "bin_end": 158232.1663939986
+                    },
+                    {
+                        "count": 1784,
+                        "bin_start": 158232.1663939986,
+                        "bin_end": 172311.1939445484
+                    },
+                    {
+                        "count": 1140,
+                        "bin_start": 172311.1939445484,
+                        "bin_end": 186390.2214950982
+                    },
+                    {
+                        "count": 2274,
+                        "bin_start": 186390.2214950982,
+                        "bin_end": 200469.249045648
+                    },
+                    {
+                        "count": 4061,
+                        "bin_start": 200469.249045648,
+                        "bin_end": 214548.2765961978
+                    },
+                    {
+                        "count": 2685,
+                        "bin_start": 214548.2765961978,
+                        "bin_end": 228627.3041467476
+                    },
+                    {
+                        "count": 664,
+                        "bin_start": 228627.3041467476,
+                        "bin_end": 242706.3316972974
+                    },
+                    {
+                        "count": 1194,
+                        "bin_start": 242706.3316972974,
+                        "bin_end": 256785.3592478472
+                    },
+                    {
+                        "count": 414,
+                        "bin_start": 256785.3592478472,
+                        "bin_end": 270864.386798397
+                    }
+                ]
+            }
+        },
+        {
+            "name": "meter_Location",
+            "structural_type": "http://schema.org/GeoCoordinates",
+            "semantic_types": [],
+            "point_format": "long,lat",
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.9326265652608128
+        },
+        {
+            "name": "index_right",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [
+                "http://schema.org/identifier"
+            ],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.9079891002264008,
+            "num_distinct_values": 12104,
+            "mean": 17285.9283434016,
+            "stddev": 9380.358659362864,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 559.0,
+                        "lte": 11159.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 12390.0,
+                        "lte": 21945.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 22902.0,
+                        "lte": 32433.0
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 1894,
+                        "bin_start": 0.0,
+                        "bin_end": 3293.7
+                    },
+                    {
+                        "count": 1585,
+                        "bin_start": 3293.7,
+                        "bin_end": 6587.4
+                    },
+                    {
+                        "count": 1933,
+                        "bin_start": 6587.4,
+                        "bin_end": 9881.099999999999
+                    },
+                    {
+                        "count": 1870,
+                        "bin_start": 9881.099999999999,
+                        "bin_end": 13174.8
+                    },
+                    {
+                        "count": 1976,
+                        "bin_start": 13174.8,
+                        "bin_end": 16468.5
+                    },
+                    {
+                        "count": 2070,
+                        "bin_start": 16468.5,
+                        "bin_end": 19762.199999999997
+                    },
+                    {
+                        "count": 2391,
+                        "bin_start": 19762.199999999997,
+                        "bin_end": 23055.899999999998
+                    },
+                    {
+                        "count": 2287,
+                        "bin_start": 23055.899999999998,
+                        "bin_end": 26349.6
+                    },
+                    {
+                        "count": 2266,
+                        "bin_start": 26349.6,
+                        "bin_end": 29643.3
+                    },
+                    {
+                        "count": 2089,
+                        "bin_start": 29643.3,
+                        "bin_end": 32937.0
+                    }
+                ]
+            }
+        },
+        {
+            "name": "dist_to_truck",
+            "structural_type": "http://schema.org/Float",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.9079891002264008,
+            "mean": 7.388074831899214,
+            "stddev": 5.701871723190171,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 0.0,
+                        "lte": 3.097307613335798
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 4.759987726837169,
+                        "lte": 10.301293127369933
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 10.808229300111698,
+                        "lte": 14.840656069414209
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 6409,
+                        "bin_start": 0.0,
+                        "bin_end": 1.4998700082702277
+                    },
+                    {
+                        "count": 366,
+                        "bin_start": 1.4998700082702277,
+                        "bin_end": 2.9997400165404553
+                    },
+                    {
+                        "count": 519,
+                        "bin_start": 2.9997400165404553,
+                        "bin_end": 4.499610024810683
+                    },
+                    {
+                        "count": 701,
+                        "bin_start": 4.499610024810683,
+                        "bin_end": 5.999480033080911
+                    },
+                    {
+                        "count": 895,
+                        "bin_start": 5.999480033080911,
+                        "bin_end": 7.499350041351138
+                    },
+                    {
+                        "count": 1353,
+                        "bin_start": 7.499350041351138,
+                        "bin_end": 8.999220049621366
+                    },
+                    {
+                        "count": 1693,
+                        "bin_start": 8.999220049621366,
+                        "bin_end": 10.499090057891593
+                    },
+                    {
+                        "count": 2176,
+                        "bin_start": 10.499090057891593,
+                        "bin_end": 11.998960066161821
+                    },
+                    {
+                        "count": 2560,
+                        "bin_start": 11.998960066161821,
+                        "bin_end": 13.49883007443205
+                    },
+                    {
+                        "count": 3689,
+                        "bin_start": 13.49883007443205,
+                        "bin_end": 14.998700082702277
+                    }
+                ]
+            }
+        },
+        {
+            "name": "truck_the_geom",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Text"
+            ],
+            "missing_values_ratio": 0.9079891002264008,
+            "plot": {
+                "type": "histogram_text",
+                "data": [
+                    {
+                        "bin": "40",
+                        "count": 68021
+                    },
+                    {
+                        "bin": "73",
+                        "count": 50794
+                    },
+                    {
+                        "bin": "multilinestring",
+                        "count": 20361
+                    },
+                    {
+                        "bin": "74",
+                        "count": 17227
+                    },
+                    {
+                        "bin": "9454973389947",
+                        "count": 36
+                    }
+                ]
+            }
+        },
+        {
+            "name": "truck_objectid_1",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.9079891002264008,
+            "num_distinct_values": 12100,
+            "mean": 17283.55174107362,
+            "stddev": 9399.20569741602,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 539.0,
+                        "lte": 11151.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 12379.0,
+                        "lte": 21897.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 22839.0,
+                        "lte": 32481.0
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 1903,
+                        "bin_start": 0.0,
+                        "bin_end": 3294.2
+                    },
+                    {
+                        "count": 1592,
+                        "bin_start": 3294.2,
+                        "bin_end": 6588.4
+                    },
+                    {
+                        "count": 1941,
+                        "bin_start": 6588.4,
+                        "bin_end": 9882.599999999999
+                    },
+                    {
+                        "count": 1847,
+                        "bin_start": 9882.599999999999,
+                        "bin_end": 13176.8
+                    },
+                    {
+                        "count": 1967,
+                        "bin_start": 13176.8,
+                        "bin_end": 16471.0
+                    },
+                    {
+                        "count": 2085,
+                        "bin_start": 16471.0,
+                        "bin_end": 19765.199999999997
+                    },
+                    {
+                        "count": 2388,
+                        "bin_start": 19765.199999999997,
+                        "bin_end": 23059.399999999998
+                    },
+                    {
+                        "count": 2277,
+                        "bin_start": 23059.399999999998,
+                        "bin_end": 26353.6
+                    },
+                    {
+                        "count": 2240,
+                        "bin_start": 26353.6,
+                        "bin_end": 29647.8
+                    },
+                    {
+                        "count": 2121,
+                        "bin_start": 29647.8,
+                        "bin_end": 32942.0
+                    }
+                ]
+            }
+        },
+        {
+            "name": "truck_street",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.9079891002264008,
+            "num_distinct_values": 1015,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "BROOKLYN QUEENS EXPRESSWAY",
+                        "count": 428
+                    },
+                    {
+                        "bin": "ED KOCH QUEENSBORO BRIDGE",
+                        "count": 417
+                    },
+                    {
+                        "bin": "LONG ISLAND EXPRESSWAY",
+                        "count": 509
+                    },
+                    {
+                        "bin": "QUEENS BOULEVARD",
+                        "count": 549
+                    },
+                    {
+                        "bin": "UNION TURNPIKE",
+                        "count": 397
+                    }
+                ]
+            }
+        },
+        {
+            "name": "truck_streetcode",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.9079891002264008,
+            "num_distinct_values": 1030,
+            "mean": 367956.0542213054,
+            "stddev": 126641.73790787744,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 110210.0,
+                        "lte": 249460.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 276650.0,
+                        "lte": 397280.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 410880.0,
+                        "lte": 551735.0
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 1415,
+                        "bin_start": 100200.0,
+                        "bin_end": 149901.0
+                    },
+                    {
+                        "count": 1220,
+                        "bin_start": 149901.0,
+                        "bin_end": 199602.0
+                    },
+                    {
+                        "count": 2330,
+                        "bin_start": 199602.0,
+                        "bin_end": 249303.0
+                    },
+                    {
+                        "count": 818,
+                        "bin_start": 249303.0,
+                        "bin_end": 299004.0
+                    },
+                    {
+                        "count": 2402,
+                        "bin_start": 299004.0,
+                        "bin_end": 348705.0
+                    },
+                    {
+                        "count": 1614,
+                        "bin_start": 348705.0,
+                        "bin_end": 398406.0
+                    },
+                    {
+                        "count": 3200,
+                        "bin_start": 398406.0,
+                        "bin_end": 448107.0
+                    },
+                    {
+                        "count": 4479,
+                        "bin_start": 448107.0,
+                        "bin_end": 497808.0
+                    },
+                    {
+                        "count": 2139,
+                        "bin_start": 497808.0,
+                        "bin_end": 547509.0
+                    },
+                    {
+                        "count": 744,
+                        "bin_start": 547509.0,
+                        "bin_end": 597210.0
+                    }
+                ]
+            }
+        },
+        {
+            "name": "truck_routetype",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.9079891002264008,
+            "num_distinct_values": 3,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "Limited Local",
+                        "count": 124
+                    },
+                    {
+                        "bin": "Local",
+                        "count": 10486
+                    },
+                    {
+                        "bin": "Through",
+                        "count": 9751
+                    }
+                ]
+            }
+        },
+        {
+            "name": "truck_boroname",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.9079891002264008,
+            "num_distinct_values": 5,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "Bronx",
+                        "count": 3148
+                    },
+                    {
+                        "bin": "Brooklyn",
+                        "count": 4016
+                    },
+                    {
+                        "bin": "Manhattan",
+                        "count": 2635
+                    },
+                    {
+                        "bin": "Queens",
+                        "count": 7679
+                    },
+                    {
+                        "bin": "Staten Island",
+                        "count": 2883
+                    }
+                ]
+            }
+        },
+        {
+            "name": "truck_restrictio",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Text"
+            ],
+            "missing_values_ratio": 0.9946721255914212,
+            "plot": {
+                "type": "histogram_text",
+                "data": [
+                    {
+                        "bin": "height",
+                        "count": 964
+                    },
+                    {
+                        "bin": "6",
+                        "count": 695
+                    },
+                    {
+                        "bin": "weight",
+                        "count": 538
+                    },
+                    {
+                        "bin": "tons",
+                        "count": 534
+                    },
+                    {
+                        "bin": "upper",
+                        "count": 534
+                    }
+                ]
+            }
+        },
+        {
+            "name": "truck_borocode",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.9079891002264008,
+            "num_distinct_values": 5,
+            "mean": 3.24689357104268,
+            "stddev": 1.2469276819029742,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 1.0,
+                        "lte": 2.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 3.0,
+                        "lte": 4.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 5.0,
+                        "lte": 5.0
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 2635,
+                        "bin_start": 1.0,
+                        "bin_end": 1.4
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 1.4,
+                        "bin_end": 1.8
+                    },
+                    {
+                        "count": 3148,
+                        "bin_start": 1.8,
+                        "bin_end": 2.2
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 2.2,
+                        "bin_end": 2.6
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 2.6,
+                        "bin_end": 3.0
+                    },
+                    {
+                        "count": 4016,
+                        "bin_start": 3.0,
+                        "bin_end": 3.4000000000000004
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 3.4000000000000004,
+                        "bin_end": 3.8000000000000003
+                    },
+                    {
+                        "count": 7679,
+                        "bin_start": 3.8000000000000003,
+                        "bin_end": 4.2
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 4.2,
+                        "bin_end": 4.6
+                    },
+                    {
+                        "count": 2883,
+                        "bin_start": 4.6,
+                        "bin_end": 5.0
+                    }
+                ]
+            }
+        },
+        {
+            "name": "truck_truckroute",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Boolean",
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.9079891002264008,
+            "unclean_values_ratio": 0.0,
+            "num_distinct_values": 1,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "Y",
+                        "count": 20361
+                    }
+                ]
+            }
+        },
+        {
+            "name": "truck_ltdlocal",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Boolean",
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.9994396467967228,
+            "unclean_values_ratio": 0.0,
+            "num_distinct_values": 1,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "Y",
+                        "count": 124
+                    }
+                ]
+            }
+        },
+        {
+            "name": "truck_nyc_reg",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Text"
+            ],
+            "missing_values_ratio": 0.9079891002264008,
+            "plot": {
+                "type": "histogram_text",
+                "data": [
+                    {
+                        "bin": "nycdot",
+                        "count": 20361
+                    },
+                    {
+                        "bin": "traffic",
+                        "count": 20361
+                    },
+                    {
+                        "bin": "rules",
+                        "count": 20361
+                    },
+                    {
+                        "bin": "section",
+                        "count": 20361
+                    },
+                    {
+                        "bin": "4",
+                        "count": 20361
+                    }
+                ]
+            }
+        },
+        {
+            "name": "truck_segmentid",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [
+                "http://schema.org/identifier"
+            ],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.9079891002264008,
+            "num_distinct_values": 11972,
+            "mean": 387390.61946859193,
+            "stddev": 1454537.8673949046,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 2679.0,
+                        "lte": 97975.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 132953.0,
+                        "lte": 291297.0
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 19799,
+                        "bin_start": 29.0,
+                        "bin_end": 902443.1
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 902443.1,
+                        "bin_end": 1804857.2
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 1804857.2,
+                        "bin_end": 2707271.3
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 2707271.3,
+                        "bin_end": 3609685.4
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 3609685.4,
+                        "bin_end": 4512099.5
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 4512099.5,
+                        "bin_end": 5414513.6
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 5414513.6,
+                        "bin_end": 6316927.7
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 6316927.7,
+                        "bin_end": 7219341.8
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 7219341.8,
+                        "bin_end": 8121755.899999999
+                    },
+                    {
+                        "count": 562,
+                        "bin_start": 8121755.899999999,
+                        "bin_end": 9024170.0
+                    }
+                ]
+            }
+        },
+        {
+            "name": "truck_shape_leng",
+            "structural_type": "http://schema.org/Float",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.9079891002264008,
+            "mean": 271.71725965105475,
+            "stddev": 236.70778037705492,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 26.7181192476,
+                        "lte": 339.561706839
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 385.010892994,
+                        "lte": 896.019742624
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 16342,
+                        "bin_start": 7.95773295002,
+                        "bin_end": 381.267177779018
+                    },
+                    {
+                        "count": 3204,
+                        "bin_start": 381.267177779018,
+                        "bin_end": 754.5766226080161
+                    },
+                    {
+                        "count": 613,
+                        "bin_start": 754.5766226080161,
+                        "bin_end": 1127.8860674370142
+                    },
+                    {
+                        "count": 114,
+                        "bin_start": 1127.8860674370142,
+                        "bin_end": 1501.1955122660122
+                    },
+                    {
+                        "count": 42,
+                        "bin_start": 1501.1955122660122,
+                        "bin_end": 1874.5049570950102
+                    },
+                    {
+                        "count": 29,
+                        "bin_start": 1874.5049570950102,
+                        "bin_end": 2247.814401924008
+                    },
+                    {
+                        "count": 14,
+                        "bin_start": 2247.814401924008,
+                        "bin_end": 2621.123846753006
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 2621.123846753006,
+                        "bin_end": 2994.433291582004
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 2994.433291582004,
+                        "bin_end": 3367.742736411002
+                    },
+                    {
+                        "count": 3,
+                        "bin_start": 3367.742736411002,
+                        "bin_end": 3741.05218124
+                    }
+                ]
+            }
+        },
+        {
+            "name": "truck_localtunl",
+            "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
+            "semantic_types": []
+        },
+        {
+            "name": "truck_localbrg",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Boolean",
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.99841383891653,
+            "unclean_values_ratio": 0.0,
+            "num_distinct_values": 1,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "Y",
+                        "count": 351
+                    }
+                ]
+            }
+        },
+        {
+            "name": "truck_thrutunl",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Boolean",
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.9994125329320481,
+            "unclean_values_ratio": 0.0,
+            "num_distinct_values": 1,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "Y",
+                        "count": 130
+                    }
+                ]
+            }
+        },
+        {
+            "name": "truck_thrubrg",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Boolean",
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.9973925500137829,
+            "unclean_values_ratio": 0.0,
+            "num_distinct_values": 1,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "Y",
+                        "count": 577
+                    }
+                ]
+            }
+        },
+        {
+            "name": "truck_assem_dist",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.9079891002264008,
+            "num_distinct_values": 66,
+            "mean": 52.2833849025097,
+            "stddev": 19.769375168277573,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 24.0,
+                        "lte": 40.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 47.0,
+                        "lte": 67.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 71.0,
+                        "lte": 87.0
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 49,
+                        "bin_start": 0.0,
+                        "bin_end": 8.7
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 8.7,
+                        "bin_end": 17.4
+                    },
+                    {
+                        "count": 1699,
+                        "bin_start": 17.4,
+                        "bin_end": 26.099999999999998
+                    },
+                    {
+                        "count": 3514,
+                        "bin_start": 26.099999999999998,
+                        "bin_end": 34.8
+                    },
+                    {
+                        "count": 2701,
+                        "bin_start": 34.8,
+                        "bin_end": 43.5
+                    },
+                    {
+                        "count": 2642,
+                        "bin_start": 43.5,
+                        "bin_end": 52.199999999999996
+                    },
+                    {
+                        "count": 1090,
+                        "bin_start": 52.199999999999996,
+                        "bin_end": 60.89999999999999
+                    },
+                    {
+                        "count": 4234,
+                        "bin_start": 60.89999999999999,
+                        "bin_end": 69.6
+                    },
+                    {
+                        "count": 1856,
+                        "bin_start": 69.6,
+                        "bin_end": 78.3
+                    },
+                    {
+                        "count": 2576,
+                        "bin_start": 78.3,
+                        "bin_end": 87.0
+                    }
+                ]
+            }
+        },
+        {
+            "name": "truck_cong_dist",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.9079891002264008,
+            "num_distinct_values": 14,
+            "mean": 9.920829035901969,
+            "stddev": 3.4774341579764965,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 3.0,
+                        "lte": 8.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 9.0,
+                        "lte": 12.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 13.0,
+                        "lte": 16.0
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 49,
+                        "bin_start": 0.0,
+                        "bin_end": 1.6
+                    },
+                    {
+                        "count": 361,
+                        "bin_start": 1.6,
+                        "bin_end": 3.2
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 3.2,
+                        "bin_end": 4.800000000000001
+                    },
+                    {
+                        "count": 4521,
+                        "bin_start": 4.800000000000001,
+                        "bin_end": 6.4
+                    },
+                    {
+                        "count": 2109,
+                        "bin_start": 6.4,
+                        "bin_end": 8.0
+                    },
+                    {
+                        "count": 1356,
+                        "bin_start": 8.0,
+                        "bin_end": 9.600000000000001
+                    },
+                    {
+                        "count": 4643,
+                        "bin_start": 9.600000000000001,
+                        "bin_end": 11.200000000000001
+                    },
+                    {
+                        "count": 2254,
+                        "bin_start": 11.200000000000001,
+                        "bin_end": 12.8
+                    },
+                    {
+                        "count": 2766,
+                        "bin_start": 12.8,
+                        "bin_end": 14.4
+                    },
+                    {
+                        "count": 2302,
+                        "bin_start": 14.4,
+                        "bin_end": 16.0
+                    }
+                ]
+            }
+        },
+        {
+            "name": "truck_coun_dist",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.9079891002264008,
+            "num_distinct_values": 52,
+            "mean": 26.930013260645353,
+            "stddev": 14.252832286119263,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 1.0,
+                        "lte": 18.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 19.0,
+                        "lte": 34.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 38.0,
+                        "lte": 51.0
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 1677,
+                        "bin_start": 0.0,
+                        "bin_end": 5.1
+                    },
+                    {
+                        "count": 1433,
+                        "bin_start": 5.1,
+                        "bin_end": 10.2
+                    },
+                    {
+                        "count": 1432,
+                        "bin_start": 10.2,
+                        "bin_end": 15.299999999999999
+                    },
+                    {
+                        "count": 2258,
+                        "bin_start": 15.299999999999999,
+                        "bin_end": 20.4
+                    },
+                    {
+                        "count": 2440,
+                        "bin_start": 20.4,
+                        "bin_end": 25.5
+                    },
+                    {
+                        "count": 3515,
+                        "bin_start": 25.5,
+                        "bin_end": 30.599999999999998
+                    },
+                    {
+                        "count": 2118,
+                        "bin_start": 30.599999999999998,
+                        "bin_end": 35.699999999999996
+                    },
+                    {
+                        "count": 1507,
+                        "bin_start": 35.699999999999996,
+                        "bin_end": 40.8
+                    },
+                    {
+                        "count": 853,
+                        "bin_start": 40.8,
+                        "bin_end": 45.9
+                    },
+                    {
+                        "count": 3128,
+                        "bin_start": 45.9,
+                        "bin_end": 51.0
+                    }
+                ]
+            }
+        },
+        {
+            "name": "truck_st_sen_dis",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.9079891002264008,
+            "num_distinct_values": 27,
+            "mean": 21.29551593733117,
+            "stddev": 7.472783091821541,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 10.0,
+                        "lte": 18.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 19.0,
+                        "lte": 26.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 28.0,
+                        "lte": 34.0
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 49,
+                        "bin_start": 0.0,
+                        "bin_end": 3.6
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 3.6,
+                        "bin_end": 7.2
+                    },
+                    {
+                        "count": 839,
+                        "bin_start": 7.2,
+                        "bin_end": 10.8
+                    },
+                    {
+                        "count": 4384,
+                        "bin_start": 10.8,
+                        "bin_end": 14.4
+                    },
+                    {
+                        "count": 2534,
+                        "bin_start": 14.4,
+                        "bin_end": 18.0
+                    },
+                    {
+                        "count": 1626,
+                        "bin_start": 18.0,
+                        "bin_end": 21.6
+                    },
+                    {
+                        "count": 4667,
+                        "bin_start": 21.6,
+                        "bin_end": 25.2
+                    },
+                    {
+                        "count": 1908,
+                        "bin_start": 25.2,
+                        "bin_end": 28.8
+                    },
+                    {
+                        "count": 2593,
+                        "bin_start": 28.8,
+                        "bin_end": 32.4
+                    },
+                    {
+                        "count": 1761,
+                        "bin_start": 32.4,
+                        "bin_end": 36.0
+                    }
+                ]
+            }
+        },
+        {
+            "name": "truck_thruexwy",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Boolean",
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.9873965719037097,
+            "unclean_values_ratio": 0.0,
+            "num_distinct_values": 1,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "Y",
+                        "count": 2789
+                    }
+                ]
+            }
+        },
+        {
+            "name": "truck_borocd",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.9079891002264008,
+            "num_distinct_values": 72,
+            "mean": 334.4267472128088,
+            "stddev": 127.46818295098468,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 101.0,
+                        "lte": 212.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 301.0,
+                        "lte": 318.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 402.0,
+                        "lte": 503.0
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 49,
+                        "bin_start": 0.0,
+                        "bin_end": 59.5
+                    },
+                    {
+                        "count": 2457,
+                        "bin_start": 59.5,
+                        "bin_end": 119.0
+                    },
+                    {
+                        "count": 146,
+                        "bin_start": 119.0,
+                        "bin_end": 178.5
+                    },
+                    {
+                        "count": 3159,
+                        "bin_start": 178.5,
+                        "bin_end": 238.0
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 238.0,
+                        "bin_end": 297.5
+                    },
+                    {
+                        "count": 3996,
+                        "bin_start": 297.5,
+                        "bin_end": 357.0
+                    },
+                    {
+                        "count": 6802,
+                        "bin_start": 357.0,
+                        "bin_end": 416.5
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 416.5,
+                        "bin_end": 476.0
+                    },
+                    {
+                        "count": 3669,
+                        "bin_start": 476.0,
+                        "bin_end": 535.5
+                    },
+                    {
+                        "count": 83,
+                        "bin_start": 535.5,
+                        "bin_end": 595.0
+                    }
+                ]
+            }
+        }
+    ],
+    "nb_spatial_columns": 3,
+    "nb_temporal_columns": 2,
+    "nb_categorical_columns": 24,
+    "nb_numerical_columns": 26,
+    "types": [
+        "categorical",
+        "numerical",
+        "spatial",
+        "temporal"
+    ],
+    "spatial_coverage": [
+        {
+            "type": "latlong",
+            "column_names": [
+                "meter_Latitude",
+                "meter_Longitude"
+            ],
+            "column_indexes": [
+                45,
+                46
+            ],
+            "geohashes4": [
+                {
+                    "hash": "1211302313212",
+                    "number": 203
+                },
+                {
+                    "hash": "1211302313213",
+                    "number": 107
+                },
+                {
+                    "hash": "1211302313210",
+                    "number": 198
+                },
+                {
+                    "hash": "1211302313211",
+                    "number": 386
+                },
+                {
+                    "hash": "1211302313230",
+                    "number": 37
+                },
+                {
+                    "hash": "1211302313231",
+                    "number": 30
+                },
+                {
+                    "hash": "1211302313233",
+                    "number": 301
+                },
+                {
+                    "hash": "1211302313232",
+                    "number": 33
+                },
+                {
+                    "hash": "1211302313221",
+                    "number": 54
+                },
+                {
+                    "hash": "1211302313220",
+                    "number": 3
+                },
+                {
+                    "hash": "1211302313203",
+                    "number": 153
+                },
+                {
+                    "hash": "1211302313202",
+                    "number": 222
+                },
+                {
+                    "hash": "1211302313200",
+                    "number": 437
+                },
+                {
+                    "hash": "1211302313201",
+                    "number": 407
+                },
+                {
+                    "hash": "1211302313302",
+                    "number": 226
+                },
+                {
+                    "hash": "1211302313301",
+                    "number": 843
+                },
+                {
+                    "hash": "1211302313300",
+                    "number": 187
+                },
+                {
+                    "hash": "1211302313303",
+                    "number": 95
+                },
+                {
+                    "hash": "1211302313310",
+                    "number": 1334
+                },
+                {
+                    "hash": "1211302313311",
+                    "number": 858
+                },
+                {
+                    "hash": "1211302313313",
+                    "number": 474
+                },
+                {
+                    "hash": "1211302313312",
+                    "number": 514
+                },
+                {
+                    "hash": "1211302313333",
+                    "number": 82
+                },
+                {
+                    "hash": "1211302313332",
+                    "number": 217
+                },
+                {
+                    "hash": "1211302313330",
+                    "number": 545
+                },
+                {
+                    "hash": "1211302313331",
+                    "number": 123
+                },
+                {
+                    "hash": "1211302313320",
+                    "number": 227
+                },
+                {
+                    "hash": "1211302313322",
+                    "number": 187
+                },
+                {
+                    "hash": "1211302313321",
+                    "number": 108
+                },
+                {
+                    "hash": "1211302313323",
+                    "number": 329
+                },
+                {
+                    "hash": "1211302313123",
+                    "number": 123
+                },
+                {
+                    "hash": "1211302313122",
+                    "number": 238
+                },
+                {
+                    "hash": "1211302313132",
+                    "number": 67
+                },
+                {
+                    "hash": "1211302313021",
+                    "number": 75
+                },
+                {
+                    "hash": "1211302313020",
+                    "number": 16
+                },
+                {
+                    "hash": "1211302313023",
+                    "number": 270
+                },
+                {
+                    "hash": "1211302313022",
+                    "number": 179
+                },
+                {
+                    "hash": "1211302313002",
+                    "number": 36
+                },
+                {
+                    "hash": "1211302313003",
+                    "number": 93
+                },
+                {
+                    "hash": "1211302313000",
+                    "number": 4
+                },
+                {
+                    "hash": "1211302313001",
+                    "number": 3
+                },
+                {
+                    "hash": "1211302313032",
+                    "number": 62
+                },
+                {
+                    "hash": "1211302312332",
+                    "number": 16
+                },
+                {
+                    "hash": "1211302312310",
+                    "number": 108
+                },
+                {
+                    "hash": "1211302312311",
+                    "number": 340
+                },
+                {
+                    "hash": "1211302312313",
+                    "number": 221
+                },
+                {
+                    "hash": "1211302312312",
+                    "number": 21
+                },
+                {
+                    "hash": "1211302312131",
+                    "number": 15
+                },
+                {
+                    "hash": "1211302312130",
+                    "number": 2
+                },
+                {
+                    "hash": "1211302312133",
+                    "number": 12
+                },
+                {
+                    "hash": "1211302312112",
+                    "number": 59
+                },
+                {
+                    "hash": "1211302312113",
+                    "number": 9
+                },
+                {
+                    "hash": "1211302312101",
+                    "number": 33
+                },
+                {
+                    "hash": "1211302312100",
+                    "number": 6
+                },
+                {
+                    "hash": "1211302310322",
+                    "number": 2
+                },
+                {
+                    "hash": "1211302330113",
+                    "number": 36
+                },
+                {
+                    "hash": "1211302330111",
+                    "number": 2
+                },
+                {
+                    "hash": "1211302331111",
+                    "number": 157
+                },
+                {
+                    "hash": "1211302331112",
+                    "number": 51
+                },
+                {
+                    "hash": "1211302331110",
+                    "number": 131
+                },
+                {
+                    "hash": "1211302331113",
+                    "number": 92
+                },
+                {
+                    "hash": "1211302331131",
+                    "number": 38
+                },
+                {
+                    "hash": "1211302331130",
+                    "number": 32
+                },
+                {
+                    "hash": "1211302331100",
+                    "number": 269
+                },
+                {
+                    "hash": "1211302331102",
+                    "number": 47
+                },
+                {
+                    "hash": "1211302331101",
+                    "number": 138
+                },
+                {
+                    "hash": "1211302331103",
+                    "number": 58
+                },
+                {
+                    "hash": "1211302331121",
+                    "number": 63
+                },
+                {
+                    "hash": "1211302331120",
+                    "number": 5
+                },
+                {
+                    "hash": "1211302331002",
+                    "number": 2
+                },
+                {
+                    "hash": "1211302331030",
+                    "number": 19
+                },
+                {
+                    "hash": "1211302331031",
+                    "number": 10
+                },
+                {
+                    "hash": "1211302331010",
+                    "number": 4
+                },
+                {
+                    "hash": "1211302331012",
+                    "number": 8
+                },
+                {
+                    "hash": "1211302331011",
+                    "number": 134
+                },
+                {
+                    "hash": "1211302331013",
+                    "number": 26
+                },
+                {
+                    "hash": "1211303202202",
+                    "number": 220
+                },
+                {
+                    "hash": "1211303202200",
+                    "number": 228
+                },
+                {
+                    "hash": "1211303202203",
+                    "number": 243
+                },
+                {
+                    "hash": "1211303202201",
+                    "number": 36
+                },
+                {
+                    "hash": "1211303202222",
+                    "number": 25
+                },
+                {
+                    "hash": "1211303202221",
+                    "number": 58
+                },
+                {
+                    "hash": "1211303202212",
+                    "number": 181
+                },
+                {
+                    "hash": "1211303202213",
+                    "number": 154
+                },
+                {
+                    "hash": "1211303202231",
+                    "number": 332
+                },
+                {
+                    "hash": "1211303202230",
+                    "number": 150
+                },
+                {
+                    "hash": "1211303202232",
+                    "number": 290
+                },
+                {
+                    "hash": "1211303202233",
+                    "number": 173
+                },
+                {
+                    "hash": "1211303202302",
+                    "number": 6
+                },
+                {
+                    "hash": "1211303202320",
+                    "number": 228
+                },
+                {
+                    "hash": "1211303202322",
+                    "number": 131
+                },
+                {
+                    "hash": "1211303202323",
+                    "number": 61
+                },
+                {
+                    "hash": "1211303202321",
+                    "number": 19
+                },
+                {
+                    "hash": "1211303220000",
+                    "number": 36
+                },
+                {
+                    "hash": "1211303220001",
+                    "number": 20
+                },
+                {
+                    "hash": "1211303220010",
+                    "number": 51
+                },
+                {
+                    "hash": "1211303220011",
+                    "number": 14
+                },
+                {
+                    "hash": "1211303220100",
+                    "number": 1
+                }
+            ],
+            "ranges": [
+                {
+                    "range": {
+                        "type": "envelope",
+                        "coordinates": [
+                            [
+                                -74.1085466624291,
+                                40.6844290893241
+                            ],
+                            [
+                                -73.9267539063381,
+                                40.5777272960838
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "range": {
+                        "type": "envelope",
+                        "coordinates": [
+                            [
+                                -74.0057138145416,
+                                40.8338836255594
+                            ],
+                            [
+                                -73.915464242743,
+                                40.703152562169
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "range": {
+                        "type": "envelope",
+                        "coordinates": [
+                            [
+                                -73.9018211708944,
+                                40.8805399229654
+                            ],
+                            [
+                                -73.7521717042974,
+                                40.6799793709487
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "number": 14909
+        },
+        {
+            "type": "point",
+            "column_names": [
+                "meter_Location"
+            ],
+            "column_indexes": [
+                49
+            ],
+            "geohashes4": [
+                {
+                    "hash": "1211302313212",
+                    "number": 203
+                },
+                {
+                    "hash": "1211302313213",
+                    "number": 107
+                },
+                {
+                    "hash": "1211302313210",
+                    "number": 198
+                },
+                {
+                    "hash": "1211302313211",
+                    "number": 386
+                },
+                {
+                    "hash": "1211302313230",
+                    "number": 37
+                },
+                {
+                    "hash": "1211302313231",
+                    "number": 30
+                },
+                {
+                    "hash": "1211302313233",
+                    "number": 301
+                },
+                {
+                    "hash": "1211302313232",
+                    "number": 33
+                },
+                {
+                    "hash": "1211302313221",
+                    "number": 54
+                },
+                {
+                    "hash": "1211302313220",
+                    "number": 3
+                },
+                {
+                    "hash": "1211302313203",
+                    "number": 153
+                },
+                {
+                    "hash": "1211302313202",
+                    "number": 222
+                },
+                {
+                    "hash": "1211302313200",
+                    "number": 437
+                },
+                {
+                    "hash": "1211302313201",
+                    "number": 407
+                },
+                {
+                    "hash": "1211302313302",
+                    "number": 226
+                },
+                {
+                    "hash": "1211302313301",
+                    "number": 843
+                },
+                {
+                    "hash": "1211302313300",
+                    "number": 187
+                },
+                {
+                    "hash": "1211302313303",
+                    "number": 95
+                },
+                {
+                    "hash": "1211302313310",
+                    "number": 1334
+                },
+                {
+                    "hash": "1211302313311",
+                    "number": 858
+                },
+                {
+                    "hash": "1211302313313",
+                    "number": 474
+                },
+                {
+                    "hash": "1211302313312",
+                    "number": 514
+                },
+                {
+                    "hash": "1211302313333",
+                    "number": 82
+                },
+                {
+                    "hash": "1211302313332",
+                    "number": 217
+                },
+                {
+                    "hash": "1211302313330",
+                    "number": 545
+                },
+                {
+                    "hash": "1211302313331",
+                    "number": 123
+                },
+                {
+                    "hash": "1211302313320",
+                    "number": 227
+                },
+                {
+                    "hash": "1211302313322",
+                    "number": 187
+                },
+                {
+                    "hash": "1211302313321",
+                    "number": 108
+                },
+                {
+                    "hash": "1211302313323",
+                    "number": 329
+                },
+                {
+                    "hash": "1211302313123",
+                    "number": 123
+                },
+                {
+                    "hash": "1211302313122",
+                    "number": 238
+                },
+                {
+                    "hash": "1211302313132",
+                    "number": 67
+                },
+                {
+                    "hash": "1211302313021",
+                    "number": 75
+                },
+                {
+                    "hash": "1211302313020",
+                    "number": 16
+                },
+                {
+                    "hash": "1211302313023",
+                    "number": 270
+                },
+                {
+                    "hash": "1211302313022",
+                    "number": 179
+                },
+                {
+                    "hash": "1211302313002",
+                    "number": 36
+                },
+                {
+                    "hash": "1211302313003",
+                    "number": 93
+                },
+                {
+                    "hash": "1211302313000",
+                    "number": 4
+                },
+                {
+                    "hash": "1211302313001",
+                    "number": 3
+                },
+                {
+                    "hash": "1211302313032",
+                    "number": 62
+                },
+                {
+                    "hash": "1211302312332",
+                    "number": 16
+                },
+                {
+                    "hash": "1211302312310",
+                    "number": 108
+                },
+                {
+                    "hash": "1211302312311",
+                    "number": 340
+                },
+                {
+                    "hash": "1211302312313",
+                    "number": 221
+                },
+                {
+                    "hash": "1211302312312",
+                    "number": 21
+                },
+                {
+                    "hash": "1211302312131",
+                    "number": 15
+                },
+                {
+                    "hash": "1211302312130",
+                    "number": 2
+                },
+                {
+                    "hash": "1211302312133",
+                    "number": 12
+                },
+                {
+                    "hash": "1211302312112",
+                    "number": 59
+                },
+                {
+                    "hash": "1211302312113",
+                    "number": 9
+                },
+                {
+                    "hash": "1211302312101",
+                    "number": 33
+                },
+                {
+                    "hash": "1211302312100",
+                    "number": 6
+                },
+                {
+                    "hash": "1211302310322",
+                    "number": 2
+                },
+                {
+                    "hash": "1211302330113",
+                    "number": 36
+                },
+                {
+                    "hash": "1211302330111",
+                    "number": 2
+                },
+                {
+                    "hash": "1211302331111",
+                    "number": 157
+                },
+                {
+                    "hash": "1211302331112",
+                    "number": 51
+                },
+                {
+                    "hash": "1211302331110",
+                    "number": 131
+                },
+                {
+                    "hash": "1211302331113",
+                    "number": 92
+                },
+                {
+                    "hash": "1211302331131",
+                    "number": 38
+                },
+                {
+                    "hash": "1211302331130",
+                    "number": 32
+                },
+                {
+                    "hash": "1211302331100",
+                    "number": 269
+                },
+                {
+                    "hash": "1211302331102",
+                    "number": 47
+                },
+                {
+                    "hash": "1211302331101",
+                    "number": 138
+                },
+                {
+                    "hash": "1211302331103",
+                    "number": 58
+                },
+                {
+                    "hash": "1211302331121",
+                    "number": 63
+                },
+                {
+                    "hash": "1211302331120",
+                    "number": 5
+                },
+                {
+                    "hash": "1211302331002",
+                    "number": 2
+                },
+                {
+                    "hash": "1211302331030",
+                    "number": 19
+                },
+                {
+                    "hash": "1211302331031",
+                    "number": 10
+                },
+                {
+                    "hash": "1211302331010",
+                    "number": 4
+                },
+                {
+                    "hash": "1211302331012",
+                    "number": 8
+                },
+                {
+                    "hash": "1211302331011",
+                    "number": 134
+                },
+                {
+                    "hash": "1211302331013",
+                    "number": 26
+                },
+                {
+                    "hash": "1211303202202",
+                    "number": 220
+                },
+                {
+                    "hash": "1211303202200",
+                    "number": 228
+                },
+                {
+                    "hash": "1211303202203",
+                    "number": 243
+                },
+                {
+                    "hash": "1211303202201",
+                    "number": 36
+                },
+                {
+                    "hash": "1211303202222",
+                    "number": 25
+                },
+                {
+                    "hash": "1211303202221",
+                    "number": 58
+                },
+                {
+                    "hash": "1211303202212",
+                    "number": 181
+                },
+                {
+                    "hash": "1211303202213",
+                    "number": 154
+                },
+                {
+                    "hash": "1211303202231",
+                    "number": 332
+                },
+                {
+                    "hash": "1211303202230",
+                    "number": 150
+                },
+                {
+                    "hash": "1211303202232",
+                    "number": 290
+                },
+                {
+                    "hash": "1211303202233",
+                    "number": 173
+                },
+                {
+                    "hash": "1211303202302",
+                    "number": 6
+                },
+                {
+                    "hash": "1211303202320",
+                    "number": 228
+                },
+                {
+                    "hash": "1211303202322",
+                    "number": 131
+                },
+                {
+                    "hash": "1211303202323",
+                    "number": 61
+                },
+                {
+                    "hash": "1211303202321",
+                    "number": 19
+                },
+                {
+                    "hash": "1211303220000",
+                    "number": 36
+                },
+                {
+                    "hash": "1211303220001",
+                    "number": 20
+                },
+                {
+                    "hash": "1211303220010",
+                    "number": 51
+                },
+                {
+                    "hash": "1211303220011",
+                    "number": 14
+                },
+                {
+                    "hash": "1211303220100",
+                    "number": 1
+                }
+            ],
+            "ranges": [
+                {
+                    "range": {
+                        "type": "envelope",
+                        "coordinates": [
+                            [
+                                -74.1085466624291,
+                                40.6844290893241
+                            ],
+                            [
+                                -73.9267539063381,
+                                40.5777272960838
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "range": {
+                        "type": "envelope",
+                        "coordinates": [
+                            [
+                                -74.0057138145416,
+                                40.8338836255594
+                            ],
+                            [
+                                -73.915464242743,
+                                40.703152562169
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "range": {
+                        "type": "envelope",
+                        "coordinates": [
+                            [
+                                -73.9018211708944,
+                                40.8805399229654
+                            ],
+                            [
+                                -73.7521717042974,
+                                40.6799793709487
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "number": 14909
+        }
+    ],
+    "temporal_coverage": [
+        {
+            "type": "datetime",
+            "column_names": [
+                "loading_order_completed_on_date"
+            ],
+            "column_indexes": [
+                18
+            ],
+            "column_types": [
+                "http://schema.org/DateTime"
+            ],
+            "ranges": [
+                {
+                    "range": {
+                        "gte": 1638748800.0,
+                        "lte": 1682985600.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 1687564800.0,
+                        "lte": 1743984000.0
+                    }
+                }
+            ],
+            "temporal_resolution": "day"
+        },
+        {
+            "type": "datetime",
+            "column_names": [
+                "loading_sign_design_voided_on_date"
+            ],
+            "column_indexes": [
+                22
+            ],
+            "column_types": [
+                "http://schema.org/DateTime"
+            ],
+            "ranges": [
+                {
+                    "range": {
+                        "gte": 1681948800.0,
+                        "lte": 1681948800.0
+                    }
+                }
+            ],
+            "temporal_resolution": "day"
+        }
+    ],
+    "attribute_keywords": [
+        "SOURCE_ID",
+        "SOURCE",
+        "ID",
+        "FEAT_CODE",
+        "FEAT",
+        "CODE",
+        "SUB_CODE",
+        "SUB",
+        "CODE",
+        "STATUS",
+        "SHAPE_Leng",
+        "SHAPE",
+        "Leng",
+        "geometry",
+        "dist_to_loading",
+        "dist",
+        "to",
+        "loading",
+        "loading_order_number",
+        "loading",
+        "order",
+        "number",
+        "loading_record_type",
+        "loading",
+        "record",
+        "type",
+        "loading_order_type",
+        "loading",
+        "order",
+        "type",
+        "loading_borough",
+        "loading",
+        "borough",
+        "loading_on_street",
+        "loading",
+        "on",
+        "street",
+        "loading_on_street_suffix",
+        "loading",
+        "on",
+        "street",
+        "suffix",
+        "loading_from_street",
+        "loading",
+        "from",
+        "street",
+        "loading_from_street_suffix",
+        "loading",
+        "from",
+        "street",
+        "suffix",
+        "loading_to_street",
+        "loading",
+        "to",
+        "street",
+        "loading_to_street_suffix",
+        "loading",
+        "to",
+        "street",
+        "suffix",
+        "loading_side_of_street",
+        "loading",
+        "side",
+        "of",
+        "street",
+        "loading_order_completed_on_date",
+        "loading",
+        "order",
+        "completed",
+        "on",
+        "date",
+        "loading_sign_code",
+        "loading",
+        "sign",
+        "code",
+        "loading_sign_description",
+        "loading",
+        "sign",
+        "description",
+        "loading_sign_size",
+        "loading",
+        "sign",
+        "size",
+        "loading_sign_design_voided_on_date",
+        "loading",
+        "sign",
+        "design",
+        "voided",
+        "on",
+        "date",
+        "loading_sign_location",
+        "loading",
+        "sign",
+        "location",
+        "loading_distance_from_intersection",
+        "loading",
+        "distance",
+        "from",
+        "intersection",
+        "loading_arrow_direction",
+        "loading",
+        "arrow",
+        "direction",
+        "loading_facing_direction",
+        "loading",
+        "facing",
+        "direction",
+        "loading_sheeting_type",
+        "loading",
+        "sheeting",
+        "type",
+        "loading_support",
+        "loading",
+        "support",
+        "loading_sign_notes",
+        "loading",
+        "sign",
+        "notes",
+        "loading_sign_x_coord",
+        "loading",
+        "sign",
+        "x",
+        "coord",
+        "loading_sign_y_coord",
+        "loading",
+        "sign",
+        "y",
+        "coord",
+        "dist_to_meter",
+        "dist",
+        "to",
+        "meter",
+        "meter_ObjectID",
+        "meter",
+        "Object",
+        "ID",
+        "meter_Meter Number",
+        "meter",
+        "Meter",
+        "Number",
+        "meter_Status",
+        "meter",
+        "Status",
+        "meter_Pay By Cell Number",
+        "meter",
+        "Pay",
+        "By",
+        "Cell",
+        "Number",
+        "meter_Meter_Hours",
+        "meter",
+        "Meter",
+        "Hours",
+        "meter_Parking_Facility_Name",
+        "meter",
+        "Parking",
+        "Facility",
+        "Name",
+        "meter_Facility",
+        "meter",
+        "Facility",
+        "meter_Borough",
+        "meter",
+        "Borough",
+        "meter_On_Street",
+        "meter",
+        "On",
+        "Street",
+        "meter_Side_of_Street",
+        "meter",
+        "Side",
+        "of",
+        "Street",
+        "meter_From_Street",
+        "meter",
+        "From",
+        "Street",
+        "meter_To_Street",
+        "meter",
+        "To",
+        "Street",
+        "meter_Latitude",
+        "meter",
+        "Latitude",
+        "meter_Longitude",
+        "meter",
+        "Longitude",
+        "meter_X",
+        "meter",
+        "X",
+        "meter_Y",
+        "meter",
+        "Y",
+        "meter_Location",
+        "meter",
+        "Location",
+        "index_right",
+        "index",
+        "right",
+        "dist_to_truck",
+        "dist",
+        "to",
+        "truck",
+        "truck_the_geom",
+        "truck",
+        "the",
+        "geom",
+        "truck_objectid_1",
+        "truck",
+        "objectid",
+        "1",
+        "truck_street",
+        "truck",
+        "street",
+        "truck_streetcode",
+        "truck",
+        "streetcode",
+        "truck_routetype",
+        "truck",
+        "routetype",
+        "truck_boroname",
+        "truck",
+        "boroname",
+        "truck_restrictio",
+        "truck",
+        "restrictio",
+        "truck_borocode",
+        "truck",
+        "borocode",
+        "truck_truckroute",
+        "truck",
+        "truckroute",
+        "truck_ltdlocal",
+        "truck",
+        "ltdlocal",
+        "truck_nyc_reg",
+        "truck",
+        "nyc",
+        "reg",
+        "truck_segmentid",
+        "truck",
+        "segmentid",
+        "truck_shape_leng",
+        "truck",
+        "shape",
+        "leng",
+        "truck_localtunl",
+        "truck",
+        "localtunl",
+        "truck_localbrg",
+        "truck",
+        "localbrg",
+        "truck_thrutunl",
+        "truck",
+        "thrutunl",
+        "truck_thrubrg",
+        "truck",
+        "thrubrg",
+        "truck_assem_dist",
+        "truck",
+        "assem",
+        "dist",
+        "truck_cong_dist",
+        "truck",
+        "cong",
+        "dist",
+        "truck_coun_dist",
+        "truck",
+        "coun",
+        "dist",
+        "truck_st_sen_dis",
+        "truck",
+        "st",
+        "sen",
+        "dis",
+        "truck_thruexwy",
+        "truck",
+        "thruexwy",
+        "truck_borocd",
+        "truck",
+        "borocd"
+    ],
+    "sample": "SOURCE_ID,FEAT_CODE,SUB_CODE,STATUS,SHAPE_Leng,geometry,dist_to_loading,loading_order_number,loading_record_type,loading_order_type,loading_borough,loading_on_street,loading_on_street_suffix,loading_from_street,loading_from_street_suffix,loading_to_street,loading_to_street_suffix,loading_side_of_street,loading_order_completed_on_date,loading_sign_code,loading_sign_description,loading_sign_size,loading_sign_design_voided_on_date,loading_sign_location,loading_distance_from_intersection,loading_arrow_direction,loading_facing_direction,loading_sheeting_type,loading_support,loading_sign_notes,loading_sign_x_coord,loading_sign_y_coord,dist_to_meter,meter_ObjectID,meter_Meter Number,meter_Status,meter_Pay By Cell Number,meter_Meter_Hours,meter_Parking_Facility_Name,meter_Facility,meter_Borough,meter_On_Street,meter_Side_of_Street,meter_From_Street,meter_To_Street,meter_Latitude,meter_Longitude,meter_X,meter_Y,meter_Location,index_right,dist_to_truck,truck_the_geom,truck_objectid_1,truck_street,truck_streetcode,truck_routetype,truck_boroname,truck_restrictio,truck_borocode,truck_truckroute,truck_ltdlocal,truck_nyc_reg,truck_segmentid,truck_shape_leng,truck_localtunl,truck_localbrg,truck_thrutunl,truck_thrubrg,truck_assem_dist,truck_cong_dist,truck_coun_dist,truck_st_sen_dis,truck_thruexwy,truck_borocd\r\n13225008636,2250,225000,Unchanged,18.492293717,\"MULTILINESTRING ((-73.95773159597698 40.77945363668894, -73.95773034062518 40.77945307791712, -73.95772912082998 40.77945249124278,...\",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\r\n13225008474,2250,225000,Unchanged,484.921876407,\"MULTILINESTRING ((-73.92854334414756 40.860295057499805, -73.9285442242432 40.86029392342701, -73.92854513871536 40.8602928073853,...\",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\r\n14225004513,2250,225000,Unchanged,45.4742189879,\"MULTILINESTRING ((-73.9172042585548 40.811191858079674, -73.91721108194176 40.811180243854594, -73.91723858923491 40.81113343771017,...\",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\r\n15225018801,2250,225000,Unchanged,315.314934981,\"MULTILINESTRING ((-73.87851394863957 40.85571457890373, -73.87835204612121 40.85563467427051, -73.87830599556287 40.85561386847126,...\",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3681.0,9.865320939435785,\"MULTILINESTRING ((-73.87841590427584 40.85570285567521, -73.87806236267741 40.855544260758855, -73.87787719724525 40.85547900257721,...\",3680.0,EAST FORDHAM ROAD,229220.0,Local,Bronx,,2.0,Y,,\"NYCDOT Traffic Rules, Section 4-13-(f)(2)\",146555.0,308.306671111,,,,,78.0,15.0,15.0,33.0,,227.0\r\n15225005645,2250,225000,Unchanged,7.83020873884,\"MULTILINESTRING ((-73.86739668203538 40.89821293364418, -73.86739577673559 40.898212244633896, -73.8673951416038 40.89821176124447,...\",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\r\n17225010323,2250,225000,Unchanged,150.369193212,\"MULTILINESTRING ((-74.1142899936604 40.57464882057114, -74.11431328803424 40.574661465982274, -74.11431922569996 40.57466468845653,...\",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\r\n17225008302,2250,225000,Unchanged,70.3353144454,\"MULTILINESTRING ((-74.11258528312253 40.56156334236643, -74.11259929647109 40.56157176025626, -74.11263188319228 40.56159133456193,...\",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\r\n17225011278,2250,225000,Unchanged,67.5698739126,\"MULTILINESTRING ((-74.08730314495465 40.58290843347203, -74.08729330959302 40.58292019278573, -74.08725519462975 40.582965797267,...\",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\r\n17225008489,2250,225000,Updated,63.5463387095,\"MULTILINESTRING ((-74.13521475844745 40.556294353540196, -74.13520666231275 40.55630181042957, -74.13519740068689 40.55631035292482,...\",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\r\n18225007545,2250,225000,Unchanged,69.7894411069,\"MULTILINESTRING ((-73.97740907486731 40.59211312124095, -73.97740158694452 40.59210853520607, -73.97734701019816 40.59207504301509,...\",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\r\n19225003151,2250,225000,Unchanged,59.8381520033,\"MULTILINESTRING ((-73.95018150910597 40.70189590197943, -73.95018184865951 40.701884870854244, -73.95018352166372 40.70183118305193,...\",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\r\n19225013367,2250,225000,Unchanged,270.083072853,\"MULTILINESTRING ((-73.9598182387417 40.71081920837927, -73.95981815601709 40.710819019243104, -73.95981769505225 40.71081808255085,...\",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\r\n19225010271,2250,225000,Unchanged,58.3743050245,\"MULTILINESTRING ((-73.99977211788314 40.6880368070066, -73.99977185762184 40.68803689705745, -73.99977057997535 40.68803737432704,...\",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\r\n4225003012,2250,225000,Unchanged,110.828490948,\"MULTILINESTRING ((-73.80785599583994 40.66776734266351, -73.80785662118755 40.66776784799799, -73.8078572346569 40.66776837132294,...\",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\r\n6225006029,2250,225000,Unchanged,29.1577907974,\"MULTILINESTRING ((-73.78960495494002 40.70710375022331, -73.78960611756304 40.707103942356774, -73.78960730039095 40.707104106611226,...\",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\r\n5225002616,2250,225000,Unchanged,185.526248296,\"MULTILINESTRING ((-73.86204780222299 40.702587909069834, -73.86206505827033 40.70259052412797, -73.86214397146499 40.70260248292592,...\",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\r\n6225003666,2250,225000,Unchanged,632.882982109,\"MULTILINESTRING ((-73.79458004031724 40.684190612522926, -73.79458401125505 40.68419182630361, -73.79458514556701 40.68419225157121,...\",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\r\n8225010229,2250,225000,Unchanged,147.31723743,\"MULTILINESTRING ((-73.72650666809618 40.73703122958439, -73.72650140355756 40.737030032908386, -73.72649594320607 40.73702952826082,...\",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\r\n10225005735,2250,225000,Unchanged,33.2844250017,\"MULTILINESTRING ((-73.93520859602975 40.75041190790309, -73.93518295249723 40.750435433607315, -73.93513827981742 40.75047642471481,...\",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\r\n4225003140,2250,225000,Updated,166.685497599,\"MULTILINESTRING ((-73.84069232045086 40.670249016029274, -73.84069159629793 40.67024569482074, -73.84068654863762 40.670229328140564,...\",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\r\n"
+}
