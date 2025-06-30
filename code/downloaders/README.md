@@ -25,6 +25,11 @@ code/downloaders/
 ├── NYC_vehicle_collisions.py    # Download Vehicle Collisions (Crashes) dataset (CSV)
 ├── nyc_311.py                   # Download NYC 311 Requests dataset (CSV)
 ├── README.md                    # This file
+├── signals_markings_signs/          # Folder for NYC traffic signals, signs, and APS
+    ├── accessible_ped_signals_downloader.py   # Download Accessible Pedestrian Signals
+    ├── traffic_signal_downloader.py           # Download Traffic Signals (311)
+    ├── street_sign_downloader.py              # Download Street Sign Work Orders
+    ├── signals_markings_signs.py              # Runs all signal/sign downloaders
 └── ...                          # Add one script per dataset as needed
 ```
 
@@ -64,6 +69,22 @@ python raised_crosswalks.py -o data/raised_crosswalks.csv
 python NYC_vehicle_collisions.py -o data/NYC_vehicle_collisions.csv
 python nyc_311.py -o data/nyc_311.csv
 ```
+
+**Multiple Datasets Download (Signals, Markings, and Signs)**
+The `signals_markings_signs.py` script allows downloading multiple datasets related to NYC DOT infrastructure — including accessible pedestrian signals, traffic signals, and street sign work orders.
+
+**Basic usage:**
+```bash
+python signals_markings_signs.py
+```
+**Custom output paths:**
+```bash
+python signals_markings_signs.py \
+  --accessible_pedestrian_signals /custom/path/aps.csv \
+  --traffic_signals /custom/path/traffic.csv \
+  --street_sign_work_orders /custom/path/signs.csv
+```
+
 
 **With API token and custom timeout:**
 ```bash
