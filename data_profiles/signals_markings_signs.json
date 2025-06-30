@@ -1,338 +1,175 @@
 {
-  "size": 2034662795,
-  "nb_rows": 7021652,
-  "average_row_size": 289.76981414060396,
-  "nb_profiled_rows": 17256,
-  "nb_columns": 91,
+  "nb_rows": 8174143,
+  "nb_profiled_rows": 8174143,
+  "nb_columns": 17,
   "columns": [
-    {
-      "name": "the_geom",
-      "structural_type": "http://schema.org/GeoCoordinates",
-      "semantic_types": [],
-      "point_format": "long,lat",
-      "unclean_values_ratio": 0.0,
-      "missing_values_ratio": 0.999420491423273
-    },
-    {
-      "name": "BoroCode",
-      "structural_type": "http://schema.org/Integer",
-      "semantic_types": [],
-      "unclean_values_ratio": 0.0,
-      "missing_values_ratio": 0.999420491423273,
-      "num_distinct_values": 4,
-      "mean": 2.6,
-      "stddev": 1.2806248474865698,
-      "coverage": [
-        {
-          "range": {
-            "gte": 1.0,
-            "lte": 1.0
-          }
-        },
-        {
-          "range": {
-            "gte": 2.0,
-            "lte": 2.0
-          }
-        },
-        {
-          "range": {
-            "gte": 3.0,
-            "lte": 4.0
-          }
-        }
-      ]
-    },
-    {
-      "name": "BoroName",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [],
-      "missing_values_ratio": 0.999420491423273,
-      "num_distinct_values": 4
-    },
-    {
-      "name": "BoroCD",
-      "structural_type": "http://schema.org/Integer",
-      "semantic_types": [],
-      "unclean_values_ratio": 0.0,
-      "missing_values_ratio": 0.999420491423273,
-      "num_distinct_values": 9,
-      "mean": 266.7,
-      "stddev": 128.40642507289112,
-      "coverage": [
-        {
-          "range": {
-            "gte": 102.0,
-            "lte": 108.0
-          }
-        },
-        {
-          "range": {
-            "gte": 204.0,
-            "lte": 210.0
-          }
-        },
-        {
-          "range": {
-            "gte": 311.0,
-            "lte": 412.0
-          }
-        }
-      ]
-    },
-    {
-      "name": "CounDist",
-      "structural_type": "http://schema.org/Integer",
-      "semantic_types": [],
-      "unclean_values_ratio": 0.0,
-      "missing_values_ratio": 0.999420491423273,
-      "num_distinct_values": 9,
-      "mean": 20.2,
-      "stddev": 13.317657451669195,
-      "coverage": [
-        {
-          "range": {
-            "gte": 2.0,
-            "lte": 16.0
-          }
-        },
-        {
-          "range": {
-            "gte": 26.0,
-            "lte": 29.0
-          }
-        },
-        {
-          "range": {
-            "gte": 47.0,
-            "lte": 47.0
-          }
-        }
-      ]
-    },
-    {
-      "name": "AssemDist",
-      "structural_type": "http://schema.org/Integer",
-      "semantic_types": [],
-      "unclean_values_ratio": 0.0,
-      "missing_values_ratio": 0.999420491423273,
-      "num_distinct_values": 9,
-      "mean": 54.1,
-      "stddev": 21.323461257497573,
-      "coverage": [
-        {
-          "range": {
-            "gte": 28.0,
-            "lte": 34.0
-          }
-        },
-        {
-          "range": {
-            "gte": 47.0,
-            "lte": 47.0
-          }
-        },
-        {
-          "range": {
-            "gte": 66.0,
-            "lte": 82.0
-          }
-        }
-      ]
-    },
-    {
-      "name": "StSenDist",
-      "structural_type": "http://schema.org/Integer",
-      "semantic_types": [],
-      "unclean_values_ratio": 0.0,
-      "missing_values_ratio": 0.999420491423273,
-      "num_distinct_values": 9,
-      "mean": 22.0,
-      "stddev": 8.579044235810887,
-      "coverage": [
-        {
-          "range": {
-            "gte": 10.0,
-            "lte": 17.0
-          }
-        },
-        {
-          "range": {
-            "gte": 27.0,
-            "lte": 30.0
-          }
-        },
-        {
-          "range": {
-            "gte": 32.0,
-            "lte": 34.0
-          }
-        }
-      ]
-    },
-    {
-      "name": "CongDist",
-      "structural_type": "http://schema.org/Integer",
-      "semantic_types": [],
-      "unclean_values_ratio": 0.0,
-      "missing_values_ratio": 0.999420491423273,
-      "num_distinct_values": 9,
-      "mean": 9.9,
-      "stddev": 3.477067730142742,
-      "coverage": [
-        {
-          "range": {
-            "gte": 5.0,
-            "lte": 7.0
-          }
-        },
-        {
-          "range": {
-            "gte": 10.0,
-            "lte": 12.0
-          }
-        },
-        {
-          "range": {
-            "gte": 13.0,
-            "lte": 15.0
-          }
-        }
-      ]
-    },
-    {
-      "name": "Location",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [
-        "http://schema.org/Text"
-      ],
-      "missing_values_ratio": 0.999420491423273
-    },
-    {
-      "name": "Borough",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [],
-      "missing_values_ratio": 0.999420491423273,
-      "num_distinct_values": 4
-    },
-    {
-      "name": "Date_Insta",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [
-        "http://schema.org/DateTime"
-      ],
-      "missing_values_ratio": 0.999420491423273,
-      "num_distinct_values": 10
-    },
     {
       "name": "POINT_X",
       "structural_type": "http://schema.org/Float",
       "semantic_types": [],
       "unclean_values_ratio": 0.0,
-      "missing_values_ratio": 0.999420491423273,
-      "mean": -73.8992527,
-      "stddev": 0.0780177932539089,
+      "missing_values_ratio": 0.9995910274630625,
+      "mean": -73.9404877662707,
+      "stddev": 0.09589236757537818,
       "coverage": [
         {
           "range": {
-            "gte": -73.998085,
-            "lte": -73.957888
+            "gte": -74.194747,
+            "lte": -74.071765
           }
         },
         {
           "range": {
-            "gte": -73.917533,
-            "lte": -73.848076
+            "gte": -74.007343,
+            "lte": -73.90319
           }
         },
         {
           "range": {
-            "gte": -73.788289,
-            "lte": -73.768555
+            "gte": -73.895317,
+            "lte": -73.749677
           }
         }
-      ]
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 36,
+            "bin_start": -74.241801,
+            "bin_end": -74.1877705
+          },
+          {
+            "count": 145,
+            "bin_start": -74.1877705,
+            "bin_end": -74.13374
+          },
+          {
+            "count": 188,
+            "bin_start": -74.13374,
+            "bin_end": -74.07970949999999
+          },
+          {
+            "count": 75,
+            "bin_start": -74.07970949999999,
+            "bin_end": -74.025679
+          },
+          {
+            "count": 655,
+            "bin_start": -74.025679,
+            "bin_end": -73.9716485
+          },
+          {
+            "count": 850,
+            "bin_start": -73.9716485,
+            "bin_end": -73.917618
+          },
+          {
+            "count": 719,
+            "bin_start": -73.917618,
+            "bin_end": -73.86358750000001
+          },
+          {
+            "count": 437,
+            "bin_start": -73.86358750000001,
+            "bin_end": -73.809557
+          },
+          {
+            "count": 174,
+            "bin_start": -73.809557,
+            "bin_end": -73.7555265
+          },
+          {
+            "count": 64,
+            "bin_start": -73.7555265,
+            "bin_end": -73.701496
+          }
+        ]
+      }
     },
     {
       "name": "POINT_Y",
       "structural_type": "http://schema.org/Float",
       "semantic_types": [],
       "unclean_values_ratio": 0.0,
-      "missing_values_ratio": 0.999420491423273,
-      "mean": 40.7438271,
-      "stddev": 0.0710016294974272,
+      "missing_values_ratio": 0.9995910274630625,
+      "mean": 40.72184796579963,
+      "stddev": 0.08993966914075606,
       "coverage": [
         {
           "range": {
-            "gte": 40.594602,
-            "lte": 40.672871
+            "gte": 40.546957,
+            "lte": 40.660826
           }
         },
         {
           "range": {
-            "gte": 40.721366,
-            "lte": 40.761175
+            "gte": 40.674404,
+            "lte": 40.771055
           }
         },
         {
           "range": {
-            "gte": 40.800375,
-            "lte": 40.850909
+            "gte": 40.787223,
+            "lte": 40.886613
           }
         }
-      ]
-    },
-    {
-      "name": "FEMAFldz",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [],
-      "missing_values_ratio": 0.999420491423273,
-      "num_distinct_values": 2
-    },
-    {
-      "name": "FEMAFldT",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [
-        "http://schema.org/Text"
       ],
-      "missing_values_ratio": 0.9994784422809457
-    },
-    {
-      "name": "HrcEvac",
-      "structural_type": "http://schema.org/Integer",
-      "semantic_types": [],
-      "unclean_values_ratio": 0.0,
-      "missing_values_ratio": 0.9997102457116366,
-      "num_distinct_values": 4,
-      "mean": 2.8,
-      "stddev": 1.469693845669907,
-      "coverage": [
-        {
-          "range": {
-            "gte": 1.0,
-            "lte": 1.0
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 47,
+            "bin_start": 40.504831,
+            "bin_end": 40.545360900000006
+          },
+          {
+            "count": 133,
+            "bin_start": 40.545360900000006,
+            "bin_end": 40.5858908
+          },
+          {
+            "count": 414,
+            "bin_start": 40.5858908,
+            "bin_end": 40.626420700000004
+          },
+          {
+            "count": 385,
+            "bin_start": 40.626420700000004,
+            "bin_end": 40.6669506
+          },
+          {
+            "count": 542,
+            "bin_start": 40.6669506,
+            "bin_end": 40.7074805
+          },
+          {
+            "count": 501,
+            "bin_start": 40.7074805,
+            "bin_end": 40.748010400000005
+          },
+          {
+            "count": 464,
+            "bin_start": 40.748010400000005,
+            "bin_end": 40.7885403
+          },
+          {
+            "count": 317,
+            "bin_start": 40.7885403,
+            "bin_end": 40.829070200000004
+          },
+          {
+            "count": 383,
+            "bin_start": 40.829070200000004,
+            "bin_end": 40.8696001
+          },
+          {
+            "count": 157,
+            "bin_start": 40.8696001,
+            "bin_end": 40.91013
           }
-        },
-        {
-          "range": {
-            "gte": 2.0,
-            "lte": 2.0
-          }
-        },
-        {
-          "range": {
-            "gte": 4.0,
-            "lte": 5.0
-          }
-        }
-      ]
-    },
-    {
-      "name": "NTAname",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [],
-      "missing_values_ratio": 0.999420491423273,
-      "num_distinct_values": 9
+        ]
+      }
     },
     {
       "name": "source",
@@ -340,32 +177,24 @@
       "semantic_types": [
         "http://schema.org/Enumeration"
       ],
-      "num_distinct_values": 3
-    },
-    {
-      "name": "order_number",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [],
-      "missing_values_ratio": 0.0018544274455261937,
-      "num_distinct_values": 16977
-    },
-    {
-      "name": "record_type",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [
-        "http://schema.org/Enumeration"
-      ],
-      "missing_values_ratio": 0.0018544274455261937,
-      "num_distinct_values": 2
-    },
-    {
-      "name": "order_type",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [
-        "http://schema.org/Enumeration"
-      ],
-      "missing_values_ratio": 0.0018544274455261937,
-      "num_distinct_values": 10
+      "num_distinct_values": 3,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "accessible_ped_signal",
+            "count": 3343
+          },
+          {
+            "bin": "street_sign",
+            "count": 7007106
+          },
+          {
+            "bin": "traffic_signals",
+            "count": 1163694
+          }
+        ]
+      }
     },
     {
       "name": "borough",
@@ -373,565 +202,815 @@
       "semantic_types": [
         "http://schema.org/Enumeration"
       ],
-      "missing_values_ratio": 0.0018544274455261937,
-      "num_distinct_values": 5
-    },
-    {
-      "name": "on_street",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [],
-      "missing_values_ratio": 0.0018544274455261937,
-      "num_distinct_values": 3164
-    },
-    {
-      "name": "on_street_suffix",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [
-        "http://schema.org/Enumeration"
-      ],
-      "missing_values_ratio": 0.971256374594344,
-      "num_distinct_values": 24
-    },
-    {
-      "name": "from_street",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [],
-      "missing_values_ratio": 0.0018544274455261937,
-      "num_distinct_values": 3514
-    },
-    {
-      "name": "from_street_suffix",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [],
-      "missing_values_ratio": 0.9891052387575336,
-      "num_distinct_values": 23
-    },
-    {
-      "name": "to_street",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [],
-      "missing_values_ratio": 0.423794622160408,
-      "num_distinct_values": 2570
-    },
-    {
-      "name": "to_street_suffix",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [],
-      "missing_values_ratio": 0.9978558182661104,
-      "num_distinct_values": 17
-    },
-    {
-      "name": "side_of_street",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [
-        "http://schema.org/Enumeration"
-      ],
-      "missing_values_ratio": 0.0018544274455261937,
-      "num_distinct_values": 5
-    },
-    {
-      "name": "order_completed_on_date",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [
-        "http://schema.org/DateTime"
-      ],
-      "missing_values_ratio": 0.0018544274455261937,
-      "num_distinct_values": 7914
-    },
-    {
-      "name": "sign_code",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [],
-      "missing_values_ratio": 0.0018544274455261937,
-      "num_distinct_values": 2564
-    },
-    {
-      "name": "sign_description",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [
-        "http://schema.org/Text"
-      ],
-      "missing_values_ratio": 0.0018544274455261937
-    },
-    {
-      "name": "sign_size",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [
-        "http://schema.org/Enumeration"
-      ],
-      "missing_values_ratio": 0.00782336578581363,
-      "num_distinct_values": 120
-    },
-    {
-      "name": "sign_design_voided_on_date",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [
-        "http://schema.org/Enumeration",
-        "http://schema.org/DateTime"
-      ],
-      "missing_values_ratio": 0.7306444135373203,
-      "num_distinct_values": 45
-    },
-    {
-      "name": "sign_location",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [
-        "http://schema.org/Enumeration"
-      ],
-      "missing_values_ratio": 0.5781177561427909,
-      "num_distinct_values": 59
-    },
-    {
-      "name": "distance_from_intersection",
-      "structural_type": "http://schema.org/Integer",
-      "semantic_types": [],
-      "unclean_values_ratio": 0.0,
-      "missing_values_ratio": 0.0018544274455261937,
-      "num_distinct_values": 1250,
-      "mean": 196.8625174175569,
-      "stddev": 384.3437590018534,
-      "coverage": [
-        {
-          "range": {
-            "gte": 0.0,
-            "lte": 277.0
+      "missing_values_ratio": 0.14277178659585477,
+      "num_distinct_values": 5,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Bronx",
+            "count": 1001283
+          },
+          {
+            "bin": "Brooklyn",
+            "count": 2067148
+          },
+          {
+            "bin": "Manhattan",
+            "count": 1574969
+          },
+          {
+            "bin": "Queens",
+            "count": 1782950
+          },
+          {
+            "bin": "Staten Island",
+            "count": 580756
           }
-        },
-        {
-          "range": {
-            "gte": 368.0,
-            "lte": 1208.0
-          }
-        }
-      ]
-    },
-    {
-      "name": "arrow_direction",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [
-        "http://schema.org/Enumeration"
-      ],
-      "missing_values_ratio": 0.7545781177561428,
-      "num_distinct_values": 6
-    },
-    {
-      "name": "facing_direction",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [
-        "http://schema.org/Enumeration"
-      ],
-      "missing_values_ratio": 0.6980180806675939,
-      "num_distinct_values": 6
-    },
-    {
-      "name": "sheeting_type",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [
-        "http://schema.org/Enumeration"
-      ],
-      "missing_values_ratio": 0.10390588780713955,
-      "num_distinct_values": 5
-    },
-    {
-      "name": "support",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [
-        "http://schema.org/Enumeration"
-      ],
-      "missing_values_ratio": 0.002086230876216968,
-      "num_distinct_values": 48
-    },
-    {
-      "name": "sign_notes",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [],
-      "missing_values_ratio": 0.7144181733889662,
-      "num_distinct_values": 4207
+        ]
+      }
     },
     {
       "name": "sign_x_coord",
       "structural_type": "http://schema.org/Integer",
       "semantic_types": [],
       "unclean_values_ratio": 0.0,
-      "missing_values_ratio": 0.0018544274455261937,
-      "num_distinct_values": 14269,
-      "mean": 1002613.1434045518,
-      "stddev": 25455.98665166079,
+      "missing_values_ratio": 0.14277178659585477,
+      "num_distinct_values": 122831,
+      "mean": 1002433.457077287,
+      "stddev": 25444.631470015538,
       "coverage": [
         {
           "range": {
-            "gte": 981138.0,
-            "lte": 1010459.0
+            "gte": 981442.0,
+            "lte": 1010791.0
           }
         },
         {
           "range": {
-            "gte": 1013611.0,
-            "lte": 1055935.0
+            "gte": 1013958.0,
+            "lte": 1055453.0
           }
         }
-      ]
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 57667,
+            "bin_start": 913281.0,
+            "bin_end": 928684.2
+          },
+          {
+            "count": 167046,
+            "bin_start": 928684.2,
+            "bin_end": 944087.4
+          },
+          {
+            "count": 237842,
+            "bin_start": 944087.4,
+            "bin_end": 959490.6
+          },
+          {
+            "count": 140326,
+            "bin_start": 959490.6,
+            "bin_end": 974893.8
+          },
+          {
+            "count": 1490939,
+            "bin_start": 974893.8,
+            "bin_end": 990297.0
+          },
+          {
+            "count": 1886365,
+            "bin_start": 990297.0,
+            "bin_end": 1005700.2
+          },
+          {
+            "count": 1467339,
+            "bin_start": 1005700.2,
+            "bin_end": 1021103.4
+          },
+          {
+            "count": 929775,
+            "bin_start": 1021103.4,
+            "bin_end": 1036506.6
+          },
+          {
+            "count": 441738,
+            "bin_start": 1036506.6,
+            "bin_end": 1051909.8
+          },
+          {
+            "count": 188069,
+            "bin_start": 1051909.8,
+            "bin_end": 1067313.0
+          }
+        ]
+      }
     },
     {
       "name": "sign_y_coord",
       "structural_type": "http://schema.org/Integer",
       "semantic_types": [],
       "unclean_values_ratio": 0.0,
-      "missing_values_ratio": 0.0018544274455261937,
-      "num_distinct_values": 14820,
-      "mean": 200925.25876683698,
-      "stddev": 30739.519568087075,
+      "missing_values_ratio": 0.14277178659585477,
+      "num_distinct_values": 134899,
+      "mean": 200926.17901798544,
+      "stddev": 30705.97402106247,
       "coverage": [
         {
           "range": {
-            "gte": 139017.0,
-            "lte": 182585.0
+            "gte": 138927.0,
+            "lte": 183051.0
           }
         },
         {
           "range": {
-            "gte": 186220.0,
-            "lte": 220158.0
+            "gte": 186763.0,
+            "lte": 220795.0
           }
         },
         {
           "range": {
-            "gte": 226403.0,
-            "lte": 262430.0
+            "gte": 226727.0,
+            "lte": 262513.0
           }
         }
-      ]
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 71852,
+            "bin_start": 120752.0,
+            "bin_end": 135852.8
+          },
+          {
+            "count": 255492,
+            "bin_start": 135852.8,
+            "bin_end": 150953.6
+          },
+          {
+            "count": 720366,
+            "bin_start": 150953.6,
+            "bin_end": 166054.4
+          },
+          {
+            "count": 840615,
+            "bin_start": 166054.4,
+            "bin_end": 181155.2
+          },
+          {
+            "count": 1136750,
+            "bin_start": 181155.2,
+            "bin_end": 196256.0
+          },
+          {
+            "count": 1426816,
+            "bin_start": 196256.0,
+            "bin_end": 211356.8
+          },
+          {
+            "count": 1144012,
+            "bin_start": 211356.8,
+            "bin_end": 226457.59999999998
+          },
+          {
+            "count": 527060,
+            "bin_start": 226457.59999999998,
+            "bin_end": 241558.4
+          },
+          {
+            "count": 640027,
+            "bin_start": 241558.4,
+            "bin_end": 256659.19999999998
+          },
+          {
+            "count": 244116,
+            "bin_start": 256659.19999999998,
+            "bin_end": 271760.0
+          }
+        ]
+      }
     },
     {
-      "name": "X",
-      "structural_type": "http://schema.org/Float",
+      "name": "Unique Key",
+      "structural_type": "http://schema.org/Integer",
       "semantic_types": [],
       "unclean_values_ratio": 0.0,
-      "missing_values_ratio": 0.9987250811312007,
-      "mean": -8226693.0408593295,
-      "stddev": 6916.703258089649,
+      "missing_values_ratio": 0.8576371859410827,
+      "num_distinct_values": 1163694,
+      "mean": 38105747.0847087,
+      "stddev": 14352833.053507967,
       "coverage": [
         {
           "range": {
-            "gte": -8236745.27284958,
-            "lte": -8232042.13568306
+            "gte": 16279323.0,
+            "lte": 30145034.0
           }
         },
         {
           "range": {
-            "gte": -8229438.32826561,
-            "lte": -8221965.66235569
+            "gte": 31433119.0,
+            "lte": 46181495.0
           }
         },
         {
           "range": {
-            "gte": -8219562.24115362,
-            "lte": -8213783.16771273
+            "gte": 48513841.0,
+            "lte": 64475145.0
           }
         }
-      ]
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 131047,
+            "bin_start": 15631032.0,
+            "bin_end": 20604629.5
+          },
+          {
+            "count": 152233,
+            "bin_start": 20604629.5,
+            "bin_end": 25578227.0
+          },
+          {
+            "count": 156497,
+            "bin_start": 25578227.0,
+            "bin_end": 30551824.5
+          },
+          {
+            "count": 140467,
+            "bin_start": 30551824.5,
+            "bin_end": 35525422.0
+          },
+          {
+            "count": 118187,
+            "bin_start": 35525422.0,
+            "bin_end": 40499019.5
+          },
+          {
+            "count": 84184,
+            "bin_start": 40499019.5,
+            "bin_end": 45472617.0
+          },
+          {
+            "count": 72062,
+            "bin_start": 45472617.0,
+            "bin_end": 50446214.5
+          },
+          {
+            "count": 107768,
+            "bin_start": 50446214.5,
+            "bin_end": 55419812.0
+          },
+          {
+            "count": 106601,
+            "bin_start": 55419812.0,
+            "bin_end": 60393409.5
+          },
+          {
+            "count": 94648,
+            "bin_start": 60393409.5,
+            "bin_end": 65367007.0
+          }
+        ]
+      }
     },
     {
-      "name": "Y",
-      "structural_type": "http://schema.org/Float",
-      "semantic_types": [],
-      "unclean_values_ratio": 0.0,
-      "missing_values_ratio": 0.9987250811312007,
-      "mean": 4968455.107036669,
-      "stddev": 7653.54044212944,
-      "coverage": [
-        {
-          "range": {
-            "gte": 4953042.22457378,
-            "lte": 4961955.55165921
-          }
-        },
-        {
-          "range": {
-            "gte": 4966934.41177261,
-            "lte": 4970809.66041161
-          }
-        },
-        {
-          "range": {
-            "gte": 4975762.34857951,
-            "lte": 4982330.7459673
-          }
-        }
-      ]
-    },
-    {
-      "name": "F_id",
+      "name": "Created Date",
       "structural_type": "http://schema.org/Text",
-      "semantic_types": [],
-      "missing_values_ratio": 0.9987250811312007,
-      "num_distinct_values": 22
+      "semantic_types": [
+        "http://schema.org/DateTime"
+      ],
+      "missing_values_ratio": 0.8576371859410827,
+      "num_distinct_values": 886466,
+      "plot": {
+        "type": "histogram_temporal",
+        "data": [
+          {
+            "count": 138775,
+            "date_start": "2010-01-01T00:38:24",
+            "date_end": "2011-07-20T10:14:24"
+          },
+          {
+            "count": 121923,
+            "date_start": "2011-07-20T10:14:24",
+            "date_end": "2013-02-04T19:52:32"
+          },
+          {
+            "count": 120430,
+            "date_start": "2013-02-04T19:52:32",
+            "date_end": "2014-08-24T05:28:32"
+          },
+          {
+            "count": 128882,
+            "date_start": "2014-08-24T05:28:32",
+            "date_end": "2016-03-11T15:06:40"
+          },
+          {
+            "count": 113003,
+            "date_start": "2016-03-11T15:06:40",
+            "date_end": "2017-09-28T00:42:40"
+          },
+          {
+            "count": 110936,
+            "date_start": "2017-09-28T00:42:40",
+            "date_end": "2019-04-16T10:18:40"
+          },
+          {
+            "count": 92395,
+            "date_start": "2019-04-16T10:18:40",
+            "date_end": "2020-11-01T19:56:48"
+          },
+          {
+            "count": 105701,
+            "date_start": "2020-11-01T19:56:48",
+            "date_end": "2022-05-21T05:32:48"
+          },
+          {
+            "count": 120951,
+            "date_start": "2022-05-21T05:32:48",
+            "date_end": "2023-12-07T15:10:56"
+          },
+          {
+            "count": 110698,
+            "date_start": "2023-12-07T15:10:56",
+            "date_end": "2025-06-25T00:46:56"
+          }
+        ]
+      }
     },
     {
-      "name": "highway",
+      "name": "Closed Date",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/DateTime"
+      ],
+      "missing_values_ratio": 0.8583572614278953,
+      "num_distinct_values": 760750,
+      "plot": {
+        "type": "histogram_temporal",
+        "data": [
+          {
+            "count": 135737,
+            "date_start": "2009-12-18T11:56:48",
+            "date_end": "2011-07-10T04:37:20"
+          },
+          {
+            "count": 121016,
+            "date_start": "2011-07-10T04:37:20",
+            "date_end": "2013-01-28T21:17:52"
+          },
+          {
+            "count": 121489,
+            "date_start": "2013-01-28T21:17:52",
+            "date_end": "2014-08-20T13:58:24"
+          },
+          {
+            "count": 128536,
+            "date_start": "2014-08-20T13:58:24",
+            "date_end": "2016-03-11T06:38:56"
+          },
+          {
+            "count": 113344,
+            "date_start": "2016-03-11T06:38:56",
+            "date_end": "2017-09-30T23:21:36"
+          },
+          {
+            "count": 110675,
+            "date_start": "2017-09-30T23:21:36",
+            "date_end": "2019-04-22T16:02:08"
+          },
+          {
+            "count": 92096,
+            "date_start": "2019-04-22T16:02:08",
+            "date_end": "2020-11-11T08:42:40"
+          },
+          {
+            "count": 105503,
+            "date_start": "2020-11-11T08:42:40",
+            "date_end": "2022-06-03T01:23:12"
+          },
+          {
+            "count": 122278,
+            "date_start": "2022-06-03T01:23:12",
+            "date_end": "2023-12-23T18:03:44"
+          },
+          {
+            "count": 107134,
+            "date_start": "2023-12-23T18:03:44",
+            "date_end": "2025-07-14T10:44:16"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Status",
       "structural_type": "http://schema.org/Text",
       "semantic_types": [
         "http://schema.org/Enumeration"
       ],
-      "missing_values_ratio": 0.9987250811312007,
-      "num_distinct_values": 1
+      "missing_values_ratio": 0.8576371859410827,
+      "num_distinct_values": 4,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Assigned",
+            "count": 7696
+          },
+          {
+            "bin": "Closed",
+            "count": 1016966
+          },
+          {
+            "bin": "Open",
+            "count": 773
+          },
+          {
+            "bin": "Pending",
+            "count": 138259
+          }
+        ]
+      }
     },
     {
-      "name": "direction",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "traffic_signals_direction",
+      "name": "Complaint Type",
       "structural_type": "http://schema.org/Text",
-      "semantic_types": [],
-      "missing_values_ratio": 0.9999420491423273,
-      "num_distinct_values": 1
-    },
-    {
-      "name": "traffic_signals",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [],
-      "missing_values_ratio": 0.9994784422809457,
-      "num_distinct_values": 1
-    },
-    {
-      "name": "crossing",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "kerb",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "button_operated",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "traffic_signals_sound",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "traffic_signals_vibration",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "tactile_paving",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "day_off",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "day_on",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "hour_off",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "hour_on",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "bicycle",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "name",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "name_es",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "note",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "photo",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "side",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "asset_ref",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "route_ref",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "stop",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "crossing_island",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "mapillary",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "survey_date",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "restriction_conditional",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "junction",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "turn_lanes_backward",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "description",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "noref",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "name_etymology_wikidata",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "name_etymology_wikipedia",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "crossing_markings",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "traffic_signals_countdown",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "ref",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "addr_housenumber",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "addr_postcode",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "addr_street",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "layer",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "tunnel",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "road_marking",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "historic",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "turn_lanes_forward",
-      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
-      "semantic_types": []
-    },
-    {
-      "name": "ObjectId",
-      "structural_type": "http://schema.org/Integer",
       "semantic_types": [
-        "http://schema.org/identifier"
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.8576371859410827,
+      "num_distinct_values": 2,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Street Light Condition",
+            "count": 731319
+          },
+          {
+            "bin": "Traffic Signal Condition",
+            "count": 432375
+          }
+        ]
+      }
+    },
+    {
+      "name": "Descriptor",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.8576385316479048,
+      "num_distinct_values": 146,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Controller",
+            "count": 214476
+          },
+          {
+            "bin": "LED Lense",
+            "count": 22821
+          },
+          {
+            "bin": "Pedestrian Signal",
+            "count": 39459
+          },
+          {
+            "bin": "Street Light Cycling",
+            "count": 25910
+          },
+          {
+            "bin": "Street Light Out",
+            "count": 556317
+          }
+        ]
+      }
+    },
+    {
+      "name": "Latitude",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [
+        "http://schema.org/latitude"
       ],
       "unclean_values_ratio": 0.0,
-      "missing_values_ratio": 0.9987250811312007,
-      "num_distinct_values": 22,
-      "mean": 6474.590909090909,
-      "stddev": 2776.677030668966,
+      "missing_values_ratio": 0.8576371859410827,
+      "mean": 40.70780020728366,
+      "stddev": 0.08293579669306353,
       "coverage": [
         {
           "range": {
-            "gte": 522.0,
-            "lte": 4375.0
+            "gte": 40.54471730203221,
+            "lte": 40.6609902999968
           }
         },
         {
           "range": {
-            "gte": 5418.0,
-            "lte": 8128.0
+            "gte": 40.66959245666404,
+            "lte": 40.76572807934631
           }
         },
         {
           "range": {
-            "gte": 8554.0,
-            "lte": 9911.0
+            "gte": 40.78189165554553,
+            "lte": 40.88744624701871
           }
         }
-      ]
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 14152,
+            "bin_start": 40.498948846168354,
+            "bin_end": 40.540340841083186
+          },
+          {
+            "count": 46052,
+            "bin_start": 40.540340841083186,
+            "bin_end": 40.58173283599801
+          },
+          {
+            "count": 125584,
+            "bin_start": 40.58173283599801,
+            "bin_end": 40.62312483091284
+          },
+          {
+            "count": 165327,
+            "bin_start": 40.62312483091284,
+            "bin_end": 40.664516825827675
+          },
+          {
+            "count": 262427,
+            "bin_start": 40.664516825827675,
+            "bin_end": 40.70590882074251
+          },
+          {
+            "count": 209350,
+            "bin_start": 40.70590882074251,
+            "bin_end": 40.74730081565733
+          },
+          {
+            "count": 141170,
+            "bin_start": 40.74730081565733,
+            "bin_end": 40.788692810572165
+          },
+          {
+            "count": 70054,
+            "bin_start": 40.788692810572165,
+            "bin_end": 40.830084805487
+          },
+          {
+            "count": 97160,
+            "bin_start": 40.830084805487,
+            "bin_end": 40.87147680040182
+          },
+          {
+            "count": 32418,
+            "bin_start": 40.87147680040182,
+            "bin_end": 40.912868795316655
+          }
+        ]
+      }
+    },
+    {
+      "name": "Longitude",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [
+        "http://schema.org/longitude"
+      ],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.8576371859410827,
+      "mean": -73.91921956782932,
+      "stddev": 0.10216350444954829,
+      "coverage": [
+        {
+          "range": {
+            "gte": -74.01168660370406,
+            "lte": -73.89155793445885
+          }
+        },
+        {
+          "range": {
+            "gte": -73.87919217451145,
+            "lte": -73.73607571995817
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 10276,
+            "bin_start": -74.25495171973925,
+            "bin_end": -74.1995162324685
+          },
+          {
+            "count": 37126,
+            "bin_start": -74.1995162324685,
+            "bin_end": -74.14408074519775
+          },
+          {
+            "count": 43413,
+            "bin_start": -74.14408074519775,
+            "bin_end": -74.088645257927
+          },
+          {
+            "count": 20542,
+            "bin_start": -74.088645257927,
+            "bin_end": -74.03320977065624
+          },
+          {
+            "count": 190690,
+            "bin_start": -74.03320977065624,
+            "bin_end": -73.97777428338549
+          },
+          {
+            "count": 242144,
+            "bin_start": -73.97777428338549,
+            "bin_end": -73.92233879611474
+          },
+          {
+            "count": 250236,
+            "bin_start": -73.92233879611474,
+            "bin_end": -73.86690330884399
+          },
+          {
+            "count": 206673,
+            "bin_start": -73.86690330884399,
+            "bin_end": -73.81146782157323
+          },
+          {
+            "count": 107815,
+            "bin_start": -73.81146782157323,
+            "bin_end": -73.75603233430249
+          },
+          {
+            "count": 54779,
+            "bin_start": -73.75603233430249,
+            "bin_end": -73.70059684703173
+          }
+        ]
+      }
+    },
+    {
+      "name": "Street Name",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.9773797693531909,
+      "num_distinct_values": 10107,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "5 AVENUE",
+            "count": 586
+          },
+          {
+            "bin": "BROADWAY",
+            "count": 1305
+          },
+          {
+            "bin": "CENTRAL PARK",
+            "count": 1432
+          },
+          {
+            "bin": "FLUSHING MEADOWS PARK",
+            "count": 615
+          },
+          {
+            "bin": "QUEENS BOULEVARD",
+            "count": 621
+          }
+        ]
+      }
+    },
+    {
+      "name": "Incident Zip",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.8576814719292285,
+      "num_distinct_values": 209,
+      "mean": 10978.945572716988,
+      "stddev": 483.86645132461604,
+      "coverage": [
+        {
+          "range": {
+            "gte": 10302.0,
+            "lte": 10473.0
+          }
+        },
+        {
+          "range": {
+            "gte": 11105.0,
+            "lte": 11434.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 93964,
+            "bin_start": 10000.0,
+            "bin_end": 10169.7
+          },
+          {
+            "count": 109143,
+            "bin_start": 10169.7,
+            "bin_end": 10339.4
+          },
+          {
+            "count": 171216,
+            "bin_start": 10339.4,
+            "bin_end": 10509.1
+          },
+          {
+            "count": 0,
+            "bin_start": 10509.1,
+            "bin_end": 10678.8
+          },
+          {
+            "count": 29,
+            "bin_start": 10678.8,
+            "bin_end": 10848.5
+          },
+          {
+            "count": 4773,
+            "bin_start": 10848.5,
+            "bin_end": 11018.2
+          },
+          {
+            "count": 44643,
+            "bin_start": 11018.2,
+            "bin_end": 11187.9
+          },
+          {
+            "count": 415232,
+            "bin_start": 11187.9,
+            "bin_end": 11357.6
+          },
+          {
+            "count": 300033,
+            "bin_start": 11357.6,
+            "bin_end": 11527.3
+          },
+          {
+            "count": 24299,
+            "bin_start": 11527.3,
+            "bin_end": 11697.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Borough",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.8576371859410827,
+      "num_distinct_values": 6,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "BRONX",
+            "count": 172056
+          },
+          {
+            "bin": "BROOKLYN",
+            "count": 385772
+          },
+          {
+            "bin": "MANHATTAN",
+            "count": 94833
+          },
+          {
+            "bin": "QUEENS",
+            "count": 402298
+          },
+          {
+            "bin": "STATEN ISLAND",
+            "count": 108031
+          }
+        ]
+      }
     }
   ],
-  "nb_spatial_columns": 1,
-  "nb_temporal_columns": 3,
-  "nb_categorical_columns": 13,
-  "nb_numerical_columns": 15,
+  "nb_spatial_columns": 2,
+  "nb_temporal_columns": 2,
+  "nb_categorical_columns": 7,
+  "nb_numerical_columns": 6,
   "types": [
     "categorical",
     "numerical",
@@ -940,53 +1019,187 @@
   ],
   "spatial_coverage": [
     {
-      "type": "point",
+      "type": "latlong",
       "column_names": [
-        "the_geom"
+        "Latitude",
+        "Longitude"
       ],
       "column_indexes": [
-        0
+        12,
+        13
       ],
       "geohashes4": [
         {
-          "hash": "1211302313323211",
-          "number": 1
+          "hash": "121130320223",
+          "number": 78032
         },
         {
-          "hash": "1211302313323210",
-          "number": 1
+          "hash": "121130320222",
+          "number": 31927
         },
         {
-          "hash": "1211302313301103",
-          "number": 1
+          "hash": "121130320220",
+          "number": 22391
         },
         {
-          "hash": "1211302313330112",
-          "number": 1
+          "hash": "121130320221",
+          "number": 17130
         },
         {
-          "hash": "1211302313313000",
-          "number": 1
+          "hash": "121130320232",
+          "number": 34007
         },
         {
-          "hash": "1211302312311102",
-          "number": 1
+          "hash": "121130320230",
+          "number": 1168
         },
         {
-          "hash": "1211302331013020",
-          "number": 1
+          "hash": "121130322001",
+          "number": 11538
         },
         {
-          "hash": "1211303220011223",
-          "number": 1
+          "hash": "121130322000",
+          "number": 11074
         },
         {
-          "hash": "1211303202212222",
-          "number": 1
+          "hash": "121130322010",
+          "number": 2862
         },
         {
-          "hash": "1211303202202110",
-          "number": 1
+          "hash": "121130231330",
+          "number": 81222
+        },
+        {
+          "hash": "121130231331",
+          "number": 55397
+        },
+        {
+          "hash": "121130231332",
+          "number": 67581
+        },
+        {
+          "hash": "121130231333",
+          "number": 68730
+        },
+        {
+          "hash": "121130231320",
+          "number": 76429
+        },
+        {
+          "hash": "121130231321",
+          "number": 116851
+        },
+        {
+          "hash": "121130231323",
+          "number": 75236
+        },
+        {
+          "hash": "121130231322",
+          "number": 7493
+        },
+        {
+          "hash": "121130231303",
+          "number": 9214
+        },
+        {
+          "hash": "121130231300",
+          "number": 30074
+        },
+        {
+          "hash": "121130231302",
+          "number": 47257
+        },
+        {
+          "hash": "121130231312",
+          "number": 18113
+        },
+        {
+          "hash": "121130231313",
+          "number": 1237
+        },
+        {
+          "hash": "121130231231",
+          "number": 34276
+        },
+        {
+          "hash": "121130231233",
+          "number": 7092
+        },
+        {
+          "hash": "121130231232",
+          "number": 97
+        },
+        {
+          "hash": "121130231230",
+          "number": 82
+        },
+        {
+          "hash": "121130231211",
+          "number": 23063
+        },
+        {
+          "hash": "121130231213",
+          "number": 9521
+        },
+        {
+          "hash": "121130231210",
+          "number": 15954
+        },
+        {
+          "hash": "121130231032",
+          "number": 13490
+        },
+        {
+          "hash": "121130231033",
+          "number": 1364
+        },
+        {
+          "hash": "121130231023",
+          "number": 3028
+        },
+        {
+          "hash": "121130231122",
+          "number": 731
+        },
+        {
+          "hash": "121130233101",
+          "number": 41138
+        },
+        {
+          "hash": "121130233103",
+          "number": 7575
+        },
+        {
+          "hash": "121130233100",
+          "number": 1914
+        },
+        {
+          "hash": "121130233102",
+          "number": 28
+        },
+        {
+          "hash": "121130233111",
+          "number": 43323
+        },
+        {
+          "hash": "121130233110",
+          "number": 59314
+        },
+        {
+          "hash": "121130233113",
+          "number": 10468
+        },
+        {
+          "hash": "121130233112",
+          "number": 9818
+        },
+        {
+          "hash": "121130233011",
+          "number": 16337
+        },
+        {
+          "hash": "121130233013",
+          "number": 118
         }
       ],
       "ranges": [
@@ -995,12 +1208,12 @@
             "type": "envelope",
             "coordinates": [
               [
-                -73.99808355304516,
-                40.827242718096684
+                -74.01372647564271,
+                40.75199174275803
               ],
               [
-                -73.9103985790995,
-                40.73030173990866
+                -73.88021270256924,
+                40.58882765466428
               ]
             ]
           }
@@ -1010,43 +1223,28 @@
             "type": "envelope",
             "coordinates": [
               [
-                -73.99558556219648,
-                40.5946937667643
+                -73.92726511259215,
+                40.87519638673798
               ],
               [
-                -73.99538556219647,
-                40.594493766764295
-              ]
-            ]
-          }
-        },
-        {
-          "range": {
-            "type": "envelope",
-            "coordinates": [
-              [
-                -73.8498776004042,
-                40.850900709240996
-              ],
-              [
-                -73.76855363006554,
-                40.67286274338786
+                -73.73981068182918,
+                40.667522405001336
               ]
             ]
           }
         }
       ],
-      "number": 10
+      "number": 1163694
     }
   ],
   "temporal_coverage": [
     {
       "type": "datetime",
       "column_names": [
-        "Date_Insta"
+        "Created Date"
       ],
       "column_indexes": [
-        10
+        7
       ],
       "column_types": [
         "http://schema.org/DateTime"
@@ -1054,32 +1252,32 @@
       "ranges": [
         {
           "range": {
-            "gte": 1439078400.0,
-            "lte": 1491523200.0
+            "gte": 1268578176.0,
+            "lte": 1405004416.0
           }
         },
         {
           "range": {
-            "gte": 1567296000.0,
-            "lte": 1615852800.0
+            "gte": 1421057152.0,
+            "lte": 1569486080.0
           }
         },
         {
           "range": {
-            "gte": 1653004800.0,
-            "lte": 1716163200.0
+            "gte": 1590578304.0,
+            "lte": 1742305408.0
           }
         }
       ],
-      "temporal_resolution": "quarter"
+      "temporal_resolution": "minute"
     },
     {
       "type": "datetime",
       "column_names": [
-        "order_completed_on_date"
+        "Closed Date"
       ],
       "column_indexes": [
-        29
+        8
       ],
       "column_types": [
         "http://schema.org/DateTime"
@@ -1087,174 +1285,35 @@
       "ranges": [
         {
           "range": {
-            "gte": -201139200.0,
-            "lte": 674956800.0
+            "gte": 1268758656.0,
+            "lte": 1405334016.0
           }
         },
         {
           "range": {
-            "gte": 755308800.0,
-            "lte": 1303171200.0
+            "gte": 1421096448.0,
+            "lte": 1569406080.0
           }
         },
         {
           "range": {
-            "gte": 1370476800.0,
-            "lte": 1736208000.0
+            "gte": 1590164992.0,
+            "lte": 1742549760.0
           }
         }
       ],
-      "temporal_resolution": "day"
-    },
-    {
-      "type": "datetime",
-      "column_names": [
-        "sign_design_voided_on_date"
-      ],
-      "column_indexes": [
-        33
-      ],
-      "column_types": [
-        "http://schema.org/DateTime"
-      ],
-      "ranges": [
-        {
-          "range": {
-            "gte": 1496361600.0,
-            "lte": 1496361600.0
-          }
-        },
-        {
-          "range": {
-            "gte": 1558483200.0,
-            "lte": 1558483200.0
-          }
-        }
-      ],
-      "temporal_resolution": "day"
+      "temporal_resolution": "minute"
     }
   ],
   "attribute_keywords": [
-    "the_geom",
-    "the",
-    "geom",
-    "BoroCode",
-    "Boro",
-    "Code",
-    "BoroName",
-    "Boro",
-    "Name",
-    "BoroCD",
-    "Boro",
-    "CD",
-    "CounDist",
-    "Coun",
-    "Dist",
-    "AssemDist",
-    "Assem",
-    "Dist",
-    "StSenDist",
-    "St",
-    "Sen",
-    "Dist",
-    "CongDist",
-    "Cong",
-    "Dist",
-    "Location",
-    "Borough",
-    "Date_Insta",
-    "Date",
-    "Insta",
     "POINT_X",
     "POINT",
     "X",
     "POINT_Y",
     "POINT",
     "Y",
-    "FEMAFldz",
-    "FEMAFldT",
-    "FEMAFld",
-    "T",
-    "HrcEvac",
-    "Hrc",
-    "Evac",
-    "NTAname",
     "source",
-    "order_number",
-    "order",
-    "number",
-    "record_type",
-    "record",
-    "type",
-    "order_type",
-    "order",
-    "type",
     "borough",
-    "on_street",
-    "on",
-    "street",
-    "on_street_suffix",
-    "on",
-    "street",
-    "suffix",
-    "from_street",
-    "from",
-    "street",
-    "from_street_suffix",
-    "from",
-    "street",
-    "suffix",
-    "to_street",
-    "to",
-    "street",
-    "to_street_suffix",
-    "to",
-    "street",
-    "suffix",
-    "side_of_street",
-    "side",
-    "of",
-    "street",
-    "order_completed_on_date",
-    "order",
-    "completed",
-    "on",
-    "date",
-    "sign_code",
-    "sign",
-    "code",
-    "sign_description",
-    "sign",
-    "description",
-    "sign_size",
-    "sign",
-    "size",
-    "sign_design_voided_on_date",
-    "sign",
-    "design",
-    "voided",
-    "on",
-    "date",
-    "sign_location",
-    "sign",
-    "location",
-    "distance_from_intersection",
-    "distance",
-    "from",
-    "intersection",
-    "arrow_direction",
-    "arrow",
-    "direction",
-    "facing_direction",
-    "facing",
-    "direction",
-    "sheeting_type",
-    "sheeting",
-    "type",
-    "support",
-    "sign_notes",
-    "sign",
-    "notes",
     "sign_x_coord",
     "sign",
     "x",
@@ -1263,117 +1322,29 @@
     "sign",
     "y",
     "coord",
-    "X",
-    "Y",
-    "F_id",
-    "F",
-    "id",
-    "highway",
-    "direction",
-    "traffic_signals_direction",
-    "traffic",
-    "signals",
-    "direction",
-    "traffic_signals",
-    "traffic",
-    "signals",
-    "crossing",
-    "kerb",
-    "button_operated",
-    "button",
-    "operated",
-    "traffic_signals_sound",
-    "traffic",
-    "signals",
-    "sound",
-    "traffic_signals_vibration",
-    "traffic",
-    "signals",
-    "vibration",
-    "tactile_paving",
-    "tactile",
-    "paving",
-    "day_off",
-    "day",
-    "off",
-    "day_on",
-    "day",
-    "on",
-    "hour_off",
-    "hour",
-    "off",
-    "hour_on",
-    "hour",
-    "on",
-    "bicycle",
-    "name",
-    "name_es",
-    "name",
-    "es",
-    "note",
-    "photo",
-    "side",
-    "asset_ref",
-    "asset",
-    "ref",
-    "route_ref",
-    "route",
-    "ref",
-    "stop",
-    "crossing_island",
-    "crossing",
-    "island",
-    "mapillary",
-    "survey_date",
-    "survey",
-    "date",
-    "restriction_conditional",
-    "restriction",
-    "conditional",
-    "junction",
-    "turn_lanes_backward",
-    "turn",
-    "lanes",
-    "backward",
-    "description",
-    "noref",
-    "name_etymology_wikidata",
-    "name",
-    "etymology",
-    "wikidata",
-    "name_etymology_wikipedia",
-    "name",
-    "etymology",
-    "wikipedia",
-    "crossing_markings",
-    "crossing",
-    "markings",
-    "traffic_signals_countdown",
-    "traffic",
-    "signals",
-    "countdown",
-    "ref",
-    "addr_housenumber",
-    "addr",
-    "housenumber",
-    "addr_postcode",
-    "addr",
-    "postcode",
-    "addr_street",
-    "addr",
-    "street",
-    "layer",
-    "tunnel",
-    "road_marking",
-    "road",
-    "marking",
-    "historic",
-    "turn_lanes_forward",
-    "turn",
-    "lanes",
-    "forward",
-    "ObjectId",
-    "Object",
-    "Id"
-  ]
+    "Unique Key",
+    "Unique",
+    "Key",
+    "Created Date",
+    "Created",
+    "Date",
+    "Closed Date",
+    "Closed",
+    "Date",
+    "Status",
+    "Complaint Type",
+    "Complaint",
+    "Type",
+    "Descriptor",
+    "Latitude",
+    "Longitude",
+    "Street Name",
+    "Street",
+    "Name",
+    "Incident Zip",
+    "Incident",
+    "Zip",
+    "Borough"
+  ],
+  "sample": "POINT_X,POINT_Y,source,borough,sign_x_coord,sign_y_coord,Unique Key,Created Date,Closed Date,Status,Complaint Type,Descriptor,Latitude,Longitude,Street Name,Incident Zip,Borough\r\n,,street_sign,Bronx,1003889.0,242146.0,,,,,,,,,,,\r\n,,street_sign,Queens,1035067.0,214869.0,,,,,,,,,,,\r\n,,street_sign,Manhattan,1001242.0,226404.0,,,,,,,,,,,\r\n,,street_sign,Bronx,1025370.0,249100.0,,,,,,,,,,,\r\n,,street_sign,Staten Island,961116.0,169640.0,,,,,,,,,,,\r\n,,street_sign,Manhattan,995267.0,223009.0,,,,,,,,,,,\r\n,,street_sign,Brooklyn,1003325.0,196155.0,,,,,,,,,,,\r\n,,street_sign,Brooklyn,994162.0,200618.0,,,,,,,,,,,\r\n,,street_sign,Brooklyn,986220.0,158850.0,,,,,,,,,,,\r\n,,street_sign,Brooklyn,994001.0,166080.0,,,,,,,,,,,\r\n,,street_sign,Manhattan,986693.0,220106.0,,,,,,,,,,,\r\n,,street_sign,Brooklyn,992637.0,160439.0,,,,,,,,,,,\r\n,,street_sign,Manhattan,982256.0,200949.0,,,,,,,,,,,\r\n,,street_sign,Queens,1012757.0,196651.0,,,,,,,,,,,\r\n,,street_sign,Queens,1049265.0,157483.0,,,,,,,,,,,\r\n,,street_sign,Queens,1028022.0,217529.0,,,,,,,,,,,\r\n,,street_sign,Brooklyn,995751.0,193077.0,,,,,,,,,,,\r\n,,traffic_signals,,,,60580815.0,03/14/2024 06:41:00 PM,03/15/2024 12:20:00 AM,Closed,Traffic Signal Condition,Ped Multiple Lamps,40.61578101918616,-73.99994236956995,,11204.0,BROOKLYN\r\n,,traffic_signals,,,,26094456.0,08/08/2013 09:37:00 AM,10/10/2013 11:42:00 AM,Closed,Street Light Condition,Lamppost Leaning,40.60890970423255,-74.1783263364209,,10314.0,STATEN ISLAND\r\n,,traffic_signals,,,,45881717.0,03/23/2020 08:46:00 PM,03/24/2020 02:20:00 AM,Closed,Traffic Signal Condition,Controller,40.74531973680726,-73.71518830084094,,11004.0,QUEENS\r\n"
 }
