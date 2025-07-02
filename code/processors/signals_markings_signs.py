@@ -1,97 +1,126 @@
+#!/usr/bin/env python3
 """
-Processor | Signals-Markings-Signs merger
-* Merges:  Accessibility Pedestrian Signals (APS),
-           Street-sign work-orders,
-           311 Traffic-signal complaints
-* Drops obviously redundant / low-value columns up-front
-* De-duplicates *within each* source by its native ID
+Processor | Signals-Markings-Signs  ➜  CSCL street-segment merge
+Creates a **true merged** (spatially–enriched) dataset and keeps geometry so you
+can plot the result directly in GeoPandas / Folium.
+
+Run example
+------------
+python code/processors/signals_markings_signs.py \
+  --cscl    data/signals_markings_signs/centerline.csv \
+  --aps     data/signals_markings_signs/accessible_pedestrian_signals.csv \
+  --signs   data/signals_markings_signs/street_sign_work_orders.csv \
+  --signals data/signals_markings_signs/traffic_signals.csv \
+  --out     data/signals_markings_signs/signals_markings_signs_merged.csv
 """
 
-import argparse
 from pathlib import Path
+import argparse
 import pandas as pd
 import geopandas as gpd
+from shapely.wkt import loads
 
-CRS_WGS84 = "EPSG:4326"
+CRS_WGS84  = "EPSG:4326"
+CRS_METRIC = "EPSG:2263"          # NY State Plane ft / m
 
-# ── Column white-lists ────────────────────────────────────────────────
-APS_KEEP = [
-    "F_id", "OBJECTID", "BOROUGH", "ON_STREET", "AT_STREET",
-    "DEVICE_STATUS", "POINT_X", "POINT_Y"
-]
+# ── loaders ────────────────────────────────────────────────────────────────
+def load_cscl(p: Path) -> gpd.GeoDataFrame:
+    df = pd.read_csv(p, low_memory=False)
+    df["geometry"] = df["the_geom"].apply(loads)
+    gdf = gpd.GeoDataFrame(df, geometry="geometry", crs=CRS_WGS84) \
+            .drop(columns=["the_geom", "index_right"], errors="ignore")
+    return gdf.to_crs(CRS_METRIC)
 
-SIGN_KEEP = [
-    "SIGNID", "sign_id", "sign_type", "borough",
-    "sign_x_coord", "sign_y_coord"
-]
+def load_pts(p: Path, x, y, keep, *, crs=CRS_WGS84) -> gpd.GeoDataFrame:
+    df = pd.read_csv(p, low_memory=False)
+    df = df[[c for c in keep if c in df.columns]].copy()
+    df.dropna(subset=[x, y], inplace=True)
+    df[x] = pd.to_numeric(df[x], errors="coerce")
+    df[y] = pd.to_numeric(df[y], errors="coerce")
+    df.dropna(subset=[x, y], inplace=True)
 
-TSIG_KEEP = [
-    "Unique Key", "Created Date", "Closed Date", "Status",
-    "Complaint Type", "Descriptor",
-    "Latitude", "Longitude",  # geometry columns
-    "Street Name", "Incident Zip", "Borough"
-]
+    gdf = gpd.GeoDataFrame(
+        df, geometry=gpd.points_from_xy(df[x], df[y]), crs=crs
+    )
+    return gdf.to_crs(CRS_METRIC)
 
-# ── Helper ────────────────────────────────────────────────────────────
-def frame_to_gdf(df: pd.DataFrame,
-                 x_col: str,
-                 y_col: str,
-                 src_name: str,
-                 id_cols: list[str],
-                 keep_cols: list[str]) -> gpd.GeoDataFrame:
-    df = df.loc[:, [c for c in keep_cols if c in df.columns]].copy()
-
-    df = df.dropna(subset=[x_col, y_col])
-    df[x_col] = pd.to_numeric(df[x_col], errors="coerce")
-    df[y_col] = pd.to_numeric(df[y_col], errors="coerce")
-    df = df.dropna(subset=[x_col, y_col])
-
-    df["geometry"] = gpd.points_from_xy(df[x_col], df[y_col])
-    gdf = gpd.GeoDataFrame(df, geometry="geometry", crs=CRS_WGS84)
-    gdf["source"] = src_name
-
-    for col in id_cols:
-        if col in gdf.columns and gdf[col].nunique() > 100:
-            gdf = gdf.drop_duplicates(subset=col, keep="first")
-            break
-    return gdf
-
-
-def main():
-    parser = argparse.ArgumentParser(description="Merge APS, sign work orders, and traffic signal complaints into one CSV")
-    parser.add_argument("--aps", required=True, help="Path to APS CSV")
-    parser.add_argument("--signs", required=True, help="Path to street sign work orders CSV")
-    parser.add_argument("--signals", required=True, help="Path to traffic signals CSV")
-    parser.add_argument("--output", required=True, help="Path to save merged output CSV")
-    args = parser.parse_args()
-
-    aps_df = pd.read_csv(args.aps)
-    g_aps = frame_to_gdf(
-        aps_df, "POINT_X", "POINT_Y", "accessible_ped_signal",
-        id_cols=["F_id", "OBJECTID"], keep_cols=APS_KEEP
+def sjoin1(left, right, dmax, dist_col):
+    """One-to-one nearest-feature join, retaining index_right for look-ups."""
+    return gpd.sjoin_nearest(
+        left, right,
+        how="left",
+        max_distance=dmax,
+        distance_col=dist_col,
     )
 
-    signs_df = pd.read_csv(args.signs)
-    g_signs = frame_to_gdf(
-        signs_df, "sign_x_coord", "sign_y_coord", "street_sign",
-        id_cols=["SIGNID", "sign_id"], keep_cols=SIGN_KEEP
-    )
+# ── script ────────────────────────────────────────────────────────────────
+def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--cscl",    required=True, type=Path)
+    ap.add_argument("--aps",     required=True, type=Path)
+    ap.add_argument("--signs",   required=True, type=Path)
+    ap.add_argument("--signals", required=True, type=Path)
+    ap.add_argument("--out",     required=True, type=Path)
+    args = ap.parse_args()
 
-    sig_df = pd.read_csv(args.signals)
-    g_sig = frame_to_gdf(
-        sig_df, "Longitude", "Latitude", "traffic_signals",
-        id_cols=["Unique Key"], keep_cols=TSIG_KEEP
-    )
+    # base geometry
+    seg = load_cscl(args.cscl)
 
-    merged = pd.concat([g_aps, g_signs, g_sig], ignore_index=True)
-    merged.drop(columns="geometry", inplace=True)
+    # point layers
+    APS_KEEP  = ["F_id", "BOROUGH", "DEVICE_STATUS", "POINT_X", "POINT_Y"]
+    SIGN_KEEP = ["SIGNID", "sign_type", "sign_x_coord", "sign_y_coord"]
+    SIG_KEEP  = ["Unique Key", "Created Date", "Descriptor",
+                 "Latitude", "Longitude", "Status"]
 
-    Path(args.output).parent.mkdir(parents=True, exist_ok=True)
-    merged.to_csv(args.output, index=False)
+    aps    = load_pts(args.aps,     "POINT_X",      "POINT_Y",      APS_KEEP)
+    signs  = load_pts(args.signs,   "sign_x_coord", "sign_y_coord", SIGN_KEEP)
+    signal = load_pts(args.signals, "Longitude",    "Latitude",     SIG_KEEP)
 
-    print("Merged dataset written to:", args.output)
-    print("- Rows:", len(merged))
+    # helper for repeated nearest-joins
+    def attach(base, pts, dmax, dist_tag, prefix):
+        seg_ = sjoin1(base, pts, dmax, dist_tag)
 
+        attrs = (
+            pts.drop(columns="geometry")
+                .add_prefix(prefix + "_")
+                .reset_index()                      # expose original index
+                .rename(columns={"index": "index_right"})
+        )
+
+        seg_ = seg_.merge(attrs, on="index_right", how="left")
+        return seg_.drop(columns="index_right")
+
+    seg = attach(seg, aps,    20, "dist_aps",  "aps")
+    seg = attach(seg, signs,  20, "dist_sign", "sign")
+    seg = attach(seg, signal, 30, "dist_sig",  "sig")
+
+    # keep the business columns only
+    KEEP = [
+        "PHYSICALID", "STATUS", "TRAFDIR", "RW_TYPE",
+        "Posted Speed", "Segment Length",
+        "dist_aps", "dist_sign", "dist_sig",
+        "aps_F_id", "aps_BOROUGH", "aps_DEVICE_STATUS",
+        "sign_SIGNID", "sign_sign_type",
+        "sig_Unique Key", "sig_Created Date", "sig_Descriptor", "sig_Status"
+    ]
+    seg = seg[[c for c in KEEP if c in seg.columns] + ["geometry"]]
+
+    # re-project to WGS-84 for final outputs
+    seg = seg.to_crs(CRS_WGS84)
+
+    # centroid lon / lat
+    seg["lon"] = seg.geometry.centroid.x
+    seg["lat"] = seg.geometry.centroid.y
+
+    # preserve full polyline as WKT
+    seg["geometry_wkt"] = seg.geometry.to_wkt()
+
+    # for CSV: drop shapely objects, keep WKT + lon/lat
+    seg.drop(columns="geometry", inplace=True)
+
+    args.out.parent.mkdir(parents=True, exist_ok=True)
+    seg.to_csv(args.out, index=False)
+    print(f"✓ merged file → {args.out}   rows={len(seg):,}")
 
 if __name__ == "__main__":
     main()
