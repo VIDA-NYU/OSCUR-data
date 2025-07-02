@@ -1,255 +1,209 @@
 {
-  "nb_rows": 8174143,
-  "nb_profiled_rows": 8174143,
-  "nb_columns": 17,
+  "nb_rows": 2207461,
+  "nb_profiled_rows": 2207461,
+  "nb_columns": 16,
   "columns": [
     {
-      "name": "POINT_X",
-      "structural_type": "http://schema.org/Float",
-      "semantic_types": [],
-      "unclean_values_ratio": 0.0,
-      "missing_values_ratio": 0.9995910274630625,
-      "mean": -73.9404877662707,
-      "stddev": 0.09589236757537818,
-      "coverage": [
-        {
-          "range": {
-            "gte": -74.194747,
-            "lte": -74.071765
-          }
-        },
-        {
-          "range": {
-            "gte": -74.007343,
-            "lte": -73.90319
-          }
-        },
-        {
-          "range": {
-            "gte": -73.895317,
-            "lte": -73.749677
-          }
-        }
-      ],
-      "plot": {
-        "type": "histogram_numerical",
-        "data": [
-          {
-            "count": 36,
-            "bin_start": -74.241801,
-            "bin_end": -74.1877705
-          },
-          {
-            "count": 145,
-            "bin_start": -74.1877705,
-            "bin_end": -74.13374
-          },
-          {
-            "count": 188,
-            "bin_start": -74.13374,
-            "bin_end": -74.07970949999999
-          },
-          {
-            "count": 75,
-            "bin_start": -74.07970949999999,
-            "bin_end": -74.025679
-          },
-          {
-            "count": 655,
-            "bin_start": -74.025679,
-            "bin_end": -73.9716485
-          },
-          {
-            "count": 850,
-            "bin_start": -73.9716485,
-            "bin_end": -73.917618
-          },
-          {
-            "count": 719,
-            "bin_start": -73.917618,
-            "bin_end": -73.86358750000001
-          },
-          {
-            "count": 437,
-            "bin_start": -73.86358750000001,
-            "bin_end": -73.809557
-          },
-          {
-            "count": 174,
-            "bin_start": -73.809557,
-            "bin_end": -73.7555265
-          },
-          {
-            "count": 64,
-            "bin_start": -73.7555265,
-            "bin_end": -73.701496
-          }
-        ]
-      }
-    },
-    {
-      "name": "POINT_Y",
-      "structural_type": "http://schema.org/Float",
-      "semantic_types": [],
-      "unclean_values_ratio": 0.0,
-      "missing_values_ratio": 0.9995910274630625,
-      "mean": 40.72184796579963,
-      "stddev": 0.08993966914075606,
-      "coverage": [
-        {
-          "range": {
-            "gte": 40.546957,
-            "lte": 40.660826
-          }
-        },
-        {
-          "range": {
-            "gte": 40.674404,
-            "lte": 40.771055
-          }
-        },
-        {
-          "range": {
-            "gte": 40.787223,
-            "lte": 40.886613
-          }
-        }
-      ],
-      "plot": {
-        "type": "histogram_numerical",
-        "data": [
-          {
-            "count": 47,
-            "bin_start": 40.504831,
-            "bin_end": 40.545360900000006
-          },
-          {
-            "count": 133,
-            "bin_start": 40.545360900000006,
-            "bin_end": 40.5858908
-          },
-          {
-            "count": 414,
-            "bin_start": 40.5858908,
-            "bin_end": 40.626420700000004
-          },
-          {
-            "count": 385,
-            "bin_start": 40.626420700000004,
-            "bin_end": 40.6669506
-          },
-          {
-            "count": 542,
-            "bin_start": 40.6669506,
-            "bin_end": 40.7074805
-          },
-          {
-            "count": 501,
-            "bin_start": 40.7074805,
-            "bin_end": 40.748010400000005
-          },
-          {
-            "count": 464,
-            "bin_start": 40.748010400000005,
-            "bin_end": 40.7885403
-          },
-          {
-            "count": 317,
-            "bin_start": 40.7885403,
-            "bin_end": 40.829070200000004
-          },
-          {
-            "count": 383,
-            "bin_start": 40.829070200000004,
-            "bin_end": 40.8696001
-          },
-          {
-            "count": 157,
-            "bin_start": 40.8696001,
-            "bin_end": 40.91013
-          }
-        ]
-      }
-    },
-    {
-      "name": "source",
-      "structural_type": "http://schema.org/Text",
+      "name": "PHYSICALID",
+      "structural_type": "http://schema.org/Integer",
       "semantic_types": [
-        "http://schema.org/Enumeration"
+        "http://schema.org/identifier"
       ],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 121770,
+      "mean": 64710.06261265771,
+      "stddev": 50253.75677563496,
+      "coverage": [
+        {
+          "range": {
+            "gte": 4310.0,
+            "lte": 49300.0
+          }
+        },
+        {
+          "range": {
+            "gte": 54435.0,
+            "lte": 103509.0
+          }
+        },
+        {
+          "range": {
+            "gte": 130514.0,
+            "lte": 201322.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 396623,
+            "bin_start": 3.0,
+            "bin_end": 20495.5
+          },
+          {
+            "count": 407088,
+            "bin_start": 20495.5,
+            "bin_end": 40988.0
+          },
+          {
+            "count": 473394,
+            "bin_start": 40988.0,
+            "bin_end": 61480.5
+          },
+          {
+            "count": 352071,
+            "bin_start": 61480.5,
+            "bin_end": 81973.0
+          },
+          {
+            "count": 250677,
+            "bin_start": 81973.0,
+            "bin_end": 102465.5
+          },
+          {
+            "count": 37819,
+            "bin_start": 102465.5,
+            "bin_end": 122958.0
+          },
+          {
+            "count": 44559,
+            "bin_start": 122958.0,
+            "bin_end": 143450.5
+          },
+          {
+            "count": 43636,
+            "bin_start": 143450.5,
+            "bin_end": 163943.0
+          },
+          {
+            "count": 80558,
+            "bin_start": 163943.0,
+            "bin_end": 184435.5
+          },
+          {
+            "count": 121036,
+            "bin_start": 184435.5,
+            "bin_end": 204928.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "STATUS",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
       "num_distinct_values": 3,
+      "mean": 2.0004887968575664,
+      "stddev": 0.037670130080333465,
+      "coverage": [
+        {
+          "range": {
+            "gte": 2.0,
+            "lte": 2.0
+          }
+        }
+      ],
       "plot": {
-        "type": "histogram_categorical",
+        "type": "histogram_numerical",
         "data": [
           {
-            "bin": "accessible_ped_signal",
-            "count": 3343
+            "count": 2207084,
+            "bin_start": 2.0,
+            "bin_end": 2.3
           },
           {
-            "bin": "street_sign",
-            "count": 7007106
+            "count": 0,
+            "bin_start": 2.3,
+            "bin_end": 2.6
           },
           {
-            "bin": "traffic_signals",
-            "count": 1163694
+            "count": 0,
+            "bin_start": 2.6,
+            "bin_end": 2.9
+          },
+          {
+            "count": 0,
+            "bin_start": 2.9,
+            "bin_end": 3.2
+          },
+          {
+            "count": 0,
+            "bin_start": 3.2,
+            "bin_end": 3.5
+          },
+          {
+            "count": 0,
+            "bin_start": 3.5,
+            "bin_end": 3.8
+          },
+          {
+            "count": 52,
+            "bin_start": 3.8,
+            "bin_end": 4.1
+          },
+          {
+            "count": 0,
+            "bin_start": 4.1,
+            "bin_end": 4.4
+          },
+          {
+            "count": 0,
+            "bin_start": 4.4,
+            "bin_end": 4.699999999999999
+          },
+          {
+            "count": 325,
+            "bin_start": 4.699999999999999,
+            "bin_end": 5.0
           }
         ]
       }
     },
     {
-      "name": "borough",
+      "name": "TRAFDIR",
       "structural_type": "http://schema.org/Text",
       "semantic_types": [
         "http://schema.org/Enumeration"
       ],
-      "missing_values_ratio": 0.14277178659585477,
-      "num_distinct_values": 5,
+      "missing_values_ratio": 2.5821520742608816e-05,
+      "num_distinct_values": 4,
       "plot": {
         "type": "histogram_categorical",
         "data": [
           {
-            "bin": "Bronx",
-            "count": 1001283
+            "bin": "FT",
+            "count": 504043
           },
           {
-            "bin": "Brooklyn",
-            "count": 2067148
+            "bin": "NV",
+            "count": 45666
           },
           {
-            "bin": "Manhattan",
-            "count": 1574969
+            "bin": "TF",
+            "count": 492534
           },
           {
-            "bin": "Queens",
-            "count": 1782950
-          },
-          {
-            "bin": "Staten Island",
-            "count": 580756
+            "bin": "TW",
+            "count": 1165161
           }
         ]
       }
     },
     {
-      "name": "sign_x_coord",
+      "name": "RW_TYPE",
       "structural_type": "http://schema.org/Integer",
       "semantic_types": [],
       "unclean_values_ratio": 0.0,
-      "missing_values_ratio": 0.14277178659585477,
-      "num_distinct_values": 122831,
-      "mean": 1002433.457077287,
-      "stddev": 25444.631470015538,
+      "num_distinct_values": 13,
+      "mean": 1.2220682494503867,
+      "stddev": 1.1015395202098015,
       "coverage": [
         {
           "range": {
-            "gte": 981442.0,
-            "lte": 1010791.0
-          }
-        },
-        {
-          "range": {
-            "gte": 1013958.0,
-            "lte": 1055453.0
+            "gte": 1.0,
+            "lte": 1.0
           }
         }
       ],
@@ -257,84 +211,72 @@
         "type": "histogram_numerical",
         "data": [
           {
-            "count": 57667,
-            "bin_start": 913281.0,
-            "bin_end": 928684.2
+            "count": 2117180,
+            "bin_start": 1.0,
+            "bin_end": 2.3
           },
           {
-            "count": 167046,
-            "bin_start": 928684.2,
-            "bin_end": 944087.4
+            "count": 31074,
+            "bin_start": 2.3,
+            "bin_end": 3.6
           },
           {
-            "count": 237842,
-            "bin_start": 944087.4,
-            "bin_end": 959490.6
+            "count": 703,
+            "bin_start": 3.6,
+            "bin_end": 4.9
           },
           {
-            "count": 140326,
-            "bin_start": 959490.6,
-            "bin_end": 974893.8
+            "count": 31522,
+            "bin_start": 4.9,
+            "bin_end": 6.2
           },
           {
-            "count": 1490939,
-            "bin_start": 974893.8,
-            "bin_end": 990297.0
+            "count": 687,
+            "bin_start": 6.2,
+            "bin_end": 7.5
           },
           {
-            "count": 1886365,
-            "bin_start": 990297.0,
-            "bin_end": 1005700.2
+            "count": 2830,
+            "bin_start": 7.5,
+            "bin_end": 8.8
           },
           {
-            "count": 1467339,
-            "bin_start": 1005700.2,
-            "bin_end": 1021103.4
+            "count": 22636,
+            "bin_start": 8.8,
+            "bin_end": 10.1
           },
           {
-            "count": 929775,
-            "bin_start": 1021103.4,
-            "bin_end": 1036506.6
+            "count": 0,
+            "bin_start": 10.1,
+            "bin_end": 11.4
           },
           {
-            "count": 441738,
-            "bin_start": 1036506.6,
-            "bin_end": 1051909.8
+            "count": 13,
+            "bin_start": 11.4,
+            "bin_end": 12.700000000000001
           },
           {
-            "count": 188069,
-            "bin_start": 1051909.8,
-            "bin_end": 1067313.0
+            "count": 816,
+            "bin_start": 12.700000000000001,
+            "bin_end": 14.0
           }
         ]
       }
     },
     {
-      "name": "sign_y_coord",
+      "name": "Posted Speed",
       "structural_type": "http://schema.org/Integer",
       "semantic_types": [],
       "unclean_values_ratio": 0.0,
-      "missing_values_ratio": 0.14277178659585477,
-      "num_distinct_values": 134899,
-      "mean": 200926.17901798544,
-      "stddev": 30705.97402106247,
+      "missing_values_ratio": 0.04114908485359424,
+      "num_distinct_values": 8,
+      "mean": 25.76328789309023,
+      "stddev": 3.964038141356821,
       "coverage": [
         {
           "range": {
-            "gte": 138927.0,
-            "lte": 183051.0
-          }
-        },
-        {
-          "range": {
-            "gte": 186763.0,
-            "lte": 220795.0
-          }
-        },
-        {
-          "range": {
-            "gte": 226727.0,
-            "lte": 262513.0
+            "gte": 25.0,
+            "lte": 25.0
           }
         }
       ],
@@ -342,84 +284,83 @@
         "type": "histogram_numerical",
         "data": [
           {
-            "count": 71852,
-            "bin_start": 120752.0,
-            "bin_end": 135852.8
+            "count": 379,
+            "bin_start": 15.0,
+            "bin_end": 18.5
           },
           {
-            "count": 255492,
-            "bin_start": 135852.8,
-            "bin_end": 150953.6
+            "count": 46645,
+            "bin_start": 18.5,
+            "bin_end": 22.0
           },
           {
-            "count": 720366,
-            "bin_start": 150953.6,
-            "bin_end": 166054.4
+            "count": 1916304,
+            "bin_start": 22.0,
+            "bin_end": 25.5
           },
           {
-            "count": 840615,
-            "bin_start": 166054.4,
-            "bin_end": 181155.2
+            "count": 0,
+            "bin_start": 25.5,
+            "bin_end": 29.0
           },
           {
-            "count": 1136750,
-            "bin_start": 181155.2,
-            "bin_end": 196256.0
+            "count": 75180,
+            "bin_start": 29.0,
+            "bin_end": 32.5
           },
           {
-            "count": 1426816,
-            "bin_start": 196256.0,
-            "bin_end": 211356.8
+            "count": 23690,
+            "bin_start": 32.5,
+            "bin_end": 36.0
           },
           {
-            "count": 1144012,
-            "bin_start": 211356.8,
-            "bin_end": 226457.59999999998
+            "count": 0,
+            "bin_start": 36.0,
+            "bin_end": 39.5
           },
           {
-            "count": 527060,
-            "bin_start": 226457.59999999998,
-            "bin_end": 241558.4
+            "count": 9260,
+            "bin_start": 39.5,
+            "bin_end": 43.0
           },
           {
-            "count": 640027,
-            "bin_start": 241558.4,
-            "bin_end": 256659.19999999998
+            "count": 5658,
+            "bin_start": 43.0,
+            "bin_end": 46.5
           },
           {
-            "count": 244116,
-            "bin_start": 256659.19999999998,
-            "bin_end": 271760.0
+            "count": 39510,
+            "bin_start": 46.5,
+            "bin_end": 50.0
           }
         ]
       }
     },
     {
-      "name": "Unique Key",
-      "structural_type": "http://schema.org/Integer",
+      "name": "Segment Length",
+      "structural_type": "http://schema.org/Float",
       "semantic_types": [],
       "unclean_values_ratio": 0.0,
-      "missing_values_ratio": 0.8576371859410827,
-      "num_distinct_values": 1163694,
-      "mean": 38105747.0847087,
-      "stddev": 14352833.053507967,
+      "missing_values_ratio": 0.009900967672815057,
+      "mean": 297.04037387824275,
+      "stddev": 238.97553490761618,
       "coverage": [
         {
           "range": {
-            "gte": 16279323.0,
-            "lte": 30145034.0
+            "gte": 17.50289869,
+            "lte": 173.79854735
           }
         },
         {
           "range": {
-            "gte": 31433119.0,
-            "lte": 46181495.0
+            "gte": 212.80827785,
+            "lte": 470.51207042
           }
         },
         {
           "range": {
-            "gte": 48513841.0,
-            "lte": 64475145.0
+            "gte": 532.28441351,
+            "lte": 982.47806511
           }
         }
       ],
@@ -427,52 +368,286 @@
         "type": "histogram_numerical",
         "data": [
           {
-            "count": 131047,
+            "count": 2161291,
+            "bin_start": 1.50117584,
+            "bin_end": 945.245941338
+          },
+          {
+            "count": 22765,
+            "bin_start": 945.245941338,
+            "bin_end": 1888.990706836
+          },
+          {
+            "count": 1268,
+            "bin_start": 1888.990706836,
+            "bin_end": 2832.735472334
+          },
+          {
+            "count": 240,
+            "bin_start": 2832.735472334,
+            "bin_end": 3776.480237832
+          },
+          {
+            "count": 19,
+            "bin_start": 3776.480237832,
+            "bin_end": 4720.22500333
+          },
+          {
+            "count": 3,
+            "bin_start": 4720.22500333,
+            "bin_end": 5663.969768827999
+          },
+          {
+            "count": 2,
+            "bin_start": 5663.969768827999,
+            "bin_end": 6607.714534326
+          },
+          {
+            "count": 5,
+            "bin_start": 6607.714534326,
+            "bin_end": 7551.459299824
+          },
+          {
+            "count": 6,
+            "bin_start": 7551.459299824,
+            "bin_end": 8495.204065322
+          },
+          {
+            "count": 6,
+            "bin_start": 8495.204065322,
+            "bin_end": 9438.94883082
+          }
+        ]
+      }
+    },
+    {
+      "name": "dist_aps",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.8337773577879745,
+      "mean": 4.154371335712499,
+      "stddev": 4.56054118609893,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.204237623751281,
+            "lte": 4.237247634318469
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 108943,
+            "bin_start": 0.0006265318842062,
+            "bin_end": 1.9971108695206625
+          },
+          {
+            "count": 174321,
+            "bin_start": 1.9971108695206625,
+            "bin_end": 3.9935952071571186
+          },
+          {
+            "count": 20475,
+            "bin_start": 3.9935952071571186,
+            "bin_end": 5.990079544793575
+          },
+          {
+            "count": 11052,
+            "bin_start": 5.990079544793575,
+            "bin_end": 7.986563882430032
+          },
+          {
+            "count": 7857,
+            "bin_start": 7.986563882430032,
+            "bin_end": 9.983048220066488
+          },
+          {
+            "count": 9172,
+            "bin_start": 9.983048220066488,
+            "bin_end": 11.979532557702944
+          },
+          {
+            "count": 7305,
+            "bin_start": 11.979532557702944,
+            "bin_end": 13.9760168953394
+          },
+          {
+            "count": 8441,
+            "bin_start": 13.9760168953394,
+            "bin_end": 15.972501232975857
+          },
+          {
+            "count": 7158,
+            "bin_start": 15.972501232975857,
+            "bin_end": 17.96898557061231
+          },
+          {
+            "count": 12206,
+            "bin_start": 17.96898557061231,
+            "bin_end": 19.965469908248767
+          }
+        ]
+      }
+    },
+    {
+      "name": "dist_sign",
+      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
+      "semantic_types": []
+    },
+    {
+      "name": "dist_sig",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.014323242856838694,
+      "mean": 5.217058679124218,
+      "stddev": 7.599509105215025,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.1461671547553966,
+            "lte": 3.2994647921091538
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 1542134,
+            "bin_start": 5.4715987978815526e-05,
+            "bin_end": 2.999927336859958
+          },
+          {
+            "count": 259353,
+            "bin_start": 2.999927336859958,
+            "bin_end": 5.999799957731938
+          },
+          {
+            "count": 5104,
+            "bin_start": 5.999799957731938,
+            "bin_end": 8.999672578603917
+          },
+          {
+            "count": 13183,
+            "bin_start": 8.999672578603917,
+            "bin_end": 11.999545199475897
+          },
+          {
+            "count": 32116,
+            "bin_start": 11.999545199475897,
+            "bin_end": 14.999417820347876
+          },
+          {
+            "count": 57768,
+            "bin_start": 14.999417820347876,
+            "bin_end": 17.999290441219856
+          },
+          {
+            "count": 74769,
+            "bin_start": 17.999290441219856,
+            "bin_end": 20.999163062091835
+          },
+          {
+            "count": 68075,
+            "bin_start": 20.999163062091835,
+            "bin_end": 23.999035682963815
+          },
+          {
+            "count": 67775,
+            "bin_start": 23.999035682963815,
+            "bin_end": 26.998908303835794
+          },
+          {
+            "count": 55566,
+            "bin_start": 26.998908303835794,
+            "bin_end": 29.998780924707773
+          }
+        ]
+      }
+    },
+    {
+      "name": "sig_Unique Key",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.014323242856838694,
+      "num_distinct_values": 1030116,
+      "mean": 38615344.05987978,
+      "stddev": 14491820.49475896,
+      "coverage": [
+        {
+          "range": {
+            "gte": 16287691.0,
+            "lte": 30253862.0
+          }
+        },
+        {
+          "range": {
+            "gte": 31564111.0,
+            "lte": 46262903.0
+          }
+        },
+        {
+          "range": {
+            "gte": 49639085.0,
+            "lte": 64488590.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 235242,
             "bin_start": 15631032.0,
             "bin_end": 20604629.5
           },
           {
-            "count": 152233,
+            "count": 276508,
             "bin_start": 20604629.5,
             "bin_end": 25578227.0
           },
           {
-            "count": 156497,
+            "count": 288079,
             "bin_start": 25578227.0,
             "bin_end": 30551824.5
           },
           {
-            "count": 140467,
+            "count": 257346,
             "bin_start": 30551824.5,
             "bin_end": 35525422.0
           },
           {
-            "count": 118187,
+            "count": 218603,
             "bin_start": 35525422.0,
             "bin_end": 40499019.5
           },
           {
-            "count": 84184,
+            "count": 156472,
             "bin_start": 40499019.5,
             "bin_end": 45472617.0
           },
           {
-            "count": 72062,
+            "count": 128712,
             "bin_start": 45472617.0,
             "bin_end": 50446214.5
           },
           {
-            "count": 107768,
+            "count": 209828,
             "bin_start": 50446214.5,
             "bin_end": 55419812.0
           },
           {
-            "count": 106601,
+            "count": 214564,
             "bin_start": 55419812.0,
             "bin_end": 60393409.5
           },
           {
-            "count": 94648,
+            "count": 190489,
             "bin_start": 60393409.5,
             "bin_end": 65367007.0
           }
@@ -480,63 +655,63 @@
       }
     },
     {
-      "name": "Created Date",
+      "name": "sig_Created Date",
       "structural_type": "http://schema.org/Text",
       "semantic_types": [
         "http://schema.org/DateTime"
       ],
-      "missing_values_ratio": 0.8576371859410827,
-      "num_distinct_values": 886466,
+      "missing_values_ratio": 0.014323242856838694,
+      "num_distinct_values": 792280,
       "plot": {
         "type": "histogram_temporal",
         "data": [
           {
-            "count": 138775,
+            "count": 248735,
             "date_start": "2010-01-01T00:38:24",
             "date_end": "2011-07-20T10:14:24"
           },
           {
-            "count": 121923,
+            "count": 221039,
             "date_start": "2011-07-20T10:14:24",
             "date_end": "2013-02-04T19:52:32"
           },
           {
-            "count": 120430,
+            "count": 220852,
             "date_start": "2013-02-04T19:52:32",
             "date_end": "2014-08-24T05:28:32"
           },
           {
-            "count": 128882,
+            "count": 237236,
             "date_start": "2014-08-24T05:28:32",
             "date_end": "2016-03-11T15:06:40"
           },
           {
-            "count": 113003,
+            "count": 208337,
             "date_start": "2016-03-11T15:06:40",
             "date_end": "2017-09-28T00:42:40"
           },
           {
-            "count": 110936,
+            "count": 205216,
             "date_start": "2017-09-28T00:42:40",
             "date_end": "2019-04-16T10:18:40"
           },
           {
-            "count": 92395,
+            "count": 167692,
             "date_start": "2019-04-16T10:18:40",
             "date_end": "2020-11-01T19:56:48"
           },
           {
-            "count": 105701,
+            "count": 201872,
             "date_start": "2020-11-01T19:56:48",
             "date_end": "2022-05-21T05:32:48"
           },
           {
-            "count": 120951,
+            "count": 241042,
             "date_start": "2022-05-21T05:32:48",
             "date_end": "2023-12-07T15:10:56"
           },
           {
-            "count": 110698,
+            "count": 223822,
             "date_start": "2023-12-07T15:10:56",
             "date_end": "2025-06-25T00:46:56"
           }
@@ -544,262 +719,89 @@
       }
     },
     {
-      "name": "Closed Date",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [
-        "http://schema.org/DateTime"
-      ],
-      "missing_values_ratio": 0.8583572614278953,
-      "num_distinct_values": 760750,
-      "plot": {
-        "type": "histogram_temporal",
-        "data": [
-          {
-            "count": 135737,
-            "date_start": "2009-12-18T11:56:48",
-            "date_end": "2011-07-10T04:37:20"
-          },
-          {
-            "count": 121016,
-            "date_start": "2011-07-10T04:37:20",
-            "date_end": "2013-01-28T21:17:52"
-          },
-          {
-            "count": 121489,
-            "date_start": "2013-01-28T21:17:52",
-            "date_end": "2014-08-20T13:58:24"
-          },
-          {
-            "count": 128536,
-            "date_start": "2014-08-20T13:58:24",
-            "date_end": "2016-03-11T06:38:56"
-          },
-          {
-            "count": 113344,
-            "date_start": "2016-03-11T06:38:56",
-            "date_end": "2017-09-30T23:21:36"
-          },
-          {
-            "count": 110675,
-            "date_start": "2017-09-30T23:21:36",
-            "date_end": "2019-04-22T16:02:08"
-          },
-          {
-            "count": 92096,
-            "date_start": "2019-04-22T16:02:08",
-            "date_end": "2020-11-11T08:42:40"
-          },
-          {
-            "count": 105503,
-            "date_start": "2020-11-11T08:42:40",
-            "date_end": "2022-06-03T01:23:12"
-          },
-          {
-            "count": 122278,
-            "date_start": "2022-06-03T01:23:12",
-            "date_end": "2023-12-23T18:03:44"
-          },
-          {
-            "count": 107134,
-            "date_start": "2023-12-23T18:03:44",
-            "date_end": "2025-07-14T10:44:16"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Status",
+      "name": "sig_Descriptor",
       "structural_type": "http://schema.org/Text",
       "semantic_types": [
         "http://schema.org/Enumeration"
       ],
-      "missing_values_ratio": 0.8576371859410827,
-      "num_distinct_values": 4,
-      "plot": {
-        "type": "histogram_categorical",
-        "data": [
-          {
-            "bin": "Assigned",
-            "count": 7696
-          },
-          {
-            "bin": "Closed",
-            "count": 1016966
-          },
-          {
-            "bin": "Open",
-            "count": 773
-          },
-          {
-            "bin": "Pending",
-            "count": 138259
-          }
-        ]
-      }
-    },
-    {
-      "name": "Complaint Type",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [
-        "http://schema.org/Enumeration"
-      ],
-      "missing_values_ratio": 0.8576371859410827,
-      "num_distinct_values": 2,
-      "plot": {
-        "type": "histogram_categorical",
-        "data": [
-          {
-            "bin": "Street Light Condition",
-            "count": 731319
-          },
-          {
-            "bin": "Traffic Signal Condition",
-            "count": 432375
-          }
-        ]
-      }
-    },
-    {
-      "name": "Descriptor",
-      "structural_type": "http://schema.org/Text",
-      "semantic_types": [
-        "http://schema.org/Enumeration"
-      ],
-      "missing_values_ratio": 0.8576385316479048,
+      "missing_values_ratio": 0.014329131975604552,
       "num_distinct_values": 146,
       "plot": {
         "type": "histogram_categorical",
         "data": [
           {
             "bin": "Controller",
-            "count": 214476
+            "count": 464615
           },
           {
             "bin": "LED Lense",
-            "count": 22821
+            "count": 46942
           },
           {
             "bin": "Pedestrian Signal",
-            "count": 39459
-          },
-          {
-            "bin": "Street Light Cycling",
-            "count": 25910
+            "count": 81207
           },
           {
             "bin": "Street Light Out",
-            "count": 556317
+            "count": 938051
+          },
+          {
+            "bin": "Veh Signal Lamp",
+            "count": 46952
           }
         ]
       }
     },
     {
-      "name": "Latitude",
-      "structural_type": "http://schema.org/Float",
+      "name": "sig_Status",
+      "structural_type": "http://schema.org/Text",
       "semantic_types": [
-        "http://schema.org/latitude"
+        "http://schema.org/Enumeration"
       ],
-      "unclean_values_ratio": 0.0,
-      "missing_values_ratio": 0.8576371859410827,
-      "mean": 40.70780020728366,
-      "stddev": 0.08293579669306353,
-      "coverage": [
-        {
-          "range": {
-            "gte": 40.54471730203221,
-            "lte": 40.6609902999968
-          }
-        },
-        {
-          "range": {
-            "gte": 40.66959245666404,
-            "lte": 40.76572807934631
-          }
-        },
-        {
-          "range": {
-            "gte": 40.78189165554553,
-            "lte": 40.88744624701871
-          }
-        }
-      ],
+      "missing_values_ratio": 0.014323242856838694,
+      "num_distinct_values": 4,
       "plot": {
-        "type": "histogram_numerical",
+        "type": "histogram_categorical",
         "data": [
           {
-            "count": 14152,
-            "bin_start": 40.498948846168354,
-            "bin_end": 40.540340841083186
+            "bin": "Assigned",
+            "count": 15409
           },
           {
-            "count": 46052,
-            "bin_start": 40.540340841083186,
-            "bin_end": 40.58173283599801
+            "bin": "Closed",
+            "count": 1897759
           },
           {
-            "count": 125584,
-            "bin_start": 40.58173283599801,
-            "bin_end": 40.62312483091284
+            "bin": "Open",
+            "count": 1120
           },
           {
-            "count": 165327,
-            "bin_start": 40.62312483091284,
-            "bin_end": 40.664516825827675
-          },
-          {
-            "count": 262427,
-            "bin_start": 40.664516825827675,
-            "bin_end": 40.70590882074251
-          },
-          {
-            "count": 209350,
-            "bin_start": 40.70590882074251,
-            "bin_end": 40.74730081565733
-          },
-          {
-            "count": 141170,
-            "bin_start": 40.74730081565733,
-            "bin_end": 40.788692810572165
-          },
-          {
-            "count": 70054,
-            "bin_start": 40.788692810572165,
-            "bin_end": 40.830084805487
-          },
-          {
-            "count": 97160,
-            "bin_start": 40.830084805487,
-            "bin_end": 40.87147680040182
-          },
-          {
-            "count": 32418,
-            "bin_start": 40.87147680040182,
-            "bin_end": 40.912868795316655
+            "bin": "Pending",
+            "count": 261555
           }
         ]
       }
     },
     {
-      "name": "Longitude",
+      "name": "lon",
       "structural_type": "http://schema.org/Float",
       "semantic_types": [
         "http://schema.org/longitude"
       ],
       "unclean_values_ratio": 0.0,
-      "missing_values_ratio": 0.8576371859410827,
-      "mean": -73.91921956782932,
-      "stddev": 0.10216350444954829,
+      "mean": -73.91477294731767,
+      "stddev": 0.10380192302425068,
       "coverage": [
         {
           "range": {
-            "gte": -74.01168660370406,
-            "lte": -73.89155793445885
+            "gte": -74.01188004063593,
+            "lte": -73.8875071254914
           }
         },
         {
           "range": {
-            "gte": -73.87919217451145,
-            "lte": -73.73607571995817
+            "gte": -73.874674647949,
+            "lte": -73.73420733677949
           }
         }
       ],
@@ -807,112 +809,84 @@
         "type": "histogram_numerical",
         "data": [
           {
-            "count": 10276,
-            "bin_start": -74.25495171973925,
-            "bin_end": -74.1995162324685
+            "count": 21887,
+            "bin_start": -74.2548475895026,
+            "bin_end": -74.19939303837097
           },
           {
-            "count": 37126,
-            "bin_start": -74.1995162324685,
-            "bin_end": -74.14408074519775
+            "count": 69168,
+            "bin_start": -74.19939303837097,
+            "bin_end": -74.14393848723934
           },
           {
-            "count": 43413,
-            "bin_start": -74.14408074519775,
-            "bin_end": -74.088645257927
+            "count": 78023,
+            "bin_start": -74.14393848723934,
+            "bin_end": -74.0884839361077
           },
           {
-            "count": 20542,
-            "bin_start": -74.088645257927,
-            "bin_end": -74.03320977065624
+            "count": 42110,
+            "bin_start": -74.0884839361077,
+            "bin_end": -74.03302938497607
           },
           {
-            "count": 190690,
-            "bin_start": -74.03320977065624,
-            "bin_end": -73.97777428338549
+            "count": 327158,
+            "bin_start": -74.03302938497607,
+            "bin_end": -73.97757483384444
           },
           {
-            "count": 242144,
-            "bin_start": -73.97777428338549,
-            "bin_end": -73.92233879611474
+            "count": 439210,
+            "bin_start": -73.97757483384444,
+            "bin_end": -73.92212028271283
           },
           {
-            "count": 250236,
-            "bin_start": -73.92233879611474,
-            "bin_end": -73.86690330884399
+            "count": 498328,
+            "bin_start": -73.92212028271283,
+            "bin_end": -73.8666657315812
           },
           {
-            "count": 206673,
-            "bin_start": -73.86690330884399,
-            "bin_end": -73.81146782157323
+            "count": 389554,
+            "bin_start": -73.8666657315812,
+            "bin_end": -73.81121118044956
           },
           {
-            "count": 107815,
-            "bin_start": -73.81146782157323,
-            "bin_end": -73.75603233430249
+            "count": 225561,
+            "bin_start": -73.81121118044956,
+            "bin_end": -73.75575662931793
           },
           {
-            "count": 54779,
-            "bin_start": -73.75603233430249,
-            "bin_end": -73.70059684703173
+            "count": 116462,
+            "bin_start": -73.75575662931793,
+            "bin_end": -73.7003020781863
           }
         ]
       }
     },
     {
-      "name": "Street Name",
-      "structural_type": "http://schema.org/Text",
+      "name": "lat",
+      "structural_type": "http://schema.org/Float",
       "semantic_types": [
-        "http://schema.org/Enumeration"
+        "http://schema.org/latitude"
       ],
-      "missing_values_ratio": 0.9773797693531909,
-      "num_distinct_values": 10107,
-      "plot": {
-        "type": "histogram_categorical",
-        "data": [
-          {
-            "bin": "5 AVENUE",
-            "count": 586
-          },
-          {
-            "bin": "BROADWAY",
-            "count": 1305
-          },
-          {
-            "bin": "CENTRAL PARK",
-            "count": 1432
-          },
-          {
-            "bin": "FLUSHING MEADOWS PARK",
-            "count": 615
-          },
-          {
-            "bin": "QUEENS BOULEVARD",
-            "count": 621
-          }
-        ]
-      }
-    },
-    {
-      "name": "Incident Zip",
-      "structural_type": "http://schema.org/Integer",
-      "semantic_types": [],
       "unclean_values_ratio": 0.0,
-      "missing_values_ratio": 0.8576814719292285,
-      "num_distinct_values": 209,
-      "mean": 10978.945572716988,
-      "stddev": 483.86645132461604,
+      "mean": 40.706640657761504,
+      "stddev": 0.08328485783728744,
       "coverage": [
         {
           "range": {
-            "gte": 10302.0,
-            "lte": 10473.0
+            "gte": 40.5456019155174,
+            "lte": 40.66369874589461
           }
         },
         {
           "range": {
-            "gte": 11105.0,
-            "lte": 11434.0
+            "gte": 40.671692466498,
+            "lte": 40.76652319835192
+          }
+        },
+        {
+          "range": {
+            "gte": 40.78726218246047,
+            "lte": 40.8871298196215
           }
         }
       ],
@@ -920,97 +894,95 @@
         "type": "histogram_numerical",
         "data": [
           {
-            "count": 93964,
-            "bin_start": 10000.0,
-            "bin_end": 10169.7
+            "count": 27777,
+            "bin_start": 40.4979696053305,
+            "bin_end": 40.53967753079255
           },
           {
-            "count": 109143,
-            "bin_start": 10169.7,
-            "bin_end": 10339.4
+            "count": 93719,
+            "bin_start": 40.53967753079255,
+            "bin_end": 40.5813854562546
           },
           {
-            "count": 171216,
-            "bin_start": 10339.4,
-            "bin_end": 10509.1
+            "count": 242208,
+            "bin_start": 40.5813854562546,
+            "bin_end": 40.62309338171665
           },
           {
-            "count": 0,
-            "bin_start": 10509.1,
-            "bin_end": 10678.8
+            "count": 326397,
+            "bin_start": 40.62309338171665,
+            "bin_end": 40.6648013071787
           },
           {
-            "count": 29,
-            "bin_start": 10678.8,
-            "bin_end": 10848.5
+            "count": 477364,
+            "bin_start": 40.6648013071787,
+            "bin_end": 40.706509232640755
           },
           {
-            "count": 4773,
-            "bin_start": 10848.5,
-            "bin_end": 11018.2
+            "count": 415568,
+            "bin_start": 40.706509232640755,
+            "bin_end": 40.748217158102804
           },
           {
-            "count": 44643,
-            "bin_start": 11018.2,
-            "bin_end": 11187.9
+            "count": 249905,
+            "bin_start": 40.748217158102804,
+            "bin_end": 40.78992508356485
           },
           {
-            "count": 415232,
-            "bin_start": 11187.9,
-            "bin_end": 11357.6
+            "count": 146479,
+            "bin_start": 40.78992508356485,
+            "bin_end": 40.8316330090269
           },
           {
-            "count": 300033,
-            "bin_start": 11357.6,
-            "bin_end": 11527.3
+            "count": 173805,
+            "bin_start": 40.8316330090269,
+            "bin_end": 40.87334093448895
           },
           {
-            "count": 24299,
-            "bin_start": 11527.3,
-            "bin_end": 11697.0
+            "count": 54239,
+            "bin_start": 40.87334093448895,
+            "bin_end": 40.915048859951
           }
         ]
       }
     },
     {
-      "name": "Borough",
+      "name": "geometry_wkt",
       "structural_type": "http://schema.org/Text",
       "semantic_types": [
-        "http://schema.org/Enumeration"
+        "http://schema.org/Text"
       ],
-      "missing_values_ratio": 0.8576371859410827,
-      "num_distinct_values": 6,
       "plot": {
-        "type": "histogram_categorical",
+        "type": "histogram_text",
         "data": [
           {
-            "bin": "BRONX",
-            "count": 172056
+            "bin": "40",
+            "count": 6440509
           },
           {
-            "bin": "BROOKLYN",
-            "count": 385772
+            "bin": "73",
+            "count": 5251590
           },
           {
-            "bin": "MANHATTAN",
-            "count": 94833
+            "bin": "multilinestring",
+            "count": 2207461
           },
           {
-            "bin": "QUEENS",
-            "count": 402298
+            "bin": "74",
+            "count": 1188945
           },
           {
-            "bin": "STATEN ISLAND",
-            "count": 108031
+            "bin": "748925",
+            "count": 2771
           }
         ]
       }
     }
   ],
   "nb_spatial_columns": 2,
-  "nb_temporal_columns": 2,
-  "nb_categorical_columns": 7,
-  "nb_numerical_columns": 6,
+  "nb_temporal_columns": 1,
+  "nb_categorical_columns": 3,
+  "nb_numerical_columns": 8,
   "types": [
     "categorical",
     "numerical",
@@ -1021,185 +993,193 @@
     {
       "type": "latlong",
       "column_names": [
-        "Latitude",
-        "Longitude"
+        "lat",
+        "lon"
       ],
       "column_indexes": [
-        12,
+        14,
         13
       ],
       "geohashes4": [
         {
-          "hash": "121130320223",
-          "number": 78032
-        },
-        {
-          "hash": "121130320222",
-          "number": 31927
-        },
-        {
-          "hash": "121130320220",
-          "number": 22391
-        },
-        {
-          "hash": "121130320221",
-          "number": 17130
-        },
-        {
-          "hash": "121130320232",
-          "number": 34007
-        },
-        {
-          "hash": "121130320230",
-          "number": 1168
-        },
-        {
-          "hash": "121130322001",
-          "number": 11538
-        },
-        {
-          "hash": "121130322000",
-          "number": 11074
-        },
-        {
-          "hash": "121130322010",
-          "number": 2862
-        },
-        {
-          "hash": "121130231330",
-          "number": 81222
-        },
-        {
-          "hash": "121130231331",
-          "number": 55397
-        },
-        {
-          "hash": "121130231332",
-          "number": 67581
-        },
-        {
-          "hash": "121130231333",
-          "number": 68730
-        },
-        {
           "hash": "121130231320",
-          "number": 76429
-        },
-        {
-          "hash": "121130231321",
-          "number": 116851
+          "number": 122925
         },
         {
           "hash": "121130231323",
-          "number": 75236
+          "number": 156009
+        },
+        {
+          "hash": "121130231321",
+          "number": 190988
         },
         {
           "hash": "121130231322",
-          "number": 7493
+          "number": 17304
         },
         {
-          "hash": "121130231303",
-          "number": 9214
+          "hash": "121130231333",
+          "number": 136229
         },
         {
-          "hash": "121130231300",
-          "number": 30074
+          "hash": "121130231331",
+          "number": 96584
         },
         {
-          "hash": "121130231302",
-          "number": 47257
+          "hash": "121130231330",
+          "number": 153048
+        },
+        {
+          "hash": "121130231332",
+          "number": 121779
         },
         {
           "hash": "121130231312",
-          "number": 18113
+          "number": 27513
         },
         {
           "hash": "121130231313",
-          "number": 1237
+          "number": 3074
         },
         {
-          "hash": "121130231231",
-          "number": 34276
+          "hash": "121130231300",
+          "number": 54603
         },
         {
-          "hash": "121130231233",
-          "number": 7092
+          "hash": "121130231302",
+          "number": 84013
         },
         {
-          "hash": "121130231232",
-          "number": 97
-        },
-        {
-          "hash": "121130231230",
-          "number": 82
+          "hash": "121130231303",
+          "number": 27266
         },
         {
           "hash": "121130231211",
-          "number": 23063
+          "number": 40968
         },
         {
           "hash": "121130231213",
-          "number": 9521
+          "number": 21025
         },
         {
           "hash": "121130231210",
-          "number": 15954
+          "number": 28771
+        },
+        {
+          "hash": "121130231212",
+          "number": 6
+        },
+        {
+          "hash": "121130231231",
+          "number": 68771
+        },
+        {
+          "hash": "121130231233",
+          "number": 27288
+        },
+        {
+          "hash": "121130231232",
+          "number": 784
+        },
+        {
+          "hash": "121130231230",
+          "number": 436
         },
         {
           "hash": "121130231032",
-          "number": 13490
+          "number": 26523
         },
         {
           "hash": "121130231033",
-          "number": 1364
+          "number": 4136
         },
         {
           "hash": "121130231023",
-          "number": 3028
+          "number": 5958
         },
         {
           "hash": "121130231122",
-          "number": 731
-        },
-        {
-          "hash": "121130233101",
-          "number": 41138
-        },
-        {
-          "hash": "121130233103",
-          "number": 7575
-        },
-        {
-          "hash": "121130233100",
-          "number": 1914
-        },
-        {
-          "hash": "121130233102",
-          "number": 28
-        },
-        {
-          "hash": "121130233111",
-          "number": 43323
+          "number": 1615
         },
         {
           "hash": "121130233110",
-          "number": 59314
+          "number": 127613
         },
         {
-          "hash": "121130233113",
-          "number": 10468
+          "hash": "121130233111",
+          "number": 82386
         },
         {
           "hash": "121130233112",
-          "number": 9818
+          "number": 21122
+        },
+        {
+          "hash": "121130233113",
+          "number": 22882
+        },
+        {
+          "hash": "121130233100",
+          "number": 4079
+        },
+        {
+          "hash": "121130233101",
+          "number": 87663
+        },
+        {
+          "hash": "121130233103",
+          "number": 16214
+        },
+        {
+          "hash": "121130233102",
+          "number": 83
         },
         {
           "hash": "121130233011",
-          "number": 16337
+          "number": 36440
         },
         {
           "hash": "121130233013",
-          "number": 118
+          "number": 242
+        },
+        {
+          "hash": "121130320223",
+          "number": 143328
+        },
+        {
+          "hash": "121130320220",
+          "number": 40324
+        },
+        {
+          "hash": "121130320221",
+          "number": 33257
+        },
+        {
+          "hash": "121130320222",
+          "number": 66859
+        },
+        {
+          "hash": "121130320232",
+          "number": 60721
+        },
+        {
+          "hash": "121130320230",
+          "number": 1878
+        },
+        {
+          "hash": "121130320233",
+          "number": 8
+        },
+        {
+          "hash": "121130322001",
+          "number": 19034
+        },
+        {
+          "hash": "121130322000",
+          "number": 18205
+        },
+        {
+          "hash": "121130322010",
+          "number": 7507
         }
       ],
       "ranges": [
@@ -1208,12 +1188,12 @@
             "type": "envelope",
             "coordinates": [
               [
-                -74.01372647564271,
-                40.75199174275803
+                -74.0139130162235,
+                40.748876569717495
               ],
               [
-                -73.88021270256924,
-                40.58882765466428
+                -73.8624009894682,
+                40.583889485074
               ]
             ]
           }
@@ -1223,28 +1203,28 @@
             "type": "envelope",
             "coordinates": [
               [
-                -73.92726511259215,
-                40.87519638673798
+                -73.92694560325253,
+                40.8741327011105
               ],
               [
-                -73.73981068182918,
-                40.667522405001336
+                -73.7377952424715,
+                40.66765492103549
               ]
             ]
           }
         }
       ],
-      "number": 1163694
+      "number": 2207461
     }
   ],
   "temporal_coverage": [
     {
       "type": "datetime",
       "column_names": [
-        "Created Date"
+        "sig_Created Date"
       ],
       "column_indexes": [
-        7
+        10
       ],
       "column_types": [
         "http://schema.org/DateTime"
@@ -1252,53 +1232,20 @@
       "ranges": [
         {
           "range": {
-            "gte": 1268578176.0,
-            "lte": 1405004416.0
+            "gte": 1268636800.0,
+            "lte": 1406451840.0
           }
         },
         {
           "range": {
-            "gte": 1421057152.0,
-            "lte": 1569486080.0
+            "gte": 1422456448.0,
+            "lte": 1572269056.0
           }
         },
         {
           "range": {
-            "gte": 1590578304.0,
-            "lte": 1742305408.0
-          }
-        }
-      ],
-      "temporal_resolution": "minute"
-    },
-    {
-      "type": "datetime",
-      "column_names": [
-        "Closed Date"
-      ],
-      "column_indexes": [
-        8
-      ],
-      "column_types": [
-        "http://schema.org/DateTime"
-      ],
-      "ranges": [
-        {
-          "range": {
-            "gte": 1268758656.0,
-            "lte": 1405334016.0
-          }
-        },
-        {
-          "range": {
-            "gte": 1421096448.0,
-            "lte": 1569406080.0
-          }
-        },
-        {
-          "range": {
-            "gte": 1590164992.0,
-            "lte": 1742549760.0
+            "gte": 1594102528.0,
+            "lte": 1742518528.0
           }
         }
       ],
@@ -1306,45 +1253,46 @@
     }
   ],
   "attribute_keywords": [
-    "POINT_X",
-    "POINT",
-    "X",
-    "POINT_Y",
-    "POINT",
-    "Y",
-    "source",
-    "borough",
-    "sign_x_coord",
+    "PHYSICALID",
+    "STATUS",
+    "TRAFDIR",
+    "RW_TYPE",
+    "RW",
+    "TYPE",
+    "Posted Speed",
+    "Posted",
+    "Speed",
+    "Segment Length",
+    "Segment",
+    "Length",
+    "dist_aps",
+    "dist",
+    "aps",
+    "dist_sign",
+    "dist",
     "sign",
-    "x",
-    "coord",
-    "sign_y_coord",
-    "sign",
-    "y",
-    "coord",
-    "Unique Key",
+    "dist_sig",
+    "dist",
+    "sig",
+    "sig_Unique Key",
+    "sig",
     "Unique",
     "Key",
-    "Created Date",
+    "sig_Created Date",
+    "sig",
     "Created",
     "Date",
-    "Closed Date",
-    "Closed",
-    "Date",
-    "Status",
-    "Complaint Type",
-    "Complaint",
-    "Type",
+    "sig_Descriptor",
+    "sig",
     "Descriptor",
-    "Latitude",
-    "Longitude",
-    "Street Name",
-    "Street",
-    "Name",
-    "Incident Zip",
-    "Incident",
-    "Zip",
-    "Borough"
+    "sig_Status",
+    "sig",
+    "Status",
+    "lon",
+    "lat",
+    "geometry_wkt",
+    "geometry",
+    "wkt"
   ],
-  "sample": "POINT_X,POINT_Y,source,borough,sign_x_coord,sign_y_coord,Unique Key,Created Date,Closed Date,Status,Complaint Type,Descriptor,Latitude,Longitude,Street Name,Incident Zip,Borough\r\n,,street_sign,Bronx,1003889.0,242146.0,,,,,,,,,,,\r\n,,street_sign,Queens,1035067.0,214869.0,,,,,,,,,,,\r\n,,street_sign,Manhattan,1001242.0,226404.0,,,,,,,,,,,\r\n,,street_sign,Bronx,1025370.0,249100.0,,,,,,,,,,,\r\n,,street_sign,Staten Island,961116.0,169640.0,,,,,,,,,,,\r\n,,street_sign,Manhattan,995267.0,223009.0,,,,,,,,,,,\r\n,,street_sign,Brooklyn,1003325.0,196155.0,,,,,,,,,,,\r\n,,street_sign,Brooklyn,994162.0,200618.0,,,,,,,,,,,\r\n,,street_sign,Brooklyn,986220.0,158850.0,,,,,,,,,,,\r\n,,street_sign,Brooklyn,994001.0,166080.0,,,,,,,,,,,\r\n,,street_sign,Manhattan,986693.0,220106.0,,,,,,,,,,,\r\n,,street_sign,Brooklyn,992637.0,160439.0,,,,,,,,,,,\r\n,,street_sign,Manhattan,982256.0,200949.0,,,,,,,,,,,\r\n,,street_sign,Queens,1012757.0,196651.0,,,,,,,,,,,\r\n,,street_sign,Queens,1049265.0,157483.0,,,,,,,,,,,\r\n,,street_sign,Queens,1028022.0,217529.0,,,,,,,,,,,\r\n,,street_sign,Brooklyn,995751.0,193077.0,,,,,,,,,,,\r\n,,traffic_signals,,,,60580815.0,03/14/2024 06:41:00 PM,03/15/2024 12:20:00 AM,Closed,Traffic Signal Condition,Ped Multiple Lamps,40.61578101918616,-73.99994236956995,,11204.0,BROOKLYN\r\n,,traffic_signals,,,,26094456.0,08/08/2013 09:37:00 AM,10/10/2013 11:42:00 AM,Closed,Street Light Condition,Lamppost Leaning,40.60890970423255,-74.1783263364209,,10314.0,STATEN ISLAND\r\n,,traffic_signals,,,,45881717.0,03/23/2020 08:46:00 PM,03/24/2020 02:20:00 AM,Closed,Traffic Signal Condition,Controller,40.74531973680726,-73.71518830084094,,11004.0,QUEENS\r\n"
+  "sample": "PHYSICALID,STATUS,TRAFDIR,RW_TYPE,Posted Speed,Segment Length,dist_aps,dist_sign,dist_sig,sig_Unique Key,sig_Created Date,sig_Descriptor,sig_Status,lon,lat,geometry_wkt\r\n10056,2,TW,1,25.0,258.06236075,,,0.3416056429314149,28254515.0,06/13/2014 10:28:00 AM,Fixture/Luminaire Out Of Position,Closed,-73.8714129859085,40.712266304032,\"MULTILINESTRING ((-73.871548 40.712605, -73.871278 40.711927))\"\r\n8647,2,FT,1,30.0,186.72008144,,,28.839552041516995,47498879.0,09/08/2020 09:55:00 AM,Street Light Out,Pending,-73.871169964495,40.728117134462,\"MULTILINESTRING ((-73.871239 40.728368, -73.871101 40.727866))\"\r\n69277,2,TW,1,25.0,58.0415604,,,3.4124321187810853,45955220.0,04/06/2020 04:22:00 PM,Controller,Closed,-73.929940939432,40.6327579779465,\"MULTILINESTRING ((-73.930045 40.632751, -73.929837 40.632765))\"\r\n79593,2,TF,1,25.0,45.48886938,,,2.6151422414091527,33172572.0,04/20/2016 01:32:00 PM,Street Light Out,Closed,-73.91486465943001,40.69922420688052,\"MULTILINESTRING ((-73.914914 40.699174, -73.914816 40.699274))\"\r\n88448,2,TW,1,25.0,526.6694704,,,0.2055333975219355,26796981.0,12/02/2013 04:12:00 PM,Street Light Out,Pending,-73.8186234395295,40.83466042218201,\"MULTILINESTRING ((-73.818346 40.833969, -73.818901 40.835352))\"\r\n54976,2,FT,1,25.0,26.85534353,,,25.501717362867097,42024305.0,03/22/2019 02:49:00 AM,Controller,Closed,-74.0146949762725,40.64774569912299,\"MULTILINESTRING ((-74.014734 40.647767, -74.014656 40.647724))\"\r\n1084,2,TW,1,25.0,459.70028051,,,2.41243460824291,18657311.0,09/10/2010 04:54:00 PM,Pedestrian Signal,Closed,-74.0047211573125,40.7149057380155,\"MULTILINESTRING ((-74.004022 40.714567, -74.005421 40.715244))\"\r\n12513,2,FT,3,25.0,19.40394505,,,28.758154266572845,16077926.0,02/24/2010 05:01:00 AM,Controller,Closed,-73.86788511619552,40.73264982572682,\"MULTILINESTRING ((-73.867961 40.732623, -73.867897 40.732643, -73.867865 40.732657, -73.86781 40.73268))\"\r\n40470,2,TF,1,25.0,21.82286394,,,22.386814315277604,55552694.0,09/28/2022 08:11:00 AM,Controller,Closed,-73.88271856927047,40.866141132542175,\"MULTILINESTRING ((-73.882778 40.866102, -73.882719 40.866141, -73.882658 40.86618))\"\r\n20348,2,TF,1,25.0,20.28502524,,,17.746439814245292,41444118.0,01/16/2019 11:49:00 AM,Street Light Out,Pending,-73.76236998532475,40.74955065177929,\"MULTILINESTRING ((-73.762441 40.749532, -73.762368 40.749552, -73.762298 40.749568))\"\r\n84269,2,FT,1,25.0,690.04184585,,,0.3957433191321866,37127480.0,09/07/2017 11:36:00 AM,Street Light Out,Pending,-73.89451366726,40.76939090500001,\"MULTILINESTRING ((-73.894684 40.770329, -73.894343 40.768453))\"\r\n97865,2,TW,1,25.0,248.76624747,,,2.5102798127907704,25120801.0,03/05/2013 11:32:00 AM,Street Light Out,Closed,-73.772572061934,40.711363213623,\"MULTILINESTRING ((-73.772985 40.711231, -73.772159 40.711496))\"\r\n4263,2,FT,1,25.0,257.76456547,,,2.431001683463139,52922281.0,12/29/2021 08:23:00 AM,Lamppost Base Door/Cover Open,Closed,-73.99032902680798,40.72972729726102,\"MULTILINESTRING ((-73.990727 40.729887, -73.989931 40.729568))\"\r\n40709,2,TW,1,25.0,264.85293406,,,2.865937055029973,26253895.0,09/04/2013 10:27:00 PM,Street Light Out,Closed,-73.8650142228275,40.83226870635099,\"MULTILINESTRING ((-73.865462 40.83214, -73.864567 40.832398))\"\r\n185105,2,NV,1,25.0,192.98299825,17.62204306122571,,1.8633702833904544,31206079.0,07/31/2015 08:34:00 PM,Street Light Out,Closed,-73.8940658041805,40.862979960998,\"MULTILINESTRING ((-73.894188 40.863016, -73.893944 40.862944))\"\r\n182217,2,TW,1,25.0,,,,2.7329028284636285,27949420.0,04/30/2014 10:52:00 AM,Street Light Cycling,Closed,-73.83428644290471,40.67890746882184,\"MULTILINESTRING ((-73.834463 40.678952, -73.834186 40.678882, -73.83411 40.678861))\"\r\n109587,2,TW,1,25.0,129.02997032,,,0.0851656172482254,26306422.0,09/12/2013 11:41:00 AM,Street Light Out,Closed,-73.862303870684,40.678999022946506,\"MULTILINESTRING ((-73.862347 40.679173, -73.862261 40.678825))\"\r\n18527,2,TW,1,25.0,259.85937664,,,2.678456331582192,16750318.0,05/27/2010 10:29:00 AM,Street Light Out,Closed,-73.74607564058451,40.70376048756301,\"MULTILINESTRING ((-73.746519 40.703645, -73.745632 40.703876))\"\r\n90097,2,TW,1,25.0,390.20258613,,,2.2666148928006247,40281598.0,09/14/2018 09:53:00 AM,Street Light Out,Closed,-73.882621534408,40.740028629370514,\"MULTILINESTRING ((-73.883115 40.739647, -73.882128 40.74041))\"\r\n9887,2,TW,1,25.0,140.25504488,,,2.416278425236551,33596121.0,06/14/2016 11:43:00 AM,Street Light Out,Closed,-73.87796322195838,40.72558058030136,\"MULTILINESTRING ((-73.878369 40.725402, -73.877995 40.725566, -73.877557 40.725759))\"\r\n"
 }
