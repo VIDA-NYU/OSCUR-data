@@ -1,10 +1,10 @@
 dataset_id: "transit_stop_accessibility"
 name: "Transit Stop Accessibility (Pedestrian Ramps & APS)"
-description: "
+description: >
   A unified dataset combining two NYC DOT accessibility-related datasets:
   1) locations of pedestrian ramps with ADA compliance attributes,
   2) accessible pedestrian signal (APS) locations designed to assist visually impaired pedestrians.
-  Both sources are harmonized as point geometry and retain key metadata on infrastructure and compliance."
+  Both sources are harmonized as point geometry and retain key metadata on infrastructure and compliance.
 
 source_organization:
   pedestrian_ramp_locations: "New York City Department of Transportation (NYC DOT)"
@@ -61,7 +61,7 @@ integration_opportunities:
 map_algebra:
   raster_conversion:
     suitable_for_rasterization: true
-    recommended_cell_size: ""
-    interpolation_method: ""
+    recommended_cell_size: "5 m"
+    interpolation_method: "nearest"
 
 data_name: "transit_stop_accessibility"
