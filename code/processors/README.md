@@ -9,6 +9,7 @@ This folder contains scripts for post-processing datasets downloaded in `code/do
 ```
 code/processors/
 ├── process_speed_humps.py       # Post-processing Speed Humps dataset (CSV)
+├── transit_stop_accessibilitys.py   # Post-processing Transit Stop Acc dataset (CSV)
 ├── README.md                    # This file
 └── ...                          # Add one script per dataset as needed
 ```
@@ -25,6 +26,12 @@ This script reads the raw Speed Humps dataset and extracts latitude and longitud
 
 ```bash
 python process_speed_humps.py -i ../downloaders/data/speed_humps.csv -o ../downloaders/data/speed_humps_with_latlon.csv
+
+python -m code.processors.transit_stop_accessibility \
+  --aps   data/transit_stop_accessibility/accessible_pedestrian_signal_locations.csv \
+  --ramps data/transit_stop_accessibility/pedestrian_ramp_locations.csv \
+  --curbs data/transit_stop_accessibility/nyc_curbs.csv \
+  --out   data/transit_stop_accessibility/transit_stop_accessibility_merged.csv
 ```
 
 ### Other Datasets
