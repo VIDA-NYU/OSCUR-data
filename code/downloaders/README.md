@@ -24,6 +24,11 @@ code/downloaders/
 ├── raised_crosswalks.py         # Download Raised Crosswalks dataset (CSV)
 ├── NYC_vehicle_collisions.py    # Download Vehicle Collisions (Crashes) dataset (CSV)
 ├── nyc_311.py                   # Download NYC 311 Requests dataset (CSV)
+├── transit_stop_accessibilty.py
+   ├── acc_ped_signal_loc_downlaoder.py  # Download acc ped location dataset (CSV)
+   ├── curbs_downloader.py               # Download curbs dataset (CSV)
+   ├── ped_ramp_locations_downloader.py  # Download pedestrian ramp dataset (CSV)
+   ├── transit_stop_accessibilty.py      # Orchestrates all downloads
 ├── README.md                    # This file
 └── ...                          # Add one script per dataset as needed
 ```
@@ -63,6 +68,14 @@ python speed_humps.py -o data/speed_humps.csv
 python raised_crosswalks.py -o data/raised_crosswalks.csv
 python NYC_vehicle_collisions.py -o data/NYC_vehicle_collisions.csv
 python nyc_311.py -o data/nyc_311.csv
+```
+
+**Usage for multiple downloads:**
+```bash
+python -m code.downloaders.transit_stop_accessibility.transit_stop_accessibility \
+  --aps   data/transit_stop_accessibility/acc_ped_signal_loc.csv \
+  --ramps data/transit_stop_accessibility/ped_ramp_loc.csv \
+  --curbs data/transit_stop_accessibility/curbs.csv
 ```
 
 **With API token and custom timeout:**
