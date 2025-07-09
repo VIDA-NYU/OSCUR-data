@@ -1,0 +1,87 @@
+dataset_id: "signals_markings_signs"
+name: "Signals, Signs, and Markings (Merged with Street Segments)"
+description: >
+  A street-segment–level dataset that merges NYC DOT signals, signs, and accessible pedestrian infrastructure
+  onto the CSCL street centerline geometry. Each segment is enriched with the nearest available:
+  (1) accessible pedestrian signal, (2) street sign work order, and (3) 311 traffic signal complaint.
+  Enrichment is performed via nearest-point spatial join within a small buffer, and only selected fields are retained.
+
+source_organization:
+  accessible_pedestrian_signals: "New York City Department of Transportation (NYC DOT)"
+  street_sign_work_orders: "New York City Department of Transportation (NYC DOT)"
+  traffic_signals_311: "New York City Open Data (311 Service Requests)"
+  centerline: "NYC Department of Information Technology and Telecommunications (DoITT)"
+
+domain: "transportation"
+last_updated: "2025-07-01"
+update_frequency:
+  accessible_pedestrian_signals: "Monthly"
+  street_sign_work_orders: "Periodic"
+  traffic_signals_311: "As available"
+  centerline: "Quarterly"
+
+access:
+  primary_url: "https://data.cityofnewyork.us"
+  api_endpoint:
+    accessible_pedestrian_signals: "https://data.cityofnewyork.us/resource/de3m-c5p4.json"
+    street_sign_work_orders: "https://data.cityofnewyork.us/resource/qt6m-xctn.json"
+    traffic_signals_311: "https://data.cityofnewyork.us/resource/fhrw-4uyv.json"
+    centerline: "https://data.cityofnewyork.us/City-Government/Centerline/3mf9-qshr"
+  license: "Open Data License"
+  file_format:
+    accessible_pedestrian_signals: ["CSV", "JSON"]
+    street_sign_work_orders: ["CSV", "JSON"]
+    traffic_signals_311: ["CSV", "JSON"]
+    centerline: ["CSV", "Shapefile"]
+  rate_limits:
+    accessible_pedestrian_signals: "Unknown"
+    street_sign_work_orders: "Unknown"
+    traffic_signals_311: "Unknown"
+    centerline: "Unknown"
+
+spatial:
+  geometry_type: "polyline (merged from CSCL)"
+  coordinate_system: "EPSG:4326"
+  coverage_area: "NYC"
+
+temporal:
+  temporal_type:
+    accessible_pedestrian_signals: "infrastructure installation"
+    street_sign_work_orders: "maintenance activity"
+    traffic_signals_311: "complaint report"
+  temporal_resolution:
+    accessible_pedestrian_signals: "monthly"
+    street_sign_work_orders: "irregular"
+    traffic_signals_311: "daily"
+  time_column:
+    accessible_pedestrian_signals: "Date_Insta"
+    street_sign_work_orders: "CompletedDate"
+    traffic_signals_311: "Created Date"
+
+implementation:
+  downloader_module:
+    accessible_pedestrian_signals: "downloaders.signals_marking_signs.accessible_pedestrian_signals_downloader"
+    street_sign_work_orders: "downloaders.signals_marking_signs.street_sign_work_orders_downloader"
+    traffic_signals_311: "downloaders.signals_marking_signs.traffic_signals_downloader"
+    centerline: "downloaders.signals_marking_signs.centerline_downloader"
+  processor_module: "processors.signals_markings_signs"
+  example_notebook: "examples/signals_markings_signs.ipynb"
+
+integration_opportunities:
+  spatial_joins:
+    - "curb regulations"
+    - "school zones or priority corridors"
+    - "pedestrian crash locations"
+    - "bike lane infrastructure"
+    - "pavement quality or surface condition data"
+  temporal_alignment:
+    - "seasonal 311 trends"
+    - "infrastructure project timelines"
+
+map_algebra:
+  raster_conversion:
+    suitable_for_rasterization: true
+    recommended_cell_size: "10 meters"
+    interpolation_method: "count per segment (nearest attribution)"
+
+data_name: "signals_markings_signs"

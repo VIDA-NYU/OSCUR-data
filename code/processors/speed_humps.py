@@ -9,6 +9,7 @@ Usage:
     python processor_speed_humps.py -i ../downloaders/data/speed_humps.csv -o ../downloaders/data/speed_humps_with_latlon.csv
 """
 
+import os
 import pandas as pd
 import re
 import argparse
@@ -24,6 +25,14 @@ def extract_lat_lon(geom):
 def main(input_path, output_path):
     df = pd.read_csv(input_path)
     df[['longitude', 'latitude']] = df['the_geom'].apply(lambda x: pd.Series(extract_lat_lon(x)))
+
+    # Ensure the output folder exists
+    output_folder = os.path.dirname(output_path)
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
+        print(f"Created folder: {output_folder}")
+
+    # Save the processed file
     df.to_csv(output_path, index=False)
     print(f"✅ Saved processed dataset with lat/lon to: {output_path}")
 

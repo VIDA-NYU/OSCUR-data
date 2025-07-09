@@ -1,0 +1,48 @@
+"dataset_id": "on_street_curb_management"
+"name": "NYC On-Street Curb Management"
+"description": "This dataset integrates multiple functional curb use layers — including loading zones, parking meters, 
+and truck routes — by snapping them to NYC's official curb geometry to produce a unified spatial representation of curb 
+usage across the city.\r\n\r\nBase curb geometry:
+ https://data.cityofnewyork.us/City-Government/NYC-Planimetric-Database-Curbs/ikvd-dex8\r\nLoading zones: 
+ https://data.cityofnewyork.us/Transportation/Neighborhood-Loading-Zone-signs-locations-NYCDOT/6pjf-tf5u\r\nTruck routes: 
+ https://data.cityofnewyork.us/Transportation/New-York-City-Truck-Routes/jjja-shxy\r\nParking meters: 
+ https://data.cityofnewyork.us/Transportation/Parking-Meters-ParkNYC-Blockfaces/s7zi-dgdx"
+"source_organization": "NYC Department of Transportation"
+"domain": "transportation"
+"last_updated": "2025-06-06"
+"update_frequency": "Ad hoc"
+"access":
+  "primary_url":
+    - "https://data.cityofnewyork.us/City-Government/NYC-Planimetric-Database-Curbs/ikvd-dex8"
+    - "https://data.cityofnewyork.us/Transportation/Neighborhood-Loading-Zone-signs-locations-NYCDOT/6pjf-tf5u"
+    - "https://data.cityofnewyork.us/Transportation/New-York-City-Truck-Routes/jjja-shxy"
+    - "https://data.cityofnewyork.us/Transportation/Parking-Meters-ParkNYC-Blockfaces/s7zi-dgdx"
+  "api_endpoint": null
+  "license": "Open Data License"
+  "file_format":
+    - "CSV"
+  "rate_limits": "None"
+"spatial":
+  "geometry_type": "line"
+  "coordinate_system": "EPSG:4326"
+  "coverage_area": "NYC"
+"temporal":
+  temporal_type: "static"
+  temporal_resolution: null
+  time_column: null
+"implementation":
+  "downloader_module": "downloaders/on_street_curb_management/on_street_curb_management.py"
+  "processor_module": "processors/on_street_curb_management.py"
+  "example_notebook": "examples/on_street_curb_management.ipynb"
+"integration_opportunities":
+  "spatial_joins":
+    - "Census tracts"
+    - "Traffic volume segments"
+    - "Parking violation records"
+  "temporal_alignment": []
+"map_algebra":
+  "raster_conversion":
+    suitable_for_rasterization: true
+    recommended_cell_size: "5 meters"
+    interpolation_method: "nearest"
+"data_name": "on_street_curb_management"
