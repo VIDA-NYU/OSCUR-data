@@ -9,7 +9,8 @@ This folder contains scripts for post-processing datasets downloaded in `code/do
 code/processors/
 ├── process_speed_humps.py             # Post-processing Speed Humps dataset (CSV)
 ├── on_street_curb_management.py       # Post-processing On Street Curb Management dataset (CSV)
-├── signals_markings_signs.py    # Post-processing Signals Markings and Signs dataset (CSV)
+├── signals_markings_signs.py          # Post-processing Signals Markings and Signs dataset (CSV)
+├── transit_stop_accessibilitys.py     # Post-processing Transit Stop Acc dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
 ```
@@ -47,6 +48,17 @@ python signals_markings_signs_processor.py \
   --output processed_data/signals_signs_markings_combined.csv
 ```
 
+#### Transit Stop Accessibility Dataset
+This script joins Accessible Pedestrian Signal (APS) and ramp point data to curb segment linework. The script loads raw CSV data, performs coordinate transformations for accuracy, and executes a nearest-neighbor spatial join. The output is a flat CSV file with accessibility points and their nearest curb segment details.
+
+```bash
+python -m code.processors.transit_stop_accessibility \
+  --aps   data/transit_stop_accessibility/accessible_pedestrian_signal_locations.csv \
+  --ramps data/transit_stop_accessibility/pedestrian_ramp_locations.csv \
+  --curbs data/transit_stop_accessibility/nyc_curbs.csv \
+  --out   processed_data/transit_stop_accessibility/transit_stop_accessibility_merged.csv
+```
+ 
 ### Other Datasets
 To be added as needed.
 

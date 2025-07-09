@@ -35,6 +35,11 @@ code/downloaders/
     ├── traffic_signal_downloader.py           # Download Traffic Signals (311)
     ├── street_sign_downloader.py              # Download Street Sign Work Orders
     ├── signals_markings_signs.py              # Runs all signal/sign downloaders
+├── transit_stop_accessibilty.py
+   ├── acc_ped_signal_loc_downlaoder.py  # Download acc ped location dataset (CSV)
+   ├── curbs_downloader.py               # Download curbs dataset (CSV)
+   ├── ped_ramp_locations_downloader.py  # Download pedestrian ramp dataset (CSV)
+   ├── transit_stop_accessibilty.py      # Orchestrates all downloads
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -113,6 +118,25 @@ python signals_markings_signs.py \
   --street_sign_work_orders /custom/path/signs.csv
 ```
 
+**Transit Stop Accessibility Dataset:**
+The `transit_stop_accessibility.py` script downloads Accessible Pedestrian Signal (APS) locations, pedestrian-ramp locations, and the NYC Planimetric Curbs layer to support multimodal transportation planning:
+
+```bash
+python -m code.downloaders.transit_stop_accessibility.transit_stop_accessibility  # basic usage
+```
+
+By default, the datasets will be saved to the following paths:
+- data/transit_stop_accessibility/accessible_ped_signal_locations.csv
+- data/transit_stop_accessibility/pedestrian_ramp_locations.csv
+- data/transit_stop_accessibility/curbs.csv
+
+You can specify custom output paths for each dataset:
+```bash
+python -m code.downloaders.transit_stop_accessibility.transit_stop_accessibility \
+  --aps /custom/path/acc_ped_signal_loc.csv \
+  --ramps /custom/path/ped_ramp_loc.csv \
+  --curbs /custom/path/curbs.csv
+```
 
 ## Base Class Benefits
 

@@ -1,0 +1,67 @@
+dataset_id: "transit_stop_accessibility"
+name: "Transit Stop Accessibility (Pedestrian Ramps & APS)"
+description: >
+  A unified dataset combining two NYC DOT accessibility-related datasets:
+  1) locations of pedestrian ramps with ADA compliance attributes,
+  2) accessible pedestrian signal (APS) locations designed to assist visually impaired pedestrians.
+  Both sources are harmonized as point geometry and retain key metadata on infrastructure and compliance.
+
+source_organization:
+  pedestrian_ramp_locations: "New York City Department of Transportation (NYC DOT)"
+  accessible_pedestrian_signal_locations: "New York City Department of Transportation (NYC DOT)"
+
+domain: "transportation"
+last_updated: "2025-06-16"
+update_frequency:
+  pedestrian_ramp_locations: "As available"
+  accessible_pedestrian_signal_locations: "Monthly"
+
+access:
+  primary_url: "https://data.cityofnewyork.us"
+  api_endpoint:
+    pedestrian_ramp_locations: "https://data.cityofnewyork.us/resource/ufzp-rrqu.json"
+    accessible_pedestrian_signal_locations: "https://data.cityofnewyork.us/resource/de3m-c5p4.json"
+  license: "Open Data License"
+  file_format:
+    pedestrian_ramp_locations: ["CSV", "JSON"]
+    accessible_pedestrian_signal_locations: ["CSV", "JSON"]
+  rate_limits:
+    pedestrian_ramp_locations: "Unknown"
+    accessible_pedestrian_signal_locations: "Unknown"
+
+spatial:
+  geometry_type: "point"
+  coordinate_system: "EPSG:4326"
+  coverage_area: "NYC"
+
+temporal:
+  temporal_type:
+    pedestrian_ramp_locations: "survey date"
+    accessible_pedestrian_signal_locations: "installation"
+  temporal_resolution:
+    pedestrian_ramp_locations: "irregular"
+    accessible_pedestrian_signal_locations: "monthly"
+  time_column:
+    pedestrian_ramp_locations: "GeoCyclora"
+    accessible_pedestrian_signal_locations: "Date_Insta"
+
+implementation:
+  downloader_module:
+    pedestrian_ramp_locations: "downloaders.transit_stop_accessibility.pedestrian_ramp_locations_downloader"
+    accessible_pedestrian_signal_locations: "downloaders.transit_stop_accessibility.accessible_pedestrian_signal_locations_downloader"
+  processor_module: "processors.transit_stop_accessibility.process_transit_stop_accessibility"
+  example_notebook: "examples/transit_stop_accessibility.ipynb"
+
+integration_opportunities:
+  spatial_joins:
+    - "sidewalk or curb layer"
+    - "intersection geometries"
+  temporal_alignment: []
+
+map_algebra:
+  raster_conversion:
+    suitable_for_rasterization: true
+    recommended_cell_size: "5 m"
+    interpolation_method: "nearest"
+
+data_name: "transit_stop_accessibility"
