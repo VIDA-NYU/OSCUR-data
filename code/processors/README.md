@@ -9,6 +9,7 @@ This folder contains scripts for post-processing datasets downloaded in `code/do
 code/processors/
 ├── process_speed_humps.py             # Post-processing Speed Humps dataset (CSV)
 ├── on_street_curb_management.py       # Post-processing On Street Curb Management dataset (CSV)
+├── signals_markings_signs.py    # Post-processing Signals Markings and Signs dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
 ```
@@ -33,6 +34,17 @@ python on_street_curb_management.py \
   --parking_meters ../downloaders/data/on_street_curb_management/parking_meters.csv \
   --truck_routes ../downloaders/data/on_street_curb_management/truck_routes.csv \
   --output processed_data/on_street_curb_management.csv
+```
+
+#### Signals Markings and Signs Dataset
+
+This script integrates street segments with point features such as accessible pedestrian signals, street signs, and traffic signals.
+```bash
+python signals_markings_signs_processor.py \
+  --aps data/signals_markings_signs/accessible_pedestrian_signals.csv \
+  --signs data/signals_markings_signs/street_sign_work_orders.csv \
+  --signals data/signals_markings_signs/traffic_signals.csv \
+  --output processed_data/signals_signs_markings_combined.csv
 ```
 
 ### Other Datasets
