@@ -1,0 +1,92 @@
+dataset_id: "sidewalk_surface_condition"
+name: "Sidewalk Surface Condition (Violations, Tree Damage, and 311)"
+description: >
+  A unified dataset combining multiple NYC sidewalk condition sources:
+  1) official DOT sidewalk violation records (e.g. cracks, trip hazards),
+  2) reported impairments due to tree root damage from the Sidewalk Management Database,
+  3) publicly submitted 311 complaints related to sidewalk and curb problems,
+  4) NYC sidewalk planimetric polygons used for snapping all location data to the nearest sidewalk.
+  Each record is geocoded using BBL identifiers or direct coordinates and snapped to the nearest sidewalk polygon to enable block-level and sidewalk-specific spatial analysis.
+
+source_organization:
+  sidewalk_violations: "New York City Department of Transportation (NYC DOT)"
+  tree_root_damage: "New York City Department of Transportation (NYC DOT)"
+  lot_info: "New York City Department of Transportation (NYC DOT)"
+  sidewalk_311_complaints: "NYC311 via Mayor’s Office of Operations"
+  sidewalk_planimetric: "New York City Department of Information Technology & Telecommunications (DoITT)"
+
+domain: "transportation"
+last_updated: "2025-06-19"
+update_frequency:
+  sidewalk_violations: "Quarterly"
+  tree_root_damage: "Quarterly"
+  lot_info: "Quarterly"
+  sidewalk_311_complaints: "Daily"
+  sidewalk_planimetric: "Occasionally"
+
+access:
+  primary_url: "https://data.cityofnewyork.us"
+  api_endpoint:
+    sidewalk_violations: "https://data.cityofnewyork.us/resource/6kbp-uz6m.json"
+    tree_root_damage: "https://data.cityofnewyork.us/resource/j6v2-6uxq.json"
+    lot_info: "https://data.cityofnewyork.us/resource/i642-2fxq.json"
+    sidewalk_311_complaints: "https://data.cityofnewyork.us/resource/huz9-8jhi.json"
+    sidewalk_planimetric: "https://data.cityofnewyork.us/resource/fxua-r2ka.json"
+  license: "Open Data License"
+  file_format:
+    sidewalk_violations: ["CSV", "JSON"]
+    tree_root_damage: ["CSV", "JSON"]
+    lot_info: ["CSV", "JSON"]
+    sidewalk_311_complaints: ["CSV", "JSON"]
+    sidewalk_planimetric: ["CSV", "GeoJSON"]
+  rate_limits:
+    sidewalk_violations: "Unknown"
+    tree_root_damage: "Unknown"
+    lot_info: "Unknown"
+    sidewalk_311_complaints: "Variable (depends on Socrata API)"
+    sidewalk_planimetric: "Unknown"
+
+spatial:
+  geometry_type: "snapped point"
+  coordinate_system: "EPSG:4326"
+  coverage_area: "NYC"
+
+temporal:
+  temporal_type:
+    sidewalk_violations: "violation date"
+    tree_root_damage: "inspection date"
+    sidewalk_311_complaints: "created date"
+  temporal_resolution:
+    sidewalk_violations: "irregular"
+    tree_root_damage: "irregular"
+    sidewalk_311_complaints: "daily"
+  time_column:
+    sidewalk_violations: "VIssueDate"
+    tree_root_damage: "ATDIssueDate"
+    sidewalk_311_complaints: "Created Date"
+
+implementation:
+  downloader_module:
+    sidewalk_violations: "downloaders.sidewalk_surface_condition.sidewalk_violations_downloader"
+    tree_root_damage: "downloaders.sidewalk_surface_condition.tree_root_damage_downloader"
+    lot_info: "downloaders.sidewalk_surface_condition.lot_info_downloader"
+    sidewalk_311_complaints: "downloaders.sidewalk_surface_condition.sidewalk_311_complaints_downloader"
+    sidewalk_planimetric: "downloaders.sidewalk_surface_condition.sidewalk_planimetric_downloader"
+  processor_module: "processors.sidewalk_surface_condition.merge_surface_data_snapped"
+  example_notebook: "examples/sidewalk_surface_condition.ipynb"
+
+integration_opportunities:
+  spatial_joins:
+    - "NYC sidewalk planimetrics for accurate location snapping"
+    - "LION street centerlines for curb/street association"
+    - "NYC zoning lots or census boundaries"
+  temporal_alignment:
+    - "311 complaint surge analysis aligned to violation records"
+
+map_algebra:
+  raster_conversion:
+    suitable_for_rasterization: true
+    recommended_cell_size: "5 meters"
+    interpolation_method: "point density (kernel or count)"
+
+data_name: "sidewalk_surface_condition"
