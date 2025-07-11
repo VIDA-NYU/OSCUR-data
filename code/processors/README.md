@@ -9,6 +9,7 @@ This folder contains scripts for post-processing datasets downloaded in `code/do
 code/processors/
 ├── process_speed_humps.py             # Post-processing Speed Humps dataset (CSV)
 ├── on_street_curb_management.py       # Post-processing On Street Curb Management dataset (CSV)
+├── sidewalk_surface_condition.py      # Post-processing Sidewalk Surface Condition dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
 ```
@@ -34,6 +35,26 @@ python on_street_curb_management.py \
   --truck_routes ../downloaders/data/on_street_curb_management/truck_routes.csv \
   --output processed_data/on_street_curb_management.csv
 ```
+
+#### Sidewak Surface Condition (2 merge scripts)
+
+This script processes the raw datasets for sidewalks, complaints, violations, tree damage and lot info, merging them into a unified dataset.
+```bash
+python merge_sidewalk_datasets.py \
+  --violations ../downloaders/data/sidewalk_surface_condition/sidewalk_violations.csv \
+  --tree_damage ../downloaders/data/sidewalk_surface_condition/tree_damage.csv \
+  --lot_info ../downloaders/data/sidewalk_surface_condition/lot_info.csv \
+  --out ../processors/processed_data/sidewalk_surface_violations_and_trees.csv
+```
+
+```bash
+python merge_geocoded_and_311.py \
+  --geocoded ../processors/processed_data/sidewalk_surface_violations_and_trees.csv \
+  --complaints_311 ../downloaders/data/sidewalk_surface_condition/sidewalk_311_complaints.csv \
+  --sidewalk_geom ../downloaders/data/sidewalk_surface_condition/sidewalk_planimetric.csv \
+  --out ../processors/processed_data/sidewalk_surface_full_merged.csv
+```
+
 
 ### Other Datasets
 To be added as needed.
