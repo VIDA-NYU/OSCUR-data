@@ -30,6 +30,13 @@ code/downloaders/
     ├── on_street_curb_management.py  # Activates all download files
     ├── parking_meters_downloader.py  # Download Parking Meters dataset (CSV)
     ├── truck_routes_downloader.py    # Download Truck Routes dataset (CSV)
+├── sidewalk_surface_condition                 # Folder containing download files for dataset
+    ├── sidewalk_complaints_311_downloader.py  # Download Sidewalk Complaints dataset (CSV)
+    ├── sidewalk_geometry_downloader.py        # Download Sidewalk Geometry dataset (CSV)
+    ├── sidewalk_lot_info_downloader.py        # Download Lot Info dataset (CSV)
+    ├── sidewalk_surface_condition.py          # Activates all download files
+    ├── sidewalk_violations_downloader.py      # Download Sidewalk Violations dataset (CSV)
+    ├── tree_damage_downloader.py              # Download Tree Damage dataset (CSV)
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -104,6 +111,32 @@ python on_street_curb_management.py \
   --loading_zones /custom/path/loading_zones.csv \
   --parking_meters /custom/path/parking_meters.csv \
   --truck_routes /custom/path/truck_routes.csv
+```
+
+#### Multiple Datasets Download (Simultaneous)
+The `sidewalk_surface_condition.py` script allows downloading multiple datasets simultaneously, including complaints, violations, lot info, tree damage and sidewalks.
+
+**Basic usage:**
+```bash
+python sidewalk_surface_condition.py
+```
+
+By default, the datasets will be saved to the following paths:
+- `data/sidewalk_surface_condition/sidewalk_complaints_311.csv`
+- `data/sidewalk_surface_condition/sidewalk_violations.csv`
+- `data/sidewalk_surface_condition/sidewalk_lot_info.csv`
+- `data/sidewalk_surface_condition/tree_damage.csv`
+- `data/sidewalk_surface_condition/sidewalk_planimetric.csv`
+
+**Custom output paths:**
+You can specify custom output paths for each dataset:
+```bash
+python sidewalk_surface_condition.py \
+  --violations /custom/path/sidewalk_violations.csv \
+  --tree_damage /custom/path/tree_damage.csv \
+  --complaints_311 /custom/path/sidewalk_311_complaints.csv \
+  --planimetric /custom/path/sidewalk_planimetric.csv \
+  --lot_info /custom/path/lot_info.csv
 ```
 
 ## Base Class Benefits
