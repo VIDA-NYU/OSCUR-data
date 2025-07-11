@@ -6,7 +6,8 @@ description: >
   2) reported impairments due to tree root damage from the Sidewalk Management Database,
   3) publicly submitted 311 complaints related to sidewalk and curb problems,
   4) NYC sidewalk planimetric polygons used for snapping all location data to the nearest sidewalk.
-  Each record is geocoded using BBL identifiers or direct coordinates and snapped to the nearest sidewalk polygon to enable block-level and sidewalk-specific spatial analysis.
+  Each record is geocoded using BBL identifiers or direct coordinates and snapped to the nearest sidewalk polygon
+  to enable block-level and sidewalk-specific spatial analysis.
 
 source_organization:
   sidewalk_violations: "New York City Department of Transportation (NYC DOT)"
@@ -68,11 +69,13 @@ temporal:
 implementation:
   downloader_module:
     sidewalk_violations: "downloaders.sidewalk_surface_condition.sidewalk_violations_downloader"
-    tree_root_damage: "downloaders.sidewalk_surface_condition.tree_root_damage_downloader"
-    lot_info: "downloaders.sidewalk_surface_condition.lot_info_downloader"
-    sidewalk_311_complaints: "downloaders.sidewalk_surface_condition.sidewalk_311_complaints_downloader"
-    sidewalk_planimetric: "downloaders.sidewalk_surface_condition.sidewalk_planimetric_downloader"
-  processor_module: "processors.sidewalk_surface_condition.merge_surface_data_snapped"
+    tree_root_damage: "downloaders.sidewalk_surface_condition.tree_damage_downloader"
+    lot_info: "downloaders.sidewalk_surface_condition.sidewalk_lot_info_downloader"
+    sidewalk_311_complaints: "downloaders.sidewalk_surface_condition.sidewalk_complaints_311_downloader"
+    sidewalk_planimetric: "downloaders.sidewalk_surface_condition.sidewalk_geometry_downloader"
+  processor_module:
+    unify_full_dataset: "processors.sidewalk_surface_condition.merge_geocoded_and_311"
+    unify_datasets_with_locations: "processors.sidewalk_surface_condition.merge_sidewalk_datasets"
   example_notebook: "examples/sidewalk_surface_condition.ipynb"
 
 integration_opportunities:
