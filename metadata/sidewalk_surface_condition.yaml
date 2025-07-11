@@ -74,8 +74,8 @@ implementation:
     sidewalk_311_complaints: "downloaders.sidewalk_surface_condition.sidewalk_complaints_311_downloader"
     sidewalk_planimetric: "downloaders.sidewalk_surface_condition.sidewalk_geometry_downloader"
   processor_module:
-    unify_full_dataset: "processors.sidewalk_surface_condition.merge_geocoded_and_311"
     unify_datasets_with_locations: "processors.sidewalk_surface_condition.merge_sidewalk_datasets"
+    unify_full_dataset: "processors.sidewalk_surface_condition.merge_geocoded_and_311"
   example_notebook: "examples/sidewalk_surface_condition.ipynb"
 
 integration_opportunities:
