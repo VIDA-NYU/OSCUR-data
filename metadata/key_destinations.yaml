@@ -53,7 +53,6 @@ implementation:
     issued_licenses: "downloaders.key_destinations.issued_licenses_downloader"
   orchestrator_downloader:
     orchestrator: "downloaders.key_destinations.key_destinations_downloader"
-  processor_module: "processors.key_destinations.merge_key_destinations"
   example_notebook: "examples/key_destinations.ipynb"
 
 integration_opportunities:
