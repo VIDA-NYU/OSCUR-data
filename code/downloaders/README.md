@@ -1,6 +1,6 @@
 # Data Downloaders
 
-This folder contains Python scripts to **automatically download and save raw data** from various public data sources, including NYC Open Data and others. 
+This folder contains Python scripts to **automatically download and save raw data** from various public data sources, including NYC Open Data and others. These data will be used later by a [processor]([code/processors](./)) to generate the target dataset.
 
 The downloaders use a **base class architecture** to ensure consistency, maintainability, and code reusability across all dataset downloaders.
 
@@ -30,35 +30,21 @@ code/downloaders/
     ├── on_street_curb_management.py  # Activates all download files
     ├── parking_meters_downloader.py  # Download Parking Meters dataset (CSV)
     ├── truck_routes_downloader.py    # Download Truck Routes dataset (CSV)
-├── sidewalk_surface_condition                 # Folder containing download files for dataset
-    ├── sidewalk_complaints_311_downloader.py  # Download Sidewalk Complaints dataset (CSV)
-    ├── sidewalk_geometry_downloader.py        # Download Sidewalk Geometry dataset (CSV)
-    ├── sidewalk_lot_info_downloader.py        # Download Lot Info dataset (CSV)
-    ├── sidewalk_surface_condition.py          # Activates all download files
-    ├── sidewalk_violations_downloader.py      # Download Sidewalk Violations dataset (CSV)
-    ├── tree_damage_downloader.py              # Download Tree Damage dataset (CSV)
+├── signals_markings_signs/           # Folder for NYC traffic signals, signs, and APS
+    ├── accessible_ped_signals_downloader.py   # Download Accessible Pedestrian Signals
+    ├── traffic_signal_downloader.py           # Download Traffic Signals (311)
+    ├── street_sign_downloader.py              # Download Street Sign Work Orders
+    ├── signals_markings_signs.py              # Runs all signal/sign downloaders
+├── transit_stop_accessibilty.py
+   ├── acc_ped_signal_loc_downlaoder.py  # Download acc ped location dataset (CSV)
+   ├── curbs_downloader.py               # Download curbs dataset (CSV)
+   ├── ped_ramp_locations_downloader.py  # Download pedestrian ramp dataset (CSV)
+   ├── transit_stop_accessibilty.py      # Orchestrates all downloads
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
 
-## Requirements
-
-- Python 3.7+
-- `requests` module
-- Additional dependencies may be required depending on the dataset (e.g., `pandas`, `pyarrow` for Parquet)
-
-Install basic dependencies with:
-
-```bash
-pip install requests
-```
-
 ## How to Use
-
-Each script accepts the following standardized arguments:
-- `-o` or `--output`: **Required** - Specify the output file path
-- `--app-token`: *Optional* - Socrata API app token to avoid rate limits
-- `--timeout`: *Optional* - Request timeout in seconds (default: 10)
 
 Ensure the `data/` folder exists:
 
@@ -66,35 +52,40 @@ Ensure the `data/` folder exists:
 mkdir -p data
 ```
 
-> 🔒 **Note:** The `data/` folder will not be committed to this repository. Instead, all collected data will be uploaded to a Hugging Face dataset repository for sharing and versioning. If needed, post-processing and format conversions should be handled in [code/processors](./).
+> 🔒 **Note:** The `data/` folder will not be committed to this repository. If needed, post-processing and format conversions should be handled in [code/processors](./), and the processed data will be uploaded to a Hugging Face dataset repository for sharing.
 
-### Example usage:
 
 #### Single Dataset Download
-**Basic usage:**
+Each script accepts the following standardized arguments:
+- `-o` or `--output`: **Required** - Specify the output file path
+- `--app-token`: *Optional* - Socrata API app token to avoid rate limits
+- `--timeout`: *Optional* - Request timeout in seconds (default: 10)
+
+Basic usage:
 ```bash
 python speed_humps.py -o data/speed_humps.csv
 python raised_crosswalks.py -o data/raised_crosswalks.csv
 python NYC_vehicle_collisions.py -o data/NYC_vehicle_collisions.csv
 python nyc_311.py -o data/nyc_311.csv
 ```
-
-**With API token and custom timeout:**
+With API token and custom timeout:
 ```bash
 python speed_humps.py -o data/speed_humps.csv --app-token YOUR_TOKEN --timeout 30
 ```
 
-**Get help for any downloader:**
+Get help for any downloader:
 ```bash
 python speed_humps.py --help
 ```
 
 #### Multiple Datasets Download (Simultaneous)
-The `on_street_curb_management.py` script allows downloading multiple datasets simultaneously, including curbs, loading zones, parking meters, and truck routes.
 
-**Basic usage:**
+Some datasets require multiple related files to generate the target dataset. We provide scripts that download multiple datasets simultaneously.
+
+**On street curb management dataset:** 
+The `on_street_curb_management.py` script download curbs, loading zones, parking meters, and truck routes data:
 ```bash
-python on_street_curb_management.py
+python on_street_curb_management.py  # basic usage
 ```
 
 By default, the datasets will be saved to the following paths:
@@ -103,7 +94,6 @@ By default, the datasets will be saved to the following paths:
 - `data/on_street_curb_management/parking_meters.csv`
 - `data/on_street_curb_management/truck_routes.csv`
 
-**Custom output paths:**
 You can specify custom output paths for each dataset:
 ```bash
 python on_street_curb_management.py \
@@ -113,10 +103,44 @@ python on_street_curb_management.py \
   --truck_routes /custom/path/truck_routes.csv
 ```
 
-#### Multiple Datasets Download (Simultaneous)
+**Signals, Markings, and Signs Dataset:**
+The `signals_markings_signs.py` script downloads accessible pedestrian signals, traffic signals, and street sign work orders data:
+
+```bash
+python signals_markings_signs.py   # basic usage
+```
+
+Custom output paths:
+```bash
+python signals_markings_signs.py \
+  --accessible_pedestrian_signals /custom/path/aps.csv \
+  --traffic_signals /custom/path/traffic.csv \
+  --street_sign_work_orders /custom/path/signs.csv
+```
+
+**Transit Stop Accessibility Dataset:**
+The `transit_stop_accessibility.py` script downloads Accessible Pedestrian Signal (APS) locations, pedestrian-ramp locations, and the NYC Planimetric Curbs layer to support multimodal transportation planning:
+
+```bash
+python -m code.downloaders.transit_stop_accessibility.transit_stop_accessibility  # basic usage
+```
+
+By default, the datasets will be saved to the following paths:
+- `data/transit_stop_accessibility/accessible_ped_signal_locations.csv`
+- `data/transit_stop_accessibility/pedestrian_ramp_locations.csv`
+- `data/transit_stop_accessibility/curbs.csv`
+
+You can specify custom output paths for each dataset:
+```bash
+python -m code.downloaders.transit_stop_accessibility.transit_stop_accessibility \
+  --aps /custom/path/acc_ped_signal_loc.csv \
+  --ramps /custom/path/ped_ramp_loc.csv \
+  --curbs /custom/path/curbs.csv
+```
+
+**Sidewalk Surface Condition Dataset:**
 The `sidewalk_surface_condition.py` script allows downloading multiple datasets simultaneously, including complaints, violations, lot info, tree damage and sidewalks.
 
-**Basic usage:**
 ```bash
 python sidewalk_surface_condition.py
 ```
@@ -128,7 +152,6 @@ By default, the datasets will be saved to the following paths:
 - `data/sidewalk_surface_condition/tree_damage.csv`
 - `data/sidewalk_surface_condition/sidewalk_planimetric.csv`
 
-**Custom output paths:**
 You can specify custom output paths for each dataset:
 ```bash
 python sidewalk_surface_condition.py \
