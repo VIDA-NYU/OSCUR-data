@@ -126,9 +126,9 @@ python -m code.downloaders.transit_stop_accessibility.transit_stop_accessibility
 ```
 
 By default, the datasets will be saved to the following paths:
-- data/transit_stop_accessibility/accessible_ped_signal_locations.csv
-- data/transit_stop_accessibility/pedestrian_ramp_locations.csv
-- data/transit_stop_accessibility/curbs.csv
+- `data/transit_stop_accessibility/accessible_ped_signal_locations.csv`
+- `data/transit_stop_accessibility/pedestrian_ramp_locations.csv`
+- `data/transit_stop_accessibility/curbs.csv`
 
 You can specify custom output paths for each dataset:
 ```bash
@@ -136,6 +136,30 @@ python -m code.downloaders.transit_stop_accessibility.transit_stop_accessibility
   --aps /custom/path/acc_ped_signal_loc.csv \
   --ramps /custom/path/ped_ramp_loc.csv \
   --curbs /custom/path/curbs.csv
+```
+
+**Sidewalk Surface Condition Dataset:**
+The `sidewalk_surface_condition.py` script allows downloading multiple datasets simultaneously, including complaints, violations, lot info, tree damage and sidewalks.
+
+```bash
+python sidewalk_surface_condition.py
+```
+
+By default, the datasets will be saved to the following paths:
+- `data/sidewalk_surface_condition/sidewalk_complaints_311.csv`
+- `data/sidewalk_surface_condition/sidewalk_violations.csv`
+- `data/sidewalk_surface_condition/sidewalk_lot_info.csv`
+- `data/sidewalk_surface_condition/tree_damage.csv`
+- `data/sidewalk_surface_condition/sidewalk_planimetric.csv`
+
+You can specify custom output paths for each dataset:
+```bash
+python sidewalk_surface_condition.py \
+  --violations /custom/path/sidewalk_violations.csv \
+  --tree_damage /custom/path/tree_damage.csv \
+  --complaints_311 /custom/path/sidewalk_311_complaints.csv \
+  --planimetric /custom/path/sidewalk_planimetric.csv \
+  --lot_info /custom/path/lot_info.csv
 ```
 
 ## Base Class Benefits

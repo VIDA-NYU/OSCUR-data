@@ -11,6 +11,7 @@ code/processors/
 ├── on_street_curb_management.py       # Post-processing On Street Curb Management dataset (CSV)
 ├── signals_markings_signs.py          # Post-processing Signals Markings and Signs dataset (CSV)
 ├── transit_stop_accessibilitys.py     # Post-processing Transit Stop Acc dataset (CSV)
+├── sidewalk_surface_condition.py      # Post-processing Sidewalk Surface Condition dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
 ```
@@ -42,9 +43,9 @@ python on_street_curb_management.py \
 This script integrates street segments with point features such as accessible pedestrian signals, street signs, and traffic signals.
 ```bash
 python signals_markings_signs_processor.py \
-  --aps data/signals_markings_signs/accessible_pedestrian_signals.csv \
-  --signs data/signals_markings_signs/street_sign_work_orders.csv \
-  --signals data/signals_markings_signs/traffic_signals.csv \
+  --aps ../downloaders/data/signals_markings_signs/accessible_pedestrian_signals.csv \
+  --signs ../downloaders/data/signals_markings_signs/street_sign_work_orders.csv \
+  --signals ../downloaders/data/signals_markings_signs/traffic_signals.csv \
   --output processed_data/signals_signs_markings_combined.csv
 ```
 
@@ -53,12 +54,31 @@ This script joins Accessible Pedestrian Signal (APS) and ramp point data to curb
 
 ```bash
 python -m code.processors.transit_stop_accessibility \
-  --aps   data/transit_stop_accessibility/accessible_pedestrian_signal_locations.csv \
-  --ramps data/transit_stop_accessibility/pedestrian_ramp_locations.csv \
-  --curbs data/transit_stop_accessibility/nyc_curbs.csv \
+  --aps   ../downloaders/data/transit_stop_accessibility/accessible_pedestrian_signal_locations.csv \
+  --ramps ../downloaders/data/transit_stop_accessibility/pedestrian_ramp_locations.csv \
+  --curbs ../downloaders/data/transit_stop_accessibility/nyc_curbs.csv \
   --out   processed_data/transit_stop_accessibility/transit_stop_accessibility_merged.csv
 ```
- 
+
+#### Sidewak Surface Condition (2 merge scripts)
+This script processes the raw datasets for sidewalks, complaints, violations, tree damage and lot info, merging them into a unified dataset.
+```bash
+python merge_sidewalk_datasets.py \
+  --violations ../downloaders/data/sidewalk_surface_condition/sidewalk_violations.csv \
+  --tree_damage ../downloaders/data/sidewalk_surface_condition/tree_damage.csv \
+  --lot_info ../downloaders/data/sidewalk_surface_condition/lot_info.csv \
+  --out ../processors/processed_data/sidewalk_surface_violations_and_trees.csv
+```
+
+```bash
+python merge_geocoded_and_311.py \
+  --geocoded ../processors/processed_data/sidewalk_surface_violations_and_trees.csv \
+  --complaints_311 ../downloaders/data/sidewalk_surface_condition/sidewalk_311_complaints.csv \
+  --sidewalk_geom ../downloaders/data/sidewalk_surface_condition/sidewalk_planimetric.csv \
+  --out ../processors/processed_data/sidewalk_surface_full_merged.csv
+```
+
+
 ### Other Datasets
 To be added as needed.
 
