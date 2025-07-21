@@ -30,16 +30,21 @@ code/downloaders/
     ├── on_street_curb_management.py  # Activates all download files
     ├── parking_meters_downloader.py  # Download Parking Meters dataset (CSV)
     ├── truck_routes_downloader.py    # Download Truck Routes dataset (CSV)
-├── signals_markings_signs/           # Folder for NYC traffic signals, signs, and APS
+├── signals_markings_signs           # Folder for NYC traffic signals, signs, and APS
     ├── accessible_ped_signals_downloader.py   # Download Accessible Pedestrian Signals
     ├── traffic_signal_downloader.py           # Download Traffic Signals (311)
     ├── street_sign_downloader.py              # Download Street Sign Work Orders
     ├── signals_markings_signs.py              # Runs all signal/sign downloaders
-├── transit_stop_accessibilty.py
+├── transit_stop_accessibilty
    ├── acc_ped_signal_loc_downlaoder.py  # Download acc ped location dataset (CSV)
    ├── curbs_downloader.py               # Download curbs dataset (CSV)
    ├── ped_ramp_locations_downloader.py  # Download pedestrian ramp dataset (CSV)
    ├── transit_stop_accessibilty.py      # Orchestrates all downloads
+├── transit_ridership
+    ├── ferry_ridership.py                        # Download NYC Ferry Ridership dataset (CSV)
+    ├── mta_bus_hourly_ridership_downloader.py    # Download MTA Bus Hourly Ridership dataset (CSV)
+    ├── mta_subway_hourly_ridership_downloader.py # Download MTA Subway Hourly Ridership dataset (CSV)
+    ├── transit_ridership_orchestrator.py         # Orchestrates all downloads
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -136,6 +141,21 @@ python -m code.downloaders.transit_stop_accessibility.transit_stop_accessibility
   --aps /custom/path/acc_ped_signal_loc.csv \
   --ramps /custom/path/ped_ramp_loc.csv \
   --curbs /custom/path/curbs.csv
+```
+
+**Transit Ridership:**
+The `transit_ridership_orchestrator.py` script downloads bus, subway and ferry data:
+
+```bash
+python transit_ridership_orchestrator.py   # basic usage
+```
+
+Custom output paths:
+```bash
+python transit_ridership_orchestrator.py \
+  --subway /custom/mta_subway_hourly_ridership.csv \
+  --bus /custom/mta_bus_hourly_ridership.csv \
+  --ferry /custom/nyc_ferry_ridership.csv
 ```
 
 ## Base Class Benefits
