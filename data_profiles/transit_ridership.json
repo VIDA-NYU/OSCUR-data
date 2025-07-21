@@ -1,0 +1,1388 @@
+{
+  "nb_rows": 5000,
+  "nb_profiled_rows": 5000,
+  "nb_columns": 12,
+  "columns": [
+    {
+      "name": "transit_timestamp",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration",
+        "http://schema.org/DateTime"
+      ],
+      "num_distinct_values": 48,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "07/24/2021 01:00:00 PM",
+            "count": 240
+          },
+          {
+            "bin": "07/24/2021 07:00:00 AM",
+            "count": 238
+          },
+          {
+            "bin": "07/24/2021 07:00:00 PM",
+            "count": 235
+          },
+          {
+            "bin": "07/24/2021 11:00:00 AM",
+            "count": 237
+          },
+          {
+            "bin": "07/24/2021 12:00:00 PM",
+            "count": 243
+          }
+        ]
+      }
+    },
+    {
+      "name": "transit_mode",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 1,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "subway",
+            "count": 5000
+          }
+        ]
+      }
+    },
+    {
+      "name": "station_complex_id",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/identifier"
+      ],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 149,
+      "mean": 317.853,
+      "stddev": 195.22185070068338,
+      "coverage": [
+        {
+          "range": {
+            "gte": 2.0,
+            "lte": 100.0
+          }
+        },
+        {
+          "range": {
+            "gte": 188.0,
+            "lte": 405.0
+          }
+        },
+        {
+          "range": {
+            "gte": 456.0,
+            "lte": 635.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 922,
+            "bin_start": 1.0,
+            "bin_end": 64.5
+          },
+          {
+            "count": 237,
+            "bin_start": 64.5,
+            "bin_end": 128.0
+          },
+          {
+            "count": 230,
+            "bin_start": 128.0,
+            "bin_end": 191.5
+          },
+          {
+            "count": 427,
+            "bin_start": 191.5,
+            "bin_end": 255.0
+          },
+          {
+            "count": 645,
+            "bin_start": 255.0,
+            "bin_end": 318.5
+          },
+          {
+            "count": 432,
+            "bin_start": 318.5,
+            "bin_end": 382.0
+          },
+          {
+            "count": 865,
+            "bin_start": 382.0,
+            "bin_end": 445.5
+          },
+          {
+            "count": 323,
+            "bin_start": 445.5,
+            "bin_end": 509.0
+          },
+          {
+            "count": 0,
+            "bin_start": 509.0,
+            "bin_end": 572.5
+          },
+          {
+            "count": 919,
+            "bin_start": 572.5,
+            "bin_end": 636.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "station_complex",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 149,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "125 St (4,5,6)",
+            "count": 45
+          },
+          {
+            "bin": "23 St (6)",
+            "count": 48
+          },
+          {
+            "bin": "49 St (N,R,W)",
+            "count": 47
+          },
+          {
+            "bin": "Lexington Av-53 St (E,M)/51 St (6)",
+            "count": 50
+          },
+          {
+            "bin": "Westchester Sq-E Tremont Av (6)",
+            "count": 46
+          }
+        ]
+      }
+    },
+    {
+      "name": "borough",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 4,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Bronx",
+            "count": 907
+          },
+          {
+            "bin": "Brooklyn",
+            "count": 1354
+          },
+          {
+            "bin": "Manhattan",
+            "count": 1676
+          },
+          {
+            "bin": "Queens",
+            "count": 1063
+          }
+        ]
+      }
+    },
+    {
+      "name": "payment_method",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 2,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "metrocard",
+            "count": 4247
+          },
+          {
+            "bin": "omny",
+            "count": 753
+          }
+        ]
+      }
+    },
+    {
+      "name": "fare_class_category",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "metrocard",
+            "count": 4247
+          },
+          {
+            "bin": "fare",
+            "count": 2186
+          },
+          {
+            "bin": "full",
+            "count": 1532
+          },
+          {
+            "bin": "unlimited",
+            "count": 1501
+          },
+          {
+            "bin": "day",
+            "count": 1501
+          }
+        ]
+      }
+    },
+    {
+      "name": "ridership",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 325,
+      "mean": 37.7646,
+      "stddev": 97.31314806766895,
+      "coverage": [
+        {
+          "range": {
+            "gte": 1.0,
+            "lte": 75.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 4825,
+            "bin_start": 1.0,
+            "bin_end": 192.4
+          },
+          {
+            "count": 111,
+            "bin_start": 192.4,
+            "bin_end": 383.8
+          },
+          {
+            "count": 28,
+            "bin_start": 383.8,
+            "bin_end": 575.2
+          },
+          {
+            "count": 15,
+            "bin_start": 575.2,
+            "bin_end": 766.6
+          },
+          {
+            "count": 8,
+            "bin_start": 766.6,
+            "bin_end": 958.0
+          },
+          {
+            "count": 6,
+            "bin_start": 958.0,
+            "bin_end": 1149.4
+          },
+          {
+            "count": 4,
+            "bin_start": 1149.4,
+            "bin_end": 1340.8
+          },
+          {
+            "count": 0,
+            "bin_start": 1340.8,
+            "bin_end": 1532.2
+          },
+          {
+            "count": 2,
+            "bin_start": 1532.2,
+            "bin_end": 1723.6000000000001
+          },
+          {
+            "count": 1,
+            "bin_start": 1723.6000000000001,
+            "bin_end": 1915.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "transfers",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 42,
+      "mean": 1.1628,
+      "stddev": 4.376744927454753,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 3.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 4863,
+            "bin_start": 0.0,
+            "bin_end": 9.3
+          },
+          {
+            "count": 84,
+            "bin_start": 9.3,
+            "bin_end": 18.6
+          },
+          {
+            "count": 29,
+            "bin_start": 18.6,
+            "bin_end": 27.900000000000002
+          },
+          {
+            "count": 12,
+            "bin_start": 27.900000000000002,
+            "bin_end": 37.2
+          },
+          {
+            "count": 3,
+            "bin_start": 37.2,
+            "bin_end": 46.5
+          },
+          {
+            "count": 2,
+            "bin_start": 46.5,
+            "bin_end": 55.800000000000004
+          },
+          {
+            "count": 2,
+            "bin_start": 55.800000000000004,
+            "bin_end": 65.10000000000001
+          },
+          {
+            "count": 2,
+            "bin_start": 65.10000000000001,
+            "bin_end": 74.4
+          },
+          {
+            "count": 1,
+            "bin_start": 74.4,
+            "bin_end": 83.7
+          },
+          {
+            "count": 2,
+            "bin_start": 83.7,
+            "bin_end": 93.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "latitude",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [
+        "http://schema.org/latitude"
+      ],
+      "unclean_values_ratio": 0.0,
+      "mean": 40.73685133579961,
+      "stddev": 0.087892486008722,
+      "coverage": [
+        {
+          "range": {
+            "gte": 40.577423,
+            "lte": 40.68595
+          }
+        },
+        {
+          "range": {
+            "gte": 40.703087,
+            "lte": 40.78567
+          }
+        },
+        {
+          "range": {
+            "gte": 40.79863,
+            "lte": 40.883896
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 562,
+            "bin_start": 40.576126,
+            "bin_end": 40.607438200000004
+          },
+          {
+            "count": 322,
+            "bin_start": 40.607438200000004,
+            "bin_end": 40.6387504
+          },
+          {
+            "count": 224,
+            "bin_start": 40.6387504,
+            "bin_end": 40.6700626
+          },
+          {
+            "count": 639,
+            "bin_start": 40.6700626,
+            "bin_end": 40.7013748
+          },
+          {
+            "count": 349,
+            "bin_start": 40.7013748,
+            "bin_end": 40.732687
+          },
+          {
+            "count": 1020,
+            "bin_start": 40.732687,
+            "bin_end": 40.7639992
+          },
+          {
+            "count": 439,
+            "bin_start": 40.7639992,
+            "bin_end": 40.7953114
+          },
+          {
+            "count": 368,
+            "bin_start": 40.7953114,
+            "bin_end": 40.826623600000005
+          },
+          {
+            "count": 638,
+            "bin_start": 40.826623600000005,
+            "bin_end": 40.8579358
+          },
+          {
+            "count": 439,
+            "bin_start": 40.8579358,
+            "bin_end": 40.889248
+          }
+        ]
+      }
+    },
+    {
+      "name": "longitude",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [
+        "http://schema.org/longitude"
+      ],
+      "unclean_values_ratio": 0.0,
+      "mean": -73.93460411220009,
+      "stddev": 0.0563907871630497,
+      "coverage": [
+        {
+          "range": {
+            "gte": -74.01299,
+            "lte": -73.95107
+          }
+        },
+        {
+          "range": {
+            "gte": -73.94425,
+            "lte": -73.89006
+          }
+        },
+        {
+          "range": {
+            "gte": -73.87211,
+            "lte": -73.78852
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 264,
+            "bin_start": -74.030876,
+            "bin_end": -74.00539040000001
+          },
+          {
+            "count": 1073,
+            "bin_start": -74.00539040000001,
+            "bin_end": -73.9799048
+          },
+          {
+            "count": 854,
+            "bin_start": -73.9799048,
+            "bin_end": -73.9544192
+          },
+          {
+            "count": 736,
+            "bin_start": -73.9544192,
+            "bin_end": -73.92893360000001
+          },
+          {
+            "count": 751,
+            "bin_start": -73.92893360000001,
+            "bin_end": -73.903448
+          },
+          {
+            "count": 436,
+            "bin_start": -73.903448,
+            "bin_end": -73.8779624
+          },
+          {
+            "count": 222,
+            "bin_start": -73.8779624,
+            "bin_end": -73.8524768
+          },
+          {
+            "count": 481,
+            "bin_start": -73.8524768,
+            "bin_end": -73.82699120000001
+          },
+          {
+            "count": 96,
+            "bin_start": -73.82699120000001,
+            "bin_end": -73.8015056
+          },
+          {
+            "count": 87,
+            "bin_start": -73.8015056,
+            "bin_end": -73.77602
+          }
+        ]
+      }
+    },
+    {
+      "name": "Georeference",
+      "structural_type": "http://schema.org/GeoCoordinates",
+      "semantic_types": [],
+      "point_format": "long,lat",
+      "unclean_values_ratio": 0.0
+    }
+  ],
+  "nb_spatial_columns": 3,
+  "nb_temporal_columns": 1,
+  "nb_categorical_columns": 4,
+  "nb_numerical_columns": 3,
+  "types": [
+    "categorical",
+    "numerical",
+    "spatial",
+    "temporal"
+  ],
+  "spatial_coverage": [
+    {
+      "type": "latlong",
+      "column_names": [
+        "latitude",
+        "longitude"
+      ],
+      "column_indexes": [
+        9,
+        10
+      ],
+      "geohashes4": [
+        {
+          "hash": "12113023133021",
+          "number": 104
+        },
+        {
+          "hash": "12113023133010",
+          "number": 55
+        },
+        {
+          "hash": "12113023133011",
+          "number": 77
+        },
+        {
+          "hash": "12113023133100",
+          "number": 216
+        },
+        {
+          "hash": "12113023133103",
+          "number": 93
+        },
+        {
+          "hash": "12113023133101",
+          "number": 122
+        },
+        {
+          "hash": "12113023133123",
+          "number": 27
+        },
+        {
+          "hash": "12113023133120",
+          "number": 104
+        },
+        {
+          "hash": "12113023133122",
+          "number": 101
+        },
+        {
+          "hash": "12113023133121",
+          "number": 41
+        },
+        {
+          "hash": "12113023133132",
+          "number": 107
+        },
+        {
+          "hash": "12113023133131",
+          "number": 80
+        },
+        {
+          "hash": "12113023133110",
+          "number": 47
+        },
+        {
+          "hash": "12113023133112",
+          "number": 117
+        },
+        {
+          "hash": "12113023133311",
+          "number": 38
+        },
+        {
+          "hash": "12113023133300",
+          "number": 113
+        },
+        {
+          "hash": "12113023133302",
+          "number": 35
+        },
+        {
+          "hash": "12113023133200",
+          "number": 35
+        },
+        {
+          "hash": "12113023132323",
+          "number": 63
+        },
+        {
+          "hash": "12113023132333",
+          "number": 31
+        },
+        {
+          "hash": "12113023132332",
+          "number": 96
+        },
+        {
+          "hash": "12113023132330",
+          "number": 96
+        },
+        {
+          "hash": "12113023132312",
+          "number": 108
+        },
+        {
+          "hash": "12113023132310",
+          "number": 28
+        },
+        {
+          "hash": "12113023132010",
+          "number": 32
+        },
+        {
+          "hash": "12113023132012",
+          "number": 4
+        },
+        {
+          "hash": "12113023132011",
+          "number": 62
+        },
+        {
+          "hash": "12113023132013",
+          "number": 35
+        },
+        {
+          "hash": "12113023132020",
+          "number": 31
+        },
+        {
+          "hash": "12113023132001",
+          "number": 64
+        },
+        {
+          "hash": "12113023132000",
+          "number": 67
+        },
+        {
+          "hash": "12113023132113",
+          "number": 95
+        },
+        {
+          "hash": "12113023132111",
+          "number": 38
+        },
+        {
+          "hash": "12113023132112",
+          "number": 36
+        },
+        {
+          "hash": "12113023132101",
+          "number": 75
+        },
+        {
+          "hash": "12113023132100",
+          "number": 30
+        },
+        {
+          "hash": "12113023132130",
+          "number": 5
+        },
+        {
+          "hash": "12113023130221",
+          "number": 75
+        },
+        {
+          "hash": "12113023130232",
+          "number": 35
+        },
+        {
+          "hash": "12113023131223",
+          "number": 115
+        },
+        {
+          "hash": "12113023131222",
+          "number": 39
+        },
+        {
+          "hash": "12113023123111",
+          "number": 104
+        },
+        {
+          "hash": "12113023123131",
+          "number": 78
+        },
+        {
+          "hash": "12113023123130",
+          "number": 41
+        },
+        {
+          "hash": "12113023123103",
+          "number": 146
+        },
+        {
+          "hash": "12113023123323",
+          "number": 36
+        },
+        {
+          "hash": "12113023301110",
+          "number": 52
+        },
+        {
+          "hash": "12113023301112",
+          "number": 74
+        },
+        {
+          "hash": "12113023301101",
+          "number": 18
+        },
+        {
+          "hash": "12113023301130",
+          "number": 13
+        },
+        {
+          "hash": "12113023310111",
+          "number": 30
+        },
+        {
+          "hash": "12113023310000",
+          "number": 14
+        },
+        {
+          "hash": "12113032022021",
+          "number": 72
+        },
+        {
+          "hash": "12113032022020",
+          "number": 85
+        },
+        {
+          "hash": "12113032022012",
+          "number": 70
+        },
+        {
+          "hash": "12113032022033",
+          "number": 41
+        },
+        {
+          "hash": "12113032022032",
+          "number": 80
+        },
+        {
+          "hash": "12113032022031",
+          "number": 68
+        },
+        {
+          "hash": "12113032022003",
+          "number": 69
+        },
+        {
+          "hash": "12113032022002",
+          "number": 21
+        },
+        {
+          "hash": "12113032022311",
+          "number": 116
+        },
+        {
+          "hash": "12113032022310",
+          "number": 77
+        },
+        {
+          "hash": "12113032022323",
+          "number": 133
+        },
+        {
+          "hash": "12113032022320",
+          "number": 114
+        },
+        {
+          "hash": "12113032022302",
+          "number": 37
+        },
+        {
+          "hash": "12113032022301",
+          "number": 34
+        },
+        {
+          "hash": "12113032022120",
+          "number": 75
+        },
+        {
+          "hash": "12113032022122",
+          "number": 66
+        },
+        {
+          "hash": "12113032022123",
+          "number": 33
+        },
+        {
+          "hash": "12113032022121",
+          "number": 36
+        },
+        {
+          "hash": "12113032022132",
+          "number": 36
+        },
+        {
+          "hash": "12113032022133",
+          "number": 73
+        },
+        {
+          "hash": "12113032022211",
+          "number": 1
+        },
+        {
+          "hash": "12113032023202",
+          "number": 69
+        },
+        {
+          "hash": "12113032023200",
+          "number": 99
+        },
+        {
+          "hash": "12113032023201",
+          "number": 75
+        },
+        {
+          "hash": "12113032023221",
+          "number": 7
+        },
+        {
+          "hash": "12113032200110",
+          "number": 35
+        }
+      ],
+      "ranges": [
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -74.02338,
+                40.76266
+              ],
+              [
+                -73.918434,
+                40.607952
+              ]
+            ]
+          }
+        },
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -73.97594,
+                40.68433
+              ],
+              [
+                -73.78852,
+                40.576313
+              ]
+            ]
+          }
+        },
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -73.96685,
+                40.87975
+              ],
+              [
+                -73.84295,
+                40.74685
+              ]
+            ]
+          }
+        }
+      ],
+      "number": 5000
+    },
+    {
+      "type": "point",
+      "column_names": [
+        "Georeference"
+      ],
+      "column_indexes": [
+        11
+      ],
+      "geohashes4": [
+        {
+          "hash": "12113023133021",
+          "number": 104
+        },
+        {
+          "hash": "12113023133010",
+          "number": 55
+        },
+        {
+          "hash": "12113023133011",
+          "number": 77
+        },
+        {
+          "hash": "12113023133100",
+          "number": 216
+        },
+        {
+          "hash": "12113023133103",
+          "number": 93
+        },
+        {
+          "hash": "12113023133101",
+          "number": 122
+        },
+        {
+          "hash": "12113023133123",
+          "number": 27
+        },
+        {
+          "hash": "12113023133120",
+          "number": 104
+        },
+        {
+          "hash": "12113023133122",
+          "number": 101
+        },
+        {
+          "hash": "12113023133121",
+          "number": 41
+        },
+        {
+          "hash": "12113023133132",
+          "number": 107
+        },
+        {
+          "hash": "12113023133131",
+          "number": 80
+        },
+        {
+          "hash": "12113023133110",
+          "number": 47
+        },
+        {
+          "hash": "12113023133112",
+          "number": 117
+        },
+        {
+          "hash": "12113023133311",
+          "number": 38
+        },
+        {
+          "hash": "12113023133300",
+          "number": 113
+        },
+        {
+          "hash": "12113023133302",
+          "number": 35
+        },
+        {
+          "hash": "12113023133200",
+          "number": 35
+        },
+        {
+          "hash": "12113023132323",
+          "number": 63
+        },
+        {
+          "hash": "12113023132333",
+          "number": 31
+        },
+        {
+          "hash": "12113023132332",
+          "number": 96
+        },
+        {
+          "hash": "12113023132330",
+          "number": 96
+        },
+        {
+          "hash": "12113023132312",
+          "number": 108
+        },
+        {
+          "hash": "12113023132310",
+          "number": 28
+        },
+        {
+          "hash": "12113023132010",
+          "number": 32
+        },
+        {
+          "hash": "12113023132012",
+          "number": 4
+        },
+        {
+          "hash": "12113023132011",
+          "number": 62
+        },
+        {
+          "hash": "12113023132013",
+          "number": 35
+        },
+        {
+          "hash": "12113023132020",
+          "number": 31
+        },
+        {
+          "hash": "12113023132001",
+          "number": 64
+        },
+        {
+          "hash": "12113023132000",
+          "number": 67
+        },
+        {
+          "hash": "12113023132113",
+          "number": 95
+        },
+        {
+          "hash": "12113023132111",
+          "number": 38
+        },
+        {
+          "hash": "12113023132112",
+          "number": 36
+        },
+        {
+          "hash": "12113023132101",
+          "number": 75
+        },
+        {
+          "hash": "12113023132100",
+          "number": 30
+        },
+        {
+          "hash": "12113023132130",
+          "number": 5
+        },
+        {
+          "hash": "12113023130221",
+          "number": 75
+        },
+        {
+          "hash": "12113023130232",
+          "number": 35
+        },
+        {
+          "hash": "12113023131223",
+          "number": 115
+        },
+        {
+          "hash": "12113023131222",
+          "number": 39
+        },
+        {
+          "hash": "12113023123111",
+          "number": 104
+        },
+        {
+          "hash": "12113023123131",
+          "number": 78
+        },
+        {
+          "hash": "12113023123130",
+          "number": 41
+        },
+        {
+          "hash": "12113023123103",
+          "number": 146
+        },
+        {
+          "hash": "12113023123323",
+          "number": 36
+        },
+        {
+          "hash": "12113023301110",
+          "number": 52
+        },
+        {
+          "hash": "12113023301112",
+          "number": 74
+        },
+        {
+          "hash": "12113023301101",
+          "number": 18
+        },
+        {
+          "hash": "12113023301130",
+          "number": 13
+        },
+        {
+          "hash": "12113023310111",
+          "number": 30
+        },
+        {
+          "hash": "12113023310000",
+          "number": 14
+        },
+        {
+          "hash": "12113032022021",
+          "number": 72
+        },
+        {
+          "hash": "12113032022020",
+          "number": 85
+        },
+        {
+          "hash": "12113032022012",
+          "number": 70
+        },
+        {
+          "hash": "12113032022033",
+          "number": 41
+        },
+        {
+          "hash": "12113032022032",
+          "number": 80
+        },
+        {
+          "hash": "12113032022031",
+          "number": 68
+        },
+        {
+          "hash": "12113032022003",
+          "number": 69
+        },
+        {
+          "hash": "12113032022002",
+          "number": 21
+        },
+        {
+          "hash": "12113032022311",
+          "number": 116
+        },
+        {
+          "hash": "12113032022310",
+          "number": 77
+        },
+        {
+          "hash": "12113032022323",
+          "number": 133
+        },
+        {
+          "hash": "12113032022320",
+          "number": 114
+        },
+        {
+          "hash": "12113032022302",
+          "number": 37
+        },
+        {
+          "hash": "12113032022301",
+          "number": 34
+        },
+        {
+          "hash": "12113032022120",
+          "number": 75
+        },
+        {
+          "hash": "12113032022122",
+          "number": 66
+        },
+        {
+          "hash": "12113032022123",
+          "number": 33
+        },
+        {
+          "hash": "12113032022121",
+          "number": 36
+        },
+        {
+          "hash": "12113032022132",
+          "number": 36
+        },
+        {
+          "hash": "12113032022133",
+          "number": 73
+        },
+        {
+          "hash": "12113032022211",
+          "number": 1
+        },
+        {
+          "hash": "12113032023202",
+          "number": 69
+        },
+        {
+          "hash": "12113032023200",
+          "number": 99
+        },
+        {
+          "hash": "12113032023201",
+          "number": 75
+        },
+        {
+          "hash": "12113032023221",
+          "number": 7
+        },
+        {
+          "hash": "12113032200110",
+          "number": 35
+        }
+      ],
+      "ranges": [
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -74.02338,
+                40.76266
+              ],
+              [
+                -73.918434,
+                40.607952
+              ]
+            ]
+          }
+        },
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -73.97594,
+                40.68433
+              ],
+              [
+                -73.78852,
+                40.576313
+              ]
+            ]
+          }
+        },
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -73.96685,
+                40.87975
+              ],
+              [
+                -73.84295,
+                40.74685
+              ]
+            ]
+          }
+        }
+      ],
+      "number": 5000
+    }
+  ],
+  "temporal_coverage": [
+    {
+      "type": "datetime",
+      "column_names": [
+        "transit_timestamp"
+      ],
+      "column_indexes": [
+        0
+      ],
+      "column_types": [
+        "http://schema.org/DateTime"
+      ],
+      "ranges": [
+        {
+          "range": {
+            "gte": 1627088384.0,
+            "lte": 1627164032.0
+          }
+        }
+      ],
+      "temporal_resolution": "hour"
+    }
+  ],
+  "attribute_keywords": [
+    "transit_timestamp",
+    "transit",
+    "timestamp",
+    "transit_mode",
+    "transit",
+    "mode",
+    "station_complex_id",
+    "station",
+    "complex",
+    "id",
+    "station_complex",
+    "station",
+    "complex",
+    "borough",
+    "payment_method",
+    "payment",
+    "method",
+    "fare_class_category",
+    "fare",
+    "class",
+    "category",
+    "ridership",
+    "transfers",
+    "latitude",
+    "longitude",
+    "Georeference"
+  ],
+  "sample": "transit_timestamp,transit_mode,station_complex_id,station_complex,borough,payment_method,fare_class_category,ridership,transfers,latitude,longitude,Georeference\r\n07/24/2021 03:00:00 PM,subway,612,\"Lexington Av-53 St (E,M)/51 St (6)\",Manhattan,metrocard,Metrocard - Unlimited 7-Day,104,0,40.757553,-73.969055,POINT (-73.969055 40.757553)\r\n07/24/2021 12:00:00 PM,subway,2,\"Astoria Blvd (N,W)\",Queens,omny,OMNY - Full Fare,85,5,40.77026,-73.91785,POINT (-73.91785 40.77026)\r\n07/24/2021 02:00:00 PM,subway,196,Aqueduct Racetrack (A),Queens,metrocard,Metrocard - Unlimited 7-Day,8,0,40.672096,-73.83592,POINT (-73.83592 40.672096)\r\n07/24/2021 10:00:00 AM,subway,602,\"14 St-Union Sq (L,N,Q,R,W,4,5,6)\",Manhattan,metrocard,Metrocard - Fair Fare,21,3,40.735737,-73.98995,POINT (-73.98995 40.735737)\r\n07/24/2021 03:00:00 PM,subway,636,\"Jay St-MetroTech (A,C,F,R)\",Brooklyn,metrocard,Metrocard - Unlimited 30-Day,71,0,40.692337,-73.98594,POINT (-73.98594 40.692337)\r\n07/24/2021 01:00:00 AM,subway,381,Kingsbridge Rd (4),Bronx,metrocard,Metrocard - Full Fare,3,0,40.86776,-73.89717,POINT (-73.89717 40.86776)\r\n07/24/2021 09:00:00 PM,subway,458,46 St-Bliss St (7),Queens,metrocard,Metrocard - Other,6,0,40.743134,-73.918434,POINT (-73.918434 40.743134)\r\n07/24/2021 06:00:00 AM,subway,387,170 St (4),Bronx,metrocard,Metrocard - Other,4,1,40.840076,-73.91779,POINT (-73.91779 40.840076)\r\n07/24/2021 09:00:00 PM,subway,381,Kingsbridge Rd (4),Bronx,metrocard,Metrocard - Unlimited 7-Day,22,0,40.86776,-73.89717,POINT (-73.89717 40.86776)\r\n07/24/2021 06:00:00 PM,subway,185,Liberty Av (C),Brooklyn,metrocard,Metrocard - Unlimited 7-Day,4,0,40.67454,-73.896545,POINT (-73.896545 40.67454)\r\n07/24/2021 07:00:00 PM,subway,367,St Lawrence Av (6),Bronx,metrocard,Metrocard - Full Fare,18,1,40.83151,-73.867615,POINT (-73.867615 40.83151)\r\n07/24/2021 04:00:00 AM,subway,459,40 St-Lowery St (7),Queens,metrocard,Metrocard - Unlimited 7-Day,2,0,40.743782,-73.92402,POINT (-73.92402 40.743782)\r\n07/24/2021 02:00:00 PM,subway,194,111 St (A),Queens,metrocard,Metrocard - Other,2,0,40.68433,-73.83216,POINT (-73.83216 40.68433)\r\n07/24/2021 06:00:00 AM,subway,205,Beach 60 St (A),Queens,metrocard,Metrocard - Full Fare,13,0,40.592373,-73.78852,POINT (-73.78852 40.592373)\r\n07/24/2021 06:00:00 AM,subway,460,33 St-Rawson St (7),Queens,metrocard,Metrocard - Full Fare,4,0,40.744587,-73.931,POINT (-73.931 40.744587)\r\n07/24/2021 03:00:00 AM,subway,629,Lorimer St (L)/Metropolitan Av (G),Brooklyn,metrocard,Metrocard - Fair Fare,2,0,40.71406,-73.95027,POINT (-73.95027 40.71406)\r\n07/24/2021 06:00:00 AM,subway,630,\"Myrtle-Wyckoff Avs (L,M)\",Brooklyn,metrocard,Metrocard - Unlimited 7-Day,98,0,40.699814,-73.91158,POINT (-73.91158 40.699814)\r\n07/24/2021 11:00:00 AM,subway,308,Cathedral Pkwy (110 St) (1),Manhattan,metrocard,Metrocard - Other,11,0,40.803967,-73.96685,POINT (-73.96685 40.803967)\r\n07/24/2021 08:00:00 PM,subway,41,\"7 Av (B,Q)\",Brooklyn,metrocard,Metrocard - Seniors & Disability,3,1,40.67705,-73.97237,POINT (-73.97237 40.67705)\r\n07/24/2021 12:00:00 PM,subway,388,167 St (4),Bronx,metrocard,Metrocard - Other,7,0,40.835537,-73.9214,POINT (-73.9214 40.835537)\r\n"
+}
