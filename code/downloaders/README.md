@@ -40,6 +40,10 @@ code/downloaders/
    ├── curbs_downloader.py               # Download curbs dataset (CSV)
    ├── ped_ramp_locations_downloader.py  # Download pedestrian ramp dataset (CSV)
    ├── transit_stop_accessibilty.py      # Orchestrates all downloads
+├── rail_routes_and_crossings/
+   ├── crossings_downloader.py           # Download rail crossing points dataset (CSV)
+   ├── rail_routes_and_crossings.py      # Orchestrates all downloads
+   ├── railroad_lines_downloader.py      # Download railroad lines dataset (CSV)
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -160,6 +164,20 @@ python sidewalk_surface_condition.py \
   --complaints_311 /custom/path/sidewalk_311_complaints.csv \
   --planimetric /custom/path/sidewalk_planimetric.csv \
   --lot_info /custom/path/lot_info.csv
+```
+
+**Rail Routes and Crossings:**
+The `rail_routes_and_crossings.py ` script downloads accessible pedestrian signals, traffic signals, and street sign work orders data:
+
+```bash
+python rail_routes_and_crossings.py    # basic usage
+```
+
+Custom output paths:
+```bash
+python rail_routes_and_crossings.py \
+  --railroads custom/path/railroad_lines.csv \
+  --crossings custom/path/rail_crossings_nyc.csv \
 ```
 
 ## Base Class Benefits
