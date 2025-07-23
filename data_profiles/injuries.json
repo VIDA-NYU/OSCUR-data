@@ -1,0 +1,2184 @@
+{
+  "nb_rows": 2192597,
+  "nb_profiled_rows": 2192597,
+  "nb_columns": 29,
+  "columns": [
+    {
+      "name": "CRASH DATE",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration",
+        "http://schema.org/DateTime"
+      ],
+      "num_distinct_values": 4767,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "01/18/2015",
+            "count": 961
+          },
+          {
+            "bin": "01/21/2014",
+            "count": 1161
+          },
+          {
+            "bin": "05/19/2017",
+            "count": 974
+          },
+          {
+            "bin": "11/15/2018",
+            "count": 1065
+          },
+          {
+            "bin": "12/15/2017",
+            "count": 999
+          }
+        ]
+      }
+    },
+    {
+      "name": "CRASH TIME",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 1440,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "14:00",
+            "count": 26488
+          },
+          {
+            "bin": "15:00",
+            "count": 28942
+          },
+          {
+            "bin": "16:00",
+            "count": 29460
+          },
+          {
+            "bin": "17:00",
+            "count": 28931
+          },
+          {
+            "bin": "18:00",
+            "count": 26698
+          }
+        ]
+      }
+    },
+    {
+      "name": "BOROUGH",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.3077628948685052,
+      "num_distinct_values": 5,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "BRONX",
+            "count": 224778
+          },
+          {
+            "bin": "BROOKLYN",
+            "count": 485704
+          },
+          {
+            "bin": "MANHATTAN",
+            "count": 336814
+          },
+          {
+            "bin": "QUEENS",
+            "count": 406888
+          },
+          {
+            "bin": "STATEN ISLAND",
+            "count": 63613
+          }
+        ]
+      }
+    },
+    {
+      "name": "ZIP CODE",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 1.9155366900529373e-05,
+      "missing_values_ratio": 0.3078874047533587,
+      "num_distinct_values": 436,
+      "mean": 10843.84371742136,
+      "stddev": 552.8705406840307,
+      "coverage": [
+        {
+          "range": {
+            "gte": 10002.0,
+            "lte": 10470.0
+          }
+        },
+        {
+          "range": {
+            "gte": 11102.0,
+            "lte": 11237.0
+          }
+        },
+        {
+          "range": {
+            "gte": 11355.0,
+            "lte": 11436.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 335897,
+            "bin_start": 10000.0,
+            "bin_end": 10169.7
+          },
+          {
+            "count": 64503,
+            "bin_start": 10169.7,
+            "bin_end": 10339.4
+          },
+          {
+            "count": 224772,
+            "bin_start": 10339.4,
+            "bin_end": 10509.1
+          },
+          {
+            "count": 0,
+            "bin_start": 10509.1,
+            "bin_end": 10678.8
+          },
+          {
+            "count": 2,
+            "bin_start": 10678.8,
+            "bin_end": 10848.5
+          },
+          {
+            "count": 4072,
+            "bin_start": 10848.5,
+            "bin_end": 11018.2
+          },
+          {
+            "count": 44428,
+            "bin_start": 11018.2,
+            "bin_end": 11187.9
+          },
+          {
+            "count": 519825,
+            "bin_start": 11187.9,
+            "bin_end": 11357.6
+          },
+          {
+            "count": 308925,
+            "bin_start": 11357.6,
+            "bin_end": 11527.3
+          },
+          {
+            "count": 15058,
+            "bin_start": 11527.3,
+            "bin_end": 11697.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "LATITUDE",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [
+        "http://schema.org/latitude"
+      ],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.10951442513147651,
+      "mean": 40.60166009568836,
+      "stddev": 2.2292900630333445,
+      "coverage": [
+        {
+          "range": {
+            "gte": 40.582977,
+            "lte": 40.7194266
+          }
+        },
+        {
+          "range": {
+            "gte": 40.731117,
+            "lte": 40.878056
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 5861,
+            "bin_start": 0.0,
+            "bin_end": 4.334444400000001
+          },
+          {
+            "count": 0,
+            "bin_start": 4.334444400000001,
+            "bin_end": 8.668888800000001
+          },
+          {
+            "count": 0,
+            "bin_start": 8.668888800000001,
+            "bin_end": 13.003333200000002
+          },
+          {
+            "count": 0,
+            "bin_start": 13.003333200000002,
+            "bin_end": 17.337777600000003
+          },
+          {
+            "count": 0,
+            "bin_start": 17.337777600000003,
+            "bin_end": 21.672222000000005
+          },
+          {
+            "count": 0,
+            "bin_start": 21.672222000000005,
+            "bin_end": 26.006666400000004
+          },
+          {
+            "count": 0,
+            "bin_start": 26.006666400000004,
+            "bin_end": 30.341110800000003
+          },
+          {
+            "count": 1,
+            "bin_start": 30.341110800000003,
+            "bin_end": 34.675555200000005
+          },
+          {
+            "count": 1,
+            "bin_start": 34.675555200000005,
+            "bin_end": 39.00999960000001
+          },
+          {
+            "count": 1946613,
+            "bin_start": 39.00999960000001,
+            "bin_end": 43.344444
+          }
+        ]
+      }
+    },
+    {
+      "name": "LONGITUDE",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [
+        "http://schema.org/longitude"
+      ],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.10951442513147651,
+      "mean": -73.70477536824828,
+      "stddev": 4.154374725030792,
+      "coverage": [
+        {
+          "range": {
+            "gte": -74.038086,
+            "lte": -73.765076
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 106,
+            "bin_start": -201.35999,
+            "bin_end": -181.223991
+          },
+          {
+            "count": 0,
+            "bin_start": -181.223991,
+            "bin_end": -161.087992
+          },
+          {
+            "count": 0,
+            "bin_start": -161.087992,
+            "bin_end": -140.95199300000002
+          },
+          {
+            "count": 0,
+            "bin_start": -140.95199300000002,
+            "bin_end": -120.815994
+          },
+          {
+            "count": 0,
+            "bin_start": -120.815994,
+            "bin_end": -100.679995
+          },
+          {
+            "count": 2,
+            "bin_start": -100.679995,
+            "bin_end": -80.54399599999999
+          },
+          {
+            "count": 1946488,
+            "bin_start": -80.54399599999999,
+            "bin_end": -60.407996999999995
+          },
+          {
+            "count": 3,
+            "bin_start": -60.407996999999995,
+            "bin_end": -40.271997999999996
+          },
+          {
+            "count": 16,
+            "bin_start": -40.271997999999996,
+            "bin_end": -20.135998999999998
+          },
+          {
+            "count": 5861,
+            "bin_start": -20.135998999999998,
+            "bin_end": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "LOCATION",
+      "structural_type": "http://schema.org/GeoCoordinates",
+      "semantic_types": [],
+      "point_format": "lat,long",
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.10951442513147651
+    },
+    {
+      "name": "ON STREET NAME",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.21665632124827316,
+      "num_distinct_values": 22236,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "3 AVENUE                        ",
+            "count": 12476
+          },
+          {
+            "bin": "ATLANTIC AVENUE                 ",
+            "count": 15322
+          },
+          {
+            "bin": "BELT PARKWAY                    ",
+            "count": 13543
+          },
+          {
+            "bin": "BROADWAY                        ",
+            "count": 17277
+          },
+          {
+            "bin": "NORTHERN BOULEVARD              ",
+            "count": 11965
+          }
+        ]
+      }
+    },
+    {
+      "name": "CROSS STREET NAME",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.3818157189852946,
+      "num_distinct_values": 24316,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "2 AVENUE                        ",
+            "count": 8421
+          },
+          {
+            "bin": "3 AVENUE",
+            "count": 7086
+          },
+          {
+            "bin": "3 AVENUE                        ",
+            "count": 9843
+          },
+          {
+            "bin": "BROADWAY",
+            "count": 7085
+          },
+          {
+            "bin": "BROADWAY                        ",
+            "count": 9685
+          }
+        ]
+      }
+    },
+    {
+      "name": "OFF STREET NAME",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "missing_values_ratio": 0.8254736278486197,
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "avenue",
+            "count": 145012
+          },
+          {
+            "bin": "street",
+            "count": 132326
+          },
+          {
+            "bin": "east",
+            "count": 34877
+          },
+          {
+            "bin": "west",
+            "count": 25253
+          },
+          {
+            "bin": "boulevard",
+            "count": 23003
+          }
+        ]
+      }
+    },
+    {
+      "name": "NUMBER OF PERSONS INJURED",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 8.20944295736973e-06,
+      "num_distinct_values": 32,
+      "mean": 0.32465557683440366,
+      "stddev": 0.7119146963615544,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1.0,
+            "lte": 2.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 2186239,
+            "bin_start": 0.0,
+            "bin_end": 4.3
+          },
+          {
+            "count": 5925,
+            "bin_start": 4.3,
+            "bin_end": 8.6
+          },
+          {
+            "count": 316,
+            "bin_start": 8.6,
+            "bin_end": 12.899999999999999
+          },
+          {
+            "count": 71,
+            "bin_start": 12.899999999999999,
+            "bin_end": 17.2
+          },
+          {
+            "count": 14,
+            "bin_start": 17.2,
+            "bin_end": 21.5
+          },
+          {
+            "count": 8,
+            "bin_start": 21.5,
+            "bin_end": 25.799999999999997
+          },
+          {
+            "count": 1,
+            "bin_start": 25.799999999999997,
+            "bin_end": 30.099999999999998
+          },
+          {
+            "count": 3,
+            "bin_start": 30.099999999999998,
+            "bin_end": 34.4
+          },
+          {
+            "count": 0,
+            "bin_start": 34.4,
+            "bin_end": 38.699999999999996
+          },
+          {
+            "count": 2,
+            "bin_start": 38.699999999999996,
+            "bin_end": 43.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "NUMBER OF PERSONS KILLED",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 1.413848509324787e-05,
+      "num_distinct_values": 7,
+      "mean": 0.001566201427915967,
+      "stddev": 0.0417655209423568,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 2189272,
+            "bin_start": 0.0,
+            "bin_end": 0.8
+          },
+          {
+            "count": 3187,
+            "bin_start": 0.8,
+            "bin_end": 1.6
+          },
+          {
+            "count": 87,
+            "bin_start": 1.6,
+            "bin_end": 2.4000000000000004
+          },
+          {
+            "count": 13,
+            "bin_start": 2.4000000000000004,
+            "bin_end": 3.2
+          },
+          {
+            "count": 0,
+            "bin_start": 3.2,
+            "bin_end": 4.0
+          },
+          {
+            "count": 4,
+            "bin_start": 4.0,
+            "bin_end": 4.800000000000001
+          },
+          {
+            "count": 2,
+            "bin_start": 4.800000000000001,
+            "bin_end": 5.6000000000000005
+          },
+          {
+            "count": 0,
+            "bin_start": 5.6000000000000005,
+            "bin_end": 6.4
+          },
+          {
+            "count": 0,
+            "bin_start": 6.4,
+            "bin_end": 7.2
+          },
+          {
+            "count": 1,
+            "bin_start": 7.2,
+            "bin_end": 8.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "NUMBER OF PEDESTRIANS INJURED",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/Boolean"
+      ],
+      "unclean_values_ratio": 0.0020801816293646302,
+      "num_distinct_values": 14,
+      "mean": 0.05907606368156118,
+      "stddev": 0.2490390759333502,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 2192076,
+            "bin_start": 0.0,
+            "bin_end": 2.7
+          },
+          {
+            "count": 495,
+            "bin_start": 2.7,
+            "bin_end": 5.4
+          },
+          {
+            "count": 20,
+            "bin_start": 5.4,
+            "bin_end": 8.100000000000001
+          },
+          {
+            "count": 2,
+            "bin_start": 8.100000000000001,
+            "bin_end": 10.8
+          },
+          {
+            "count": 1,
+            "bin_start": 10.8,
+            "bin_end": 13.5
+          },
+          {
+            "count": 1,
+            "bin_start": 13.5,
+            "bin_end": 16.200000000000003
+          },
+          {
+            "count": 0,
+            "bin_start": 16.200000000000003,
+            "bin_end": 18.900000000000002
+          },
+          {
+            "count": 1,
+            "bin_start": 18.900000000000002,
+            "bin_end": 21.6
+          },
+          {
+            "count": 0,
+            "bin_start": 21.6,
+            "bin_end": 24.3
+          },
+          {
+            "count": 1,
+            "bin_start": 24.3,
+            "bin_end": 27.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "NUMBER OF PEDESTRIANS KILLED",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/Boolean"
+      ],
+      "unclean_values_ratio": 8.20944295736973e-06,
+      "num_distinct_values": 6,
+      "mean": 0.0007767045198000363,
+      "stddev": 0.02848991931689298,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 2190919,
+            "bin_start": 0.0,
+            "bin_end": 0.6
+          },
+          {
+            "count": 1660,
+            "bin_start": 0.6,
+            "bin_end": 1.2
+          },
+          {
+            "count": 0,
+            "bin_start": 1.2,
+            "bin_end": 1.7999999999999998
+          },
+          {
+            "count": 15,
+            "bin_start": 1.7999999999999998,
+            "bin_end": 2.4
+          },
+          {
+            "count": 0,
+            "bin_start": 2.4,
+            "bin_end": 3.0
+          },
+          {
+            "count": 1,
+            "bin_start": 3.0,
+            "bin_end": 3.5999999999999996
+          },
+          {
+            "count": 1,
+            "bin_start": 3.5999999999999996,
+            "bin_end": 4.2
+          },
+          {
+            "count": 0,
+            "bin_start": 4.2,
+            "bin_end": 4.8
+          },
+          {
+            "count": 0,
+            "bin_start": 4.8,
+            "bin_end": 5.3999999999999995
+          },
+          {
+            "count": 1,
+            "bin_start": 5.3999999999999995,
+            "bin_end": 6.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "NUMBER OF CYCLIST INJURED",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/Boolean"
+      ],
+      "unclean_values_ratio": 0.00033886756207365056,
+      "num_distinct_values": 5,
+      "mean": 0.028543321002445957,
+      "stddev": 0.16869055626449803,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 2130783,
+            "bin_start": 0.0,
+            "bin_end": 0.4
+          },
+          {
+            "count": 0,
+            "bin_start": 0.4,
+            "bin_end": 0.8
+          },
+          {
+            "count": 61071,
+            "bin_start": 0.8,
+            "bin_end": 1.2000000000000002
+          },
+          {
+            "count": 0,
+            "bin_start": 1.2000000000000002,
+            "bin_end": 1.6
+          },
+          {
+            "count": 0,
+            "bin_start": 1.6,
+            "bin_end": 2.0
+          },
+          {
+            "count": 717,
+            "bin_start": 2.0,
+            "bin_end": 2.4000000000000004
+          },
+          {
+            "count": 0,
+            "bin_start": 2.4000000000000004,
+            "bin_end": 2.8000000000000003
+          },
+          {
+            "count": 25,
+            "bin_start": 2.8000000000000003,
+            "bin_end": 3.2
+          },
+          {
+            "count": 0,
+            "bin_start": 3.2,
+            "bin_end": 3.6
+          },
+          {
+            "count": 1,
+            "bin_start": 3.6,
+            "bin_end": 4.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "NUMBER OF CYCLIST KILLED",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/Boolean"
+      ],
+      "unclean_values_ratio": 4.560801642983184e-07,
+      "num_distinct_values": 3,
+      "mean": 0.00012314164436054596,
+      "stddev": 0.01113726361472376,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 2192328,
+            "bin_start": 0.0,
+            "bin_end": 0.2
+          },
+          {
+            "count": 0,
+            "bin_start": 0.2,
+            "bin_end": 0.4
+          },
+          {
+            "count": 0,
+            "bin_start": 0.4,
+            "bin_end": 0.6000000000000001
+          },
+          {
+            "count": 0,
+            "bin_start": 0.6000000000000001,
+            "bin_end": 0.8
+          },
+          {
+            "count": 0,
+            "bin_start": 0.8,
+            "bin_end": 1.0
+          },
+          {
+            "count": 268,
+            "bin_start": 1.0,
+            "bin_end": 1.2000000000000002
+          },
+          {
+            "count": 0,
+            "bin_start": 1.2000000000000002,
+            "bin_end": 1.4000000000000001
+          },
+          {
+            "count": 0,
+            "bin_start": 1.4000000000000001,
+            "bin_end": 1.6
+          },
+          {
+            "count": 0,
+            "bin_start": 1.6,
+            "bin_end": 1.8
+          },
+          {
+            "count": 1,
+            "bin_start": 1.8,
+            "bin_end": 2.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "NUMBER OF MOTORIST INJURED",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 31,
+      "mean": 0.23257215074179158,
+      "stddev": 0.6730918496968707,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 1.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 2186421,
+            "bin_start": 0.0,
+            "bin_end": 4.3
+          },
+          {
+            "count": 5778,
+            "bin_start": 4.3,
+            "bin_end": 8.6
+          },
+          {
+            "count": 304,
+            "bin_start": 8.6,
+            "bin_end": 12.899999999999999
+          },
+          {
+            "count": 69,
+            "bin_start": 12.899999999999999,
+            "bin_end": 17.2
+          },
+          {
+            "count": 13,
+            "bin_start": 17.2,
+            "bin_end": 21.5
+          },
+          {
+            "count": 7,
+            "bin_start": 21.5,
+            "bin_end": 25.799999999999997
+          },
+          {
+            "count": 1,
+            "bin_start": 25.799999999999997,
+            "bin_end": 30.099999999999998
+          },
+          {
+            "count": 2,
+            "bin_start": 30.099999999999998,
+            "bin_end": 34.4
+          },
+          {
+            "count": 0,
+            "bin_start": 34.4,
+            "bin_end": 38.699999999999996
+          },
+          {
+            "count": 2,
+            "bin_start": 38.699999999999996,
+            "bin_end": 43.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "NUMBER OF MOTORIST KILLED",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/Boolean"
+      ],
+      "unclean_values_ratio": 3.7854653636760427e-05,
+      "num_distinct_values": 6,
+      "mean": 0.0006376000696890491,
+      "stddev": 0.02757417596670564,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 2191304,
+            "bin_start": 0.0,
+            "bin_end": 0.5
+          },
+          {
+            "count": 0,
+            "bin_start": 0.5,
+            "bin_end": 1.0
+          },
+          {
+            "count": 1210,
+            "bin_start": 1.0,
+            "bin_end": 1.5
+          },
+          {
+            "count": 0,
+            "bin_start": 1.5,
+            "bin_end": 2.0
+          },
+          {
+            "count": 67,
+            "bin_start": 2.0,
+            "bin_end": 2.5
+          },
+          {
+            "count": 0,
+            "bin_start": 2.5,
+            "bin_end": 3.0
+          },
+          {
+            "count": 12,
+            "bin_start": 3.0,
+            "bin_end": 3.5
+          },
+          {
+            "count": 0,
+            "bin_start": 3.5,
+            "bin_end": 4.0
+          },
+          {
+            "count": 2,
+            "bin_start": 4.0,
+            "bin_end": 4.5
+          },
+          {
+            "count": 2,
+            "bin_start": 4.5,
+            "bin_end": 5.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "CONTRIBUTING FACTOR VEHICLE 1",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.003485364615567749,
+      "num_distinct_values": 61,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Backing Unsafely",
+            "count": 80233
+          },
+          {
+            "bin": "Driver Inattention/Distraction",
+            "count": 443855
+          },
+          {
+            "bin": "Failure to Yield Right-of-Way",
+            "count": 131247
+          },
+          {
+            "bin": "Following Too Closely",
+            "count": 117739
+          },
+          {
+            "bin": "Unspecified",
+            "count": 735986
+          }
+        ]
+      }
+    },
+    {
+      "name": "CONTRIBUTING FACTOR VEHICLE 2",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.15954368267401625,
+      "num_distinct_values": 61,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Driver Inattention/Distraction",
+            "count": 99416
+          },
+          {
+            "bin": "Failure to Yield Right-of-Way",
+            "count": 17848
+          },
+          {
+            "bin": "Following Too Closely",
+            "count": 20426
+          },
+          {
+            "bin": "Other Vehicular",
+            "count": 33669
+          },
+          {
+            "bin": "Unspecified",
+            "count": 1551049
+          }
+        ]
+      }
+    },
+    {
+      "name": "CONTRIBUTING FACTOR VEHICLE 3",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.9277336418867671,
+      "num_distinct_values": 53,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Driver Inattention/Distraction",
+            "count": 2107
+          },
+          {
+            "bin": "Fatigued/Drowsy",
+            "count": 855
+          },
+          {
+            "bin": "Following Too Closely",
+            "count": 2118
+          },
+          {
+            "bin": "Other Vehicular",
+            "count": 3063
+          },
+          {
+            "bin": "Unspecified",
+            "count": 147595
+          }
+        ]
+      }
+    },
+    {
+      "name": "CONTRIBUTING FACTOR VEHICLE 4",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.9835209115035731,
+      "num_distinct_values": 43,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Driver Inattention/Distraction",
+            "count": 296
+          },
+          {
+            "bin": "Fatigued/Drowsy",
+            "count": 170
+          },
+          {
+            "bin": "Following Too Closely",
+            "count": 419
+          },
+          {
+            "bin": "Other Vehicular",
+            "count": 693
+          },
+          {
+            "bin": "Unspecified",
+            "count": 34067
+          }
+        ]
+      }
+    },
+    {
+      "name": "CONTRIBUTING FACTOR VEHICLE 5",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.9954879989345967,
+      "num_distinct_values": 34,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Driver Inattention/Distraction",
+            "count": 68
+          },
+          {
+            "bin": "Following Too Closely",
+            "count": 110
+          },
+          {
+            "bin": "Other Vehicular",
+            "count": 202
+          },
+          {
+            "bin": "Pavement Slippery",
+            "count": 53
+          },
+          {
+            "bin": "Unspecified",
+            "count": 9322
+          }
+        ]
+      }
+    },
+    {
+      "name": "COLLISION_ID",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/identifier"
+      ],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 2192597,
+      "mean": 3245714.9268091675,
+      "stddev": 1508557.21042701,
+      "coverage": [
+        {
+          "range": {
+            "gte": 20746.0,
+            "lte": 1018846.0
+          }
+        },
+        {
+          "range": {
+            "gte": 2950511.0,
+            "lte": 3874378.0
+          }
+        },
+        {
+          "range": {
+            "gte": 3963445.0,
+            "lte": 4783619.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 363375,
+            "bin_start": 22.0,
+            "bin_end": 482955.8
+          },
+          {
+            "count": 3176,
+            "bin_start": 482955.8,
+            "bin_end": 965889.6
+          },
+          {
+            "count": 45127,
+            "bin_start": 965889.6,
+            "bin_end": 1448823.4
+          },
+          {
+            "count": 378,
+            "bin_start": 1448823.4,
+            "bin_end": 1931757.2
+          },
+          {
+            "count": 400,
+            "bin_start": 1931757.2,
+            "bin_end": 2414691.0
+          },
+          {
+            "count": 32810,
+            "bin_start": 2414691.0,
+            "bin_end": 2897624.8
+          },
+          {
+            "count": 299172,
+            "bin_start": 2897624.8,
+            "bin_end": 3380558.6
+          },
+          {
+            "count": 482695,
+            "bin_start": 3380558.6,
+            "bin_end": 3863492.4
+          },
+          {
+            "count": 482776,
+            "bin_start": 3863492.4,
+            "bin_end": 4346426.2
+          },
+          {
+            "count": 482688,
+            "bin_start": 4346426.2,
+            "bin_end": 4829360.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "VEHICLE TYPE CODE 1",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.007158178178662107,
+      "num_distinct_values": 1800,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "PASSENGER VEHICLE",
+            "count": 416206
+          },
+          {
+            "bin": "SPORT UTILITY / STATION WAGON",
+            "count": 180291
+          },
+          {
+            "bin": "Sedan",
+            "count": 629336
+          },
+          {
+            "bin": "Station Wagon/Sport Utility Vehicle",
+            "count": 493534
+          },
+          {
+            "bin": "Taxi",
+            "count": 55003
+          }
+        ]
+      }
+    },
+    {
+      "name": "VEHICLE TYPE CODE 2",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.19892894134216182,
+      "num_distinct_values": 2004,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "PASSENGER VEHICLE",
+            "count": 318607
+          },
+          {
+            "bin": "SPORT UTILITY / STATION WAGON",
+            "count": 140204
+          },
+          {
+            "bin": "Sedan",
+            "count": 434058
+          },
+          {
+            "bin": "Station Wagon/Sport Utility Vehicle",
+            "count": 349601
+          },
+          {
+            "bin": "UNKNOWN",
+            "count": 81539
+          }
+        ]
+      }
+    },
+    {
+      "name": "VEHICLE TYPE CODE 3",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.9305139065683297,
+      "num_distinct_values": 288,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "PASSENGER VEHICLE",
+            "count": 27713
+          },
+          {
+            "bin": "SPORT UTILITY / STATION WAGON",
+            "count": 13358
+          },
+          {
+            "bin": "Sedan",
+            "count": 48989
+          },
+          {
+            "bin": "Station Wagon/Sport Utility Vehicle",
+            "count": 39867
+          },
+          {
+            "bin": "UNKNOWN",
+            "count": 3284
+          }
+        ]
+      }
+    },
+    {
+      "name": "VEHICLE TYPE CODE 4",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.9841129035568323,
+      "num_distinct_values": 111,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "PASSENGER VEHICLE",
+            "count": 5969
+          },
+          {
+            "bin": "SPORT UTILITY / STATION WAGON",
+            "count": 2852
+          },
+          {
+            "bin": "Sedan",
+            "count": 12009
+          },
+          {
+            "bin": "Station Wagon/Sport Utility Vehicle",
+            "count": 9972
+          },
+          {
+            "bin": "UNKNOWN",
+            "count": 595
+          }
+        ]
+      }
+    },
+    {
+      "name": "VEHICLE TYPE CODE 5",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.9956280155450363,
+      "num_distinct_values": 76,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "PASSENGER VEHICLE",
+            "count": 1487
+          },
+          {
+            "bin": "Pick-up Truck",
+            "count": 174
+          },
+          {
+            "bin": "SPORT UTILITY / STATION WAGON",
+            "count": 802
+          },
+          {
+            "bin": "Sedan",
+            "count": 3444
+          },
+          {
+            "bin": "Station Wagon/Sport Utility Vehicle",
+            "count": 2855
+          }
+        ]
+      }
+    }
+  ],
+  "nb_spatial_columns": 3,
+  "nb_temporal_columns": 1,
+  "nb_categorical_columns": 14,
+  "nb_numerical_columns": 10,
+  "types": [
+    "categorical",
+    "numerical",
+    "spatial",
+    "temporal"
+  ],
+  "spatial_coverage": [
+    {
+      "type": "latlong",
+      "column_names": [
+        "LATITUDE",
+        "LONGITUDE"
+      ],
+      "column_indexes": [
+        4,
+        5
+      ],
+      "geohashes4": [
+        {
+          "hash": "121130231320",
+          "number": 112608
+        },
+        {
+          "hash": "121130231323",
+          "number": 113134
+        },
+        {
+          "hash": "121130231321",
+          "number": 168540
+        },
+        {
+          "hash": "121130231322",
+          "number": 23762
+        },
+        {
+          "hash": "121130231330",
+          "number": 169810
+        },
+        {
+          "hash": "121130231331",
+          "number": 223840
+        },
+        {
+          "hash": "121130231332",
+          "number": 86254
+        },
+        {
+          "hash": "121130231333",
+          "number": 102719
+        },
+        {
+          "hash": "121130231302",
+          "number": 55072
+        },
+        {
+          "hash": "121130231300",
+          "number": 30284
+        },
+        {
+          "hash": "121130231303",
+          "number": 8131
+        },
+        {
+          "hash": "121130231301",
+          "number": 1
+        },
+        {
+          "hash": "121130231312",
+          "number": 26347
+        },
+        {
+          "hash": "121130231313",
+          "number": 6386
+        },
+        {
+          "hash": "121130231231",
+          "number": 54854
+        },
+        {
+          "hash": "121130231233",
+          "number": 4941
+        },
+        {
+          "hash": "121130231232",
+          "number": 75
+        },
+        {
+          "hash": "121130231230",
+          "number": 74
+        },
+        {
+          "hash": "121130231213",
+          "number": 10008
+        },
+        {
+          "hash": "121130231211",
+          "number": 20772
+        },
+        {
+          "hash": "121130231210",
+          "number": 10346
+        },
+        {
+          "hash": "121130231033",
+          "number": 1584
+        },
+        {
+          "hash": "121130231032",
+          "number": 9161
+        },
+        {
+          "hash": "121130231023",
+          "number": 2005
+        },
+        {
+          "hash": "121130231122",
+          "number": 361
+        },
+        {
+          "hash": "121130233101",
+          "number": 71995
+        },
+        {
+          "hash": "121130233100",
+          "number": 2930
+        },
+        {
+          "hash": "121130233103",
+          "number": 13363
+        },
+        {
+          "hash": "121130233102",
+          "number": 156
+        },
+        {
+          "hash": "121130233111",
+          "number": 58345
+        },
+        {
+          "hash": "121130233110",
+          "number": 82446
+        },
+        {
+          "hash": "121130233113",
+          "number": 12442
+        },
+        {
+          "hash": "121130233112",
+          "number": 13049
+        },
+        {
+          "hash": "121130233011",
+          "number": 12292
+        },
+        {
+          "hash": "121130233013",
+          "number": 72
+        },
+        {
+          "hash": "121130213212",
+          "number": 7
+        },
+        {
+          "hash": "121130320223",
+          "number": 130379
+        },
+        {
+          "hash": "121130320220",
+          "number": 114008
+        },
+        {
+          "hash": "121130320222",
+          "number": 45827
+        },
+        {
+          "hash": "121130320221",
+          "number": 58828
+        },
+        {
+          "hash": "121130320232",
+          "number": 65449
+        },
+        {
+          "hash": "121130320230",
+          "number": 971
+        },
+        {
+          "hash": "121130320330",
+          "number": 2
+        },
+        {
+          "hash": "121130322000",
+          "number": 11500
+        },
+        {
+          "hash": "121130322001",
+          "number": 7246
+        },
+        {
+          "hash": "121130322002",
+          "number": 1
+        },
+        {
+          "hash": "121130322010",
+          "number": 4098
+        },
+        {
+          "hash": "121130322113",
+          "number": 6
+        },
+        {
+          "hash": "121130321230",
+          "number": 1
+        },
+        {
+          "hash": "121130321320",
+          "number": 1
+        },
+        {
+          "hash": "121130133332",
+          "number": 1
+        },
+        {
+          "hash": "121131222010",
+          "number": 1
+        },
+        {
+          "hash": "121131033210",
+          "number": 1
+        },
+        {
+          "hash": "121113223212",
+          "number": 1
+        },
+        {
+          "hash": "121112331221",
+          "number": 1
+        },
+        {
+          "hash": "121100210311",
+          "number": 1
+        },
+        {
+          "hash": "121332211230",
+          "number": 3
+        },
+        {
+          "hash": "121010113102",
+          "number": 1
+        },
+        {
+          "hash": "123130013123",
+          "number": 16
+        },
+        {
+          "hash": "033333333333",
+          "number": 5861
+        }
+      ],
+      "ranges": [
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -74.038086,
+                40.861996
+              ],
+              [
+                -73.765076,
+                40.59779
+              ]
+            ]
+          }
+        }
+      ],
+      "number": 1952370
+    },
+    {
+      "type": "point_latlong",
+      "column_names": [
+        "LOCATION"
+      ],
+      "column_indexes": [
+        6
+      ],
+      "geohashes4": [
+        {
+          "hash": "121130231320",
+          "number": 112608
+        },
+        {
+          "hash": "121130231323",
+          "number": 113134
+        },
+        {
+          "hash": "121130231321",
+          "number": 168540
+        },
+        {
+          "hash": "121130231322",
+          "number": 23762
+        },
+        {
+          "hash": "121130231330",
+          "number": 169810
+        },
+        {
+          "hash": "121130231331",
+          "number": 223840
+        },
+        {
+          "hash": "121130231332",
+          "number": 86254
+        },
+        {
+          "hash": "121130231333",
+          "number": 102719
+        },
+        {
+          "hash": "121130231302",
+          "number": 55072
+        },
+        {
+          "hash": "121130231300",
+          "number": 30284
+        },
+        {
+          "hash": "121130231303",
+          "number": 8131
+        },
+        {
+          "hash": "121130231301",
+          "number": 1
+        },
+        {
+          "hash": "121130231312",
+          "number": 26347
+        },
+        {
+          "hash": "121130231313",
+          "number": 6386
+        },
+        {
+          "hash": "121130231231",
+          "number": 54854
+        },
+        {
+          "hash": "121130231233",
+          "number": 4941
+        },
+        {
+          "hash": "121130231232",
+          "number": 75
+        },
+        {
+          "hash": "121130231230",
+          "number": 74
+        },
+        {
+          "hash": "121130231213",
+          "number": 10008
+        },
+        {
+          "hash": "121130231211",
+          "number": 20772
+        },
+        {
+          "hash": "121130231210",
+          "number": 10346
+        },
+        {
+          "hash": "121130231033",
+          "number": 1584
+        },
+        {
+          "hash": "121130231032",
+          "number": 9161
+        },
+        {
+          "hash": "121130231023",
+          "number": 2005
+        },
+        {
+          "hash": "121130231122",
+          "number": 361
+        },
+        {
+          "hash": "121130233101",
+          "number": 71995
+        },
+        {
+          "hash": "121130233100",
+          "number": 2930
+        },
+        {
+          "hash": "121130233103",
+          "number": 13363
+        },
+        {
+          "hash": "121130233102",
+          "number": 156
+        },
+        {
+          "hash": "121130233111",
+          "number": 58345
+        },
+        {
+          "hash": "121130233110",
+          "number": 82446
+        },
+        {
+          "hash": "121130233113",
+          "number": 12442
+        },
+        {
+          "hash": "121130233112",
+          "number": 13049
+        },
+        {
+          "hash": "121130233011",
+          "number": 12292
+        },
+        {
+          "hash": "121130233013",
+          "number": 72
+        },
+        {
+          "hash": "121130213212",
+          "number": 7
+        },
+        {
+          "hash": "121130320223",
+          "number": 130379
+        },
+        {
+          "hash": "121130320220",
+          "number": 114008
+        },
+        {
+          "hash": "121130320222",
+          "number": 45827
+        },
+        {
+          "hash": "121130320221",
+          "number": 58828
+        },
+        {
+          "hash": "121130320232",
+          "number": 65449
+        },
+        {
+          "hash": "121130320230",
+          "number": 971
+        },
+        {
+          "hash": "121130320330",
+          "number": 2
+        },
+        {
+          "hash": "121130322000",
+          "number": 11500
+        },
+        {
+          "hash": "121130322001",
+          "number": 7246
+        },
+        {
+          "hash": "121130322002",
+          "number": 1
+        },
+        {
+          "hash": "121130322010",
+          "number": 4098
+        },
+        {
+          "hash": "121130322113",
+          "number": 6
+        },
+        {
+          "hash": "121130321230",
+          "number": 1
+        },
+        {
+          "hash": "121130321320",
+          "number": 1
+        },
+        {
+          "hash": "121130133332",
+          "number": 1
+        },
+        {
+          "hash": "121131222010",
+          "number": 1
+        },
+        {
+          "hash": "121131033210",
+          "number": 1
+        },
+        {
+          "hash": "121113223212",
+          "number": 1
+        },
+        {
+          "hash": "121112331221",
+          "number": 1
+        },
+        {
+          "hash": "121100210311",
+          "number": 1
+        },
+        {
+          "hash": "121332211230",
+          "number": 3
+        },
+        {
+          "hash": "121010113102",
+          "number": 1
+        },
+        {
+          "hash": "123130013123",
+          "number": 16
+        },
+        {
+          "hash": "033333333333",
+          "number": 5861
+        }
+      ],
+      "ranges": [
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -74.038086,
+                40.861996
+              ],
+              [
+                -73.765076,
+                40.59779
+              ]
+            ]
+          }
+        }
+      ],
+      "number": 1952370
+    }
+  ],
+  "temporal_coverage": [
+    {
+      "type": "datetime",
+      "column_names": [
+        "CRASH DATE"
+      ],
+      "column_indexes": [
+        0
+      ],
+      "column_types": [
+        "http://schema.org/DateTime"
+      ],
+      "ranges": [
+        {
+          "range": {
+            "gte": 1347494400.0,
+            "lte": 1459036800.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1470355200.0,
+            "lte": 1583366400.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1605052800.0,
+            "lte": 1744070400.0
+          }
+        }
+      ],
+      "temporal_resolution": "day"
+    }
+  ],
+  "attribute_keywords": [
+    "CRASH DATE",
+    "CRASH",
+    "DATE",
+    "CRASH TIME",
+    "CRASH",
+    "TIME",
+    "BOROUGH",
+    "ZIP CODE",
+    "ZIP",
+    "CODE",
+    "LATITUDE",
+    "LONGITUDE",
+    "LOCATION",
+    "ON STREET NAME",
+    "ON",
+    "STREET",
+    "NAME",
+    "CROSS STREET NAME",
+    "CROSS",
+    "STREET",
+    "NAME",
+    "OFF STREET NAME",
+    "OFF",
+    "STREET",
+    "NAME",
+    "NUMBER OF PERSONS INJURED",
+    "NUMBER",
+    "OF",
+    "PERSONS",
+    "INJURED",
+    "NUMBER OF PERSONS KILLED",
+    "NUMBER",
+    "OF",
+    "PERSONS",
+    "KILLED",
+    "NUMBER OF PEDESTRIANS INJURED",
+    "NUMBER",
+    "OF",
+    "PEDESTRIANS",
+    "INJURED",
+    "NUMBER OF PEDESTRIANS KILLED",
+    "NUMBER",
+    "OF",
+    "PEDESTRIANS",
+    "KILLED",
+    "NUMBER OF CYCLIST INJURED",
+    "NUMBER",
+    "OF",
+    "CYCLIST",
+    "INJURED",
+    "NUMBER OF CYCLIST KILLED",
+    "NUMBER",
+    "OF",
+    "CYCLIST",
+    "KILLED",
+    "NUMBER OF MOTORIST INJURED",
+    "NUMBER",
+    "OF",
+    "MOTORIST",
+    "INJURED",
+    "NUMBER OF MOTORIST KILLED",
+    "NUMBER",
+    "OF",
+    "MOTORIST",
+    "KILLED",
+    "CONTRIBUTING FACTOR VEHICLE 1",
+    "CONTRIBUTING",
+    "FACTOR",
+    "VEHICLE",
+    "1",
+    "CONTRIBUTING FACTOR VEHICLE 2",
+    "CONTRIBUTING",
+    "FACTOR",
+    "VEHICLE",
+    "2",
+    "CONTRIBUTING FACTOR VEHICLE 3",
+    "CONTRIBUTING",
+    "FACTOR",
+    "VEHICLE",
+    "3",
+    "CONTRIBUTING FACTOR VEHICLE 4",
+    "CONTRIBUTING",
+    "FACTOR",
+    "VEHICLE",
+    "4",
+    "CONTRIBUTING FACTOR VEHICLE 5",
+    "CONTRIBUTING",
+    "FACTOR",
+    "VEHICLE",
+    "5",
+    "COLLISION_ID",
+    "COLLISION",
+    "ID",
+    "VEHICLE TYPE CODE 1",
+    "VEHICLE",
+    "TYPE",
+    "CODE",
+    "1",
+    "VEHICLE TYPE CODE 2",
+    "VEHICLE",
+    "TYPE",
+    "CODE",
+    "2",
+    "VEHICLE TYPE CODE 3",
+    "VEHICLE",
+    "TYPE",
+    "CODE",
+    "3",
+    "VEHICLE TYPE CODE 4",
+    "VEHICLE",
+    "TYPE",
+    "CODE",
+    "4",
+    "VEHICLE TYPE CODE 5",
+    "VEHICLE",
+    "TYPE",
+    "CODE",
+    "5"
+  ],
+  "sample": "CRASH DATE,CRASH TIME,BOROUGH,ZIP CODE,LATITUDE,LONGITUDE,LOCATION,ON STREET NAME,CROSS STREET NAME,OFF STREET NAME,NUMBER OF PERSONS INJURED,NUMBER OF PERSONS KILLED,NUMBER OF PEDESTRIANS INJURED,NUMBER OF PEDESTRIANS KILLED,NUMBER OF CYCLIST INJURED,NUMBER OF CYCLIST KILLED,NUMBER OF MOTORIST INJURED,NUMBER OF MOTORIST KILLED,CONTRIBUTING FACTOR VEHICLE 1,CONTRIBUTING FACTOR VEHICLE 2,CONTRIBUTING FACTOR VEHICLE 3,CONTRIBUTING FACTOR VEHICLE 4,CONTRIBUTING FACTOR VEHICLE 5,COLLISION_ID,VEHICLE TYPE CODE 1,VEHICLE TYPE CODE 2,VEHICLE TYPE CODE 3,VEHICLE TYPE CODE 4,VEHICLE TYPE CODE 5\r\n12/14/2021,10:45,BROOKLYN,11231.0,40.67236,-74.01124,\"(40.67236, -74.01124)\",,,1         BEARD STREET,0.0,0.0,0,0,0,0,0,0,Unspecified,,,,,4488307,Sedan,,,,\r\n06/25/2021,7:20,QUEENS,11379.0,40.721485,-73.86658,\"(40.721485, -73.86658)\",64 ROAD,WOODHAVEN BOULEVARD,,1.0,0.0,0,0,0,0,1,0,Driver Inattention/Distraction,Unspecified,,,,4432514,Station Wagon/Sport Utility Vehicle,Sedan,,,\r\n08/05/2020,9:20,,,40.71709,-73.82631,\"(40.71709, -73.82631)\",VAN WYCK EXPWY                  ,,,0.0,0.0,0,0,0,0,0,0,Driver Inattention/Distraction,Driver Inattention/Distraction,,,,4355877,Sedan,Box Truck,,,\r\n06/19/2019,12:00,QUEENS,11354.0,40.75732,-73.834015,\"(40.75732, -73.834015)\",,,40-24     COLLEGE POINT BOULEVARD       ,0.0,0.0,0,0,0,0,0,0,Passing Too Closely,Unspecified,,,,4154863,Station Wagon/Sport Utility Vehicle,,,,\r\n07/19/2018,12:00,,,40.770573,-73.9075,\"(40.770573, -73.9075)\",23 AVENUE                       ,,,1.0,0.0,0,0,0,0,1,0,Unspecified,,,,,3945306,Station Wagon/Sport Utility Vehicle,,,,\r\n07/14/2018,15:50,,,40.770054,-73.914406,\"(40.770054, -73.914406)\",ASTORIA BOULEVARD               ,35 STREET,,0.0,0.0,0,0,0,0,0,0,Passing or Lane Usage Improper,Unspecified,,,,3940843,Pick-up Truck,,,,\r\n07/10/2018,17:45,BROOKLYN,11230.0,40.629986,-73.97157,\"(40.629986, -73.97157)\",OCEAN PARKWAY                   ,FOSTER AVENUE,,1.0,0.0,0,0,0,0,1,0,Driver Inattention/Distraction,Unspecified,,,,3939008,Sedan,Sedan,,,\r\n07/08/2018,22:40,QUEENS,11377.0,40.740875,-73.89962,\"(40.740875, -73.89962)\",65 PLACE                        ,QUEENS BOULEVARD,,0.0,0.0,0,0,0,0,0,0,Driver Inattention/Distraction,Driver Inattention/Distraction,,,,3937622,Station Wagon/Sport Utility Vehicle,Sedan,,,\r\n05/31/2018,14:15,,,,,,CLEARVIEW EXPRESSWAY            ,NORTHERN BOULEVARD,,0.0,0.0,0,0,0,0,0,0,Driver Inattention/Distraction,Driver Inattention/Distraction,,,,3911878,Log,Sedan,,,\r\n03/12/2018,10:45,,,40.622086,-74.02865,\"(40.622086, -74.02865)\",87 STREET                       ,4 AVENUE,,0.0,0.0,0,0,0,0,0,0,Unspecified,Unspecified,,,,3861395,Sedan,Sedan,,,\r\n12/21/2017,16:20,BROOKLYN,11237.0,40.70933,-73.92249,\"(40.70933, -73.92249)\",JOHNSON AVENUE                  ,SCOTT AVENUE,,0.0,0.0,0,0,0,0,0,0,Failure to Yield Right-of-Way,Unspecified,,,,3816236,Sedan,Sedan,,,\r\n09/08/2016,16:35,BRONX,10472.0,40.82615,-73.87766,\"(40.82615, -73.87766)\",WATSON AVENUE                   ,BOYNTON AVENUE,,1.0,0.0,0,0,0,0,1,0,Failure to Yield Right-of-Way,Unspecified,,,,3515948,Sedan,Sedan,,,\r\n04/11/2016,5:24,QUEENS,11101.0,,,,NORTHERN BOULEVARD              ,37 STREET,,0.0,0.0,0,0,0,0,0,0,Reaction to Uninvolved Vehicle,Unspecified,,,,3429009,4 dr sedan,4 dr sedan,,,\r\n12/25/2015,22:10,BROOKLYN,11204.0,40.608169,-73.9873408,\"(40.608169, -73.9873408)\",BAY RIDGE PARKWAY               ,BAY PARKWAY                     ,,0.0,0.0,0,0,0,0,0,0,Driver Inexperience,Driver Inexperience,,,,3360277,PASSENGER VEHICLE,PASSENGER VEHICLE,,,\r\n11/06/2015,18:00,BROOKLYN,11249.0,40.7134844,-73.9655045,\"(40.7134844, -73.9655045)\",SOUTH 3 STREET                  ,WYTHE AVENUE                    ,,0.0,0.0,0,0,0,0,0,0,Unspecified,Unspecified,,,,3330665,VAN,UNKNOWN,,,\r\n11/21/2015,13:40,,,,,,BELL BOULEVARD                  ,HORACE HARDING EXPRESSWAY       ,,0.0,0.0,0,0,0,0,0,0,Unspecified,,,,,3339151,PASSENGER VEHICLE,PICK-UP TRUCK,,,\r\n11/07/2015,19:00,,,,,,68 STREET                       ,41 AVENUE                       ,,0.0,0.0,0,0,0,0,0,0,Lost Consciousness,Unspecified,,,,3330759,SPORT UTILITY / STATION WAGON,UNKNOWN,,,\r\n04/04/2014,18:45,MANHATTAN,10003,40.7339649,-73.9887782,\"(40.7339649, -73.9887782)\",EAST 14 STREET                  ,IRVING PLACE                    ,,0.0,0.0,0,0,0,0,0,0,Unspecified,Unspecified,,,,314955,PASSENGER VEHICLE,BUS,,,\r\n10/27/2013,19:59,MANHATTAN,10036,40.7584292,-73.9926328,\"(40.7584292, -73.9926328)\",9 AVENUE                        ,WEST 42 STREET                  ,,0.0,0.0,0,0,0,0,0,0,Unspecified,Unspecified,,,,30737,PASSENGER VEHICLE,TAXI,,,\r\n03/25/2025,7:23,MANHATTAN,10037.0,40.810272,-73.93795,\"(40.810272, -73.93795)\",,,18        E 132 ST,0.0,0.0,0,0,0,0,0,0,Unspecified,Unspecified,,,,4801241,Bus,Pick-up Truck,,,\r\n"
+}
