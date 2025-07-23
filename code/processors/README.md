@@ -12,6 +12,7 @@ code/processors/
 ├── signals_markings_signs.py          # Post-processing Signals Markings and Signs dataset (CSV)
 ├── transit_stop_accessibilitys.py     # Post-processing Transit Stop Acc dataset (CSV)
 ├── sidewalk_surface_condition.py      # Post-processing Sidewalk Surface Condition dataset (CSV)
+├── curb_infrastructure.py             # Post-processing Curb Infrastructure dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
 ```
@@ -76,6 +77,18 @@ python merge_geocoded_and_311.py \
   --complaints_311 ../downloaders/data/sidewalk_surface_condition/sidewalk_311_complaints.csv \
   --sidewalk_geom ../downloaders/data/sidewalk_surface_condition/sidewalk_planimetric.csv \
   --out ../processors/processed_data/sidewalk_surface_full_merged.csv
+```
+
+#### Curb Infrastructure: Sidewalks, crosswalks, driveways, curb ramps, medians, refuges, curb extensions
+This script integrates sidewalk geometries with nearby features such as pedestrian ramps, raised crosswalks, and medians using spatial joins.
+
+```bash
+python curb_infrastructure.py \
+  --sidewalks data/curb_infrastructure/sidewalks.csv \
+  --pedestrian_ramps data/curb_infrastructure/pedestrian_ramps.csv \
+  --raised_crosswalks data/curb_infrastructure/raised_crosswalks.csv \
+  --medians data/curb_infrastructure/medians.csv \
+  --output processed_data/sidewalks_with_curb_features.csv
 ```
 
 
