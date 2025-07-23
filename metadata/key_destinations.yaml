@@ -1,12 +1,11 @@
 dataset_id: "key_destinations"
 name: "Key Destinations in NYC (Facilities and Licensed Businesses)"
 description: >
-  A unified dataset combining NYC's key destination sources:
+  There is no postprocessing so the data element consists of two datasets:
   1) The NYC Facilities Database — an inventory of publicly owned and operated facilities such as schools, libraries, parks, health centers, and civic buildings,
   2) The Issued Licenses Dataset — a citywide registry of business licenses issued by various NYC agencies, covering commercial establishments, services, and regulated businesses.
   
   The datasets provide detailed location information, facility types, business types, and agency oversight. 
-  Records are geocoded using direct coordinate information and enable spatial analysis of critical destinations across NYC neighborhoods.
 
 source_organization:
   nyc_facilities: "New York City Department of City Planning (NYC DCP)"
