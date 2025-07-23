@@ -78,6 +78,9 @@ python merge_geocoded_and_311.py \
   --out ../processors/processed_data/sidewalk_surface_full_merged.csv
 ```
 
+#### Bicycle Facilities
+No postprocessing script is needed, as the original datasets are being preserved without any merging.
+
 
 ### Other Datasets
 To be added as needed.
