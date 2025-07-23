@@ -12,6 +12,7 @@ code/processors/
 ├── signals_markings_signs.py          # Post-processing Signals Markings and Signs dataset (CSV)
 ├── transit_stop_accessibilitys.py     # Post-processing Transit Stop Acc dataset (CSV)
 ├── sidewalk_surface_condition.py      # Post-processing Sidewalk Surface Condition dataset (CSV)
+├── rail_routes_and_crossings.py       # Post-processing Rail Routes and Crossings dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
 ```
@@ -76,6 +77,16 @@ python merge_geocoded_and_311.py \
   --complaints_311 ../downloaders/data/sidewalk_surface_condition/sidewalk_311_complaints.csv \
   --sidewalk_geom ../downloaders/data/sidewalk_surface_condition/sidewalk_planimetric.csv \
   --out ../processors/processed_data/sidewalk_surface_full_merged.csv
+```
+
+#### Rail Routes and Crossings Dataset
+
+This script downloads and merges railroad line geometries with nearby or intersecting rail crossing points
+```bash
+python rail_routes_and_crossings.py \
+  --railroads data/rail_routes_and_crossings/railroad_lines.csv \
+  --crossings data/rail_routes_and_crossings/rail_crossings_nyc.csv \
+  --output data/rail_routes_and_crossings/rail_routes_and_crossings_combined.csv
 ```
 
 
