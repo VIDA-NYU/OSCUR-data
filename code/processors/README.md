@@ -12,6 +12,7 @@ code/processors/
 ├── signals_markings_signs.py          # Post-processing Signals Markings and Signs dataset (CSV)
 ├── transit_stop_accessibilitys.py     # Post-processing Transit Stop Acc dataset (CSV)
 ├── sidewalk_surface_condition.py      # Post-processing Sidewalk Surface Condition dataset (CSV)
+├── fixed_obstructions.py              # Post-processing Fixed Obstructions dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
 ```
@@ -76,6 +77,16 @@ python merge_geocoded_and_311.py \
   --complaints_311 ../downloaders/data/sidewalk_surface_condition/sidewalk_311_complaints.csv \
   --sidewalk_geom ../downloaders/data/sidewalk_surface_condition/sidewalk_planimetric.csv \
   --out ../processors/processed_data/sidewalk_surface_full_merged.csv
+```
+#### Fixed Obstructions Dataset
+
+This script processes the raw datasets for signposts, utility poles and sidewalks, merging them into a unified dataset.
+```bash
+python code/processors/fixed_obstructions.py \
+  --sidewalks data/fixed_obstructions/sidewalk_planimetric.csv \
+  --telecom_poles data/fixed_obstructions/telecom_franchise_poles.csv \
+  --street_signs data/fixed_obstructions/street_sign_work_orders.csv \
+  --output data/fixed_obstructions/sidewalks_with_obstructions.csv
 ```
 
 
