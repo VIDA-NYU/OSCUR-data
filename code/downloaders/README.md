@@ -35,11 +35,15 @@ code/downloaders/
     ├── traffic_signal_downloader.py           # Download Traffic Signals (311)
     ├── street_sign_downloader.py              # Download Street Sign Work Orders
     ├── signals_markings_signs.py              # Runs all signal/sign downloaders
-├── transit_stop_accessibilty.py
+├── transit_stop_accessibilty.py/
    ├── acc_ped_signal_loc_downlaoder.py  # Download acc ped location dataset (CSV)
    ├── curbs_downloader.py               # Download curbs dataset (CSV)
    ├── ped_ramp_locations_downloader.py  # Download pedestrian ramp dataset (CSV)
    ├── transit_stop_accessibilty.py      # Orchestrates all downloads
+├── injuries/
+    ├── injuries.py                          # Orchestrates all injury-related dataset downloads
+    ├── motor_vehicle_crashes_downloader.py  # Download Motor Vehicle Collisions – Crashes dataset (CSV)
+    ├── motor_vehicle_persons_downloader.py  # Download Motor Vehicle Collisions – Persons dataset (CSV)
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -160,6 +164,20 @@ python sidewalk_surface_condition.py \
   --complaints_311 /custom/path/sidewalk_311_complaints.csv \
   --planimetric /custom/path/sidewalk_planimetric.csv \
   --lot_info /custom/path/lot_info.csv
+```
+
+**Injuries, injury severity, and near misses:**
+The `injuries.py` script downloads accessible pedestrian signals, traffic signals, and street sign work orders data:
+
+```bash
+python injuries.py   # basic usage
+```
+
+Custom output paths:
+```bash
+python injuries.py \
+  --motor_vehicle_crashes /custom/path/motor_vehicle_crashes.csv \
+  --motor_vehicle_persons /custom/path/motor_vehicle_persons.csv
 ```
 
 ## Base Class Benefits
