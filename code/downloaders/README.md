@@ -40,6 +40,11 @@ code/downloaders/
    ├── curbs_downloader.py               # Download curbs dataset (CSV)
    ├── ped_ramp_locations_downloader.py  # Download pedestrian ramp dataset (CSV)
    ├── transit_stop_accessibilty.py      # Orchestrates all downloads
+fixed_obstructions/
+├── fixed_obstructions.py           # Orchestrates all fixed obstruction downloads
+├── sidewalks_downloader.py         # Download NYC Planimetric Sidewalk dataset (GeoJSON)
+├── signposts_downloader.py         # Download NYC DOT Street Sign Work Orders dataset (CSV)
+├── utility_poles_downloader.py     # Download DoITT Telecom Franchise Poles dataset (CSV)
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -161,6 +166,22 @@ python sidewalk_surface_condition.py \
   --planimetric /custom/path/sidewalk_planimetric.csv \
   --lot_info /custom/path/lot_info.csv
 ```
+
+**Fixed Obstructions:**
+The `fixed_obstructions.py ` script allows downloading multiple datasets simultaneously, including signposts, utility signs and sidewalks.
+
+```bash
+python fixed_obstructions.py
+```
+
+You can specify custom output paths for each dataset:
+```bash
+python fixed_obstructions.py \
+  --sidewalks /custom/path/sidewalk_planimetric.csv \
+  --street_signs /custom/path/street_sign_work_orders.csv \
+  --telecom_poles /custom/path/utility_poles.csv
+```
+
 
 ## Base Class Benefits
 
