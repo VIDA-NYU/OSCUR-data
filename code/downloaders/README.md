@@ -40,6 +40,8 @@ code/downloaders/
    ├── curbs_downloader.py               # Download curbs dataset (CSV)
    ├── ped_ramp_locations_downloader.py  # Download pedestrian ramp dataset (CSV)
    ├── transit_stop_accessibilty.py      # Orchestrates all downloads
+├── bicycle_facilites/
+   ├── bike_routes_downloader.py     # Download NYC DOT bicycle facilities dataset (CSV)
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -67,6 +69,7 @@ python speed_humps.py -o data/speed_humps.csv
 python raised_crosswalks.py -o data/raised_crosswalks.csv
 python NYC_vehicle_collisions.py -o data/NYC_vehicle_collisions.csv
 python nyc_311.py -o data/nyc_311.csv
+python bike_routes_downloader.py -o data/bike_routes.csv
 ```
 With API token and custom timeout:
 ```bash
