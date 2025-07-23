@@ -36,7 +36,7 @@ code/downloaders/
     ├── street_sign_downloader.py              # Download Street Sign Work Orders
     ├── signals_markings_signs.py              # Runs all signal/sign downloaders
 ├── transit_stop_accessibilty.py
-   ├── acc_ped_signal_loc_downlaoder.py  # Download Acc Ped Location dataset (CSV)
+   ├── acc_ped_signal_loc_downlaoder.py  # Download Accessible Pedestrian Locations dataset (CSV)
    ├── curbs_downloader.py               # Download Curbs dataset (CSV)
    ├── ped_ramp_locations_downloader.py  # Download Pedestrian Ramp dataset (CSV)
    ├── transit_stop_accessibilty.py      # Orchestrates all download files
