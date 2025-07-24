@@ -12,6 +12,7 @@ code/processors/
 ├── signals_markings_signs.py          # Post-processing Signals Markings and Signs dataset (CSV)
 ├── transit_stop_accessibilitys.py     # Post-processing Transit Stop Acc dataset (CSV)
 ├── sidewalk_surface_condition.py      # Post-processing Sidewalk Surface Condition dataset (CSV)
+├── designed_goods_movement_routes.py  # Post-processing Goods Movement Routes (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
 ```
@@ -80,6 +81,15 @@ python merge_geocoded_and_311.py \
 
 #### Key Destinations
 No postprocessing script is needed, as the original datasets are being preserved without any merging.
+
+#### Designed Goods Movement Routes Dataset
+This script processes a CSV of NYC truck routes by extracting longitude and latitude from the geometry column, keeps selected relevant columns, and saves the cleaned data to a new CSV file.
+
+```bash
+ python designed_goods_movement_routes.py \
+  --input ../downloaders/data/designed_goods_movement_routes/truck_routes.csv \
+  --output ../processors/processed_data/designed_goods_movement_routes/truck_routes_with_location.csv
+```
 
 ### Other Datasets
 To be added as needed.

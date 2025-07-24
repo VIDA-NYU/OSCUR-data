@@ -47,10 +47,12 @@ code/downloaders/
     ├── sidewalk_complaints_311_downloader.py   # Download 311 sidewalk complaints (CSV with coordinates)
     ├── sidewalk_geometry_downloader      # Sidewalk polygon geometries (as WKT)
     ├── sidewalk_surface_condition        # Orchestrates all download files  
-├── key_destinations.py
+├── key_destinations/
     ├── issued_licenses_downloader.py      # Download Issued Licenses dataset (CSV)
     ├── key_desinations_downloader.py      # Orchestrates all download files
     ├── nyc_facilities_downloader.py       # Download NYC Facilities dataset (CSV)
+├── designed_goods_movement_routes/      # Folder for freight movement routes
+    ├── truck_routes.py                  # Download Truck Routes (CSV)
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -78,6 +80,7 @@ python speed_humps.py -o data/speed_humps.csv
 python raised_crosswalks.py -o data/raised_crosswalks.csv
 python NYC_vehicle_collisions.py -o data/NYC_vehicle_collisions.csv
 python nyc_311.py -o data/nyc_311.csv
+python designed_goods_movement_routes/truck_routes.py --output data/designed_goods_movement_routes/truck_routes.csv
 ```
 With API token and custom timeout:
 ```bash
