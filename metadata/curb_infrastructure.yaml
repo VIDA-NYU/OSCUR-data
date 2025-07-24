@@ -1,0 +1,94 @@
+dataset_id: "curb_infrastructure"
+name: "NYC Curb Infrastructure (Sidewalks, Ramps, Crosswalks, Medians)"
+description: >
+  A unified dataset combining NYC’s curb-level infrastructure datasets:
+  1) Sidewalks — official polygon geometries of city-maintained sidewalks,
+  2) Pedestrian Ramps — points marking pedestrian curb ramp locations,
+  3) Raised Crosswalks — points showing elevated crosswalk structures,
+  4) Medians — polygon geometries of physical median barriers along streets.
+
+  These datasets support spatial analysis of pedestrian infrastructure, accessibility, and safe street design. 
+  All records are provided with spatial geometries or coordinates and can be joined to street segments or zoning layers for advanced analysis.
+
+source_organization:
+  sidewalks: "New York City Department of Information Technology & Telecommunications (DoITT)"
+  pedestrian_ramps: "New York City Department of Transportation (NYC DOT)"
+  raised_crosswalks: "New York City Department of Transportation (NYC DOT)"
+  medians: "New York City Department of Information Technology & Telecommunications (DoITT)"
+
+domain: "transportation"
+last_updated: "2025-07-23"
+update_frequency:
+  sidewalks: "Occasionally"
+  pedestrian_ramps: "Occasionally"
+  raised_crosswalks: "Occasionally"
+  medians: "Occasionally"
+
+access:
+  primary_url: "https://data.cityofnewyork.us"
+  api_endpoint:
+    sidewalks: "https://data.cityofnewyork.us/resource/52n9-sdep.json"
+    pedestrian_ramps: "https://data.cityofnewyork.us/resource/ufzp-rrqu.json"
+    raised_crosswalks: "https://data.cityofnewyork.us/resource/uh2s-ftgh.json"
+    medians: "https://data.cityofnewyork.us/resource/ees7-4ufv.json"
+  license: "Open Data License"
+  file_format:
+    sidewalks: ["CSV", "GeoJSON"]
+    pedestrian_ramps: ["CSV", "GeoJSON"]
+    raised_crosswalks: ["CSV", "GeoJSON"]
+    medians: ["CSV", "GeoJSON"]
+  rate_limits:
+    sidewalks: "Unknown"
+    pedestrian_ramps: "Unknown"
+    raised_crosswalks: "Unknown"
+    medians: "Unknown"
+
+spatial:
+  geometry_type: "mixed"  # includes polygon and point geometries
+  coordinate_system: "EPSG:4326"
+  coverage_area: "NYC"
+
+temporal:
+  temporal_type:
+    sidewalks: "last edited date"
+    pedestrian_ramps: "last edited date"
+    raised_crosswalks: "last edited date"
+    medians: "last edited date"
+  temporal_resolution:
+    sidewalks: "static"
+    pedestrian_ramps: "static"
+    raised_crosswalks: "static"
+    medians: "static"
+  time_column:
+    sidewalks: "last_edit_dt"
+    pedestrian_ramps: "last_edit_dt"
+    raised_crosswalks: "last_edit_dt"
+    medians: "last_edit_dt"
+
+implementation:
+  downloader_module:
+    sidewalks: "downloaders.curb_infrastructure.sidewalks_downloader.py"
+    pedestrian_ramps: "downloaders.curb_infrastructure.pedestrian_ramps_downloader.py"
+    raised_crosswalks: "downloaders.curb_infrastructure.raised_crosswalks_downloader.py"
+    medians: "downloaders.curb_infrastructure.medians_downloader.py"
+  orchestrator_downloader:
+    orchestrator: "downloaders.curb_infrastructure.curb_infrastructure.py"
+  processor_module: "processors.curb_infrastructure.py"
+  example_notebook: "examples/curb_infrastructure.ipynb"
+
+integration_opportunities:
+  spatial_joins:
+    - "Join curb features to sidewalks for infrastructure accessibility analysis"
+    - "Overlay with street centerlines or CSCL segments for routing or street audits"
+    - "Support Safe Streets for All planning and ADA compliance checks"
+  temporal_alignment:
+    - "Track infrastructure changes against crash or injury datasets"
+    - "Compare with signals or signage updates for multimodal planning"
+
+map_algebra:
+  raster_conversion:
+    suitable_for_rasterization: true
+    recommended_cell_size: "5 meters"
+    interpolation_method: "nearest"
+
+data_name: "curb_infrastructure"

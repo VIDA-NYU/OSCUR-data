@@ -12,7 +12,12 @@ code/processors/
 ├── signals_markings_signs.py          # Post-processing Signals Markings and Signs dataset (CSV)
 ├── transit_stop_accessibilitys.py     # Post-processing Transit Stop Acc dataset (CSV)
 ├── sidewalk_surface_condition.py      # Post-processing Sidewalk Surface Condition dataset (CSV)
-├── urban_design.py                    # Post-processing Urban Design dataset (CSV)
+├── designed_goods_movement_routes.py  # Post-processing Goods Movement Routes (CSV)
+├── merge_hvi_zipcode_geom.py          # Post-processing Environment dataset (CSV)
+├── fixed_obstructions.py              # Post-processing Fixed Obstructions dataset (CSV)
+├── tree_cover_landscaping.py          # Post-processing Tree Cover and Landscaping dataset (CSV)
+├── curb_infrastructure.py             # Post-processing Curb Infrastructure dataset (CSV)
+├── rail_routes_and_crossings.py       # Post-processing Rail Routes and Crossings dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
 ```
@@ -79,22 +84,83 @@ python merge_geocoded_and_311.py \
   --out ../processors/processed_data/sidewalk_surface_full_merged.csv
 ```
 
-#### Environment Dataset
+#### Key Destinations
+No postprocessing script is needed, as the original datasets are being preserved without any merging.
 
-This script processes datasets for heat vulnerability, parks, open spaces, and ZIP code geometries. The Heat Vulnerability Index (HVI) is spatially merged with Modified ZIP Code Tabulation Areas (MODZCTA) to enable spatial analysis. Parks and open spaces are preserved in their original geometry formats for mapping and overlay.
+#### Designed Goods Movement Routes Dataset
+This script processes a CSV of NYC truck routes by extracting longitude and latitude from the geometry column, keeps selected relevant columns, and saves the cleaned data to a new CSV file.
 
 ```bash
-python environment.py \
-  --heat_vulnerability data/environment/heat_vulnerability.csv \
-  --zipcode_geom data/environment/modzcta.csv \
-  --parks data/environment/parks.csv \
-  --open_space data/environment/open_space.csv \
-  --output processed_data/environment_final.csv
+ python designed_goods_movement_routes.py \
+  --input ../downloaders/data/designed_goods_movement_routes/truck_routes.csv \
+  --output ../processors/processed_data/designed_goods_movement_routes/truck_routes_with_location.csv
 ```
 
-#### Urban Design/Frontage
+#### Environment Dataset
+This script joins the Heat Vulnerability Index with Zipcode Geometries. The output is a flat CSV file with geometry location details.
 
+```bash
+python -m code.processors.merge_hvi_zipcode_geom \
+  --hvi   data/environment/heat_vulnerability.csv \
+  --zipcode data/environment/zipcode_geom.csv \
+  --out   processed_data/environment/hvi_vulnerability_with_geom.csv
+```
+
+#### Fixed Obstructions Dataset
+This script processes the raw datasets for signposts, utility poles and sidewalks, merging them into a unified dataset.
+
+```bash
+python code/processors/fixed_obstructions.py \
+  --sidewalks ../downloaders/data/fixed_obstructions/sidewalk_planimetric.csv \
+  --telecom_poles ../downloaders/data/fixed_obstructions/telecom_franchise_poles.csv \
+  --street_signs ../downloaders/data/fixed_obstructions/street_sign_work_orders.csv \
+  --output ../processors/processed_data/fixed_obstructions/sidewalks_with_obstructions.csv
+```
+
+#### Bicycle Facilities
 No postprocessing script is needed, as the original datasets are being preserved without any merging.
+
+#### Tree Cover and Landscaping Dataset
+The script merges Natural Turf Maintenance data with NYC Park Zones to identify landscaped park areas.
+
+```bash
+python code/processors/tree_cover_landscaping.py \
+  --turf_maintenance ../downloaders/data/tree_cover_landscaping/natural_turf_maintenance.csv \
+  --parks_zones ../downloaders/data/tree_cover_landscaping/parks_zones.csv \
+  --output ../processors/processed_data/tree_cover_landscaping/parks_with_landscaping.csv
+```
+
+#### Transit Stops and Routes 
+No postprocessing script is needed, as the original datasets are being preserved without any merging.
+
+#### Curb Infrastructure: Sidewalks, crosswalks, driveways, curb ramps, medians, refuges, curb extensions
+This script integrates sidewalk geometries with nearby features such as pedestrian ramps, raised crosswalks, and medians using spatial joins.
+
+```bash
+python curb_infrastructure.py \
+  --sidewalks data/curb_infrastructure/sidewalks.csv \
+  --pedestrian_ramps data/curb_infrastructure/pedestrian_ramps.csv \
+  --raised_crosswalks data/curb_infrastructure/raised_crosswalks.csv \
+  --medians data/curb_infrastructure/medians.csv \
+  --output processed_data/sidewalks_with_curb_features.csv
+```
+
+#### Rail Routes and Crossings Dataset
+This script downloads and merges railroad line geometries with nearby or intersecting rail crossing points.
+
+```bash
+python code/processors/rail_routes_and_crossings.py \
+  --railroads ../downloaders/data/rail_routes_and_crossings/railroad_lines.csv \
+  --crossings ../downloaders/data/rail_routes_and_crossings/rail_crossings_nyc.csv \
+  --output ../processors/processed_data/rail_routes_and_crossings_combined.csv
+```
+
+#### Injuries
+No postprocessing script is needed, as the original datasets are being preserved without any merging.
+
+#### Urban Design/Frontage
+No postprocessing script is needed, as the original datasets are being preserved without any merging.
+
 
 ### Other Datasets
 To be added as needed.

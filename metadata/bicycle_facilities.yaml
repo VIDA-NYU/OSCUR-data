@@ -1,0 +1,61 @@
+dataset_id: "bicycle_facilities"
+name: "Bicycle Facilities in NYC (Bike Routes and Infrastructure)"
+description: >
+  This dataset contains the current and historic network of designated bicycle routes and facilities across the five boroughs of New York City.
+  It includes facility type, street information, and geometry as line segments, maintained by the NYC Department of Transportation (DOT) and partners.
+  
+  The dataset supports infrastructure planning, multimodal transportation analysis, cycling accessibility assessments, and integration into broader mobility and safety initiatives.
+  All records include accurate line geometries for spatial overlay, visualization, and routing applications.
+
+source_organization:
+  bike_routes: "New York City Department of Transportation (NYC DOT)"
+
+domain: "transportation_and_infrastructure"
+last_updated: "2025-07-23"
+update_frequency:
+  bike_routes: "Occasionally"
+
+access:
+  primary_url: "https://data.cityofnewyork.us"
+  api_endpoint:
+    bike_routes: "https://data.cityofnewyork.us/resource/mzxg-pwib.json"
+  license: "Open Data License"
+  file_format:
+    bike_routes: ["CSV", "GeoJSON"]
+  rate_limits:
+    bike_routes: "Unknown"
+
+spatial:
+  geometry_type: "line"
+  coordinate_system: "EPSG:4326"
+  coverage_area: "NYC"
+
+temporal:
+  temporal_type:
+    bike_routes: "last updated date"
+  temporal_resolution:
+    bike_routes: "static"
+  time_column:
+    bike_routes: "last_edit_date"
+
+implementation:
+  downloader_module:
+    bike_routes: "downloaders.bicycle.bike_routes_downloader"
+  processor_module: null
+  example_notebook: "examples/bicycle_facilities.ipynb"
+
+integration_opportunities:
+  spatial_joins:
+    - "Overlay with crash or injury datasets to assess route safety"
+    - "Join with parks and greenway corridors for recreation planning"
+    - "Align with transit stops or pedestrian paths for multimodal design"
+  temporal_alignment:
+    - "Compare historical vs. current facility coverage in long-term planning"
+
+map_algebra:
+  raster_conversion:
+    suitable_for_rasterization: true
+    recommended_cell_size: "15 meters"
+    interpolation_method: "line presence raster (binary or weighted)"
+
+data_name: "bicycle_facilities"

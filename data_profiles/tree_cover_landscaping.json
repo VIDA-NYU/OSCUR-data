@@ -1,0 +1,1969 @@
+{
+  "nb_rows": 23247,
+  "nb_profiled_rows": 23247,
+  "nb_columns": 35,
+  "columns": [
+    {
+      "name": "ACRES",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.007183722630877102,
+      "mean": 20.467144634825594,
+      "stddev": 20.388982397130988,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.80198644,
+            "lte": 25.34509305
+          }
+        },
+        {
+          "range": {
+            "gte": 29.96157665,
+            "lte": 71.42983916
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 15405,
+            "bin_start": 0.03356331,
+            "bin_end": 21.364234725000003
+          },
+          {
+            "count": 5098,
+            "bin_start": 21.364234725000003,
+            "bin_end": 42.69490614
+          },
+          {
+            "count": 1773,
+            "bin_start": 42.69490614,
+            "bin_end": 64.02557755500001
+          },
+          {
+            "count": 467,
+            "bin_start": 64.02557755500001,
+            "bin_end": 85.35624897000001
+          },
+          {
+            "count": 78,
+            "bin_start": 85.35624897000001,
+            "bin_end": 106.68692038500001
+          },
+          {
+            "count": 142,
+            "bin_start": 106.68692038500001,
+            "bin_end": 128.01759180000002
+          },
+          {
+            "count": 114,
+            "bin_start": 128.01759180000002,
+            "bin_end": 149.348263215
+          },
+          {
+            "count": 0,
+            "bin_start": 149.348263215,
+            "bin_end": 170.67893463000001
+          },
+          {
+            "count": 0,
+            "bin_start": 170.67893463000001,
+            "bin_end": 192.00960604500003
+          },
+          {
+            "count": 3,
+            "bin_start": 192.00960604500003,
+            "bin_end": 213.34027746
+          }
+        ]
+      }
+    },
+    {
+      "name": "BOROUGH",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.0016776358239772875,
+      "num_distinct_values": 5,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "B",
+            "count": 4486
+          },
+          {
+            "bin": "M",
+            "count": 3661
+          },
+          {
+            "bin": "Q",
+            "count": 6881
+          },
+          {
+            "bin": "R",
+            "count": 2036
+          },
+          {
+            "bin": "X",
+            "count": 6144
+          }
+        ]
+      }
+    },
+    {
+      "name": "COMMUNITYBOARD",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.0015916032176194778,
+      "num_distinct_values": 84,
+      "mean": 604411.1011632917,
+      "stddev": 13434173.35947975,
+      "coverage": [
+        {
+          "range": {
+            "gte": 109.0,
+            "lte": 503.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 23165,
+            "bin_start": 101.0,
+            "bin_end": 30540639.1
+          },
+          {
+            "count": 0,
+            "bin_start": 30540639.1,
+            "bin_end": 61081177.2
+          },
+          {
+            "count": 0,
+            "bin_start": 61081177.2,
+            "bin_end": 91621715.30000001
+          },
+          {
+            "count": 0,
+            "bin_start": 91621715.30000001,
+            "bin_end": 122162253.4
+          },
+          {
+            "count": 0,
+            "bin_start": 122162253.4,
+            "bin_end": 152702791.5
+          },
+          {
+            "count": 0,
+            "bin_start": 152702791.5,
+            "bin_end": 183243329.60000002
+          },
+          {
+            "count": 0,
+            "bin_start": 183243329.60000002,
+            "bin_end": 213783867.70000002
+          },
+          {
+            "count": 0,
+            "bin_start": 213783867.70000002,
+            "bin_end": 244324405.8
+          },
+          {
+            "count": 0,
+            "bin_start": 244324405.8,
+            "bin_end": 274864943.90000004
+          },
+          {
+            "count": 45,
+            "bin_start": 274864943.90000004,
+            "bin_end": 305405482.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "COUNCILDISTRICT",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 51,
+      "mean": 24.5254871596335,
+      "stddev": 15.179184773906234,
+      "coverage": [
+        {
+          "range": {
+            "gte": 2.0,
+            "lte": 17.0
+          }
+        },
+        {
+          "range": {
+            "gte": 19.0,
+            "lte": 30.0
+          }
+        },
+        {
+          "range": {
+            "gte": 35.0,
+            "lte": 51.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 2734,
+            "bin_start": 1.0,
+            "bin_end": 9.4
+          },
+          {
+            "count": 6564,
+            "bin_start": 9.4,
+            "bin_end": 17.8
+          },
+          {
+            "count": 5359,
+            "bin_start": 17.8,
+            "bin_end": 26.200000000000003
+          },
+          {
+            "count": 2059,
+            "bin_start": 26.200000000000003,
+            "bin_end": 34.6
+          },
+          {
+            "count": 2449,
+            "bin_start": 34.6,
+            "bin_end": 43.0
+          },
+          {
+            "count": 3888,
+            "bin_start": 43.0,
+            "bin_end": 51.400000000000006
+          },
+          {
+            "count": 0,
+            "bin_start": 51.400000000000006,
+            "bin_end": 59.800000000000004
+          },
+          {
+            "count": 0,
+            "bin_start": 59.800000000000004,
+            "bin_end": 68.2
+          },
+          {
+            "count": 0,
+            "bin_start": 68.2,
+            "bin_end": 76.60000000000001
+          },
+          {
+            "count": 194,
+            "bin_start": 76.60000000000001,
+            "bin_end": 85.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "DEPARTMENT",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 70,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "B-19",
+            "count": 1241
+          },
+          {
+            "bin": "Q-07",
+            "count": 1188
+          },
+          {
+            "bin": "Q-15",
+            "count": 1801
+          },
+          {
+            "bin": "X-13",
+            "count": 1516
+          },
+          {
+            "bin": "X-15",
+            "count": 937
+          }
+        ]
+      }
+    },
+    {
+      "name": "DESCRIPTION",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "park",
+            "count": 21693
+          },
+          {
+            "bin": "zone",
+            "count": 12995
+          },
+          {
+            "bin": "2",
+            "count": 4118
+          },
+          {
+            "bin": "1",
+            "count": 3587
+          },
+          {
+            "bin": "parkway",
+            "count": 2415
+          }
+        ]
+      }
+    },
+    {
+      "name": "GISPROPNUM",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.008044048694455198,
+      "num_distinct_values": 203,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "B073",
+            "count": 1175
+          },
+          {
+            "bin": "Q015",
+            "count": 796
+          },
+          {
+            "bin": "Q099",
+            "count": 1645
+          },
+          {
+            "bin": "X039",
+            "count": 1331
+          },
+          {
+            "bin": "X092",
+            "count": 1516
+          }
+        ]
+      }
+    },
+    {
+      "name": "LOCATION",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "to",
+            "count": 12894
+          },
+          {
+            "bin": "ave",
+            "count": 12878
+          },
+          {
+            "bin": "st",
+            "count": 11705
+          },
+          {
+            "bin": "s",
+            "count": 6224
+          },
+          {
+            "bin": "of",
+            "count": 6205
+          }
+        ]
+      }
+    },
+    {
+      "name": "NYS_ASSEMBLY",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.0016776358239772875,
+      "num_distinct_values": 99,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "25",
+            "count": 1687
+          },
+          {
+            "bin": "27",
+            "count": 1302
+          },
+          {
+            "bin": "44",
+            "count": 1273
+          },
+          {
+            "bin": "81",
+            "count": 1646
+          },
+          {
+            "bin": "82",
+            "count": 1537
+          }
+        ]
+      }
+    },
+    {
+      "name": "NYS_SENATE",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.0016776358239772875,
+      "num_distinct_values": 47,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "11",
+            "count": 1833
+          },
+          {
+            "bin": "21",
+            "count": 1363
+          },
+          {
+            "bin": "24",
+            "count": 1609
+          },
+          {
+            "bin": "31",
+            "count": 1843
+          },
+          {
+            "bin": "34",
+            "count": 3912
+          }
+        ]
+      }
+    },
+    {
+      "name": "OMPPropID",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 926,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "M108T-ZN01",
+            "count": 179
+          },
+          {
+            "bin": "M108T-ZN03",
+            "count": 194
+          },
+          {
+            "bin": "Q024-ZN01",
+            "count": 259
+          },
+          {
+            "bin": "X092-ZN05",
+            "count": 206
+          },
+          {
+            "bin": "X092-ZN06",
+            "count": 188
+          }
+        ]
+      }
+    },
+    {
+      "name": "PRECINCT",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 77,
+      "mean": 84.17021551167893,
+      "stddev": 263.8390868878802,
+      "coverage": [
+        {
+          "range": {
+            "gte": 2.0,
+            "lte": 52.0
+          }
+        },
+        {
+          "range": {
+            "gte": 68.0,
+            "lte": 122.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 22874,
+            "bin_start": 1.0,
+            "bin_end": 233.4
+          },
+          {
+            "count": 0,
+            "bin_start": 233.4,
+            "bin_end": 465.8
+          },
+          {
+            "count": 0,
+            "bin_start": 465.8,
+            "bin_end": 698.2
+          },
+          {
+            "count": 0,
+            "bin_start": 698.2,
+            "bin_end": 930.6
+          },
+          {
+            "count": 0,
+            "bin_start": 930.6,
+            "bin_end": 1163.0
+          },
+          {
+            "count": 0,
+            "bin_start": 1163.0,
+            "bin_end": 1395.4
+          },
+          {
+            "count": 0,
+            "bin_start": 1395.4,
+            "bin_end": 1627.8
+          },
+          {
+            "count": 0,
+            "bin_start": 1627.8,
+            "bin_end": 1860.2
+          },
+          {
+            "count": 194,
+            "bin_start": 1860.2,
+            "bin_end": 2092.6
+          },
+          {
+            "count": 179,
+            "bin_start": 2092.6,
+            "bin_end": 2325.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "PROPNAME",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 188,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Flushing Meadows Corona Park",
+            "count": 1832
+          },
+          {
+            "bin": "Forest Park",
+            "count": 796
+          },
+          {
+            "bin": "Pelham Bay Park",
+            "count": 1331
+          },
+          {
+            "bin": "Prospect Park",
+            "count": 1421
+          },
+          {
+            "bin": "Van Cortlandt Park",
+            "count": 1516
+          }
+        ]
+      }
+    },
+    {
+      "name": "RETIRED",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Boolean",
+        "http://schema.org/Enumeration"
+      ],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 1,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "False",
+            "count": 23247
+          }
+        ]
+      }
+    },
+    {
+      "name": "RETIREDDATE",
+      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
+      "semantic_types": []
+    },
+    {
+      "name": "SITENAME",
+      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
+      "semantic_types": []
+    },
+    {
+      "name": "SUBCATEGORY",
+      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
+      "semantic_types": []
+    },
+    {
+      "name": "US_CONGRESS",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.0016776358239772875,
+      "num_distinct_values": 26,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "11",
+            "count": 2519
+          },
+          {
+            "bin": "13",
+            "count": 2617
+          },
+          {
+            "bin": "14",
+            "count": 3772
+          },
+          {
+            "bin": "6",
+            "count": 3866
+          },
+          {
+            "bin": "9",
+            "count": 2090
+          }
+        ]
+      }
+    },
+    {
+      "name": "ZIPCODE",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.007441820449950531,
+      "num_distinct_values": 169,
+      "mean": 7.785020902359773e+16,
+      "stddev": 8.990733045883007e+17,
+      "coverage": [
+        {
+          "range": {
+            "gte": 10025.0,
+            "lte": 1003510029.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 23074,
+            "bin_start": 10001.0,
+            "bin_end": 1.04611046210468e+18
+          },
+          {
+            "count": 0,
+            "bin_start": 1.04611046210468e+18,
+            "bin_end": 2.09222092420935e+18
+          },
+          {
+            "count": 0,
+            "bin_start": 2.09222092420935e+18,
+            "bin_end": 3.13833138631402e+18
+          },
+          {
+            "count": 0,
+            "bin_start": 3.13833138631402e+18,
+            "bin_end": 4.18444184841869e+18
+          },
+          {
+            "count": 0,
+            "bin_start": 4.18444184841869e+18,
+            "bin_end": 5.23055231052336e+18
+          },
+          {
+            "count": 0,
+            "bin_start": 5.23055231052336e+18,
+            "bin_end": 6.276662772628029e+18
+          },
+          {
+            "count": 0,
+            "bin_start": 6.276662772628029e+18,
+            "bin_end": 7.3227732347327e+18
+          },
+          {
+            "count": 0,
+            "bin_start": 7.3227732347327e+18,
+            "bin_end": 8.36888369683737e+18
+          },
+          {
+            "count": 0,
+            "bin_start": 8.36888369683737e+18,
+            "bin_end": 9.41499415894204e+18
+          },
+          {
+            "count": 173,
+            "bin_start": 9.41499415894204e+18,
+            "bin_end": 1.046110462104671e+19
+          }
+        ]
+      }
+    },
+    {
+      "name": "id",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "missing_values_ratio": 0.014582526777648729,
+      "num_distinct_values": 22908
+    },
+    {
+      "name": "DateofWork",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration",
+        "http://schema.org/DateTime"
+      ],
+      "missing_values_ratio": 0.014582526777648729,
+      "num_distinct_values": 839,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "05/21/2024",
+            "count": 81
+          },
+          {
+            "bin": "05/22/2024",
+            "count": 77
+          },
+          {
+            "bin": "05/23/2023",
+            "count": 81
+          },
+          {
+            "bin": "06/04/2024",
+            "count": 74
+          },
+          {
+            "bin": "06/17/2020",
+            "count": 92
+          }
+        ]
+      }
+    },
+    {
+      "name": "Borough",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.014582526777648729,
+      "num_distinct_values": 5,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Bronx",
+            "count": 6138
+          },
+          {
+            "bin": "Brooklyn",
+            "count": 4300
+          },
+          {
+            "bin": "Manhattan",
+            "count": 1847
+          },
+          {
+            "bin": "Queens",
+            "count": 8623
+          },
+          {
+            "bin": "Staten Island",
+            "count": 2000
+          }
+        ]
+      }
+    },
+    {
+      "name": "District",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.014582526777648729,
+      "num_distinct_values": 63,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "B-19",
+            "count": 1413
+          },
+          {
+            "bin": "Q-07",
+            "count": 1182
+          },
+          {
+            "bin": "Q-15",
+            "count": 1800
+          },
+          {
+            "bin": "X-13",
+            "count": 1510
+          },
+          {
+            "bin": "X-15",
+            "count": 937
+          }
+        ]
+      }
+    },
+    {
+      "name": "Site Name",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "missing_values_ratio": 0.014582526777648729,
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "park",
+            "count": 21562
+          },
+          {
+            "bin": "zone",
+            "count": 12917
+          },
+          {
+            "bin": "2",
+            "count": 4109
+          },
+          {
+            "bin": "1",
+            "count": 3568
+          },
+          {
+            "bin": "parkway",
+            "count": 2403
+          }
+        ]
+      }
+    },
+    {
+      "name": "StartTime",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.014668559384006538,
+      "num_distinct_values": 732,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "6:30:00 AM",
+            "count": 1055
+          },
+          {
+            "bin": "7:00:00 AM",
+            "count": 2353
+          },
+          {
+            "bin": "7:30:00 AM",
+            "count": 1350
+          },
+          {
+            "bin": "8:00:00 AM",
+            "count": 2770
+          },
+          {
+            "bin": "9:00:00 AM",
+            "count": 822
+          }
+        ]
+      }
+    },
+    {
+      "name": "EndTime",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.014754591990364349,
+      "num_distinct_values": 850,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "12:00:00 PM",
+            "count": 1843
+          },
+          {
+            "bin": "1:00:00 PM",
+            "count": 1350
+          },
+          {
+            "bin": "1:30:00 PM",
+            "count": 1180
+          },
+          {
+            "bin": "2:00:00 PM",
+            "count": 1483
+          },
+          {
+            "bin": "2:30:00 PM",
+            "count": 1331
+          }
+        ]
+      }
+    },
+    {
+      "name": "CrewSize",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.014582526777648729,
+      "num_distinct_values": 25,
+      "mean": 2.67002793783831,
+      "stddev": 2.4567566217626498,
+      "coverage": [
+        {
+          "range": {
+            "gte": 1.0,
+            "lte": 2.0
+          }
+        },
+        {
+          "range": {
+            "gte": 3.0,
+            "lte": 6.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 14451,
+            "bin_start": 0.0,
+            "bin_end": 2.7
+          },
+          {
+            "count": 6319,
+            "bin_start": 2.7,
+            "bin_end": 5.4
+          },
+          {
+            "count": 1399,
+            "bin_start": 5.4,
+            "bin_end": 8.100000000000001
+          },
+          {
+            "count": 272,
+            "bin_start": 8.100000000000001,
+            "bin_end": 10.8
+          },
+          {
+            "count": 234,
+            "bin_start": 10.8,
+            "bin_end": 13.5
+          },
+          {
+            "count": 158,
+            "bin_start": 13.5,
+            "bin_end": 16.200000000000003
+          },
+          {
+            "count": 47,
+            "bin_start": 16.200000000000003,
+            "bin_end": 18.900000000000002
+          },
+          {
+            "count": 21,
+            "bin_start": 18.900000000000002,
+            "bin_end": 21.6
+          },
+          {
+            "count": 5,
+            "bin_start": 21.6,
+            "bin_end": 24.3
+          },
+          {
+            "count": 2,
+            "bin_start": 24.3,
+            "bin_end": 27.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "MowingResponse",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.5203252032520326,
+      "num_distinct_values": 4,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "No",
+            "count": 901
+          },
+          {
+            "bin": "Not needed",
+            "count": 478
+          },
+          {
+            "bin": "Not needed due to drought conditions",
+            "count": 835
+          },
+          {
+            "bin": "Yes",
+            "count": 8937
+          }
+        ]
+      }
+    },
+    {
+      "name": "TrimmingResponse",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.5203252032520326,
+      "num_distinct_values": 4,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "No",
+            "count": 1595
+          },
+          {
+            "bin": "Not needed",
+            "count": 641
+          },
+          {
+            "bin": "Not needed due to drought conditions",
+            "count": 1692
+          },
+          {
+            "bin": "Yes",
+            "count": 7223
+          }
+        ]
+      }
+    },
+    {
+      "name": "BlowingResponse",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.5203252032520326,
+      "num_distinct_values": 4,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "No",
+            "count": 1770
+          },
+          {
+            "bin": "Not needed",
+            "count": 673
+          },
+          {
+            "bin": "Not needed due to drought conditions",
+            "count": 1259
+          },
+          {
+            "bin": "Yes",
+            "count": 7449
+          }
+        ]
+      }
+    },
+    {
+      "name": "AbleToCompleteAssignedTasks",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Boolean",
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.014582526777648729,
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 2,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "False",
+            "count": 6721
+          },
+          {
+            "bin": "True",
+            "count": 16187
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReasonForIncomplete",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.8301286187465049,
+      "num_distinct_values": 47,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "EOD",
+            "count": 1985
+          },
+          {
+            "bin": "EOD,Staff",
+            "count": 241
+          },
+          {
+            "bin": "Other",
+            "count": 452
+          },
+          {
+            "bin": "Rain",
+            "count": 143
+          },
+          {
+            "bin": "Staff",
+            "count": 518
+          }
+        ]
+      }
+    },
+    {
+      "name": "lon",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [
+        "http://schema.org/longitude"
+      ],
+      "unclean_values_ratio": 0.0,
+      "mean": -73.90919170889809,
+      "stddev": 0.09371236347027137,
+      "coverage": [
+        {
+          "range": {
+            "gte": -73.99683889372484,
+            "lte": -73.88443201309818
+          }
+        },
+        {
+          "range": {
+            "gte": -73.87368958250792,
+            "lte": -73.76444209308306
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 148,
+            "bin_start": -74.25393854785915,
+            "bin_end": -74.20096543483821
+          },
+          {
+            "count": 388,
+            "bin_start": -74.20096543483821,
+            "bin_end": -74.14799232181728
+          },
+          {
+            "count": 732,
+            "bin_start": -74.14799232181728,
+            "bin_end": -74.09501920879634
+          },
+          {
+            "count": 768,
+            "bin_start": -74.09501920879634,
+            "bin_end": -74.04204609577542
+          },
+          {
+            "count": 1151,
+            "bin_start": -74.04204609577542,
+            "bin_end": -73.98907298275448
+          },
+          {
+            "count": 4888,
+            "bin_start": -73.98907298275448,
+            "bin_end": -73.93609986973354
+          },
+          {
+            "count": 5480,
+            "bin_start": -73.93609986973354,
+            "bin_end": -73.88312675671261
+          },
+          {
+            "count": 5156,
+            "bin_start": -73.88312675671261,
+            "bin_end": -73.83015364369167
+          },
+          {
+            "count": 3230,
+            "bin_start": -73.83015364369167,
+            "bin_end": -73.77718053067075
+          },
+          {
+            "count": 1306,
+            "bin_start": -73.77718053067075,
+            "bin_end": -73.72420741764981
+          }
+        ]
+      }
+    },
+    {
+      "name": "lat",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [
+        "http://schema.org/latitude"
+      ],
+      "unclean_values_ratio": 0.0,
+      "mean": 40.7488829881086,
+      "stddev": 0.09819355588791363,
+      "coverage": [
+        {
+          "range": {
+            "gte": 40.54153244339808,
+            "lte": 40.673973582743415
+          }
+        },
+        {
+          "range": {
+            "gte": 40.68659625807023,
+            "lte": 40.792650266754976
+          }
+        },
+        {
+          "range": {
+            "gte": 40.805506295802296,
+            "lte": 40.897439749805685
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 313,
+            "bin_start": 40.49775165475559,
+            "bin_end": 40.538916880562766
+          },
+          {
+            "count": 768,
+            "bin_start": 40.538916880562766,
+            "bin_end": 40.580082106369936
+          },
+          {
+            "count": 1959,
+            "bin_start": 40.580082106369936,
+            "bin_end": 40.621247332177106
+          },
+          {
+            "count": 1902,
+            "bin_start": 40.621247332177106,
+            "bin_end": 40.66241255798428
+          },
+          {
+            "count": 2775,
+            "bin_start": 40.66241255798428,
+            "bin_end": 40.70357778379146
+          },
+          {
+            "count": 3237,
+            "bin_start": 40.70357778379146,
+            "bin_end": 40.74474300959863
+          },
+          {
+            "count": 2976,
+            "bin_start": 40.74474300959863,
+            "bin_end": 40.7859082354058
+          },
+          {
+            "count": 2790,
+            "bin_start": 40.7859082354058,
+            "bin_end": 40.827073461212976
+          },
+          {
+            "count": 3466,
+            "bin_start": 40.827073461212976,
+            "bin_end": 40.86823868702015
+          },
+          {
+            "count": 3061,
+            "bin_start": 40.86823868702015,
+            "bin_end": 40.90940391282732
+          }
+        ]
+      }
+    },
+    {
+      "name": "geometry_wkt",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "40",
+            "count": 11565358
+          },
+          {
+            "bin": "73",
+            "count": 10297193
+          },
+          {
+            "bin": "74",
+            "count": 1268241
+          },
+          {
+            "bin": "multipolygon",
+            "count": 23247
+          },
+          {
+            "bin": "891177",
+            "count": 3861
+          }
+        ]
+      }
+    }
+  ],
+  "nb_spatial_columns": 2,
+  "nb_temporal_columns": 1,
+  "nb_categorical_columns": 18,
+  "nb_numerical_columns": 6,
+  "types": [
+    "categorical",
+    "numerical",
+    "spatial",
+    "temporal"
+  ],
+  "spatial_coverage": [
+    {
+      "type": "latlong",
+      "column_names": [
+        "lat",
+        "lon"
+      ],
+      "column_indexes": [
+        33,
+        32
+      ],
+      "geohashes4": [
+        {
+          "hash": "1211303202200",
+          "number": 463
+        },
+        {
+          "hash": "1211303202203",
+          "number": 593
+        },
+        {
+          "hash": "1211303202201",
+          "number": 206
+        },
+        {
+          "hash": "1211303202202",
+          "number": 707
+        },
+        {
+          "hash": "1211303202230",
+          "number": 707
+        },
+        {
+          "hash": "1211303202233",
+          "number": 659
+        },
+        {
+          "hash": "1211303202231",
+          "number": 179
+        },
+        {
+          "hash": "1211303202212",
+          "number": 638
+        },
+        {
+          "hash": "1211303202213",
+          "number": 424
+        },
+        {
+          "hash": "1211303202223",
+          "number": 435
+        },
+        {
+          "hash": "1211303202222",
+          "number": 211
+        },
+        {
+          "hash": "1211303202221",
+          "number": 234
+        },
+        {
+          "hash": "1211303202302",
+          "number": 350
+        },
+        {
+          "hash": "1211303202303",
+          "number": 1
+        },
+        {
+          "hash": "1211303202320",
+          "number": 971
+        },
+        {
+          "hash": "1211303202322",
+          "number": 320
+        },
+        {
+          "hash": "1211303202321",
+          "number": 928
+        },
+        {
+          "hash": "1211303202323",
+          "number": 61
+        },
+        {
+          "hash": "1211303220000",
+          "number": 51
+        },
+        {
+          "hash": "1211303220002",
+          "number": 123
+        },
+        {
+          "hash": "1211303220001",
+          "number": 48
+        },
+        {
+          "hash": "1211303220011",
+          "number": 1006
+        },
+        {
+          "hash": "1211303220100",
+          "number": 325
+        },
+        {
+          "hash": "1211302313332",
+          "number": 1385
+        },
+        {
+          "hash": "1211302313330",
+          "number": 39
+        },
+        {
+          "hash": "1211302313333",
+          "number": 100
+        },
+        {
+          "hash": "1211302313322",
+          "number": 796
+        },
+        {
+          "hash": "1211302313323",
+          "number": 294
+        },
+        {
+          "hash": "1211302313321",
+          "number": 276
+        },
+        {
+          "hash": "1211302313311",
+          "number": 36
+        },
+        {
+          "hash": "1211302313312",
+          "number": 27
+        },
+        {
+          "hash": "1211302313310",
+          "number": 133
+        },
+        {
+          "hash": "1211302313313",
+          "number": 314
+        },
+        {
+          "hash": "1211302313300",
+          "number": 52
+        },
+        {
+          "hash": "1211302313303",
+          "number": 175
+        },
+        {
+          "hash": "1211302313301",
+          "number": 408
+        },
+        {
+          "hash": "1211302313302",
+          "number": 7
+        },
+        {
+          "hash": "1211302313230",
+          "number": 11
+        },
+        {
+          "hash": "1211302313233",
+          "number": 2
+        },
+        {
+          "hash": "1211302313231",
+          "number": 363
+        },
+        {
+          "hash": "1211302313201",
+          "number": 98
+        },
+        {
+          "hash": "1211302313200",
+          "number": 105
+        },
+        {
+          "hash": "1211302313202",
+          "number": 148
+        },
+        {
+          "hash": "1211302313212",
+          "number": 343
+        },
+        {
+          "hash": "1211302313213",
+          "number": 80
+        },
+        {
+          "hash": "1211302313210",
+          "number": 1343
+        },
+        {
+          "hash": "1211302313211",
+          "number": 423
+        },
+        {
+          "hash": "1211302313221",
+          "number": 171
+        },
+        {
+          "hash": "1211302313220",
+          "number": 88
+        },
+        {
+          "hash": "1211302313122",
+          "number": 10
+        },
+        {
+          "hash": "1211302313123",
+          "number": 4
+        },
+        {
+          "hash": "1211302313132",
+          "number": 1
+        },
+        {
+          "hash": "1211302313032",
+          "number": 5
+        },
+        {
+          "hash": "1211302313033",
+          "number": 33
+        },
+        {
+          "hash": "1211302313023",
+          "number": 205
+        },
+        {
+          "hash": "1211302313022",
+          "number": 277
+        },
+        {
+          "hash": "1211302313021",
+          "number": 1
+        },
+        {
+          "hash": "1211302313002",
+          "number": 452
+        },
+        {
+          "hash": "1211302313003",
+          "number": 190
+        },
+        {
+          "hash": "1211302312131",
+          "number": 257
+        },
+        {
+          "hash": "1211302312130",
+          "number": 398
+        },
+        {
+          "hash": "1211302312133",
+          "number": 2
+        },
+        {
+          "hash": "1211302312100",
+          "number": 71
+        },
+        {
+          "hash": "1211302312103",
+          "number": 60
+        },
+        {
+          "hash": "1211302312101",
+          "number": 28
+        },
+        {
+          "hash": "1211302312113",
+          "number": 5
+        },
+        {
+          "hash": "1211302312112",
+          "number": 55
+        },
+        {
+          "hash": "1211302312110",
+          "number": 44
+        },
+        {
+          "hash": "1211302312111",
+          "number": 169
+        },
+        {
+          "hash": "1211302312310",
+          "number": 164
+        },
+        {
+          "hash": "1211302312313",
+          "number": 204
+        },
+        {
+          "hash": "1211302312312",
+          "number": 154
+        },
+        {
+          "hash": "1211302312311",
+          "number": 303
+        },
+        {
+          "hash": "1211302312332",
+          "number": 9
+        },
+        {
+          "hash": "1211302310322",
+          "number": 127
+        },
+        {
+          "hash": "1211302310320",
+          "number": 1
+        },
+        {
+          "hash": "1211302310323",
+          "number": 3
+        },
+        {
+          "hash": "1211302310333",
+          "number": 53
+        },
+        {
+          "hash": "1211302310332",
+          "number": 8
+        },
+        {
+          "hash": "1211302310231",
+          "number": 83
+        },
+        {
+          "hash": "1211302310233",
+          "number": 31
+        },
+        {
+          "hash": "1211302330110",
+          "number": 6
+        },
+        {
+          "hash": "1211302330111",
+          "number": 61
+        },
+        {
+          "hash": "1211302330113",
+          "number": 32
+        },
+        {
+          "hash": "1211302331013",
+          "number": 87
+        },
+        {
+          "hash": "1211302331011",
+          "number": 263
+        },
+        {
+          "hash": "1211302331012",
+          "number": 7
+        },
+        {
+          "hash": "1211302331010",
+          "number": 74
+        },
+        {
+          "hash": "1211302331031",
+          "number": 1
+        },
+        {
+          "hash": "1211302331002",
+          "number": 1
+        },
+        {
+          "hash": "1211302331112",
+          "number": 520
+        },
+        {
+          "hash": "1211302331110",
+          "number": 1126
+        },
+        {
+          "hash": "1211302331113",
+          "number": 214
+        },
+        {
+          "hash": "1211302331111",
+          "number": 8
+        },
+        {
+          "hash": "1211302331130",
+          "number": 166
+        },
+        {
+          "hash": "1211302331103",
+          "number": 353
+        },
+        {
+          "hash": "1211302331100",
+          "number": 9
+        },
+        {
+          "hash": "1211302331101",
+          "number": 53
+        },
+        {
+          "hash": "1211302331102",
+          "number": 2
+        }
+      ],
+      "ranges": [
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -74.17360362430648,
+                40.72292731789306
+              ],
+              [
+                -73.92522096267831,
+                40.5551333703716
+              ]
+            ]
+          }
+        },
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -73.96992141131922,
+                40.89669863380089
+              ],
+              [
+                -73.80293561425114,
+                40.78189695539617
+              ]
+            ]
+          }
+        },
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -73.88682704323033,
+                40.77117603222226
+              ],
+              [
+                -73.74927479047965,
+                40.67475332497105
+              ]
+            ]
+          }
+        }
+      ],
+      "number": 23247
+    }
+  ],
+  "temporal_coverage": [
+    {
+      "type": "datetime",
+      "column_names": [
+        "DateofWork"
+      ],
+      "column_indexes": [
+        20
+      ],
+      "column_types": [
+        "http://schema.org/DateTime"
+      ],
+      "ranges": [
+        {
+          "range": {
+            "gte": 1590624000.0,
+            "lte": 1632355200.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1652227200.0,
+            "lte": 1664409600.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1684368000.0,
+            "lte": 1726704000.0
+          }
+        }
+      ],
+      "temporal_resolution": "day"
+    }
+  ],
+  "attribute_keywords": [
+    "ACRES",
+    "BOROUGH",
+    "COMMUNITYBOARD",
+    "COUNCILDISTRICT",
+    "DEPARTMENT",
+    "DESCRIPTION",
+    "GISPROPNUM",
+    "LOCATION",
+    "NYS_ASSEMBLY",
+    "NYS",
+    "ASSEMBLY",
+    "NYS_SENATE",
+    "NYS",
+    "SENATE",
+    "OMPPropID",
+    "OMPProp",
+    "ID",
+    "PRECINCT",
+    "PROPNAME",
+    "RETIRED",
+    "RETIREDDATE",
+    "SITENAME",
+    "SUBCATEGORY",
+    "US_CONGRESS",
+    "US",
+    "CONGRESS",
+    "ZIPCODE",
+    "id",
+    "DateofWork",
+    "Dateof",
+    "Work",
+    "Borough",
+    "District",
+    "Site Name",
+    "Site",
+    "Name",
+    "StartTime",
+    "Start",
+    "Time",
+    "EndTime",
+    "End",
+    "Time",
+    "CrewSize",
+    "Crew",
+    "Size",
+    "MowingResponse",
+    "Mowing",
+    "Response",
+    "TrimmingResponse",
+    "Trimming",
+    "Response",
+    "BlowingResponse",
+    "Blowing",
+    "Response",
+    "AbleToCompleteAssignedTasks",
+    "Able",
+    "To",
+    "Complete",
+    "Assigned",
+    "Tasks",
+    "ReasonForIncomplete",
+    "Reason",
+    "For",
+    "Incomplete",
+    "lon",
+    "lat",
+    "geometry_wkt",
+    "geometry",
+    "wkt"
+  ],
+  "sample": "ACRES,BOROUGH,COMMUNITYBOARD,COUNCILDISTRICT,DEPARTMENT,DESCRIPTION,GISPROPNUM,LOCATION,NYS_ASSEMBLY,NYS_SENATE,OMPPropID,PRECINCT,PROPNAME,RETIRED,RETIREDDATE,SITENAME,SUBCATEGORY,US_CONGRESS,ZIPCODE,id,DateofWork,Borough,District,Site Name,StartTime,EndTime,CrewSize,MowingResponse,TrimmingResponse,BlowingResponse,AbleToCompleteAssignedTasks,ReasonForIncomplete,lon,lat,geometry_wkt\r\n28.39293882,Q,407.0,20,Q-07,Kissena Park Zone 1,Q024,\"Oak Ave, 164th St, Kissena Lake Area\",25,11,Q024-ZN01,2,Kissena Park,False,,,,6,11365.0,255_2022NTD_20220510,05/10/2022,Queens,Q-07,Kissena Park Zone 1,6:30:00 AM,2:00:00 PM,1.0,,,,True,,-73.80503903702369,40.74789121097536,\"MULTIPOLYGON (((-73.802987 40.74972, -73.802987 40.749722, -73.802987 40.749723, -73.802988 40.749724, -73.802988 40.749725, -73.802988...\"\r\n8.95528021,M,109.0,7,M-09,Morningside Park Zone 1,M056,\"Athletic Fields + Lawns Fr 114 St To 110 St Along Manhattan Av, E Of Upp Path\",70,30,M056-ZN01,26,Morningside Park,False,,,,13,10026.0,7814_2021NTD_20210503,05/03/2021,Manhattan,M-09,Morningside Park Zone 1,9:00:00 AM,12:00:00 PM,3.0,,,,True,,-73.95937648167624,40.80290865763651,\"MULTIPOLYGON (((-73.958277 40.803806, -73.958284 40.803929, -73.958286 40.803949, -73.958287 40.803976, -73.958288 40.803995, -73.95829...\"\r\n13.07615442,B,355.0,39,B-19,Prospect Park Southwest Upper,B073,Prospect Pk Southwest Btw Prospect Pk West & 16 St,44,21,B073-ZN05,78,Prospect Park,False,,,,9,11215.0,953_2022NTD_20220524,05/24/2022,Brooklyn,B-19,Prospect Park Southwest Upper,3:30:00 PM,6:45:00 PM,1.0,,,,False,Other,-73.97594501594938,40.65956248328703,\"MULTIPOLYGON (((-73.973068 40.658003, -73.973071 40.658115, -73.973075 40.658134, -73.973095 40.658227, -73.973109 40.658263, -73.973121...\"\r\n18.96047005,Q,482.0,29,Q-16,Forest Park-Union Turnpike Malls,Q015,(e) From Park Lane To (w) Long Island Railroad,28,15,Q015-ZN15,102,Forest Park,False,,,,6,1137511415.0,955_NTD2_20240602,05/30/2024,Queens,Q-16,Forest Park-Union Turnpike Malls,9:00:00 AM,12:00:00 PM,2.0,Yes,Yes,Yes,True,,-73.843101001399,40.7089799390213,\"MULTIPOLYGON (((-73.844145 40.708229, -73.844076 40.708244, -73.844011 40.708259, -73.844008 40.708259, -73.844002 40.708261, -73.84395...\"\r\n10.8749581,X,204.0,16,X-04,Macombs Dam Park Zone 2 Lower,X030,\"E 157th & 161st Sts, River Ave\",84,29,X030-ZN02,44,Macombs Dam Park,False,,,,15,10451.0,2816_2020NTD_20200618,06/18/2020,Bronx,X-04,Macombs Dam Park Zone 2 Lower,7:00:00 AM,10:00:00 AM,1.0,,,,True,,-73.92785876875098,40.826998923396616,\"MULTIPOLYGON (((-73.928225 40.827913, -73.928236 40.827908, -73.929294 40.827437, -73.929514 40.827066, -73.929483 40.827038, -73.929638...\"\r\n24.83590218,X,212.0,12,X-14,Bronx Park-Bronx River Parkway East (South Half),X002,\"Duncomb, E 222 St, Bronx Blvd, Bronx River Pkwy\",\"83, 80, 81\",\"36, 34\",X002-ZN05A,47,Bronx Park,False,,,,\"14, 16\",10467.0,8177_2021NTD_20210513,05/13/2021,Bronx,X-14,Bronx Park-Bronx River Parkway East (South Half),8:00:00 AM,2:00:00 PM,9.0,,,,False,,-73.86785677027083,40.8813585805456,\"MULTIPOLYGON (((-73.86594 40.887056, -73.865981 40.887069, -73.866012 40.887079, -73.866041 40.887088, -73.866045 40.887089, -73.866114...\"\r\n9.74590779,X,226.0,11,X-13,\"Van Cortlandt Park-V. C. Mansion, Tennis Courts, Mem. Grove\",X092,Broadway To Tennis Courts To Nature Trails,81,34,X092-ZN04,3,Van Cortlandt Park,False,,,,16,10471.0,12103_2021NTD_20210730,07/30/2021,Bronx,X-13,Van Cortlandt Park-V. C. Mansion Tennis Courts Mem. Grove,7:35:00 AM,8:00:00 AM,1.0,,,,True,,-73.89472330242089,40.89100677703511,\"MULTIPOLYGON (((-73.895775 40.891191, -73.895979 40.891321, -73.89617 40.891444, -73.896299 40.891528, -73.896399 40.891593, -73.896575...\"\r\n1.20449509,Q,408.0,24,Q-15,Flushing Meadows Park-Albert H. Mauro Playground,,Park Dr East & 73 Terrace,27,15,Q099-20,107,Flushing Meadows Corona Park,False,,,,6,11367.0,68_2022NTD_20220504,05/04/2022,Queens,Q-15,Flushing Meadows Park-Albert H. Mauro Playground,4:30:00 PM,6:30:00 PM,1.0,,,,False,EOD,-73.82722743529999,40.72336395790147,\"MULTIPOLYGON (((-73.8272 40.723131, -73.827028 40.723245, -73.827124 40.723498, -73.827161 40.72351, -73.827508 40.724403, -73.827748...\"\r\n41.30831826,Q,411.0,23,Q-07A,Alley Pond Park Zone 3,Q001,\"Springfield Blvd, 73rd Ave, 76th Ave, to Tree Line & Natural Area\",\"24, 25\",\"16, 11\",Q001-ZN03,4,Alley Pond Park,False,,,,6,11364.0,14737_2021NTD_20211004,10/04/2021,Queens,Q-07A,Alley Pond Park Zone 3,7:45:00 AM,3:15:00 PM,3.0,,,,False,,-73.74927479047965,40.74161678797204,\"MULTIPOLYGON (((-73.746084 40.741717, -73.746064 40.741798, -73.746072 40.741881, -73.746107 40.741959, -73.746168 40.742027, -73.746249...\"\r\n19.14715869,M,112.0,10,M-12,Inwood Hill Park Zone 4 (Dyckman Fields),M042,\"Dyckman Street, Hudson River, Hudson Pkwy, Harlem River\",\"71, 72\",31,M042-ZN04,4,Inwood Hill Park,False,,,,13,10034.0,3834_2023NTD_20230630,06/30/2023,Queens,M-12,Inwood Hill Park Zone 4 (Dyckman Fields),11:55:00 AM,12:10:00 PM,5.0,Not needed due to drought conditions,Yes,Yes,True,,-73.93027480861896,40.87284187379593,\"MULTIPOLYGON (((-73.930383 40.871999, -73.930271 40.872247, -73.930157 40.872494, -73.929841 40.873085, -73.929386 40.873833, -73.929408...\"\r\n2.79792069,Q,481.0,21,Q-15,Flushing Meadows Park-Playground For All Children,,111 St & Saultell & 56 Aves,35,13,Q099-18,110,Flushing Meadows Corona Park,False,,,,14,11368.0,893_2020NTD_20200529,05/29/2020,Queens,Q-15,Flushing Meadows Park-Playground For All Children,8:45:00 AM,3:27:00 PM,1.0,,,,True,,-73.84931505629766,40.741145170310205,\"MULTIPOLYGON (((-73.850083 40.741498, -73.850114 40.74147, -73.850149 40.741445, -73.850188 40.741423, -73.850231 40.741406, -73.850096...\"\r\n3.23480323,R,501.0,49,R-01,Silver Lake Park Playground,R022,University Pl & Revere St,63,24,R022-04,120,Silver Lake Park,False,,,,11,10301.0,3448_2022NTD_20220704,07/04/2022,Staten Island,R-01,Silver Lake Park-Silver Lake Park,11:00:00 AM,3:00:00 PM,12.0,,,,True,,-74.09991189180725,40.62793338240013,\"MULTIPOLYGON (((-74.100495 40.627353, -74.099656 40.62744, -74.099707 40.627649, -74.099146 40.627721, -74.098925 40.62775, -74.098974...\"\r\n7.32720184,Q,405482.0,30,Q-16,Forest Park-Carousel,Q015,(e) Woodhaven Blvd To (w) 88th Lane To (n) 89th St,38,15,Q015-ZN05,102,Forest Park,False,,,,6,11385.0,1242_NTD5_20240823,08/22/2024,Queens,Q-16,Forest Park-Carousel,1:00:00 PM,5:30:00 PM,3.0,Yes,Yes,Yes,True,,-73.85625657027134,40.700887628308095,\"MULTIPOLYGON (((-73.857359 40.701227, -73.857363 40.701208, -73.857289 40.7012, -73.857286 40.701224, -73.857284 40.701234, -73.85728...\"\r\n17.74971634,Q,405.0,30,Q-05,Juniper Valley Park Zone 2,Q102,\"Juniper Blvd N+S, Path Fr 75 Pl (N) To 75 St (S), Path Fr 78 St (N) To 77 Pl (S)\",30,15,Q102-ZN02,4,Juniper Valley Park,False,,,,6,11379.0,2032_2023NTD_20230602,06/02/2023,Queens,Q-05,Juniper Valley Park Zone 2,6:30:00 AM,12:00:00 PM,1.0,Yes,Yes,Yes,True,,-73.88031078161815,40.72035770427327,\"MULTIPOLYGON (((-73.878285 40.720615, -73.878283 40.720616, -73.878281 40.720617, -73.87828 40.720618, -73.878279 40.720619, -73.878277...\"\r\n5.72523466,B,306.0,38,B-06,Red Hook Recreation Area-Red Hook Park Zone 6,B126,\"Clinton, Halleck, Court, Bay\",51,25,B126-ZN06,76,Red Hook Recreation Area,False,,,,10,11231.0,4337_2023NTD_20230708,07/08/2023,Brooklyn,B-06,Red Hook Recreation Area-Red Hook Park Zone 6,7:30:00 AM,1:30:00 PM,1.0,Not needed due to drought conditions,Yes,Yes,True,,-74.00256733752424,40.670882310451,\"MULTIPOLYGON (((-74.003771 40.670613, -74.003776 40.670603, -74.003786 40.670583, -74.0038 40.670552, -74.00381 40.670531, -74.001929...\"\r\n18.52018344,B,355.0,39,B-19,Prospect Park-Middle Long Meadow,B073,\"Picnic House, Tennis House, West Dr., the Pools\",44,21,B073-ZN14,78,Prospect Park,False,,,,9,11215.0,10434_2021NTD_20210625,06/25/2021,Brooklyn,B-19,Prospect Park-Middle Long Meadow,8:30:00 AM,2:45:00 PM,1.0,,,,False,,-73.97251068693552,40.66416593160339,\"MULTIPOLYGON (((-73.971993 40.665771, -73.971994 40.665771, -73.971999 40.665775, -73.972004 40.665779, -73.97201 40.665782, -73.972015...\"\r\n13.49023224,X,201.0,8,X-01,St Mary's Park Zone 3,X045,Hillside In Center Of Park,84,29,X045-ZN03,40,St. Mary's Park,False,,,,15,10454.0,3344_2020NTD_20200624,06/24/2020,Bronx,X-01,St Mary's Park Zone 3,8:00:00 AM,2:30:00 PM,4.0,,,,True,,-73.91189263893908,40.81170327167471,\"MULTIPOLYGON (((-73.911148 40.813493, -73.911153 40.813491, -73.911156 40.81349, -73.91116 40.813487, -73.911206 40.813466, -73.911227...\"\r\n3.92852363,M,112.0,10,M-12,Fort Tryon Park Zone 6,M029,Bway Sidewalk And Adjacent Path From E-W Path Near Sherman Av To Riverside Dr,71,31,M029-ZN06,34,Fort Tryon Park,False,,,,13,10040.0,11734_2021NTD_20210723,07/23/2021,Manhattan,M-12,Fort Tryon Park Zone 6,11:45:00 AM,12:30:00 PM,6.0,,,,False,,-73.92989185016955,40.86436943556708,\"MULTIPOLYGON (((-73.930556 40.863285, -73.930553 40.863292, -73.930548 40.863303, -73.930517 40.863348, -73.930492 40.863385, -73.930437...\"\r\n62.74268399,R,595.0,50,R-02B,Fdr Boardwalk & Beach-Midland Beach Zone 5,R046,Nat. Area And Boardwalk Fr Iroquois St To Father Capodanno Blvd S/o Greeley Av,64,24,R046-ZN05,15,Franklin D. Roosevelt Boardwalk and Beach,False,,,,11,10306.0,638_NTD3_20240620,06/19/2024,Staten Island,R-02B,Fdr Boardwalk & Beach-Midland Beach Zone 5,1:45:00 PM,3:00:00 PM,1.0,Yes,Not needed,Not needed,True,,-74.08805865561017,40.57047026487474,\"MULTIPOLYGON (((-74.085019 40.573928, -74.085183 40.574093, -74.08533 40.57424, -74.085342 40.574251, -74.085356 40.574266, -74.085371...\"\r\n9.43359415,B,355.0,39,B-19,Prospect Park-Prospect Lake Near Duck Island,B073,\"Prospect Lake, S Lake Dr., Carriage Concourse\",44,21,B073-ZN25,78,Prospect Park,False,,,,9,11215.0,10570_2021NTD_20210629,06/29/2021,Brooklyn,B-19,Prospect Park-Prospect Lake Near Duck Island,1:00:00 PM,2:35:00 PM,2.0,,,,False,,-73.96548197108635,40.65455534882484,\"MULTIPOLYGON (((-73.967867 40.653986, -73.967853 40.653957, -73.967591 40.653425, -73.967509 40.653452, -73.967476 40.653463, -73.967357...\"\r\n"
+}

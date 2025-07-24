@@ -1,0 +1,1561 @@
+{
+  "nb_rows": 496,
+  "nb_profiled_rows": 496,
+  "nb_columns": 19,
+  "columns": [
+    {
+      "name": "GTFS Stop ID",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "num_distinct_values": 496
+    },
+    {
+      "name": "Station ID",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/identifier"
+      ],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 493,
+      "mean": 248.96774193548387,
+      "stddev": 144.70793363251187,
+      "coverage": [
+        {
+          "range": {
+            "gte": 9.0,
+            "lte": 156.0
+          }
+        },
+        {
+          "range": {
+            "gte": 172.0,
+            "lte": 323.0
+          }
+        },
+        {
+          "range": {
+            "gte": 340.0,
+            "lte": 513.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 53,
+            "bin_start": 1.0,
+            "bin_end": 53.2
+          },
+          {
+            "count": 52,
+            "bin_start": 53.2,
+            "bin_end": 105.4
+          },
+          {
+            "count": 52,
+            "bin_start": 105.4,
+            "bin_end": 157.60000000000002
+          },
+          {
+            "count": 53,
+            "bin_start": 157.60000000000002,
+            "bin_end": 209.8
+          },
+          {
+            "count": 52,
+            "bin_start": 209.8,
+            "bin_end": 262.0
+          },
+          {
+            "count": 53,
+            "bin_start": 262.0,
+            "bin_end": 314.20000000000005
+          },
+          {
+            "count": 52,
+            "bin_start": 314.20000000000005,
+            "bin_end": 366.40000000000003
+          },
+          {
+            "count": 52,
+            "bin_start": 366.40000000000003,
+            "bin_end": 418.6
+          },
+          {
+            "count": 52,
+            "bin_start": 418.6,
+            "bin_end": 470.8
+          },
+          {
+            "count": 25,
+            "bin_start": 470.8,
+            "bin_end": 523.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Complex ID",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/identifier"
+      ],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 445,
+      "mean": 311.9274193548387,
+      "stddev": 187.79732011327366,
+      "coverage": [
+        {
+          "range": {
+            "gte": 13.0,
+            "lte": 218.0
+          }
+        },
+        {
+          "range": {
+            "gte": 245.0,
+            "lte": 453.0
+          }
+        },
+        {
+          "range": {
+            "gte": 502.0,
+            "lte": 630.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 50,
+            "bin_start": 1.0,
+            "bin_end": 64.5
+          },
+          {
+            "count": 52,
+            "bin_start": 64.5,
+            "bin_end": 128.0
+          },
+          {
+            "count": 51,
+            "bin_start": 128.0,
+            "bin_end": 191.5
+          },
+          {
+            "count": 56,
+            "bin_start": 191.5,
+            "bin_end": 255.0
+          },
+          {
+            "count": 56,
+            "bin_start": 255.0,
+            "bin_end": 318.5
+          },
+          {
+            "count": 56,
+            "bin_start": 318.5,
+            "bin_end": 382.0
+          },
+          {
+            "count": 52,
+            "bin_start": 382.0,
+            "bin_end": 445.5
+          },
+          {
+            "count": 30,
+            "bin_start": 445.5,
+            "bin_end": 509.0
+          },
+          {
+            "count": 13,
+            "bin_start": 509.0,
+            "bin_end": 572.5
+          },
+          {
+            "count": 80,
+            "bin_start": 572.5,
+            "bin_end": 636.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Division",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 4,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "BMT",
+            "count": 142
+          },
+          {
+            "bin": "IND",
+            "count": 155
+          },
+          {
+            "bin": "IRT",
+            "count": 178
+          },
+          {
+            "bin": "SIR",
+            "count": 21
+          }
+        ]
+      }
+    },
+    {
+      "name": "Line",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 34,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "6th Av - Culver",
+            "count": 31
+          },
+          {
+            "bin": "8th Av - Fulton St",
+            "count": 46
+          },
+          {
+            "bin": "Broadway - 7Av",
+            "count": 38
+          },
+          {
+            "bin": "Broadway - Brighton",
+            "count": 28
+          },
+          {
+            "bin": "Jamaica",
+            "count": 28
+          }
+        ]
+      }
+    },
+    {
+      "name": "Stop Name",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "num_distinct_values": 378
+    },
+    {
+      "name": "Borough",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 5,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Bk",
+            "count": 169
+          },
+          {
+            "bin": "Bx",
+            "count": 70
+          },
+          {
+            "bin": "M",
+            "count": 153
+          },
+          {
+            "bin": "Q",
+            "count": 83
+          },
+          {
+            "bin": "SI",
+            "count": 21
+          }
+        ]
+      }
+    },
+    {
+      "name": "CBD",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Boolean",
+        "http://schema.org/Enumeration"
+      ],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 2,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "False",
+            "count": 401
+          },
+          {
+            "bin": "True",
+            "count": 95
+          }
+        ]
+      }
+    },
+    {
+      "name": "Daytime Routes",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "num_distinct_values": 62
+    },
+    {
+      "name": "Structure",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 6,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "At Grade",
+            "count": 11
+          },
+          {
+            "bin": "Elevated",
+            "count": 145
+          },
+          {
+            "bin": "Open Cut",
+            "count": 39
+          },
+          {
+            "bin": "Subway",
+            "count": 283
+          },
+          {
+            "bin": "Viaduct",
+            "count": 12
+          }
+        ]
+      }
+    },
+    {
+      "name": "GTFS Latitude",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [
+        "http://schema.org/latitude"
+      ],
+      "unclean_values_ratio": 0.0,
+      "mean": 40.723204824596756,
+      "stddev": 0.08235710743512145,
+      "coverage": [
+        {
+          "range": {
+            "gte": 40.533674,
+            "lte": 40.663515
+          }
+        },
+        {
+          "range": {
+            "gte": 40.672097,
+            "lte": 40.763972
+          }
+        },
+        {
+          "range": {
+            "gte": 40.785672,
+            "lte": 40.886037
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 9,
+            "bin_start": 40.512764,
+            "bin_end": 40.551800099999994
+          },
+          {
+            "count": 18,
+            "bin_start": 40.551800099999994,
+            "bin_end": 40.5908362
+          },
+          {
+            "count": 41,
+            "bin_start": 40.5908362,
+            "bin_end": 40.6298723
+          },
+          {
+            "count": 47,
+            "bin_start": 40.6298723,
+            "bin_end": 40.6689084
+          },
+          {
+            "count": 110,
+            "bin_start": 40.6689084,
+            "bin_end": 40.707944499999996
+          },
+          {
+            "count": 88,
+            "bin_start": 40.707944499999996,
+            "bin_end": 40.7469806
+          },
+          {
+            "count": 70,
+            "bin_start": 40.7469806,
+            "bin_end": 40.786016700000005
+          },
+          {
+            "count": 40,
+            "bin_start": 40.786016700000005,
+            "bin_end": 40.8250528
+          },
+          {
+            "count": 47,
+            "bin_start": 40.8250528,
+            "bin_end": 40.8640889
+          },
+          {
+            "count": 26,
+            "bin_start": 40.8640889,
+            "bin_end": 40.903125
+          }
+        ]
+      }
+    },
+    {
+      "name": "GTFS Longitude",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [
+        "http://schema.org/longitude"
+      ],
+      "unclean_values_ratio": 0.0,
+      "mean": -73.94594806250004,
+      "stddev": 0.06974237263723318,
+      "coverage": [
+        {
+          "range": {
+            "gte": -74.136907,
+            "lte": -73.973946
+          }
+        },
+        {
+          "range": {
+            "gte": -73.964696,
+            "lte": -73.893509
+          }
+        },
+        {
+          "range": {
+            "gte": -73.884639,
+            "lte": -73.783817
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 4,
+            "bin_start": -74.251961,
+            "bin_end": -74.2023054
+          },
+          {
+            "count": 4,
+            "bin_start": -74.2023054,
+            "bin_end": -74.15264979999999
+          },
+          {
+            "count": 6,
+            "bin_start": -74.15264979999999,
+            "bin_end": -74.1029942
+          },
+          {
+            "count": 7,
+            "bin_start": -74.1029942,
+            "bin_end": -74.05333859999999
+          },
+          {
+            "count": 34,
+            "bin_start": -74.05333859999999,
+            "bin_end": -74.003683
+          },
+          {
+            "count": 182,
+            "bin_start": -74.003683,
+            "bin_end": -73.9540274
+          },
+          {
+            "count": 129,
+            "bin_start": -73.9540274,
+            "bin_end": -73.90437179999999
+          },
+          {
+            "count": 82,
+            "bin_start": -73.90437179999999,
+            "bin_end": -73.8547162
+          },
+          {
+            "count": 38,
+            "bin_start": -73.8547162,
+            "bin_end": -73.80506059999999
+          },
+          {
+            "count": 10,
+            "bin_start": -73.80506059999999,
+            "bin_end": -73.755405
+          }
+        ]
+      }
+    },
+    {
+      "name": "North Direction Label",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 23,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Ferry",
+            "count": 20
+          },
+          {
+            "bin": "Manhattan",
+            "count": 143
+          },
+          {
+            "bin": "Northbound",
+            "count": 61
+          },
+          {
+            "bin": "Outbound",
+            "count": 48
+          },
+          {
+            "bin": "Uptown",
+            "count": 113
+          }
+        ]
+      }
+    },
+    {
+      "name": "South Direction Label",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 23,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Downtown",
+            "count": 130
+          },
+          {
+            "bin": "Manhattan",
+            "count": 142
+          },
+          {
+            "bin": "Outbound",
+            "count": 43
+          },
+          {
+            "bin": "South Shore",
+            "count": 18
+          },
+          {
+            "bin": "Southbound",
+            "count": 64
+          }
+        ]
+      }
+    },
+    {
+      "name": "ADA",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/Boolean"
+      ],
+      "unclean_values_ratio": 0.018145161290322582,
+      "num_distinct_values": 3,
+      "mean": 0.34274193548387094,
+      "stddev": 0.5114295882379953,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1.0,
+            "lte": 1.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 335,
+            "bin_start": 0.0,
+            "bin_end": 0.2
+          },
+          {
+            "count": 0,
+            "bin_start": 0.2,
+            "bin_end": 0.4
+          },
+          {
+            "count": 0,
+            "bin_start": 0.4,
+            "bin_end": 0.6000000000000001
+          },
+          {
+            "count": 0,
+            "bin_start": 0.6000000000000001,
+            "bin_end": 0.8
+          },
+          {
+            "count": 0,
+            "bin_start": 0.8,
+            "bin_end": 1.0
+          },
+          {
+            "count": 152,
+            "bin_start": 1.0,
+            "bin_end": 1.2000000000000002
+          },
+          {
+            "count": 0,
+            "bin_start": 1.2000000000000002,
+            "bin_end": 1.4000000000000001
+          },
+          {
+            "count": 0,
+            "bin_start": 1.4000000000000001,
+            "bin_end": 1.6
+          },
+          {
+            "count": 0,
+            "bin_start": 1.6,
+            "bin_end": 1.8
+          },
+          {
+            "count": 9,
+            "bin_start": 1.8,
+            "bin_end": 2.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "ADA Northbound",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/Boolean"
+      ],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 2,
+      "mean": 0.3185483870967742,
+      "stddev": 0.4659134170367033,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1.0,
+            "lte": 1.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 338,
+            "bin_start": 0.0,
+            "bin_end": 0.1
+          },
+          {
+            "count": 0,
+            "bin_start": 0.1,
+            "bin_end": 0.2
+          },
+          {
+            "count": 0,
+            "bin_start": 0.2,
+            "bin_end": 0.30000000000000004
+          },
+          {
+            "count": 0,
+            "bin_start": 0.30000000000000004,
+            "bin_end": 0.4
+          },
+          {
+            "count": 0,
+            "bin_start": 0.4,
+            "bin_end": 0.5
+          },
+          {
+            "count": 0,
+            "bin_start": 0.5,
+            "bin_end": 0.6000000000000001
+          },
+          {
+            "count": 0,
+            "bin_start": 0.6000000000000001,
+            "bin_end": 0.7000000000000001
+          },
+          {
+            "count": 0,
+            "bin_start": 0.7000000000000001,
+            "bin_end": 0.8
+          },
+          {
+            "count": 0,
+            "bin_start": 0.8,
+            "bin_end": 0.9
+          },
+          {
+            "count": 158,
+            "bin_start": 0.9,
+            "bin_end": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "ADA Southbound",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/Boolean"
+      ],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 2,
+      "mean": 0.3125,
+      "stddev": 0.46351240544347894,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1.0,
+            "lte": 1.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 341,
+            "bin_start": 0.0,
+            "bin_end": 0.1
+          },
+          {
+            "count": 0,
+            "bin_start": 0.1,
+            "bin_end": 0.2
+          },
+          {
+            "count": 0,
+            "bin_start": 0.2,
+            "bin_end": 0.30000000000000004
+          },
+          {
+            "count": 0,
+            "bin_start": 0.30000000000000004,
+            "bin_end": 0.4
+          },
+          {
+            "count": 0,
+            "bin_start": 0.4,
+            "bin_end": 0.5
+          },
+          {
+            "count": 0,
+            "bin_start": 0.5,
+            "bin_end": 0.6000000000000001
+          },
+          {
+            "count": 0,
+            "bin_start": 0.6000000000000001,
+            "bin_end": 0.7000000000000001
+          },
+          {
+            "count": 0,
+            "bin_start": 0.7000000000000001,
+            "bin_end": 0.8
+          },
+          {
+            "count": 0,
+            "bin_start": 0.8,
+            "bin_end": 0.9
+          },
+          {
+            "count": 155,
+            "bin_start": 0.9,
+            "bin_end": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "ADA Notes",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "missing_values_ratio": 0.9818548387096774,
+      "num_distinct_values": 5
+    },
+    {
+      "name": "Georeference",
+      "structural_type": "http://schema.org/GeoCoordinates",
+      "semantic_types": [],
+      "point_format": "long,lat",
+      "unclean_values_ratio": 0.0
+    }
+  ],
+  "nb_spatial_columns": 3,
+  "nb_categorical_columns": 7,
+  "nb_numerical_columns": 5,
+  "types": [
+    "categorical",
+    "numerical",
+    "spatial"
+  ],
+  "spatial_coverage": [
+    {
+      "type": "latlong",
+      "column_names": [
+        "GTFS Latitude",
+        "GTFS Longitude"
+      ],
+      "column_indexes": [
+        10,
+        11
+      ],
+      "geohashes4": [
+        {
+          "hash": "1211302313310",
+          "number": 33
+        },
+        {
+          "hash": "1211302313311",
+          "number": 17
+        },
+        {
+          "hash": "1211302313312",
+          "number": 18
+        },
+        {
+          "hash": "1211302313313",
+          "number": 7
+        },
+        {
+          "hash": "1211302313320",
+          "number": 7
+        },
+        {
+          "hash": "1211302313323",
+          "number": 5
+        },
+        {
+          "hash": "1211302313322",
+          "number": 5
+        },
+        {
+          "hash": "1211302313321",
+          "number": 1
+        },
+        {
+          "hash": "1211302313330",
+          "number": 11
+        },
+        {
+          "hash": "1211302313331",
+          "number": 1
+        },
+        {
+          "hash": "1211302313332",
+          "number": 4
+        },
+        {
+          "hash": "1211302313333",
+          "number": 1
+        },
+        {
+          "hash": "1211302313302",
+          "number": 18
+        },
+        {
+          "hash": "1211302313300",
+          "number": 6
+        },
+        {
+          "hash": "1211302313301",
+          "number": 24
+        },
+        {
+          "hash": "1211302313303",
+          "number": 3
+        },
+        {
+          "hash": "1211302313213",
+          "number": 11
+        },
+        {
+          "hash": "1211302313211",
+          "number": 24
+        },
+        {
+          "hash": "1211302313212",
+          "number": 11
+        },
+        {
+          "hash": "1211302313210",
+          "number": 11
+        },
+        {
+          "hash": "1211302313230",
+          "number": 9
+        },
+        {
+          "hash": "1211302313231",
+          "number": 18
+        },
+        {
+          "hash": "1211302313233",
+          "number": 9
+        },
+        {
+          "hash": "1211302313232",
+          "number": 2
+        },
+        {
+          "hash": "1211302313200",
+          "number": 13
+        },
+        {
+          "hash": "1211302313201",
+          "number": 11
+        },
+        {
+          "hash": "1211302313203",
+          "number": 3
+        },
+        {
+          "hash": "1211302313202",
+          "number": 2
+        },
+        {
+          "hash": "1211302313221",
+          "number": 1
+        },
+        {
+          "hash": "1211302313021",
+          "number": 3
+        },
+        {
+          "hash": "1211302313023",
+          "number": 7
+        },
+        {
+          "hash": "1211302313022",
+          "number": 2
+        },
+        {
+          "hash": "1211302313020",
+          "number": 1
+        },
+        {
+          "hash": "1211302313122",
+          "number": 19
+        },
+        {
+          "hash": "1211302313123",
+          "number": 5
+        },
+        {
+          "hash": "1211302312101",
+          "number": 4
+        },
+        {
+          "hash": "1211302312113",
+          "number": 2
+        },
+        {
+          "hash": "1211302312112",
+          "number": 3
+        },
+        {
+          "hash": "1211302312131",
+          "number": 2
+        },
+        {
+          "hash": "1211302312310",
+          "number": 5
+        },
+        {
+          "hash": "1211302312311",
+          "number": 10
+        },
+        {
+          "hash": "1211302312313",
+          "number": 3
+        },
+        {
+          "hash": "1211302312332",
+          "number": 1
+        },
+        {
+          "hash": "1211302310322",
+          "number": 3
+        },
+        {
+          "hash": "1211302310320",
+          "number": 1
+        },
+        {
+          "hash": "1211302310231",
+          "number": 2
+        },
+        {
+          "hash": "1211302330110",
+          "number": 1
+        },
+        {
+          "hash": "1211302330113",
+          "number": 4
+        },
+        {
+          "hash": "1211302330111",
+          "number": 4
+        },
+        {
+          "hash": "1211302331100",
+          "number": 7
+        },
+        {
+          "hash": "1211302331102",
+          "number": 1
+        },
+        {
+          "hash": "1211302331000",
+          "number": 1
+        },
+        {
+          "hash": "1211302331011",
+          "number": 1
+        },
+        {
+          "hash": "1211303202221",
+          "number": 9
+        },
+        {
+          "hash": "1211303202232",
+          "number": 7
+        },
+        {
+          "hash": "1211303202230",
+          "number": 10
+        },
+        {
+          "hash": "1211303202233",
+          "number": 5
+        },
+        {
+          "hash": "1211303202231",
+          "number": 9
+        },
+        {
+          "hash": "1211303202202",
+          "number": 8
+        },
+        {
+          "hash": "1211303202203",
+          "number": 18
+        },
+        {
+          "hash": "1211303202200",
+          "number": 8
+        },
+        {
+          "hash": "1211303202201",
+          "number": 2
+        },
+        {
+          "hash": "1211303202212",
+          "number": 12
+        },
+        {
+          "hash": "1211303202213",
+          "number": 9
+        },
+        {
+          "hash": "1211303202322",
+          "number": 7
+        },
+        {
+          "hash": "1211303202320",
+          "number": 10
+        },
+        {
+          "hash": "1211303202323",
+          "number": 3
+        },
+        {
+          "hash": "1211303220011",
+          "number": 1
+        }
+      ],
+      "ranges": [
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -74.11721,
+                40.751431
+              ],
+              [
+                -73.948959,
+                40.57348
+              ]
+            ]
+          }
+        },
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -73.981329,
+                40.883895
+              ],
+              [
+                -73.85062,
+                40.747023
+              ]
+            ]
+          }
+        },
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -73.92261,
+                40.748408
+              ],
+              [
+                -73.788522,
+                40.592374
+              ]
+            ]
+          }
+        }
+      ],
+      "number": 496
+    },
+    {
+      "type": "point",
+      "column_names": [
+        "Georeference"
+      ],
+      "column_indexes": [
+        18
+      ],
+      "geohashes4": [
+        {
+          "hash": "1211302313310",
+          "number": 33
+        },
+        {
+          "hash": "1211302313311",
+          "number": 17
+        },
+        {
+          "hash": "1211302313312",
+          "number": 18
+        },
+        {
+          "hash": "1211302313313",
+          "number": 7
+        },
+        {
+          "hash": "1211302313320",
+          "number": 7
+        },
+        {
+          "hash": "1211302313323",
+          "number": 5
+        },
+        {
+          "hash": "1211302313322",
+          "number": 5
+        },
+        {
+          "hash": "1211302313321",
+          "number": 1
+        },
+        {
+          "hash": "1211302313330",
+          "number": 11
+        },
+        {
+          "hash": "1211302313331",
+          "number": 1
+        },
+        {
+          "hash": "1211302313332",
+          "number": 4
+        },
+        {
+          "hash": "1211302313333",
+          "number": 1
+        },
+        {
+          "hash": "1211302313302",
+          "number": 18
+        },
+        {
+          "hash": "1211302313300",
+          "number": 6
+        },
+        {
+          "hash": "1211302313301",
+          "number": 24
+        },
+        {
+          "hash": "1211302313303",
+          "number": 3
+        },
+        {
+          "hash": "1211302313213",
+          "number": 11
+        },
+        {
+          "hash": "1211302313211",
+          "number": 24
+        },
+        {
+          "hash": "1211302313212",
+          "number": 11
+        },
+        {
+          "hash": "1211302313210",
+          "number": 11
+        },
+        {
+          "hash": "1211302313230",
+          "number": 9
+        },
+        {
+          "hash": "1211302313231",
+          "number": 18
+        },
+        {
+          "hash": "1211302313233",
+          "number": 9
+        },
+        {
+          "hash": "1211302313232",
+          "number": 2
+        },
+        {
+          "hash": "1211302313200",
+          "number": 13
+        },
+        {
+          "hash": "1211302313201",
+          "number": 11
+        },
+        {
+          "hash": "1211302313203",
+          "number": 3
+        },
+        {
+          "hash": "1211302313202",
+          "number": 2
+        },
+        {
+          "hash": "1211302313221",
+          "number": 1
+        },
+        {
+          "hash": "1211302313021",
+          "number": 3
+        },
+        {
+          "hash": "1211302313023",
+          "number": 7
+        },
+        {
+          "hash": "1211302313022",
+          "number": 2
+        },
+        {
+          "hash": "1211302313020",
+          "number": 1
+        },
+        {
+          "hash": "1211302313122",
+          "number": 19
+        },
+        {
+          "hash": "1211302313123",
+          "number": 5
+        },
+        {
+          "hash": "1211302312101",
+          "number": 4
+        },
+        {
+          "hash": "1211302312113",
+          "number": 2
+        },
+        {
+          "hash": "1211302312112",
+          "number": 3
+        },
+        {
+          "hash": "1211302312131",
+          "number": 2
+        },
+        {
+          "hash": "1211302312310",
+          "number": 5
+        },
+        {
+          "hash": "1211302312311",
+          "number": 10
+        },
+        {
+          "hash": "1211302312313",
+          "number": 3
+        },
+        {
+          "hash": "1211302312332",
+          "number": 1
+        },
+        {
+          "hash": "1211302310322",
+          "number": 3
+        },
+        {
+          "hash": "1211302310320",
+          "number": 1
+        },
+        {
+          "hash": "1211302310231",
+          "number": 2
+        },
+        {
+          "hash": "1211302330110",
+          "number": 1
+        },
+        {
+          "hash": "1211302330113",
+          "number": 4
+        },
+        {
+          "hash": "1211302330111",
+          "number": 4
+        },
+        {
+          "hash": "1211302331100",
+          "number": 7
+        },
+        {
+          "hash": "1211302331102",
+          "number": 1
+        },
+        {
+          "hash": "1211302331000",
+          "number": 1
+        },
+        {
+          "hash": "1211302331011",
+          "number": 1
+        },
+        {
+          "hash": "1211303202221",
+          "number": 9
+        },
+        {
+          "hash": "1211303202232",
+          "number": 7
+        },
+        {
+          "hash": "1211303202230",
+          "number": 10
+        },
+        {
+          "hash": "1211303202233",
+          "number": 5
+        },
+        {
+          "hash": "1211303202231",
+          "number": 9
+        },
+        {
+          "hash": "1211303202202",
+          "number": 8
+        },
+        {
+          "hash": "1211303202203",
+          "number": 18
+        },
+        {
+          "hash": "1211303202200",
+          "number": 8
+        },
+        {
+          "hash": "1211303202201",
+          "number": 2
+        },
+        {
+          "hash": "1211303202212",
+          "number": 12
+        },
+        {
+          "hash": "1211303202213",
+          "number": 9
+        },
+        {
+          "hash": "1211303202322",
+          "number": 7
+        },
+        {
+          "hash": "1211303202320",
+          "number": 10
+        },
+        {
+          "hash": "1211303202323",
+          "number": 3
+        },
+        {
+          "hash": "1211303220011",
+          "number": 1
+        }
+      ],
+      "ranges": [
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -74.11721,
+                40.751431
+              ],
+              [
+                -73.948959,
+                40.57348
+              ]
+            ]
+          }
+        },
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -73.981329,
+                40.883895
+              ],
+              [
+                -73.85062,
+                40.747023
+              ]
+            ]
+          }
+        },
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -73.92261,
+                40.748408
+              ],
+              [
+                -73.788522,
+                40.592374
+              ]
+            ]
+          }
+        }
+      ],
+      "number": 496
+    }
+  ],
+  "attribute_keywords": [
+    "GTFS Stop ID",
+    "GTFS",
+    "Stop",
+    "ID",
+    "Station ID",
+    "Station",
+    "ID",
+    "Complex ID",
+    "Complex",
+    "ID",
+    "Division",
+    "Line",
+    "Stop Name",
+    "Stop",
+    "Name",
+    "Borough",
+    "CBD",
+    "Daytime Routes",
+    "Daytime",
+    "Routes",
+    "Structure",
+    "GTFS Latitude",
+    "GTFS",
+    "Latitude",
+    "GTFS Longitude",
+    "GTFS",
+    "Longitude",
+    "North Direction Label",
+    "North",
+    "Direction",
+    "Label",
+    "South Direction Label",
+    "South",
+    "Direction",
+    "Label",
+    "ADA",
+    "ADA Northbound",
+    "ADA",
+    "Northbound",
+    "ADA Southbound",
+    "ADA",
+    "Southbound",
+    "ADA Notes",
+    "ADA",
+    "Notes",
+    "Georeference"
+  ],
+  "sample": "GTFS Stop ID,Station ID,Complex ID,Division,Line,Stop Name,Borough,CBD,Daytime Routes,Structure,GTFS Latitude,GTFS Longitude,North Direction Label,South Direction Label,ADA,ADA Northbound,ADA Southbound,ADA Notes,Georeference\r\n233,336,336,IRT,Eastern Pky,Hoyt St,Bk,False,2 3,Subway,40.690545,-73.985065,Manhattan,Outbound,2,0,1,Outbound only,POINT (-73.985065 40.690545)\r\nH14,202,202,IND,Rockaway,Beach 105 St,Q,False,A S,Viaduct,40.583209,-73.827559,Inbound,Rockaway Park,0,0,0,,POINT (-73.827559 40.583209)\r\nS25,507,507,SIR,Staten Island,Dongan Hills,SI,False,SIR,Embankment,40.588849,-74.09609,Ferry,South Shore,1,1,1,,POINT (-74.09609 40.588849)\r\n115,305,305,IRT,Broadway - 7Av,137 St-City College,M,False,1,Subway,40.822008,-73.953676,Uptown,Downtown,0,0,0,,POINT (-73.953676 40.822008)\r\n504,445,445,IRT,Dyre Av,Pelham Pkwy,Bx,False,5,Open Cut,40.858985,-73.855359,Eastchester,Manhattan,0,0,0,,POINT (-73.855359 40.858985)\r\n118,308,308,IRT,Broadway - 7Av,Cathedral Pkwy (110 St),M,False,1,Subway,40.803967,-73.966847,Uptown,Downtown,0,0,0,,POINT (-73.966847 40.803967)\r\n607,365,365,IRT,Pelham,Castle Hill Av,Bx,False,6,Elevated,40.834255,-73.851222,Pelham Bay,Manhattan,0,0,0,,POINT (-73.851222 40.834255)\r\nR42,36,36,BMT,4th Av,Bay Ridge Av,Bk,False,R,Subway,40.634967,-74.023377,Manhattan,Bay Ridge,0,0,0,,POINT (-74.023377 40.634967)\r\nL14,125,125,BMT,Canarsie,Morgan Av,Bk,False,L,Subway,40.706152,-73.933147,Manhattan,Outbound,0,0,0,,POINT (-73.933147 40.706152)\r\n131,321,321,IRT,Broadway - 7Av,18 St,M,True,1,Subway,40.74104,-73.997871,Uptown,Downtown,0,0,0,,POINT (-73.997871 40.74104)\r\nF29,244,244,IND,6th Av - Culver,Ditmas Av,Bk,False,F,Elevated,40.636119,-73.978172,Manhattan,Southbound,0,0,0,,POINT (-73.978172 40.636119)\r\n415,390,603,IRT,Jerome Av,149 St-Grand Concourse,Bx,False,4,Subway,40.818375,-73.927351,Northbound,Manhattan,0,0,0,,POINT (-73.927351 40.818375)\r\nB12,59,59,BMT,West End,9 Av,Bk,False,D,Open Cut,40.646292,-73.994324,Manhattan,Southbound,0,0,0,,POINT (-73.994324 40.646292)\r\nN04,73,615,BMT,Sea Beach,New Utrecht Av,Bk,False,N,Open Cut,40.624842,-73.996353,Manhattan,Coney Island,1,1,1,,POINT (-73.996353 40.624842)\r\n501,442,442,IRT,Dyre Av,Eastchester-Dyre Av,Bx,False,5,At Grade,40.8883,-73.830834,Last Stop,Manhattan,0,0,0,,POINT (-73.830834 40.8883)\r\nL17,128,630,BMT,Canarsie,Myrtle-Wyckoff Avs,Bk,False,L,Subway,40.699814,-73.911586,Manhattan,Outbound,1,1,1,,POINT (-73.911586 40.699814)\r\nA17,155,155,IND,8th Av - Fulton St,Cathedral Pkwy (110 St),M,False,C B,Subway,40.800603,-73.958161,Uptown,Downtown,0,0,0,,POINT (-73.958161 40.800603)\r\nA09,148,605,IND,8th Av - Fulton St,168 St,M,False,A C,Subway,40.840719,-73.939561,Uptown,Downtown,1,1,1,,POINT (-73.939561 40.840719)\r\n721,464,464,IRT,Flushing,Vernon Blvd-Jackson Av,Q,False,7,Subway,40.742626,-73.953581,Outbound,Manhattan,0,0,0,,POINT (-73.953581 40.742626)\r\nJ21,88,88,BMT,Jamaica,Norwood Av,Bk,False,J Z,Elevated,40.68141,-73.880039,Outbound,Manhattan,0,0,0,,POINT (-73.880039 40.68141)\r\n"
+}
