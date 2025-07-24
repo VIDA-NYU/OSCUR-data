@@ -115,9 +115,12 @@ python code/processors/fixed_obstructions.py \
   --output ../processors/processed_data/fixed_obstructions/sidewalks_with_obstructions.csv
 ```
 
-#### Tree Cover and Landscaping Dataset
+#### Bicycle Facilities
+No postprocessing script is needed, as the original datasets are being preserved without any merging.
 
+#### Tree Cover and Landscaping Dataset
 The script merges Natural Turf Maintenance data with NYC Park Zones to identify landscaped park areas.
+
 ```bash
 python code/processors/tree_cover_landscaping.py \
   --turf_maintenance ../downloaders/data/tree_cover_landscaping/natural_turf_maintenance.csv \
