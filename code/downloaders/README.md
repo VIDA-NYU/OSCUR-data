@@ -40,6 +40,12 @@ code/downloaders/
    ├── curbs_downloader.py               # Download curbs dataset (CSV)
    ├── ped_ramp_locations_downloader.py  # Download pedestrian ramp dataset (CSV)
    ├── transit_stop_accessibilty.py      # Orchestrates all downloads
+├── environment/
+   ├── environment_downloader.py         # Orchestrates all downloads
+   ├── heat_vulnerability_downloader.py  # Download Heat Vulnerability dataset (CSV)
+   ├── open_space_downloader.py          # Download Open Space dataset (CSV)
+   ├── parks_downloader.py               # Download Parks dataset (CSV)
+   ├── zipcode_geom_downloader.py        # Download Zipcode Geomertry dataset (CSV)
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -136,6 +142,22 @@ python -m code.downloaders.transit_stop_accessibility.transit_stop_accessibility
   --aps /custom/path/acc_ped_signal_loc.csv \
   --ramps /custom/path/ped_ramp_loc.csv \
   --curbs /custom/path/curbs.csv
+```
+
+**Signals, Markings, and Signs Dataset:**
+The `environments_downloader.py` This script processes datasets for heat vulnerability, parks, open spaces, and ZIP code geometries:
+
+```bash
+python environments_downloader.py   # basic usage
+```
+
+Custom output paths:
+```bash
+python environment_downloader.py \
+  --heat_vulnerability /custom/path/heat_vulnerability.csv \
+  --zipcode_geom /custom/path/modzcta.csv \
+  --parks /custom/path/parks.csv \
+  --open_space /custom/path/open_space.csv
 ```
 
 ## Base Class Benefits
