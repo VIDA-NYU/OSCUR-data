@@ -14,6 +14,7 @@ code/processors/
 ├── sidewalk_surface_condition.py      # Post-processing Sidewalk Surface Condition dataset (CSV)
 ├── designed_goods_movement_routes.py  # Post-processing Goods Movement Routes (CSV)
 ├── merge_hvi_zipcode_geom.py          # Post-processing Environment dataset (CSV)
+├── fixed_obstructions.py              # Post-processing Fixed Obstructions dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
 ```
@@ -100,6 +101,17 @@ python -m code.processors.merge_hvi_zipcode_geom \
   --hvi   data/environment/heat_vulnerability.csv \
   --zipcode data/environment/zipcode_geom.csv \
   --out   processed_data/environment/hvi_vulnerability_with_geom.csv
+```
+
+#### Fixed Obstructions Dataset
+This script processes the raw datasets for signposts, utility poles and sidewalks, merging them into a unified dataset.
+
+```bash
+python code/processors/fixed_obstructions.py \
+  --sidewalks ../downloaders/data/fixed_obstructions/sidewalk_planimetric.csv \
+  --telecom_poles ../downloaders/data/fixed_obstructions/telecom_franchise_poles.csv \
+  --street_signs ../downloaders/data/fixed_obstructions/street_sign_work_orders.csv \
+  --output ../processors/processed_data/fixed_obstructions/sidewalks_with_obstructions.csv
 ```
 
 ### Other Datasets
