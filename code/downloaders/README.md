@@ -64,6 +64,10 @@ code/downloaders/
     ├── sidewalks_downloader.py         # Download NYC Planimetric Sidewalk dataset (GeoJSON)
     ├── signposts_downloader.py         # Download NYC DOT Street Sign Work Orders dataset (CSV)
     ├── utility_poles_downloader.py     # Download DoITT Telecom Franchise Poles dataset (CSV)
+├── transit_stops_routes/
+    ├── transit_stops_routes.py            # Orchestrates all transit stop downloads
+    ├── subway_stations_downloader.py      # Download MTA Subway Stations dataset (CSV)
+    ├── bus_stop_permits_downloader.py     # Download NYC Intercity Bus Stop Permits dataset (CSV)
 ├── bicycle_facilites/
     ├── bike_routes_downloader.py     # Download NYC DOT bicycle facilities dataset (CSV)
 ├── README.md                         # This file
@@ -233,6 +237,21 @@ python fixed_obstructions.py \
   --sidewalks /custom/path/sidewalk_planimetric.csv \
   --street_signs /custom/path/street_sign_work_orders.csv \
   --telecom_poles /custom/path/utility_poles.csv
+```
+
+
+**Transit Stops and Routes:**
+The `transit_stops_routes.py ` script downloads subway station data and intercity bus stop permits:
+
+```bash
+python transit_stops_routes.py    # basic usage
+```
+
+Custom output paths:
+```bash
+python transit_stops_routes.py \
+  --subway_stations /custom/path/subway_stations.csv \
+  --intercity_bus_stops /custom/path/intercity_bus_stops.csv
 ```
 
 ## Base Class Benefits
