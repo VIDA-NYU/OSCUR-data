@@ -13,6 +13,7 @@ code/processors/
 ├── transit_stop_accessibilitys.py     # Post-processing Transit Stop Acc dataset (CSV)
 ├── sidewalk_surface_condition.py      # Post-processing Sidewalk Surface Condition dataset (CSV)
 ├── designed_goods_movement_routes.py  # Post-processing Goods Movement Routes (CSV)
+├── merge_hvi_zipcode_geom.py          # Post-processing Environment dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
 ```
@@ -89,6 +90,16 @@ This script processes a CSV of NYC truck routes by extracting longitude and lati
  python designed_goods_movement_routes.py \
   --input ../downloaders/data/designed_goods_movement_routes/truck_routes.csv \
   --output ../processors/processed_data/designed_goods_movement_routes/truck_routes_with_location.csv
+```
+
+#### Environment Dataset
+This script joins the Heat Vulnerability Index with Zipcode Geometries. The output is a flat CSV file with geometry location details.
+
+```bash
+python -m code.processors.merge_hvi_zipcode_geom \
+  --hvi   data/environment/heat_vulnerability.csv \
+  --zipcode data/environment/zipcode_geom.csv \
+  --out   processed_data/environment/hvi_vulnerability_with_geom.csv
 ```
 
 ### Other Datasets

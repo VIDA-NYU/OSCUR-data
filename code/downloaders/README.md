@@ -53,6 +53,12 @@ code/downloaders/
     ├── nyc_facilities_downloader.py       # Download NYC Facilities dataset (CSV)
 ├── designed_goods_movement_routes/      # Folder for freight movement routes
     ├── truck_routes.py                  # Download Truck Routes (CSV)
+├── environment/
+    ├── environment_downloader.py         # Orchestrates all downloads
+    ├── heat_vulnerability_downloader.py  # Download Heat Vulnerability dataset (CSV)
+    ├── open_space_downloader.py          # Download Open Space dataset (CSV)
+    ├── parks_downloader.py               # Download Parks dataset (CSV)
+    ├── zipcode_geom_downloader.py        # Download Zipcode Geomertry dataset (CSV)
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -188,6 +194,22 @@ Custom output paths:
 python key_destinations_downloader.py \
   --facilities /custom/path/nyc_facilities.csv \
   --licenses /custom/path/issued_licenses.csv
+```
+
+**Environments Dataset:**
+The `environments_downloader.py` script downloads datasets for heat vulnerability, parks, open spaces, and ZIP code geometries:
+
+```bash
+python environments_downloader.py   # basic usage
+```
+
+Custom output paths:
+```bash
+python environment_downloader.py \
+  --heat_vulnerability /custom/path/heat_vulnerability.csv \
+  --zipcode_geom /custom/path/modzcta.csv \
+  --parks /custom/path/parks.csv \
+  --open_space /custom/path/open_space.csv
 ```
 
 ## Base Class Benefits
