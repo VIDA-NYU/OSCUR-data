@@ -1,0 +1,1020 @@
+{
+  "nb_rows": 2548,
+  "nb_profiled_rows": 2548,
+  "nb_columns": 21,
+  "columns": [
+    {
+      "name": "PermitNumber",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "num_distinct_values": 2548
+    },
+    {
+      "name": "ApplicationTrackingID",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "num_distinct_values": 2548
+    },
+    {
+      "name": "SequenceNumber",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/Boolean"
+      ],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 1,
+      "mean": 1.0,
+      "stddev": 0.0,
+      "coverage": [
+        {
+          "range": {
+            "gte": 1.0,
+            "lte": 1.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 0,
+            "bin_start": 0.5,
+            "bin_end": 0.6
+          },
+          {
+            "count": 0,
+            "bin_start": 0.6,
+            "bin_end": 0.7
+          },
+          {
+            "count": 0,
+            "bin_start": 0.7,
+            "bin_end": 0.8
+          },
+          {
+            "count": 0,
+            "bin_start": 0.8,
+            "bin_end": 0.9
+          },
+          {
+            "count": 0,
+            "bin_start": 0.9,
+            "bin_end": 1.0
+          },
+          {
+            "count": 2548,
+            "bin_start": 1.0,
+            "bin_end": 1.1
+          },
+          {
+            "count": 0,
+            "bin_start": 1.1,
+            "bin_end": 1.2000000000000002
+          },
+          {
+            "count": 0,
+            "bin_start": 1.2000000000000002,
+            "bin_end": 1.3
+          },
+          {
+            "count": 0,
+            "bin_start": 1.3,
+            "bin_end": 1.4
+          },
+          {
+            "count": 0,
+            "bin_start": 1.4,
+            "bin_end": 1.5
+          }
+        ]
+      }
+    },
+    {
+      "name": "ApplicationTypeShortDesc",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 2,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "New",
+            "count": 1158
+          },
+          {
+            "bin": "Renew",
+            "count": 1390
+          }
+        ]
+      }
+    },
+    {
+      "name": "PermitStatusID",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/identifier"
+      ],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 3,
+      "mean": 58.39874411302983,
+      "stddev": 175.1899920395653,
+      "coverage": [
+        {
+          "range": {
+            "gte": 6.0,
+            "lte": 6.0
+          }
+        },
+        {
+          "range": {
+            "gte": 30.0,
+            "lte": 30.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 2444,
+            "bin_start": 6.0,
+            "bin_end": 96.0
+          },
+          {
+            "count": 0,
+            "bin_start": 96.0,
+            "bin_end": 186.0
+          },
+          {
+            "count": 0,
+            "bin_start": 186.0,
+            "bin_end": 276.0
+          },
+          {
+            "count": 0,
+            "bin_start": 276.0,
+            "bin_end": 366.0
+          },
+          {
+            "count": 0,
+            "bin_start": 366.0,
+            "bin_end": 456.0
+          },
+          {
+            "count": 0,
+            "bin_start": 456.0,
+            "bin_end": 546.0
+          },
+          {
+            "count": 0,
+            "bin_start": 546.0,
+            "bin_end": 636.0
+          },
+          {
+            "count": 0,
+            "bin_start": 636.0,
+            "bin_end": 726.0
+          },
+          {
+            "count": 0,
+            "bin_start": 726.0,
+            "bin_end": 816.0
+          },
+          {
+            "count": 104,
+            "bin_start": 816.0,
+            "bin_end": 906.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "PermitStatusShortDesc",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 3,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "EXPIRED",
+            "count": 1663
+          },
+          {
+            "bin": "ISSUED & PRINTED",
+            "count": 781
+          },
+          {
+            "bin": "VOIDED AFTER ISSUE",
+            "count": 104
+          }
+        ]
+      }
+    },
+    {
+      "name": "PermitSeriesID",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 1,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "IB",
+            "count": 2548
+          }
+        ]
+      }
+    },
+    {
+      "name": "PermitSeriesShortDesc",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 2,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Bus Stop",
+            "count": 233
+          },
+          {
+            "bin": "Bus Stop Permit",
+            "count": 2315
+          }
+        ]
+      }
+    },
+    {
+      "name": "PermitTypeID",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 1,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "IB01",
+            "count": 2548
+          }
+        ]
+      }
+    },
+    {
+      "name": "PermitTypeDesc",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "intercity",
+            "count": 2548
+          },
+          {
+            "bin": "bus",
+            "count": 2548
+          },
+          {
+            "bin": "stop",
+            "count": 2548
+          },
+          {
+            "bin": "permit",
+            "count": 2548
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpecificStipulations",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "of",
+            "count": 11375
+          },
+          {
+            "bin": "the",
+            "count": 9529
+          },
+          {
+            "bin": "rules",
+            "count": 4394
+          },
+          {
+            "bin": "a",
+            "count": 2587
+          },
+          {
+            "bin": "only",
+            "count": 2548
+          }
+        ]
+      }
+    },
+    {
+      "name": "PermitIssueDate",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/DateTime"
+      ],
+      "num_distinct_values": 492,
+      "plot": {
+        "type": "histogram_temporal",
+        "data": [
+          {
+            "count": 120,
+            "date_start": "2013-09-30T00:00:00",
+            "date_end": "2014-12-03T02:22:56"
+          },
+          {
+            "count": 53,
+            "date_start": "2014-12-03T02:22:56",
+            "date_end": "2016-02-05T04:48:00"
+          },
+          {
+            "count": 71,
+            "date_start": "2016-02-05T04:48:00",
+            "date_end": "2017-04-09T07:13:04"
+          },
+          {
+            "count": 124,
+            "date_start": "2017-04-09T07:13:04",
+            "date_end": "2018-06-12T09:36:00"
+          },
+          {
+            "count": 110,
+            "date_start": "2018-06-12T09:36:00",
+            "date_end": "2019-08-15T11:58:56"
+          },
+          {
+            "count": 234,
+            "date_start": "2019-08-15T11:58:56",
+            "date_end": "2020-10-17T14:24:00"
+          },
+          {
+            "count": 255,
+            "date_start": "2020-10-17T14:24:00",
+            "date_end": "2021-12-20T16:49:04"
+          },
+          {
+            "count": 723,
+            "date_start": "2021-12-20T16:49:04",
+            "date_end": "2023-02-22T19:12:00"
+          },
+          {
+            "count": 389,
+            "date_start": "2023-02-22T19:12:00",
+            "date_end": "2024-04-26T21:34:56"
+          },
+          {
+            "count": 469,
+            "date_start": "2024-04-26T21:34:56",
+            "date_end": "2025-06-30T00:00:00"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IssuedWorkStartDate",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/DateTime"
+      ],
+      "num_distinct_values": 492,
+      "plot": {
+        "type": "histogram_temporal",
+        "data": [
+          {
+            "count": 120,
+            "date_start": "2013-09-30T00:00:00",
+            "date_end": "2014-12-03T02:22:56"
+          },
+          {
+            "count": 53,
+            "date_start": "2014-12-03T02:22:56",
+            "date_end": "2016-02-05T04:48:00"
+          },
+          {
+            "count": 71,
+            "date_start": "2016-02-05T04:48:00",
+            "date_end": "2017-04-09T07:13:04"
+          },
+          {
+            "count": 124,
+            "date_start": "2017-04-09T07:13:04",
+            "date_end": "2018-06-12T09:36:00"
+          },
+          {
+            "count": 110,
+            "date_start": "2018-06-12T09:36:00",
+            "date_end": "2019-08-15T11:58:56"
+          },
+          {
+            "count": 234,
+            "date_start": "2019-08-15T11:58:56",
+            "date_end": "2020-10-17T14:24:00"
+          },
+          {
+            "count": 255,
+            "date_start": "2020-10-17T14:24:00",
+            "date_end": "2021-12-20T16:49:04"
+          },
+          {
+            "count": 723,
+            "date_start": "2021-12-20T16:49:04",
+            "date_end": "2023-02-22T19:12:00"
+          },
+          {
+            "count": 389,
+            "date_start": "2023-02-22T19:12:00",
+            "date_end": "2024-04-26T21:34:56"
+          },
+          {
+            "count": 469,
+            "date_start": "2024-04-26T21:34:56",
+            "date_end": "2025-06-30T00:00:00"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IssuedWorkEndDate",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/DateTime"
+      ],
+      "num_distinct_values": 525,
+      "plot": {
+        "type": "histogram_temporal",
+        "data": [
+          {
+            "count": 39,
+            "date_start": "2014-10-03T00:00:00",
+            "date_end": "2016-02-16T09:36:00"
+          },
+          {
+            "count": 96,
+            "date_start": "2016-02-16T09:36:00",
+            "date_end": "2017-07-01T19:12:00"
+          },
+          {
+            "count": 97,
+            "date_start": "2017-07-01T19:12:00",
+            "date_end": "2018-11-15T04:48:00"
+          },
+          {
+            "count": 131,
+            "date_start": "2018-11-15T04:48:00",
+            "date_end": "2020-03-30T14:24:00"
+          },
+          {
+            "count": 250,
+            "date_start": "2020-03-30T14:24:00",
+            "date_end": "2021-08-14T00:00:00"
+          },
+          {
+            "count": 324,
+            "date_start": "2021-08-14T00:00:00",
+            "date_end": "2022-12-28T09:36:00"
+          },
+          {
+            "count": 386,
+            "date_start": "2022-12-28T09:36:00",
+            "date_end": "2024-05-12T19:12:00"
+          },
+          {
+            "count": 767,
+            "date_start": "2024-05-12T19:12:00",
+            "date_end": "2025-09-26T04:48:00"
+          },
+          {
+            "count": 196,
+            "date_start": "2025-09-26T04:48:00",
+            "date_end": "2027-02-09T14:24:00"
+          },
+          {
+            "count": 262,
+            "date_start": "2027-02-09T14:24:00",
+            "date_end": "2028-06-25T00:00:00"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BoroughName",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 5,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "BRONX",
+            "count": 5
+          },
+          {
+            "bin": "BROOKLYN",
+            "count": 251
+          },
+          {
+            "bin": "MANHATTAN",
+            "count": 1832
+          },
+          {
+            "bin": "QUEENS",
+            "count": 457
+          },
+          {
+            "bin": "STATEN ISLAND",
+            "count": 3
+          }
+        ]
+      }
+    },
+    {
+      "name": "OnStreetName",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 161,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "5 AVENUE",
+            "count": 153
+          },
+          {
+            "bin": "7 AVENUE",
+            "count": 110
+          },
+          {
+            "bin": "BROADWAY",
+            "count": 173
+          },
+          {
+            "bin": "HILLSIDE AVENUE",
+            "count": 131
+          },
+          {
+            "bin": "WEST   42 STREET",
+            "count": 112
+          }
+        ]
+      }
+    },
+    {
+      "name": "FromStreetName",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "num_distinct_values": 381
+    },
+    {
+      "name": "ToStreetName",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "num_distinct_values": 391
+    },
+    {
+      "name": "PermitteeName",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 160,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "GO NEW YORK TOURS INC.",
+            "count": 191
+          },
+          {
+            "bin": "Gray Line New York Tours, Inc.",
+            "count": 258
+          },
+          {
+            "bin": "Hampton Jitney, Inc.",
+            "count": 304
+          },
+          {
+            "bin": "Taxi Tours Inc.",
+            "count": 227
+          },
+          {
+            "bin": "Transdev Services, Inc.",
+            "count": 305
+          }
+        ]
+      }
+    },
+    {
+      "name": "CreatedOn",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/DateTime"
+      ],
+      "num_distinct_values": 536,
+      "plot": {
+        "type": "histogram_temporal",
+        "data": [
+          {
+            "count": 128,
+            "date_start": "2013-07-26T00:00:00",
+            "date_end": "2014-10-04T16:49:04"
+          },
+          {
+            "count": 48,
+            "date_start": "2014-10-04T16:49:04",
+            "date_end": "2015-12-14T09:36:00"
+          },
+          {
+            "count": 83,
+            "date_start": "2015-12-14T09:36:00",
+            "date_end": "2017-02-22T02:22:56"
+          },
+          {
+            "count": 103,
+            "date_start": "2017-02-22T02:22:56",
+            "date_end": "2018-05-03T19:12:00"
+          },
+          {
+            "count": 106,
+            "date_start": "2018-05-03T19:12:00",
+            "date_end": "2019-07-13T12:01:04"
+          },
+          {
+            "count": 244,
+            "date_start": "2019-07-13T12:01:04",
+            "date_end": "2020-09-21T04:48:00"
+          },
+          {
+            "count": 254,
+            "date_start": "2020-09-21T04:48:00",
+            "date_end": "2021-11-30T21:34:56"
+          },
+          {
+            "count": 674,
+            "date_start": "2021-11-30T21:34:56",
+            "date_end": "2023-02-09T14:24:00"
+          },
+          {
+            "count": 438,
+            "date_start": "2023-02-09T14:24:00",
+            "date_end": "2024-04-20T07:13:04"
+          },
+          {
+            "count": 470,
+            "date_start": "2024-04-20T07:13:04",
+            "date_end": "2025-06-30T00:00:00"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ModifiedOn",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/DateTime"
+      ],
+      "num_distinct_values": 425,
+      "plot": {
+        "type": "histogram_temporal",
+        "data": [
+          {
+            "count": 234,
+            "date_start": "2018-02-09T00:00:00",
+            "date_end": "2018-11-05T19:12:00"
+          },
+          {
+            "count": 87,
+            "date_start": "2018-11-05T19:12:00",
+            "date_end": "2019-08-02T14:24:00"
+          },
+          {
+            "count": 52,
+            "date_start": "2019-08-02T14:24:00",
+            "date_end": "2020-04-28T09:36:00"
+          },
+          {
+            "count": 56,
+            "date_start": "2020-04-28T09:36:00",
+            "date_end": "2021-01-23T04:48:00"
+          },
+          {
+            "count": 206,
+            "date_start": "2021-01-23T04:48:00",
+            "date_end": "2021-10-20T00:00:00"
+          },
+          {
+            "count": 198,
+            "date_start": "2021-10-20T00:00:00",
+            "date_end": "2022-07-16T19:12:00"
+          },
+          {
+            "count": 453,
+            "date_start": "2022-07-16T19:12:00",
+            "date_end": "2023-04-12T14:24:00"
+          },
+          {
+            "count": 220,
+            "date_start": "2023-04-12T14:24:00",
+            "date_end": "2024-01-07T09:36:00"
+          },
+          {
+            "count": 327,
+            "date_start": "2024-01-07T09:36:00",
+            "date_end": "2024-10-03T04:48:00"
+          },
+          {
+            "count": 715,
+            "date_start": "2024-10-03T04:48:00",
+            "date_end": "2025-06-30T00:00:00"
+          }
+        ]
+      }
+    }
+  ],
+  "nb_temporal_columns": 5,
+  "nb_categorical_columns": 8,
+  "nb_numerical_columns": 2,
+  "types": [
+    "categorical",
+    "numerical",
+    "temporal"
+  ],
+  "temporal_coverage": [
+    {
+      "type": "datetime",
+      "column_names": [
+        "PermitIssueDate"
+      ],
+      "column_indexes": [
+        11
+      ],
+      "column_types": [
+        "http://schema.org/DateTime"
+      ],
+      "ranges": [
+        {
+          "range": {
+            "gte": 1380758400.0,
+            "lte": 1501632000.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1515542400.0,
+            "lte": 1616025600.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1644624000.0,
+            "lte": 1745452800.0
+          }
+        }
+      ],
+      "temporal_resolution": "day"
+    },
+    {
+      "type": "datetime",
+      "column_names": [
+        "IssuedWorkStartDate"
+      ],
+      "column_indexes": [
+        12
+      ],
+      "column_types": [
+        "http://schema.org/DateTime"
+      ],
+      "ranges": [
+        {
+          "range": {
+            "gte": 1380758400.0,
+            "lte": 1501632000.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1515542400.0,
+            "lte": 1616025600.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1644624000.0,
+            "lte": 1745452800.0
+          }
+        }
+      ],
+      "temporal_resolution": "day"
+    },
+    {
+      "type": "datetime",
+      "column_names": [
+        "IssuedWorkEndDate"
+      ],
+      "column_indexes": [
+        13
+      ],
+      "column_types": [
+        "http://schema.org/DateTime"
+      ],
+      "ranges": [
+        {
+          "range": {
+            "gte": 1438387200.0,
+            "lte": 1573689600.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1612483200.0,
+            "lte": 1708387200.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1722384000.0,
+            "lte": 1839628800.0
+          }
+        }
+      ],
+      "temporal_resolution": "day"
+    },
+    {
+      "type": "datetime",
+      "column_names": [
+        "CreatedOn"
+      ],
+      "column_indexes": [
+        19
+      ],
+      "column_types": [
+        "http://schema.org/DateTime"
+      ],
+      "ranges": [
+        {
+          "range": {
+            "gte": 1375920000.0,
+            "lte": 1497312000.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1515456000.0,
+            "lte": 1616025600.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1644624000.0,
+            "lte": 1745452800.0
+          }
+        }
+      ],
+      "temporal_resolution": "day"
+    },
+    {
+      "type": "datetime",
+      "column_names": [
+        "ModifiedOn"
+      ],
+      "column_indexes": [
+        20
+      ],
+      "column_types": [
+        "http://schema.org/DateTime"
+      ],
+      "ranges": [
+        {
+          "range": {
+            "gte": 1518134400.0,
+            "lte": 1580083200.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1611619200.0,
+            "lte": 1690761600.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1704499200.0,
+            "lte": 1748563200.0
+          }
+        }
+      ],
+      "temporal_resolution": "day"
+    }
+  ],
+  "attribute_keywords": [
+    "PermitNumber",
+    "Permit",
+    "Number",
+    "ApplicationTrackingID",
+    "Application",
+    "Tracking",
+    "ID",
+    "SequenceNumber",
+    "Sequence",
+    "Number",
+    "ApplicationTypeShortDesc",
+    "Application",
+    "Type",
+    "Short",
+    "Desc",
+    "PermitStatusID",
+    "Permit",
+    "Status",
+    "ID",
+    "PermitStatusShortDesc",
+    "Permit",
+    "Status",
+    "Short",
+    "Desc",
+    "PermitSeriesID",
+    "Permit",
+    "Series",
+    "ID",
+    "PermitSeriesShortDesc",
+    "Permit",
+    "Series",
+    "Short",
+    "Desc",
+    "PermitTypeID",
+    "Permit",
+    "Type",
+    "ID",
+    "PermitTypeDesc",
+    "Permit",
+    "Type",
+    "Desc",
+    "SpecificStipulations",
+    "Specific",
+    "Stipulations",
+    "PermitIssueDate",
+    "Permit",
+    "Issue",
+    "Date",
+    "IssuedWorkStartDate",
+    "Issued",
+    "Work",
+    "Start",
+    "Date",
+    "IssuedWorkEndDate",
+    "Issued",
+    "Work",
+    "End",
+    "Date",
+    "BoroughName",
+    "Borough",
+    "Name",
+    "OnStreetName",
+    "On",
+    "Street",
+    "Name",
+    "FromStreetName",
+    "From",
+    "Street",
+    "Name",
+    "ToStreetName",
+    "To",
+    "Street",
+    "Name",
+    "PermitteeName",
+    "Permittee",
+    "Name",
+    "CreatedOn",
+    "Created",
+    "On",
+    "ModifiedOn",
+    "Modified",
+    "On"
+  ],
+  "sample": "PermitNumber,ApplicationTrackingID,SequenceNumber,ApplicationTypeShortDesc,PermitStatusID,PermitStatusShortDesc,PermitSeriesID,PermitSeriesShortDesc,PermitTypeID,PermitTypeDesc,SpecificStipulations,PermitIssueDate,IssuedWorkStartDate,IssuedWorkEndDate,BoroughName,OnStreetName,FromStreetName,ToStreetName,PermitteeName,CreatedOn,ModifiedOn\r\n2017041754,ICBPS-20170417-54,1,New,30,EXPIRED,IB,Bus Stop Permit,IB01,Intercity Bus Stop Permit,\"Pursuant to our guidelines only 1 bus is permitted at any given time. Upon request, provide a copy of the approved schedule signed-off...\",07/28/2017,07/28/2017,07/28/2020,MANHATTAN,CHRYSTIE STREET,CANAL STREET,HESTER STREET,Tribal Sun Bus Company LLC,04/17/2017,07/28/2020\r\n20161008102,ICBPS-20161008-102,1,Renew,30,EXPIRED,IB,Bus Stop,IB01,Intercity Bus Stop Permit,\"Pursuant to our guidelines only 1 bus is permitted at any given time. Upon request, provide a copy of the approved schedule signed-off...\",01/10/2017,01/10/2017,01/10/2018,MANHATTAN,6 AVENUE,WEST   37 STREET,WEST   38 STREET,\"Hampton Jitney, Inc.\",10/08/2016,03/30/2018\r\n2014040854,ICBPS-20140408-54,1,New,30,EXPIRED,IB,Bus Stop,IB01,Intercity Bus Stop Permit,\"Pursuant to our guidelines only 1 bus is permitted at any given time. Upon request, provide a copy of the approved schedule signed-off...\",12/30/2014,12/30/2014,12/29/2017,MANHATTAN,7 AVENUE,WEST   13 STREET,WEST   14 STREET,\"Hampton Jitney, Inc.\",04/08/2014,02/09/2018\r\n20131022265,ICBPS-20131022-265,1,Renew,30,EXPIRED,IB,Bus Stop,IB01,Intercity Bus Stop Permit,\"Pursuant to our guidelines only 1 bus is permitted at any given time. Upon request, provide a copy of the approved schedule signed-off...\",02/04/2014,02/04/2014,02/04/2017,MANHATTAN,WATER STREET,MAIDEN LANE,PINE STREET,Frank Martz Coach Co,10/22/2013,02/09/2018\r\nMIB2021068A06,2021030300334570,1,New,30,EXPIRED,IB,Bus Stop Permit,IB01,Intercity Bus Stop Permit,\"Only 1 bus(es) permitted at any given time. Upon request, provide a copy of the approved schedule electronically signed-off by the NYC...\",03/09/2021,03/09/2021,03/09/2022,MANHATTAN,WATER STREET,BROAD STREET,COENTIES SLIP,\"Trans-Bridge Lines, Inc.\",03/09/2021,03/10/2022\r\n2015093094,ICBPS-20150930-94,1,Renew,30,EXPIRED,IB,Bus Stop,IB01,Intercity Bus Stop Permit,\"Pursuant to our guidelines only 1 bus is permitted at any given time. Upon request, provide a copy of the approved schedule signed-off...\",12/16/2015,12/16/2015,12/16/2016,QUEENS,BARCLAY AVENUE,KISSENA BOULEVARD,UNION STREET,\"Victoria's Transportation Co., Inc.\",09/30/2015,02/09/2018\r\nMIB2019010A30,2018112600912213,1,New,30,EXPIRED,IB,Bus Stop Permit,IB01,Intercity Bus Stop Permit,\"Only 1 bus(es) permitted at any given time. Upon request, provide a copy of the approved schedule signed-off by the NYC DOT. Permittee...\",01/10/2019,01/10/2019,01/10/2022,MANHATTAN,3 AVENUE,EAST   67 STREET,EAST   68 STREET,\"Hampton Jitney, Inc.\",01/10/2019,01/11/2022\r\nMIB2020041A01,2018081000241760,1,New,906,VOIDED AFTER ISSUE,IB,Bus Stop Permit,IB01,Intercity Bus Stop Permit,\"Only 1 bus(es) permitted at any given time. Upon request, provide a copy of the approved schedule signed-off by the NYC DOT. Permittee...\",02/10/2020,02/10/2020,02/10/2021,MANHATTAN,8 AVENUE,WEST   39 STREET,WEST   40 STREET,\"EXPERIENCE THE RIDE NY, LLC\",02/10/2020,01/14/2021\r\nMIB2020050A08,2018080900513897,1,New,30,EXPIRED,IB,Bus Stop Permit,IB01,Intercity Bus Stop Permit,\"Only 1 bus(es) permitted at any given time. Upon request, provide a copy of the approved schedule signed-off by the NYC DOT. Permittee...\",02/19/2020,02/19/2020,02/19/2021,MANHATTAN,5 AVENUE,EAST   91 STREET,EAST   92 STREET,\"Gray Line New York Tours, Inc.\",02/19/2020,02/20/2021\r\nMIB2021077A22,2021022300833127,1,Renew,30,EXPIRED,IB,Bus Stop Permit,IB01,Intercity Bus Stop Permit,\"Only 1 bus(es) permitted at any given time. Upon request, provide a copy of the approved schedule electronically signed-off by the NYC...\",03/18/2021,03/18/2021,03/18/2022,MANHATTAN,BROADWAY,BATTERY PLACE,MORRIS STREET,\"SUBURBAN TRAILS, INC.\",03/18/2021,03/19/2022\r\nMIB2020052A09,2019072900215153,1,New,30,EXPIRED,IB,Bus Stop Permit,IB01,Intercity Bus Stop Permit,\"Only 1 bus(es) permitted at any given time. Upon request, provide a copy of the approved schedule signed-off by the NYC DOT. Permittee...\",02/21/2020,02/21/2020,02/21/2021,MANHATTAN,WEST   34 STREET,5 AVENUE,6 AVENUE,GO NEW YORK TOURS INC.,02/21/2020,02/22/2021\r\nMIB2020079A10,2020030400961167,1,New,30,EXPIRED,IB,Bus Stop Permit,IB01,Intercity Bus Stop Permit,\"Only 1 bus(es) permitted at any given time. Upon request, provide a copy of the approved schedule electronically signed-off by the NYC...\",03/19/2020,03/19/2020,03/19/2021,MANHATTAN,WEST   42 STREET,5 AVENUE,6 AVENUE,\"SUBURBAN TRAILS, INC.\",03/19/2020,03/20/2021\r\nQIB2023107A02,2023041700511240,1,New,6,ISSUED & PRINTED,IB,Bus Stop Permit,IB01,Intercity Bus Stop Permit,\"Only 1 bus(es) permitted at any given time. Upon request, provide a copy of the approved schedule electronically signed-off by the NYC...\",04/17/2023,04/17/2023,08/17/2025,QUEENS,165 STREET,88 AVENUE,89 AVENUE,\"Transdev Services, Inc.\",04/17/2023,04/17/2023\r\nQIB2022238B36,2022040700129810,1,New,6,ISSUED & PRINTED,IB,Bus Stop Permit,IB01,Intercity Bus Stop Permit,\"Only 1 bus(es) permitted at any given time. Upon request, provide a copy of the approved schedule electronically signed-off by the NYC...\",08/26/2022,08/26/2022,08/26/2025,QUEENS,NORTHERN BOULEVARD,189 STREET,UTOPIA PARKWAY,\"Transdev Services, Inc.\",08/26/2022,08/26/2022\r\nMIB2022047A20,2022020800662163,1,New,906,VOIDED AFTER ISSUE,IB,Bus Stop Permit,IB01,Intercity Bus Stop Permit,\"Only 1 bus(es) permitted at any given time. Upon request, provide a copy of the approved schedule electronically signed-off by the NYC...\",02/16/2022,02/16/2022,02/16/2025,MANHATTAN,WATER STREET,BROAD STREET,COENTIES SLIP,\"D&J SERVICE, INC.\",02/16/2022,05/08/2023\r\nMIB2022043A31,2022011300710346,1,Renew,30,EXPIRED,IB,Bus Stop Permit,IB01,Intercity Bus Stop Permit,\"Only 1 bus(es) permitted at any given time. Upon request, provide a copy of the approved schedule electronically signed-off by the NYC...\",02/12/2022,02/12/2022,02/12/2023,MANHATTAN,7 AVENUE,WEST   48 STREET,WEST   49 STREET,Taxi Tours Inc.,02/12/2022,02/13/2023\r\nMIB2022200A16,2022021800888706,1,Renew,30,EXPIRED,IB,Bus Stop Permit,IB01,Intercity Bus Stop Permit,\"Only 1 bus(es) permitted at any given time. Upon request, provide a copy of the approved schedule electronically signed-off by the NYC...\",07/19/2022,07/19/2022,07/19/2023,MANHATTAN,1 AVENUE,EAST   44 STREET,EAST   45 STREET,\"Gray Line New York Tours, Inc.\",07/19/2022,07/31/2023\r\nMIB2025007A00,2024081600915796,1,New,6,ISSUED & PRINTED,IB,Bus Stop Permit,IB01,Intercity Bus Stop Permit,\"Only 1 bus(es) permitted at any given time. Upon request, provide a copy of the approved schedule electronically signed-off by the NYC...\",01/07/2025,01/07/2025,01/07/2026,MANHATTAN,WEST   58 STREET,8 AVENUE,BROADWAY,BUSTRONOME NYC LLC,01/07/2025,01/07/2025\r\nQIB2023244A09,2022041500218336,1,New,30,EXPIRED,IB,Bus Stop Permit,IB01,Intercity Bus Stop Permit,\"Only 1 bus(es) permitted at any given time. Upon request, provide a copy of the approved schedule electronically signed-off by the NYC...\",09/01/2023,09/01/2023,01/01/2025,QUEENS,ROCKAWAY BEACH BOULEVARD,BEACH   84 STREET,BEACH   86 STREET,\"D&J Service, Inc.\",09/01/2023,01/02/2025\r\nMIB2023213A03,2023032200887020,1,Renew,30,EXPIRED,IB,Bus Stop Permit,IB01,Intercity Bus Stop Permit,\"Only 1 bus(es) permitted at any given time. Upon request, provide a copy of the approved schedule electronically signed-off by the NYC...\",08/01/2023,08/01/2023,04/01/2025,MANHATTAN,9 AVENUE,WEST   33 STREET,WEST   34 STREET,Monsey New Square Trails Corp.,08/01/2023,04/18/2025\r\n"
+}

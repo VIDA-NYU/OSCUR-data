@@ -24,7 +24,7 @@ code/downloaders/
 ├── raised_crosswalks.py              # Download Raised Crosswalks dataset (CSV)
 ├── NYC_vehicle_collisions.py         # Download Vehicle Collisions (Crashes) dataset (CSV)
 ├── nyc_311.py                        # Download NYC 311 Requests dataset (CSV)
-├── on_street_curb_management         # Folder containing download files for dataset
+├── on_street_curb_management/         # Folder containing download files for dataset
     ├── curbs_downloader.py           # Download Curbs dataset (CSV)
     ├── loading_zones_downloader.py   # Download Loading Zones dataset (CSV)
     ├── on_street_curb_management.py  # Activates all download files
@@ -35,11 +35,55 @@ code/downloaders/
     ├── traffic_signal_downloader.py           # Download Traffic Signals (311)
     ├── street_sign_downloader.py              # Download Street Sign Work Orders
     ├── signals_markings_signs.py              # Runs all signal/sign downloaders
-├── transit_stop_accessibilty.py/
-   ├── acc_ped_signal_loc_downlaoder.py  # Download acc ped location dataset (CSV)
-   ├── curbs_downloader.py               # Download curbs dataset (CSV)
-   ├── ped_ramp_locations_downloader.py  # Download pedestrian ramp dataset (CSV)
-   ├── transit_stop_accessibilty.py      # Orchestrates all downloads
+├── transit_stop_accessibilty/
+    ├── acc_ped_signal_loc_downlaoder.py  # Download Accessible Pedestrian Locations dataset (CSV)
+    ├── curbs_downloader.py               # Download Curbs dataset (CSV)
+    ├── ped_ramp_locations_downloader.py  # Download Pedestrian Ramp dataset (CSV)
+    ├── transit_stop_accessibilty.py      # Orchestrates all download files
+├── sidewalk_surface_condition/
+    ├── sidewalk_violations_downloader.py # Download Sidewalk violations (CSV)
+    ├── tree_damage_downloader.py         # Download Tree damage records (CSV) 
+    ├── sidewalk_lot_info_downloader.py   # Download BBL lot info table (CSV with bblid, location, etc.)
+    ├── sidewalk_complaints_311_downloader.py   # Download 311 sidewalk complaints (CSV with coordinates)
+    ├── sidewalk_geometry_downloader      # Sidewalk polygon geometries (as WKT)
+    ├── sidewalk_surface_condition        # Orchestrates all download files  
+├── key_destinations/
+    ├── issued_licenses_downloader.py      # Download Issued Licenses dataset (CSV)
+    ├── key_desinations_downloader.py      # Orchestrates all download files
+    ├── nyc_facilities_downloader.py       # Download NYC Facilities dataset (CSV)
+├── designed_goods_movement_routes/      # Folder for freight movement routes
+    ├── truck_routes.py                  # Download Truck Routes (CSV)
+├── environment/
+    ├── environment_downloader.py         # Orchestrates all downloads
+    ├── heat_vulnerability_downloader.py  # Download Heat Vulnerability dataset (CSV)
+    ├── open_space_downloader.py          # Download Open Space dataset (CSV)
+    ├── parks_downloader.py               # Download Parks dataset (CSV)
+    ├── zipcode_geom_downloader.py        # Download Zipcode Geomertry dataset (CSV)
+├── fixed_obstructions/
+    ├── fixed_obstructions.py           # Orchestrates all fixed obstruction downloads
+    ├── sidewalks_downloader.py         # Download NYC Planimetric Sidewalk dataset (GeoJSON)
+    ├── signposts_downloader.py         # Download NYC DOT Street Sign Work Orders dataset (CSV)
+    ├── utility_poles_downloader.py     # Download DoITT Telecom Franchise Poles dataset (CSV)
+├── bicycle_facilites/
+    ├── bike_routes_downloader.py     # Download NYC DOT bicycle facilities dataset (CSV)
+├── tree_cover_landscaping/
+    ├── tree_cover_landscaping.py             # Orchestrates all tree cover landscaping downloads
+    ├── landscaping_downloader.py             # Download NYC Natural Turf Maintenance dataset (CSV)
+    ├── nyc_park_zones_downloader.py          # Download NYC Park Zones dataset (GeoJSON)
+├── transit_stops_routes/
+    ├── transit_stops_routes.py            # Orchestrates all transit stop downloads
+    ├── subway_stations_downloader.py      # Download MTA Subway Stations dataset (CSV)
+    ├── bus_stop_permits_downloader.py     # Download NYC Intercity Bus Stop Permits dataset (CSV)
+├── curb_infrastructure/              # Folder for NYC curb-related features
+    ├── curb_infrastructure_downloader.py    # Orchestrator: Runs all curb infrastructure downloaders
+    ├── sidewalks_downloader.py              # Download Planimetric Sidewalks dataset
+    ├── pedestrian_ramps_downloader.py       # Download Pedestrian Ramp Locations
+    ├── raised_crosswalks_downloader.py      # Download Raised Crosswalk Locations
+    ├── medians_downloader.py                # Download Planimetric Medians dataset
+├── rail_routes_and_crossings/
+    ├── rail_routes_and_crossings.py      # Orchestrates all downloads
+    ├── crossings_downloader.py           # Download rail crossing points dataset (CSV)
+    ├── railroad_lines_downloader.py      # Download railroad lines dataset (CSV)
 ├── injuries/
     ├── injuries.py                          # Orchestrates all injury-related dataset downloads
     ├── motor_vehicle_crashes_downloader.py  # Download Motor Vehicle Collisions – Crashes dataset (CSV)
@@ -71,6 +115,8 @@ python speed_humps.py -o data/speed_humps.csv
 python raised_crosswalks.py -o data/raised_crosswalks.csv
 python NYC_vehicle_collisions.py -o data/NYC_vehicle_collisions.csv
 python nyc_311.py -o data/nyc_311.csv
+python designed_goods_movement_routes/truck_routes.py --output data/designed_goods_movement_routes/truck_routes.csv
+python bike_routes_downloader.py -o data/bike_routes.csv
 ```
 With API token and custom timeout:
 ```bash
@@ -166,6 +212,109 @@ python sidewalk_surface_condition.py \
   --lot_info /custom/path/lot_info.csv
 ```
 
+**Key Destinations:**
+The `key_destinations.py` script downloads nyc government facilities and issued licenses data:
+
+```bash
+python key_destinations.py   # basic usage
+```
+
+Custom output paths:
+```bash
+python key_destinations_downloader.py \
+  --facilities /custom/path/nyc_facilities.csv \
+  --licenses /custom/path/issued_licenses.csv
+```
+
+**Environments Dataset:**
+The `environments_downloader.py` script downloads datasets for heat vulnerability, parks, open spaces, and ZIP code geometries:
+
+```bash
+python environments_downloader.py   # basic usage
+```
+
+Custom output paths:
+```bash
+python environment_downloader.py \
+  --heat_vulnerability /custom/path/heat_vulnerability.csv \
+  --zipcode_geom /custom/path/modzcta.csv \
+  --parks /custom/path/parks.csv \
+  --open_space /custom/path/open_space.csv
+```
+
+**Fixed Obstructions:**
+The `fixed_obstructions.py ` script allows downloading multiple datasets simultaneously, including signposts, utility signs and sidewalks.
+
+```bash
+python fixed_obstructions.py    # basic usage
+```
+
+You can specify custom output paths for each dataset:
+```bash
+python fixed_obstructions.py \
+  --sidewalks /custom/path/sidewalk_planimetric.csv \
+  --street_signs /custom/path/street_sign_work_orders.csv \
+  --telecom_poles /custom/path/utility_poles.csv
+```
+
+**Tree Cover Landscaping:**
+The `tree_cover_landscaping.py` script allows downloading multiple datasets simultaneously, including park zones and turf maintenance. 
+
+```bash
+python tree_cover_landscaping.py    # basic usage
+```
+
+You can specify custom output paths for each dataset:
+```bash
+python tree_cover_landscaping.py \
+  --turf_maintenance custom/path/natural_turf_maintenance.csv \
+  --parks_zones custom/path/parks_zones.csv
+```
+
+**Transit Stops and Routes:**
+The `transit_stops_routes.py ` script downloads subway station data and intercity bus stop permits:
+
+```bash
+python transit_stops_routes.py    # basic usage
+```
+
+Custom output paths:
+```bash
+python transit_stops_routes.py \
+  --subway_stations /custom/path/subway_stations.csv \
+  --intercity_bus_stops /custom/path/intercity_bus_stops.csv
+```
+
+**Curb Infrastructure (Sidewalks, crosswalks, driveways, curb ramps, medians, refuges, curb extensions):**
+The `curb_infrastructure.py ` script downloads sidewalks, pedestrian ramps, raised crosswalks and medians:
+
+```bash
+python curb_infrastructure.py   # basic usage
+```
+
+Custom output paths:
+```bash
+python curb_infrastructure_downloader.py \
+  --sidewalks data/curb_infrastructure/sidewalks.csv \
+  --pedestrian_ramps data/curb_infrastructure/pedestrian_ramps.csv \
+  --raised_crosswalks data/curb_infrastructure/raised_crosswalks.csv \
+  --medians data/curb_infrastructure/medians.csv
+```
+
+**Rail Routes and Crossings:**
+The `rail_routes_and_crossings.py ` script downloads railroads and crossings datasets:
+
+```bash
+python rail_routes_and_crossings.py    # basic usage
+```
+
+Custom output paths:
+```bash
+python rail_routes_and_crossings.py \
+  --railroads custom/path/railroad_lines.csv \
+  --crossings custom/path/rail_crossings_nyc.csv \
+```
+
 **Injuries, injury severity, and near misses:**
 The `injuries.py` script downloads motor vehicle crahses and persons involved in crash data:
 
@@ -179,6 +328,7 @@ python injuries.py \
   --motor_vehicle_crashes /custom/path/motor_vehicle_crashes.csv \
   --motor_vehicle_persons /custom/path/motor_vehicle_persons.csv
 ```
+
 
 ## Base Class Benefits
 

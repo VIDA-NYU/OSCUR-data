@@ -1,0 +1,74 @@
+dataset_id: "rail_routes_and_crossings"
+name: "NYC Rail Routes and Crossings"
+description: >
+  A spatially joined dataset matching NYC’s railroad lines with nearby or intersecting rail crossing points:
+  1) Railroad Lines — official polyline geometries representing active and inactive rail infrastructure,
+  2) Rail Crossings — point locations where railroad lines intersect public roadways.
+
+  This dataset supports spatial analysis of transportation infrastructure, safety risk near crossings, and routing logic for large vehicles or freight. 
+  All records are spatially enabled and can be joined with crash datasets, zoning layers, or city assets for enriched infrastructure analytics.
+
+source_organization:
+  railroads: "New York City Department of City Planning (DCP)"
+  crossings: "Federal Railroad Administration (FRA)"
+
+domain: "transportation"
+last_updated: "2025-07-23"
+update_frequency:
+  railroads: "Occasionally"
+  crossings: "Occasionally"
+
+access:
+  primary_url: "https://data.cityofnewyork.us"
+  api_endpoint:
+    railroads: "https://data.cityofnewyork.us/resource/7vsa-caz7.json"
+    crossings: "https://data.cityofnewyork.us/resource/szwi-86qv.json"
+  license: "Open Data License"
+  file_format:
+    railroads: ["CSV", "GeoJSON"]
+    crossings: ["CSV", "GeoJSON"]
+  rate_limits:
+    railroads: "Unknown"
+    crossings: "Unknown"
+
+spatial:
+  geometry_type: "mixed"
+  coordinate_system: "EPSG:4326"
+  coverage_area: "NYC"
+
+temporal:
+  temporal_type:
+    railroads: "last updated"
+    crossings: "last updated"
+  temporal_resolution:
+    railroads: "static"
+    crossings: "static"
+  time_column:
+    railroads: "last_edit_dt"
+    crossings: "last_edit_dt"
+
+implementation:
+  downloader_module:
+    railroads: "downloaders.rail_routes_and_crossings.railroad_lines_downloader.py"
+    crossings: "downloaders.rail_routes_and_crossings.crossings_downloader.py"
+  orchestrator_downloader:
+    orchestrator: "downloaders.rail_routes_and_crossings.rail_routes_and_crossings.py"
+  processor_module: "processors.rail_routes_and_crossings.py"
+  example_notebook: "examples/rail_routes_and_crossings.ipynb"
+
+integration_opportunities:
+  spatial_joins:
+    - "Join rail routes to crossing locations to identify potential hazard points"
+    - "Overlay with crash data for rail-related incident analysis"
+    - "Support freight routing or emergency planning by locating vulnerable crossings"
+  temporal_alignment:
+    - "Track changes to rail infrastructure with incident reports"
+    - "Compare crossing activity with signal timing or traffic control changes"
+
+map_algebra:
+  raster_conversion:
+    suitable_for_rasterization: false
+    recommended_cell_size: "N/A"
+    interpolation_method: "none"
+
+data_name: "rail_routes_and_crossings"

@@ -1,0 +1,566 @@
+{
+  "nb_rows": 32939,
+  "nb_profiled_rows": 32939,
+  "nb_columns": 7,
+  "columns": [
+    {
+      "name": "Street",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 1171,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "BROADWAY",
+            "count": 803
+          },
+          {
+            "bin": "LINDEN BOULEVARD",
+            "count": 668
+          },
+          {
+            "bin": "LONG ISLAND EXPRESSWAY",
+            "count": 875
+          },
+          {
+            "bin": "QUEENS BOULEVARD",
+            "count": 845
+          },
+          {
+            "bin": "VAN WYCK EXPRESSWAY",
+            "count": 549
+          }
+        ]
+      }
+    },
+    {
+      "name": "RouteType",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 3,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Limited Local",
+            "count": 223
+          },
+          {
+            "bin": "Local",
+            "count": 19411
+          },
+          {
+            "bin": "Through",
+            "count": 13305
+          }
+        ]
+      }
+    },
+    {
+      "name": "TruckRoute",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Boolean",
+        "http://schema.org/Enumeration"
+      ],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 1,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Y",
+            "count": 32939
+          }
+        ]
+      }
+    },
+    {
+      "name": "BoroName",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 5,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Bronx",
+            "count": 5952
+          },
+          {
+            "bin": "Brooklyn",
+            "count": 7045
+          },
+          {
+            "bin": "Manhattan",
+            "count": 4621
+          },
+          {
+            "bin": "Queens",
+            "count": 10784
+          },
+          {
+            "bin": "Staten Island",
+            "count": 4537
+          }
+        ]
+      }
+    },
+    {
+      "name": "the_geom",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "40",
+            "count": 87565
+          },
+          {
+            "bin": "73",
+            "count": 66577
+          },
+          {
+            "bin": "multilinestring",
+            "count": 32939
+          },
+          {
+            "bin": "74",
+            "count": 20988
+          },
+          {
+            "bin": "93031505013089",
+            "count": 8
+          }
+        ]
+      }
+    },
+    {
+      "name": "longitude",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [
+        "http://schema.org/longitude"
+      ],
+      "unclean_values_ratio": 0.0,
+      "mean": -73.93223649434557,
+      "stddev": 0.11048272292936016,
+      "coverage": [
+        {
+          "range": {
+            "gte": -74.23026767505385,
+            "lte": -74.06975968532876
+          }
+        },
+        {
+          "range": {
+            "gte": -74.01579649480169,
+            "lte": -73.8986040746606
+          }
+        },
+        {
+          "range": {
+            "gte": -73.8861765591321,
+            "lte": -73.74304905172623
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 724,
+            "bin_start": -74.25392303076265,
+            "bin_end": -74.19857120422063
+          },
+          {
+            "count": 1591,
+            "bin_start": -74.19857120422063,
+            "bin_end": -74.1432193776786
+          },
+          {
+            "count": 1384,
+            "bin_start": -74.1432193776786,
+            "bin_end": -74.0878675511366
+          },
+          {
+            "count": 908,
+            "bin_start": -74.0878675511366,
+            "bin_end": -74.03251572459457
+          },
+          {
+            "count": 5002,
+            "bin_start": -74.03251572459457,
+            "bin_end": -73.97716389805255
+          },
+          {
+            "count": 6932,
+            "bin_start": -73.97716389805255,
+            "bin_end": -73.92181207151053
+          },
+          {
+            "count": 6736,
+            "bin_start": -73.92181207151053,
+            "bin_end": -73.86646024496851
+          },
+          {
+            "count": 6082,
+            "bin_start": -73.86646024496851,
+            "bin_end": -73.8111084184265
+          },
+          {
+            "count": 2519,
+            "bin_start": -73.8111084184265,
+            "bin_end": -73.75575659188448
+          },
+          {
+            "count": 1061,
+            "bin_start": -73.75575659188448,
+            "bin_end": -73.70040476534245
+          }
+        ]
+      }
+    },
+    {
+      "name": "latitude",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [
+        "http://schema.org/latitude"
+      ],
+      "unclean_values_ratio": 0.0,
+      "mean": 40.719942967433724,
+      "stddev": 0.08621460695148978,
+      "coverage": [
+        {
+          "range": {
+            "gte": 40.52979918174332,
+            "lte": 40.65807377571619
+          }
+        },
+        {
+          "range": {
+            "gte": 40.66891287812049,
+            "lte": 40.76595092940685
+          }
+        },
+        {
+          "range": {
+            "gte": 40.78520252032323,
+            "lte": 40.88642130934444
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 801,
+            "bin_start": 40.502879056247885,
+            "bin_end": 40.54361137544981
+          },
+          {
+            "count": 1276,
+            "bin_start": 40.54361137544981,
+            "bin_end": 40.58434369465173
+          },
+          {
+            "count": 3152,
+            "bin_start": 40.58434369465173,
+            "bin_end": 40.62507601385365
+          },
+          {
+            "count": 3322,
+            "bin_start": 40.62507601385365,
+            "bin_end": 40.66580833305557
+          },
+          {
+            "count": 5334,
+            "bin_start": 40.66580833305557,
+            "bin_end": 40.7065406522575
+          },
+          {
+            "count": 7448,
+            "bin_start": 40.7065406522575,
+            "bin_end": 40.747272971459424
+          },
+          {
+            "count": 3916,
+            "bin_start": 40.747272971459424,
+            "bin_end": 40.788005290661346
+          },
+          {
+            "count": 3360,
+            "bin_start": 40.788005290661346,
+            "bin_end": 40.82873760986327
+          },
+          {
+            "count": 3292,
+            "bin_start": 40.82873760986327,
+            "bin_end": 40.86946992906519
+          },
+          {
+            "count": 1038,
+            "bin_start": 40.86946992906519,
+            "bin_end": 40.91020224826711
+          }
+        ]
+      }
+    }
+  ],
+  "nb_spatial_columns": 2,
+  "nb_categorical_columns": 4,
+  "types": [
+    "categorical",
+    "spatial"
+  ],
+  "spatial_coverage": [
+    {
+      "type": "latlong",
+      "column_names": [
+        "latitude",
+        "longitude"
+      ],
+      "column_indexes": [
+        6,
+        5
+      ],
+      "geohashes4": [
+        {
+          "hash": "121130320223",
+          "number": 2400
+        },
+        {
+          "hash": "121130320222",
+          "number": 1098
+        },
+        {
+          "hash": "121130320221",
+          "number": 1180
+        },
+        {
+          "hash": "121130320220",
+          "number": 1672
+        },
+        {
+          "hash": "121130320232",
+          "number": 889
+        },
+        {
+          "hash": "121130320230",
+          "number": 2
+        },
+        {
+          "hash": "121130322001",
+          "number": 304
+        },
+        {
+          "hash": "121130322000",
+          "number": 347
+        },
+        {
+          "hash": "121130322010",
+          "number": 158
+        },
+        {
+          "hash": "121130231302",
+          "number": 1304
+        },
+        {
+          "hash": "121130231303",
+          "number": 339
+        },
+        {
+          "hash": "121130231300",
+          "number": 1328
+        },
+        {
+          "hash": "121130231312",
+          "number": 631
+        },
+        {
+          "hash": "121130231313",
+          "number": 144
+        },
+        {
+          "hash": "121130231321",
+          "number": 1655
+        },
+        {
+          "hash": "121130231320",
+          "number": 760
+        },
+        {
+          "hash": "121130231323",
+          "number": 1562
+        },
+        {
+          "hash": "121130231322",
+          "number": 157
+        },
+        {
+          "hash": "121130231330",
+          "number": 2973
+        },
+        {
+          "hash": "121130231331",
+          "number": 2288
+        },
+        {
+          "hash": "121130231332",
+          "number": 1960
+        },
+        {
+          "hash": "121130231333",
+          "number": 2111
+        },
+        {
+          "hash": "121130231032",
+          "number": 802
+        },
+        {
+          "hash": "121130231033",
+          "number": 140
+        },
+        {
+          "hash": "121130231023",
+          "number": 117
+        },
+        {
+          "hash": "121130231231",
+          "number": 373
+        },
+        {
+          "hash": "121130231233",
+          "number": 166
+        },
+        {
+          "hash": "121130231213",
+          "number": 412
+        },
+        {
+          "hash": "121130231211",
+          "number": 676
+        },
+        {
+          "hash": "121130231210",
+          "number": 402
+        },
+        {
+          "hash": "121130231122",
+          "number": 106
+        },
+        {
+          "hash": "121130233101",
+          "number": 1011
+        },
+        {
+          "hash": "121130233100",
+          "number": 150
+        },
+        {
+          "hash": "121130233103",
+          "number": 53
+        },
+        {
+          "hash": "121130233102",
+          "number": 5
+        },
+        {
+          "hash": "121130233110",
+          "number": 1631
+        },
+        {
+          "hash": "121130233111",
+          "number": 982
+        },
+        {
+          "hash": "121130233112",
+          "number": 264
+        },
+        {
+          "hash": "121130233113",
+          "number": 197
+        },
+        {
+          "hash": "121130233011",
+          "number": 190
+        }
+      ],
+      "ranges": [
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -74.23022219132683,
+                40.63769424078217
+              ],
+              [
+                -74.06581854156263,
+                40.524735682022005
+              ]
+            ]
+          }
+        },
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -74.01675480570081,
+                40.771233522002426
+              ],
+              [
+                -73.87467694401616,
+                40.60026138102964
+              ]
+            ]
+          }
+        },
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -73.93652953520183,
+                40.876611092206126
+              ],
+              [
+                -73.74738103522036,
+                40.67148734393286
+              ]
+            ]
+          }
+        }
+      ],
+      "number": 32939
+    }
+  ],
+  "attribute_keywords": [
+    "Street",
+    "RouteType",
+    "Route",
+    "Type",
+    "TruckRoute",
+    "Truck",
+    "Route",
+    "BoroName",
+    "Boro",
+    "Name",
+    "the_geom",
+    "the",
+    "geom",
+    "longitude",
+    "latitude"
+  ],
+  "sample": "Street,RouteType,TruckRoute,BoroName,the_geom,longitude,latitude\r\nWESTCHESTER AVENUE,Local,Y,Bronx,\"MULTILINESTRING ((-73.84306252798727 40.83979720599604, -73.8426130886849 40.8401671561665))\",-73.84306252798727,40.83979720599604\r\n3 AVENUE,Local,Y,Bronx,\"MULTILINESTRING ((-73.92880617212849 40.80989909352423, -73.9280137601569 40.81048604944126))\",-73.92880617212849,40.80989909352423\r\nCHURCH AVENUE,Local,Y,Brooklyn,\"MULTILINESTRING ((-73.94957113051389 40.650807899948596, -73.9485915690235 40.65085500459524))\",-73.94957113051389,40.6508078999486\r\nCONNECTOR,Local,Y,Brooklyn,\"MULTILINESTRING ((-73.9044880368314 40.655261974778455, -73.90490502168663 40.65509395052541))\",-73.9044880368314,40.655261974778455\r\nHUGH L CAREY TUNNEL APPROACH,Through,Y,Brooklyn,\"MULTILINESTRING ((-74.0048406081956 40.680341571190546, -74.00477298245687 40.68025904908323))\",-74.0048406081956,40.68034157119055\r\nGRAND STREET,Local,Y,Brooklyn,\"MULTILINESTRING ((-73.92960162496003 40.714722990227166, -73.92851149097712 40.714995479339265))\",-73.92960162496003,40.714722990227166\r\nLOUISIANA AVENUE,Local,Y,Brooklyn,\"MULTILINESTRING ((-73.89003782510592 40.65117817740591, -73.89000589227453 40.65114869632648))\",-73.89003782510592,40.65117817740591\r\nROGERS AVENUE,Local,Y,Brooklyn,\"MULTILINESTRING ((-73.95309401061051 40.6565031614756, -73.95305317194135 40.65608051687581))\",-73.95309401061051,40.6565031614756\r\nBROADWAY,Local,Y,Manhattan,\"MULTILINESTRING ((-73.94249852653326 40.837137893405924, -73.94204096109128 40.837760580977054))\",-73.94249852653326,40.83713789340592\r\nTRINITY PLACE,Local,Y,Manhattan,\"MULTILINESTRING ((-74.01363266096436 40.70679389884691, -74.013518854199 40.70694327107269))\",-74.01363266096436,40.70679389884691\r\nMAIN STREET,Local,Y,Queens,\"MULTILINESTRING ((-73.82233584246362 40.72767561882118, -73.82219608373622 40.72736432168813))\",-73.82233584246362,40.72767561882118\r\nMERRICK BOULEVARD,Local,Y,Queens,\"MULTILINESTRING ((-73.73696041632294 40.67487776428976, -73.73611019634733 40.67446944823034))\",-73.73696041632294,40.67487776428976\r\nLONG ISLAND EXPRESSWAY,Through,Y,Queens,\"MULTILINESTRING ((-73.84576598338258 40.73976450544174, -73.84559085259876 40.739853349086346))\",-73.84576598338258,40.73976450544174\r\nKISSENA BOULEVARD,Local,Y,Queens,\"MULTILINESTRING ((-73.81513996238978 40.73914891840532, -73.81511110423234 40.73899711824061))\",-73.81513996238978,40.73914891840532\r\n21 STREET,Through,Y,Queens,\"MULTILINESTRING ((-73.93429712615416 40.76249503375018, -73.93437179209327 40.76241688459443))\",-73.93429712615416,40.76249503375018\r\nLONG ISLAND EXPRESSWAY,Through,Y,Queens,\"MULTILINESTRING ((-73.85063517962782 40.73764767879479, -73.84991304411494 40.73789991619105))\",-73.85063517962782,40.73764767879479\r\nBROOKLYN QUEENS EXPRESSWAY,Through,Y,Queens,\"MULTILINESTRING ((-73.90320159903823 40.73844561541207, -73.90331056158054 40.73840406655609, -73.90341986773622 40.738363045582794,...\",-73.90320159903823,40.73844561541207\r\nVICTORY BOULEVARD,Local,Y,Staten Island,\"MULTILINESTRING ((-74.11944907462737 40.613319730543516, -74.12044460682806 40.61324167997069))\",-74.11944907462737,40.61331973054352\r\nARDEN AVENUE,Local,Y,Staten Island,\"MULTILINESTRING ((-74.17020316379241 40.54156013335546, -74.16978514191103 40.541378161044726))\",-74.17020316379241,40.54156013335546\r\nSTATEN ISLAND EXPRESSWAY,Through,Y,Staten Island,\"MULTILINESTRING ((-74.08788162492152 40.608138319438424, -74.08814897661772 40.60825598673531, -74.08842393708169 40.60837598621191,...\",-74.08788162492152,40.60813831943842\r\n"
+}
