@@ -83,10 +83,10 @@ python merge_geocoded_and_311.py \
 
 This script downloads and merges railroad line geometries with nearby or intersecting rail crossing points
 ```bash
-python rail_routes_and_crossings.py \
-  --railroads data/rail_routes_and_crossings/railroad_lines.csv \
-  --crossings data/rail_routes_and_crossings/rail_crossings_nyc.csv \
-  --output data/rail_routes_and_crossings/rail_routes_and_crossings_combined.csv
+python code/processors/rail_routes_and_crossings.py \
+  --railroads ../downloaders/data/rail_routes_and_crossings/railroad_lines.csv \
+  --crossings ../downloaders/data/rail_routes_and_crossings/rail_crossings_nyc.csv \
+  --output ../processors/processed_data/rail_routes_and_crossings_combined.csv
 ```
 
 
