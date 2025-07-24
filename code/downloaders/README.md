@@ -169,7 +169,7 @@ python sidewalk_surface_condition.py \
 ```
 
 **Curb Infrastructure (Sidewalks, crosswalks, driveways, curb ramps, medians, refuges, curb extensions):**
-The `curb_infrastructure.py ` script downloads accessible pedestrian signals, traffic signals, and street sign work orders data:
+The `curb_infrastructure.py ` script downloads sidewalks, pedestrian ramps, raised crosswalks and medians:
 
 ```bash
 python curb_infrastructure.py   # basic usage
