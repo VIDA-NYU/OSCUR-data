@@ -64,6 +64,8 @@ code/downloaders/
     ├── sidewalks_downloader.py         # Download NYC Planimetric Sidewalk dataset (GeoJSON)
     ├── signposts_downloader.py         # Download NYC DOT Street Sign Work Orders dataset (CSV)
     ├── utility_poles_downloader.py     # Download DoITT Telecom Franchise Poles dataset (CSV)
+├── bicycle_facilites/
+    ├── bike_routes_downloader.py     # Download NYC DOT bicycle facilities dataset (CSV)
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -92,6 +94,7 @@ python raised_crosswalks.py -o data/raised_crosswalks.csv
 python NYC_vehicle_collisions.py -o data/NYC_vehicle_collisions.csv
 python nyc_311.py -o data/nyc_311.csv
 python designed_goods_movement_routes/truck_routes.py --output data/designed_goods_movement_routes/truck_routes.csv
+python bike_routes_downloader.py -o data/bike_routes.csv
 ```
 With API token and custom timeout:
 ```bash

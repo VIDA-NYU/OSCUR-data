@@ -114,6 +114,9 @@ python code/processors/fixed_obstructions.py \
   --output ../processors/processed_data/fixed_obstructions/sidewalks_with_obstructions.csv
 ```
 
+#### Bicycle Facilities
+No postprocessing script is needed, as the original datasets are being preserved without any merging.
+
 ### Other Datasets
 To be added as needed.
 
