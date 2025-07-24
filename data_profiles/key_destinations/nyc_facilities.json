@@ -1,0 +1,2118 @@
+{
+  "nb_rows": 34893,
+  "nb_profiled_rows": 34893,
+  "nb_columns": 38,
+  "columns": [
+    {
+      "name": "uid",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "num_distinct_values": 34893
+    },
+    {
+      "name": "facname",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "missing_values_ratio": 0.00025793139025019347,
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "inc",
+            "count": 7077
+          },
+          {
+            "bin": "center",
+            "count": 3452
+          },
+          {
+            "bin": "s",
+            "count": 3133
+          },
+          {
+            "bin": "school",
+            "count": 2967
+          },
+          {
+            "bin": "of",
+            "count": 2898
+          }
+        ]
+      }
+    },
+    {
+      "name": "addressnum",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "missing_values_ratio": 0.24231221161837618,
+      "num_distinct_values": 5129
+    },
+    {
+      "name": "streetname",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "missing_values_ratio": 0.23279740922248016,
+      "num_distinct_values": 2853
+    },
+    {
+      "name": "address",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "missing_values_ratio": 0.0992462671596022,
+      "num_distinct_values": 17746
+    },
+    {
+      "name": "city",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.006219012409365775,
+      "num_distinct_values": 47,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "BRONX",
+            "count": 5743
+          },
+          {
+            "bin": "BROOKLYN",
+            "count": 10181
+          },
+          {
+            "bin": "JAMAICA",
+            "count": 1036
+          },
+          {
+            "bin": "NEW YORK",
+            "count": 10197
+          },
+          {
+            "bin": "STATEN ISLAND",
+            "count": 1855
+          }
+        ]
+      }
+    },
+    {
+      "name": "boro",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.0046714240678646145,
+      "num_distinct_values": 5,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "BRONX",
+            "count": 5743
+          },
+          {
+            "bin": "BROOKLYN",
+            "count": 10179
+          },
+          {
+            "bin": "MANHATTAN",
+            "count": 10197
+          },
+          {
+            "bin": "QUEENS",
+            "count": 6756
+          },
+          {
+            "bin": "STATEN ISLAND",
+            "count": 1855
+          }
+        ]
+      }
+    },
+    {
+      "name": "borocode",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 6,
+      "mean": 2.536869859284097,
+      "stddev": 1.2519416259138063,
+      "coverage": [
+        {
+          "range": {
+            "gte": 1.0,
+            "lte": 2.0
+          }
+        },
+        {
+          "range": {
+            "gte": 3.0,
+            "lte": 3.0
+          }
+        },
+        {
+          "range": {
+            "gte": 4.0,
+            "lte": 5.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 163,
+            "bin_start": 0.0,
+            "bin_end": 0.5
+          },
+          {
+            "count": 0,
+            "bin_start": 0.5,
+            "bin_end": 1.0
+          },
+          {
+            "count": 10197,
+            "bin_start": 1.0,
+            "bin_end": 1.5
+          },
+          {
+            "count": 0,
+            "bin_start": 1.5,
+            "bin_end": 2.0
+          },
+          {
+            "count": 5743,
+            "bin_start": 2.0,
+            "bin_end": 2.5
+          },
+          {
+            "count": 0,
+            "bin_start": 2.5,
+            "bin_end": 3.0
+          },
+          {
+            "count": 10179,
+            "bin_start": 3.0,
+            "bin_end": 3.5
+          },
+          {
+            "count": 0,
+            "bin_start": 3.5,
+            "bin_end": 4.0
+          },
+          {
+            "count": 6756,
+            "bin_start": 4.0,
+            "bin_end": 4.5
+          },
+          {
+            "count": 1855,
+            "bin_start": 4.5,
+            "bin_end": 5.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "zipcode",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.010919095520591523,
+      "num_distinct_values": 255,
+      "mean": 10732.479166666666,
+      "stddev": 783.0224153192047,
+      "coverage": [
+        {
+          "range": {
+            "gte": 10002.0,
+            "lte": 10469.0
+          }
+        },
+        {
+          "range": {
+            "gte": 11105.0,
+            "lte": 11434.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 8,
+            "bin_start": 83.0,
+            "bin_end": 4895.0
+          },
+          {
+            "count": 1,
+            "bin_start": 4895.0,
+            "bin_end": 9707.0
+          },
+          {
+            "count": 34492,
+            "bin_start": 9707.0,
+            "bin_end": 14519.0
+          },
+          {
+            "count": 1,
+            "bin_start": 14519.0,
+            "bin_end": 19331.0
+          },
+          {
+            "count": 0,
+            "bin_start": 19331.0,
+            "bin_end": 24143.0
+          },
+          {
+            "count": 0,
+            "bin_start": 24143.0,
+            "bin_end": 28955.0
+          },
+          {
+            "count": 0,
+            "bin_start": 28955.0,
+            "bin_end": 33767.0
+          },
+          {
+            "count": 0,
+            "bin_start": 33767.0,
+            "bin_end": 38579.0
+          },
+          {
+            "count": 9,
+            "bin_start": 38579.0,
+            "bin_end": 43391.0
+          },
+          {
+            "count": 1,
+            "bin_start": 43391.0,
+            "bin_end": 48203.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "latitude",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [
+        "http://schema.org/latitude"
+      ],
+      "unclean_values_ratio": 0.0,
+      "mean": 39.84402293831109,
+      "stddev": 5.941946946019505,
+      "coverage": [
+        {
+          "range": {
+            "gte": 40.5824984875,
+            "lte": 40.726823
+          }
+        },
+        {
+          "range": {
+            "gte": 40.7399462285,
+            "lte": 40.8765648252
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 759,
+            "bin_start": 0.0,
+            "bin_end": 4.09139640967
+          },
+          {
+            "count": 0,
+            "bin_start": 4.09139640967,
+            "bin_end": 8.18279281934
+          },
+          {
+            "count": 0,
+            "bin_start": 8.18279281934,
+            "bin_end": 12.274189229009998
+          },
+          {
+            "count": 0,
+            "bin_start": 12.274189229009998,
+            "bin_end": 16.36558563868
+          },
+          {
+            "count": 0,
+            "bin_start": 16.36558563868,
+            "bin_end": 20.45698204835
+          },
+          {
+            "count": 0,
+            "bin_start": 20.45698204835,
+            "bin_end": 24.548378458019997
+          },
+          {
+            "count": 0,
+            "bin_start": 24.548378458019997,
+            "bin_end": 28.639774867689997
+          },
+          {
+            "count": 0,
+            "bin_start": 28.639774867689997,
+            "bin_end": 32.73117127736
+          },
+          {
+            "count": 0,
+            "bin_start": 32.73117127736,
+            "bin_end": 36.822567687029995
+          },
+          {
+            "count": 34134,
+            "bin_start": 36.822567687029995,
+            "bin_end": 40.9139640967
+          }
+        ]
+      }
+    },
+    {
+      "name": "longitude",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [
+        "http://schema.org/longitude"
+      ],
+      "unclean_values_ratio": 0.0,
+      "mean": -72.32666972474988,
+      "stddev": 10.785431040833062,
+      "coverage": [
+        {
+          "range": {
+            "gte": -74.1074676292,
+            "lte": -73.922512285
+          }
+        },
+        {
+          "range": {
+            "gte": -73.9137470888,
+            "lte": -73.7523101234
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 34134,
+            "bin_start": -74.2542055254,
+            "bin_end": -66.82878497285999
+          },
+          {
+            "count": 0,
+            "bin_start": -66.82878497285999,
+            "bin_end": -59.403364420319996
+          },
+          {
+            "count": 0,
+            "bin_start": -59.403364420319996,
+            "bin_end": -51.97794386778
+          },
+          {
+            "count": 0,
+            "bin_start": -51.97794386778,
+            "bin_end": -44.552523315239995
+          },
+          {
+            "count": 0,
+            "bin_start": -44.552523315239995,
+            "bin_end": -37.1271027627
+          },
+          {
+            "count": 0,
+            "bin_start": -37.1271027627,
+            "bin_end": -29.70168221016
+          },
+          {
+            "count": 0,
+            "bin_start": -29.70168221016,
+            "bin_end": -22.276261657619997
+          },
+          {
+            "count": 0,
+            "bin_start": -22.276261657619997,
+            "bin_end": -14.85084110508
+          },
+          {
+            "count": 0,
+            "bin_start": -14.85084110508,
+            "bin_end": -7.425420552540004
+          },
+          {
+            "count": 759,
+            "bin_start": -7.425420552540004,
+            "bin_end": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "xcoord",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "mean": 980477.0361023083,
+      "stddev": 147850.52794819488,
+      "coverage": [
+        {
+          "range": {
+            "gte": 952646.150173,
+            "lte": 1003767.97063
+          }
+        },
+        {
+          "range": {
+            "gte": 1006580.00525,
+            "lte": 1052761.97574
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 759,
+            "bin_start": 0.0,
+            "bin_end": 106527.641118
+          },
+          {
+            "count": 0,
+            "bin_start": 106527.641118,
+            "bin_end": 213055.282236
+          },
+          {
+            "count": 0,
+            "bin_start": 213055.282236,
+            "bin_end": 319582.92335399997
+          },
+          {
+            "count": 0,
+            "bin_start": 319582.92335399997,
+            "bin_end": 426110.564472
+          },
+          {
+            "count": 0,
+            "bin_start": 426110.564472,
+            "bin_end": 532638.20559
+          },
+          {
+            "count": 0,
+            "bin_start": 532638.20559,
+            "bin_end": 639165.8467079999
+          },
+          {
+            "count": 0,
+            "bin_start": 639165.8467079999,
+            "bin_end": 745693.487826
+          },
+          {
+            "count": 0,
+            "bin_start": 745693.487826,
+            "bin_end": 852221.128944
+          },
+          {
+            "count": 1255,
+            "bin_start": 852221.128944,
+            "bin_end": 958748.770062
+          },
+          {
+            "count": 32879,
+            "bin_start": 958748.770062,
+            "bin_end": 1065276.41118
+          }
+        ]
+      }
+    },
+    {
+      "name": "ycoord",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "mean": 200784.17373326985,
+      "stddev": 41505.64249902567,
+      "coverage": [
+        {
+          "range": {
+            "gte": 151493.192496,
+            "lte": 203785.151481
+          }
+        },
+        {
+          "range": {
+            "gte": 208604.54527,
+            "lte": 258636.415469
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 759,
+            "bin_start": 0.0,
+            "bin_end": 27227.3062431
+          },
+          {
+            "count": 0,
+            "bin_start": 27227.3062431,
+            "bin_end": 54454.6124862
+          },
+          {
+            "count": 0,
+            "bin_start": 54454.6124862,
+            "bin_end": 81681.9187293
+          },
+          {
+            "count": 0,
+            "bin_start": 81681.9187293,
+            "bin_end": 108909.2249724
+          },
+          {
+            "count": 176,
+            "bin_start": 108909.2249724,
+            "bin_end": 136136.5312155
+          },
+          {
+            "count": 2579,
+            "bin_start": 136136.5312155,
+            "bin_end": 163363.8374586
+          },
+          {
+            "count": 8147,
+            "bin_start": 163363.8374586,
+            "bin_end": 190591.1437017
+          },
+          {
+            "count": 12124,
+            "bin_start": 190591.1437017,
+            "bin_end": 217818.4499448
+          },
+          {
+            "count": 7527,
+            "bin_start": 217818.4499448,
+            "bin_end": 245045.7561879
+          },
+          {
+            "count": 3581,
+            "bin_start": 245045.7561879,
+            "bin_end": 272273.062431
+          }
+        ]
+      }
+    },
+    {
+      "name": "bin",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 13868,
+      "mean": 2195259.3359699654,
+      "stddev": 1548674.172032241,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1003216.0,
+            "lte": 2114451.0
+          }
+        },
+        {
+          "range": {
+            "gte": 3021057.0,
+            "lte": 5048682.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 6004,
+            "bin_start": 0.0,
+            "bin_end": 579950.1
+          },
+          {
+            "count": 8639,
+            "bin_start": 579950.1,
+            "bin_end": 1159900.2
+          },
+          {
+            "count": 0,
+            "bin_start": 1159900.2,
+            "bin_end": 1739850.2999999998
+          },
+          {
+            "count": 4744,
+            "bin_start": 1739850.2999999998,
+            "bin_end": 2319800.4
+          },
+          {
+            "count": 0,
+            "bin_start": 2319800.4,
+            "bin_end": 2899750.5
+          },
+          {
+            "count": 8641,
+            "bin_start": 2899750.5,
+            "bin_end": 3479700.5999999996
+          },
+          {
+            "count": 1023,
+            "bin_start": 3479700.5999999996,
+            "bin_end": 4059650.6999999997
+          },
+          {
+            "count": 4515,
+            "bin_start": 4059650.6999999997,
+            "bin_end": 4639600.8
+          },
+          {
+            "count": 1325,
+            "bin_start": 4639600.8,
+            "bin_end": 5219550.899999999
+          },
+          {
+            "count": 2,
+            "bin_start": 5219550.899999999,
+            "bin_end": 5799501.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "bbl",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 15990,
+      "mean": 2426875582.293956,
+      "stddev": 1369289748.8327744,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 1021240043.0
+          }
+        },
+        {
+          "range": {
+            "gte": 2024430094.0,
+            "lte": 3075640047.0
+          }
+        },
+        {
+          "range": {
+            "gte": 4004100001.0,
+            "lte": 5036600038.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 2215,
+            "bin_start": 0.0,
+            "bin_end": 527000050.1
+          },
+          {
+            "count": 9443,
+            "bin_start": 527000050.1,
+            "bin_end": 1054000100.2
+          },
+          {
+            "count": 3,
+            "bin_start": 1054000100.2,
+            "bin_end": 1581000150.3000002
+          },
+          {
+            "count": 5455,
+            "bin_start": 1581000150.3000002,
+            "bin_end": 2108000200.4
+          },
+          {
+            "count": 2,
+            "bin_start": 2108000200.4,
+            "bin_end": 2635000250.5
+          },
+          {
+            "count": 9664,
+            "bin_start": 2635000250.5,
+            "bin_end": 3162000300.6000004
+          },
+          {
+            "count": 0,
+            "bin_start": 3162000300.6000004,
+            "bin_end": 3689000350.7000003
+          },
+          {
+            "count": 6333,
+            "bin_start": 3689000350.7000003,
+            "bin_end": 4216000400.8
+          },
+          {
+            "count": 1,
+            "bin_start": 4216000400.8,
+            "bin_end": 4743000450.900001
+          },
+          {
+            "count": 1777,
+            "bin_start": 4743000450.900001,
+            "bin_end": 5270000501.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "cd",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 72,
+      "mean": 255.92972802567851,
+      "stddev": 129.66366546572988,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 112.0
+          }
+        },
+        {
+          "range": {
+            "gte": 201.0,
+            "lte": 212.0
+          }
+        },
+        {
+          "range": {
+            "gte": 302.0,
+            "lte": 501.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 898,
+            "bin_start": 0.0,
+            "bin_end": 59.5
+          },
+          {
+            "count": 9832,
+            "bin_start": 59.5,
+            "bin_end": 119.0
+          },
+          {
+            "count": 15,
+            "bin_start": 119.0,
+            "bin_end": 178.5
+          },
+          {
+            "count": 5686,
+            "bin_start": 178.5,
+            "bin_end": 238.0
+          },
+          {
+            "count": 0,
+            "bin_start": 238.0,
+            "bin_end": 297.5
+          },
+          {
+            "count": 9993,
+            "bin_start": 297.5,
+            "bin_end": 357.0
+          },
+          {
+            "count": 6593,
+            "bin_start": 357.0,
+            "bin_end": 416.5
+          },
+          {
+            "count": 0,
+            "bin_start": 416.5,
+            "bin_end": 476.0
+          },
+          {
+            "count": 1869,
+            "bin_start": 476.0,
+            "bin_end": 535.5
+          },
+          {
+            "count": 7,
+            "bin_start": 535.5,
+            "bin_end": 595.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "council",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 52,
+      "mean": 22.468489381824433,
+      "stddev": 15.80673351662215,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 12.0
+          }
+        },
+        {
+          "range": {
+            "gte": 14.0,
+            "lte": 31.0
+          }
+        },
+        {
+          "range": {
+            "gte": 33.0,
+            "lte": 50.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 6938,
+            "bin_start": 0.0,
+            "bin_end": 5.1
+          },
+          {
+            "count": 4366,
+            "bin_start": 5.1,
+            "bin_end": 10.2
+          },
+          {
+            "count": 2866,
+            "bin_start": 10.2,
+            "bin_end": 15.299999999999999
+          },
+          {
+            "count": 3127,
+            "bin_start": 15.299999999999999,
+            "bin_end": 20.4
+          },
+          {
+            "count": 1984,
+            "bin_start": 20.4,
+            "bin_end": 25.5
+          },
+          {
+            "count": 2763,
+            "bin_start": 25.5,
+            "bin_end": 30.599999999999998
+          },
+          {
+            "count": 3586,
+            "bin_start": 30.599999999999998,
+            "bin_end": 35.699999999999996
+          },
+          {
+            "count": 3289,
+            "bin_start": 35.699999999999996,
+            "bin_end": 40.8
+          },
+          {
+            "count": 2702,
+            "bin_start": 40.8,
+            "bin_end": 45.9
+          },
+          {
+            "count": 3272,
+            "bin_start": 45.9,
+            "bin_end": 51.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "ct2010",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.02573582093829708,
+      "num_distinct_values": 1297,
+      "mean": 32558.119488160024,
+      "stddev": 32184.26069678928,
+      "coverage": [
+        {
+          "range": {
+            "gte": 900.0,
+            "lte": 26100.0
+          }
+        },
+        {
+          "range": {
+            "gte": 29300.0,
+            "lte": 65703.0
+          }
+        },
+        {
+          "range": {
+            "gte": 76200.0,
+            "lte": 147900.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 13041,
+            "bin_start": 100.0,
+            "bin_end": 16300.0
+          },
+          {
+            "count": 9365,
+            "bin_start": 16300.0,
+            "bin_end": 32500.0
+          },
+          {
+            "count": 4413,
+            "bin_start": 32500.0,
+            "bin_end": 48700.0
+          },
+          {
+            "count": 2167,
+            "bin_start": 48700.0,
+            "bin_end": 64900.0
+          },
+          {
+            "count": 1292,
+            "bin_start": 64900.0,
+            "bin_end": 81100.0
+          },
+          {
+            "count": 1561,
+            "bin_start": 81100.0,
+            "bin_end": 97300.0
+          },
+          {
+            "count": 888,
+            "bin_start": 97300.0,
+            "bin_end": 113500.0
+          },
+          {
+            "count": 841,
+            "bin_start": 113500.0,
+            "bin_end": 129700.0
+          },
+          {
+            "count": 163,
+            "bin_start": 129700.0,
+            "bin_end": 145900.0
+          },
+          {
+            "count": 264,
+            "bin_start": 145900.0,
+            "bin_end": 162100.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "ct2020",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.02573582093829708,
+      "num_distinct_values": 1480,
+      "mean": 32543.727812913665,
+      "stddev": 32179.068071268284,
+      "coverage": [
+        {
+          "range": {
+            "gte": 900.0,
+            "lte": 26100.0
+          }
+        },
+        {
+          "range": {
+            "gte": 29300.0,
+            "lte": 65702.0
+          }
+        },
+        {
+          "range": {
+            "gte": 76000.0,
+            "lte": 147900.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 13043,
+            "bin_start": 100.0,
+            "bin_end": 16300.0
+          },
+          {
+            "count": 9377,
+            "bin_start": 16300.0,
+            "bin_end": 32500.0
+          },
+          {
+            "count": 4410,
+            "bin_start": 32500.0,
+            "bin_end": 48700.0
+          },
+          {
+            "count": 2157,
+            "bin_start": 48700.0,
+            "bin_end": 64900.0
+          },
+          {
+            "count": 1292,
+            "bin_start": 64900.0,
+            "bin_end": 81100.0
+          },
+          {
+            "count": 1561,
+            "bin_start": 81100.0,
+            "bin_end": 97300.0
+          },
+          {
+            "count": 888,
+            "bin_start": 97300.0,
+            "bin_end": 113500.0
+          },
+          {
+            "count": 841,
+            "bin_start": 113500.0,
+            "bin_end": 129700.0
+          },
+          {
+            "count": 162,
+            "bin_start": 129700.0,
+            "bin_end": 145900.0
+          },
+          {
+            "count": 264,
+            "bin_start": 145900.0,
+            "bin_end": 162100.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "nta2010",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.02573582093829708,
+      "num_distinct_values": 194,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "BK38",
+            "count": 556
+          },
+          {
+            "bin": "BK61",
+            "count": 505
+          },
+          {
+            "bin": "MN13",
+            "count": 652
+          },
+          {
+            "bin": "MN17",
+            "count": 796
+          },
+          {
+            "bin": "MN25",
+            "count": 616
+          }
+        ]
+      }
+    },
+    {
+      "name": "nta2020",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.02573582093829708,
+      "num_distinct_values": 253,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "BK0202",
+            "count": 518
+          },
+          {
+            "bin": "MN0101",
+            "count": 617
+          },
+          {
+            "bin": "MN0401",
+            "count": 462
+          },
+          {
+            "bin": "MN0502",
+            "count": 588
+          },
+          {
+            "bin": "MN1102",
+            "count": 471
+          }
+        ]
+      }
+    },
+    {
+      "name": "facgroup",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 25,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "DAY CARE AND PRE-KINDERGARTEN",
+            "count": 4334
+          },
+          {
+            "bin": "HEALTH CARE",
+            "count": 3311
+          },
+          {
+            "bin": "SCHOOLS (K-12)",
+            "count": 3298
+          },
+          {
+            "bin": "TRANSPORTATION",
+            "count": 3433
+          },
+          {
+            "bin": "YOUTH SERVICES",
+            "count": 5267
+          }
+        ]
+      }
+    },
+    {
+      "name": "facsubgrp",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 70,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "CHILD NUTRITION",
+            "count": 2062
+          },
+          {
+            "bin": "DAY CARE",
+            "count": 2213
+          },
+          {
+            "bin": "OTHER CULTURAL INSTITUTIONS",
+            "count": 2207
+          },
+          {
+            "bin": "PARKING LOTS AND GARAGES",
+            "count": 2611
+          },
+          {
+            "bin": "YOUTH CENTERS, LITERACY PROGRAMS, AND JOB TRAINING SERVICES",
+            "count": 3983
+          }
+        ]
+      }
+    },
+    {
+      "name": "factype",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.0016908835583068237,
+      "num_distinct_values": 608,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "CITY COUNCIL AWARDS",
+            "count": 1246
+          },
+          {
+            "bin": "COMMERCIAL GARAGE & PARKING LOT",
+            "count": 2180
+          },
+          {
+            "bin": "DAY CARE",
+            "count": 1763
+          },
+          {
+            "bin": "EARLY EDUCATION PROGRAM",
+            "count": 1256
+          },
+          {
+            "bin": "SUMMER ONLY FEEDING SITE",
+            "count": 1808
+          }
+        ]
+      }
+    },
+    {
+      "name": "capacity",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 891,
+      "mean": 30.370303499269195,
+      "stddev": 158.49276284397286,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 33873,
+            "bin_start": 0.0,
+            "bin_end": 468.6
+          },
+          {
+            "count": 829,
+            "bin_start": 468.6,
+            "bin_end": 937.2
+          },
+          {
+            "count": 115,
+            "bin_start": 937.2,
+            "bin_end": 1405.8000000000002
+          },
+          {
+            "count": 41,
+            "bin_start": 1405.8000000000002,
+            "bin_end": 1874.4
+          },
+          {
+            "count": 16,
+            "bin_start": 1874.4,
+            "bin_end": 2343.0
+          },
+          {
+            "count": 12,
+            "bin_start": 2343.0,
+            "bin_end": 2811.6000000000004
+          },
+          {
+            "count": 3,
+            "bin_start": 2811.6000000000004,
+            "bin_end": 3280.2000000000003
+          },
+          {
+            "count": 3,
+            "bin_start": 3280.2000000000003,
+            "bin_end": 3748.8
+          },
+          {
+            "count": 0,
+            "bin_start": 3748.8,
+            "bin_end": 4217.400000000001
+          },
+          {
+            "count": 1,
+            "bin_start": 4217.400000000001,
+            "bin_end": 4686.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "captype",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.9384976929470095,
+      "num_distinct_values": 3,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "beds",
+            "count": 166
+          },
+          {
+            "bin": "routes",
+            "count": 97
+          },
+          {
+            "bin": "seats",
+            "count": 1883
+          }
+        ]
+      }
+    },
+    {
+      "name": "optype",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.2781360158197919,
+      "num_distinct_values": 2,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Non-public",
+            "count": 17086
+          },
+          {
+            "bin": "Public",
+            "count": 8102
+          }
+        ]
+      }
+    },
+    {
+      "name": "opname",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "missing_values_ratio": 0.03169690195741266,
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "inc",
+            "count": 10157
+          },
+          {
+            "bin": "of",
+            "count": 9818
+          },
+          {
+            "bin": "nyc",
+            "count": 7650
+          },
+          {
+            "bin": "department",
+            "count": 6957
+          },
+          {
+            "bin": "and",
+            "count": 3315
+          }
+        ]
+      }
+    },
+    {
+      "name": "opabbrev",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.2775628349525693,
+      "num_distinct_values": 158,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "MTA",
+            "count": 435
+          },
+          {
+            "bin": "NYCDOE",
+            "count": 2741
+          },
+          {
+            "bin": "NYCDOT",
+            "count": 373
+          },
+          {
+            "bin": "NYCDPR",
+            "count": 2055
+          },
+          {
+            "bin": "Non-public",
+            "count": 16964
+          }
+        ]
+      }
+    },
+    {
+      "name": "overlevel",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.01988937609262603,
+      "num_distinct_values": 4,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "City",
+            "count": 29345
+          },
+          {
+            "bin": "County",
+            "count": 3
+          },
+          {
+            "bin": "Federal",
+            "count": 41
+          },
+          {
+            "bin": "State",
+            "count": 4810
+          }
+        ]
+      }
+    },
+    {
+      "name": "overagency",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "missing_values_ratio": 0.00020061330352792823,
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "of",
+            "count": 31691
+          },
+          {
+            "bin": "department",
+            "count": 29911
+          },
+          {
+            "bin": "nyc",
+            "count": 29124
+          },
+          {
+            "bin": "and",
+            "count": 12199
+          },
+          {
+            "bin": "education",
+            "count": 8322
+          }
+        ]
+      }
+    },
+    {
+      "name": "overabbrev",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 160,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "NYCDCA",
+            "count": 2620
+          },
+          {
+            "bin": "NYCDCLA",
+            "count": 2311
+          },
+          {
+            "bin": "NYCDOE",
+            "count": 8322
+          },
+          {
+            "bin": "NYCDOHMH",
+            "count": 3163
+          },
+          {
+            "bin": "NYCDYCD",
+            "count": 5550
+          }
+        ]
+      }
+    },
+    {
+      "name": "datasource",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 55,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "dca_operatingbusinesses",
+            "count": 2615
+          },
+          {
+            "bin": "dohmh_daycare",
+            "count": 2526
+          },
+          {
+            "bin": "dycd_service_sites",
+            "count": 2607
+          },
+          {
+            "bin": "moeo_socialservicesitelocations",
+            "count": 4179
+          },
+          {
+            "bin": "nysed_activeinstitutions",
+            "count": 4276
+          }
+        ]
+      }
+    },
+    {
+      "name": "facdomain",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "and",
+            "count": 33930
+          },
+          {
+            "bin": "education",
+            "count": 16017
+          },
+          {
+            "bin": "child",
+            "count": 16017
+          },
+          {
+            "bin": "welfare",
+            "count": 16017
+          },
+          {
+            "bin": "youth",
+            "count": 16017
+          }
+        ]
+      }
+    },
+    {
+      "name": "schooldist",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.025793139025019344,
+      "num_distinct_values": 32,
+      "mean": 14.687317977230606,
+      "stddev": 10.048155026313204,
+      "coverage": [
+        {
+          "range": {
+            "gte": 1.0,
+            "lte": 9.0
+          }
+        },
+        {
+          "range": {
+            "gte": 10.0,
+            "lte": 21.0
+          }
+        },
+        {
+          "range": {
+            "gte": 22.0,
+            "lte": 31.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 8021,
+            "bin_start": 1.0,
+            "bin_end": 4.1
+          },
+          {
+            "count": 2774,
+            "bin_start": 4.1,
+            "bin_end": 7.2
+          },
+          {
+            "count": 3113,
+            "bin_start": 7.2,
+            "bin_end": 10.3
+          },
+          {
+            "count": 2885,
+            "bin_start": 10.3,
+            "bin_end": 13.4
+          },
+          {
+            "count": 2834,
+            "bin_start": 13.4,
+            "bin_end": 16.5
+          },
+          {
+            "count": 2217,
+            "bin_start": 16.5,
+            "bin_end": 19.6
+          },
+          {
+            "count": 2823,
+            "bin_start": 19.6,
+            "bin_end": 22.7
+          },
+          {
+            "count": 2304,
+            "bin_start": 22.7,
+            "bin_end": 25.8
+          },
+          {
+            "count": 2752,
+            "bin_start": 25.8,
+            "bin_end": 28.900000000000002
+          },
+          {
+            "count": 4270,
+            "bin_start": 28.900000000000002,
+            "bin_end": 32.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "policeprct",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 79,
+      "mean": 60.58533230160777,
+      "stddev": 37.53107184260337,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 33.0
+          }
+        },
+        {
+          "range": {
+            "gte": 40.0,
+            "lte": 83.0
+          }
+        },
+        {
+          "range": {
+            "gte": 90.0,
+            "lte": 122.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 3918,
+            "bin_start": 0.0,
+            "bin_end": 12.3
+          },
+          {
+            "count": 4419,
+            "bin_start": 12.3,
+            "bin_end": 24.6
+          },
+          {
+            "count": 2353,
+            "bin_start": 24.6,
+            "bin_end": 36.900000000000006
+          },
+          {
+            "count": 4900,
+            "bin_start": 36.900000000000006,
+            "bin_end": 49.2
+          },
+          {
+            "count": 1661,
+            "bin_start": 49.2,
+            "bin_end": 61.5
+          },
+          {
+            "count": 4082,
+            "bin_start": 61.5,
+            "bin_end": 73.80000000000001
+          },
+          {
+            "count": 3765,
+            "bin_start": 73.80000000000001,
+            "bin_end": 86.10000000000001
+          },
+          {
+            "count": 1270,
+            "bin_start": 86.10000000000001,
+            "bin_end": 98.4
+          },
+          {
+            "count": 4388,
+            "bin_start": 98.4,
+            "bin_end": 110.7
+          },
+          {
+            "count": 4137,
+            "bin_start": 110.7,
+            "bin_end": 123.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "servarea",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 2,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Local",
+            "count": 25358
+          },
+          {
+            "bin": "Regional",
+            "count": 9535
+          }
+        ]
+      }
+    },
+    {
+      "name": "geometry",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "missing_values_ratio": 0.021752213911099647,
+      "num_distinct_values": 19850
+    }
+  ],
+  "nb_spatial_columns": 2,
+  "nb_categorical_columns": 14,
+  "nb_numerical_columns": 13,
+  "types": [
+    "categorical",
+    "numerical",
+    "spatial"
+  ],
+  "spatial_coverage": [
+    {
+      "type": "latlong",
+      "column_names": [
+        "latitude",
+        "longitude"
+      ],
+      "column_indexes": [
+        9,
+        10
+      ],
+      "geohashes4": [
+        {
+          "hash": "121130320221",
+          "number": 1265
+        },
+        {
+          "hash": "121130320223",
+          "number": 2398
+        },
+        {
+          "hash": "121130320220",
+          "number": 3150
+        },
+        {
+          "hash": "121130320222",
+          "number": 1061
+        },
+        {
+          "hash": "121130320232",
+          "number": 1132
+        },
+        {
+          "hash": "121130320230",
+          "number": 38
+        },
+        {
+          "hash": "121130320233",
+          "number": 2
+        },
+        {
+          "hash": "121130322001",
+          "number": 105
+        },
+        {
+          "hash": "121130322000",
+          "number": 117
+        },
+        {
+          "hash": "121130322010",
+          "number": 42
+        },
+        {
+          "hash": "121130231320",
+          "number": 1801
+        },
+        {
+          "hash": "121130231323",
+          "number": 1531
+        },
+        {
+          "hash": "121130231321",
+          "number": 3181
+        },
+        {
+          "hash": "121130231322",
+          "number": 292
+        },
+        {
+          "hash": "121130231331",
+          "number": 4408
+        },
+        {
+          "hash": "121130231330",
+          "number": 3483
+        },
+        {
+          "hash": "121130231332",
+          "number": 1079
+        },
+        {
+          "hash": "121130231333",
+          "number": 1134
+        },
+        {
+          "hash": "121130231302",
+          "number": 988
+        },
+        {
+          "hash": "121130231300",
+          "number": 569
+        },
+        {
+          "hash": "121130231303",
+          "number": 219
+        },
+        {
+          "hash": "121130231313",
+          "number": 98
+        },
+        {
+          "hash": "121130231312",
+          "number": 1006
+        },
+        {
+          "hash": "121130231213",
+          "number": 129
+        },
+        {
+          "hash": "121130231211",
+          "number": 290
+        },
+        {
+          "hash": "121130231210",
+          "number": 104
+        },
+        {
+          "hash": "121130231212",
+          "number": 1
+        },
+        {
+          "hash": "121130231231",
+          "number": 905
+        },
+        {
+          "hash": "121130231233",
+          "number": 74
+        },
+        {
+          "hash": "121130231232",
+          "number": 3
+        },
+        {
+          "hash": "121130231203",
+          "number": 1
+        },
+        {
+          "hash": "121130231201",
+          "number": 1
+        },
+        {
+          "hash": "121130231032",
+          "number": 148
+        },
+        {
+          "hash": "121130231033",
+          "number": 57
+        },
+        {
+          "hash": "121130231023",
+          "number": 59
+        },
+        {
+          "hash": "121130231122",
+          "number": 27
+        },
+        {
+          "hash": "121130233101",
+          "number": 598
+        },
+        {
+          "hash": "121130233100",
+          "number": 61
+        },
+        {
+          "hash": "121130233103",
+          "number": 69
+        },
+        {
+          "hash": "121130233113",
+          "number": 142
+        },
+        {
+          "hash": "121130233110",
+          "number": 1240
+        },
+        {
+          "hash": "121130233111",
+          "number": 598
+        },
+        {
+          "hash": "121130233112",
+          "number": 134
+        },
+        {
+          "hash": "121130233011",
+          "number": 390
+        },
+        {
+          "hash": "121130233013",
+          "number": 4
+        },
+        {
+          "hash": "033333333333",
+          "number": 759
+        }
+      ],
+      "ranges": [
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -74.1210823822,
+                40.7295112365
+              ],
+              [
+                -73.7769645158,
+                40.5829065937
+              ]
+            ]
+          }
+        },
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -73.9918278981,
+                40.8767250271
+              ],
+              [
+                -73.8178818602,
+                40.7429777614
+              ]
+            ]
+          }
+        }
+      ],
+      "number": 34893
+    }
+  ],
+  "attribute_keywords": [
+    "uid",
+    "facname",
+    "addressnum",
+    "streetname",
+    "address",
+    "city",
+    "boro",
+    "borocode",
+    "zipcode",
+    "latitude",
+    "longitude",
+    "xcoord",
+    "ycoord",
+    "bin",
+    "bbl",
+    "cd",
+    "council",
+    "ct2010",
+    "ct",
+    "2010",
+    "ct2020",
+    "ct",
+    "2020",
+    "nta2010",
+    "nta",
+    "2010",
+    "nta2020",
+    "nta",
+    "2020",
+    "facgroup",
+    "facsubgrp",
+    "factype",
+    "capacity",
+    "captype",
+    "optype",
+    "opname",
+    "opabbrev",
+    "overlevel",
+    "overagency",
+    "overabbrev",
+    "datasource",
+    "facdomain",
+    "schooldist",
+    "policeprct",
+    "servarea",
+    "geometry"
+  ],
+  "sample": "uid,facname,addressnum,streetname,address,city,boro,borocode,zipcode,latitude,longitude,xcoord,ycoord,bin,bbl,cd,council,ct2010,ct2020,nta2010,nta2020,facgroup,facsubgrp,factype,capacity,captype,optype,opname,opabbrev,overlevel,overagency,overabbrev,datasource,facdomain,schooldist,policeprct,servarea,geometry\r\n094e37573b234f132444f501e2ba9734,PARK,,,,BRONX,BRONX,2,10463.0,40.8658934972,-73.9082415415,1009629.54485,254759.293525,0,2032370001,207,14,26900.0,26900.0,BX30,BX0701,PARKS AND PLAZAS,UNDEVELOPED,UNDEVELOPED,0,,Public,NYC Department of Parks and Recreation,NYCDPR,City,NYC Department of Parks and Recreation,NYCDPR,dpr_parksproperties,\"PARKS, GARDENS, AND HISTORICAL SITES\",10.0,52,Local,POINT(1009629.5448517799 254759.29352331161)\r\n1bb18e389cf4382a6046606eeb8ac9b3,FANNIE LOU HAMER FREEDOM HIGH SCHOOL (12X682),1021,JENNINGS STREET,1021 JENNINGS STREET,BRONX,BRONX,2,10460.0,40.8310672977,-73.8858488109,1015839.69967,242078.079187,2101786,2030130001,203,17,15700.0,15700.0,BX75,BX0303,YOUTH SERVICES,\"YOUTH CENTERS, LITERACY PROGRAMS, AND JOB TRAINING SERVICES\",EDUCATIONAL SERVICES; JOBS AND INTERNSHIPS,0,,,The Children's Aid Society,,City,NYC Department of Youth and Community Development,NYCDYCD,dycd_service_sites,\"EDUCATION, CHILD WELFARE, AND YOUTH\",12.0,42,Local,POINT(1015839.6996598244 242078.0791873932)\r\n1f7aa1989e7659e7aa196614b97414a2,\"BRIDGING ACCESS TO CARE, INC. OP\",2261,CHURCH AVENUE,2261 CHURCH AVENUE,BROOKLYN,BROOKLYN,3,11226.0,40.650772585,-73.9567806245,996242.752613,176373.340658,3116866,3050897502,314,40,79602.0,79602.0,BK60,BK1401,HEALTH CARE,SUBSTANCE USE DISORDER TREATMENT PROGRAMS,OUTPATIENT CLINIC,0,,,\"Bridging Access to Care, Inc.\",,State,NYS Office of Addiction Services and Supports,NYSOASAS,nysoasas_programs,HEALTH AND HUMAN SERVICES,17.0,70,Regional,POINT(996242.7526140213 176373.34066581726)\r\n24ca90ada1c55e038c7f2ed5c80f95c3,\"PHILOCTETES CENTER, INC.\",247,EAST 82 STREET,247 EAST 82 STREET,NEW YORK,MANHATTAN,1,10028.0,40.7756923125,-73.9539846386,996994.690486,221885.788749,1048655,1015280020,108,5,13800.0,13800.0,MN32,MN0803,CULTURAL INSTITUTIONS,OTHER CULTURAL INSTITUTIONS,\"MULTI-DISCIPL, PERF & NON-PERF\",0,,Non-public,\"Philoctetes Center, Inc.\",Non-public,City,NYC Department of Cultural Affairs,NYCDCLA,dcla_culturalinstitutions,LIBRARIES AND CULTURAL PROGRAMS,2.0,19,Regional,POINT(996994.6904754639 221885.7887635231)\r\n2b1afab9e6cb7d58eb5eb9f355f4490d,VOYAGES PREPARTORY HIGH SCHOOL,45-10,94 STREET,45-10 94 STREET,ELMHURST,QUEENS,4,11373.0,40.7433601391,-73.8714977901,1019858.01206,210128.890442,4437166,4016000061,404,25,46300.0,46300.0,QN29,QN0401,YOUTH SERVICES,\"YOUTH CENTERS, LITERACY PROGRAMS, AND JOB TRAINING SERVICES\",COMMUNITY SERVICES; EDUCATIONAL SERVICES; FAMILY SUPPORT; IMMIGRANT SERVICES; JOBS AND INTERNSHIPS,0,,,\"Queens Community House, Inc.\",,City,NYC Department of Youth and Community Development,NYCDYCD,dycd_service_sites,\"EDUCATION, CHILD WELFARE, AND YOUTH\",24.0,110,Local,POINT(1019858.0120706558 210128.89044475555)\r\n2ce073b513ab430b23ba6927acabccbe,NW ELIZABETH ST & SPRING ST FOOD DROP-OFF SITE,,,,NEW YORK,MANHATTAN,1,10012.0,40.72142262,-73.99473223,985710.182268,202110.29131,0,0,102,1,4300.0,4300.0,MN24,MN0201,SOLID WASTE,DSNY DROP-OFF FACILITY,COMPOST,0,,,Department of Sanitation,,City,NYC Department of Sanitation,NYCDSNY,dsny_fooddrop,CORE INFRASTRUCTURE AND TRANSPORTATION,2.0,5,Regional,POINT(985710.1822609901 202110.2913184166)\r\n2daa5165d9c693f5efaab9dfb13a2659,N+1 FOUNDATION,68,JAY STREET,68 JAY STREET,BROOKLYN,BROOKLYN,3,11201.0,40.7027874554,-73.9871515062,987812.492033,195321.153293,3000090,3000400001,302,33,2100.0,2100.0,BK38,BK0202,CULTURAL INSTITUTIONS,OTHER CULTURAL INSTITUTIONS,LITERATURE,0,,Non-public,n+1 Foundation,Non-public,City,NYC Department of Cultural Affairs,NYCDCLA,dcla_culturalinstitutions,LIBRARIES AND CULTURAL PROGRAMS,13.0,84,Regional,POINT(987812.4920401573 195321.1533050537)\r\n4bf58cd67e9485eea20bf17a444929c2,ICAHN CHARTER SCHOOL 6 - MS,1776,MANSION STREET,1776 MANSION STREET,BRONX,BRONX,2,10460.0,40.8377594065,-73.8684890154,1020640.10953,244522.99585,2028476,2039150023,209,17,21800.0,21800.0,BX08,BX0901,SCHOOLS (K-12),CHARTER K-12 SCHOOLS,CHARTER SCHOOL,0,,Public,NYC Department of Education,NYCDOE,City,NYC Department of Education,NYCDOE,nysed_activeinstitutions,\"EDUCATION, CHILD WELFARE, AND YOUTH\",12.0,43,Local,POINT(1020640.1095252037 244522.99585485458)\r\n52815c7ba217086b9a9ab56ed33f80a0,NEW YORK JUNIOR TENNIS LEAGUE INC,58-12,QUEENS BOULEVARD,58-12 QUEENS BOULEVARD,WOODSIDE,QUEENS,4,11377.0,40.7412008967,-73.9070056318,1010019.61494,209329.770544,4454475,4023137501,402,26,24500.0,24500.0,QN63,QN0203,YOUTH SERVICES,\"YOUTH CENTERS, LITERACY PROGRAMS, AND JOB TRAINING SERVICES\",CITY COUNCIL AWARDS,0,,,NEW YORK JUNIOR TENNIS LEAGUE INC,,City,NYC Department of Youth and Community Development,NYCDYCD,moeo_socialservicesitelocations,\"EDUCATION, CHILD WELFARE, AND YOUTH\",30.0,108,Local,POINT(1010019.6149559021 209329.7705464363)\r\n62b7cf883c1a0ec01f5b2c4b3b094aeb,HANAC INC. - PS 19Q,40-10,99 STREET,40-10 99 STREET,CORONA,QUEENS,4,11368.0,40.7490604766,-73.8667760688,1021163.2433,212207.65814,4607476,4016070001,404,21,40900.0,40901.0,QN26,QN0402,YOUTH SERVICES,\"YOUTH CENTERS, LITERACY PROGRAMS, AND JOB TRAINING SERVICES\",COMMUNITY SERVICES,0,,,HANAC INC,,City,NYC Department of Youth and Community Development,NYCDYCD,dycd_service_sites,\"EDUCATION, CHILD WELFARE, AND YOUTH\",24.0,110,Local,POINT(1021163.2432923317 212207.65812587738)\r\n64fbb55ec400c763d8b5253c3b63b605,YOUNG ADULT INSTITUTE INC,460,WEST 34 STREET,460 WEST 34 STREET,NEW YORK,MANHATTAN,1,10001.0,40.7540596674,-73.9990089824,984524.567354,214000.956225,1012843,1007310001,104,3,10300.0,10300.0,MN13,MN0401,HUMAN SERVICES,PROGRAMS FOR PEOPLE WITH DISABILITIES,RECREATION-OPWDD,0,,,YOUNG ADULT INSTITUTE INC,,City,NYC Department of Health and Mental Hygiene,NYCDOHMH,moeo_socialservicesitelocations,HEALTH AND HUMAN SERVICES,2.0,10,Local,POINT(984524.5673561096 214000.95623111725)\r\n707f523897da4eaf0158e7bd1b5529cc,JACK & JILL  II,68-05,FRESH MEADOW LANE,68-05 FRESH MEADOW LANE,FRESH MEADOWS,QUEENS,4,11365.0,40.7334346856,-73.7943856825,1041234.26311,206553.494782,4149755,4069300011,408,24,134100.0,134100.0,QN41,QN0803,DAY CARE AND PRE-KINDERGARTEN,DAY CARE,DAY CARE,0,,Non-public,\"Lynbo,Inc.\",Non-public,City,NYC Department of Health and Mental Hygiene,NYCDOHMH,dohmh_daycare,\"EDUCATION, CHILD WELFARE, AND YOUTH\",26.0,107,Local,POINT(1041234.263124466 206553.49477291107)\r\n71f5f9c5902cb2503d3f43d4fad107a0,JEWISH COMMUNITY COUNCIL OF GREATER CONEY ISLAND INC,3001,WEST 37 STREET,3001 WEST 37 STREET,BROOKLYN,BROOKLYN,3,11224.0,40.5727357586,-74.0021660226,983648.256959,147939.539027,3189617,3070650001,313,47,34000.0,34000.0,BK21,BK1302,HUMAN SERVICES,SENIOR SERVICES,SENIOR SERVICES,0,,Non-public,Jewish Community Council Of Greater Coney Island Inc,Non-public,City,NYC Department for the Aging,NYCDFTA,dfta_contracts,HEALTH AND HUMAN SERVICES,21.0,60,Local,POINT(983648.2569470406 147939.53903007507)\r\n855314de44196336c99b9e4418ee676b,CONGREGATION TIFERETH ISRAEL,,,,CORONA,QUEENS,4,11368.0,40.7420993602,-73.8529153493,1025007.98035,209677.649065,4437355,4020100001,404,21,42700.0,42700.0,QN25,QN0402,HISTORICAL SITES,HISTORICAL SITES,STATE HISTORIC PLACE,0,,,,,State,\"The New York State Office of Parks, Recreation and Historic Preservation\",NYSOPRHP,nysparks_historicplaces,\"PARKS, GARDENS, AND HISTORICAL SITES\",24.0,110,Local,POINT(1025007.9803509712 209677.64905309677)\r\n8b0a409596f10b979ab71d843ee9bff2,VISITING NURSE SERVICE OF NEW YORK HOMECARE II,107,EAST 70 STREET,107 EAST 70 STREET,NEW YORK,MANHATTAN,1,10021.0,40.7697312616,-73.9640486471,994208.193864,219712.674698,1042715,1014050006,108,4,12800.0,12800.0,MN40,MN0802,HEALTH CARE,MENTAL HEALTH,ASSERTIVE COMMUNITY TREATMENT-OMH,0,,,VISITING NURSE SERVICE OF NEW YORK HOMECARE II,,City,NYC Department of Health and Mental Hygiene,NYCDOHMH,moeo_socialservicesitelocations,HEALTH AND HUMAN SERVICES,2.0,19,Regional,POINT(994208.1938533783 219712.67468643188)\r\n9a504016ab70c58cc94fcf6a8bc6b485,ST AUGUSTINES DAY SCHOOL #2,4314,AVENUE D,4314 AVENUE D,BROOKLYN,BROOKLYN,3,11203.0,40.6415532778,-73.9355873536,1002126.04824,173018.108401,3112895,3049770006,317,45,83800.0,83800.0,BK91,BK1702,CHILD SERVICES AND WELFARE,CHILD NUTRITION,FEEDING SITE,0,,Non-public,St Augustines Day School #2,Non-public,City,NYC Department of Education,NYCDOE,nysed_activeinstitutions,\"EDUCATION, CHILD WELFARE, AND YOUTH\",22.0,67,Local,POINT(1002126.0482401848 173018.10838747025)\r\naa76b977545c3352f1287cec38d50b63,\"HEALTHCARE CHOICES NY, INC.\",21-10,BORDEN AVENUE,21-10 BORDEN AVENUE,LONG ISLAND CITY,QUEENS,4,11101.0,40.7398889402,-73.9494606276,998255.213531,208842.144641,4000526,4000680002,402,26,100.0,104.0,QN31,QN0201,HEALTH CARE,HOSPITALS AND CLINICS,DIAGNOSTIC AND TREATMENT CENTER EXTENSION CLINIC,0,,Non-public,\"HealthCare Choices NY, Inc.\",Non-public,State,NYS Department of Health,NYSDOH,nysdoh_healthfacilities,HEALTH AND HUMAN SERVICES,30.0,108,Regional,POINT(998255.2135434151 208842.14464855194)\r\nca8985f58f91606d35eab0ca59b775bd,SAE INSTITUTE OF TECHNOLOGY (NEW YOR,1293,BROADWAY,1293 BROADWAY,NEW YORK,MANHATTAN,1,10001.0,40.7495702244,-73.9884390556,987453.244687,212365.516917,1015199,1008090045,105,3,10100.0,10100.0,MN17,MN0501,VOCATIONAL AND PROPRIETARY SCHOOLS,PROPRIETARY SCHOOLS,LICENSED PRIVATE SCHOOLS,0,,Non-public,Sae Institute Of Technology (New York) Corp,Non-public,City,NYC Department of Education,NYCDOE,nysed_activeinstitutions,\"EDUCATION, CHILD WELFARE, AND YOUTH\",2.0,14,Local,POINT(987453.2446842194 212365.51692199707)\r\ne20efa7aa86d77adc97a30e8c75aeaad,SHIELD OF FAITH,,,79-85 MONTAUK ST,BROOKLYN,BROOKLYN,3,11208.0,40.6775253835,-73.8784935207,1017952.7642,186140.553984,0,3039760002,305,37,119200.0,119200.0,BK82,BK0502,PARKS AND PLAZAS,GARDENS,GARDEN,0,,Public,NYC Department of Parks and Recreation,NYCDPR,City,NYC Department of Parks and Recreation,NYCDPR,dpr_parksproperties,\"PARKS, GARDENS, AND HISTORICAL SITES\",19.0,75,Local,POINT(1017952.7642064095 186140.55397558212)\r\nee55ef7d989eb0b6007dc13fd6ad27d1,YESHIVA MACHZIKEI HADAS 3,54,AVENUE O,54 AVENUE O,BROOKLYN,BROOKLYN,3,11204.0,40.6100550871,-73.983247381,988901.447058,161536.352722,3174150,3065970006,311,43,43000.0,43000.0,BK29,BK1101,SCHOOLS (K-12),NON-PUBLIC K-12 SCHOOLS,HIGH SCHOOL - NON-PUBLIC,0,,Non-public,Yeshiva Machzikei Hadas 3,Non-public,City,NYC Department of Education,NYCDOE,nysed_activeinstitutions,\"EDUCATION, CHILD WELFARE, AND YOUTH\",20.0,62,Local,POINT(988901.4470515251 161536.35272550583)\r\n"
+}
