@@ -1,14 +1,16 @@
 dataset_id: "environment"
 name: "Environmental Conditions in NYC (Heat Vulnerability, Parks, Open Space, and ZIP Code Areas)"
 description: >
-  A unified dataset combining NYC’s key environmental and geographic datasets:
-  1) The Heat Vulnerability Index (HVI) — a risk score summarizing neighborhood vulnerability to extreme heat, based on social and environmental factors,
-  2) NYC Planimetric Parks — official polygon geometries of publicly accessible parks across NYC,
-  3) NYC Planimetric Open Space (Other) — polygon geometries of other open spaces, such as plazas and green areas not classified as parks,
-  4) Modified ZIP Code Tabulation Areas (MODZCTA) — official boundaries of ZIP Code areas used for demographic and public health analysis.
+ Several datasets were collected to represent NYC’s key environmental and geographic features:
+	1.	NYC Planimetric Parks — official polygon geometries of publicly accessible parks across NYC,
+	2.	NYC Planimetric Open Space (Other) — polygon geometries of other open spaces, such as plazas and green areas not classified as parks,
+	3.	Modified ZIP Code Tabulation Areas (MODZCTA) — official boundaries of ZIP Code areas used for demographic and public health analysis,
+	4.	The Heat Vulnerability Index (HVI) — a risk score summarizing neighborhood vulnerability to extreme heat, based on social and environmental factors.
 
-  These datasets support spatial analysis of environmental risk, green space accessibility, urban resilience, and neighborhood-level planning.
-  All records are provided with geographic coordinates or geometries suitable for spatial overlay, joining, and visualization.
+"The MODZCTA and HVI datasets were merged together to associate heat vulnerability scores with spatial ZIP Code boundaries. 
+The Heat Vulnerability Index (HVI) required postprocessing to incorporate geometry, while the parks and open space datasets were preserved in their original forms.
+These datasets support spatial analysis of environmental risk, green space accessibility, urban resilience, and neighborhood-level planning.
+All records are provided with geographic coordinates or geometries suitable for spatial overlay, joining, and visualization."
 
 source_organization:
   heat_vulnerability_index: "New York City Department of Health and Mental Hygiene (NYC DOHMH)"
