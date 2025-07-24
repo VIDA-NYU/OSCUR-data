@@ -83,10 +83,10 @@ python merge_geocoded_and_311.py \
 This script processes the raw datasets for signposts, utility poles and sidewalks, merging them into a unified dataset.
 ```bash
 python code/processors/fixed_obstructions.py \
-  --sidewalks data/fixed_obstructions/sidewalk_planimetric.csv \
-  --telecom_poles data/fixed_obstructions/telecom_franchise_poles.csv \
-  --street_signs data/fixed_obstructions/street_sign_work_orders.csv \
-  --output data/fixed_obstructions/sidewalks_with_obstructions.csv
+  --sidewalks ../downloaders/data/fixed_obstructions/sidewalk_planimetric.csv \
+  --telecom_poles ../downloaders/data/fixed_obstructions/telecom_franchise_poles.csv \
+  --street_signs ../downloaders/data/fixed_obstructions/street_sign_work_orders.csv \
+  --output ../processors/processed_data/fixed_obstructions/sidewalks_with_obstructions.csv
 ```
 
 
