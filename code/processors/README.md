@@ -15,6 +15,7 @@ code/processors/
 ├── designed_goods_movement_routes.py  # Post-processing Goods Movement Routes (CSV)
 ├── merge_hvi_zipcode_geom.py          # Post-processing Environment dataset (CSV)
 ├── fixed_obstructions.py              # Post-processing Fixed Obstructions dataset (CSV)
+├── tree_cover_landscaping.py          # Post-processing Tree Cover and Landscaping dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
 ```
@@ -112,6 +113,16 @@ python code/processors/fixed_obstructions.py \
   --telecom_poles ../downloaders/data/fixed_obstructions/telecom_franchise_poles.csv \
   --street_signs ../downloaders/data/fixed_obstructions/street_sign_work_orders.csv \
   --output ../processors/processed_data/fixed_obstructions/sidewalks_with_obstructions.csv
+```
+
+#### Tree Cover and Landscaping Dataset
+
+The script merges Natural Turf Maintenance data with NYC Park Zones to identify landscaped park areas.
+```bash
+python code/processors/tree_cover_landscaping.py \
+  --turf_maintenance ../downloaders/data/tree_cover_landscaping/natural_turf_maintenance.csv \
+  --parks_zones ../downloaders/data/tree_cover_landscaping/parks_zones.csv \
+  --output ../processors/processed_data/tree_cover_landscaping/parks_with_landscaping.csv
 ```
 
 ### Other Datasets
