@@ -1,0 +1,62 @@
+dataset_id: "urban_design_frontage"
+name: "Urban Design and Frontage (City-Owned Property and Site Suitability)"
+description: >
+  This dataset supports the urban design/frontage data element by providing parcel-level detail on city-owned and leased properties across NYC. 
+  It includes site design attributes such as property class, lot size, land use type, and a suitability assessment for urban agriculture, which 
+  serves as a proxy for understanding adjacent site design and building setback potential.
+
+  The data is relevant for studies involving land use, frontage characteristics, redevelopment potential, and spatial distribution of public holdings. 
+  Records include geographic coordinates, property descriptors, and classification attributes usable for spatial planning and design evaluation.
+
+source_organization:
+  city_owned_sites: "New York City Department of Citywide Administrative Services (DCAS)"
+
+domain: "urban_design"
+last_updated: "2025-07-24"
+update_frequency:
+  city_owned_sites: "Occasionally"
+
+access:
+  primary_url: "https://data.cityofnewyork.us"
+  api_endpoint:
+    city_owned_sites: "https://data.cityofnewyork.us/resource/4e2n-s75z.json"
+  license: "Open Data License"
+  file_format:
+    city_owned_sites: ["CSV", "JSON"]
+  rate_limits:
+    city_owned_sites: "Unknown"
+
+spatial:
+  geometry_type: "point"
+  coordinate_system: "EPSG:4326"
+  coverage_area: "NYC"
+
+temporal:
+  temporal_type:
+    city_owned_sites: "last update date"
+  temporal_resolution:
+    city_owned_sites: "static"
+  time_column:
+    city_owned_sites: "last_update_date"
+
+implementation:
+  downloader_module:
+    city_owned_sites: "downloaders.urban_design.urban_design_frontage_downloader"
+  processor_module: null
+  example_notebook: "examples/urban_design_frontage.ipynb"
+
+integration_opportunities:
+  spatial_joins:
+    - "Overlay with zoning lots, tax lots, or land use datasets"
+    - "Join with neighborhood boundaries or planning areas"
+    - "Use in urban design and redevelopment site selection"
+  temporal_alignment:
+    - "Reference update dates for parcel suitability evaluations"
+
+map_algebra:
+  raster_conversion:
+    suitable_for_rasterization: true
+    recommended_cell_size: "10 meters"
+    interpolation_method: "presence/absence or categorical raster for site suitability"
+
+data_name: "urban_design_frontage"

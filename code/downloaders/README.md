@@ -88,6 +88,8 @@ code/downloaders/
     ├── injuries.py                          # Orchestrates all injury-related dataset downloads
     ├── motor_vehicle_crashes_downloader.py  # Download Motor Vehicle Collisions – Crashes dataset (CSV)
     ├── motor_vehicle_persons_downloader.py  # Download Motor Vehicle Collisions – Persons dataset (CSV)
+├── Urban_design /
+    ├── urban_design_frontage_downlaoder  # Download Urban Design Frontage dataset (CSV)
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -117,6 +119,7 @@ python NYC_vehicle_collisions.py -o data/NYC_vehicle_collisions.csv
 python nyc_311.py -o data/nyc_311.csv
 python designed_goods_movement_routes/truck_routes.py --output data/designed_goods_movement_routes/truck_routes.csv
 python bike_routes_downloader.py -o data/bike_routes.csv
+python urban_design_frontage_downloader.py -o data/urban_design.csv
 ```
 With API token and custom timeout:
 ```bash
