@@ -167,7 +167,7 @@ python sidewalk_surface_condition.py \
 ```
 
 **Injuries, injury severity, and near misses:**
-The `injuries.py` script downloads accessible pedestrian signals, traffic signals, and street sign work orders data:
+The `injuries.py` script downloads motor vehicle crahses and persons involved in crash data:
 
 ```bash
 python injuries.py   # basic usage
