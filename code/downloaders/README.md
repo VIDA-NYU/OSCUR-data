@@ -84,6 +84,10 @@ code/downloaders/
     ├── rail_routes_and_crossings.py      # Orchestrates all downloads
     ├── crossings_downloader.py           # Download rail crossing points dataset (CSV)
     ├── railroad_lines_downloader.py      # Download railroad lines dataset (CSV)
+├── injuries/
+    ├── injuries.py                          # Orchestrates all injury-related dataset downloads
+    ├── motor_vehicle_crashes_downloader.py  # Download Motor Vehicle Collisions – Crashes dataset (CSV)
+    ├── motor_vehicle_persons_downloader.py  # Download Motor Vehicle Collisions – Persons dataset (CSV)
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -310,6 +314,21 @@ python rail_routes_and_crossings.py \
   --railroads custom/path/railroad_lines.csv \
   --crossings custom/path/rail_crossings_nyc.csv \
 ```
+
+**Injuries, injury severity, and near misses:**
+The `injuries.py` script downloads motor vehicle crahses and persons involved in crash data:
+
+```bash
+python injuries.py   # basic usage
+```
+
+Custom output paths:
+```bash
+python injuries.py \
+  --motor_vehicle_crashes /custom/path/motor_vehicle_crashes.csv \
+  --motor_vehicle_persons /custom/path/motor_vehicle_persons.csv
+```
+
 
 ## Base Class Benefits
 

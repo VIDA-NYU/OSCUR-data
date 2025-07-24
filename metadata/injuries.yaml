@@ -1,0 +1,75 @@
+dataset_id: "injuries"
+name: "Motor Vehicle Collisions in NYC (Crashes and Persons Involved)"
+description: >
+  Two datasets capturing motor vehicle crashes in New York City and detailed records of persons involved in those crashes.
+  
+  1) Motor Vehicle Collisions – Crashes: Location and context for each incident including time, borough, contributing factors, vehicles involved, and injury counts.
+  2) Motor Vehicle Collisions – Persons: Individual-level records of drivers, passengers, pedestrians, and cyclists involved in the incidents, including age, sex, role, and injury severity.
+  
+  These datasets support Vision Zero monitoring, injury severity mapping, equity and risk studies, and transportation safety planning.
+  All records include geospatial coordinates and timestamps to support spatial-temporal analytics.
+
+source_organization:
+  crashes: "New York City Police Department (NYPD) via NYC Open Data"
+  persons: "New York City Police Department (NYPD) via NYC Open Data"
+
+domain: "transportation_and_infrastructure"
+last_updated: "2025-07-23"
+update_frequency:
+  crashes: "Daily"
+  persons: "Daily"
+
+access:
+  primary_url: "https://data.cityofnewyork.us"
+  api_endpoint:
+    crashes: "https://data.cityofnewyork.us/resource/h9gi-nx95.json"
+    persons: "https://data.cityofnewyork.us/resource/f55k-p6yu.json"
+  license: "Open Data License"
+  file_format:
+    crashes: ["CSV", "JSON"]
+    persons: ["CSV", "JSON"]
+  rate_limits:
+    crashes: "Unknown"
+    persons: "Unknown"
+
+spatial:
+  geometry_type: "point"
+  coordinate_system: "EPSG:4326"
+  coverage_area: "NYC"
+
+temporal:
+  temporal_type:
+    crashes: "crash date"
+    persons: "crash date"
+  temporal_resolution:
+    crashes: "daily"
+    persons: "daily"
+  time_column:
+    crashes: "crash_date"
+    persons: "crash_date"
+
+implementation:
+  downloader_module:
+    crashes: "downloaders.injuries.motor_vehicle_crashes_downloader"
+    persons: "downloaders.injuries.motor_vehicle_persons_downloader"
+  orchestrator_downloader:
+    orchestrator: "downloaders.injuries.py"
+  processor_module: null
+  example_notebook: "examples/injuries.ipynb"
+
+integration_opportunities:
+  spatial_joins:
+    - "Join crash records with pedestrian infrastructure or traffic calming zones"
+    - "Link persons-involved data to crash events using unique collision ID"
+    - "Overlay with speed limit maps or traffic volume counts"
+  temporal_alignment:
+    - "Aggregate trends by borough or demographic group over time"
+    - "Align with public safety campaigns or infrastructure investments"
+
+map_algebra:
+  raster_conversion:
+    suitable_for_rasterization: true
+    recommended_cell_size: "25 meters"
+    interpolation_method: "kernel density (injuries or collisions)"
+
+data_name: "injuries"

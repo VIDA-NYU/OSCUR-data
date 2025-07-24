@@ -155,6 +155,10 @@ python code/processors/rail_routes_and_crossings.py \
   --output ../processors/processed_data/rail_routes_and_crossings_combined.csv
 ```
 
+#### Injuries
+No postprocessing script is needed, as the original datasets are being preserved without any merging.
+
+
 ### Other Datasets
 To be added as needed.
 
