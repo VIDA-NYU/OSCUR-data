@@ -1,0 +1,42 @@
+"dataset_id": "designed_goods_movement_routes"
+"name": "Designated Goods Movement Routes (NYC frieght Routes)"
+"description": "This dataset contains the designated truck routes across New York City, established by NYC DOT to manage freight traffic and ensure efficient goods movement while minimizing impacts on residential streets. The dataset includes route classifications, street names, borough information, and geographic geometry for each truck route segment."
+"source_organization": "New York City Department of Transportation (NYC DOT)"
+"domain": "transportation"
+"last_updated": "2025-07-01"
+"update_frequency": "Irregular — updated as routes are modified"
+"access":
+  "primary_url": "https://data.cityofnewyork.us/d/jjja-shxy"
+  "api_endpoint": "https://data.cityofnewyork.us/resource/jjja-shxy.json"
+  "license": "NYC Open Data License"
+  "file_format":
+    - "CSV"
+    - "GeoJSON"
+  "rate_limits": "None reported"
+"spatial":
+  "geometry_type": "multilinestring"
+  "coordinate_system": "EPSG:4326"
+  "coverage_area": "All five boroughs of New York City"
+"temporal":
+  "temporal_type": "static reference"
+  "temporal_resolution": "N/A"
+  "time_column": ""
+"implementation":
+  "downloader_module": "downloaders.designed_goods_movement_routes.truck_routes.py"
+  "processor_module": "processors.designed_goods_movement_routes.py"
+  "example_notebook": "examples/designed_goods_movement_routes.ipynb"
+"integration_opportunities":
+  "spatial_joins":
+    - "NYC street centerlines"
+    - "Truck restriction zones"
+    - "Freight access points"
+    - "Industrial business zones"
+  "temporal_alignment":
+    - "Commercial vehicle violation records"
+    - "Freight delivery schedule data"
+"map_algebra":
+  "raster_conversion":
+    suitable_for_rasterization: false
+    recommended_cell_size: "N/A"
+    interpolation_method: "N/A"
+"data_name": "designed_goods_movement_routes"

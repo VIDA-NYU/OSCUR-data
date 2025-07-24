@@ -1,0 +1,70 @@
+dataset_id: "key_destinations"
+name: "Key Destinations in NYC (Facilities and Licensed Businesses)"
+description: >
+  There is no postprocessing so the data element consists of two datasets:
+  1) The NYC Facilities Database — an inventory of publicly owned and operated facilities such as schools, libraries, parks, health centers, and civic buildings,
+  2) The Issued Licenses Dataset — a citywide registry of business licenses issued by various NYC agencies, covering commercial establishments, services, and regulated businesses.
+  
+  The datasets provide detailed location information, facility types, business types, and agency oversight. 
+
+source_organization:
+  nyc_facilities: "New York City Department of City Planning (NYC DCP)"
+  issued_licenses: "New York City Department of Consumer and Worker Protection (DCWP)"
+
+domain: "land_use_and_economy"
+last_updated: "2025-07-15"
+update_frequency:
+  nyc_facilities: "Occasionally"
+  issued_licenses: "Daily"
+
+access:
+  primary_url: "https://data.cityofnewyork.us"
+  api_endpoint:
+    nyc_facilities: "https://data.cityofnewyork.us/resource/ji82-xba5.json"
+    issued_licenses: "https://data.cityofnewyork.us/resource/w7w3-xahh.json"
+  license: "Open Data License"
+  file_format:
+    nyc_facilities: ["CSV", "JSON"]
+    issued_licenses: ["CSV", "JSON"]
+  rate_limits:
+    nyc_facilities: "Unknown"
+    issued_licenses: "Variable (depends on Socrata API)"
+
+spatial:
+  geometry_type: "point"
+  coordinate_system: "EPSG:4326"
+  coverage_area: "NYC"
+
+temporal:
+  temporal_type:
+    nyc_facilities: "operating date"
+    issued_licenses: "license issue date"
+  temporal_resolution:
+    nyc_facilities: "static"
+    issued_licenses: "daily"
+  time_column:
+    nyc_facilities: "dateopnbldg"
+    issued_licenses: "application_created_date"
+
+implementation:
+  downloader_module:
+    nyc_facilities: "downloaders.key_destinations.nyc_facilities_downloader"
+    issued_licenses: "downloaders.key_destinations.issued_licenses_downloader"
+  orchestrator_downloader:
+    orchestrator: "downloaders.key_destinations.key_destinations_downloader"
+  example_notebook: "examples/key_destinations.ipynb"
+
+integration_opportunities:
+  spatial_joins:
+    - "NYC zoning lots for land use correlation"
+    - "Census tracts for demographic overlays"
+  temporal_alignment:
+    - "Facility openings and business license issuance over time"
+
+map_algebra:
+  raster_conversion:
+    suitable_for_rasterization: true
+    recommended_cell_size: "50 meters"
+    interpolation_method: "point density (count)"
+
+data_name: "key_destinations"
