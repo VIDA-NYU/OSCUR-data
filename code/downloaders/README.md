@@ -24,7 +24,7 @@ code/downloaders/
 ├── raised_crosswalks.py              # Download Raised Crosswalks dataset (CSV)
 ├── NYC_vehicle_collisions.py         # Download Vehicle Collisions (Crashes) dataset (CSV)
 ├── nyc_311.py                        # Download NYC 311 Requests dataset (CSV)
-├── on_street_curb_management         # Folder containing download files for dataset
+├── on_street_curb_management/         # Folder containing download files for dataset
     ├── curbs_downloader.py           # Download Curbs dataset (CSV)
     ├── loading_zones_downloader.py   # Download Loading Zones dataset (CSV)
     ├── on_street_curb_management.py  # Activates all download files
@@ -35,17 +35,30 @@ code/downloaders/
     ├── traffic_signal_downloader.py           # Download Traffic Signals (311)
     ├── street_sign_downloader.py              # Download Street Sign Work Orders
     ├── signals_markings_signs.py              # Runs all signal/sign downloaders
-├── transit_stop_accessibilty.py
-   ├── acc_ped_signal_loc_downlaoder.py  # Download acc ped location dataset (CSV)
-   ├── curbs_downloader.py               # Download curbs dataset (CSV)
-   ├── ped_ramp_locations_downloader.py  # Download pedestrian ramp dataset (CSV)
-   ├── transit_stop_accessibilty.py      # Orchestrates all downloads
+├── transit_stop_accessibilty/
+    ├── acc_ped_signal_loc_downlaoder.py  # Download Accessible Pedestrian Locations dataset (CSV)
+    ├── curbs_downloader.py               # Download Curbs dataset (CSV)
+    ├── ped_ramp_locations_downloader.py  # Download Pedestrian Ramp dataset (CSV)
+    ├── transit_stop_accessibilty.py      # Orchestrates all download files
+├── sidewalk_surface_condition/
+    ├── sidewalk_violations_downloader.py # Download Sidewalk violations (CSV)
+    ├── tree_damage_downloader.py         # Download Tree damage records (CSV) 
+    ├── sidewalk_lot_info_downloader.py   # Download BBL lot info table (CSV with bblid, location, etc.)
+    ├── sidewalk_complaints_311_downloader.py   # Download 311 sidewalk complaints (CSV with coordinates)
+    ├── sidewalk_geometry_downloader      # Sidewalk polygon geometries (as WKT)
+    ├── sidewalk_surface_condition        # Orchestrates all download files  
+├── key_destinations/
+    ├── issued_licenses_downloader.py      # Download Issued Licenses dataset (CSV)
+    ├── key_desinations_downloader.py      # Orchestrates all download files
+    ├── nyc_facilities_downloader.py       # Download NYC Facilities dataset (CSV)
+├── designed_goods_movement_routes/      # Folder for freight movement routes
+    ├── truck_routes.py                  # Download Truck Routes (CSV)
 ├── environment/
-   ├── environment_downloader.py         # Orchestrates all downloads
-   ├── heat_vulnerability_downloader.py  # Download Heat Vulnerability dataset (CSV)
-   ├── open_space_downloader.py          # Download Open Space dataset (CSV)
-   ├── parks_downloader.py               # Download Parks dataset (CSV)
-   ├── zipcode_geom_downloader.py        # Download Zipcode Geomertry dataset (CSV)
+    ├── environment_downloader.py         # Orchestrates all downloads
+    ├── heat_vulnerability_downloader.py  # Download Heat Vulnerability dataset (CSV)
+    ├── open_space_downloader.py          # Download Open Space dataset (CSV)
+    ├── parks_downloader.py               # Download Parks dataset (CSV)
+    ├── zipcode_geom_downloader.py        # Download Zipcode Geomertry dataset (CSV)
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -73,6 +86,7 @@ python speed_humps.py -o data/speed_humps.csv
 python raised_crosswalks.py -o data/raised_crosswalks.csv
 python NYC_vehicle_collisions.py -o data/NYC_vehicle_collisions.csv
 python nyc_311.py -o data/nyc_311.csv
+python designed_goods_movement_routes/truck_routes.py --output data/designed_goods_movement_routes/truck_routes.csv
 ```
 With API token and custom timeout:
 ```bash
@@ -132,9 +146,9 @@ python -m code.downloaders.transit_stop_accessibility.transit_stop_accessibility
 ```
 
 By default, the datasets will be saved to the following paths:
-- data/transit_stop_accessibility/accessible_ped_signal_locations.csv
-- data/transit_stop_accessibility/pedestrian_ramp_locations.csv
-- data/transit_stop_accessibility/curbs.csv
+- `data/transit_stop_accessibility/accessible_ped_signal_locations.csv`
+- `data/transit_stop_accessibility/pedestrian_ramp_locations.csv`
+- `data/transit_stop_accessibility/curbs.csv`
 
 You can specify custom output paths for each dataset:
 ```bash
@@ -144,8 +158,46 @@ python -m code.downloaders.transit_stop_accessibility.transit_stop_accessibility
   --curbs /custom/path/curbs.csv
 ```
 
-**Signals, Markings, and Signs Dataset:**
-The `environments_downloader.py` This script processes datasets for heat vulnerability, parks, open spaces, and ZIP code geometries:
+**Sidewalk Surface Condition Dataset:**
+The `sidewalk_surface_condition.py` script allows downloading multiple datasets simultaneously, including complaints, violations, lot info, tree damage and sidewalks.
+
+```bash
+python sidewalk_surface_condition.py
+```
+
+By default, the datasets will be saved to the following paths:
+- `data/sidewalk_surface_condition/sidewalk_complaints_311.csv`
+- `data/sidewalk_surface_condition/sidewalk_violations.csv`
+- `data/sidewalk_surface_condition/sidewalk_lot_info.csv`
+- `data/sidewalk_surface_condition/tree_damage.csv`
+- `data/sidewalk_surface_condition/sidewalk_planimetric.csv`
+
+You can specify custom output paths for each dataset:
+```bash
+python sidewalk_surface_condition.py \
+  --violations /custom/path/sidewalk_violations.csv \
+  --tree_damage /custom/path/tree_damage.csv \
+  --complaints_311 /custom/path/sidewalk_311_complaints.csv \
+  --planimetric /custom/path/sidewalk_planimetric.csv \
+  --lot_info /custom/path/lot_info.csv
+```
+
+**Key Destinations:**
+The `key_destinations.py` script downloads nyc government facilities and issued licenses data:
+
+```bash
+python key_destinations.py   # basic usage
+```
+
+Custom output paths:
+```bash
+python key_destinations_downloader.py \
+  --facilities /custom/path/nyc_facilities.csv \
+  --licenses /custom/path/issued_licenses.csv
+```
+
+**Environments Dataset:**
+The `environments_downloader.py` script downloads datasets for heat vulnerability, parks, open spaces, and ZIP code geometries:
 
 ```bash
 python environments_downloader.py   # basic usage
