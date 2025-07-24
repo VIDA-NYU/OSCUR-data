@@ -1,0 +1,84 @@
+dataset_id: "fixed_obstructions"
+name: "Fixed Obstructions in NYC (Poles, Street Signs, and Sidewalks)"
+description: >
+  A unified dataset combining NYC’s fixed infrastructure layers relevant to pedestrian and bicycle mobility:
+  1) Mobile Telecommunications Franchise Poles — locations of street light poles, traffic light poles, and utility poles reserved for telecommunications installations,
+  2) Street Sign Work Orders — locations of regulatory, warning, guide, and parking signs managed by NYC DOT,
+  3) NYC Planimetric Sidewalks — official polygon geometries of NYC sidewalks.
+
+  These datasets support spatial analysis of pedestrian infrastructure, sidewalk obstruction studies, accessibility assessments, and micro-mobility planning.
+  All records are georeferenced with accurate coordinates or geometries suitable for spatial overlay, proximity analysis, and visualization.
+
+source_organization:
+  telecom_poles: "New York City Department of Information Technology & Telecommunications (DoITT)"
+  street_sign_work_orders: "New York City Department of Transportation (NYC DOT)"
+  sidewalks: "New York City Department of Information Technology & Telecommunications (DoITT)"
+
+domain: "transportation_and_infrastructure"
+last_updated: "2025-07-22"
+update_frequency:
+  telecom_poles: "Occasionally"
+  street_sign_work_orders: "Frequently"
+  sidewalks: "Occasionally"
+
+access:
+  primary_url: "https://data.cityofnewyork.us"
+  api_endpoint:
+    telecom_poles: "https://data.cityofnewyork.us/resource/tbgj-tdd6.json"
+    street_sign_work_orders: "https://data.cityofnewyork.us/resource/qt6m-xctn.json"
+    sidewalks: "https://data.cityofnewyork.us/resource/52n9-sdep.json"
+  license: "Open Data License"
+  file_format:
+    telecom_poles: ["CSV", "JSON"]
+    street_sign_work_orders: ["CSV", "JSON"]
+    sidewalks: ["CSV", "GeoJSON"]
+  rate_limits:
+    telecom_poles: "Unknown"
+    street_sign_work_orders: "Unknown"
+    sidewalks: "Unknown"
+
+spatial:
+  geometry_type: "mixed"
+  coordinate_system: "EPSG:4326"
+  coverage_area: "NYC"
+
+temporal:
+  temporal_type:
+    telecom_poles: "last updated date"
+    street_sign_work_orders: "order date"
+    sidewalks: "last edit date"
+  temporal_resolution:
+    telecom_poles: "static"
+    street_sign_work_orders: "daily"
+    sidewalks: "static"
+  time_column:
+    telecom_poles: "date_reserved"
+    street_sign_work_orders: "work_order_date"
+    sidewalks: "last_edit_date"
+
+implementation:
+  downloader_module:
+    telecom_poles: "downloaders.fixed_obstructions.utility_poles_downloader"
+    street_sign_work_orders: "downloaders.fixed_obstructions.signposts_downloader"
+    sidewalks: "downloaders.fixed_obstructions.sidewalks_downloader"
+  orchestrator_downloader:
+    orchestrator: "downloaders.fixed_obstructions.py"
+  processor_module: "processors.fixed_obstructions"
+  example_notebook: "examples/fixed_obstructions.ipynb"
+
+integration_opportunities:
+  spatial_joins:
+    - "Join fixed obstructions with sidewalk polygons for obstruction density analysis"
+    - "Overlay with pedestrian accessibility studies or traffic safety data"
+    - "Urban design and public realm impact studies"
+  temporal_alignment:
+    - "Track changes in street furniture and obstructions over time"
+    - "Align with infrastructure upgrades or mobility projects"
+
+map_algebra:
+  raster_conversion:
+    suitable_for_rasterization: true
+    recommended_cell_size: "10 meters"
+    interpolation_method: "point density (kernel density or obstruction density mapping)"
+
+data_name: "fixed_obstructions"

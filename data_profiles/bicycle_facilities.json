@@ -1,0 +1,1005 @@
+{
+  "nb_rows": 1000,
+  "nb_profiled_rows": 1000,
+  "nb_columns": 22,
+  "columns": [
+    {
+      "name": "the_geom",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "40",
+            "count": 2549
+          },
+          {
+            "bin": "74",
+            "count": 2154
+          },
+          {
+            "bin": "multilinestring",
+            "count": 1000
+          },
+          {
+            "bin": "73",
+            "count": 395
+          },
+          {
+            "bin": "07503045349033",
+            "count": 5
+          }
+        ]
+      }
+    },
+    {
+      "name": "segmentid",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/identifier"
+      ],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 928,
+      "mean": 61492.218,
+      "stddev": 530553.9533937791,
+      "coverage": [
+        {
+          "range": {
+            "gte": 1148.0,
+            "lte": 22083.0
+          }
+        },
+        {
+          "range": {
+            "gte": 120990.0,
+            "lte": 329815.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 997,
+            "bin_start": 53.0,
+            "bin_end": 1000053.4
+          },
+          {
+            "count": 0,
+            "bin_start": 1000053.4,
+            "bin_end": 2000053.8
+          },
+          {
+            "count": 0,
+            "bin_start": 2000053.8,
+            "bin_end": 3000054.2
+          },
+          {
+            "count": 0,
+            "bin_start": 3000054.2,
+            "bin_end": 4000054.6
+          },
+          {
+            "count": 0,
+            "bin_start": 4000054.6,
+            "bin_end": 5000055.0
+          },
+          {
+            "count": 0,
+            "bin_start": 5000055.0,
+            "bin_end": 6000055.4
+          },
+          {
+            "count": 0,
+            "bin_start": 6000055.4,
+            "bin_end": 7000055.8
+          },
+          {
+            "count": 0,
+            "bin_start": 7000055.8,
+            "bin_end": 8000056.2
+          },
+          {
+            "count": 0,
+            "bin_start": 8000056.2,
+            "bin_end": 9000056.6
+          },
+          {
+            "count": 3,
+            "bin_start": 9000056.6,
+            "bin_end": 10000057.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "version",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 2,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "23c",
+            "count": 998
+          },
+          {
+            "bin": "BU2024",
+            "count": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "bikeid",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/identifier"
+      ],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 346,
+      "mean": 2755.388,
+      "stddev": 1756.0655669581374,
+      "coverage": [
+        {
+          "range": {
+            "gte": 384.0,
+            "lte": 3083.0
+          }
+        },
+        {
+          "range": {
+            "gte": 6107.0,
+            "lte": 7225.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 59,
+            "bin_start": 27.0,
+            "bin_end": 759.7
+          },
+          {
+            "count": 184,
+            "bin_start": 759.7,
+            "bin_end": 1492.4
+          },
+          {
+            "count": 247,
+            "bin_start": 1492.4,
+            "bin_end": 2225.1000000000004
+          },
+          {
+            "count": 206,
+            "bin_start": 2225.1000000000004,
+            "bin_end": 2957.8
+          },
+          {
+            "count": 88,
+            "bin_start": 2957.8,
+            "bin_end": 3690.5
+          },
+          {
+            "count": 49,
+            "bin_start": 3690.5,
+            "bin_end": 4423.200000000001
+          },
+          {
+            "count": 40,
+            "bin_start": 4423.200000000001,
+            "bin_end": 5155.900000000001
+          },
+          {
+            "count": 0,
+            "bin_start": 5155.900000000001,
+            "bin_end": 5888.6
+          },
+          {
+            "count": 99,
+            "bin_start": 5888.6,
+            "bin_end": 6621.3
+          },
+          {
+            "count": 28,
+            "bin_start": 6621.3,
+            "bin_end": 7354.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "prevbikeid",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/identifier"
+      ],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.91,
+      "num_distinct_values": 36,
+      "mean": 1896.7666666666667,
+      "stddev": 935.32527972299,
+      "coverage": [
+        {
+          "range": {
+            "gte": 196.0,
+            "lte": 1282.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1524.0,
+            "lte": 2383.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 11,
+            "bin_start": 196.0,
+            "bin_end": 833.9
+          },
+          {
+            "count": 7,
+            "bin_start": 833.9,
+            "bin_end": 1471.8
+          },
+          {
+            "count": 63,
+            "bin_start": 1471.8,
+            "bin_end": 2109.7
+          },
+          {
+            "count": 3,
+            "bin_start": 2109.7,
+            "bin_end": 2747.6
+          },
+          {
+            "count": 1,
+            "bin_start": 2747.6,
+            "bin_end": 3385.5
+          },
+          {
+            "count": 0,
+            "bin_start": 3385.5,
+            "bin_end": 4023.3999999999996
+          },
+          {
+            "count": 4,
+            "bin_start": 4023.3999999999996,
+            "bin_end": 4661.3
+          },
+          {
+            "count": 0,
+            "bin_start": 4661.3,
+            "bin_end": 5299.2
+          },
+          {
+            "count": 0,
+            "bin_start": 5299.2,
+            "bin_end": 5937.099999999999
+          },
+          {
+            "count": 1,
+            "bin_start": 5937.099999999999,
+            "bin_end": 6575.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "status",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 2,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Current",
+            "count": 904
+          },
+          {
+            "bin": "Retired",
+            "count": 96
+          }
+        ]
+      }
+    },
+    {
+      "name": "boro",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 5,
+      "mean": 3.855,
+      "stddev": 1.3038308939429204,
+      "coverage": [
+        {
+          "range": {
+            "gte": 1.0,
+            "lte": 2.0
+          }
+        },
+        {
+          "range": {
+            "gte": 3.0,
+            "lte": 4.0
+          }
+        },
+        {
+          "range": {
+            "gte": 5.0,
+            "lte": 5.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 88,
+            "bin_start": 1.0,
+            "bin_end": 1.4
+          },
+          {
+            "count": 0,
+            "bin_start": 1.4,
+            "bin_end": 1.8
+          },
+          {
+            "count": 22,
+            "bin_start": 1.8,
+            "bin_end": 2.2
+          },
+          {
+            "count": 0,
+            "bin_start": 2.2,
+            "bin_end": 2.6
+          },
+          {
+            "count": 0,
+            "bin_start": 2.6,
+            "bin_end": 3.0
+          },
+          {
+            "count": 339,
+            "bin_start": 3.0,
+            "bin_end": 3.4000000000000004
+          },
+          {
+            "count": 0,
+            "bin_start": 3.4000000000000004,
+            "bin_end": 3.8000000000000003
+          },
+          {
+            "count": 49,
+            "bin_start": 3.8000000000000003,
+            "bin_end": 4.2
+          },
+          {
+            "count": 0,
+            "bin_start": 4.2,
+            "bin_end": 4.6
+          },
+          {
+            "count": 502,
+            "bin_start": 4.6,
+            "bin_end": 5.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "street",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "num_distinct_values": 206
+    },
+    {
+      "name": "fromstreet",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "num_distinct_values": 259
+    },
+    {
+      "name": "tostreet",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "num_distinct_values": 272
+    },
+    {
+      "name": "onoffst",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 2,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "OFF",
+            "count": 138
+          },
+          {
+            "bin": "ON",
+            "count": 862
+          }
+        ]
+      }
+    },
+    {
+      "name": "facilitycl",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 4,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "I",
+            "count": 169
+          },
+          {
+            "bin": "II",
+            "count": 480
+          },
+          {
+            "bin": "III",
+            "count": 340
+          },
+          {
+            "bin": "L",
+            "count": 11
+          }
+        ]
+      }
+    },
+    {
+      "name": "allclasses",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 7,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "I",
+            "count": 168
+          },
+          {
+            "bin": "II",
+            "count": 457
+          },
+          {
+            "bin": "II,III",
+            "count": 15
+          },
+          {
+            "bin": "III",
+            "count": 340
+          },
+          {
+            "bin": "L",
+            "count": 11
+          }
+        ]
+      }
+    },
+    {
+      "name": "bikedir",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 3,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "2",
+            "count": 640
+          },
+          {
+            "bin": "L",
+            "count": 162
+          },
+          {
+            "bin": "R",
+            "count": 198
+          }
+        ]
+      }
+    },
+    {
+      "name": "lanecount",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 4,
+      "mean": 1.62,
+      "stddev": 0.5114684741017752,
+      "coverage": [
+        {
+          "range": {
+            "gte": 1.0,
+            "lte": 1.0
+          }
+        },
+        {
+          "range": {
+            "gte": 2.0,
+            "lte": 2.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 11,
+            "bin_start": 0.0,
+            "bin_end": 0.3
+          },
+          {
+            "count": 0,
+            "bin_start": 0.3,
+            "bin_end": 0.6
+          },
+          {
+            "count": 0,
+            "bin_start": 0.6,
+            "bin_end": 0.8999999999999999
+          },
+          {
+            "count": 360,
+            "bin_start": 0.8999999999999999,
+            "bin_end": 1.2
+          },
+          {
+            "count": 0,
+            "bin_start": 1.2,
+            "bin_end": 1.5
+          },
+          {
+            "count": 0,
+            "bin_start": 1.5,
+            "bin_end": 1.7999999999999998
+          },
+          {
+            "count": 627,
+            "bin_start": 1.7999999999999998,
+            "bin_end": 2.1
+          },
+          {
+            "count": 0,
+            "bin_start": 2.1,
+            "bin_end": 2.4
+          },
+          {
+            "count": 0,
+            "bin_start": 2.4,
+            "bin_end": 2.6999999999999997
+          },
+          {
+            "count": 2,
+            "bin_start": 2.6999999999999997,
+            "bin_end": 3.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "ft_facilit",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.161,
+      "num_distinct_values": 13,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Curbside",
+            "count": 48
+          },
+          {
+            "bin": "Greenway",
+            "count": 88
+          },
+          {
+            "bin": "Sharrows",
+            "count": 236
+          },
+          {
+            "bin": "Signed Route",
+            "count": 62
+          },
+          {
+            "bin": "Standard",
+            "count": 274
+          }
+        ]
+      }
+    },
+    {
+      "name": "tf_facilit",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.196,
+      "num_distinct_values": 13,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Curbside",
+            "count": 44
+          },
+          {
+            "bin": "Greenway",
+            "count": 86
+          },
+          {
+            "bin": "Sharrows",
+            "count": 237
+          },
+          {
+            "bin": "Signed Route",
+            "count": 70
+          },
+          {
+            "bin": "Standard",
+            "count": 245
+          }
+        ]
+      }
+    },
+    {
+      "name": "ft2facilit",
+      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
+      "semantic_types": []
+    },
+    {
+      "name": "tf2facilit",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "missing_values_ratio": 0.998,
+      "num_distinct_values": 2
+    },
+    {
+      "name": "instdate",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/DateTime"
+      ],
+      "num_distinct_values": 137,
+      "plot": {
+        "type": "histogram_temporal",
+        "data": [
+          {
+            "count": 16,
+            "date_start": "1900-01-01T00:02:08",
+            "date_end": "1912-05-25T21:37:04"
+          },
+          {
+            "count": 20,
+            "date_start": "1912-05-25T21:37:04",
+            "date_end": "1924-10-17T19:14:08"
+          },
+          {
+            "count": 3,
+            "date_start": "1924-10-17T19:14:08",
+            "date_end": "1937-03-11T16:49:04"
+          },
+          {
+            "count": 1,
+            "date_start": "1937-03-11T16:49:04",
+            "date_end": "1949-08-03T14:25:04"
+          },
+          {
+            "count": 2,
+            "date_start": "1949-08-03T14:25:04",
+            "date_end": "1961-12-26T12:01:04"
+          },
+          {
+            "count": 4,
+            "date_start": "1961-12-26T12:01:04",
+            "date_end": "1974-05-20T09:36:48"
+          },
+          {
+            "count": 70,
+            "date_start": "1974-05-20T09:36:48",
+            "date_end": "1986-10-12T07:12:32"
+          },
+          {
+            "count": 22,
+            "date_start": "1986-10-12T07:12:32",
+            "date_end": "1999-03-06T04:48:00"
+          },
+          {
+            "count": 330,
+            "date_start": "1999-03-06T04:48:00",
+            "date_end": "2011-07-29T02:25:04"
+          },
+          {
+            "count": 532,
+            "date_start": "2011-07-29T02:25:04",
+            "date_end": "2023-12-21T00:00:00"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ret_date",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/DateTime"
+      ],
+      "missing_values_ratio": 0.904,
+      "num_distinct_values": 31,
+      "plot": {
+        "type": "histogram_temporal",
+        "data": [
+          {
+            "count": 54,
+            "date_start": "2009-06-01T00:00:00",
+            "date_end": "2010-11-14T14:24:00"
+          },
+          {
+            "count": 0,
+            "date_start": "2010-11-14T14:24:00",
+            "date_end": "2012-04-29T04:48:00"
+          },
+          {
+            "count": 1,
+            "date_start": "2012-04-29T04:48:00",
+            "date_end": "2013-10-12T19:12:00"
+          },
+          {
+            "count": 10,
+            "date_start": "2013-10-12T19:12:00",
+            "date_end": "2015-03-28T09:36:00"
+          },
+          {
+            "count": 6,
+            "date_start": "2015-03-28T09:36:00",
+            "date_end": "2016-09-10T00:00:00"
+          },
+          {
+            "count": 6,
+            "date_start": "2016-09-10T00:00:00",
+            "date_end": "2018-02-23T14:24:00"
+          },
+          {
+            "count": 1,
+            "date_start": "2018-02-23T14:24:00",
+            "date_end": "2019-08-09T04:48:00"
+          },
+          {
+            "count": 1,
+            "date_start": "2019-08-09T04:48:00",
+            "date_end": "2021-01-21T19:12:00"
+          },
+          {
+            "count": 6,
+            "date_start": "2021-01-21T19:12:00",
+            "date_end": "2022-07-07T09:36:00"
+          },
+          {
+            "count": 11,
+            "date_start": "2022-07-07T09:36:00",
+            "date_end": "2023-12-21T00:00:00"
+          }
+        ]
+      }
+    },
+    {
+      "name": "shape_leng",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "mean": 288.466895354996,
+      "stddev": 186.32447811932266,
+      "coverage": [
+        {
+          "range": {
+            "gte": 20.1899078066,
+            "lte": 193.760536171
+          }
+        },
+        {
+          "range": {
+            "gte": 228.314161835,
+            "lte": 451.044097622
+          }
+        },
+        {
+          "range": {
+            "gte": 520.222169716,
+            "lte": 940.465732547
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 213,
+            "bin_start": 8.41093008167,
+            "bin_end": 156.319787418503
+          },
+          {
+            "count": 512,
+            "bin_start": 156.319787418503,
+            "bin_end": 304.22864475533606
+          },
+          {
+            "count": 136,
+            "bin_start": 304.22864475533606,
+            "bin_end": 452.1375020921691
+          },
+          {
+            "count": 59,
+            "bin_start": 452.1375020921691,
+            "bin_end": 600.0463594290021
+          },
+          {
+            "count": 25,
+            "bin_start": 600.0463594290021,
+            "bin_end": 747.9552167658352
+          },
+          {
+            "count": 47,
+            "bin_start": 747.9552167658352,
+            "bin_end": 895.8640741026682
+          },
+          {
+            "count": 7,
+            "bin_start": 895.8640741026682,
+            "bin_end": 1043.772931439501
+          },
+          {
+            "count": 0,
+            "bin_start": 1043.772931439501,
+            "bin_end": 1191.681788776334
+          },
+          {
+            "count": 0,
+            "bin_start": 1191.681788776334,
+            "bin_end": 1339.5906461131672
+          },
+          {
+            "count": 1,
+            "bin_start": 1339.5906461131672,
+            "bin_end": 1487.49950345
+          }
+        ]
+      }
+    }
+  ],
+  "nb_temporal_columns": 2,
+  "nb_categorical_columns": 8,
+  "nb_numerical_columns": 6,
+  "types": [
+    "categorical",
+    "numerical",
+    "temporal"
+  ],
+  "temporal_coverage": [
+    {
+      "type": "datetime",
+      "column_names": [
+        "instdate"
+      ],
+      "column_indexes": [
+        19
+      ],
+      "column_types": [
+        "http://schema.org/DateTime"
+      ],
+      "ranges": [
+        {
+          "range": {
+            "gte": 1004572800.0,
+            "lte": 1643241600.0
+          }
+        }
+      ],
+      "temporal_resolution": "week"
+    },
+    {
+      "type": "datetime",
+      "column_names": [
+        "ret_date"
+      ],
+      "column_indexes": [
+        20
+      ],
+      "column_types": [
+        "http://schema.org/DateTime"
+      ],
+      "ranges": [
+        {
+          "range": {
+            "gte": 1246406400.0,
+            "lte": 1267401600.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1382659200.0,
+            "lte": 1506988800.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1576800000.0,
+            "lte": 1703116800.0
+          }
+        }
+      ],
+      "temporal_resolution": "week"
+    }
+  ],
+  "attribute_keywords": [
+    "the_geom",
+    "the",
+    "geom",
+    "segmentid",
+    "version",
+    "bikeid",
+    "prevbikeid",
+    "status",
+    "boro",
+    "street",
+    "fromstreet",
+    "tostreet",
+    "onoffst",
+    "facilitycl",
+    "allclasses",
+    "bikedir",
+    "lanecount",
+    "ft_facilit",
+    "ft",
+    "facilit",
+    "tf_facilit",
+    "tf",
+    "facilit",
+    "ft2facilit",
+    "ft",
+    "2",
+    "facilit",
+    "tf2facilit",
+    "tf",
+    "2",
+    "facilit",
+    "instdate",
+    "ret_date",
+    "ret",
+    "date",
+    "shape_leng",
+    "shape",
+    "leng"
+  ],
+  "sample": "the_geom,segmentid,version,bikeid,prevbikeid,status,boro,street,fromstreet,tostreet,onoffst,facilitycl,allclasses,bikedir,lanecount,ft_facilit,tf_facilit,ft2facilit,tf2facilit,instdate,ret_date,shape_leng\r\n\"MULTILINESTRING ((-73.94292746680884 40.78994868450092, -73.9424345924488 40.790626230975754))\",68361.0,23c,27.0,,Current,1,2 AV,E 125 ST,E 104 ST,ON,I,I,L,1,,Protected Path,,,2012-10-26T00:00:00.000,,282.069688573\r\n\"MULTILINESTRING ((-73.73526481517266 40.73345427320051, -73.73550810262495 40.73297375971776))\",133402.0,23c,2012.0,,Current,4,WINCHESTER BLVD,BRADDOCK AV,UNION TP,ON,II,II,2,2,Standard,Standard,,,2002-06-01T00:00:00.000,,187.601506039\r\n\"MULTILINESTRING ((-74.24970246818053 40.50321207920006, -74.2505210168547 40.503041599179035))\",67.0,23c,4493.0,,Current,5,HYLAN BL,CRAIG AV,PAGE AV,ON,II,II,2,2,Standard,Standard,,,2022-09-27T00:00:00.000,,235.959152447\r\n\"MULTILINESTRING ((-74.22765169907424 40.50819902808055, -74.23006417208612 40.50775267723752))\",735.0,23c,6557.0,,Current,5,HYLAN BLVD,PAGE AV,CULOTTA LN,ON,II,II,2,2,Standard,Standard,,,2007-10-01T00:00:00.000,,690.286899293\r\n\"MULTILINESTRING ((-74.20476205336593 40.51535895118096, -74.20624778108647 40.514415154787976))\",1041.0,23c,2047.0,,Current,5,HYLAN BLVD,CULOTTA LN,INEZ ST,ON,II,II,2,2,Curbside,Curbside,,,2007-10-01T00:00:00.000,,537.483505908\r\n\"MULTILINESTRING ((-74.11210546877204 40.57685686689901, -74.11282249730495 40.576324179822564))\",10773.0,23c,2087.0,,Current,5,S RAILROAD AV,JACQUES AV,JEFFERSON AV,ON,II,II,L,1,,Standard,,,2009-06-01T00:00:00.000,,278.098508829\r\n\"MULTILINESTRING ((-74.10411340046628 40.583269097958, -74.10470538832038 40.58283693055892))\",11619.0,23c,2069.0,,Current,5,N RAILROAD AV,NEW DORP LA,JEFFERSON AV,ON,II,II,R,1,Standard,,,,2009-06-01T00:00:00.000,,227.660107796\r\n\"MULTILINESTRING ((-74.11967435956987 40.62619142181135, -74.11916467850837 40.62582382735804))\",12549.0,23c,2108.0,,Current,5,CLOVE ROAD,FOREST AVE,CLOVE WAY,ON,II,II,2,2,Standard,Standard,,,2015-09-11T00:00:00.000,,194.814802188\r\n\"MULTILINESTRING ((-74.06463740793615 40.60018246638861, -74.0637593338734 40.59893485965751))\",14820.0,23c,2059.0,,Current,5,LILY POND AV,MAJOR AV,McCLEAN AV,ON,II,II,2,2,Standard,Curbside,,,1980-07-01T00:00:00.000,,515.810079661\r\n\"MULTILINESTRING ((-74.07853596292554 40.62493911275362, -74.07959762706871 40.62460136285887))\",15523.0,23c,2789.0,,Current,5,BROAD ST,VAN DUZER ST,WRIGHT ST,ON,II,II,2,2,Standard,Standard,,,2019-07-16T00:00:00.000,,319.368687269\r\n\"MULTILINESTRING ((-74.07666260365846 40.62962254146937, -74.07660380691475 40.62929845653131))\",15552.0,23c,2023.0,,Retired,5,BAY ST,RICHMOND TER,MINTHORNE ST,ON,III,III,2,2,Signed Route,Signed Route,,,1980-07-01T00:00:00.000,2009-12-15T00:00:00.000,119.195402133\r\n\"MULTILINESTRING ((-74.06677089190077 40.614951100921964, -74.06613391157211 40.61408887789558))\",15984.0,23c,6355.0,2019.0,Current,5,BAY ST,EDGEWATER ST,HYLAN BLVD,ON,III,III,2,2,Sharrows,Sharrows,,,2009-12-15T00:00:00.000,,360.490548352\r\n\"MULTILINESTRING ((-74.07792916180392 40.63810391893816, -74.07798223446147 40.63786436019143))\",16359.0,23c,2583.0,,Current,5,VAN DUZER ST,ST PAULS AVE,VICTORY BLVD,ON,III,III,L,1,,Sharrows,,,2017-10-17T00:00:00.000,,88.5119607178\r\n\"MULTILINESTRING ((-74.03543728488961 40.619955807293294, -74.0357114877292 40.619274919888255))\",16767.0,23c,3086.0,,Current,3,RIDGE BL,WAKEMAN PL,MARINE AV,ON,II,II,R,1,Standard,,,,2020-06-19T00:00:00.000,,259.482257186\r\n\"MULTILINESTRING ((-74.02777445858277 40.61671556333264, -74.0287003582713 40.61562998312692))\",17027.0,23c,1192.0,,Current,3,FT HAMILTON PARKWAY,92 ST,MARINE AVE,ON,III,III,2,2,Sharrows,Sharrows,,,2015-06-29T00:00:00.000,,471.702007594\r\n\"MULTILINESTRING ((-74.02369674669106 40.62094919230386, -74.02446644075668 40.62043675201657))\",17158.0,23c,2195.0,,Current,3,FT HAMILTON PARKWAY,85 ST,86 ST,ON,II,\"II,III\",2,2,Standard,Sharrows,,,2015-06-28T00:00:00.000,,283.746973119\r\n\"MULTILINESTRING ((-74.0192589305599 40.63055955063994, -74.01935806236412 40.63031045030335))\",17311.0,23c,951.0,,Current,3,6 AVENUE,67 ST,FT HAMILTON PKWY,ON,III,III,2,2,Sharrows,Sharrows,,,2015-06-29T00:00:00.000,,94.8335671448\r\n\"MULTILINESTRING ((-74.01640622314792 40.622014176551986, -74.01698777939977 40.621453824372594))\",17339.0,23c,3075.0,,Current,3,10 AV,86 ST,62 ST,ON,II,II,L,1,,Standard,,,2020-06-19T00:00:00.000,,260.272440422\r\n\"MULTILINESTRING ((-74.01616495143324 40.68739854236551, -74.01635375356382 40.687629920648966))\",18014.0,23c,206.0,,Current,1,CLAYTON ROAD,CRAIG RD N,KIMMEL RD,OFF,I,I,2,2,Greenway,Greenway,,,2013-10-25T00:00:00.000,,99.236105256\r\n\"MULTILINESTRING ((-73.9823960661754 40.57551347520342, -73.98291711621118 40.57546909497734))\",18449.0,23c,1470.0,,Current,3,SURF AV,OCEAN PKWY,W 17 ST,ON,III,III,2,2,Signed Route,Signed Route,,,1998-07-01T00:00:00.000,,145.647269995\r\n"
+}

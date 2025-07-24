@@ -1,0 +1,537 @@
+{
+  "nb_rows": 13205,
+  "nb_profiled_rows": 13205,
+  "nb_columns": 11,
+  "columns": [
+    {
+      "name": "the_geom",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "40",
+            "count": 1093804
+          },
+          {
+            "bin": "73",
+            "count": 928567
+          },
+          {
+            "bin": "74",
+            "count": 165237
+          },
+          {
+            "bin": "multipolygon",
+            "count": 13205
+          },
+          {
+            "bin": "00155260718934",
+            "count": 7
+          }
+        ]
+      }
+    },
+    {
+      "name": "PARK_NAME",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "missing_values_ratio": 0.0898144642180992,
+      "num_distinct_values": 2076
+    },
+    {
+      "name": "FEAT_CODE",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 10,
+      "mean": 4951.877697841726,
+      "stddev": 35.810111215677544,
+      "coverage": [
+        {
+          "range": {
+            "gte": 4900.0,
+            "lte": 4910.0
+          }
+        },
+        {
+          "range": {
+            "gte": 4980.0,
+            "lte": 4985.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 623,
+            "bin_start": 4900.0,
+            "bin_end": 4908.5
+          },
+          {
+            "count": 4626,
+            "bin_start": 4908.5,
+            "bin_end": 4917.0
+          },
+          {
+            "count": 66,
+            "bin_start": 4917.0,
+            "bin_end": 4925.5
+          },
+          {
+            "count": 97,
+            "bin_start": 4925.5,
+            "bin_end": 4934.0
+          },
+          {
+            "count": 21,
+            "bin_start": 4934.0,
+            "bin_end": 4942.5
+          },
+          {
+            "count": 107,
+            "bin_start": 4942.5,
+            "bin_end": 4951.0
+          },
+          {
+            "count": 0,
+            "bin_start": 4951.0,
+            "bin_end": 4959.5
+          },
+          {
+            "count": 68,
+            "bin_start": 4959.5,
+            "bin_end": 4968.0
+          },
+          {
+            "count": 17,
+            "bin_start": 4968.0,
+            "bin_end": 4976.5
+          },
+          {
+            "count": 7580,
+            "bin_start": 4976.5,
+            "bin_end": 4985.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "SOURCE_ID",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/identifier"
+      ],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 12080,
+      "mean": 12520751818.732147,
+      "stddev": 6188221035.885117,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 3498500172.0
+          }
+        },
+        {
+          "range": {
+            "gte": 5498500177.0,
+            "lte": 12498000612.0
+          }
+        },
+        {
+          "range": {
+            "gte": 13491000680.0,
+            "lte": 20498001125.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 1392,
+            "bin_start": 0.0,
+            "bin_end": 2149850021.8
+          },
+          {
+            "count": 464,
+            "bin_start": 2149850021.8,
+            "bin_end": 4299700043.6
+          },
+          {
+            "count": 294,
+            "bin_start": 4299700043.6,
+            "bin_end": 6449550065.400001
+          },
+          {
+            "count": 1331,
+            "bin_start": 6449550065.400001,
+            "bin_end": 8599400087.2
+          },
+          {
+            "count": 1214,
+            "bin_start": 8599400087.2,
+            "bin_end": 10749250109.0
+          },
+          {
+            "count": 1050,
+            "bin_start": 10749250109.0,
+            "bin_end": 12899100130.800001
+          },
+          {
+            "count": 2125,
+            "bin_start": 12899100130.800001,
+            "bin_end": 15048950152.600002
+          },
+          {
+            "count": 1669,
+            "bin_start": 15048950152.600002,
+            "bin_end": 17198800174.4
+          },
+          {
+            "count": 1336,
+            "bin_start": 17198800174.4,
+            "bin_end": 19348650196.2
+          },
+          {
+            "count": 2330,
+            "bin_start": 19348650196.2,
+            "bin_end": 21498500218.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "SUB_CODE",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 19,
+      "mean": 495198.8845134419,
+      "stddev": 3567.816120813043,
+      "coverage": [
+        {
+          "range": {
+            "gte": 490020.0,
+            "lte": 491060.0
+          }
+        },
+        {
+          "range": {
+            "gte": 498000.0,
+            "lte": 498500.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 623,
+            "bin_start": 490000.0,
+            "bin_end": 490850.0
+          },
+          {
+            "count": 4626,
+            "bin_start": 490850.0,
+            "bin_end": 491700.0
+          },
+          {
+            "count": 66,
+            "bin_start": 491700.0,
+            "bin_end": 492550.0
+          },
+          {
+            "count": 97,
+            "bin_start": 492550.0,
+            "bin_end": 493400.0
+          },
+          {
+            "count": 21,
+            "bin_start": 493400.0,
+            "bin_end": 494250.0
+          },
+          {
+            "count": 107,
+            "bin_start": 494250.0,
+            "bin_end": 495100.0
+          },
+          {
+            "count": 0,
+            "bin_start": 495100.0,
+            "bin_end": 495950.0
+          },
+          {
+            "count": 68,
+            "bin_start": 495950.0,
+            "bin_end": 496800.0
+          },
+          {
+            "count": 17,
+            "bin_start": 496800.0,
+            "bin_end": 497650.0
+          },
+          {
+            "count": 7580,
+            "bin_start": 497650.0,
+            "bin_end": 498500.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "LANDUSE",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.635895494131011,
+      "num_distinct_values": 25,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Community Park",
+            "count": 450
+          },
+          {
+            "bin": "Flagship Park",
+            "count": 557
+          },
+          {
+            "bin": "Jointly Operated Playground",
+            "count": 478
+          },
+          {
+            "bin": "Neighborhood Park",
+            "count": 434
+          },
+          {
+            "bin": "Parkway",
+            "count": 838
+          }
+        ]
+      }
+    },
+    {
+      "name": "PARKNUM",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "missing_values_ratio": 0.09519121544869368,
+      "num_distinct_values": 4069
+    },
+    {
+      "name": "STATUS",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 3,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "New",
+            "count": 1076
+          },
+          {
+            "bin": "Unchanged",
+            "count": 10630
+          },
+          {
+            "bin": "Updated",
+            "count": 1499
+          }
+        ]
+      }
+    },
+    {
+      "name": "SYSTEM",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "missing_values_ratio": 0.48989019310867093,
+      "num_distinct_values": 6389
+    },
+    {
+      "name": "SHAPE_Leng",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "mean": 819.8383536861147,
+      "stddev": 2200.7040594972186,
+      "coverage": [
+        {
+          "range": {
+            "gte": 110.230710149,
+            "lte": 1941.06199675
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 13032,
+            "bin_start": 27.6362106729,
+            "bin_end": 8034.60494828561
+          },
+          {
+            "count": 126,
+            "bin_start": 8034.60494828561,
+            "bin_end": 16041.573685898318
+          },
+          {
+            "count": 27,
+            "bin_start": 16041.573685898318,
+            "bin_end": 24048.542423511026
+          },
+          {
+            "count": 9,
+            "bin_start": 24048.542423511026,
+            "bin_end": 32055.511161123737
+          },
+          {
+            "count": 6,
+            "bin_start": 32055.511161123737,
+            "bin_end": 40062.47989873645
+          },
+          {
+            "count": 2,
+            "bin_start": 40062.47989873645,
+            "bin_end": 48069.44863634915
+          },
+          {
+            "count": 1,
+            "bin_start": 48069.44863634915,
+            "bin_end": 56076.41737396186
+          },
+          {
+            "count": 1,
+            "bin_start": 56076.41737396186,
+            "bin_end": 64083.386111574575
+          },
+          {
+            "count": 0,
+            "bin_start": 64083.386111574575,
+            "bin_end": 72090.3548491873
+          },
+          {
+            "count": 1,
+            "bin_start": 72090.3548491873,
+            "bin_end": 80097.3235868
+          }
+        ]
+      }
+    },
+    {
+      "name": "SHAPE_Area",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "mean": 88789.27809246971,
+      "stddev": 957355.8443403315,
+      "coverage": [
+        {
+          "range": {
+            "gte": 621.61608937,
+            "lte": 135424.425019
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 13173,
+            "bin_start": 22.2992768304,
+            "bin_end": 6314874.144419148
+          },
+          {
+            "count": 25,
+            "bin_start": 6314874.144419148,
+            "bin_end": 12629725.989561465
+          },
+          {
+            "count": 1,
+            "bin_start": 12629725.989561465,
+            "bin_end": 18944577.83470378
+          },
+          {
+            "count": 2,
+            "bin_start": 18944577.83470378,
+            "bin_end": 25259429.679846097
+          },
+          {
+            "count": 0,
+            "bin_start": 25259429.679846097,
+            "bin_end": 31574281.524988413
+          },
+          {
+            "count": 2,
+            "bin_start": 31574281.524988413,
+            "bin_end": 37889133.37013073
+          },
+          {
+            "count": 1,
+            "bin_start": 37889133.37013073,
+            "bin_end": 44203985.215273045
+          },
+          {
+            "count": 0,
+            "bin_start": 44203985.215273045,
+            "bin_end": 50518837.060415365
+          },
+          {
+            "count": 0,
+            "bin_start": 50518837.060415365,
+            "bin_end": 56833688.905557685
+          },
+          {
+            "count": 1,
+            "bin_start": 56833688.905557685,
+            "bin_end": 63148540.7507
+          }
+        ]
+      }
+    }
+  ],
+  "nb_categorical_columns": 2,
+  "nb_numerical_columns": 5,
+  "types": [
+    "categorical",
+    "numerical"
+  ],
+  "attribute_keywords": [
+    "the_geom",
+    "the",
+    "geom",
+    "PARK_NAME",
+    "PARK",
+    "NAME",
+    "FEAT_CODE",
+    "FEAT",
+    "CODE",
+    "SOURCE_ID",
+    "SOURCE",
+    "ID",
+    "SUB_CODE",
+    "SUB",
+    "CODE",
+    "LANDUSE",
+    "PARKNUM",
+    "STATUS",
+    "SYSTEM",
+    "SHAPE_Leng",
+    "SHAPE",
+    "Leng",
+    "SHAPE_Area",
+    "SHAPE",
+    "Area"
+  ],
+  "sample": "the_geom,PARK_NAME,FEAT_CODE,SOURCE_ID,SUB_CODE,LANDUSE,PARKNUM,STATUS,SYSTEM,SHAPE_Leng,SHAPE_Area\r\n\"MULTIPOLYGON (((-73.89870049010985 40.67968579428369, -73.89878677685594 40.67967197527133, -73.89887358099102 40.679660155792234,...\",Jackie Robinson Parkway,4980,20498000956,498000,Parkway,Q083,Unchanged,,9721.46504237,169201.661036\r\n\"MULTIPOLYGON (((-73.81242852269101 40.77753870062032, -73.81242910314354 40.777538700664614, -73.81242968356312 40.77753871241548,...\",Greenstreet,4985,11498500235,498500,,QZ147,Unchanged,QZ147,375.028285122,5397.09898835\r\n\"MULTIPOLYGON (((-73.98198589238135 40.765310452311546, -73.98199117266802 40.76530921854609, -73.98199752437463 40.76530961666099,...\",Greenstreet,4985,12498500512,498500,,MZ360,Updated,MZ360,88.880592688,388.370188465\r\n\"MULTIPOLYGON (((-73.93319014480463 40.80239637090105, -73.93256508407592 40.802134130997196, -73.93184699417854 40.80182898427492,...\",Triboro Plaza,4980,13498000601,498000,Parkway,M108F,Unchanged,,1118.28097997,12185.082142\r\n\"MULTIPOLYGON (((-73.9468191354799 40.811480192819864, -73.9469314978233 40.811326155933614, -73.94706289443774 40.81138148618697,...\",St. Nicholas Playground South,4910,13491000642,491010,,M211A,Unchanged,M211A-BSKTBALL-35,211.499454946,2668.30448671\r\n\"MULTIPOLYGON (((-73.94630956837284 40.84767234983754, -73.94631750968132 40.847459643761944, -73.94646211792511 40.84746283387444,...\",Fort Washington Park,4910,13491000941,491060,,M028,Unchanged,M028-ZN02-TENNIS-613,235.051988214,3100.9657673\r\n\"MULTIPOLYGON (((-73.88823578060888 40.8142138550791, -73.88823753282495 40.81421360553872, -73.88824225014132 40.81421500047999,...\",Greenstreet,4985,14498500347,498500,,XZ288,Unchanged,XZ288,438.576146254,3619.34043064\r\n\"MULTIPOLYGON (((-73.86766534410548 40.87340089407464, -73.8676682900722 40.87330533306056, -73.8679716013219 40.87331134725181,...\",Magenta Playground,4980,15498000676,498000,Jointly Operated Playground,X214,Unchanged,,874.702692927,38120.4201068\r\n\"MULTIPOLYGON (((-73.79260479760138 40.86884575065155, -73.79271332842828 40.868752268463766, -73.79278161469105 40.86879941836362,...\",Pelham Bay Park,4910,15491000692,491030,,X039,Unchanged,X039-ZN17-HANDBALL-1619,141.236242128,1148.96795745\r\n\"MULTIPOLYGON (((-73.84521990225598 40.884247326527834, -73.84526556493503 40.88420641016645, -73.84538062331865 40.88427570289373,...\",Edenwald Playground,4950,15495000869,495000,,X165,Unchanged,,120.196024686,798.409879785\r\n\"MULTIPOLYGON (((-74.14580339646511 40.623719927612015, -74.14580344369062 40.62370475646889, -74.14582971559635 40.62370485192122,...\",Markham Playground,4910,16491000072,491010,,R076,Unchanged,R076-BSKTBALL-916,249.617893963,3670.77406799\r\n\"MULTIPOLYGON (((-74.14556130367407 40.623705063307085, -74.14572720913907 40.62370229114456, -74.1457255880437 40.623763112610234,...\",Markham Playground,4910,16491000073,491010,,R076,Unchanged,R076-BSKTBALL-923,261.780888155,3916.56922179\r\n\"MULTIPOLYGON (((-74.10087888825181 40.644694037087, -74.10059670501134 40.64467295728852, -74.10018596356164 40.644684376919976,...\",Snug Harbor Cultural Center,4980,16498000260,498000,Historic House Park,R116,Unchanged,,7688.79353605,3206136.22566\r\n\"MULTIPOLYGON (((-74.14674591895321 40.62282202610064, -74.14674591160473 40.62282190904223, -74.14674591108997 40.62282167490731,...\",,4985,0,498500,,,New,,4764.88122022,100140.308753\r\n\"MULTIPOLYGON (((-74.02268864282068 40.621738797233114, -74.02269084218962 40.62173875087252, -74.02269305103188 40.621738759441726,...\",Mcdonald Triangle,4985,18498500262,498500,,B338,Unchanged,B338-BZ463,313.829373291,5877.89970252\r\n\"MULTIPOLYGON (((-73.9694273820291 40.61951988957529, -73.96946877989303 40.61951268110423, -73.96947443024429 40.6195458100543,...\",Ocean Parkway Malls,4980,18498000454,498000,Mall,B065,Unchanged,,3435.52433072,54380.4183599\r\n\"MULTIPOLYGON (((-73.73683779890298 40.68082603357294, -73.73683678817707 40.68082587186959, -73.73683454865808 40.68082535435259,...\",Greenstreet,4985,7498500031,498500,,QZ603,Updated,QZ603,537.120756764,3674.87250381\r\n\"MULTIPOLYGON (((-73.74220812259769 40.68888192822429, -73.74232462080694 40.688967987721036, -73.7422589983306 40.689019102708144,...\",Cambria Playground,4910,7491000131,491030,,Q339,Unchanged,Q339-HANDBALL-1479,142.221861335,1173.86526936\r\n\"MULTIPOLYGON (((-73.77489307134283 40.72036365412, -73.77489686056677 40.72036348322712, -73.77490065143134 40.720363877859256,...\",Greenstreet,4985,8498500607,498500,,QZ409,Unchanged,QZ409,60.8865340741,188.698944806\r\n\"MULTIPOLYGON (((-73.83692900613168 40.75022155503162, -73.83693985862229 40.75021231678029, -73.83700532481086 40.750251410417924,...\",Flushing Meadows Corona Park,4980,9498000306,498000,Flagship Park,Q099,Unchanged,,344.241465213,1482.43899749\r\n"
+}

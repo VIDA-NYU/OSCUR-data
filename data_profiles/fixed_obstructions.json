@@ -1,0 +1,3250 @@
+{
+  "nb_rows": 546591,
+  "nb_profiled_rows": 546591,
+  "nb_columns": 57,
+  "columns": [
+    {
+      "name": "SOURCE_ID",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/identifier"
+      ],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 48395,
+      "mean": 14504975350.45738,
+      "stddev": 4732598985.282959,
+      "coverage": [
+        {
+          "range": {
+            "gte": 1380000130.0,
+            "lte": 8380002249.0
+          }
+        },
+        {
+          "range": {
+            "gte": 9380001888.0,
+            "lte": 15380003200.0
+          }
+        },
+        {
+          "range": {
+            "gte": 16380002988.0,
+            "lte": 21380000279.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 9392,
+            "bin_start": 0.0,
+            "bin_end": 2138005129.4
+          },
+          {
+            "count": 6878,
+            "bin_start": 2138005129.4,
+            "bin_end": 4276010258.8
+          },
+          {
+            "count": 22410,
+            "bin_start": 4276010258.8,
+            "bin_end": 6414015388.200001
+          },
+          {
+            "count": 22109,
+            "bin_start": 6414015388.200001,
+            "bin_end": 8552020517.6
+          },
+          {
+            "count": 54498,
+            "bin_start": 8552020517.6,
+            "bin_end": 10690025647.0
+          },
+          {
+            "count": 89285,
+            "bin_start": 10690025647.0,
+            "bin_end": 12828030776.400002
+          },
+          {
+            "count": 82471,
+            "bin_start": 12828030776.400002,
+            "bin_end": 14966035905.800001
+          },
+          {
+            "count": 57593,
+            "bin_start": 14966035905.800001,
+            "bin_end": 17104041035.2
+          },
+          {
+            "count": 59940,
+            "bin_start": 17104041035.2,
+            "bin_end": 19242046164.600002
+          },
+          {
+            "count": 142015,
+            "bin_start": 19242046164.600002,
+            "bin_end": 21380051294.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "SUB_CODE",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 2,
+      "mean": 380000.1233097508,
+      "stddev": 1.103581539062755,
+      "coverage": [
+        {
+          "range": {
+            "gte": 380000.0,
+            "lte": 380000.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 539851,
+            "bin_start": 380000.0,
+            "bin_end": 380001.0
+          },
+          {
+            "count": 0,
+            "bin_start": 380001.0,
+            "bin_end": 380002.0
+          },
+          {
+            "count": 0,
+            "bin_start": 380002.0,
+            "bin_end": 380003.0
+          },
+          {
+            "count": 0,
+            "bin_start": 380003.0,
+            "bin_end": 380004.0
+          },
+          {
+            "count": 0,
+            "bin_start": 380004.0,
+            "bin_end": 380005.0
+          },
+          {
+            "count": 0,
+            "bin_start": 380005.0,
+            "bin_end": 380006.0
+          },
+          {
+            "count": 0,
+            "bin_start": 380006.0,
+            "bin_end": 380007.0
+          },
+          {
+            "count": 0,
+            "bin_start": 380007.0,
+            "bin_end": 380008.0
+          },
+          {
+            "count": 0,
+            "bin_start": 380008.0,
+            "bin_end": 380009.0
+          },
+          {
+            "count": 6740,
+            "bin_start": 380009.0,
+            "bin_end": 380010.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "FEAT_CODE",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 1,
+      "mean": 3800.0,
+      "stddev": 0.0,
+      "coverage": [
+        {
+          "range": {
+            "gte": 3800.0,
+            "lte": 3800.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 0,
+            "bin_start": 3799.5,
+            "bin_end": 3799.6
+          },
+          {
+            "count": 0,
+            "bin_start": 3799.6,
+            "bin_end": 3799.7
+          },
+          {
+            "count": 0,
+            "bin_start": 3799.7,
+            "bin_end": 3799.8
+          },
+          {
+            "count": 0,
+            "bin_start": 3799.8,
+            "bin_end": 3799.9
+          },
+          {
+            "count": 0,
+            "bin_start": 3799.9,
+            "bin_end": 3800.0
+          },
+          {
+            "count": 546591,
+            "bin_start": 3800.0,
+            "bin_end": 3800.1
+          },
+          {
+            "count": 0,
+            "bin_start": 3800.1,
+            "bin_end": 3800.2
+          },
+          {
+            "count": 0,
+            "bin_start": 3800.2,
+            "bin_end": 3800.3
+          },
+          {
+            "count": 0,
+            "bin_start": 3800.3,
+            "bin_end": 3800.4
+          },
+          {
+            "count": 0,
+            "bin_start": 3800.4,
+            "bin_end": 3800.5
+          }
+        ]
+      }
+    },
+    {
+      "name": "STATUS",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 3,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "New",
+            "count": 2297
+          },
+          {
+            "bin": "Unchanged",
+            "count": 388478
+          },
+          {
+            "bin": "Updated",
+            "count": 155816
+          }
+        ]
+      }
+    },
+    {
+      "name": "SHAPE_Leng",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "mean": 3725.7246601011307,
+      "stddev": 3253.7338936516308,
+      "coverage": [
+        {
+          "range": {
+            "gte": 1025.11100512,
+            "lte": 5282.6588195
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 542424,
+            "bin_start": 13.8881542718,
+            "bin_end": 17045.11676864462
+          },
+          {
+            "count": 3773,
+            "bin_start": 17045.11676864462,
+            "bin_end": 34076.34538301744
+          },
+          {
+            "count": 115,
+            "bin_start": 34076.34538301744,
+            "bin_end": 51107.57399739026
+          },
+          {
+            "count": 5,
+            "bin_start": 51107.57399739026,
+            "bin_end": 68138.80261176308
+          },
+          {
+            "count": 92,
+            "bin_start": 68138.80261176308,
+            "bin_end": 85170.03122613589
+          },
+          {
+            "count": 174,
+            "bin_start": 85170.03122613589,
+            "bin_end": 102201.25984050872
+          },
+          {
+            "count": 2,
+            "bin_start": 102201.25984050872,
+            "bin_end": 119232.48845488155
+          },
+          {
+            "count": 1,
+            "bin_start": 119232.48845488155,
+            "bin_end": 136263.71706925434
+          },
+          {
+            "count": 1,
+            "bin_start": 136263.71706925434,
+            "bin_end": 153294.94568362716
+          },
+          {
+            "count": 4,
+            "bin_start": 153294.94568362716,
+            "bin_end": 170326.174298
+          }
+        ]
+      }
+    },
+    {
+      "name": "SHAPE_Area",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "mean": 22984.734597479895,
+      "stddev": 21447.769302291304,
+      "coverage": [
+        {
+          "range": {
+            "gte": 5104.7466635,
+            "lte": 33370.1270231
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 543188,
+            "bin_start": 10.1835909819,
+            "bin_end": 123894.95528288372
+          },
+          {
+            "count": 3108,
+            "bin_start": 123894.95528288372,
+            "bin_end": 247779.72697478553
+          },
+          {
+            "count": 22,
+            "bin_start": 247779.72697478553,
+            "bin_end": 371664.4986666873
+          },
+          {
+            "count": 178,
+            "bin_start": 371664.4986666873,
+            "bin_end": 495549.2703585891
+          },
+          {
+            "count": 86,
+            "bin_start": 495549.2703585891,
+            "bin_end": 619434.042050491
+          },
+          {
+            "count": 3,
+            "bin_start": 619434.042050491,
+            "bin_end": 743318.8137423927
+          },
+          {
+            "count": 2,
+            "bin_start": 743318.8137423927,
+            "bin_end": 867203.5854342945
+          },
+          {
+            "count": 0,
+            "bin_start": 867203.5854342945,
+            "bin_end": 991088.3571261964
+          },
+          {
+            "count": 0,
+            "bin_start": 991088.3571261964,
+            "bin_end": 1114973.1288180982
+          },
+          {
+            "count": 4,
+            "bin_start": 1114973.1288180982,
+            "bin_end": 1238857.90051
+          }
+        ]
+      }
+    },
+    {
+      "name": "geometry",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "40",
+            "count": 217000483
+          },
+          {
+            "bin": "73",
+            "count": 193564341
+          },
+          {
+            "bin": "74",
+            "count": 23436142
+          },
+          {
+            "bin": "multipolygon",
+            "count": 546591
+          },
+          {
+            "bin": "97106367997591",
+            "count": 2744
+          }
+        ]
+      }
+    },
+    {
+      "name": "telecom_dist",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.6038976126573617,
+      "mean": 0.04463817973549192,
+      "stddev": 0.3798829299681435,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 213479,
+            "bin_start": 0.0,
+            "bin_end": 0.9978754941405192
+          },
+          {
+            "count": 1451,
+            "bin_start": 0.9978754941405192,
+            "bin_end": 1.9957509882810385
+          },
+          {
+            "count": 508,
+            "bin_start": 1.9957509882810385,
+            "bin_end": 2.9936264824215577
+          },
+          {
+            "count": 492,
+            "bin_start": 2.9936264824215577,
+            "bin_end": 3.991501976562077
+          },
+          {
+            "count": 311,
+            "bin_start": 3.991501976562077,
+            "bin_end": 4.989377470702596
+          },
+          {
+            "count": 58,
+            "bin_start": 4.989377470702596,
+            "bin_end": 5.987252964843115
+          },
+          {
+            "count": 111,
+            "bin_start": 5.987252964843115,
+            "bin_end": 6.985128458983635
+          },
+          {
+            "count": 51,
+            "bin_start": 6.985128458983635,
+            "bin_end": 7.983003953124154
+          },
+          {
+            "count": 27,
+            "bin_start": 7.983003953124154,
+            "bin_end": 8.980879447264673
+          },
+          {
+            "count": 18,
+            "bin_start": 8.980879447264673,
+            "bin_end": 9.978754941405192
+          }
+        ]
+      }
+    },
+    {
+      "name": "telecom_Id",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/identifier"
+      ],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.6038976126573617,
+      "num_distinct_values": 9513,
+      "mean": 17168.08666734409,
+      "stddev": 6598.709946312455,
+      "coverage": [
+        {
+          "range": {
+            "gte": 4337.0,
+            "lte": 11708.0
+          }
+        },
+        {
+          "range": {
+            "gte": 12728.0,
+            "lte": 19152.0
+          }
+        },
+        {
+          "range": {
+            "gte": 20915.0,
+            "lte": 27575.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 7396,
+            "bin_start": 2042.0,
+            "bin_end": 4731.5
+          },
+          {
+            "count": 12143,
+            "bin_start": 4731.5,
+            "bin_end": 7421.0
+          },
+          {
+            "count": 13093,
+            "bin_start": 7421.0,
+            "bin_end": 10110.5
+          },
+          {
+            "count": 23432,
+            "bin_start": 10110.5,
+            "bin_end": 12800.0
+          },
+          {
+            "count": 32340,
+            "bin_start": 12800.0,
+            "bin_end": 15489.5
+          },
+          {
+            "count": 35432,
+            "bin_start": 15489.5,
+            "bin_end": 18179.0
+          },
+          {
+            "count": 18640,
+            "bin_start": 18179.0,
+            "bin_end": 20868.5
+          },
+          {
+            "count": 22466,
+            "bin_start": 20868.5,
+            "bin_end": 23558.0
+          },
+          {
+            "count": 34205,
+            "bin_start": 23558.0,
+            "bin_end": 26247.5
+          },
+          {
+            "count": 17359,
+            "bin_start": 26247.5,
+            "bin_end": 28937.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "telecom_Reservation Date",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration",
+        "http://schema.org/DateTime"
+      ],
+      "missing_values_ratio": 0.6038976126573617,
+      "num_distinct_values": 657,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "08/25/2016",
+            "count": 7588
+          },
+          {
+            "bin": "09/09/2016",
+            "count": 7358
+          },
+          {
+            "bin": "09/22/2016",
+            "count": 6010
+          },
+          {
+            "bin": "12/12/2017",
+            "count": 6403
+          },
+          {
+            "bin": "12/29/2017",
+            "count": 4931
+          }
+        ]
+      }
+    },
+    {
+      "name": "telecom_Franchisee Name ",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.6038976126573617,
+      "num_distinct_values": 12,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Crown Castle Fiber",
+            "count": 21329
+          },
+          {
+            "bin": "Crown Castle NG",
+            "count": 62756
+          },
+          {
+            "bin": "Crown Castle Solutions",
+            "count": 26706
+          },
+          {
+            "bin": "ExteNet I",
+            "count": 19751
+          },
+          {
+            "bin": "Extenet II",
+            "count": 43125
+          }
+        ]
+      }
+    },
+    {
+      "name": "telecom_Status",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.6038976126573617,
+      "num_distinct_values": 3,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Approved",
+            "count": 70810
+          },
+          {
+            "bin": "Installed",
+            "count": 109522
+          },
+          {
+            "bin": "Proposed",
+            "count": 36174
+          }
+        ]
+      }
+    },
+    {
+      "name": "telecom_Installation Date",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration",
+        "http://schema.org/DateTime"
+      ],
+      "missing_values_ratio": 0.799627143513157,
+      "num_distinct_values": 1245,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "01/05/2009",
+            "count": 1112
+          },
+          {
+            "bin": "02/18/2009",
+            "count": 1159
+          },
+          {
+            "bin": "05/11/2016",
+            "count": 1937
+          },
+          {
+            "bin": "06/26/2020",
+            "count": 893
+          },
+          {
+            "bin": "12/26/2018",
+            "count": 2145
+          }
+        ]
+      }
+    },
+    {
+      "name": "telecom_Pole Class",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.6038976126573617,
+      "num_distinct_values": 2,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "CITY",
+            "count": 177878
+          },
+          {
+            "bin": "UTILITY",
+            "count": 38628
+          }
+        ]
+      }
+    },
+    {
+      "name": "telecom_Borough",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.6038976126573617,
+      "num_distinct_values": 5,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Bronx",
+            "count": 39203
+          },
+          {
+            "bin": "Brooklyn",
+            "count": 44971
+          },
+          {
+            "bin": "Manhattan",
+            "count": 101662
+          },
+          {
+            "bin": "Queens",
+            "count": 25156
+          },
+          {
+            "bin": "Staten_Island",
+            "count": 5514
+          }
+        ]
+      }
+    },
+    {
+      "name": "telecom_X Coord.",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.6038976126573617,
+      "mean": 999189.9288179538,
+      "stddev": 17238.351096895145,
+      "coverage": [
+        {
+          "range": {
+            "gte": 981911.0,
+            "lte": 1002220.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1006287.0,
+            "lte": 1040487.66
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 394,
+            "bin_start": 914159.0,
+            "bin_end": 929454.8
+          },
+          {
+            "count": 1256,
+            "bin_start": 929454.8,
+            "bin_end": 944750.6
+          },
+          {
+            "count": 2133,
+            "bin_start": 944750.6,
+            "bin_end": 960046.4
+          },
+          {
+            "count": 2104,
+            "bin_start": 960046.4,
+            "bin_end": 975342.2
+          },
+          {
+            "count": 73257,
+            "bin_start": 975342.2,
+            "bin_end": 990638.0
+          },
+          {
+            "count": 70594,
+            "bin_start": 990638.0,
+            "bin_end": 1005933.8
+          },
+          {
+            "count": 42514,
+            "bin_start": 1005933.8,
+            "bin_end": 1021229.6
+          },
+          {
+            "count": 18127,
+            "bin_start": 1021229.6,
+            "bin_end": 1036525.4
+          },
+          {
+            "count": 5263,
+            "bin_start": 1036525.4,
+            "bin_end": 1051821.2
+          },
+          {
+            "count": 864,
+            "bin_start": 1051821.2,
+            "bin_end": 1067117.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "telecom_Y Coord.",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.6038976126573617,
+      "mean": 212857.8468871591,
+      "stddev": 25201.49379110415,
+      "coverage": [
+        {
+          "range": {
+            "gte": 150568.0,
+            "lte": 195432.0
+          }
+        },
+        {
+          "range": {
+            "gte": 197888.0,
+            "lte": 224660.0
+          }
+        },
+        {
+          "range": {
+            "gte": 230201.0,
+            "lte": 260670.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 526,
+            "bin_start": 121285.0,
+            "bin_end": 136274.7
+          },
+          {
+            "count": 2400,
+            "bin_start": 136274.7,
+            "bin_end": 151264.4
+          },
+          {
+            "count": 4864,
+            "bin_start": 151264.4,
+            "bin_end": 166254.1
+          },
+          {
+            "count": 15208,
+            "bin_start": 166254.1,
+            "bin_end": 181243.8
+          },
+          {
+            "count": 30608,
+            "bin_start": 181243.8,
+            "bin_end": 196233.5
+          },
+          {
+            "count": 42480,
+            "bin_start": 196233.5,
+            "bin_end": 211223.2
+          },
+          {
+            "count": 58785,
+            "bin_start": 211223.2,
+            "bin_end": 226212.90000000002
+          },
+          {
+            "count": 28563,
+            "bin_start": 226212.90000000002,
+            "bin_end": 241202.6
+          },
+          {
+            "count": 24201,
+            "bin_start": 241202.6,
+            "bin_end": 256192.30000000002
+          },
+          {
+            "count": 8871,
+            "bin_start": 256192.30000000002,
+            "bin_end": 271182.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "telecom_Latitude",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [
+        "http://schema.org/latitude"
+      ],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.6038976126573617,
+      "mean": 40.75089235698007,
+      "stddev": 0.06916703578611419,
+      "coverage": [
+        {
+          "range": {
+            "gte": 40.5799332,
+            "lte": 40.7029948
+          }
+        },
+        {
+          "range": {
+            "gte": 40.709765,
+            "lte": 40.7832391
+          }
+        },
+        {
+          "range": {
+            "gte": 40.7985214,
+            "lte": 40.8820888
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 522,
+            "bin_start": 40.4993218,
+            "bin_end": 40.540486259999994
+          },
+          {
+            "count": 2382,
+            "bin_start": 40.540486259999994,
+            "bin_end": 40.58165072
+          },
+          {
+            "count": 4828,
+            "bin_start": 40.58165072,
+            "bin_end": 40.622815179999996
+          },
+          {
+            "count": 15113,
+            "bin_start": 40.622815179999996,
+            "bin_end": 40.66397964
+          },
+          {
+            "count": 30768,
+            "bin_start": 40.66397964,
+            "bin_end": 40.7051441
+          },
+          {
+            "count": 42259,
+            "bin_start": 40.7051441,
+            "bin_end": 40.746308559999996
+          },
+          {
+            "count": 58950,
+            "bin_start": 40.746308559999996,
+            "bin_end": 40.78747302
+          },
+          {
+            "count": 28591,
+            "bin_start": 40.78747302,
+            "bin_end": 40.82863748
+          },
+          {
+            "count": 24222,
+            "bin_start": 40.82863748,
+            "bin_end": 40.86980194
+          },
+          {
+            "count": 8871,
+            "bin_start": 40.86980194,
+            "bin_end": 40.9109664
+          }
+        ]
+      }
+    },
+    {
+      "name": "telecom_Longitude",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [
+        "http://schema.org/longitude"
+      ],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.6038976126573617,
+      "mean": -73.94605066588292,
+      "stddev": 0.0622106984148359,
+      "coverage": [
+        {
+          "range": {
+            "gte": -74.0657107,
+            "lte": -73.9619555
+          }
+        },
+        {
+          "range": {
+            "gte": -73.9565104,
+            "lte": -73.8888745
+          }
+        },
+        {
+          "range": {
+            "gte": -73.8807395,
+            "lte": -73.7735911
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 394,
+            "bin_start": -74.2520514,
+            "bin_end": -74.19694135
+          },
+          {
+            "count": 1262,
+            "bin_start": -74.19694135,
+            "bin_end": -74.14183129999999
+          },
+          {
+            "count": 2200,
+            "bin_start": -74.14183129999999,
+            "bin_end": -74.08672125
+          },
+          {
+            "count": 2057,
+            "bin_start": -74.08672125,
+            "bin_end": -74.0316112
+          },
+          {
+            "count": 74255,
+            "bin_start": -74.0316112,
+            "bin_end": -73.97650114999999
+          },
+          {
+            "count": 69857,
+            "bin_start": -73.97650114999999,
+            "bin_end": -73.9213911
+          },
+          {
+            "count": 42299,
+            "bin_start": -73.9213911,
+            "bin_end": -73.86628105
+          },
+          {
+            "count": 18059,
+            "bin_start": -73.86628105,
+            "bin_end": -73.811171
+          },
+          {
+            "count": 5259,
+            "bin_start": -73.811171,
+            "bin_end": -73.75606094999999
+          },
+          {
+            "count": 864,
+            "bin_start": -73.75606094999999,
+            "bin_end": -73.7009509
+          }
+        ]
+      }
+    },
+    {
+      "name": "telecom_Zone",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.6038976126573617,
+      "num_distinct_values": 3,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "A",
+            "count": 80877
+          },
+          {
+            "bin": "B",
+            "count": 112753
+          },
+          {
+            "bin": "C",
+            "count": 22876
+          }
+        ]
+      }
+    },
+    {
+      "name": "telecom_On street",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.6038976126573617,
+      "num_distinct_values": 4516,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "3rd Ave",
+            "count": 1819
+          },
+          {
+            "bin": "5th Ave",
+            "count": 2399
+          },
+          {
+            "bin": "Amsterdam Ave",
+            "count": 2017
+          },
+          {
+            "bin": "Broadway",
+            "count": 2845
+          },
+          {
+            "bin": "Madison Ave",
+            "count": 1915
+          }
+        ]
+      }
+    },
+    {
+      "name": "telecom_Cross street 1",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.6038976126573617,
+      "num_distinct_values": 5244,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "2nd Ave",
+            "count": 1508
+          },
+          {
+            "bin": "5th Ave",
+            "count": 2547
+          },
+          {
+            "bin": "6th Ave",
+            "count": 2297
+          },
+          {
+            "bin": "7th Ave",
+            "count": 1339
+          },
+          {
+            "bin": "Broadway",
+            "count": 2582
+          }
+        ]
+      }
+    },
+    {
+      "name": "telecom_Cross street 2",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.6041592342354704,
+      "num_distinct_values": 5192,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "2nd Ave",
+            "count": 1225
+          },
+          {
+            "bin": "5th Ave",
+            "count": 2325
+          },
+          {
+            "bin": "6th Ave",
+            "count": 2234
+          },
+          {
+            "bin": "Broadway",
+            "count": 1971
+          },
+          {
+            "bin": "Madison Ave",
+            "count": 1126
+          }
+        ]
+      }
+    },
+    {
+      "name": "telecom_Park Advisory",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.9785104401645838,
+      "num_distinct_values": 271,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Central Park",
+            "count": 539
+          },
+          {
+            "bin": "Morningside Park",
+            "count": 360
+          },
+          {
+            "bin": "Riverside Park",
+            "count": 384
+          },
+          {
+            "bin": "The Battery",
+            "count": 451
+          },
+          {
+            "bin": "Washington Square Park",
+            "count": 424
+          }
+        ]
+      }
+    },
+    {
+      "name": "telecom_Historic Landmark Advisory",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "missing_values_ratio": 0.958733312476788,
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "historic",
+            "count": 21983
+          },
+          {
+            "bin": "district",
+            "count": 21983
+          },
+          {
+            "bin": "west",
+            "count": 5642
+          },
+          {
+            "bin": "side",
+            "count": 3891
+          },
+          {
+            "bin": "upper",
+            "count": 3773
+          }
+        ]
+      }
+    },
+    {
+      "name": "telecom_Scenic Landmark Advisory",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.9939991693972275,
+      "num_distinct_values": 10,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Central Park",
+            "count": 1895
+          },
+          {
+            "bin": "Eastern Parkway",
+            "count": 112
+          },
+          {
+            "bin": "Morningside Park",
+            "count": 450
+          },
+          {
+            "bin": "Prospect Park",
+            "count": 114
+          },
+          {
+            "bin": "Riverside Park and Riverside Drive",
+            "count": 508
+          }
+        ]
+      }
+    },
+    {
+      "name": "telecom_BID Advisory",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.9193181007371142,
+      "num_distinct_values": 75,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "34th Street BID",
+            "count": 2270
+          },
+          {
+            "bin": "Downtown Alliance BID",
+            "count": 4325
+          },
+          {
+            "bin": "Flatiron/23rd Street Partnership",
+            "count": 2705
+          },
+          {
+            "bin": "Garment District",
+            "count": 2234
+          },
+          {
+            "bin": "Times Square BID",
+            "count": 3318
+          }
+        ]
+      }
+    },
+    {
+      "name": "telecom_School Advisory",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "missing_values_ratio": 0.9870780894672616,
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "school",
+            "count": 2935
+          },
+          {
+            "bin": "ps",
+            "count": 1654
+          },
+          {
+            "bin": "high",
+            "count": 812
+          },
+          {
+            "bin": "academy",
+            "count": 801
+          },
+          {
+            "bin": "charter",
+            "count": 761
+          }
+        ]
+      }
+    },
+    {
+      "name": "telecom_Zipcode",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.6038976126573617,
+      "num_distinct_values": 188,
+      "mean": 10512.36347260584,
+      "stddev": 547.164035686721,
+      "coverage": [
+        {
+          "range": {
+            "gte": 10002.0,
+            "lte": 10065.0
+          }
+        },
+        {
+          "range": {
+            "gte": 10304.0,
+            "lte": 10473.0
+          }
+        },
+        {
+          "range": {
+            "gte": 11106.0,
+            "lte": 11432.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 100982,
+            "bin_start": 10001.0,
+            "bin_end": 10170.3
+          },
+          {
+            "count": 6129,
+            "bin_start": 10170.3,
+            "bin_end": 10339.6
+          },
+          {
+            "count": 39245,
+            "bin_start": 10339.6,
+            "bin_end": 10508.9
+          },
+          {
+            "count": 0,
+            "bin_start": 10508.9,
+            "bin_end": 10678.2
+          },
+          {
+            "count": 0,
+            "bin_start": 10678.2,
+            "bin_end": 10847.5
+          },
+          {
+            "count": 39,
+            "bin_start": 10847.5,
+            "bin_end": 11016.8
+          },
+          {
+            "count": 3530,
+            "bin_start": 11016.8,
+            "bin_end": 11186.1
+          },
+          {
+            "count": 49409,
+            "bin_start": 11186.1,
+            "bin_end": 11355.4
+          },
+          {
+            "count": 16691,
+            "bin_start": 11355.4,
+            "bin_end": 11524.7
+          },
+          {
+            "count": 481,
+            "bin_start": 11524.7,
+            "bin_end": 11694.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "telecom_Community Board",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.6038976126573617,
+      "num_distinct_values": 70,
+      "mean": 211.48536761105927,
+      "stddev": 116.95016044529858,
+      "coverage": [
+        {
+          "range": {
+            "gte": 101.0,
+            "lte": 111.0
+          }
+        },
+        {
+          "range": {
+            "gte": 201.0,
+            "lte": 212.0
+          }
+        },
+        {
+          "range": {
+            "gte": 302.0,
+            "lte": 501.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 99712,
+            "bin_start": 101.0,
+            "bin_end": 150.4
+          },
+          {
+            "count": 1908,
+            "bin_start": 150.4,
+            "bin_end": 199.8
+          },
+          {
+            "count": 39245,
+            "bin_start": 199.8,
+            "bin_end": 249.2
+          },
+          {
+            "count": 0,
+            "bin_start": 249.2,
+            "bin_end": 298.6
+          },
+          {
+            "count": 44621,
+            "bin_start": 298.6,
+            "bin_end": 348.0
+          },
+          {
+            "count": 350,
+            "bin_start": 348.0,
+            "bin_end": 397.4
+          },
+          {
+            "count": 25068,
+            "bin_start": 397.4,
+            "bin_end": 446.8
+          },
+          {
+            "count": 88,
+            "bin_start": 446.8,
+            "bin_end": 496.2
+          },
+          {
+            "count": 5507,
+            "bin_start": 496.2,
+            "bin_end": 545.5999999999999
+          },
+          {
+            "count": 7,
+            "bin_start": 545.5999999999999,
+            "bin_end": 595.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "telecom_Council District",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.6038976126573617,
+      "num_distinct_values": 51,
+      "mean": 16.54653450712682,
+      "stddev": 14.65310273591016,
+      "coverage": [
+        {
+          "range": {
+            "gte": 1.0,
+            "lte": 9.0
+          }
+        },
+        {
+          "range": {
+            "gte": 11.0,
+            "lte": 26.0
+          }
+        },
+        {
+          "range": {
+            "gte": 30.0,
+            "lte": 49.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 72844,
+            "bin_start": 1.0,
+            "bin_end": 6.0
+          },
+          {
+            "count": 32387,
+            "bin_start": 6.0,
+            "bin_end": 11.0
+          },
+          {
+            "count": 21986,
+            "bin_start": 11.0,
+            "bin_end": 16.0
+          },
+          {
+            "count": 19736,
+            "bin_start": 16.0,
+            "bin_end": 21.0
+          },
+          {
+            "count": 9627,
+            "bin_start": 21.0,
+            "bin_end": 26.0
+          },
+          {
+            "count": 7699,
+            "bin_start": 26.0,
+            "bin_end": 31.0
+          },
+          {
+            "count": 18225,
+            "bin_start": 31.0,
+            "bin_end": 36.0
+          },
+          {
+            "count": 15346,
+            "bin_start": 36.0,
+            "bin_end": 41.0
+          },
+          {
+            "count": 9304,
+            "bin_start": 41.0,
+            "bin_end": 46.0
+          },
+          {
+            "count": 9352,
+            "bin_start": 46.0,
+            "bin_end": 51.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "sign_dist",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.00748091351668798,
+      "missing_values_ratio": 0.022669601219193144,
+      "num_distinct_values": 4070,
+      "mean": 0.021706468118066962,
+      "stddev": 0.3898028105507537,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 532333,
+            "bin_start": 0.0,
+            "bin_end": 0.9999284178402317
+          },
+          {
+            "count": 210,
+            "bin_start": 0.9999284178402317,
+            "bin_end": 1.9998568356804634
+          },
+          {
+            "count": 200,
+            "bin_start": 1.9998568356804634,
+            "bin_end": 2.9997852535206952
+          },
+          {
+            "count": 183,
+            "bin_start": 2.9997852535206952,
+            "bin_end": 3.9997136713609267
+          },
+          {
+            "count": 153,
+            "bin_start": 3.9997136713609267,
+            "bin_end": 4.999642089201158
+          },
+          {
+            "count": 151,
+            "bin_start": 4.999642089201158,
+            "bin_end": 5.9995705070413905
+          },
+          {
+            "count": 165,
+            "bin_start": 5.9995705070413905,
+            "bin_end": 6.999498924881622
+          },
+          {
+            "count": 176,
+            "bin_start": 6.999498924881622,
+            "bin_end": 7.999427342721853
+          },
+          {
+            "count": 253,
+            "bin_start": 7.999427342721853,
+            "bin_end": 8.999355760562086
+          },
+          {
+            "count": 376,
+            "bin_start": 8.999355760562086,
+            "bin_end": 9.999284178402316
+          }
+        ]
+      }
+    },
+    {
+      "name": "sign_order_number",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "missing_values_ratio": 0.022669601219193144,
+      "num_distinct_values": 300041
+    },
+    {
+      "name": "sign_record_type",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.022669601219193144,
+      "num_distinct_values": 2,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Current",
+            "count": 25132
+          },
+          {
+            "bin": "Historical",
+            "count": 509068
+          }
+        ]
+      }
+    },
+    {
+      "name": "sign_order_type",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.022669601219193144,
+      "num_distinct_values": 9,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "C-",
+            "count": 46998
+          },
+          {
+            "bin": "P-",
+            "count": 89959
+          },
+          {
+            "bin": "R-",
+            "count": 47256
+          },
+          {
+            "bin": "S-",
+            "count": 327832
+          },
+          {
+            "bin": "SC",
+            "count": 19207
+          }
+        ]
+      }
+    },
+    {
+      "name": "sign_borough",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.022669601219193144,
+      "num_distinct_values": 5,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Bronx",
+            "count": 76546
+          },
+          {
+            "bin": "Brooklyn",
+            "count": 182701
+          },
+          {
+            "bin": "Manhattan",
+            "count": 128934
+          },
+          {
+            "bin": "Queens",
+            "count": 123303
+          },
+          {
+            "bin": "Staten Island",
+            "count": 22716
+          }
+        ]
+      }
+    },
+    {
+      "name": "sign_on_street",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.022669601219193144,
+      "num_distinct_values": 6393,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "1 AVENUE",
+            "count": 2593
+          },
+          {
+            "bin": "3 AVENUE",
+            "count": 2600
+          },
+          {
+            "bin": "5 AVENUE",
+            "count": 3334
+          },
+          {
+            "bin": "AMSTERDAM AVENUE",
+            "count": 2511
+          },
+          {
+            "bin": "BROADWAY",
+            "count": 6217
+          }
+        ]
+      }
+    },
+    {
+      "name": "sign_on_street_suffix",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.9901992531893133,
+      "num_distinct_values": 27,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "E RDWY",
+            "count": 638
+          },
+          {
+            "bin": "E S/R",
+            "count": 537
+          },
+          {
+            "bin": "S RDWY",
+            "count": 568
+          },
+          {
+            "bin": "W RDWY",
+            "count": 768
+          },
+          {
+            "bin": "W S/R",
+            "count": 480
+          }
+        ]
+      }
+    },
+    {
+      "name": "sign_from_street",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.022669601219193144,
+      "num_distinct_values": 7104,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "3 AVENUE",
+            "count": 3264
+          },
+          {
+            "bin": "5 AVENUE",
+            "count": 3863
+          },
+          {
+            "bin": "AVENUE OF THE AMERICAS",
+            "count": 3060
+          },
+          {
+            "bin": "BROADWAY",
+            "count": 6642
+          },
+          {
+            "bin": "FIFTH AVENUE",
+            "count": 3077
+          }
+        ]
+      }
+    },
+    {
+      "name": "sign_from_street_suffix",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.9979619130208877,
+      "num_distinct_values": 22,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "E",
+            "count": 79
+          },
+          {
+            "bin": "N",
+            "count": 91
+          },
+          {
+            "bin": "S",
+            "count": 152
+          },
+          {
+            "bin": "S S/R",
+            "count": 110
+          },
+          {
+            "bin": "W RDWY",
+            "count": 103
+          }
+        ]
+      }
+    },
+    {
+      "name": "sign_to_street",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.18328329591961814,
+      "num_distinct_values": 6266,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "5 AVENUE",
+            "count": 4603
+          },
+          {
+            "bin": "AVENUE OF THE AMERICAS",
+            "count": 3222
+          },
+          {
+            "bin": "BROADWAY",
+            "count": 6217
+          },
+          {
+            "bin": "DEAD END",
+            "count": 3058
+          },
+          {
+            "bin": "MADISON AVENUE",
+            "count": 3287
+          }
+        ]
+      }
+    },
+    {
+      "name": "sign_to_street_suffix",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.9981558423025626,
+      "num_distinct_values": 21,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "N",
+            "count": 123
+          },
+          {
+            "bin": "S",
+            "count": 103
+          },
+          {
+            "bin": "S S/R",
+            "count": 98
+          },
+          {
+            "bin": "W RDWY",
+            "count": 79
+          },
+          {
+            "bin": "W S/R",
+            "count": 110
+          }
+        ]
+      }
+    },
+    {
+      "name": "sign_side_of_street",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.022669601219193144,
+      "num_distinct_values": 5,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "@",
+            "count": 87790
+          },
+          {
+            "bin": "E",
+            "count": 107898
+          },
+          {
+            "bin": "N",
+            "count": 115119
+          },
+          {
+            "bin": "S",
+            "count": 115193
+          },
+          {
+            "bin": "W",
+            "count": 108200
+          }
+        ]
+      }
+    },
+    {
+      "name": "sign_order_completed_on_date",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration",
+        "http://schema.org/DateTime"
+      ],
+      "missing_values_ratio": 0.022669601219193144,
+      "num_distinct_values": 19292,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "01/01/1982",
+            "count": 1352
+          },
+          {
+            "bin": "05/28/1962",
+            "count": 655
+          },
+          {
+            "bin": "06/18/1958",
+            "count": 1185
+          },
+          {
+            "bin": "07/15/1957",
+            "count": 773
+          },
+          {
+            "bin": "07/17/1993",
+            "count": 854
+          }
+        ]
+      }
+    },
+    {
+      "name": "sign_sign_code",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.022669601219193144,
+      "num_distinct_values": 6788,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "R1-1",
+            "count": 12121
+          },
+          {
+            "bin": "R6-1",
+            "count": 21781
+          },
+          {
+            "bin": "R7-84",
+            "count": 12114
+          },
+          {
+            "bin": "R7-85",
+            "count": 12487
+          },
+          {
+            "bin": "W9-1",
+            "count": 15228
+          }
+        ]
+      }
+    },
+    {
+      "name": "sign_sign_description",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "missing_values_ratio": 0.022669601219193144,
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "no",
+            "count": 392333
+          },
+          {
+            "bin": "parking",
+            "count": 329184
+          },
+          {
+            "bin": "symbol",
+            "count": 300477
+          },
+          {
+            "bin": "sanitation",
+            "count": 245449
+          },
+          {
+            "bin": "by",
+            "count": 238412
+          }
+        ]
+      }
+    },
+    {
+      "name": "sign_sign_size",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.03380406922177643,
+      "num_distinct_values": 139,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "012 X 018",
+            "count": 147486
+          },
+          {
+            "bin": "018 X 012",
+            "count": 208643
+          },
+          {
+            "bin": "018 X 018",
+            "count": 27740
+          },
+          {
+            "bin": "030 X 030",
+            "count": 44831
+          },
+          {
+            "bin": "036 X 012",
+            "count": 21865
+          }
+        ]
+      }
+    },
+    {
+      "name": "sign_sign_design_voided_on_date",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration",
+        "http://schema.org/DateTime"
+      ],
+      "missing_values_ratio": 0.4235506987857466,
+      "num_distinct_values": 76,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "02/14/2024",
+            "count": 586
+          },
+          {
+            "bin": "04/01/2024",
+            "count": 882
+          },
+          {
+            "bin": "05/22/2019",
+            "count": 218318
+          },
+          {
+            "bin": "06/02/2017",
+            "count": 91261
+          },
+          {
+            "bin": "06/05/2019",
+            "count": 851
+          }
+        ]
+      }
+    },
+    {
+      "name": "sign_sign_location",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.839386305299575,
+      "num_distinct_values": 51,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "N/E C",
+            "count": 11931
+          },
+          {
+            "bin": "N/W C",
+            "count": 12193
+          },
+          {
+            "bin": "S ESD",
+            "count": 7967
+          },
+          {
+            "bin": "S/E C",
+            "count": 12083
+          },
+          {
+            "bin": "S/W C",
+            "count": 11901
+          }
+        ]
+      }
+    },
+    {
+      "name": "sign_distance_from_intersection",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.022669601219193144,
+      "num_distinct_values": 2914,
+      "mean": 256.34893859977535,
+      "stddev": 308.25181689698604,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 308.0
+          }
+        },
+        {
+          "range": {
+            "gte": 367.0,
+            "lte": 948.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 523457,
+            "bin_start": 0.0,
+            "bin_end": 938.4
+          },
+          {
+            "count": 8345,
+            "bin_start": 938.4,
+            "bin_end": 1876.8
+          },
+          {
+            "count": 1361,
+            "bin_start": 1876.8,
+            "bin_end": 2815.2
+          },
+          {
+            "count": 590,
+            "bin_start": 2815.2,
+            "bin_end": 3753.6
+          },
+          {
+            "count": 333,
+            "bin_start": 3753.6,
+            "bin_end": 4692.0
+          },
+          {
+            "count": 85,
+            "bin_start": 4692.0,
+            "bin_end": 5630.4
+          },
+          {
+            "count": 21,
+            "bin_start": 5630.4,
+            "bin_end": 6568.8
+          },
+          {
+            "count": 3,
+            "bin_start": 6568.8,
+            "bin_end": 7507.2
+          },
+          {
+            "count": 4,
+            "bin_start": 7507.2,
+            "bin_end": 8445.6
+          },
+          {
+            "count": 1,
+            "bin_start": 8445.6,
+            "bin_end": 9384.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "sign_arrow_direction",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.7785528850639692,
+      "num_distinct_values": 8,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "EW",
+            "count": 271
+          },
+          {
+            "bin": "East",
+            "count": 30562
+          },
+          {
+            "bin": "North",
+            "count": 29720
+          },
+          {
+            "bin": "South",
+            "count": 30082
+          },
+          {
+            "bin": "West",
+            "count": 29979
+          }
+        ]
+      }
+    },
+    {
+      "name": "sign_facing_direction",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.8555007308938494,
+      "num_distinct_values": 7,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "EW",
+            "count": 5315
+          },
+          {
+            "bin": "East",
+            "count": 16372
+          },
+          {
+            "bin": "North",
+            "count": 18088
+          },
+          {
+            "bin": "South",
+            "count": 18036
+          },
+          {
+            "bin": "West",
+            "count": 16219
+          }
+        ]
+      }
+    },
+    {
+      "name": "sign_sheeting_type",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.28623047214462,
+      "num_distinct_values": 5,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "ENGG",
+            "count": 32029
+          },
+          {
+            "bin": "HRFL",
+            "count": 15726
+          },
+          {
+            "bin": "PNTD",
+            "count": 307749
+          },
+          {
+            "bin": "SENG",
+            "count": 450
+          },
+          {
+            "bin": "TIII",
+            "count": 34186
+          }
+        ]
+      }
+    },
+    {
+      "name": "sign_support",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.022669601219193144,
+      "num_distinct_values": 173,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "DR",
+            "count": 282370
+          },
+          {
+            "bin": "LP",
+            "count": 119508
+          },
+          {
+            "bin": "POLE",
+            "count": 33136
+          },
+          {
+            "bin": "SAME",
+            "count": 66217
+          },
+          {
+            "bin": "WP",
+            "count": 13212
+          }
+        ]
+      }
+    },
+    {
+      "name": "sign_sign_notes",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "missing_values_ratio": 0.9108071666017187,
+      "num_distinct_values": 26835
+    },
+    {
+      "name": "sign_sign_x_coord",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.022669601219193144,
+      "num_distinct_values": 95532,
+      "mean": 1003169.3746555597,
+      "stddev": 21433.96544175452,
+      "coverage": [
+        {
+          "range": {
+            "gte": 981337.0,
+            "lte": 1008538.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1011161.0,
+            "lte": 1052046.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 1840,
+            "bin_start": 913337.0,
+            "bin_end": 928734.6
+          },
+          {
+            "count": 6022,
+            "bin_start": 928734.6,
+            "bin_end": 944132.2
+          },
+          {
+            "count": 9998,
+            "bin_start": 944132.2,
+            "bin_end": 959529.8
+          },
+          {
+            "count": 6661,
+            "bin_start": 959529.8,
+            "bin_end": 974927.4
+          },
+          {
+            "count": 122294,
+            "bin_start": 974927.4,
+            "bin_end": 990325.0
+          },
+          {
+            "count": 161332,
+            "bin_start": 990325.0,
+            "bin_end": 1005722.6
+          },
+          {
+            "count": 123979,
+            "bin_start": 1005722.6,
+            "bin_end": 1021120.2
+          },
+          {
+            "count": 65958,
+            "bin_start": 1021120.2,
+            "bin_end": 1036517.8
+          },
+          {
+            "count": 26877,
+            "bin_start": 1036517.8,
+            "bin_end": 1051915.4
+          },
+          {
+            "count": 9239,
+            "bin_start": 1051915.4,
+            "bin_end": 1067313.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "sign_sign_y_coord",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.022669601219193144,
+      "num_distinct_values": 117012,
+      "mean": 202571.6581598652,
+      "stddev": 29090.81750821623,
+      "coverage": [
+        {
+          "range": {
+            "gte": 148668.0,
+            "lte": 186552.0
+          }
+        },
+        {
+          "range": {
+            "gte": 189987.0,
+            "lte": 221407.0
+          }
+        },
+        {
+          "range": {
+            "gte": 227452.0,
+            "lte": 261562.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 2613,
+            "bin_start": 120922.0,
+            "bin_end": 136005.8
+          },
+          {
+            "count": 12353,
+            "bin_start": 136005.8,
+            "bin_end": 151089.6
+          },
+          {
+            "count": 46906,
+            "bin_start": 151089.6,
+            "bin_end": 166173.4
+          },
+          {
+            "count": 70910,
+            "bin_start": 166173.4,
+            "bin_end": 181257.2
+          },
+          {
+            "count": 92145,
+            "bin_start": 181257.2,
+            "bin_end": 196341.0
+          },
+          {
+            "count": 101299,
+            "bin_start": 196341.0,
+            "bin_end": 211424.8
+          },
+          {
+            "count": 97591,
+            "bin_start": 211424.8,
+            "bin_end": 226508.59999999998
+          },
+          {
+            "count": 46709,
+            "bin_start": 226508.59999999998,
+            "bin_end": 241592.4
+          },
+          {
+            "count": 46180,
+            "bin_start": 241592.4,
+            "bin_end": 256676.19999999998
+          },
+          {
+            "count": 17494,
+            "bin_start": 256676.19999999998,
+            "bin_end": 271760.0
+          }
+        ]
+      }
+    }
+  ],
+  "nb_spatial_columns": 2,
+  "nb_temporal_columns": 4,
+  "nb_categorical_columns": 29,
+  "nb_numerical_columns": 16,
+  "types": [
+    "categorical",
+    "numerical",
+    "spatial",
+    "temporal"
+  ],
+  "spatial_coverage": [
+    {
+      "type": "latlong",
+      "column_names": [
+        "telecom_Latitude",
+        "telecom_Longitude"
+      ],
+      "column_indexes": [
+        17,
+        18
+      ],
+      "geohashes4": [
+        {
+          "hash": "121130231210",
+          "number": 489
+        },
+        {
+          "hash": "121130231211",
+          "number": 595
+        },
+        {
+          "hash": "121130231213",
+          "number": 342
+        },
+        {
+          "hash": "121130231233",
+          "number": 194
+        },
+        {
+          "hash": "121130231231",
+          "number": 2627
+        },
+        {
+          "hash": "121130231032",
+          "number": 426
+        },
+        {
+          "hash": "121130231033",
+          "number": 21
+        },
+        {
+          "hash": "121130231023",
+          "number": 137
+        },
+        {
+          "hash": "121130231333",
+          "number": 7547
+        },
+        {
+          "hash": "121130231332",
+          "number": 4186
+        },
+        {
+          "hash": "121130231331",
+          "number": 52933
+        },
+        {
+          "hash": "121130231330",
+          "number": 25651
+        },
+        {
+          "hash": "121130231321",
+          "number": 18944
+        },
+        {
+          "hash": "121130231322",
+          "number": 902
+        },
+        {
+          "hash": "121130231320",
+          "number": 4607
+        },
+        {
+          "hash": "121130231323",
+          "number": 5314
+        },
+        {
+          "hash": "121130231312",
+          "number": 9124
+        },
+        {
+          "hash": "121130231313",
+          "number": 1328
+        },
+        {
+          "hash": "121130231300",
+          "number": 1817
+        },
+        {
+          "hash": "121130231302",
+          "number": 3760
+        },
+        {
+          "hash": "121130231303",
+          "number": 758
+        },
+        {
+          "hash": "121130231122",
+          "number": 2
+        },
+        {
+          "hash": "121130233101",
+          "number": 982
+        },
+        {
+          "hash": "121130233100",
+          "number": 42
+        },
+        {
+          "hash": "121130233103",
+          "number": 115
+        },
+        {
+          "hash": "121130233111",
+          "number": 4134
+        },
+        {
+          "hash": "121130233110",
+          "number": 3985
+        },
+        {
+          "hash": "121130233113",
+          "number": 128
+        },
+        {
+          "hash": "121130233112",
+          "number": 68
+        },
+        {
+          "hash": "121130233011",
+          "number": 279
+        },
+        {
+          "hash": "121130320220",
+          "number": 23181
+        },
+        {
+          "hash": "121130320221",
+          "number": 8156
+        },
+        {
+          "hash": "121130320222",
+          "number": 5277
+        },
+        {
+          "hash": "121130320223",
+          "number": 18154
+        },
+        {
+          "hash": "121130320230",
+          "number": 151
+        },
+        {
+          "hash": "121130320232",
+          "number": 8051
+        },
+        {
+          "hash": "121130322010",
+          "number": 924
+        },
+        {
+          "hash": "121130322000",
+          "number": 675
+        },
+        {
+          "hash": "121130322001",
+          "number": 500
+        }
+      ],
+      "ranges": [
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -74.1115565,
+                40.706425
+              ],
+              [
+                -73.8896356,
+                40.5799524
+              ]
+            ]
+          }
+        },
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -74.0059112,
+                40.8069333
+              ],
+              [
+                -73.9420695,
+                40.7150726
+              ]
+            ]
+          }
+        },
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -73.9403141,
+                40.8812245
+              ],
+              [
+                -73.7979323,
+                40.7054511
+              ]
+            ]
+          }
+        }
+      ],
+      "number": 216506
+    }
+  ],
+  "temporal_coverage": [
+    {
+      "type": "datetime",
+      "column_names": [
+        "telecom_Reservation Date"
+      ],
+      "column_indexes": [
+        9
+      ],
+      "column_types": [
+        "http://schema.org/DateTime"
+      ],
+      "ranges": [
+        {
+          "range": {
+            "gte": 1207267200.0,
+            "lte": 1377216000.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1411689600.0,
+            "lte": 1565740800.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1615939200.0,
+            "lte": 1745020800.0
+          }
+        }
+      ],
+      "temporal_resolution": "day"
+    },
+    {
+      "type": "datetime",
+      "column_names": [
+        "telecom_Installation Date"
+      ],
+      "column_indexes": [
+        12
+      ],
+      "column_types": [
+        "http://schema.org/DateTime"
+      ],
+      "ranges": [
+        {
+          "range": {
+            "gte": 1228435200.0,
+            "lte": 1333584000.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1411689600.0,
+            "lte": 1557187200.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1565568000.0,
+            "lte": 1696291200.0
+          }
+        }
+      ],
+      "temporal_resolution": "day"
+    },
+    {
+      "type": "datetime",
+      "column_names": [
+        "sign_order_completed_on_date"
+      ],
+      "column_indexes": [
+        43
+      ],
+      "column_types": [
+        "http://schema.org/DateTime"
+      ],
+      "ranges": [
+        {
+          "range": {
+            "gte": -334022400.0,
+            "lte": 425692800.0
+          }
+        },
+        {
+          "range": {
+            "gte": 526867200.0,
+            "lte": 1098921600.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1158969600.0,
+            "lte": 1710460800.0
+          }
+        }
+      ],
+      "temporal_resolution": "day"
+    },
+    {
+      "type": "datetime",
+      "column_names": [
+        "sign_sign_design_voided_on_date"
+      ],
+      "column_indexes": [
+        47
+      ],
+      "column_types": [
+        "http://schema.org/DateTime"
+      ],
+      "ranges": [
+        {
+          "range": {
+            "gte": 1496361600.0,
+            "lte": 1496361600.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1558483200.0,
+            "lte": 1558483200.0
+          }
+        }
+      ],
+      "temporal_resolution": "day"
+    }
+  ],
+  "attribute_keywords": [
+    "SOURCE_ID",
+    "SOURCE",
+    "ID",
+    "SUB_CODE",
+    "SUB",
+    "CODE",
+    "FEAT_CODE",
+    "FEAT",
+    "CODE",
+    "STATUS",
+    "SHAPE_Leng",
+    "SHAPE",
+    "Leng",
+    "SHAPE_Area",
+    "SHAPE",
+    "Area",
+    "geometry",
+    "telecom_dist",
+    "telecom",
+    "dist",
+    "telecom_Id",
+    "telecom",
+    "Id",
+    "telecom_Reservation Date",
+    "telecom",
+    "Reservation",
+    "Date",
+    "telecom_Franchisee Name ",
+    "telecom",
+    "Franchisee",
+    "Name",
+    "",
+    "telecom_Status",
+    "telecom",
+    "Status",
+    "telecom_Installation Date",
+    "telecom",
+    "Installation",
+    "Date",
+    "telecom_Pole Class",
+    "telecom",
+    "Pole",
+    "Class",
+    "telecom_Borough",
+    "telecom",
+    "Borough",
+    "telecom_X Coord.",
+    "telecom",
+    "X",
+    "Coord",
+    "",
+    "telecom_Y Coord.",
+    "telecom",
+    "Y",
+    "Coord",
+    "",
+    "telecom_Latitude",
+    "telecom",
+    "Latitude",
+    "telecom_Longitude",
+    "telecom",
+    "Longitude",
+    "telecom_Zone",
+    "telecom",
+    "Zone",
+    "telecom_On street",
+    "telecom",
+    "On",
+    "street",
+    "telecom_Cross street 1",
+    "telecom",
+    "Cross",
+    "street",
+    "1",
+    "telecom_Cross street 2",
+    "telecom",
+    "Cross",
+    "street",
+    "2",
+    "telecom_Park Advisory",
+    "telecom",
+    "Park",
+    "Advisory",
+    "telecom_Historic Landmark Advisory",
+    "telecom",
+    "Historic",
+    "Landmark",
+    "Advisory",
+    "telecom_Scenic Landmark Advisory",
+    "telecom",
+    "Scenic",
+    "Landmark",
+    "Advisory",
+    "telecom_BID Advisory",
+    "telecom",
+    "BID",
+    "Advisory",
+    "telecom_School Advisory",
+    "telecom",
+    "School",
+    "Advisory",
+    "telecom_Zipcode",
+    "telecom",
+    "Zipcode",
+    "telecom_Community Board",
+    "telecom",
+    "Community",
+    "Board",
+    "telecom_Council District",
+    "telecom",
+    "Council",
+    "District",
+    "sign_dist",
+    "sign",
+    "dist",
+    "sign_order_number",
+    "sign",
+    "order",
+    "number",
+    "sign_record_type",
+    "sign",
+    "record",
+    "type",
+    "sign_order_type",
+    "sign",
+    "order",
+    "type",
+    "sign_borough",
+    "sign",
+    "borough",
+    "sign_on_street",
+    "sign",
+    "on",
+    "street",
+    "sign_on_street_suffix",
+    "sign",
+    "on",
+    "street",
+    "suffix",
+    "sign_from_street",
+    "sign",
+    "from",
+    "street",
+    "sign_from_street_suffix",
+    "sign",
+    "from",
+    "street",
+    "suffix",
+    "sign_to_street",
+    "sign",
+    "to",
+    "street",
+    "sign_to_street_suffix",
+    "sign",
+    "to",
+    "street",
+    "suffix",
+    "sign_side_of_street",
+    "sign",
+    "side",
+    "of",
+    "street",
+    "sign_order_completed_on_date",
+    "sign",
+    "order",
+    "completed",
+    "on",
+    "date",
+    "sign_sign_code",
+    "sign",
+    "sign",
+    "code",
+    "sign_sign_description",
+    "sign",
+    "sign",
+    "description",
+    "sign_sign_size",
+    "sign",
+    "sign",
+    "size",
+    "sign_sign_design_voided_on_date",
+    "sign",
+    "sign",
+    "design",
+    "voided",
+    "on",
+    "date",
+    "sign_sign_location",
+    "sign",
+    "sign",
+    "location",
+    "sign_distance_from_intersection",
+    "sign",
+    "distance",
+    "from",
+    "intersection",
+    "sign_arrow_direction",
+    "sign",
+    "arrow",
+    "direction",
+    "sign_facing_direction",
+    "sign",
+    "facing",
+    "direction",
+    "sign_sheeting_type",
+    "sign",
+    "sheeting",
+    "type",
+    "sign_support",
+    "sign",
+    "support",
+    "sign_sign_notes",
+    "sign",
+    "sign",
+    "notes",
+    "sign_sign_x_coord",
+    "sign",
+    "sign",
+    "x",
+    "coord",
+    "sign_sign_y_coord",
+    "sign",
+    "sign",
+    "y",
+    "coord"
+  ],
+  "sample": "SOURCE_ID,SUB_CODE,FEAT_CODE,STATUS,SHAPE_Leng,SHAPE_Area,geometry,telecom_dist,telecom_Id,telecom_Reservation Date,telecom_Franchisee Name ,telecom_Status,telecom_Installation Date,telecom_Pole Class,telecom_Borough,telecom_X Coord.,telecom_Y Coord.,telecom_Latitude,telecom_Longitude,telecom_Zone,telecom_On street,telecom_Cross street 1,telecom_Cross street 2,telecom_Park Advisory,telecom_Historic Landmark Advisory,telecom_Scenic Landmark Advisory,telecom_BID Advisory,telecom_School Advisory,telecom_Zipcode,telecom_Community Board,telecom_Council District,sign_dist,sign_order_number,sign_record_type,sign_order_type,sign_borough,sign_on_street,sign_on_street_suffix,sign_from_street,sign_from_street_suffix,sign_to_street,sign_to_street_suffix,sign_side_of_street,sign_order_completed_on_date,sign_sign_code,sign_sign_description,sign_sign_size,sign_sign_design_voided_on_date,sign_sign_location,sign_distance_from_intersection,sign_arrow_direction,sign_facing_direction,sign_sheeting_type,sign_support,sign_sign_notes,sign_sign_x_coord,sign_sign_y_coord\r\n20380002663,380000,3800,Unchanged,3936.59831551,22428.8724061,\"MULTIPOLYGON (((-73.9337784366702 40.66531478072965, -73.93344178293115 40.6652971038194, -73.93343282755849 40.665296633971316,...\",,,,,,,,,,,,,,,,,,,,,,,,,0.0,SC015016,Historical,SC,Brooklyn,SCHENECTADY AVENUE,,MONTGOMERY STREET,,,,@,12/04/1999,W9-1,SCHOOL CROSSING SYMBOL (ADVANCE WARNING),030 X 030,,N ESD,190.0,,North,HRFL,DR,,1002507.0,181565.0\r\n11380001597,380000,3800,Updated,3378.74486768,17117.6007448,\"MULTIPOLYGON (((-73.86581124735095 40.76124763316169, -73.86576738208424 40.761241044389074, -73.86574131156677 40.76123712382547,...\",,,,,,,,,,,,,,,,,,,,,,,,,0.0,S-393936,Current,S-,Queens,31 AVENUE,,103 STREET,,ASTORIA BOULEVARD,,S,07/14/2016,PS-1G,\"NO STANDING ANYTIME <-> (SUPERSEDES SP-1044B, SP-10B, SP-216B & SP-270B)\",018 X 012,,,22.0,,,PNTD,DR,,1021344.0,216654.0\r\n11380001978,380000,3800,Unchanged,3923.70507384,18015.0564375,\"MULTIPOLYGON (((-73.79819740809575 40.764979961873394, -73.79813669935642 40.764975298957616, -73.7981082715334 40.76497311044225,...\",0.0,4237.0,04/10/2008,Crown Castle NG,Installed,12/24/2008,CITY,Queens,1040183.0,217262.0,40.7628335,-73.7980898,B,Crocheron Ave,168th St,167th St,,,,,,11358.0,407.0,19.0,0.0,S-097599,Historical,S-,Queens,168 STREET,,35 AVENUE,,CROCHERON AVENUE,,W,06/26/2002,SP-378C,NO PARKING (SANITATION BROOM SYMBOL) 11AM TO 12:30PM MON <---> (SUPERSEDED BY PS-137B),018 X 012,05/22/2019,,155.0,,,PNTD,LP,,1040259.0,217879.0\r\n12380000063,380000,3800,Updated,5721.0936024,40587.1187676,\"MULTIPOLYGON (((-73.98895461745342 40.716535971456594, -73.9888911489982 40.71651673945819, -73.98882769241473 40.716497507425906,...\",0.0,25287.0,04/10/2021,Crown Castle NG,Approved,,CITY,Manhattan,987359.0,200309.0,40.7164781,-73.9887848,A,Grand St,Essex St,Norfolk St,,,,,,10002.0,103.0,1.0,0.0,S-237513,Historical,S-,Manhattan,EAST BROADWAY,,JEFFERSON STREET,,CLINTON STREET,,N,01/26/1968,SP-558C,NO PARKING (SANITATION BROOM SYMBOL) 8AM-11AM MON & FRI <----->,018 X 012,,,290.0,,,,POLE,,987694.0,199531.0\r\n14380004941,380000,3800,Updated,4047.13618326,23107.6238656,\"MULTIPOLYGON (((-73.8472482184275 40.82868378892076, -73.8472473412584 40.82868374273408, -73.84724646413065 40.8286836785375,...\",,,,,,,,,,,,,,,,,,,,,,,,,0.0,S-256869,Historical,S-,Bronx,CHATTERTON AVENUE,,CASTLE HILL AVENUE,,HAVEMEYER AVENUE,,S,12/30/1970,R7-85,NO PARKING (SANITATION BROOM SYMBOL) 8-11AM TUES & FRI <-----> (SUPERSEDED BY R7-85R),012 X 018,05/22/2019,,555.0,,,,LP,,1026288.0,241185.0\r\n15380003644,380000,3800,Unchanged,3334.17745329,21164.6046427,\"MULTIPOLYGON (((-73.87514429416682 40.87705027078093, -73.87510113740366 40.877031446201, -73.87508500059481 40.877024407628845,...\",0.0,20150.0,08/02/2018,Crown Castle NG,Installed,03/01/2020,UTILITY,Bronx,1018636.0,258208.0,40.8753286,-73.8756615,C,E 207th St,Hull Ave,Perry Ave,,,,,,10467.0,207.0,11.0,0.0,R-01425319,Historical,R-,Bronx,PERRY AVENUE,,EAST  207 STREET,,EAST  209 STREET,,E,04/08/2020,PS-80B,NO PARKING (SANITATION BROOM SYMBOL) TUESDAY FRIDAY 11:30AM-1PM <-> (SUPERSEDES SP-361C),018 X 012,,,390.0,,,PNTD,DR,,1018620.0,258617.0\r\n16380001068,380000,3800,Unchanged,1296.36659534,4739.65683479,\"MULTIPOLYGON (((-74.06835738184378 40.60607106684581, -74.06837920705199 40.6060164281981, -74.06839981448861 40.60601757850993,...\",,,,,,,,,,,,,,,,,,,,,,,,,0.0,S-115809,Historical,S-,Staten Island,MERLE PLACE,,DEAD END,,FINGERBOARD ROAD,,W,09/30/2003,R7-40RA,NO PARKING ANYTIME (SINGLE ARROW)(SUPERSEDES R7-40 DON'TUSE R7-40)(SUPERSEDED BY SP-854CA),018 X 012,05/22/2019,,155.0,West,,PNTD,DR,,965083.0,160500.0\r\n16380000104,380000,3800,Updated,7665.33005329,32717.6546833,\"MULTIPOLYGON (((-74.09110054415498 40.59634873742025, -74.09106268547875 40.59633909851012, -74.09104895661434 40.59633560275146,...\",0.0,21001.0,03/08/2019,Boldyn Infrastructure (ZenFi),Installed,02/01/2020,UTILITY,Staten_Island,958993.01,155314.59,40.5929428,-74.0909421,B,N Railroad Avenue,Evergreen Avenue,Burgher Avenue,,,,,,10304.0,502.0,50.0,0.0,C-192190,Historical,C-,Staten Island,NORTH RAILROAD AVENUE,,CORNELIA STREET,,,,@,10/16/2008,R1-1,STOP,030 X 030,,N/W C,0.0,,North,ENGG,DR,,959313.0,155848.0\r\n16380001419,380000,3800,Unchanged,970.31663677,5125.4382033,\"MULTIPOLYGON (((-74.06640829893426 40.61054225201297, -74.06644321265827 40.610528061228415, -74.06645575688555 40.6105601395605,...\",,,,,,,,,,,,,,,,,,,,,,,,,0.5255982851123665,S-389060,Current,S-,Staten Island,BELAIR ROAD,,BAY STREET,,CABOT PLACE,,S,05/09/2016,PS-1GA,\"NO STANDING ANYTIME --> (SUPERSEDES SP-1044BA, SP-10BA, SP-216BA & SP-270BA)\",018 X 012,,,664.0,West,,PNTD,DR,30' EAST OF EAST CURB LINE OF FIRST SETH LOOP DRIVEWAY,965833.0,161746.0\r\n16380002265,380000,3800,Updated,1306.46875909,5422.36425065,\"MULTIPOLYGON (((-74.13224447120805 40.600182034435186, -74.13224326630558 40.60018212317243, -74.13219686813785 40.60018555531697,...\",0.0,19569.0,08/02/2018,Crown Castle NG,Installed,05/19/2020,UTILITY,Staten_Island,947810.0,157990.0,40.6002474,-74.1312228,B,Talarico Ct,Bradley Ave,Dead End,,,,,,10314.0,502.0,49.0,0.0002790212017261,S-281192,Historical,S-,Staten Island,BRADLEY AVENUE,,HAROLD STREET,,SUNSET AVENUE,,W,05/20/1974,SP-298BA,NO STANDING (SINGLE ARROW) HANDICAP BUS SYMBOL (4 ROUTES) SUPERSEDED BY R7-61A DATED 3/25/92,018 X 030,05/22/2019,,440.0,R,North,,DR,,947840.0,157910.0\r\n18380000794,380000,3800,Unchanged,3733.19578825,21415.0237151,\"MULTIPOLYGON (((-74.01424493256371 40.63081167468452, -74.01421673733422 40.63079485647117, -74.01420070988196 40.63078529763693,...\",,,,,,,,,,,,,,,,,,,,,,,,,0.0,S-861602,Historical,S-,Brooklyn,BAY RIDGE AVENUE,,9 AVENUE,,8 AVENUE,,N,09/28/1990,R7-94,NO PARKING (SANITATION SYMBOL)11AM-2PM MONDAY <----->,012 X 018,,,427.0,,,PNTD,DR,,980385.0,168738.0\r\n18380002382,380000,3800,Unchanged,2863.0421718,14502.3473914,\"MULTIPOLYGON (((-73.9614543467011 40.620205255344764, -73.96145265451801 40.6201967961881, -73.96144526123759 40.6201598390481,...\",,,,,,,,,,,,,,,,,,,,,,,,,0.0,S-030181,Historical,S-,Brooklyn,EAST   13 STREET,,LOCUST AVENUE,,AVENUE L,,E,10/19/1977,R7-93,NO PARKING (SANITATION SYMBOL)8-11AM FRIDAY <----->,012 X 018,,,20.0,,,,DR,,994795.0,164710.0\r\n19380003976,380000,3800,Unchanged,3738.84564324,21594.6816079,\"MULTIPOLYGON (((-73.94903277390365 40.67828866095941, -73.94899212513792 40.67828655015014, -73.94895704019063 40.67828473266115,...\",0.0,21878.0,08/10/2019,Boldyn US (Mobilitie I),Approved,,CITY,Brooklyn,998935.0,186361.0,40.6781824,-73.9470566,B,Atlantic Avenue,New York Avenue,Nostrand Avenue,,,,,,11216.0,308.0,36.0,0.0,P-206296,Historical,P-,Brooklyn,NOSTRAND AVENUE,,ATLANTIC AVENUE,,PACIFIC STREET,,E,07/22/2009,SP-57E,2 HOUR PARKING 8AM-4PM EXCEPT SUNDAY <-----> (SUPERSEDED BY PS-204CB),018 X 012,05/22/2019,,92.0,,,PNTD,SAME,,998214.0,186318.0\r\n19380004014,380000,3800,Updated,4289.84852845,25011.6264785,\"MULTIPOLYGON (((-73.95827191114027 40.68161680820703, -73.95820792511152 40.6816034663789, -73.95814395094293 40.681590115514354,...\",0.0,24280.0,03/20/2021,NY SMSA,Approved,,CITY,Brooklyn,996098.2,187246.78,40.680618,-73.9572825,B,LEFFERTS PLACE,CLASSON AVENUE,FRANKLIN AVENUE,,,,,,11238.0,303.0,36.0,0.0,R-01330531,Historical,R-,Brooklyn,FULTON STREET,,CLASSON AVENUE,,FRANKLIN AVENUE,,S,09/18/2018,PS-7A,METERS ARE NOT IN EFFECT ABOVE TIMES (TO BE USED ONLY FOR CONFLICTING STREET CLEANING AND METERED PARKING REGULATIONS) (SUPERSEDES SW-473),018 X 006,,,458.0,,,PNTD,SAME,,996193.0,187509.0\r\n19380003093,380000,3800,Updated,2758.69115526,17954.7670549,\"MULTIPOLYGON (((-73.91135396761511 40.70490792178378, -73.91130939227997 40.70488143040453, -73.91125642218675 40.70484993469465,...\",,,,,,,,,,,,,,,,,,,,,,,,,0.0,S-920230,Historical,S-,Queens,MENAHAN STREET,,CYPRESS AVENUE,,SENECA AVENUE,,N,10/06/1994,R7-70,NO PARKING 7AM-4PM SCHOOL DAYS (SUPERSEDED BY SP-279C),012 X 018,05/22/2019,,54.0,,,PNTD,DR,,1008735.0,195634.0\r\n19380003641,380000,3800,Updated,2314.98814419,14325.4063221,\"MULTIPOLYGON (((-73.9533183435002 40.72806863490848, -73.95331756227353 40.72806859857141, -73.95331678105315 40.72806855322924,...\",,,,,,,,,,,,,,,,,,,,,,,,,0.0,P-868537,Historical,P-,Brooklyn,MANHATTAN AVENUE,,CALYER STREET,,MESEROLE AVENUE,,W,03/13/1991,SP-298BA,NO STANDING (SINGLE ARROW) HANDICAP BUS SYMBOL (4 ROUTES) SUPERSEDED BY R7-61A DATED 3/25/92,018 X 030,05/22/2019,,113.0,North,,,DR,\"(ROUTES B61, B62)\",997236.0,204435.0\r\n5380000907,380000,3800,Unchanged,2728.18582502,14404.728864,\"MULTIPOLYGON (((-73.89540817760377 40.705445173158985, -73.89540432692257 40.70543623567951, -73.89539446678533 40.70541334560747,...\",,,,,,,,,,,,,,,,,,,,,,,,,0.0,R-01659550,Historical,R-,Queens,FRESH POND ROAD,,CATALPA AVENUE,,68 AVENUE,,E,03/09/2024,PS-22BA,NO PARKING (SANITATION BROOM SYMBOL) 8AM-8:30AM EXCEPT SUNDAY --> (SUPERSEDES SP-858CA),018 X 012,,,258.0,North,,PNTD,DR,,1013103.0,196015.0\r\n8380001762,380000,3800,Unchanged,4273.11335296,20045.3104029,\"MULTIPOLYGON (((-73.79190385044991 40.717337272743656, -73.79179938123653 40.717318074044236, -73.79178863349404 40.717315842047654,...\",,,,,,,,,,,,,,,,,,,,,,,,,0.0,S-249730,Historical,S-,Queens,CROYDON ROAD,,HOMELAWN STREET,,MAYFIELD ROAD,,S,06/13/1969,R7-83X,T.A.Z. NO PARKING 11AM-2PM TUES & THURS,012 X 018,,,570.0,,,,LP,,1042425.0,200557.0\r\n9380000160,380000,3800,Unchanged,3294.51633382,23705.692893,\"MULTIPOLYGON (((-73.8455958965308 40.71433824449505, -73.8455335454841 40.71431516178025, -73.84547119450141 40.71429207002656,...\",,,,,,,,,,,,,,,,,,,,,,,,,0.0,C-030284,Historical,C-,Queens,ASCAN AVENUE,,GREENWAY SOUTH,,,,@,06/19/1996,R1-1,STOP,030 X 030,,S/W C,0.0,,East,,DR,,1027605.0,199322.0\r\n9380001034,380000,3800,Unchanged,2528.31099112,12378.7509976,\"MULTIPOLYGON (((-73.8779678516822 40.75622662241953, -73.8779669175386 40.756225865004886, -73.87796600712885 40.75622508060016,...\",0.0,17754.0,12/29/2017,Extenet II,Installed,08/14/2020,CITY,Queens,1018130.0,214221.0,40.7545987,-73.8777132,B,34th Ave,90th St,89th St,,,,,,11372.0,403.0,25.0,0.0,S-271026,Historical,S-,Queens,89 STREET,,34 AVENUE,,NORTHERN BOULEVARD,,E,04/26/2011,SP-400C,NO PARKING (SANITATION BROOM SYMBOL) 9:30-11AM FRI <---> (SUPERSEDED BY PS-36B),018 X 012,05/22/2019,,530.0,South,,PNTD,LP,,1017841.0,214715.0\r\n"
+}
