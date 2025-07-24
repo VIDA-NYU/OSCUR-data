@@ -128,6 +128,9 @@ python code/processors/tree_cover_landscaping.py \
   --output ../processors/processed_data/tree_cover_landscaping/parks_with_landscaping.csv
 ```
 
+#### Transit Stops and Routes 
+No postprocessing script is needed, as the original datasets are being preserved without any merging.
+
 ### Other Datasets
 To be added as needed.
 
