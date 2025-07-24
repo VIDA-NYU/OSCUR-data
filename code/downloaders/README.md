@@ -40,12 +40,8 @@ code/downloaders/
    ├── curbs_downloader.py               # Download curbs dataset (CSV)
    ├── ped_ramp_locations_downloader.py  # Download pedestrian ramp dataset (CSV)
    ├── transit_stop_accessibilty.py      # Orchestrates all downloads
-├── environment/
-   ├── environment_downloader.py        # Orchestrates all downloads for environmental datasets
-   ├── heat_vulnerability_downloader.py # Download NYC Heat Vulnerability Index (CSV)
-   ├── open_space_downloader.py         # Download NYC Planimetric Open Space (Other) dataset (CSV)
-   ├── parks_downloader.py              # Download NYC Planimetric Parks dataset (CSV)
-   ├── zipcode_geom_downloader.py       # Download MODZCTA (Modified ZIP Code Tabulation Areas) geometries (CSV)
+├── Urban_design /
+   ├── urban_design_frontage_downlaoder  # Download Urban Design Frontage dataset (CSV)
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -73,6 +69,7 @@ python speed_humps.py -o data/speed_humps.csv
 python raised_crosswalks.py -o data/raised_crosswalks.csv
 python NYC_vehicle_collisions.py -o data/NYC_vehicle_collisions.csv
 python nyc_311.py -o data/nyc_311.csv
+python urban_design_frontage_downloader.py -o data/urban_design.csv
 ```
 With API token and custom timeout:
 ```bash
@@ -166,21 +163,6 @@ python sidewalk_surface_condition.py \
   --complaints_311 /custom/path/sidewalk_311_complaints.csv \
   --planimetric /custom/path/sidewalk_planimetric.csv \
   --lot_info /custom/path/lot_info.csv
-```
-
-**Environment Dataset:**
-The `environment_downloader.py` script coordinates the download of key NYC environmental and geographic data such as parks open spaces and heat index:
-
-```bash
-python environment_downloader.py   # basic usage
-
-Custom output paths:
-```bash
-python environment_downloader.py \
-  --heat_vulnerability /custom/path/hvi.csv \
-  --zipcode_geom /custom/path/modzcta.csv \
-  --parks /custom/path/parks.csv \
-  --open_space /custom/path/open_space.csv
 ```
 
 ## Base Class Benefits
