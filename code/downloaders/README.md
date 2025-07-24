@@ -74,6 +74,12 @@ code/downloaders/
     ├── transit_stops_routes.py            # Orchestrates all transit stop downloads
     ├── subway_stations_downloader.py      # Download MTA Subway Stations dataset (CSV)
     ├── bus_stop_permits_downloader.py     # Download NYC Intercity Bus Stop Permits dataset (CSV)
+├── curb_infrastructure/              # Folder for NYC curb-related features
+    ├── curb_infrastructure_downloader.py    # Orchestrator: Runs all curb infrastructure downloaders
+    ├── sidewalks_downloader.py              # Download Planimetric Sidewalks dataset
+    ├── pedestrian_ramps_downloader.py       # Download Pedestrian Ramp Locations
+    ├── raised_crosswalks_downloader.py      # Download Raised Crosswalk Locations
+    ├── medians_downloader.py                # Download Planimetric Medians dataset
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -269,6 +275,22 @@ Custom output paths:
 python transit_stops_routes.py \
   --subway_stations /custom/path/subway_stations.csv \
   --intercity_bus_stops /custom/path/intercity_bus_stops.csv
+```
+
+**Curb Infrastructure (Sidewalks, crosswalks, driveways, curb ramps, medians, refuges, curb extensions):**
+The `curb_infrastructure.py ` script downloads sidewalks, pedestrian ramps, raised crosswalks and medians:
+
+```bash
+python curb_infrastructure.py   # basic usage
+```
+
+Custom output paths:
+```bash
+python curb_infrastructure_downloader.py \
+  --sidewalks data/curb_infrastructure/sidewalks.csv \
+  --pedestrian_ramps data/curb_infrastructure/pedestrian_ramps.csv \
+  --raised_crosswalks data/curb_infrastructure/raised_crosswalks.csv \
+  --medians data/curb_infrastructure/medians.csv
 ```
 
 ## Base Class Benefits

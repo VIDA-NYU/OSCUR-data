@@ -16,6 +16,7 @@ code/processors/
 ├── merge_hvi_zipcode_geom.py          # Post-processing Environment dataset (CSV)
 ├── fixed_obstructions.py              # Post-processing Fixed Obstructions dataset (CSV)
 ├── tree_cover_landscaping.py          # Post-processing Tree Cover and Landscaping dataset (CSV)
+├── curb_infrastructure.py             # Post-processing Curb Infrastructure dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
 ```
@@ -130,6 +131,18 @@ python code/processors/tree_cover_landscaping.py \
 
 #### Transit Stops and Routes 
 No postprocessing script is needed, as the original datasets are being preserved without any merging.
+
+#### Curb Infrastructure: Sidewalks, crosswalks, driveways, curb ramps, medians, refuges, curb extensions
+This script integrates sidewalk geometries with nearby features such as pedestrian ramps, raised crosswalks, and medians using spatial joins.
+
+```bash
+python curb_infrastructure.py \
+  --sidewalks data/curb_infrastructure/sidewalks.csv \
+  --pedestrian_ramps data/curb_infrastructure/pedestrian_ramps.csv \
+  --raised_crosswalks data/curb_infrastructure/raised_crosswalks.csv \
+  --medians data/curb_infrastructure/medians.csv \
+  --output processed_data/sidewalks_with_curb_features.csv
+```
 
 ### Other Datasets
 To be added as needed.
