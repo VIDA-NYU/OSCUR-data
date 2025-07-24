@@ -26,6 +26,7 @@ It will depend on the post-processing needed for each dataset:
 python speed_humps.py -i ../downloaders/data/speed_humps.csv -o processed_data/speed_humps_with_latlon.csv
 ```
 #### Designed Goods Movement Routes Dataset
+This script processes the raw dataset for truck routes, adds latitude and longitude points and deletes unecessary columns.
 
 ```bash
  python code/processors/designed_goods_movement_routes.py \
