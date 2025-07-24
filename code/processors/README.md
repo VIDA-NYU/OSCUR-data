@@ -12,6 +12,7 @@ code/processors/
 ├── signals_markings_signs.py          # Post-processing Signals Markings and Signs dataset (CSV)
 ├── transit_stop_accessibilitys.py     # Post-processing Transit Stop Acc dataset (CSV)
 ├── sidewalk_surface_condition.py      # Post-processing Sidewalk Surface Condition dataset (CSV)
+├── evironment.py                      # Post-processing Environment dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
 ```
@@ -76,6 +77,19 @@ python merge_geocoded_and_311.py \
   --complaints_311 ../downloaders/data/sidewalk_surface_condition/sidewalk_311_complaints.csv \
   --sidewalk_geom ../downloaders/data/sidewalk_surface_condition/sidewalk_planimetric.csv \
   --out ../processors/processed_data/sidewalk_surface_full_merged.csv
+```
+
+#### Environment Dataset
+
+This script processes datasets for heat vulnerability, parks, open spaces, and ZIP code geometries. The Heat Vulnerability Index (HVI) is spatially merged with Modified ZIP Code Tabulation Areas (MODZCTA) to enable spatial analysis. Parks and open spaces are preserved in their original geometry formats for mapping and overlay.
+
+```bash
+python environment.py \
+  --heat_vulnerability data/environment/heat_vulnerability.csv \
+  --zipcode_geom data/environment/modzcta.csv \
+  --parks data/environment/parks.csv \
+  --open_space data/environment/open_space.csv \
+  --output processed_data/environment_final.csv
 ```
 
 
