@@ -17,6 +17,7 @@ code/processors/
 ├── fixed_obstructions.py              # Post-processing Fixed Obstructions dataset (CSV)
 ├── tree_cover_landscaping.py          # Post-processing Tree Cover and Landscaping dataset (CSV)
 ├── curb_infrastructure.py             # Post-processing Curb Infrastructure dataset (CSV)
+├── rail_routes_and_crossings.py       # Post-processing Rail Routes and Crossings dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
 ```
@@ -142,6 +143,16 @@ python curb_infrastructure.py \
   --raised_crosswalks data/curb_infrastructure/raised_crosswalks.csv \
   --medians data/curb_infrastructure/medians.csv \
   --output processed_data/sidewalks_with_curb_features.csv
+```
+
+#### Rail Routes and Crossings Dataset
+This script downloads and merges railroad line geometries with nearby or intersecting rail crossing points.
+
+```bash
+python code/processors/rail_routes_and_crossings.py \
+  --railroads ../downloaders/data/rail_routes_and_crossings/railroad_lines.csv \
+  --crossings ../downloaders/data/rail_routes_and_crossings/rail_crossings_nyc.csv \
+  --output ../processors/processed_data/rail_routes_and_crossings_combined.csv
 ```
 
 ### Other Datasets

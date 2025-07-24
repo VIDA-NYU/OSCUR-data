@@ -80,6 +80,10 @@ code/downloaders/
     ├── pedestrian_ramps_downloader.py       # Download Pedestrian Ramp Locations
     ├── raised_crosswalks_downloader.py      # Download Raised Crosswalk Locations
     ├── medians_downloader.py                # Download Planimetric Medians dataset
+├── rail_routes_and_crossings/
+    ├── rail_routes_and_crossings.py      # Orchestrates all downloads
+    ├── crossings_downloader.py           # Download rail crossing points dataset (CSV)
+    ├── railroad_lines_downloader.py      # Download railroad lines dataset (CSV)
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -291,6 +295,20 @@ python curb_infrastructure_downloader.py \
   --pedestrian_ramps data/curb_infrastructure/pedestrian_ramps.csv \
   --raised_crosswalks data/curb_infrastructure/raised_crosswalks.csv \
   --medians data/curb_infrastructure/medians.csv
+```
+
+**Rail Routes and Crossings:**
+The `rail_routes_and_crossings.py ` script downloads railroads and crossings datasets:
+
+```bash
+python rail_routes_and_crossings.py    # basic usage
+```
+
+Custom output paths:
+```bash
+python rail_routes_and_crossings.py \
+  --railroads custom/path/railroad_lines.csv \
+  --crossings custom/path/rail_crossings_nyc.csv \
 ```
 
 ## Base Class Benefits
