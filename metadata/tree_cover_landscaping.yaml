@@ -1,0 +1,70 @@
+dataset_id: "tree_cover_landscaping"
+name: "Natural Turf Maintenance and Landscaping (Tree Cover, Shade Areas)"
+description: >
+  This dataset provides information on routine turf maintenance activities across New York City's parks. 
+  Maintained by the NYC Department of Parks and Recreation, it includes spatial and operational data on designated natural turf sites — lawn areas composed of non-synthetic grass — that are large enough to require mowing equipment.
+
+  The turf maintenance records have been spatially joined to NYC Parks Zones (polygonal boundaries of parks) using the OMPPropID key. 
+  This enables analysis at the park-zone level and supports environmental equity, shade availability, and landscape maintenance studies.
+
+  The dataset supports analysis of shaded or landscaped areas across the city’s parks, and may be used to approximate zones of natural cooling, tree cover, or vegetation-based heat mitigation.
+
+source_organization:
+  landscaping: "New York City Department of Parks and Recreation (NYC Parks)"
+  parks_zones: "New York City Department of Parks and Recreation (NYC Parks)"
+
+domain: "environment"
+last_updated: "2025-07-24"
+update_frequency:
+  landscaping: "Seasonally (May–October)"
+  parks_zones: "Rarely (as park boundaries change)"
+
+access:
+  primary_url: "https://data.cityofnewyork.us"
+  api_endpoint:
+    landscaping: "https://data.cityofnewyork.us/resource/tja3-yjvi.json"
+    parks_zones: "https://data.cityofnewyork.us/resource/4j29-i5ry.json"
+  license: "Open Data License"
+  file_format:
+    landscaping: ["CSV", "GeoJSON"]
+    parks_zones: ["GeoJSON"]
+  rate_limits:
+    landscaping: "Unknown"
+    parks_zones: "Unknown"
+
+spatial:
+  geometry_type: "Polygon"
+  coordinate_system: "EPSG:4326"
+  coverage_area: "NYC"
+
+temporal:
+  temporal_type:
+    landscaping: "maintenance season"
+  temporal_resolution:
+    landscaping: "seasonal"
+  time_column:
+    landscaping: "last_maint_date"
+
+implementation:
+  downloader_module:
+    landscaping: "downloaders.tree_cover_landscaping.landscaping_downloader"
+    parks_zones: "downloaders.tree_cover_landscaping.nyc_park_zones_downloader"
+  processor_module: "processors.tree_cover_landscaping"
+  orchestrator_downloader: "downloaders.tree_cover_landscaping"
+  example_notebook: "examples/tree_cover_landscaping.ipynb"
+
+integration_opportunities:
+  spatial_joins:
+    - "Overlay with park polygons to identify maintained vs. unmaintained zones"
+    - "Join with heat vulnerability or tree canopy cover for shade access analysis"
+    - "Environmental equity comparisons by neighborhood or borough"
+  temporal_alignment:
+    - "Compare seasonal maintenance patterns with summer temperature and heat complaints"
+
+map_algebra:
+  raster_conversion:
+    suitable_for_rasterization: true
+    recommended_cell_size: "10 meters"
+    interpolation_method: "binary presence (maintained vs. not maintained)"
+
+data_name: "tree_cover_landscaping"

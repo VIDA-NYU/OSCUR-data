@@ -64,12 +64,16 @@ code/downloaders/
     ├── sidewalks_downloader.py         # Download NYC Planimetric Sidewalk dataset (GeoJSON)
     ├── signposts_downloader.py         # Download NYC DOT Street Sign Work Orders dataset (CSV)
     ├── utility_poles_downloader.py     # Download DoITT Telecom Franchise Poles dataset (CSV)
+├── bicycle_facilites/
+    ├── bike_routes_downloader.py     # Download NYC DOT bicycle facilities dataset (CSV)
+├── tree_cover_landscaping/
+    ├── tree_cover_landscaping.py             # Orchestrates all tree cover landscaping downloads
+    ├── landscaping_downloader.py             # Download NYC Natural Turf Maintenance dataset (CSV)
+    ├── nyc_park_zones_downloader.py          # Download NYC Park Zones dataset (GeoJSON)
 ├── transit_stops_routes/
     ├── transit_stops_routes.py            # Orchestrates all transit stop downloads
     ├── subway_stations_downloader.py      # Download MTA Subway Stations dataset (CSV)
     ├── bus_stop_permits_downloader.py     # Download NYC Intercity Bus Stop Permits dataset (CSV)
-├── bicycle_facilites/
-    ├── bike_routes_downloader.py     # Download NYC DOT bicycle facilities dataset (CSV)
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -239,6 +243,19 @@ python fixed_obstructions.py \
   --telecom_poles /custom/path/utility_poles.csv
 ```
 
+**Tree Cover Landscaping:**
+The `tree_cover_landscaping.py` script allows downloading multiple datasets simultaneously, including park zones and turf maintenance. 
+
+```bash
+python tree_cover_landscaping.py    # basic usage
+```
+
+You can specify custom output paths for each dataset:
+```bash
+python tree_cover_landscaping.py \
+  --turf_maintenance custom/path/natural_turf_maintenance.csv \
+  --parks_zones custom/path/parks_zones.csv
+```
 
 **Transit Stops and Routes:**
 The `transit_stops_routes.py ` script downloads subway station data and intercity bus stop permits:
