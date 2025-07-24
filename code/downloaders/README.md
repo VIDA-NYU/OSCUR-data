@@ -167,7 +167,7 @@ python sidewalk_surface_condition.py \
 ```
 
 **Rail Routes and Crossings:**
-The `rail_routes_and_crossings.py ` script downloads accessible pedestrian signals, traffic signals, and street sign work orders data:
+The `rail_routes_and_crossings.py ` script downloads railroads and crossings datasets:
 
 ```bash
 python rail_routes_and_crossings.py    # basic usage
