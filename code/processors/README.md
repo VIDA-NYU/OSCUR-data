@@ -11,6 +11,7 @@ code/processors/
 ├── on_street_curb_management.py       # Post-processing On Street Curb Management dataset (CSV)
 ├── signals_markings_signs.py          # Post-processing Signals Markings and Signs dataset (CSV)
 ├── transit_stop_accessibilitys.py     # Post-processing Transit Stop Acc dataset (CSV)
+├── merge_hvi_zipcode_geom.py          # Post-processing Environment dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
 ```
@@ -57,6 +58,16 @@ python -m code.processors.transit_stop_accessibility \
   --ramps data/transit_stop_accessibility/pedestrian_ramp_locations.csv \
   --curbs data/transit_stop_accessibility/nyc_curbs.csv \
   --out   processed_data/transit_stop_accessibility/transit_stop_accessibility_merged.csv
+```
+
+#### Environment Dataset
+This script joins the Heat Vulnerability Index with Zipcode Geometries.The output is a flat CSV file with geometry location details.
+
+```bash
+python -m code.processors.merge_hvi_zipcode_geom \
+  --hvi   data/environment/heat_vulnerability.csv \
+  --zipcode data/environment/zipcode_geom.csv \
+  --out   processed_data/environment/hvi_vulnerability_with_geom.csv
 ```
  
 ### Other Datasets
