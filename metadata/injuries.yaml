@@ -1,7 +1,7 @@
 dataset_id: "injuries"
 name: "Motor Vehicle Collisions in NYC (Crashes and Persons Involved)"
 description: >
-  A unified dataset capturing motor vehicle crashes in New York City and detailed records of persons involved in those crashes.
+  Two datasets capturing motor vehicle crashes in New York City and detailed records of persons involved in those crashes.
   
   1) Motor Vehicle Collisions – Crashes: Location and context for each incident including time, borough, contributing factors, vehicles involved, and injury counts.
   2) Motor Vehicle Collisions – Persons: Individual-level records of drivers, passengers, pedestrians, and cyclists involved in the incidents, including age, sex, role, and injury severity.
