@@ -1,0 +1,1704 @@
+{
+  "nb_rows": 65238,
+  "nb_profiled_rows": 65238,
+  "nb_columns": 31,
+  "columns": [
+    {
+      "name": "License Number",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "num_distinct_values": 65237
+    },
+    {
+      "name": "Business Name",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "missing_values_ratio": 1.532848953064165e-05,
+      "num_distinct_values": 54631
+    },
+    {
+      "name": "DBA/Trade Name",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "missing_values_ratio": 0.8550691314877832,
+      "num_distinct_values": 6684
+    },
+    {
+      "name": "Business Unique ID",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "num_distinct_values": 58854
+    },
+    {
+      "name": "Business Category",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 48,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Electronics Store",
+            "count": 3926
+          },
+          {
+            "bin": "Home Improvement Contractor",
+            "count": 17474
+          },
+          {
+            "bin": "Secondhand Dealer - General",
+            "count": 5068
+          },
+          {
+            "bin": "Sightseeing Guide",
+            "count": 3583
+          },
+          {
+            "bin": "Tobacco Retail Dealer",
+            "count": 6282
+          }
+        ]
+      }
+    },
+    {
+      "name": "License Type",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 2,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Individual",
+            "count": 15206
+          },
+          {
+            "bin": "Premises",
+            "count": 50032
+          }
+        ]
+      }
+    },
+    {
+      "name": "License Status",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 10,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Active",
+            "count": 39650
+          },
+          {
+            "bin": "Expired",
+            "count": 16004
+          },
+          {
+            "bin": "Failed to Renew",
+            "count": 970
+          },
+          {
+            "bin": "Ready for Renewal",
+            "count": 5139
+          },
+          {
+            "bin": "Surrendered",
+            "count": 2153
+          }
+        ]
+      }
+    },
+    {
+      "name": "Initial Issuance Date",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/DateTime"
+      ],
+      "num_distinct_values": 7141,
+      "plot": {
+        "type": "histogram_temporal",
+        "data": [
+          {
+            "count": 164,
+            "date_start": "1900-12-31T00:02:08",
+            "date_end": "1913-06-13T04:50:08"
+          },
+          {
+            "count": 0,
+            "date_start": "1913-06-13T04:50:08",
+            "date_end": "1925-11-24T09:38:08"
+          },
+          {
+            "count": 0,
+            "date_start": "1925-11-24T09:38:08",
+            "date_end": "1938-05-07T14:25:04"
+          },
+          {
+            "count": 0,
+            "date_start": "1938-05-07T14:25:04",
+            "date_end": "1950-10-18T19:13:04"
+          },
+          {
+            "count": 0,
+            "date_start": "1950-10-18T19:13:04",
+            "date_end": "1963-04-01T00:01:04"
+          },
+          {
+            "count": 0,
+            "date_start": "1963-04-01T00:01:04",
+            "date_end": "1975-09-12T04:48:48"
+          },
+          {
+            "count": 0,
+            "date_start": "1975-09-12T04:48:48",
+            "date_end": "1988-02-23T09:37:04"
+          },
+          {
+            "count": 1858,
+            "date_start": "1988-02-23T09:37:04",
+            "date_end": "2000-08-05T14:24:00"
+          },
+          {
+            "count": 14999,
+            "date_start": "2000-08-05T14:24:00",
+            "date_end": "2013-01-16T19:12:00"
+          },
+          {
+            "count": 48217,
+            "date_start": "2013-01-16T19:12:00",
+            "date_end": "2025-06-30T00:00:00"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Expiration Date",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration",
+        "http://schema.org/DateTime"
+      ],
+      "missing_values_ratio": 0.00044452619638860784,
+      "num_distinct_values": 260,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "02/28/2025",
+            "count": 2827
+          },
+          {
+            "bin": "02/28/2027",
+            "count": 11869
+          },
+          {
+            "bin": "03/31/2026",
+            "count": 5252
+          },
+          {
+            "bin": "07/31/2025",
+            "count": 3391
+          },
+          {
+            "bin": "12/31/2026",
+            "count": 4160
+          }
+        ]
+      }
+    },
+    {
+      "name": "Details",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "missing_values_ratio": 0.884806401177228,
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "foot",
+            "count": 7371
+          },
+          {
+            "bin": "stands",
+            "count": 7371
+          },
+          {
+            "bin": "0",
+            "count": 5374
+          },
+          {
+            "bin": "5",
+            "count": 5122
+          },
+          {
+            "bin": "capacity",
+            "count": 4998
+          }
+        ]
+      }
+    },
+    {
+      "name": "Contact Phone",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "missing_values_ratio": 0.2684784941291885,
+      "num_distinct_values": 35299
+    },
+    {
+      "name": "Address Type",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.23420399153867377,
+      "num_distinct_values": 4,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Complete Address",
+            "count": 49050
+          },
+          {
+            "bin": "Cross Street (Intersection)",
+            "count": 840
+          },
+          {
+            "bin": "P.O. Box",
+            "count": 15
+          },
+          {
+            "bin": "Place (Landmark)",
+            "count": 54
+          }
+        ]
+      }
+    },
+    {
+      "name": "Building Number",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "missing_values_ratio": 0.24721787915018853,
+      "num_distinct_values": 9718
+    },
+    {
+      "name": "Street1",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "missing_values_ratio": 0.23421932002820442,
+      "num_distinct_values": 9840
+    },
+    {
+      "name": "Street2",
+      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
+      "semantic_types": []
+    },
+    {
+      "name": "Street3",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "missing_values_ratio": 0.9999540145314081,
+      "num_distinct_values": 1
+    },
+    {
+      "name": "Unit Type",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.8506391980134278,
+      "num_distinct_values": 20,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "APT",
+            "count": 3678
+          },
+          {
+            "bin": "FL",
+            "count": 1288
+          },
+          {
+            "bin": "FRNT",
+            "count": 262
+          },
+          {
+            "bin": "STE",
+            "count": 2970
+          },
+          {
+            "bin": "UNIT",
+            "count": 1044
+          }
+        ]
+      }
+    },
+    {
+      "name": "Apt/Suite",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "missing_values_ratio": 0.8566019804408473,
+      "num_distinct_values": 1661
+    },
+    {
+      "name": "City",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.0001226279162451332,
+      "num_distinct_values": 2029,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "BRONX",
+            "count": 7776
+          },
+          {
+            "bin": "BROOKLYN",
+            "count": 15754
+          },
+          {
+            "bin": "JAMAICA",
+            "count": 1829
+          },
+          {
+            "bin": "NEW YORK",
+            "count": 11673
+          },
+          {
+            "bin": "STATEN ISLAND",
+            "count": 3492
+          }
+        ]
+      }
+    },
+    {
+      "name": "State",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.0007510959870014409,
+      "num_distinct_values": 50,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "FL",
+            "count": 234
+          },
+          {
+            "bin": "NJ",
+            "count": 1742
+          },
+          {
+            "bin": "NY",
+            "count": 60969
+          },
+          {
+            "bin": "Outside USA",
+            "count": 247
+          },
+          {
+            "bin": "PA",
+            "count": 208
+          }
+        ]
+      }
+    },
+    {
+      "name": "ZIP Code",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0012416076519819737,
+      "missing_values_ratio": 0.00044452619638860784,
+      "num_distinct_values": 3334,
+      "mean": 2455463.4882231914,
+      "stddev": 33162378.191189688,
+      "coverage": [
+        {
+          "range": {
+            "gte": 10003.0,
+            "lte": 11754.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 64375,
+            "bin_start": 0.0,
+            "bin_end": 98208374.4
+          },
+          {
+            "count": 619,
+            "bin_start": 98208374.4,
+            "bin_end": 196416748.8
+          },
+          {
+            "count": 12,
+            "bin_start": 196416748.8,
+            "bin_end": 294625123.20000005
+          },
+          {
+            "count": 30,
+            "bin_start": 294625123.20000005,
+            "bin_end": 392833497.6
+          },
+          {
+            "count": 8,
+            "bin_start": 392833497.6,
+            "bin_end": 491041872.0
+          },
+          {
+            "count": 4,
+            "bin_start": 491041872.0,
+            "bin_end": 589250246.4000001
+          },
+          {
+            "count": 3,
+            "bin_start": 589250246.4000001,
+            "bin_end": 687458620.8000001
+          },
+          {
+            "count": 27,
+            "bin_start": 687458620.8000001,
+            "bin_end": 785666995.2
+          },
+          {
+            "count": 14,
+            "bin_start": 785666995.2,
+            "bin_end": 883875369.6
+          },
+          {
+            "count": 36,
+            "bin_start": 883875369.6,
+            "bin_end": 982083744.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Borough",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.2912259725926607,
+      "num_distinct_values": 6,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Bronx",
+            "count": 5775
+          },
+          {
+            "bin": "Brooklyn",
+            "count": 12201
+          },
+          {
+            "bin": "Manhattan",
+            "count": 9404
+          },
+          {
+            "bin": "Outside NYC",
+            "count": 3603
+          },
+          {
+            "bin": "Queens",
+            "count": 12422
+          }
+        ]
+      }
+    },
+    {
+      "name": "Community Board",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.3532756982126981,
+      "num_distinct_values": 67,
+      "mean": 293.1145267948141,
+      "stddev": 124.18015835931507,
+      "coverage": [
+        {
+          "range": {
+            "gte": 102.0,
+            "lte": 211.0
+          }
+        },
+        {
+          "range": {
+            "gte": 301.0,
+            "lte": 318.0
+          }
+        },
+        {
+          "range": {
+            "gte": 401.0,
+            "lte": 503.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 9105,
+            "bin_start": 101.0,
+            "bin_end": 141.2
+          },
+          {
+            "count": 13,
+            "bin_start": 141.2,
+            "bin_end": 181.4
+          },
+          {
+            "count": 5771,
+            "bin_start": 181.4,
+            "bin_end": 221.60000000000002
+          },
+          {
+            "count": 6,
+            "bin_start": 221.60000000000002,
+            "bin_end": 261.8
+          },
+          {
+            "count": 963,
+            "bin_start": 261.8,
+            "bin_end": 302.0
+          },
+          {
+            "count": 11127,
+            "bin_start": 302.0,
+            "bin_end": 342.20000000000005
+          },
+          {
+            "count": 14,
+            "bin_start": 342.20000000000005,
+            "bin_end": 382.40000000000003
+          },
+          {
+            "count": 12336,
+            "bin_start": 382.40000000000003,
+            "bin_end": 422.6
+          },
+          {
+            "count": 0,
+            "bin_start": 422.6,
+            "bin_end": 462.8
+          },
+          {
+            "count": 2856,
+            "bin_start": 462.8,
+            "bin_end": 503.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Council District",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.35390416628345445,
+      "num_distinct_values": 51,
+      "mean": 25.489822064056938,
+      "stddev": 15.314940591019637,
+      "coverage": [
+        {
+          "range": {
+            "gte": 1.0,
+            "lte": 15.0
+          }
+        },
+        {
+          "range": {
+            "gte": 17.0,
+            "lte": 33.0
+          }
+        },
+        {
+          "range": {
+            "gte": 34.0,
+            "lte": 51.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 6427,
+            "bin_start": 1.0,
+            "bin_end": 6.0
+          },
+          {
+            "count": 2999,
+            "bin_start": 6.0,
+            "bin_end": 11.0
+          },
+          {
+            "count": 3492,
+            "bin_start": 11.0,
+            "bin_end": 16.0
+          },
+          {
+            "count": 3600,
+            "bin_start": 16.0,
+            "bin_end": 21.0
+          },
+          {
+            "count": 4074,
+            "bin_start": 21.0,
+            "bin_end": 26.0
+          },
+          {
+            "count": 5033,
+            "bin_start": 26.0,
+            "bin_end": 31.0
+          },
+          {
+            "count": 3628,
+            "bin_start": 31.0,
+            "bin_end": 36.0
+          },
+          {
+            "count": 4032,
+            "bin_start": 36.0,
+            "bin_end": 41.0
+          },
+          {
+            "count": 3382,
+            "bin_start": 41.0,
+            "bin_end": 46.0
+          },
+          {
+            "count": 5483,
+            "bin_start": 46.0,
+            "bin_end": 51.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "BIN",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.37205309788773416,
+      "num_distinct_values": 26466,
+      "mean": 3009800.8067421764,
+      "stddev": 1279624.107345196,
+      "coverage": [
+        {
+          "range": {
+            "gte": 1004488.0,
+            "lte": 2096766.0
+          }
+        },
+        {
+          "range": {
+            "gte": 3010606.0,
+            "lte": 3395922.0
+          }
+        },
+        {
+          "range": {
+            "gte": 4005653.0,
+            "lte": 5093913.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 8352,
+            "bin_start": 1000000.0,
+            "bin_end": 1417491.6
+          },
+          {
+            "count": 6,
+            "bin_start": 1417491.6,
+            "bin_end": 1834983.2
+          },
+          {
+            "count": 5664,
+            "bin_start": 1834983.2,
+            "bin_end": 2252474.8
+          },
+          {
+            "count": 0,
+            "bin_start": 2252474.8,
+            "bin_end": 2669966.4
+          },
+          {
+            "count": 3598,
+            "bin_start": 2669966.4,
+            "bin_end": 3087458.0
+          },
+          {
+            "count": 8393,
+            "bin_start": 3087458.0,
+            "bin_end": 3504949.5999999996
+          },
+          {
+            "count": 0,
+            "bin_start": 3504949.5999999996,
+            "bin_end": 3922441.1999999997
+          },
+          {
+            "count": 10188,
+            "bin_start": 3922441.1999999997,
+            "bin_end": 4339932.8
+          },
+          {
+            "count": 1971,
+            "bin_start": 4339932.8,
+            "bin_end": 4757424.4
+          },
+          {
+            "count": 2794,
+            "bin_start": 4757424.4,
+            "bin_end": 5174916.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "BBL",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.37205309788773416,
+      "num_distinct_values": 26418,
+      "mean": 2927147955.6634283,
+      "stddev": 1243139552.5936937,
+      "coverage": [
+        {
+          "range": {
+            "gte": 1002737501.0,
+            "lte": 2049490077.0
+          }
+        },
+        {
+          "range": {
+            "gte": 3006640037.0,
+            "lte": 3082770086.0
+          }
+        },
+        {
+          "range": {
+            "gte": 4005560020.0,
+            "lte": 5043570038.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 1,
+            "bin_start": 0.0,
+            "bin_end": 508048006.6
+          },
+          {
+            "count": 6442,
+            "bin_start": 508048006.6,
+            "bin_end": 1016096013.2
+          },
+          {
+            "count": 1916,
+            "bin_start": 1016096013.2,
+            "bin_end": 1524144019.8000002
+          },
+          {
+            "count": 2695,
+            "bin_start": 1524144019.8000002,
+            "bin_end": 2032192026.4
+          },
+          {
+            "count": 2969,
+            "bin_start": 2032192026.4,
+            "bin_end": 2540240033.0
+          },
+          {
+            "count": 5636,
+            "bin_start": 2540240033.0,
+            "bin_end": 3048288039.6000004
+          },
+          {
+            "count": 6354,
+            "bin_start": 3048288039.6000004,
+            "bin_end": 3556336046.2000003
+          },
+          {
+            "count": 6907,
+            "bin_start": 3556336046.2000003,
+            "bin_end": 4064384052.8
+          },
+          {
+            "count": 5253,
+            "bin_start": 4064384052.8,
+            "bin_end": 4572432059.400001
+          },
+          {
+            "count": 2793,
+            "bin_start": 4572432059.400001,
+            "bin_end": 5080480066.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "NTA",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.36645819920904993,
+      "num_distinct_values": 193,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "BK28",
+            "count": 572
+          },
+          {
+            "bin": "MN13",
+            "count": 631
+          },
+          {
+            "bin": "MN17",
+            "count": 1401
+          },
+          {
+            "bin": "QN55",
+            "count": 658
+          },
+          {
+            "bin": "QN61",
+            "count": 613
+          }
+        ]
+      }
+    },
+    {
+      "name": "Census Block (2010)",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.3664735276985806,
+      "num_distinct_values": 261,
+      "mean": 2110.736220662957,
+      "stddev": 1264.7163681063357,
+      "coverage": [
+        {
+          "range": {
+            "gte": 1000.0,
+            "lte": 1016.0
+          }
+        },
+        {
+          "range": {
+            "gte": 2000.0,
+            "lte": 3005.0
+          }
+        },
+        {
+          "range": {
+            "gte": 4000.0,
+            "lte": 7000.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 3,
+            "bin_start": 1.0,
+            "bin_end": 901.2
+          },
+          {
+            "count": 16631,
+            "bin_start": 901.2,
+            "bin_end": 1801.4
+          },
+          {
+            "count": 12492,
+            "bin_start": 1801.4,
+            "bin_end": 2701.6000000000004
+          },
+          {
+            "count": 6906,
+            "bin_start": 2701.6000000000004,
+            "bin_end": 3601.8
+          },
+          {
+            "count": 3175,
+            "bin_start": 3601.8,
+            "bin_end": 4502.0
+          },
+          {
+            "count": 1153,
+            "bin_start": 4502.0,
+            "bin_end": 5402.200000000001
+          },
+          {
+            "count": 621,
+            "bin_start": 5402.200000000001,
+            "bin_end": 6302.400000000001
+          },
+          {
+            "count": 243,
+            "bin_start": 6302.400000000001,
+            "bin_end": 7202.6
+          },
+          {
+            "count": 90,
+            "bin_start": 7202.6,
+            "bin_end": 8102.8
+          },
+          {
+            "count": 16,
+            "bin_start": 8102.8,
+            "bin_end": 9003.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Census Tract (2010)",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.3539348232625157,
+      "num_distinct_values": 1294,
+      "mean": 6728.350882604157,
+      "stddev": 20826.060877975222,
+      "coverage": [
+        {
+          "range": {
+            "gte": 33.0,
+            "lte": 3002.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 37289,
+            "bin_start": 1.0,
+            "bin_end": 15791.2
+          },
+          {
+            "count": 2041,
+            "bin_start": 15791.2,
+            "bin_end": 31581.4
+          },
+          {
+            "count": 1001,
+            "bin_start": 31581.4,
+            "bin_end": 47371.600000000006
+          },
+          {
+            "count": 397,
+            "bin_start": 47371.600000000006,
+            "bin_end": 63161.8
+          },
+          {
+            "count": 496,
+            "bin_start": 63161.8,
+            "bin_end": 78952.0
+          },
+          {
+            "count": 297,
+            "bin_start": 78952.0,
+            "bin_end": 94742.20000000001
+          },
+          {
+            "count": 177,
+            "bin_start": 94742.20000000001,
+            "bin_end": 110532.40000000001
+          },
+          {
+            "count": 114,
+            "bin_start": 110532.40000000001,
+            "bin_end": 126322.6
+          },
+          {
+            "count": 63,
+            "bin_start": 126322.6,
+            "bin_end": 142112.80000000002
+          },
+          {
+            "count": 273,
+            "bin_start": 142112.80000000002,
+            "bin_end": 157903.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Latitude",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [
+        "http://schema.org/latitude"
+      ],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.3411508629939606,
+      "mean": 40.700080261504986,
+      "stddev": 0.68584290272296,
+      "coverage": [
+        {
+          "range": {
+            "gte": 40.58849,
+            "lte": 40.86263
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 8,
+            "bin_start": 0.0,
+            "bin_end": 4.757657
+          },
+          {
+            "count": 0,
+            "bin_start": 4.757657,
+            "bin_end": 9.515314
+          },
+          {
+            "count": 0,
+            "bin_start": 9.515314,
+            "bin_end": 14.272971
+          },
+          {
+            "count": 1,
+            "bin_start": 14.272971,
+            "bin_end": 19.030628
+          },
+          {
+            "count": 0,
+            "bin_start": 19.030628,
+            "bin_end": 23.788285000000002
+          },
+          {
+            "count": 15,
+            "bin_start": 23.788285000000002,
+            "bin_end": 28.545942
+          },
+          {
+            "count": 18,
+            "bin_start": 28.545942,
+            "bin_end": 33.303599
+          },
+          {
+            "count": 37,
+            "bin_start": 33.303599,
+            "bin_end": 38.061256
+          },
+          {
+            "count": 42884,
+            "bin_start": 38.061256,
+            "bin_end": 42.818913
+          },
+          {
+            "count": 19,
+            "bin_start": 42.818913,
+            "bin_end": 47.57657
+          }
+        ]
+      }
+    },
+    {
+      "name": "Longitude",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [
+        "http://schema.org/longitude"
+      ],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.3411508629939606,
+      "mean": -73.91748954681039,
+      "stddev": 3.009867909284044,
+      "coverage": [
+        {
+          "range": {
+            "gte": -74.108295,
+            "lte": -73.775267
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 26,
+            "bin_start": -122.669696,
+            "bin_end": -106.3142576
+          },
+          {
+            "count": 34,
+            "bin_start": -106.3142576,
+            "bin_end": -89.9588192
+          },
+          {
+            "count": 42658,
+            "bin_start": -89.9588192,
+            "bin_end": -73.6033808
+          },
+          {
+            "count": 235,
+            "bin_start": -73.6033808,
+            "bin_end": -57.2479424
+          },
+          {
+            "count": 0,
+            "bin_start": -57.2479424,
+            "bin_end": -40.892504
+          },
+          {
+            "count": 0,
+            "bin_start": -40.892504,
+            "bin_end": -24.53706559999999
+          },
+          {
+            "count": 0,
+            "bin_start": -24.53706559999999,
+            "bin_end": -8.181627199999994
+          },
+          {
+            "count": 8,
+            "bin_start": -8.181627199999994,
+            "bin_end": 8.173811200000003
+          },
+          {
+            "count": 1,
+            "bin_start": 8.173811200000003,
+            "bin_end": 24.5292496
+          },
+          {
+            "count": 20,
+            "bin_start": 24.5292496,
+            "bin_end": 40.884688
+          }
+        ]
+      }
+    }
+  ],
+  "nb_spatial_columns": 2,
+  "nb_temporal_columns": 2,
+  "nb_categorical_columns": 9,
+  "nb_numerical_columns": 7,
+  "types": [
+    "categorical",
+    "numerical",
+    "spatial",
+    "temporal"
+  ],
+  "spatial_coverage": [
+    {
+      "type": "latlong",
+      "column_names": [
+        "Latitude",
+        "Longitude"
+      ],
+      "column_indexes": [
+        29,
+        30
+      ],
+      "geohashes4": [
+        {
+          "hash": "12113032",
+          "number": 8729
+        },
+        {
+          "hash": "12113030",
+          "number": 10
+        },
+        {
+          "hash": "12113031",
+          "number": 6
+        },
+        {
+          "hash": "12113033",
+          "number": 11
+        },
+        {
+          "hash": "12113023",
+          "number": 33991
+        },
+        {
+          "hash": "12113021",
+          "number": 7
+        },
+        {
+          "hash": "12113020",
+          "number": 8
+        },
+        {
+          "hash": "12113022",
+          "number": 1
+        },
+        {
+          "hash": "12113011",
+          "number": 1
+        },
+        {
+          "hash": "12113003",
+          "number": 1
+        },
+        {
+          "hash": "12113210",
+          "number": 30
+        },
+        {
+          "hash": "12113211",
+          "number": 2
+        },
+        {
+          "hash": "12113201",
+          "number": 6
+        },
+        {
+          "hash": "12113101",
+          "number": 6
+        },
+        {
+          "hash": "12113103",
+          "number": 1
+        },
+        {
+          "hash": "12113100",
+          "number": 1
+        },
+        {
+          "hash": "12113122",
+          "number": 7
+        },
+        {
+          "hash": "12113301",
+          "number": 1
+        },
+        {
+          "hash": "12113302",
+          "number": 1
+        },
+        {
+          "hash": "12113303",
+          "number": 1
+        },
+        {
+          "hash": "12110031",
+          "number": 3
+        },
+        {
+          "hash": "12110022",
+          "number": 2
+        },
+        {
+          "hash": "12110000",
+          "number": 2
+        },
+        {
+          "hash": "12110223",
+          "number": 3
+        },
+        {
+          "hash": "12110221",
+          "number": 1
+        },
+        {
+          "hash": "12110203",
+          "number": 4
+        },
+        {
+          "hash": "12110200",
+          "number": 1
+        },
+        {
+          "hash": "12110311",
+          "number": 1
+        },
+        {
+          "hash": "12110133",
+          "number": 11
+        },
+        {
+          "hash": "12110132",
+          "number": 1
+        },
+        {
+          "hash": "12111020",
+          "number": 3
+        },
+        {
+          "hash": "12111013",
+          "number": 10
+        },
+        {
+          "hash": "12111230",
+          "number": 1
+        },
+        {
+          "hash": "12111223",
+          "number": 1
+        },
+        {
+          "hash": "12111202",
+          "number": 1
+        },
+        {
+          "hash": "12111201",
+          "number": 1
+        },
+        {
+          "hash": "12111323",
+          "number": 1
+        },
+        {
+          "hash": "12111322",
+          "number": 1
+        },
+        {
+          "hash": "12111300",
+          "number": 1
+        },
+        {
+          "hash": "12112111",
+          "number": 2
+        },
+        {
+          "hash": "12112102",
+          "number": 2
+        },
+        {
+          "hash": "12101220",
+          "number": 2
+        },
+        {
+          "hash": "12101212",
+          "number": 3
+        },
+        {
+          "hash": "12100313",
+          "number": 5
+        },
+        {
+          "hash": "12100312",
+          "number": 3
+        },
+        {
+          "hash": "12100323",
+          "number": 2
+        },
+        {
+          "hash": "12100320",
+          "number": 2
+        },
+        {
+          "hash": "12100321",
+          "number": 2
+        },
+        {
+          "hash": "10321111",
+          "number": 8
+        },
+        {
+          "hash": "10323031",
+          "number": 2
+        },
+        {
+          "hash": "10323132",
+          "number": 6
+        },
+        {
+          "hash": "10323210",
+          "number": 4
+        },
+        {
+          "hash": "10312101",
+          "number": 1
+        },
+        {
+          "hash": "10312103",
+          "number": 3
+        },
+        {
+          "hash": "10312110",
+          "number": 3
+        },
+        {
+          "hash": "10312200",
+          "number": 2
+        },
+        {
+          "hash": "10312022",
+          "number": 1
+        },
+        {
+          "hash": "10313312",
+          "number": 1
+        },
+        {
+          "hash": "10303311",
+          "number": 3
+        },
+        {
+          "hash": "10303310",
+          "number": 1
+        },
+        {
+          "hash": "10331202",
+          "number": 3
+        },
+        {
+          "hash": "10331203",
+          "number": 1
+        },
+        {
+          "hash": "10331221",
+          "number": 4
+        },
+        {
+          "hash": "10333313",
+          "number": 4
+        },
+        {
+          "hash": "10333032",
+          "number": 2
+        },
+        {
+          "hash": "10333213",
+          "number": 1
+        },
+        {
+          "hash": "10330201",
+          "number": 2
+        },
+        {
+          "hash": "10332333",
+          "number": 2
+        },
+        {
+          "hash": "10332331",
+          "number": 3
+        },
+        {
+          "hash": "10332311",
+          "number": 1
+        },
+        {
+          "hash": "11222202",
+          "number": 1
+        },
+        {
+          "hash": "11202013",
+          "number": 1
+        },
+        {
+          "hash": "30133201",
+          "number": 16
+        },
+        {
+          "hash": "30133212",
+          "number": 4
+        },
+        {
+          "hash": "30013201",
+          "number": 1
+        },
+        {
+          "hash": "03333333",
+          "number": 8
+        }
+      ],
+      "ranges": [
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -74.108206,
+                40.86249
+              ],
+              [
+                -73.775267,
+                40.58834
+              ]
+            ]
+          }
+        }
+      ],
+      "number": 42982
+    }
+  ],
+  "temporal_coverage": [
+    {
+      "type": "datetime",
+      "column_names": [
+        "Initial Issuance Date"
+      ],
+      "column_indexes": [
+        7
+      ],
+      "column_types": [
+        "http://schema.org/DateTime"
+      ],
+      "ranges": [
+        {
+          "range": {
+            "gte": 873331200.0,
+            "lte": 1378771200.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1426464000.0,
+            "lte": 1742860800.0
+          }
+        }
+      ],
+      "temporal_resolution": "day"
+    },
+    {
+      "type": "datetime",
+      "column_names": [
+        "Expiration Date"
+      ],
+      "column_indexes": [
+        8
+      ],
+      "column_types": [
+        "http://schema.org/DateTime"
+      ],
+      "ranges": [
+        {
+          "range": {
+            "gte": 1672444800.0,
+            "lte": 1719705600.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1735603200.0,
+            "lte": 1777507200.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1785456000.0,
+            "lte": 1816992000.0
+          }
+        }
+      ],
+      "temporal_resolution": "day"
+    }
+  ],
+  "attribute_keywords": [
+    "License Number",
+    "License",
+    "Number",
+    "Business Name",
+    "Business",
+    "Name",
+    "DBA/Trade Name",
+    "DBA",
+    "Trade",
+    "Name",
+    "Business Unique ID",
+    "Business",
+    "Unique",
+    "ID",
+    "Business Category",
+    "Business",
+    "Category",
+    "License Type",
+    "License",
+    "Type",
+    "License Status",
+    "License",
+    "Status",
+    "Initial Issuance Date",
+    "Initial",
+    "Issuance",
+    "Date",
+    "Expiration Date",
+    "Expiration",
+    "Date",
+    "Details",
+    "Contact Phone",
+    "Contact",
+    "Phone",
+    "Address Type",
+    "Address",
+    "Type",
+    "Building Number",
+    "Building",
+    "Number",
+    "Street1",
+    "Street",
+    "1",
+    "Street2",
+    "Street",
+    "2",
+    "Street3",
+    "Street",
+    "3",
+    "Unit Type",
+    "Unit",
+    "Type",
+    "Apt/Suite",
+    "Apt",
+    "Suite",
+    "City",
+    "State",
+    "ZIP Code",
+    "ZIP",
+    "Code",
+    "Borough",
+    "Community Board",
+    "Community",
+    "Board",
+    "Council District",
+    "Council",
+    "District",
+    "BIN",
+    "BBL",
+    "NTA",
+    "Census Block (2010)",
+    "Census",
+    "Block",
+    "2010",
+    "",
+    "Census Tract (2010)",
+    "Census",
+    "Tract",
+    "2010",
+    "",
+    "Latitude",
+    "Longitude"
+  ],
+  "sample": "License Number,Business Name,DBA/Trade Name,Business Unique ID,Business Category,License Type,License Status,Initial Issuance Date,Expiration Date,Details,Contact Phone,Address Type,Building Number,Street1,Street2,Street3,Unit Type,Apt/Suite,City,State,ZIP Code,Borough,Community Board,Council District,BIN,BBL,NTA,Census Block (2010),Census Tract (2010),Latitude,Longitude\r\n2048474-DCA,BM OF ST NICHOLAS INC,,BA-1075952-2022,Electronics Store,Premises,Expired,02/16/2017,12/31/2022,,,Complete Address,1385,SAINT NICHOLAS AVENUE,,,,,NEW YORK,NY,10033,Manhattan,112.0,10.0,1063901.0,1021620044.0,MN36,1000.0,263.0,40.84821,-73.934556\r\n2094812-DCA,DANIELLE BRANDTS,,BA-1216514-2022,Sightseeing Guide,Individual,Active,02/26/2020,03/31/2026,,,,,,,,,,MANKATO,MN,56001,,,,,,,,,,\r\n2067289-DCA,\"NOEL, RALPH\",THE NOELS CONSTUCTION,BA-1435718-2022,Home Improvement Contractor,Premises,Expired,03/05/2018,02/28/2023,,,Complete Address,19431,115 DRIVE,,,FL,1,SAINT ALBANS,NY,11412,Queens,412.0,27.0,4237443.0,4110350050.0,QN08,2004.0,526.0,40.69522,-73.758597\r\n0873750-DCA,OMAR G DEMARIA,,BA-1442754-2022,Sightseeing Guide,Individual,Active,03/16/1994,03/31/2026,,,,,,,,,,NEW HYDE PARK,NY,11040,,,,,,,,,,\r\n2075807-DCA,WALKER PAINTING LLC,,BA-1508441-2022,Home Improvement Contractor,Premises,Active,07/18/2018,02/28/2027,,5162215300,Complete Address,2215,JACKSON AVE,,,,,SEAFORD,NY,11783,Outside NYC,,,,,,,,,\r\n2044647-DCA,XIN XIN WIRELESS INC,,BA-1543291-2022,Electronic & Home Appliance Service Dealer,Premises,Active,10/13/2016,06/30/2026,,3473483607,Complete Address,5404,8TH AVE,,,,,BROOKLYN,NY,11220,Brooklyn,307.0,43.0,3014817.0,3008260039.0,BK34,2000.0,106.0,40.63878,-74.006154\r\n1350915-DCA,\"OMBRELLINO CONSTRUCTION & PAINTING, INC.\",,BA-1385057-2022,Home Improvement Contractor,Premises,Active,04/20/2010,02/28/2027,,(347) 386-8289,Complete Address,38,COFFEY STREET,,,,,BROOKLYN,NY,11231,Brooklyn,306.0,38.0,3008759.0,3005880036.0,BK33,4004.0,53.0,40.67455,-74.011648\r\n2084615-DCA,GULSHANARA KHANOM,,BA-1292490-2022,Newsstand,Premises,Active,04/15/2019,03/31/2026,,7182009289,Cross Street (Intersection),,NWC EAST 57 STREET,,,,,NEW YORK,NY,10022,Manhattan,105.0,4.0,,,,,11202.0,40.76161,-73.97075\r\n2012939-DCA,CELATECH CONSTRUCTION CORP.,,BA-1209613-2022,Home Improvement Contractor,Premises,Expired,09/05/2014,02/28/2025,,718-606-6906,Complete Address,2526,50 STREET,,,,,WOODSIDE,NY,11377,Queens,401.0,22.0,4014040.0,4007450049.0,QN63,1002.0,297.0,40.7635,-73.90428\r\n2126213-DCWP,1133 METRO CHOICE OF FULTON INC.,,BA-1711649-2024,Electronics Store,Premises,Active,01/08/2025,12/31/2026,,7188336266,Complete Address,1133,FULTON ST,,,,,BROOKLYN,NY,11238,Brooklyn,303.0,36.0,3057394.0,3019970049.0,BK69,4005.0,227.0,40.68129,-73.956389\r\n2082083-2-DCA,\"MAHANT 277, INC\",,BA-1459102-2022,Tobacco Retail Dealer,Premises,Expired,02/08/2019,12/31/2022,,,Complete Address,277,CANAL STREET,,,,,NEW YORK,NY,10013,Manhattan,102.0,1.0,1002678.0,1002090001.0,MN24,1010.0,45.0,40.71914,-74.001508\r\n2119768-DCWP,MI GERIZIN MARKET CORP.,,BA-1662066-2023,Stoop Line Stand,Premises,Active,03/15/2024,03/31/2026,\"Product Category: Fruits, vegetables, soft drinks; 4 foot stands: 2; 5 foot stands: 0; 5-10 foot stands: 0\",3479615365,Complete Address,777,ELTON AVE,,,,,BRONX,NY,10451,Bronx,201.0,17.0,2099050.0,2023790026.0,BX34,1002.0,69.0,40.8214,-73.913446\r\n2098284-DCA,DIGITAL APPLIANCES & HEATING AND COOLING INC,,BA-1232338-2022,Electronics Store,Premises,Active,04/06/2021,12/31/2026,,3477253786,Complete Address,5516,7TH AVE,,,,,BROOKLYN,NY,11220,Brooklyn,307.0,43.0,3015124.0,3008330145.0,BK34,2001.0,100.0,40.6395,-74.008986\r\n2055891-DCA,FOLLETT HIGHER EDUCATION GROUP INC,NYC Bookstore #2015,BA-1208449-2022,Electronics Store,Premises,Expired,07/18/2017,12/31/2022,,2129984672,Complete Address,726,BROADWAY,,,,,NEW YORK,NY,10003,Manhattan,102.0,2.0,1008796.0,1005450015.0,MN23,2003.0,57.0,40.72937,-73.993423\r\n1099742-DCA,PERCIVAL LONGMORE,,BA-1418614-2022,General Vendor,Individual,Ready for Renewal,09/12/2006,09/30/2025,Vendor Type: Citywide Specialized Vendor (Yellow),,,,,,,,,NEW YORK,NY,10011,,,,,,,,,,\r\n1261885-DCA,\"ULLAH, OBAID S.M.\",O.U. CONSTRUCTION,BA-1557769-2022,Home Improvement Contractor,Premises,Active,06/25/2013,02/28/2027,,9174705181,Complete Address,124,EAST 40 STREET,,,BLDG,1,BROOKLYN,NY,11203,Brooklyn,317.0,40.0,3108892.0,3048760013.0,BK91,2004.0,814.0,40.65262,-73.940179\r\n2125115-DCWP,\"ecoATM, LLC\",,BA-1711026-2024,Secondhand Dealer - General,Premises,Ready for Renewal,11/01/2024,07/31/2025,,8587667250,Complete Address,12701,ROCKAWAY BLVD,,,,,JAMAICA,NY,11420,Queens,410.0,28.0,4253003.0,4116920001.0,QN55,1007.0,178.0,40.67519,-73.810595\r\n1202585-DCA,VILLAS MARKET PLACE INC.,GARDEN GOURMET MARKET,BA-1541459-2022,Stoop Line Stand,Premises,Active,06/30/2005,03/31/2026,\"Product Category: Fruits, Vegetables, Flowers, Soft Drinks, Confectionary and Ice Cream; 4 foot stands: 0; 5 foot stands: 10; 5-10 foot...\",7187964209,Complete Address,5665,BROADWAY,,,,,BRONX,NY,10463,Bronx,208.0,11.0,2083562.0,2057550050.0,BX29,3000.0,287.0,40.88102,-73.903308\r\n2116242-DCWP,YAKUP DANIS,,BA-1666901-2023,Pedicab Driver,Individual,Failed to Renew,08/31/2023,04/30/2025,,,,,,,,,,WEEHAWKEN,Outside USA,07086,,,,,,,,,,\r\n2123393-2-DCWP,163 MP PETROLEUM LLC,,BA-1703571-2024,Tobacco Retail Dealer,Premises,Active,08/07/2024,12/31/2025,,7185817841,Complete Address,481,E 163RD ST,,,,,BRONX,NY,10451,Bronx,203.0,16.0,2115276.0,2023680002.0,BX35,1008.0,185.0,40.82461,-73.910479\r\n"
+}

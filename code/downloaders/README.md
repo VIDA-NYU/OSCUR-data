@@ -24,7 +24,7 @@ code/downloaders/
 ├── raised_crosswalks.py              # Download Raised Crosswalks dataset (CSV)
 ├── NYC_vehicle_collisions.py         # Download Vehicle Collisions (Crashes) dataset (CSV)
 ├── nyc_311.py                        # Download NYC 311 Requests dataset (CSV)
-├── on_street_curb_management         # Folder containing download files for dataset
+├── on_street_curb_management/         # Folder containing download files for dataset
     ├── curbs_downloader.py           # Download Curbs dataset (CSV)
     ├── loading_zones_downloader.py   # Download Loading Zones dataset (CSV)
     ├── on_street_curb_management.py  # Activates all download files
@@ -35,16 +35,35 @@ code/downloaders/
     ├── traffic_signal_downloader.py           # Download Traffic Signals (311)
     ├── street_sign_downloader.py              # Download Street Sign Work Orders
     ├── signals_markings_signs.py              # Runs all signal/sign downloaders
-├── transit_stop_accessibilty.py
-   ├── acc_ped_signal_loc_downlaoder.py  # Download acc ped location dataset (CSV)
-   ├── curbs_downloader.py               # Download curbs dataset (CSV)
-   ├── ped_ramp_locations_downloader.py  # Download pedestrian ramp dataset (CSV)
-   ├── transit_stop_accessibilty.py      # Orchestrates all downloads
-fixed_obstructions/
-├── fixed_obstructions.py           # Orchestrates all fixed obstruction downloads
-├── sidewalks_downloader.py         # Download NYC Planimetric Sidewalk dataset (GeoJSON)
-├── signposts_downloader.py         # Download NYC DOT Street Sign Work Orders dataset (CSV)
-├── utility_poles_downloader.py     # Download DoITT Telecom Franchise Poles dataset (CSV)
+├── transit_stop_accessibilty/
+    ├── acc_ped_signal_loc_downlaoder.py  # Download Accessible Pedestrian Locations dataset (CSV)
+    ├── curbs_downloader.py               # Download Curbs dataset (CSV)
+    ├── ped_ramp_locations_downloader.py  # Download Pedestrian Ramp dataset (CSV)
+    ├── transit_stop_accessibilty.py      # Orchestrates all download files
+├── sidewalk_surface_condition/
+    ├── sidewalk_violations_downloader.py # Download Sidewalk violations (CSV)
+    ├── tree_damage_downloader.py         # Download Tree damage records (CSV) 
+    ├── sidewalk_lot_info_downloader.py   # Download BBL lot info table (CSV with bblid, location, etc.)
+    ├── sidewalk_complaints_311_downloader.py   # Download 311 sidewalk complaints (CSV with coordinates)
+    ├── sidewalk_geometry_downloader      # Sidewalk polygon geometries (as WKT)
+    ├── sidewalk_surface_condition        # Orchestrates all download files  
+├── key_destinations/
+    ├── issued_licenses_downloader.py      # Download Issued Licenses dataset (CSV)
+    ├── key_desinations_downloader.py      # Orchestrates all download files
+    ├── nyc_facilities_downloader.py       # Download NYC Facilities dataset (CSV)
+├── designed_goods_movement_routes/      # Folder for freight movement routes
+    ├── truck_routes.py                  # Download Truck Routes (CSV)
+├── environment/
+    ├── environment_downloader.py         # Orchestrates all downloads
+    ├── heat_vulnerability_downloader.py  # Download Heat Vulnerability dataset (CSV)
+    ├── open_space_downloader.py          # Download Open Space dataset (CSV)
+    ├── parks_downloader.py               # Download Parks dataset (CSV)
+    ├── zipcode_geom_downloader.py        # Download Zipcode Geomertry dataset (CSV)
+├── fixed_obstructions/
+    ├── fixed_obstructions.py           # Orchestrates all fixed obstruction downloads
+    ├── sidewalks_downloader.py         # Download NYC Planimetric Sidewalk dataset (GeoJSON)
+    ├── signposts_downloader.py         # Download NYC DOT Street Sign Work Orders dataset (CSV)
+    ├── utility_poles_downloader.py     # Download DoITT Telecom Franchise Poles dataset (CSV)
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -72,6 +91,7 @@ python speed_humps.py -o data/speed_humps.csv
 python raised_crosswalks.py -o data/raised_crosswalks.csv
 python NYC_vehicle_collisions.py -o data/NYC_vehicle_collisions.csv
 python nyc_311.py -o data/nyc_311.csv
+python designed_goods_movement_routes/truck_routes.py --output data/designed_goods_movement_routes/truck_routes.csv
 ```
 With API token and custom timeout:
 ```bash
@@ -167,11 +187,41 @@ python sidewalk_surface_condition.py \
   --lot_info /custom/path/lot_info.csv
 ```
 
+**Key Destinations:**
+The `key_destinations.py` script downloads nyc government facilities and issued licenses data:
+
+```bash
+python key_destinations.py   # basic usage
+```
+
+Custom output paths:
+```bash
+python key_destinations_downloader.py \
+  --facilities /custom/path/nyc_facilities.csv \
+  --licenses /custom/path/issued_licenses.csv
+```
+
+**Environments Dataset:**
+The `environments_downloader.py` script downloads datasets for heat vulnerability, parks, open spaces, and ZIP code geometries:
+
+```bash
+python environments_downloader.py   # basic usage
+```
+
+Custom output paths:
+```bash
+python environment_downloader.py \
+  --heat_vulnerability /custom/path/heat_vulnerability.csv \
+  --zipcode_geom /custom/path/modzcta.csv \
+  --parks /custom/path/parks.csv \
+  --open_space /custom/path/open_space.csv
+```
+
 **Fixed Obstructions:**
 The `fixed_obstructions.py ` script allows downloading multiple datasets simultaneously, including signposts, utility signs and sidewalks.
 
 ```bash
-python fixed_obstructions.py
+python fixed_obstructions.py    # basic usage
 ```
 
 You can specify custom output paths for each dataset:
@@ -181,7 +231,6 @@ python fixed_obstructions.py \
   --street_signs /custom/path/street_sign_work_orders.csv \
   --telecom_poles /custom/path/utility_poles.csv
 ```
-
 
 ## Base Class Benefits
 

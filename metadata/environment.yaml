@@ -1,0 +1,95 @@
+dataset_id: "environment"
+name: "Environmental Conditions in NYC (Heat Vulnerability, Parks, Open Space, and ZIP Code Areas)"
+description: >
+ Several datasets were collected to represent NYC’s key environmental and geographic features:
+	1.	NYC Planimetric Parks — official polygon geometries of publicly accessible parks across NYC,
+	2.	NYC Planimetric Open Space (Other) — polygon geometries of other open spaces, such as plazas and green areas not classified as parks,
+	3.	Modified ZIP Code Tabulation Areas (MODZCTA) — official boundaries of ZIP Code areas used for demographic and public health analysis,
+	4.	The Heat Vulnerability Index (HVI) — a risk score summarizing neighborhood vulnerability to extreme heat, based on social and environmental factors.
+
+"The MODZCTA and HVI datasets were merged together to associate heat vulnerability scores with spatial ZIP Code boundaries. 
+The Heat Vulnerability Index (HVI) required postprocessing to incorporate geometry, while the parks and open space datasets were preserved in their original forms.
+These datasets support spatial analysis of environmental risk, green space accessibility, urban resilience, and neighborhood-level planning.
+All records are provided with geographic coordinates or geometries suitable for spatial overlay, joining, and visualization."
+
+source_organization:
+  heat_vulnerability_index: "New York City Department of Health and Mental Hygiene (NYC DOHMH)"
+  parks: "New York City Department of Information Technology & Telecommunications (DoITT)"
+  open_space_other: "New York City Department of Information Technology & Telecommunications (DoITT)"
+  zipcode_geom: "New York City Department of Health and Mental Hygiene (NYC DOHMH)"
+
+domain: "environment"
+last_updated: "2025-07-15"
+update_frequency:
+  heat_vulnerability_index: "Annually"
+  parks: "Occasionally"
+  open_space_other: "Occasionally"
+  zipcode_geom: "Occasionally"
+
+access:
+  primary_url: "https://data.cityofnewyork.us"
+  api_endpoint:
+    heat_vulnerability_index: "https://data.cityofnewyork.us/resource/4mhf-duep.json"
+    parks: "https://data.cityofnewyork.us/resource/y6ja-fw4f.json"
+    open_space_other: "https://data.cityofnewyork.us/resource/b7j8-z8a7.json"
+    zipcode_geom: "https://data.cityofnewyork.us/resource/pri4-ifjk.json"
+  license: "Open Data License"
+  file_format:
+    heat_vulnerability_index: ["CSV", "JSON"]
+    parks: ["CSV", "GeoJSON"]
+    open_space_other: ["CSV", "GeoJSON"]
+    zipcode_geom: ["CSV", "GeoJSON"]
+  rate_limits:
+    heat_vulnerability_index: "Unknown"
+    parks: "Unknown"
+    open_space_other: "Unknown"
+    zipcode_geom: "Unknown"
+
+spatial:
+  geometry_type: "polygon"
+  coordinate_system: "EPSG:4326"
+  coverage_area: "NYC"
+
+temporal:
+  temporal_type:
+    heat_vulnerability_index: "heat risk update year"
+    parks: "last updated date"
+    open_space_other: "last updated date"
+    zipcode_geom: "geometry publication date"
+  temporal_resolution:
+    heat_vulnerability_index: "annual"
+    parks: "static"
+    open_space_other: "static"
+    zipcode_geom: "static"
+  time_column:
+    heat_vulnerability_index: "data_year"
+    parks: "last_edit_date"
+    open_space_other: "last_edit_date"
+    zipcode_geom: "last_edit_date"
+
+implementation:
+  downloader_module:
+    heat_vulnerability_index: "downloaders.environment.heat_vulnerability_downloader"
+    parks: "downloaders.environment.parks_downloader"
+    open_space_other: "downloaders.environment.open_space_downloader"
+    zipcode_geom: "downloaders.environment.zipcode_geom_downloader"
+  orchestrator_downloader:
+    orchestrator: "downloaders.environment.environment_downloader"
+  processor_module: "processors.merge_hvi_and_zipcode_geom"
+  example_notebook: "examples/environment.ipynb"
+
+integration_opportunities:
+  spatial_joins:
+    - "Join HVI data with ZIP Code polygons for spatial analysis"
+    - "Overlay with zoning lots, census tracts, or neighborhood boundaries"
+    - "Environmental justice and public health impact studies"
+  temporal_alignment:
+    - "Align annual HVI updates with climate resilience and demographic datasets"
+
+map_algebra:
+  raster_conversion:
+    suitable_for_rasterization: true
+    recommended_cell_size: "30 meters"
+    interpolation_method: "point density (kernel density or presence/absence)"
+
+data_name: "environment"

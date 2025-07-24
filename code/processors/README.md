@@ -12,6 +12,8 @@ code/processors/
 ├── signals_markings_signs.py          # Post-processing Signals Markings and Signs dataset (CSV)
 ├── transit_stop_accessibilitys.py     # Post-processing Transit Stop Acc dataset (CSV)
 ├── sidewalk_surface_condition.py      # Post-processing Sidewalk Surface Condition dataset (CSV)
+├── designed_goods_movement_routes.py  # Post-processing Goods Movement Routes (CSV)
+├── merge_hvi_zipcode_geom.py          # Post-processing Environment dataset (CSV)
 ├── fixed_obstructions.py              # Post-processing Fixed Obstructions dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
@@ -78,9 +80,32 @@ python merge_geocoded_and_311.py \
   --sidewalk_geom ../downloaders/data/sidewalk_surface_condition/sidewalk_planimetric.csv \
   --out ../processors/processed_data/sidewalk_surface_full_merged.csv
 ```
-#### Fixed Obstructions Dataset
 
+#### Key Destinations
+No postprocessing script is needed, as the original datasets are being preserved without any merging.
+
+#### Designed Goods Movement Routes Dataset
+This script processes a CSV of NYC truck routes by extracting longitude and latitude from the geometry column, keeps selected relevant columns, and saves the cleaned data to a new CSV file.
+
+```bash
+ python designed_goods_movement_routes.py \
+  --input ../downloaders/data/designed_goods_movement_routes/truck_routes.csv \
+  --output ../processors/processed_data/designed_goods_movement_routes/truck_routes_with_location.csv
+```
+
+#### Environment Dataset
+This script joins the Heat Vulnerability Index with Zipcode Geometries. The output is a flat CSV file with geometry location details.
+
+```bash
+python -m code.processors.merge_hvi_zipcode_geom \
+  --hvi   data/environment/heat_vulnerability.csv \
+  --zipcode data/environment/zipcode_geom.csv \
+  --out   processed_data/environment/hvi_vulnerability_with_geom.csv
+```
+
+#### Fixed Obstructions Dataset
 This script processes the raw datasets for signposts, utility poles and sidewalks, merging them into a unified dataset.
+
 ```bash
 python code/processors/fixed_obstructions.py \
   --sidewalks ../downloaders/data/fixed_obstructions/sidewalk_planimetric.csv \
@@ -88,7 +113,6 @@ python code/processors/fixed_obstructions.py \
   --street_signs ../downloaders/data/fixed_obstructions/street_sign_work_orders.csv \
   --output ../processors/processed_data/fixed_obstructions/sidewalks_with_obstructions.csv
 ```
-
 
 ### Other Datasets
 To be added as needed.
