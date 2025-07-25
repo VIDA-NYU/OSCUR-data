@@ -58,6 +58,9 @@ python -m code.processors.transit_stop_accessibility \
   --curbs data/transit_stop_accessibility/nyc_curbs.csv \
   --out   processed_data/transit_stop_accessibility/transit_stop_accessibility_merged.csv
 ```
+#### Transit Ridership
+No postprocessing script is needed, as the original datasets are being preserved without any merging.
+
  
 ### Other Datasets
 To be added as needed.
