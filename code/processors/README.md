@@ -18,6 +18,7 @@ code/processors/
 ├── tree_cover_landscaping.py          # Post-processing Tree Cover and Landscaping dataset (CSV)
 ├── curb_infrastructure.py             # Post-processing Curb Infrastructure dataset (CSV)
 ├── rail_routes_and_crossings.py       # Post-processing Rail Routes and Crossings dataset (CSV)
+├── land_use.py                        # Post-processing Land Use dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
 ```
@@ -153,6 +154,17 @@ python code/processors/rail_routes_and_crossings.py \
   --railroads ../downloaders/data/rail_routes_and_crossings/railroad_lines.csv \
   --crossings ../downloaders/data/rail_routes_and_crossings/rail_crossings_nyc.csv \
   --output ../processors/processed_data/rail_routes_and_crossings_combined.csv
+```
+
+#### Land Use Dataset
+This script processes the raw datasets for public facilities, licensed businesses, and sidewalks, merging them into a spatially enriched dataset. Facilities and licenses are spatially joined to sidewalk geometries to provide proximity-based land use context.
+
+```bash
+python code/processors/land_use.py \
+  --sidewalks ../downloaders/data/land_use/sidewalks.csv \
+  --facilities ../downloaders/data/land_use/facilities.csv \
+  --licenses ../downloaders/data/land_use/licenses.csv \
+  --output ../processors/processed_data/land_use/sidewalks_with_land_use.csv
 ```
 
 #### Injuries
