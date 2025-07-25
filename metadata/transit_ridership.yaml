@@ -1,7 +1,7 @@
 dataset_id: "transit_ridership"
 name: "Transit Ridership in NYC (Subway, Bus, Ferry)"
 description: >
-  A unified dataset combining NYC transit ridership sources:
+  Three datasets for NYC transit ridership:
   1) MTA Subway Hourly Ridership — estimates of hourly subway ridership by station complex and fare class,
   2) MTA Bus Hourly Ridership — estimates of hourly bus ridership by route and fare class,
   3) NYC Ferry Ridership — hourly ferry boarding counts by route, landing, and fare class.
