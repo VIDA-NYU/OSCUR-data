@@ -1,0 +1,843 @@
+{
+  "nb_rows": 14923,
+  "nb_profiled_rows": 14923,
+  "nb_columns": 10,
+  "columns": [
+    {
+      "name": "NAME",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.5803122696508745,
+      "num_distinct_values": 83,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "NO NAME",
+            "count": 6073
+          },
+          {
+            "bin": "Potter's Field",
+            "count": 8
+          },
+          {
+            "bin": "St Raymond Cemetery",
+            "count": 6
+          },
+          {
+            "bin": "Washington Cemetery",
+            "count": 5
+          },
+          {
+            "bin": "unset",
+            "count": 76
+          }
+        ]
+      }
+    },
+    {
+      "name": "STATUS",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.028814581518461436,
+      "num_distinct_values": 3,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "New",
+            "count": 3226
+          },
+          {
+            "bin": "Unchanged",
+            "count": 10386
+          },
+          {
+            "bin": "Updated",
+            "count": 881
+          }
+        ]
+      }
+    },
+    {
+      "name": "index_right",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/identifier"
+      ],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.751055417811432,
+      "num_distinct_values": 2719,
+      "mean": 59363.50874831763,
+      "stddev": 34599.86085718944,
+      "coverage": [
+        {
+          "range": {
+            "gte": 2050.0,
+            "lte": 39385.0
+          }
+        },
+        {
+          "range": {
+            "gte": 43897.0,
+            "lte": 81012.0
+          }
+        },
+        {
+          "range": {
+            "gte": 84973.0,
+            "lte": 118547.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 389,
+            "bin_start": 50.0,
+            "bin_end": 12241.1
+          },
+          {
+            "count": 357,
+            "bin_start": 12241.1,
+            "bin_end": 24432.2
+          },
+          {
+            "count": 415,
+            "bin_start": 24432.2,
+            "bin_end": 36623.3
+          },
+          {
+            "count": 380,
+            "bin_start": 36623.3,
+            "bin_end": 48814.4
+          },
+          {
+            "count": 393,
+            "bin_start": 48814.4,
+            "bin_end": 61005.5
+          },
+          {
+            "count": 359,
+            "bin_start": 61005.5,
+            "bin_end": 73196.6
+          },
+          {
+            "count": 379,
+            "bin_start": 73196.6,
+            "bin_end": 85387.7
+          },
+          {
+            "count": 380,
+            "bin_start": 85387.7,
+            "bin_end": 97578.8
+          },
+          {
+            "count": 361,
+            "bin_start": 97578.8,
+            "bin_end": 109769.90000000001
+          },
+          {
+            "count": 302,
+            "bin_start": 109769.90000000001,
+            "bin_end": 121961.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "PHYSICALID",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/identifier"
+      ],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.751055417811432,
+      "num_distinct_values": 2718,
+      "mean": 102660.98815612383,
+      "stddev": 52549.92733275324,
+      "coverage": [
+        {
+          "range": {
+            "gte": 4011.0,
+            "lte": 64994.0
+          }
+        },
+        {
+          "range": {
+            "gte": 74892.0,
+            "lte": 121591.0
+          }
+        },
+        {
+          "range": {
+            "gte": 149123.0,
+            "lte": 202114.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 227,
+            "bin_start": 180.0,
+            "bin_end": 20643.4
+          },
+          {
+            "count": 218,
+            "bin_start": 20643.4,
+            "bin_end": 41106.8
+          },
+          {
+            "count": 462,
+            "bin_start": 41106.8,
+            "bin_end": 61570.200000000004
+          },
+          {
+            "count": 364,
+            "bin_start": 61570.200000000004,
+            "bin_end": 82033.6
+          },
+          {
+            "count": 838,
+            "bin_start": 82033.6,
+            "bin_end": 102497.0
+          },
+          {
+            "count": 516,
+            "bin_start": 102497.0,
+            "bin_end": 122960.40000000001
+          },
+          {
+            "count": 83,
+            "bin_start": 122960.40000000001,
+            "bin_end": 143423.80000000002
+          },
+          {
+            "count": 335,
+            "bin_start": 143423.80000000002,
+            "bin_end": 163887.2
+          },
+          {
+            "count": 307,
+            "bin_start": 163887.2,
+            "bin_end": 184350.6
+          },
+          {
+            "count": 365,
+            "bin_start": 184350.6,
+            "bin_end": 204814.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "source",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 2,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "open_space_other",
+            "count": 14493
+          },
+          {
+            "bin": "open_streets",
+            "count": 430
+          }
+        ]
+      }
+    },
+    {
+      "name": "segmentidt",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.9711854184815386,
+      "num_distinct_values": 377,
+      "mean": 149109.43720930233,
+      "stddev": 746057.072395319,
+      "coverage": [
+        {
+          "range": {
+            "gte": 16918.0,
+            "lte": 84980.0
+          }
+        },
+        {
+          "range": {
+            "gte": 130782.0,
+            "lte": 314086.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 427,
+            "bin_start": 2920.0,
+            "bin_end": 902706.8
+          },
+          {
+            "count": 0,
+            "bin_start": 902706.8,
+            "bin_end": 1802493.6
+          },
+          {
+            "count": 0,
+            "bin_start": 1802493.6,
+            "bin_end": 2702280.4000000004
+          },
+          {
+            "count": 0,
+            "bin_start": 2702280.4000000004,
+            "bin_end": 3602067.2
+          },
+          {
+            "count": 0,
+            "bin_start": 3602067.2,
+            "bin_end": 4501854.0
+          },
+          {
+            "count": 0,
+            "bin_start": 4501854.0,
+            "bin_end": 5401640.800000001
+          },
+          {
+            "count": 0,
+            "bin_start": 5401640.800000001,
+            "bin_end": 6301427.600000001
+          },
+          {
+            "count": 0,
+            "bin_start": 6301427.600000001,
+            "bin_end": 7201214.4
+          },
+          {
+            "count": 0,
+            "bin_start": 7201214.4,
+            "bin_end": 8101001.2
+          },
+          {
+            "count": 3,
+            "bin_start": 8101001.2,
+            "bin_end": 9000788.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Borough Name",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.9711854184815386,
+      "num_distinct_values": 5,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Bronx",
+            "count": 29
+          },
+          {
+            "bin": "Brooklyn",
+            "count": 158
+          },
+          {
+            "bin": "Manhattan",
+            "count": 134
+          },
+          {
+            "bin": "Queens",
+            "count": 100
+          },
+          {
+            "bin": "Staten Island",
+            "count": 9
+          }
+        ]
+      }
+    },
+    {
+      "name": "lon",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [
+        "http://schema.org/longitude"
+      ],
+      "unclean_values_ratio": 0.0,
+      "mean": -73.94106729873539,
+      "stddev": 0.12137359290632149,
+      "coverage": [
+        {
+          "range": {
+            "gte": -74.23158794558823,
+            "lte": -74.0717091982572
+          }
+        },
+        {
+          "range": {
+            "gte": -74.00148162899396,
+            "lte": -73.88158263236765
+          }
+        },
+        {
+          "range": {
+            "gte": -73.86627336037081,
+            "lte": -73.7359278297964
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 438,
+            "bin_start": -74.25286850106426,
+            "bin_end": -74.19773740519922
+          },
+          {
+            "count": 589,
+            "bin_start": -74.19773740519922,
+            "bin_end": -74.14260630933418
+          },
+          {
+            "count": 1399,
+            "bin_start": -74.14260630933418,
+            "bin_end": -74.08747521346916
+          },
+          {
+            "count": 999,
+            "bin_start": -74.08747521346916,
+            "bin_end": -74.03234411760413
+          },
+          {
+            "count": 1254,
+            "bin_start": -74.03234411760413,
+            "bin_end": -73.97721302173909
+          },
+          {
+            "count": 2769,
+            "bin_start": -73.97721302173909,
+            "bin_end": -73.92208192587405
+          },
+          {
+            "count": 3185,
+            "bin_start": -73.92208192587405,
+            "bin_end": -73.86695083000902
+          },
+          {
+            "count": 2157,
+            "bin_start": -73.86695083000902,
+            "bin_end": -73.811819734144
+          },
+          {
+            "count": 1546,
+            "bin_start": -73.811819734144,
+            "bin_end": -73.75668863827896
+          },
+          {
+            "count": 587,
+            "bin_start": -73.75668863827896,
+            "bin_end": -73.70155754241392
+          }
+        ]
+      }
+    },
+    {
+      "name": "lat",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [
+        "http://schema.org/latitude"
+      ],
+      "unclean_values_ratio": 0.0,
+      "mean": 40.695558718643255,
+      "stddev": 0.0996746613083422,
+      "coverage": [
+        {
+          "range": {
+            "gte": 40.52762970768265,
+            "lte": 40.63825382072756
+          }
+        },
+        {
+          "range": {
+            "gte": 40.65344497102024,
+            "lte": 40.75672767134244
+          }
+        },
+        {
+          "range": {
+            "gte": 40.77211005232673,
+            "lte": 40.894059862886586
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 442,
+            "bin_start": 40.49900463567483,
+            "bin_end": 40.54051318063243
+          },
+          {
+            "count": 1624,
+            "bin_start": 40.54051318063243,
+            "bin_end": 40.58202172559004
+          },
+          {
+            "count": 2248,
+            "bin_start": 40.58202172559004,
+            "bin_end": 40.62353027054764
+          },
+          {
+            "count": 1709,
+            "bin_start": 40.62353027054764,
+            "bin_end": 40.66503881550524
+          },
+          {
+            "count": 2855,
+            "bin_start": 40.66503881550524,
+            "bin_end": 40.70654736046285
+          },
+          {
+            "count": 1429,
+            "bin_start": 40.70654736046285,
+            "bin_end": 40.74805590542045
+          },
+          {
+            "count": 1232,
+            "bin_start": 40.74805590542045,
+            "bin_end": 40.78956445037805
+          },
+          {
+            "count": 1460,
+            "bin_start": 40.78956445037805,
+            "bin_end": 40.83107299533565
+          },
+          {
+            "count": 1279,
+            "bin_start": 40.83107299533565,
+            "bin_end": 40.87258154029326
+          },
+          {
+            "count": 645,
+            "bin_start": 40.87258154029326,
+            "bin_end": 40.91409008525086
+          }
+        ]
+      }
+    },
+    {
+      "name": "geometry_wkt",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "40",
+            "count": 269547
+          },
+          {
+            "bin": "73",
+            "count": 209237
+          },
+          {
+            "bin": "74",
+            "count": 60312
+          },
+          {
+            "bin": "multipolygon",
+            "count": 14493
+          },
+          {
+            "bin": "multilinestring",
+            "count": 430
+          }
+        ]
+      }
+    }
+  ],
+  "nb_spatial_columns": 2,
+  "nb_categorical_columns": 4,
+  "nb_numerical_columns": 3,
+  "types": [
+    "categorical",
+    "numerical",
+    "spatial"
+  ],
+  "spatial_coverage": [
+    {
+      "type": "latlong",
+      "column_names": [
+        "lat",
+        "lon"
+      ],
+      "column_indexes": [
+        8,
+        7
+      ],
+      "geohashes4": [
+        {
+          "hash": "121130231323",
+          "number": 1222
+        },
+        {
+          "hash": "121130231320",
+          "number": 388
+        },
+        {
+          "hash": "121130231322",
+          "number": 121
+        },
+        {
+          "hash": "121130231321",
+          "number": 940
+        },
+        {
+          "hash": "121130231332",
+          "number": 333
+        },
+        {
+          "hash": "121130231330",
+          "number": 867
+        },
+        {
+          "hash": "121130231333",
+          "number": 419
+        },
+        {
+          "hash": "121130231331",
+          "number": 393
+        },
+        {
+          "hash": "121130231302",
+          "number": 731
+        },
+        {
+          "hash": "121130231300",
+          "number": 501
+        },
+        {
+          "hash": "121130231303",
+          "number": 107
+        },
+        {
+          "hash": "121130231313",
+          "number": 26
+        },
+        {
+          "hash": "121130231312",
+          "number": 44
+        },
+        {
+          "hash": "121130231233",
+          "number": 72
+        },
+        {
+          "hash": "121130231232",
+          "number": 5
+        },
+        {
+          "hash": "121130231230",
+          "number": 15
+        },
+        {
+          "hash": "121130231231",
+          "number": 522
+        },
+        {
+          "hash": "121130231213",
+          "number": 740
+        },
+        {
+          "hash": "121130231211",
+          "number": 616
+        },
+        {
+          "hash": "121130231210",
+          "number": 369
+        },
+        {
+          "hash": "121130231033",
+          "number": 25
+        },
+        {
+          "hash": "121130231032",
+          "number": 437
+        },
+        {
+          "hash": "121130231023",
+          "number": 139
+        },
+        {
+          "hash": "121130231122",
+          "number": 1
+        },
+        {
+          "hash": "121130233011",
+          "number": 674
+        },
+        {
+          "hash": "121130233013",
+          "number": 10
+        },
+        {
+          "hash": "121130233100",
+          "number": 63
+        },
+        {
+          "hash": "121130233101",
+          "number": 423
+        },
+        {
+          "hash": "121130233102",
+          "number": 1
+        },
+        {
+          "hash": "121130233103",
+          "number": 42
+        },
+        {
+          "hash": "121130233113",
+          "number": 158
+        },
+        {
+          "hash": "121130233111",
+          "number": 361
+        },
+        {
+          "hash": "121130233110",
+          "number": 516
+        },
+        {
+          "hash": "121130233112",
+          "number": 59
+        },
+        {
+          "hash": "121130320222",
+          "number": 465
+        },
+        {
+          "hash": "121130320223",
+          "number": 1057
+        },
+        {
+          "hash": "121130320220",
+          "number": 780
+        },
+        {
+          "hash": "121130320221",
+          "number": 252
+        },
+        {
+          "hash": "121130320232",
+          "number": 658
+        },
+        {
+          "hash": "121130320230",
+          "number": 24
+        },
+        {
+          "hash": "121130320233",
+          "number": 2
+        },
+        {
+          "hash": "121130322000",
+          "number": 173
+        },
+        {
+          "hash": "121130322001",
+          "number": 148
+        },
+        {
+          "hash": "121130322010",
+          "number": 24
+        }
+      ],
+      "ranges": [
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -74.23095484369746,
+                40.64018316179314
+              ],
+              [
+                -74.02396081708842,
+                40.52346415443092
+              ]
+            ]
+          }
+        },
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -73.99589619826453,
+                40.73186954458162
+              ],
+              [
+                -73.76046059565931,
+                40.588099261224336
+              ]
+            ]
+          }
+        },
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -73.95609193300503,
+                40.89220374414827
+              ],
+              [
+                -73.74653049182757,
+                40.74555961060966
+              ]
+            ]
+          }
+        }
+      ],
+      "number": 14923
+    }
+  ],
+  "attribute_keywords": [
+    "NAME",
+    "STATUS",
+    "index_right",
+    "index",
+    "right",
+    "PHYSICALID",
+    "source",
+    "segmentidt",
+    "Borough Name",
+    "Borough",
+    "Name",
+    "lon",
+    "lat",
+    "geometry_wkt",
+    "geometry",
+    "wkt"
+  ],
+  "sample": "NAME,STATUS,index_right,PHYSICALID,source,segmentidt,Borough Name,lon,lat,geometry_wkt\r\n,Unchanged,,,open_space_other,,,-73.85817312740852,40.671231375175374,\"MULTIPOLYGON (((-73.857996 40.671242, -73.858347 40.671191, -73.85835 40.671203, -73.858283 40.671227, -73.858216 40.67125, -73.858143...\"\r\nNO NAME,Updated,,,open_space_other,,,-73.77658276680596,40.59797111208665,\"MULTIPOLYGON (((-73.776421 40.597993, -73.776411 40.597901, -73.776741 40.597885, -73.77675 40.597976, -73.776756 40.598039, -73.776425...\"\r\nNO NAME,Unchanged,,,open_space_other,,,-73.74238053565101,40.59613980718461,\"MULTIPOLYGON (((-73.742272 40.596072, -73.742273 40.596073, -73.742444 40.596077, -73.742458 40.596077, -73.742491 40.596189, -73.742318...\"\r\nNO NAME,Unchanged,,,open_space_other,,,-73.94737243551407,40.81288901543776,\"MULTIPOLYGON (((-73.947227 40.81308, -73.947244 40.813057, -73.94723 40.813049, -73.947251 40.813022, -73.947222 40.813007, -73.947227...\"\r\n,New,,,open_space_other,,,-73.97806761991802,40.73900374177638,\"MULTIPOLYGON (((-73.977793 40.738966, -73.977805 40.73895, -73.977783 40.738943, -73.977797 40.738919, -73.977811 40.738922, -73.977842...\"\r\nNO NAME,Unchanged,,,open_space_other,,,-73.9115347991391,40.88490323744824,\"MULTIPOLYGON (((-73.911346 40.88493, -73.911358 40.884899, -73.911402 40.884784, -73.911443 40.884659, -73.911458 40.884614, -73.911477...\"\r\nNO NAME,Unchanged,,,open_space_other,,,-73.91266121390633,40.83928371668053,\"MULTIPOLYGON (((-73.912597 40.839201, -73.912609 40.839201, -73.912781 40.839255, -73.912785 40.839257, -73.912786 40.839265, -73.912734...\"\r\n,Unchanged,,,open_space_other,,,-73.8422490681373,40.87252714530219,\"MULTIPOLYGON (((-73.842072 40.872551, -73.842398 40.872447, -73.842426 40.872503, -73.842426 40.872503, -73.842144 40.872594, -73.842102...\"\r\n,Unchanged,,,open_space_other,,,-73.889925317971,40.85521028461415,\"MULTIPOLYGON (((-73.88975 40.85516, -73.889798 40.855105, -73.890101 40.855262, -73.890101 40.855262, -73.890057 40.855312, -73.890054...\"\r\n,New,22356.0,44705.0,open_space_other,,,-74.08616506301094,40.619687110641664,\"MULTIPOLYGON (((-74.086019 40.619589, -74.086024 40.619562, -74.086307 40.619585, -74.086336 40.619587, -74.086311 40.619814, -74.086275...\"\r\n,Unchanged,,,open_space_other,,,-74.08733066895675,40.573799258914434,\"MULTIPOLYGON (((-74.087115 40.573798, -74.087144 40.573774, -74.087191 40.573736, -74.087239 40.573697, -74.087255 40.573683, -74.087386...\"\r\n,Unchanged,,,open_space_other,,,-74.0850634604744,40.577602190892826,\"MULTIPOLYGON (((-74.085141 40.577765, -74.084961 40.577678, -74.084941 40.577701, -74.084835 40.577622, -74.08499 40.577442, -74.084997...\"\r\n,New,,,open_space_other,,,-73.94622875653664,40.58637350441066,\"MULTIPOLYGON (((-73.946174 40.586477, -73.946156 40.586378, -73.946129 40.586306, -73.946133 40.586289, -73.946236 40.586267, -73.946252...\"\r\nNO NAME,Unchanged,,,open_space_other,,,-73.98837428931256,40.684503891145845,\"MULTIPOLYGON (((-73.988234 40.684499, -73.988293 40.68441, -73.988426 40.684464, -73.988423 40.684471, -73.98848 40.684493, -73.988469...\"\r\nNO NAME,New,,,open_space_other,,,-73.97390093963543,40.64887422652197,\"MULTIPOLYGON (((-73.973865 40.648943, -73.973883 40.648912, -73.973866 40.648882, -73.973803 40.64885, -73.973901 40.648804, -73.973946...\"\r\nNO NAME,New,,,open_space_other,,,-73.95235147513274,40.64466584429423,\"MULTIPOLYGON (((-73.952436 40.644597, -73.952439 40.644597, -73.952443 40.644645, -73.952447 40.6447, -73.952449 40.644727, -73.952264...\"\r\nNO NAME,Unchanged,,,open_space_other,,,-73.83983951179144,40.68539712478783,\"MULTIPOLYGON (((-73.840042 40.685319, -73.839844 40.685417, -73.839751 40.685463, -73.839725 40.68541, -73.840042 40.685319)))\"\r\nNO NAME,Unchanged,,,open_space_other,,,-73.75338737224502,40.73562710939,\"MULTIPOLYGON (((-73.753457 40.73579, -73.753444 40.735752, -73.753435 40.735725, -73.753408 40.735729, -73.753402 40.73573, -73.753406...\"\r\n,Unchanged,,,open_space_other,,,-73.81313333796953,40.74830507331865,\"MULTIPOLYGON (((-73.812974 40.748213, -73.813052 40.748168, -73.813253 40.748359, -73.813281 40.748387, -73.813292 40.748397, -73.813216...\"\r\nNO NAME,Unchanged,,,open_space_other,,,-73.99520985845628,40.71463673729049,\"MULTIPOLYGON (((-73.995235 40.714583, -73.995304 40.714578, -73.995313 40.714686, -73.995143 40.714697, -73.995081 40.714595, -73.995235...\"\r\n"
+}
