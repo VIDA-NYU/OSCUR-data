@@ -90,6 +90,11 @@ code/downloaders/
     ├── motor_vehicle_persons_downloader.py  # Download Motor Vehicle Collisions – Persons dataset (CSV)
 ├── Urban_design /
     ├── urban_design_frontage_downlaoder  # Download Urban Design Frontage dataset (CSV)
+├── public_open_spaces/
+    ├── public_open_spaces.py                 # Orchestrates all public open space dataset processing and integration
+    ├── open_space_downloader.py              # Download NYC Planimetric Open Space (Other) dataset (GeoJSON/CSV)
+    ├── open_streets_downloader.py            # Download NYC Open Streets dataset (GeoJSON/CSV)
+    ├── street_centerline_downloader.py       # Download NYC CSCL Street Centerline dataset (GeoJSON/CSV)
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -330,6 +335,21 @@ Custom output paths:
 python injuries.py \
   --motor_vehicle_crashes /custom/path/motor_vehicle_crashes.csv \
   --motor_vehicle_persons /custom/path/motor_vehicle_persons.csv
+```
+
+** Multi Use Paths and Public Open Spaces:**
+The `public_open_spaces.py` script downloads and processes open space polygons, open streets, and street centerlines data:
+
+```bash
+python public_open_spaces.py  # basic usage
+```
+
+Custom output paths:
+```bash
+python public_open_spaces.py \
+  --open_spaces /custom/path/open_spaces.csv \
+  --open_streets /custom/path/open_streets.csv \
+  --centerlines /custom/path/centerline.csv
 ```
 
 
