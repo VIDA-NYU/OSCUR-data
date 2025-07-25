@@ -1,0 +1,83 @@
+dataset_id: "public_open_spaces"
+name: "Public Open Spaces in NYC (Streets, Open Space, and Centerlines)"
+description: >
+  A dataset combining key public space datasets from New York City:
+  1) NYC Planimetric Open Space (Other) — polygon geometries representing plazas, community gardens, and open spaces not classified as parks,
+  2) NYC Open Streets — linear geometries representing streets designated for limited vehicular access to support pedestrian and community use,
+  3) NYC Street Centerline (CSCL) — comprehensive street segment geometries including street names, segment IDs, and physical identifiers.
+
+  This dataset supports spatial analysis of public space availability, mobility planning, open street policy implementation, and curb-level infrastructure research.
+  Records are provided with spatial geometries and common identifiers such as `segmentid` and `physicalid`.
+
+source_organization:
+  open_space_other: "New York City Department of Information Technology & Telecommunications (DoITT)"
+  open_streets: "New York City Department of Transportation (NYC DOT)"
+  centerlines: "New York City Department of Information Technology & Telecommunications (DoITT)"
+
+domain: "environment"
+last_updated: "2025-07-25"
+update_frequency:
+  open_space_other: "Occasionally"
+  open_streets: "Occasionally"
+  centerlines: "Occasionally"
+
+access:
+  primary_url: "https://data.cityofnewyork.us"
+  api_endpoint:
+    open_space_other: "https://data.cityofnewyork.us/resource/b7j8-z8a7.json"
+    open_streets: "https://data.cityofnewyork.us/resource/qzve-kjga.json"
+    centerlines: "https://data.cityofnewyork.us/resource/3mf9-qshr.json"
+  license: "Open Data License"
+  file_format:
+    open_space_other: ["CSV", "GeoJSON"]
+    open_streets: ["CSV", "GeoJSON"]
+    centerlines: ["CSV", "GeoJSON"]
+  rate_limits:
+    open_space_other: "Unknown"
+    open_streets: "Unknown"
+    centerlines: "Unknown"
+
+spatial:
+  geometry_type: "mixed (polygon + line)"
+  coordinate_system: "EPSG:4326"
+  coverage_area: "NYC"
+
+temporal:
+  temporal_type:
+    open_space_other: "last updated date"
+    open_streets: "program update year"
+    centerlines: "data publication date"
+  temporal_resolution:
+    open_space_other: "static"
+    open_streets: "static"
+    centerlines: "static"
+  time_column:
+    open_space_other: "last_edit_date"
+    open_streets: "date"
+    centerlines: "MODIFIED_DATE"
+
+implementation:
+  downloader_module:
+    open_space_other: "downloaders.public_open_spaces.open_space_downloader"
+    open_streets: "downloaders.public_open_spaces.open_streets_downloader"
+    centerlines: "downloaders.public_open_spaces.street_centerline_downloader"
+  orchestrator_downloader:
+    orchestrator: "downloaders.public_open_spaces.public_open_spaces"
+  processor_module: "processors.public_open_spaces"
+  example_notebook: "examples/public_open_spaces.ipynb"
+
+integration_opportunities:
+  spatial_joins:
+    - "Align open streets and centerlines by `segmentid` or `physicalid`"
+    - "Overlay with zoning, parks, and sidewalk obstruction data"
+    - "Support pedestrian network and curb use analysis"
+  temporal_alignment:
+    - "Align with seasonal open streets programs or mobility studies"
+
+map_algebra:
+  raster_conversion:
+    suitable_for_rasterization: true
+    recommended_cell_size: "10 meters"
+    interpolation_method: "presence/absence or linear access density"
+
+data_name: "public_open_spaces"

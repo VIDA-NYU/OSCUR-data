@@ -1,0 +1,1021 @@
+{
+  "nb_rows": 276714,
+  "nb_profiled_rows": 276714,
+  "nb_columns": 13,
+  "columns": [
+    {
+      "name": "merged_source",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 2,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "311_complaint",
+            "count": 257594
+          },
+          {
+            "bin": "violation",
+            "count": 19120
+          }
+        ]
+      }
+    },
+    {
+      "name": "lon",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [
+        "http://schema.org/longitude"
+      ],
+      "unclean_values_ratio": 0.0,
+      "mean": -73.92791996789195,
+      "stddev": 0.09849409215541222,
+      "coverage": [
+        {
+          "range": {
+            "gte": -74.00968414544026,
+            "lte": -73.89584492065224
+          }
+        },
+        {
+          "range": {
+            "gte": -73.88063856026388,
+            "lte": -73.73398129588779
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 2207,
+            "bin_start": -74.25488643597797,
+            "bin_end": -74.19947285540766
+          },
+          {
+            "count": 8815,
+            "bin_start": -74.19947285540766,
+            "bin_end": -74.14405927483737
+          },
+          {
+            "count": 9991,
+            "bin_start": -74.14405927483737,
+            "bin_end": -74.08864569426709
+          },
+          {
+            "count": 4093,
+            "bin_start": -74.08864569426709,
+            "bin_end": -74.03323211369678
+          },
+          {
+            "count": 50357,
+            "bin_start": -74.03323211369678,
+            "bin_end": -73.97781853312648
+          },
+          {
+            "count": 74663,
+            "bin_start": -73.97781853312648,
+            "bin_end": -73.92240495255619
+          },
+          {
+            "count": 53108,
+            "bin_start": -73.92240495255619,
+            "bin_end": -73.8669913719859
+          },
+          {
+            "count": 40829,
+            "bin_start": -73.8669913719859,
+            "bin_end": -73.8115777914156
+          },
+          {
+            "count": 20053,
+            "bin_start": -73.8115777914156,
+            "bin_end": -73.7561642108453
+          },
+          {
+            "count": 12598,
+            "bin_start": -73.7561642108453,
+            "bin_end": -73.70075063027501
+          }
+        ]
+      }
+    },
+    {
+      "name": "lat",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [
+        "http://schema.org/latitude"
+      ],
+      "unclean_values_ratio": 0.0,
+      "mean": 40.70484457292649,
+      "stddev": 0.08131335172952861,
+      "coverage": [
+        {
+          "range": {
+            "gte": 40.54484237105532,
+            "lte": 40.66045259207724
+          }
+        },
+        {
+          "range": {
+            "gte": 40.672705488864025,
+            "lte": 40.76755398622198
+          }
+        },
+        {
+          "range": {
+            "gte": 40.77759685876333,
+            "lte": 40.88964824276577
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 3423,
+            "bin_start": 40.49862773316935,
+            "bin_end": 40.54005183938408
+          },
+          {
+            "count": 10241,
+            "bin_start": 40.54005183938408,
+            "bin_end": 40.58147594559881
+          },
+          {
+            "count": 35919,
+            "bin_start": 40.58147594559881,
+            "bin_end": 40.622900051813545
+          },
+          {
+            "count": 36995,
+            "bin_start": 40.622900051813545,
+            "bin_end": 40.66432415802827
+          },
+          {
+            "count": 57789,
+            "bin_start": 40.66432415802827,
+            "bin_end": 40.705748264243
+          },
+          {
+            "count": 50133,
+            "bin_start": 40.705748264243,
+            "bin_end": 40.74717237045773
+          },
+          {
+            "count": 41449,
+            "bin_start": 40.74717237045773,
+            "bin_end": 40.78859647667247
+          },
+          {
+            "count": 15570,
+            "bin_start": 40.78859647667247,
+            "bin_end": 40.830020582887194
+          },
+          {
+            "count": 17789,
+            "bin_start": 40.830020582887194,
+            "bin_end": 40.87144468910192
+          },
+          {
+            "count": 7406,
+            "bin_start": 40.87144468910192,
+            "bin_end": 40.912868795316655
+          }
+        ]
+      }
+    },
+    {
+      "name": "dist_to_sidewalk_m",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.9219844315791756,
+      "mean": 44.264348547576034,
+      "stddev": 25.06453357194186,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 31.19628271483056
+          }
+        },
+        {
+          "range": {
+            "gte": 38.76707485281537,
+            "lte": 72.29266443230527
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 20783,
+            "bin_start": 0.0,
+            "bin_end": 73.59586017221355
+          },
+          {
+            "count": 729,
+            "bin_start": 73.59586017221355,
+            "bin_end": 147.1917203444271
+          },
+          {
+            "count": 40,
+            "bin_start": 147.1917203444271,
+            "bin_end": 220.78758051664065
+          },
+          {
+            "count": 23,
+            "bin_start": 220.78758051664065,
+            "bin_end": 294.3834406888542
+          },
+          {
+            "count": 5,
+            "bin_start": 294.3834406888542,
+            "bin_end": 367.9793008610677
+          },
+          {
+            "count": 5,
+            "bin_start": 367.9793008610677,
+            "bin_end": 441.5751610332813
+          },
+          {
+            "count": 0,
+            "bin_start": 441.5751610332813,
+            "bin_end": 515.1710212054949
+          },
+          {
+            "count": 1,
+            "bin_start": 515.1710212054949,
+            "bin_end": 588.7668813777084
+          },
+          {
+            "count": 0,
+            "bin_start": 588.7668813777084,
+            "bin_end": 662.3627415499219
+          },
+          {
+            "count": 2,
+            "bin_start": 662.3627415499219,
+            "bin_end": 735.9586017221355
+          }
+        ]
+      }
+    },
+    {
+      "name": "sidewalk_geom_wkt",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "missing_values_ratio": 0.9219844315791756,
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "40",
+            "count": 8057472
+          },
+          {
+            "bin": "73",
+            "count": 6931527
+          },
+          {
+            "bin": "74",
+            "count": 1125945
+          },
+          {
+            "bin": "multipolygon",
+            "count": 21588
+          },
+          {
+            "bin": "985408864255",
+            "count": 68
+          }
+        ]
+      }
+    },
+    {
+      "name": "ViolationID",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/identifier"
+      ],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.9309033876132036,
+      "num_distinct_values": 19120,
+      "mean": 152579.8509414226,
+      "stddev": 86399.86396030364,
+      "coverage": [
+        {
+          "range": {
+            "gte": 4734.0,
+            "lte": 94033.0
+          }
+        },
+        {
+          "range": {
+            "gte": 104773.0,
+            "lte": 194210.0
+          }
+        },
+        {
+          "range": {
+            "gte": 204121.0,
+            "lte": 295414.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 1844,
+            "bin_start": 1.0,
+            "bin_end": 30171.0
+          },
+          {
+            "count": 1792,
+            "bin_start": 30171.0,
+            "bin_end": 60341.0
+          },
+          {
+            "count": 1913,
+            "bin_start": 60341.0,
+            "bin_end": 90511.0
+          },
+          {
+            "count": 1866,
+            "bin_start": 90511.0,
+            "bin_end": 120681.0
+          },
+          {
+            "count": 1999,
+            "bin_start": 120681.0,
+            "bin_end": 150851.0
+          },
+          {
+            "count": 1893,
+            "bin_start": 150851.0,
+            "bin_end": 181021.0
+          },
+          {
+            "count": 1964,
+            "bin_start": 181021.0,
+            "bin_end": 211191.0
+          },
+          {
+            "count": 1964,
+            "bin_start": 211191.0,
+            "bin_end": 241361.0
+          },
+          {
+            "count": 2003,
+            "bin_start": 241361.0,
+            "bin_end": 271531.0
+          },
+          {
+            "count": 1882,
+            "bin_start": 271531.0,
+            "bin_end": 301701.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "ViolationId",
+      "structural_type": "https://metadata.datadrivendiscovery.org/types/MissingData",
+      "semantic_types": []
+    },
+    {
+      "name": "Descriptor",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.06909661238679647,
+      "num_distinct_values": 27,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Blocked - Construction",
+            "count": 22295
+          },
+          {
+            "bin": "Broken Curb",
+            "count": 27086
+          },
+          {
+            "bin": "Broken Sidewalk",
+            "count": 83452
+          },
+          {
+            "bin": "Defacement",
+            "count": 14434
+          },
+          {
+            "bin": "Sidewalk Violation",
+            "count": 76104
+          }
+        ]
+      }
+    },
+    {
+      "name": "Complaint Type",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.06909661238679647,
+      "num_distinct_values": 2,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Curb Condition",
+            "count": 46213
+          },
+          {
+            "bin": "Sidewalk Condition",
+            "count": 211381
+          }
+        ]
+      }
+    },
+    {
+      "name": "Created Date",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/DateTime"
+      ],
+      "missing_values_ratio": 0.06909661238679647,
+      "num_distinct_values": 257418,
+      "plot": {
+        "type": "histogram_temporal",
+        "data": [
+          {
+            "count": 13769,
+            "date_start": "2010-01-01T10:50:40",
+            "date_end": "2011-07-19T16:51:12"
+          },
+          {
+            "count": 17087,
+            "date_start": "2011-07-19T16:51:12",
+            "date_end": "2013-02-02T22:51:44"
+          },
+          {
+            "count": 17305,
+            "date_start": "2013-02-02T22:51:44",
+            "date_end": "2014-08-21T04:52:16"
+          },
+          {
+            "count": 21394,
+            "date_start": "2014-08-21T04:52:16",
+            "date_end": "2016-03-07T10:52:48"
+          },
+          {
+            "count": 26506,
+            "date_start": "2016-03-07T10:52:48",
+            "date_end": "2017-09-22T16:53:20"
+          },
+          {
+            "count": 28504,
+            "date_start": "2017-09-22T16:53:20",
+            "date_end": "2019-04-09T22:56:00"
+          },
+          {
+            "count": 42650,
+            "date_start": "2019-04-09T22:56:00",
+            "date_end": "2020-10-25T04:56:32"
+          },
+          {
+            "count": 26322,
+            "date_start": "2020-10-25T04:56:32",
+            "date_end": "2022-05-12T10:57:04"
+          },
+          {
+            "count": 28211,
+            "date_start": "2022-05-12T10:57:04",
+            "date_end": "2023-11-27T16:57:36"
+          },
+          {
+            "count": 35846,
+            "date_start": "2023-11-27T16:57:36",
+            "date_end": "2025-06-13T22:58:08"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Closed Date",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/DateTime"
+      ],
+      "missing_values_ratio": 0.07411623553560716,
+      "num_distinct_values": 248486,
+      "plot": {
+        "type": "histogram_temporal",
+        "data": [
+          {
+            "count": 13434,
+            "date_start": "2010-01-05T14:30:24",
+            "date_end": "2011-07-23T09:59:28"
+          },
+          {
+            "count": 17191,
+            "date_start": "2011-07-23T09:59:28",
+            "date_end": "2013-02-06T05:26:24"
+          },
+          {
+            "count": 16853,
+            "date_start": "2013-02-06T05:26:24",
+            "date_end": "2014-08-24T00:55:28"
+          },
+          {
+            "count": 21883,
+            "date_start": "2014-08-24T00:55:28",
+            "date_end": "2016-03-09T20:22:24"
+          },
+          {
+            "count": 26070,
+            "date_start": "2016-03-09T20:22:24",
+            "date_end": "2017-09-24T15:51:28"
+          },
+          {
+            "count": 28501,
+            "date_start": "2017-09-24T15:51:28",
+            "date_end": "2019-04-11T11:20:32"
+          },
+          {
+            "count": 42754,
+            "date_start": "2019-04-11T11:20:32",
+            "date_end": "2020-10-26T06:47:28"
+          },
+          {
+            "count": 25834,
+            "date_start": "2020-10-26T06:47:28",
+            "date_end": "2022-05-13T02:16:32"
+          },
+          {
+            "count": 28511,
+            "date_start": "2022-05-13T02:16:32",
+            "date_end": "2023-11-27T21:43:28"
+          },
+          {
+            "count": 35174,
+            "date_start": "2023-11-27T21:43:28",
+            "date_end": "2025-06-13T17:12:32"
+          }
+        ]
+      }
+    },
+    {
+      "name": "bblid",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/identifier"
+      ],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.9309033876132036,
+      "num_distinct_values": 19073,
+      "mean": 502183.97201882844,
+      "stddev": 272439.2952385534,
+      "coverage": [
+        {
+          "range": {
+            "gte": 27064.0,
+            "lte": 355963.0
+          }
+        },
+        {
+          "range": {
+            "gte": 390500.0,
+            "lte": 670177.0
+          }
+        },
+        {
+          "range": {
+            "gte": 713095.0,
+            "lte": 1028797.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 1242,
+            "bin_start": 134.0,
+            "bin_end": 117712.6
+          },
+          {
+            "count": 2532,
+            "bin_start": 117712.6,
+            "bin_end": 235291.2
+          },
+          {
+            "count": 2823,
+            "bin_start": 235291.2,
+            "bin_end": 352869.80000000005
+          },
+          {
+            "count": 2646,
+            "bin_start": 352869.80000000005,
+            "bin_end": 470448.4
+          },
+          {
+            "count": 2483,
+            "bin_start": 470448.4,
+            "bin_end": 588027.0
+          },
+          {
+            "count": 2205,
+            "bin_start": 588027.0,
+            "bin_end": 705605.6000000001
+          },
+          {
+            "count": 2328,
+            "bin_start": 705605.6000000001,
+            "bin_end": 823184.2000000001
+          },
+          {
+            "count": 1742,
+            "bin_start": 823184.2000000001,
+            "bin_end": 940762.8
+          },
+          {
+            "count": 1064,
+            "bin_start": 940762.8,
+            "bin_end": 1058341.4000000001
+          },
+          {
+            "count": 55,
+            "bin_start": 1058341.4000000001,
+            "bin_end": 1175920.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "street",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "missing_values_ratio": 0.9309033876132036,
+      "num_distinct_values": 3362
+    }
+  ],
+  "nb_spatial_columns": 2,
+  "nb_temporal_columns": 2,
+  "nb_categorical_columns": 3,
+  "nb_numerical_columns": 3,
+  "types": [
+    "categorical",
+    "numerical",
+    "spatial",
+    "temporal"
+  ],
+  "spatial_coverage": [
+    {
+      "type": "latlong",
+      "column_names": [
+        "lat",
+        "lon"
+      ],
+      "column_indexes": [
+        2,
+        1
+      ],
+      "geohashes4": [
+        {
+          "hash": "121130320220",
+          "number": 10446
+        },
+        {
+          "hash": "121130320223",
+          "number": 13716
+        },
+        {
+          "hash": "121130320221",
+          "number": 4176
+        },
+        {
+          "hash": "121130320222",
+          "number": 4047
+        },
+        {
+          "hash": "121130320232",
+          "number": 7701
+        },
+        {
+          "hash": "121130320230",
+          "number": 217
+        },
+        {
+          "hash": "121130322001",
+          "number": 1733
+        },
+        {
+          "hash": "121130322000",
+          "number": 2185
+        },
+        {
+          "hash": "121130322010",
+          "number": 163
+        },
+        {
+          "hash": "121130231330",
+          "number": 20685
+        },
+        {
+          "hash": "121130231333",
+          "number": 14246
+        },
+        {
+          "hash": "121130231332",
+          "number": 17510
+        },
+        {
+          "hash": "121130231331",
+          "number": 20594
+        },
+        {
+          "hash": "121130231320",
+          "number": 24880
+        },
+        {
+          "hash": "121130231321",
+          "number": 27255
+        },
+        {
+          "hash": "121130231323",
+          "number": 13325
+        },
+        {
+          "hash": "121130231322",
+          "number": 3561
+        },
+        {
+          "hash": "121130231302",
+          "number": 10864
+        },
+        {
+          "hash": "121130231300",
+          "number": 6880
+        },
+        {
+          "hash": "121130231303",
+          "number": 1056
+        },
+        {
+          "hash": "121130231312",
+          "number": 2838
+        },
+        {
+          "hash": "121130231313",
+          "number": 501
+        },
+        {
+          "hash": "121130231231",
+          "number": 11855
+        },
+        {
+          "hash": "121130231233",
+          "number": 889
+        },
+        {
+          "hash": "121130231232",
+          "number": 43
+        },
+        {
+          "hash": "121130231230",
+          "number": 118
+        },
+        {
+          "hash": "121130231211",
+          "number": 5226
+        },
+        {
+          "hash": "121130231210",
+          "number": 4515
+        },
+        {
+          "hash": "121130231213",
+          "number": 1994
+        },
+        {
+          "hash": "121130231032",
+          "number": 2851
+        },
+        {
+          "hash": "121130231033",
+          "number": 199
+        },
+        {
+          "hash": "121130231023",
+          "number": 803
+        },
+        {
+          "hash": "121130231122",
+          "number": 37
+        },
+        {
+          "hash": "121130233113",
+          "number": 2930
+        },
+        {
+          "hash": "121130233110",
+          "number": 13091
+        },
+        {
+          "hash": "121130233111",
+          "number": 10072
+        },
+        {
+          "hash": "121130233112",
+          "number": 2497
+        },
+        {
+          "hash": "121130233101",
+          "number": 7695
+        },
+        {
+          "hash": "121130233100",
+          "number": 355
+        },
+        {
+          "hash": "121130233103",
+          "number": 1293
+        },
+        {
+          "hash": "121130233102",
+          "number": 1
+        },
+        {
+          "hash": "121130233011",
+          "number": 1613
+        },
+        {
+          "hash": "121130233013",
+          "number": 58
+        }
+      ],
+      "ranges": [
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -74.16808437492186,
+                40.7003315500933
+              ],
+              [
+                -73.92282330741669,
+                40.54922725957557
+              ]
+            ]
+          }
+        },
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -73.99189524206894,
+                40.87956391412808
+              ],
+              [
+                -73.84418317381412,
+                40.696546130764816
+              ]
+            ]
+          }
+        },
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -73.88638803647486,
+                40.77698986709337
+              ],
+              [
+                -73.73047809681445,
+                40.64183731112384
+              ]
+            ]
+          }
+        }
+      ],
+      "number": 276714
+    }
+  ],
+  "temporal_coverage": [
+    {
+      "type": "datetime",
+      "column_names": [
+        "Created Date"
+      ],
+      "column_indexes": [
+        9
+      ],
+      "column_types": [
+        "http://schema.org/DateTime"
+      ],
+      "ranges": [
+        {
+          "range": {
+            "gte": 1276097792.0,
+            "lte": 1445073408.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1464378880.0,
+            "lte": 1602150912.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1622137472.0,
+            "lte": 1745675392.0
+          }
+        }
+      ],
+      "temporal_resolution": "second"
+    },
+    {
+      "type": "datetime",
+      "column_names": [
+        "Closed Date"
+      ],
+      "column_indexes": [
+        10
+      ],
+      "column_types": [
+        "http://schema.org/DateTime"
+      ],
+      "ranges": [
+        {
+          "range": {
+            "gte": 1277728128.0,
+            "lte": 1446823808.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1465548928.0,
+            "lte": 1602692736.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1624454528.0,
+            "lte": 1745577472.0
+          }
+        }
+      ],
+      "temporal_resolution": "second"
+    }
+  ],
+  "attribute_keywords": [
+    "merged_source",
+    "merged",
+    "source",
+    "lon",
+    "lat",
+    "dist_to_sidewalk_m",
+    "dist",
+    "to",
+    "sidewalk",
+    "m",
+    "sidewalk_geom_wkt",
+    "sidewalk",
+    "geom",
+    "wkt",
+    "ViolationID",
+    "Violation",
+    "ID",
+    "ViolationId",
+    "Violation",
+    "Id",
+    "Descriptor",
+    "Complaint Type",
+    "Complaint",
+    "Type",
+    "Created Date",
+    "Created",
+    "Date",
+    "Closed Date",
+    "Closed",
+    "Date",
+    "bblid",
+    "street"
+  ],
+  "sample": "merged_source,lon,lat,dist_to_sidewalk_m,sidewalk_geom_wkt,ViolationID,ViolationId,Descriptor,Complaint Type,Created Date,Closed Date,bblid,street\r\nviolation,-73.94190010668348,40.70390125062529,53.446692770580206,\"MULTIPOLYGON (((-73.9410913786161 40.70455800635934, -73.94108461540833 40.704534652627906, -73.94108284075388 40.70452361144532,...\",297284.0,,,,,,511646.0,MOORE STREET\r\n311_complaint,-73.97603713566916,40.74457697913951,,,,,Blocked - Construction,Sidewalk Condition,09/10/2024 11:20:54 AM,09/11/2024 02:46:00 PM,,\r\n311_complaint,-73.96734385847614,40.62579761544216,,,,,Broken Curb,Curb Condition,04/24/2023 11:07:26 AM,05/03/2023 03:41:38 PM,,\r\n311_complaint,-73.86402764018142,40.88480396456472,,,,,Broken Sidewalk,Sidewalk Condition,03/30/2023 05:48:37 PM,04/06/2023 12:47:22 PM,,\r\n311_complaint,-73.87486430762745,40.73019759364985,,,,,Defacement,Curb Condition,02/10/2023 02:11:38 PM,02/24/2023 02:27:06 PM,,\r\n311_complaint,-73.9504890274572,40.731286971333,,,,,Defacement,Curb Condition,08/03/2020 10:54:10 PM,09/25/2020 01:19:57 PM,,\r\n311_complaint,-73.91716013636349,40.74615535974407,,,,,Broken Curb,Curb Condition,06/09/2020 11:44:50 AM,07/31/2020 02:48:30 PM,,\r\n311_complaint,-74.0025173278981,40.60513393370837,,,,,Blocked - Construction,Sidewalk Condition,02/28/2020 02:57:19 PM,03/03/2020 04:47:48 PM,,\r\n311_complaint,-73.97925216427468,40.641791515413885,,,,,Broken Sidewalk,Sidewalk Condition,10/16/2019 11:49:49 PM,01/07/2020 06:50:29 PM,,\r\n311_complaint,-73.96852222092697,40.754876209548605,,,,,Sidewalk Collapsed,Sidewalk Condition,10/01/2019 08:11:43 PM,10/04/2019 07:11:46 AM,,\r\n311_complaint,-73.78299721015682,40.767200415010805,,,,,Sidewalk Violation,Sidewalk Condition,03/19/2019 03:00:37 PM,03/28/2019 10:17:19 AM,,\r\n311_complaint,-73.86183483532683,40.71659338403474,,,,,Pedestrian Ramp Defective,Sidewalk Condition,12/28/2018 04:39:59 PM,01/04/2019 11:30:33 AM,,\r\n311_complaint,-73.86353668455853,40.746946948050656,,,,,Broken Curb,Curb Condition,04/13/2015 08:44:14 AM,05/04/2015 11:11:54 AM,,\r\n311_complaint,-73.85854139185693,40.714860182910336,,,,,Broken Sidewalk,Sidewalk Condition,04/05/2015 01:15:24 PM,04/27/2015 05:07:32 PM,,\r\n311_complaint,-73.96283740454273,40.80011875578702,,,,,Defacement,Sidewalk Condition,11/10/2014 01:29:31 PM,11/24/2014 01:19:10 PM,,\r\n311_complaint,-73.98705104314145,40.5978293269944,,,,,Sidewalk Violation,Sidewalk Condition,10/22/2014 11:33:28 AM,10/28/2014 12:32:29 PM,,\r\n311_complaint,-73.90142718374899,40.866705031077046,,,,,Broken Sidewalk,Sidewalk Condition,07/07/2014 08:30:04 PM,08/04/2014 02:32:21 PM,,\r\n311_complaint,-73.82630059695015,40.830781461297725,,,,,Broken Sidewalk,Sidewalk Condition,01/19/2014 11:21:19 PM,02/12/2014 03:47:18 PM,,\r\n311_complaint,-74.01096233438736,40.60448566660095,,,,,Broken Curb,Curb Condition,07/02/2013 09:26:14 AM,07/26/2013 04:26:50 PM,,\r\n311_complaint,-73.85194253883935,40.739746861339135,,,,,Sidewalk Violation,Sidewalk Condition,06/03/2011 03:25:26 PM,06/23/2011 03:37:09 PM,,\r\n"
+}

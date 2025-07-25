@@ -1,0 +1,73 @@
+dataset_id: "transit_stops_routes"
+name: "Transit Stops and Routes (Subway Stations and Intercity Bus Permits)"
+description: >
+  This dataset includes fixed-location public transit infrastructure in New York City, covering. This dataset consists of two unmerged files:
+  1) MTA Subway Stations — including geographic coordinates, station names, and GTFS identifiers for all operational subway stops,
+  2) Intercity Bus Stop Permits — showing permitted long-distance bus and permit-related attributes.
+
+  The dataset supports spatial analysis of transit access and coverage, multimodal mobility planning, and transportation equity.
+  It can be layered with streets, zoning lots, or pedestrian infrastructure to assess connectivity or first/last mile gaps.
+
+source_organization:
+  subway_stations: "Metropolitan Transportation Authority (MTA)"
+  intercity_bus_permits: "New York City Department of Transportation (NYC DOT)"
+
+domain: "transportation"
+last_updated: "2025-07-24"
+update_frequency:
+  subway_stations: "Occasionally"
+  intercity_bus_permits: "Ongoing (as permits are issued)"
+
+access:
+  primary_url: "https://data.cityofnewyork.us"
+  api_endpoint:
+    subway_stations: "https://data.cityofnewyork.us/resource/kk4q-3rt2.json"
+    intercity_bus_permits: "https://data.cityofnewyork.us/resource/7x9x-zpz6.json"
+  license: "Open Data License"
+  file_format:
+    subway_stations: ["CSV", "GeoJSON"]
+    intercity_bus_permits: ["CSV", "GeoJSON"]
+  rate_limits:
+    subway_stations: "Unknown"
+    intercity_bus_permits: "Unknown"
+
+spatial:
+  geometry_type: "point"
+  coordinate_system: "EPSG:4326"
+  coverage_area: "NYC"
+
+temporal:
+  temporal_type:
+    subway_stations: "last updated date"
+    intercity_bus_permits: "permit issue date"
+  temporal_resolution:
+    subway_stations: "static"
+    intercity_bus_permits: "ongoing"
+  time_column:
+    subway_stations: "GTFS Stop ID"  # no explicit timestamp, static source
+    intercity_bus_permits: "issuance_date"
+
+implementation:
+  downloader_module:
+    subway_stations: "downloaders.transit_stops_routes.subway_stations_downloader"
+    intercity_bus_permits: "downloaders.transit_stops_routes.bus_stop_permits_downloader"
+  orchestrator_downloader:
+    orchestrator: "downloaders.transit_stops_routes.transit_stops_routes"
+  processor_module: null
+  example_notebook: "examples/transit_stops_routes.ipynb"
+
+integration_opportunities:
+  spatial_joins:
+    - "Overlay with CSCL street segments or zoning lots to assess accessibility"
+    - "Proximity analysis with public amenities, sidewalks, or census blocks"
+    - "Support site planning for new stops, bus shelters, or TOD zones"
+  temporal_alignment:
+    - "Compare bus permit issuance dates with service complaints or land use changes"
+
+map_algebra:
+  raster_conversion:
+    suitable_for_rasterization: true
+    recommended_cell_size: "20 meters"
+    interpolation_method: "point presence (binary indicator)"
+
+data_name: "transit_stops_routes"

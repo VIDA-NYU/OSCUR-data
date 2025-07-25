@@ -1,0 +1,961 @@
+{
+  "nb_rows": 5724903,
+  "nb_profiled_rows": 5724903,
+  "nb_columns": 21,
+  "columns": [
+    {
+      "name": "UNIQUE_ID",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/identifier"
+      ],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 5724903,
+      "mean": 9306455.537889987,
+      "stddev": 2733207.637289288,
+      "coverage": [
+        {
+          "range": {
+            "gte": 2118759.0,
+            "lte": 7818223.0
+          }
+        },
+        {
+          "range": {
+            "gte": 8989337.0,
+            "lte": 10254296.0
+          }
+        },
+        {
+          "range": {
+            "gte": 11084844.0,
+            "lte": 13312871.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 13023,
+            "bin_start": 10922.0,
+            "bin_end": 1352663.5
+          },
+          {
+            "count": 181850,
+            "bin_start": 1352663.5,
+            "bin_end": 2694405.0
+          },
+          {
+            "count": 13,
+            "bin_start": 2694405.0,
+            "bin_end": 4036146.5
+          },
+          {
+            "count": 1456,
+            "bin_start": 4036146.5,
+            "bin_end": 5377888.0
+          },
+          {
+            "count": 885350,
+            "bin_start": 5377888.0,
+            "bin_end": 6719629.5
+          },
+          {
+            "count": 1189971,
+            "bin_start": 6719629.5,
+            "bin_end": 8061371.0
+          },
+          {
+            "count": 472604,
+            "bin_start": 8061371.0,
+            "bin_end": 9403112.5
+          },
+          {
+            "count": 874749,
+            "bin_start": 9403112.5,
+            "bin_end": 10744854.0
+          },
+          {
+            "count": 931911,
+            "bin_start": 10744854.0,
+            "bin_end": 12086595.5
+          },
+          {
+            "count": 1173976,
+            "bin_start": 12086595.5,
+            "bin_end": 13428337.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "COLLISION_ID",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/identifier"
+      ],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 1562713,
+      "mean": 4002514.1162884333,
+      "stddev": 661716.6347763111,
+      "coverage": [
+        {
+          "range": {
+            "gte": 3419192.0,
+            "lte": 4047947.0
+          }
+        },
+        {
+          "range": {
+            "gte": 4117276.0,
+            "lte": 4789548.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 94261,
+            "bin_start": 37.0,
+            "bin_end": 482969.3
+          },
+          {
+            "count": 991,
+            "bin_start": 482969.3,
+            "bin_end": 965901.6
+          },
+          {
+            "count": 11480,
+            "bin_start": 965901.6,
+            "bin_end": 1448833.9
+          },
+          {
+            "count": 136,
+            "bin_start": 1448833.9,
+            "bin_end": 1931766.2
+          },
+          {
+            "count": 109,
+            "bin_start": 1931766.2,
+            "bin_end": 2414698.5
+          },
+          {
+            "count": 8867,
+            "bin_start": 2414698.5,
+            "bin_end": 2897630.8
+          },
+          {
+            "count": 73629,
+            "bin_start": 2897630.8,
+            "bin_end": 3380563.1
+          },
+          {
+            "count": 1916570,
+            "bin_start": 3380563.1,
+            "bin_end": 3863495.4
+          },
+          {
+            "count": 1935511,
+            "bin_start": 3863495.4,
+            "bin_end": 4346427.7
+          },
+          {
+            "count": 1683349,
+            "bin_start": 4346427.7,
+            "bin_end": 4829360.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "CRASH_DATE",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration",
+        "http://schema.org/DateTime"
+      ],
+      "num_distinct_values": 4767,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "05/18/2017",
+            "count": 4023
+          },
+          {
+            "bin": "05/19/2017",
+            "count": 4161
+          },
+          {
+            "bin": "09/30/2016",
+            "count": 3698
+          },
+          {
+            "bin": "11/15/2018",
+            "count": 4220
+          },
+          {
+            "bin": "12/15/2017",
+            "count": 4060
+          }
+        ]
+      }
+    },
+    {
+      "name": "CRASH_TIME",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 1440,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "0:00",
+            "count": 85437
+          },
+          {
+            "bin": "14:00",
+            "count": 66011
+          },
+          {
+            "bin": "15:00",
+            "count": 71658
+          },
+          {
+            "bin": "16:00",
+            "count": 74334
+          },
+          {
+            "bin": "17:00",
+            "count": 72159
+          }
+        ]
+      }
+    },
+    {
+      "name": "PERSON_ID",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "missing_values_ratio": 3.3188335243409366e-06,
+      "num_distinct_values": 5530080
+    },
+    {
+      "name": "PERSON_TYPE",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 4,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Bicyclist",
+            "count": 75491
+          },
+          {
+            "bin": "Occupant",
+            "count": 5498700
+          },
+          {
+            "bin": "Other Motorized",
+            "count": 11612
+          },
+          {
+            "bin": "Pedestrian",
+            "count": 139100
+          }
+        ]
+      }
+    },
+    {
+      "name": "PERSON_INJURY",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 3,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Injured",
+            "count": 711552
+          },
+          {
+            "bin": "Killed",
+            "count": 3432
+          },
+          {
+            "bin": "Unspecified",
+            "count": 5009919
+          }
+        ]
+      }
+    },
+    {
+      "name": "VEHICLE_ID",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/identifier"
+      ],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.04129275203440128,
+      "num_distinct_values": 2654444,
+      "mean": 18666972.4658643,
+      "stddev": 1608580.348770128,
+      "coverage": [
+        {
+          "range": {
+            "gte": 17049866.0,
+            "lte": 18783434.0
+          }
+        },
+        {
+          "range": {
+            "gte": 18923819.0,
+            "lte": 20822258.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 44,
+            "bin_start": 123423.0,
+            "bin_end": 2201962.9
+          },
+          {
+            "count": 49,
+            "bin_start": 2201962.9,
+            "bin_end": 4280502.8
+          },
+          {
+            "count": 0,
+            "bin_start": 4280502.8,
+            "bin_end": 6359042.699999999
+          },
+          {
+            "count": 732,
+            "bin_start": 6359042.699999999,
+            "bin_end": 8437582.6
+          },
+          {
+            "count": 28361,
+            "bin_start": 8437582.6,
+            "bin_end": 10516122.5
+          },
+          {
+            "count": 39306,
+            "bin_start": 10516122.5,
+            "bin_end": 12594662.399999999
+          },
+          {
+            "count": 46978,
+            "bin_start": 12594662.399999999,
+            "bin_end": 14673202.299999999
+          },
+          {
+            "count": 39008,
+            "bin_start": 14673202.299999999,
+            "bin_end": 16751742.2
+          },
+          {
+            "count": 2680102,
+            "bin_start": 16751742.2,
+            "bin_end": 18830282.099999998
+          },
+          {
+            "count": 2653926,
+            "bin_start": 18830282.099999998,
+            "bin_end": 20908822.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "PERSON_AGE",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.11088781766258747,
+      "num_distinct_values": 903,
+      "mean": 37.45824064489347,
+      "stddev": 111.50288375037873,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 68.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 5086065,
+            "bin_start": -999.0,
+            "bin_end": 100.79999999999995
+          },
+          {
+            "count": 2981,
+            "bin_start": 100.79999999999995,
+            "bin_end": 1200.6
+          },
+          {
+            "count": 62,
+            "bin_start": 1200.6,
+            "bin_end": 2300.3999999999996
+          },
+          {
+            "count": 88,
+            "bin_start": 2300.3999999999996,
+            "bin_end": 3400.2
+          },
+          {
+            "count": 41,
+            "bin_start": 3400.2,
+            "bin_end": 4500.0
+          },
+          {
+            "count": 85,
+            "bin_start": 4500.0,
+            "bin_end": 5599.799999999999
+          },
+          {
+            "count": 294,
+            "bin_start": 5599.799999999999,
+            "bin_end": 6699.599999999999
+          },
+          {
+            "count": 37,
+            "bin_start": 6699.599999999999,
+            "bin_end": 7799.4
+          },
+          {
+            "count": 2,
+            "bin_start": 7799.4,
+            "bin_end": 8899.199999999999
+          },
+          {
+            "count": 426,
+            "bin_start": 8899.199999999999,
+            "bin_end": 9999.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "EJECTION",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.4861280619077738,
+      "num_distinct_values": 6,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Does Not Apply",
+            "count": 15888
+          },
+          {
+            "bin": "Ejected",
+            "count": 28728
+          },
+          {
+            "bin": "Not Ejected",
+            "count": 2882844
+          },
+          {
+            "bin": "Partially Ejected",
+            "count": 12440
+          },
+          {
+            "bin": "Trapped",
+            "count": 1426
+          }
+        ]
+      }
+    },
+    {
+      "name": "EMOTIONAL_STATUS",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.46971538207721597,
+      "num_distinct_values": 8,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Conscious",
+            "count": 508886
+          },
+          {
+            "bin": "Does Not Apply",
+            "count": 2483685
+          },
+          {
+            "bin": "Semiconscious",
+            "count": 3010
+          },
+          {
+            "bin": "Shock",
+            "count": 16487
+          },
+          {
+            "bin": "Unknown",
+            "count": 16698
+          }
+        ]
+      }
+    },
+    {
+      "name": "BODILY_INJURY",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.46970787103292405,
+      "num_distinct_values": 14,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Back",
+            "count": 86589
+          },
+          {
+            "bin": "Does Not Apply",
+            "count": 2514860
+          },
+          {
+            "bin": "Head",
+            "count": 72354
+          },
+          {
+            "bin": "Knee-Lower Leg Foot",
+            "count": 80825
+          },
+          {
+            "bin": "Neck",
+            "count": 82309
+          }
+        ]
+      }
+    },
+    {
+      "name": "POSITION_IN_VEHICLE",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.48605242743850857,
+      "num_distinct_values": 11,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Any person in the rear of a station wagon, pick-up truck, all passengers on a bus, etc",
+            "count": 80210
+          },
+          {
+            "bin": "Driver",
+            "count": 2054803
+          },
+          {
+            "bin": "Front passenger, if two or more persons, including the driver, are in the front seat",
+            "count": 359634
+          },
+          {
+            "bin": "Left rear passenger, or rear passenger on a bicycle, motorcycle, snowmobile",
+            "count": 137234
+          },
+          {
+            "bin": "Right rear passenger or motorcycle sidecar passenger",
+            "count": 146566
+          }
+        ]
+      }
+    },
+    {
+      "name": "SAFETY_EQUIPMENT",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "missing_values_ratio": 0.5203394712539234,
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "lap",
+            "count": 2154451
+          },
+          {
+            "bin": "belt",
+            "count": 2154451
+          },
+          {
+            "bin": "harness",
+            "count": 1768897
+          },
+          {
+            "bin": "unknown",
+            "count": 469067
+          },
+          {
+            "bin": "only",
+            "count": 74812
+          }
+        ]
+      }
+    },
+    {
+      "name": "PED_LOCATION",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "missing_values_ratio": 0.9826769117310808,
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "pedestrian",
+            "count": 184890
+          },
+          {
+            "bin": "bicyclist",
+            "count": 92445
+          },
+          {
+            "bin": "other",
+            "count": 92445
+          },
+          {
+            "bin": "at",
+            "count": 92445
+          },
+          {
+            "bin": "intersection",
+            "count": 92445
+          }
+        ]
+      }
+    },
+    {
+      "name": "PED_ACTION",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.9826945539513945,
+      "num_distinct_values": 16,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Crossing Against Signal",
+            "count": 6807
+          },
+          {
+            "bin": "Crossing With Signal",
+            "count": 37486
+          },
+          {
+            "bin": "Crossing, No Signal, Marked Crosswalk",
+            "count": 8653
+          },
+          {
+            "bin": "Crossing, No Signal, or Crosswalk",
+            "count": 16588
+          },
+          {
+            "bin": "Other Actions in Roadway",
+            "count": 7743
+          }
+        ]
+      }
+    },
+    {
+      "name": "COMPLAINT",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.4697066483047835,
+      "num_distinct_values": 21,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Complaint of Pain",
+            "count": 88490
+          },
+          {
+            "bin": "Complaint of Pain or Nausea",
+            "count": 236757
+          },
+          {
+            "bin": "Does Not Apply",
+            "count": 2515769
+          },
+          {
+            "bin": "Minor Bleeding",
+            "count": 28456
+          },
+          {
+            "bin": "None Visible",
+            "count": 54028
+          }
+        ]
+      }
+    },
+    {
+      "name": "PED_ROLE",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.03404232351185688,
+      "num_distinct_values": 10,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Driver",
+            "count": 2104621
+          },
+          {
+            "bin": "Passenger",
+            "count": 831925
+          },
+          {
+            "bin": "Pedestrian",
+            "count": 97356
+          },
+          {
+            "bin": "Registrant",
+            "count": 2374334
+          },
+          {
+            "bin": "Witness",
+            "count": 77798
+          }
+        ]
+      }
+    },
+    {
+      "name": "CONTRIBUTING_FACTOR_1",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.9829165664466281,
+      "num_distinct_values": 53,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Driver Inattention/Distraction",
+            "count": 3680
+          },
+          {
+            "bin": "Failure to Yield Right-of-Way",
+            "count": 2570
+          },
+          {
+            "bin": "Pedestrian/Bicyclist/Other Pedestrian Error/Confusion",
+            "count": 15200
+          },
+          {
+            "bin": "Traffic Control Disregarded",
+            "count": 1625
+          },
+          {
+            "bin": "Unspecified",
+            "count": 68380
+          }
+        ]
+      }
+    },
+    {
+      "name": "CONTRIBUTING_FACTOR_2",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.9829380515268119,
+      "num_distinct_values": 52,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Driver Inattention/Distraction",
+            "count": 1486
+          },
+          {
+            "bin": "Failure to Yield Right-of-Way",
+            "count": 1354
+          },
+          {
+            "bin": "Pedestrian/Bicyclist/Other Pedestrian Error/Confusion",
+            "count": 4315
+          },
+          {
+            "bin": "Traffic Control Disregarded",
+            "count": 1196
+          },
+          {
+            "bin": "Unspecified",
+            "count": 85672
+          }
+        ]
+      }
+    },
+    {
+      "name": "PERSON_SEX",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.1108766384338739,
+      "num_distinct_values": 3,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "F",
+            "count": 1550940
+          },
+          {
+            "bin": "M",
+            "count": 3098262
+          },
+          {
+            "bin": "U",
+            "count": 440943
+          }
+        ]
+      }
+    }
+  ],
+  "nb_temporal_columns": 1,
+  "nb_categorical_columns": 13,
+  "nb_numerical_columns": 4,
+  "types": [
+    "categorical",
+    "numerical",
+    "temporal"
+  ],
+  "temporal_coverage": [
+    {
+      "type": "datetime",
+      "column_names": [
+        "CRASH_DATE"
+      ],
+      "column_indexes": [
+        2
+      ],
+      "column_types": [
+        "http://schema.org/DateTime"
+      ],
+      "ranges": [
+        {
+          "range": {
+            "gte": 1404259200.0,
+            "lte": 1518739200.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1526169600.0,
+            "lte": 1615939200.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1629676800.0,
+            "lte": 1745625600.0
+          }
+        }
+      ],
+      "temporal_resolution": "day"
+    }
+  ],
+  "attribute_keywords": [
+    "UNIQUE_ID",
+    "UNIQUE",
+    "ID",
+    "COLLISION_ID",
+    "COLLISION",
+    "ID",
+    "CRASH_DATE",
+    "CRASH",
+    "DATE",
+    "CRASH_TIME",
+    "CRASH",
+    "TIME",
+    "PERSON_ID",
+    "PERSON",
+    "ID",
+    "PERSON_TYPE",
+    "PERSON",
+    "TYPE",
+    "PERSON_INJURY",
+    "PERSON",
+    "INJURY",
+    "VEHICLE_ID",
+    "VEHICLE",
+    "ID",
+    "PERSON_AGE",
+    "PERSON",
+    "AGE",
+    "EJECTION",
+    "EMOTIONAL_STATUS",
+    "EMOTIONAL",
+    "STATUS",
+    "BODILY_INJURY",
+    "BODILY",
+    "INJURY",
+    "POSITION_IN_VEHICLE",
+    "POSITION",
+    "IN",
+    "VEHICLE",
+    "SAFETY_EQUIPMENT",
+    "SAFETY",
+    "EQUIPMENT",
+    "PED_LOCATION",
+    "PED",
+    "LOCATION",
+    "PED_ACTION",
+    "PED",
+    "ACTION",
+    "COMPLAINT",
+    "PED_ROLE",
+    "PED",
+    "ROLE",
+    "CONTRIBUTING_FACTOR_1",
+    "CONTRIBUTING",
+    "FACTOR",
+    "1",
+    "CONTRIBUTING_FACTOR_2",
+    "CONTRIBUTING",
+    "FACTOR",
+    "2",
+    "PERSON_SEX",
+    "PERSON",
+    "SEX"
+  ],
+  "sample": "UNIQUE_ID,COLLISION_ID,CRASH_DATE,CRASH_TIME,PERSON_ID,PERSON_TYPE,PERSON_INJURY,VEHICLE_ID,PERSON_AGE,EJECTION,EMOTIONAL_STATUS,BODILY_INJURY,POSITION_IN_VEHICLE,SAFETY_EQUIPMENT,PED_LOCATION,PED_ACTION,COMPLAINT,PED_ROLE,CONTRIBUTING_FACTOR_1,CONTRIBUTING_FACTOR_2,PERSON_SEX\r\n5769485,3411664,04/17/2016,20:40,460235,Occupant,Unspecified,16955149.0,,,,,,,,,,Registrant,,,M\r\n8938836,4061740,01/04/2019,6:43,4319101d-9501-4f3b-9561-0f64b0b34383,Occupant,Unspecified,18492244.0,13.0,Not Ejected,Does Not Apply,Does Not Apply,\"Any person in the rear of a station wagon, pick-up truck, all passengers on a bus, etc\",Lap Belt,,,Does Not Apply,Passenger,,,F\r\n7117490,3714640,07/19/2017,20:25,eaa61458-4a0e-4936-a5e4-83fc64ba9095,Occupant,Unspecified,17597345.0,0.0,,,,,,,,,Registrant,,,U\r\n9951563,4153696,06/15/2019,2:10,9ad25527-5b5f-41ce-a5ae-a5fe856a3c2a,Occupant,Unspecified,18992108.0,18.0,Not Ejected,Does Not Apply,Does Not Apply,\"Front passenger, if two or more persons, including the driver, are in the front seat\",Lap Belt & Harness,,,Does Not Apply,Passenger,,,F\r\n9405431,3962729,08/14/2018,17:30,a47c0e2d-6cd0-4166-a26b-fc5b85d4bafc,Occupant,Unspecified,18722192.0,63.0,,,,,,,,,Registrant,,,M\r\n7191896,3727188,08/08/2017,6:00,c98b3da7-d531-4c5e-8dcc-c09903cf620a,Occupant,Unspecified,17633191.0,34.0,Not Ejected,Does Not Apply,Does Not Apply,Driver,Lap Belt & Harness,,,Does Not Apply,Driver,,,M\r\n7265906,3732302,08/17/2017,9:55,6a65b734-f188-427c-b1af-c56ad6e46abe,Pedestrian,Unspecified,,15.0,,Does Not Apply,Does Not Apply,,,Pedestrian/Bicyclist/Other Pedestrian Not at Intersection,Not in Roadway,Does Not Apply,Pedestrian,Unspecified,Unspecified,F\r\n7210039,3744698,09/06/2017,13:00,a7d54057-3b08-448e-8c21-9aa5673260e6,Occupant,Unspecified,17642042.0,0.0,,,,,,,,,Registrant,,,U\r\n9628277,4032066,11/24/2018,22:25,693635b1-3b7b-4d37-90c9-b4a0e4a564be,Occupant,Unspecified,18832029.0,47.0,,,,,,,,,Registrant,,,M\r\n5818326,3428547,04/17/2016,14:35,396233,Occupant,Unspecified,16979091.0,30.0,Does Not Apply,Conscious,Does Not Apply,Driver,-,,,Does Not Apply,Driver,,,M\r\n1988455,224028,06/11/2013,11:00,1,Occupant,Injured,12843325.0,32.0,,,,,,,,,,,,\r\n7464738,3856057,03/02/2018,16:00,89c8866a-c962-4623-b493-92b45436c41b,Occupant,Unspecified,17766612.0,29.0,,,,,,,,,Registrant,,,M\r\n9547660,4019738,11/02/2018,0:00,550fb2a5-09af-4d07-b98e-ced28738f345,Occupant,Unspecified,18792169.0,28.0,Not Ejected,Does Not Apply,Does Not Apply,Driver,Lap Belt & Harness,,,Does Not Apply,Driver,,,M\r\n10130041,4201879,09/06/2019,22:00,c61b08fc-cbe2-4b24-a951-b8c508db6b95,Occupant,Unspecified,19081456.0,64.0,,,,,,,,,Registrant,,,M\r\n6635149,3587732,12/25/2016,19:40,3187774,Occupant,Unspecified,17366066.0,28.0,Not Ejected,Does Not Apply,Does Not Apply,\"Front passenger, if two or more persons, including the driver, are in the front seat\",Lap Belt & Harness,,,Does Not Apply,Passenger,,,M\r\n7812869,3788510,11/12/2017,15:30,8a201194-c337-4fe9-b82e-37e47b0282b4,Occupant,Injured,17936912.0,17.0,Not Ejected,Conscious,Face,\"Left rear passenger, or rear passenger on a bicycle, motorcycle, snowmobile\",Lap Belt,,,Complaint of Pain,Passenger,,,F\r\n7860165,3754400,09/20/2017,0:00,6a8dd467-a05c-411c-8575-1407454b7ffc,Bicyclist,Injured,17960067.0,31.0,Not Ejected,Conscious,Face,Driver,Unknown,,,Minor Bleeding,Driver,,,M\r\n6850059,3644469,04/03/2017,11:00,696e775b-4e12-4a4f-8e7b-aee72ce79024,Occupant,Unspecified,17469313.0,46.0,Not Ejected,Does Not Apply,Does Not Apply,Driver,Lap Belt & Harness,,,Does Not Apply,Driver,,,F\r\n11479890,4365108,11/07/2020,10:10,25ea99d7-54cc-4003-a17e-ef21aec3345a,Occupant,Unspecified,19788389.0,19.0,Not Ejected,Does Not Apply,Does Not Apply,\"Front passenger, if two or more persons, including the driver, are in the front seat\",Lap Belt & Harness,,,Does Not Apply,Passenger,,,M\r\n12756196,4667248,10/02/2023,21:22,7ea0a12c-d1b9-4c84-b512-f5f61197d698,Occupant,Unspecified,20524657.0,35.0,,,,,,,,,Registrant,,,M\r\n"
+}

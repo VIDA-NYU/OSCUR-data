@@ -1,0 +1,552 @@
+{
+  "nb_rows": 33963,
+  "nb_profiled_rows": 33963,
+  "nb_columns": 9,
+  "columns": [
+    {
+      "name": "Original_BBL",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 4087,
+      "mean": 3090944873.4308805,
+      "stddev": 1200612912.4843931,
+      "coverage": [
+        {
+          "range": {
+            "gte": 1003100035.0,
+            "lte": 2054860105.0
+          }
+        },
+        {
+          "range": {
+            "gte": 3004840019.0,
+            "lte": 3081200027.0
+          }
+        },
+        {
+          "range": {
+            "gte": 4000980001.0,
+            "lte": 5075280074.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 4166,
+            "bin_start": 1000170018.0,
+            "bin_end": 1408173028.5
+          },
+          {
+            "count": 0,
+            "bin_start": 1408173028.5,
+            "bin_end": 1816176039.0
+          },
+          {
+            "count": 5776,
+            "bin_start": 1816176039.0,
+            "bin_end": 2224179049.5
+          },
+          {
+            "count": 0,
+            "bin_start": 2224179049.5,
+            "bin_end": 2632182060.0
+          },
+          {
+            "count": 9345,
+            "bin_start": 2632182060.0,
+            "bin_end": 3040185070.5
+          },
+          {
+            "count": 3649,
+            "bin_start": 3040185070.5,
+            "bin_end": 3448188081.0
+          },
+          {
+            "count": 0,
+            "bin_start": 3448188081.0,
+            "bin_end": 3856191091.5
+          },
+          {
+            "count": 6077,
+            "bin_start": 3856191091.5,
+            "bin_end": 4264194102.0
+          },
+          {
+            "count": 0,
+            "bin_start": 4264194102.0,
+            "bin_end": 4672197112.5
+          },
+          {
+            "count": 4950,
+            "bin_start": 4672197112.5,
+            "bin_end": 5080200123.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "2021_bbl",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 3738,
+      "mean": 3090945215.2925534,
+      "stddev": 1200612957.460331,
+      "coverage": [
+        {
+          "range": {
+            "gte": 1003100035.0,
+            "lte": 2054860103.0
+          }
+        },
+        {
+          "range": {
+            "gte": 3004840019.0,
+            "lte": 3081200027.0
+          }
+        },
+        {
+          "range": {
+            "gte": 4000980001.0,
+            "lte": 5075280074.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 4166,
+            "bin_start": 1000170018.0,
+            "bin_end": 1408173028.5
+          },
+          {
+            "count": 0,
+            "bin_start": 1408173028.5,
+            "bin_end": 1816176039.0
+          },
+          {
+            "count": 5776,
+            "bin_start": 1816176039.0,
+            "bin_end": 2224179049.5
+          },
+          {
+            "count": 0,
+            "bin_start": 2224179049.5,
+            "bin_end": 2632182060.0
+          },
+          {
+            "count": 9345,
+            "bin_start": 2632182060.0,
+            "bin_end": 3040185070.5
+          },
+          {
+            "count": 3649,
+            "bin_start": 3040185070.5,
+            "bin_end": 3448188081.0
+          },
+          {
+            "count": 0,
+            "bin_start": 3448188081.0,
+            "bin_end": 3856191091.5
+          },
+          {
+            "count": 6077,
+            "bin_start": 3856191091.5,
+            "bin_end": 4264194102.0
+          },
+          {
+            "count": 0,
+            "bin_start": 4264194102.0,
+            "bin_end": 4672197112.5
+          },
+          {
+            "count": 4950,
+            "bin_start": 4672197112.5,
+            "bin_end": 5080200123.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "facility_type",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 17,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Commercial",
+            "count": 8527
+          },
+          {
+            "bin": "Other (input)",
+            "count": 3379
+          },
+          {
+            "bin": "Residential",
+            "count": 7415
+          },
+          {
+            "bin": "Transportation",
+            "count": 1443
+          },
+          {
+            "bin": "Unknown",
+            "count": 10302
+          }
+        ]
+      }
+    },
+    {
+      "name": "environmental_concern",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 35,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Auto Repair",
+            "count": 328
+          },
+          {
+            "bin": "Automotive",
+            "count": 415
+          },
+          {
+            "bin": "Manufacturing",
+            "count": 535
+          },
+          {
+            "bin": "Not Reported",
+            "count": 29959
+          },
+          {
+            "bin": "Storage",
+            "count": 437
+          }
+        ]
+      }
+    },
+    {
+      "name": "facility_feature",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 81,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Building",
+            "count": 1536
+          },
+          {
+            "bin": "No Features Visible",
+            "count": 9626
+          },
+          {
+            "bin": "Other",
+            "count": 4450
+          },
+          {
+            "bin": "Residential/dwelling",
+            "count": 7419
+          },
+          {
+            "bin": "Store",
+            "count": 3966
+          }
+        ]
+      }
+    },
+    {
+      "name": "map_year",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0009716456143450225,
+      "num_distinct_values": 106,
+      "mean": 1946.4634246979074,
+      "stddev": 31.375914550074945,
+      "coverage": [
+        {
+          "range": {
+            "gte": 1887.0,
+            "lte": 1918.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1927.0,
+            "lte": 1951.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1963.0,
+            "lte": 1992.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 2314,
+            "bin_start": 1885.0,
+            "bin_end": 1897.2
+          },
+          {
+            "count": 3873,
+            "bin_start": 1897.2,
+            "bin_end": 1909.4
+          },
+          {
+            "count": 3150,
+            "bin_start": 1909.4,
+            "bin_end": 1921.6
+          },
+          {
+            "count": 2322,
+            "bin_start": 1921.6,
+            "bin_end": 1933.8
+          },
+          {
+            "count": 2543,
+            "bin_start": 1933.8,
+            "bin_end": 1946.0
+          },
+          {
+            "count": 5356,
+            "bin_start": 1946.0,
+            "bin_end": 1958.2
+          },
+          {
+            "count": 4149,
+            "bin_start": 1958.2,
+            "bin_end": 1970.4
+          },
+          {
+            "count": 8000,
+            "bin_start": 1970.4,
+            "bin_end": 1982.6
+          },
+          {
+            "count": 1743,
+            "bin_start": 1982.6,
+            "bin_end": 1994.8
+          },
+          {
+            "count": 480,
+            "bin_start": 1994.8,
+            "bin_end": 2007.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "created_date",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration",
+        "http://schema.org/DateTime"
+      ],
+      "num_distinct_values": 109,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "01/05/2010",
+            "count": 991
+          },
+          {
+            "bin": "01/07/2010",
+            "count": 1482
+          },
+          {
+            "bin": "12/08/2009",
+            "count": 971
+          },
+          {
+            "bin": "12/29/2009",
+            "count": 989
+          },
+          {
+            "bin": "12/30/2009",
+            "count": 950
+          }
+        ]
+      }
+    },
+    {
+      "name": "image_id",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/identifier"
+      ],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 27429,
+      "mean": 50344.9641668875,
+      "stddev": 18884.74640871449,
+      "coverage": [
+        {
+          "range": {
+            "gte": 29356.0,
+            "lte": 40780.0
+          }
+        },
+        {
+          "range": {
+            "gte": 41947.0,
+            "lte": 54506.0
+          }
+        },
+        {
+          "range": {
+            "gte": 72706.0,
+            "lte": 104659.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 8204,
+            "bin_start": 28743.0,
+            "bin_end": 36372.9
+          },
+          {
+            "count": 8827,
+            "bin_start": 36372.9,
+            "bin_end": 44002.8
+          },
+          {
+            "count": 6169,
+            "bin_start": 44002.8,
+            "bin_end": 51632.7
+          },
+          {
+            "count": 2921,
+            "bin_start": 51632.7,
+            "bin_end": 59262.6
+          },
+          {
+            "count": 9,
+            "bin_start": 59262.6,
+            "bin_end": 66892.5
+          },
+          {
+            "count": 2643,
+            "bin_start": 66892.5,
+            "bin_end": 74522.4
+          },
+          {
+            "count": 1885,
+            "bin_start": 74522.4,
+            "bin_end": 82152.29999999999
+          },
+          {
+            "count": 1829,
+            "bin_start": 82152.29999999999,
+            "bin_end": 89782.2
+          },
+          {
+            "count": 633,
+            "bin_start": 89782.2,
+            "bin_end": 97412.09999999999
+          },
+          {
+            "count": 843,
+            "bin_start": 97412.09999999999,
+            "bin_end": 105042.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "comments_string",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "missing_values_ratio": 0.01943291228690045,
+      "num_distinct_values": 4860
+    }
+  ],
+  "nb_temporal_columns": 1,
+  "nb_categorical_columns": 3,
+  "nb_numerical_columns": 4,
+  "types": [
+    "categorical",
+    "numerical",
+    "temporal"
+  ],
+  "temporal_coverage": [
+    {
+      "type": "datetime",
+      "column_names": [
+        "created_date"
+      ],
+      "column_indexes": [
+        6
+      ],
+      "column_types": [
+        "http://schema.org/DateTime"
+      ],
+      "ranges": [
+        {
+          "range": {
+            "gte": 1259107200.0,
+            "lte": 1262822400.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1263254400.0,
+            "lte": 1267660800.0
+          }
+        }
+      ],
+      "temporal_resolution": "day"
+    }
+  ],
+  "attribute_keywords": [
+    "Original_BBL",
+    "Original",
+    "BBL",
+    "2021_bbl",
+    "2021",
+    "bbl",
+    "facility_type",
+    "facility",
+    "type",
+    "environmental_concern",
+    "environmental",
+    "concern",
+    "facility_feature",
+    "facility",
+    "feature",
+    "map_year",
+    "map",
+    "year",
+    "created_date",
+    "created",
+    "date",
+    "image_id",
+    "image",
+    "id",
+    "comments_string",
+    "comments",
+    "string"
+  ],
+  "sample": "Original_BBL,2021_bbl,facility_type,environmental_concern,facility_feature,map_year,created_date,image_id,comments_string\r\n3023140018,3023140018,Residential,Not Reported,Residential/dwelling,1980,02/19/2010,32219,No Additional Comments\r\n2029230051,2029230051,Commercial,Service Station,Service/Gas Station/filling station,1978,01/06/2010,38834,No Additional Comments\r\n2030290052,2030290052,Commercial,Not Reported,Other,1979,01/24/2010,39003,Flat (denotes a delivery service) for paper products and associated office.\r\n3015540054,3015540054,Unknown,Not Reported,Building,1932,12/14/2009,30129,No Additional Comments\r\n2023880087,2023880087,Commercial,Works,Other,1891,01/24/2010,37366,Granite Tub Works\r\n2023870040,2023870040,Residential,Not Reported,Residential/dwelling,1977,12/22/2009,37330,No Additional Comments\r\n3032930037,3032930037,Residential,Not Reported,Residential/dwelling,1907,12/07/2009,35716,No Additional Comments\r\n3088440340,3088440340,Residential,Not Reported,Residential/dwelling,1977,01/26/2010,76072,No Additional Comments\r\n3047860065,3047860065,Other (input),Not Reported,Other,1969,01/28/2010,73287,Part of parcel lies in roadway\r\n3089550360,3089550360,Unknown,Not Reported,No Features Visible,1981,01/25/2010,76354,No Additional Comments\r\n3004480057,3004480057,Other (input),Not Reported,No Features Visible,1906,12/07/2009,33474,No Additional Comments\r\n1004220065,1004220065,Commercial,Not Reported,Store,1980,12/22/2009,43572,No Additional Comments\r\n5011550176,5011550176,Unknown,Not Reported,No Features Visible,1910,01/05/2010,51249,No Additional Comments\r\n5071530075,5071530075,Unknown,Not Reported,No Features Visible,1937,01/07/2010,53265,No Additional Comments\r\n3054730040,3054730043,Commercial,Service Station,Gasoline Tank,1929,12/21/2009,73654,Filling station with service area and lunch wagon.  Five gasoline tanks.\r\n5075900100,5075900080,Other (input),Fill,Other,1937,02/26/2010,54868,A pond was filled in.\r\n1004770042,1004777502,Unknown,Not Reported,Building,1894,02/10/2010,83529,Three unmarked building\r\n1007750079,1007757502,Commercial,Not Reported,Store,1911,12/23/2009,84313,No Additional Comments\r\n3053420019,3053420006,Commercial,Not Reported,Store,1893,12/18/2009,73485,No Additional Comments\r\n1016170031,1016170020,Residential,Not Reported,Residential/dwelling,1939,03/17/2015,42392,\r\n"
+}
