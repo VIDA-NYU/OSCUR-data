@@ -1,0 +1,83 @@
+dataset_id: "transit_ridership"
+name: "Transit Ridership in NYC (Subway, Bus, Ferry)"
+description: >
+  Three datasets for NYC transit ridership:
+  1) MTA Subway Hourly Ridership — estimates of hourly subway ridership by station complex and fare class,
+  2) MTA Bus Hourly Ridership — estimates of hourly bus ridership by route and fare class,
+  3) NYC Ferry Ridership — hourly ferry boarding counts by route, landing, and fare class.
+  
+  The datasets provide granular ridership counts, fare categories, and geospatial coordinates.
+  Records are geocoded with stop locations and enable spatial and temporal analysis of NYC's multimodal transit network.
+
+source_organization:
+  mta_subway: "Metropolitan Transportation Authority (MTA)"
+  mta_bus: "Metropolitan Transportation Authority (MTA)"
+  nyc_ferry: "New York City Economic Development Corporation (NYCEDC)"
+
+domain: "transportation"
+last_updated: "2025-07-21"
+update_frequency:
+  mta_subway: "Daily"
+  mta_bus: "Daily"
+  nyc_ferry: "Daily"
+
+access:
+  primary_url: "https://data.ny.gov"
+  api_endpoint:
+    mta_subway: "https://data.ny.gov/Transportation/MTA-Subway-Hourly-Ridership-2020-2024/wujg-7c2s"
+    mta_bus: "https://data.ny.gov/Transportation/MTA-Bus-Hourly-Ridership-2020-2024/kv7t-n8in"
+    nyc_ferry: "https://data.cityofnewyork.us/Transportation/NYC-Ferry-Ridership/t5n6-gx8c"
+  license: "Open Data License"
+  file_format:
+    mta_subway: ["CSV"]
+    mta_bus: ["CSV"]
+    nyc_ferry: ["CSV"]
+  rate_limits:
+    mta_subway: "Variable (Socrata API)"
+    mta_bus: "Variable (Socrata API)"
+    nyc_ferry: "Variable (Socrata API)"
+
+spatial:
+  geometry_type: "point"
+  coordinate_system: "EPSG:4326"
+  coverage_area: "NYC"
+
+temporal:
+  temporal_type:
+    mta_subway: "ridership date and hour"
+    mta_bus: "ridership date and hour"
+    nyc_ferry: "ridership date and hour"
+  temporal_resolution:
+    mta_subway: "hourly"
+    mta_bus: "hourly"
+    nyc_ferry: "hourly"
+  time_column:
+    mta_subway: "date_hour"
+    mta_bus: "date_hour"
+    nyc_ferry: "date_hour"
+
+implementation:
+  downloader_module:
+    mta_subway: "downloaders.transit_ridership.mta_subway_hourly_ridership_downloader"
+    mta_bus: "downloaders.transit_ridership.mta_bus_hourly_ridership_downloader"
+    nyc_ferry: "downloaders.transit_ridership.ferry_ridership"
+  orchestrator_downloader:
+    orchestrator: "downloaders.transit_ridership_orchestrator"
+  processor_module: null
+  example_notebook: "examples/transit_ridership.ipynb"
+
+integration_opportunities:
+  spatial_joins:
+    - "Transit stop accessibility analysis"
+    - "Census tracts for socio-economic overlays"
+  temporal_alignment:
+    - "Hourly traffic or incident reports"
+    - "Weather data for correlation with transit usage"
+
+map_algebra:
+  raster_conversion:
+    suitable_for_rasterization: true
+    recommended_cell_size: "100 meters"
+    interpolation_method: "point density (sum)"
+
+data_name: "transit_ridership"

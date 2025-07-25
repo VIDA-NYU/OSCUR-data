@@ -185,6 +185,10 @@ python code/processors/land_use.py \
   --output ../processors/processed_data/land_use/sidewalks_with_land_use.csv
 ```
 
+#### Transit Ridership
+No postprocessing script is needed, as the original datasets are being preserved without any merging.
+
+
 ### Other Datasets
 To be added as needed.
 

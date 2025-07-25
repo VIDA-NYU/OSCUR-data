@@ -30,7 +30,7 @@ code/downloaders/
     ├── on_street_curb_management.py  # Activates all download files
     ├── parking_meters_downloader.py  # Download Parking Meters dataset (CSV)
     ├── truck_routes_downloader.py    # Download Truck Routes dataset (CSV)
-├── signals_markings_signs/           # Folder for NYC traffic signals, signs, and APS
+├── signals_markings_signs           # Folder for NYC traffic signals, signs, and APS
     ├── accessible_ped_signals_downloader.py   # Download Accessible Pedestrian Signals
     ├── traffic_signal_downloader.py           # Download Traffic Signals (311)
     ├── street_sign_downloader.py              # Download Street Sign Work Orders
@@ -102,6 +102,11 @@ code/downloaders/
     ├── sidewalk_geometry_downloader.py    # Download NYC Planimetric Sidewalk Geometries (polygon base layer)
     ├── nycha_residential_downloader.py    # Download NYCHA Residential Addresses (public housing inventory)
     ├── historic_land_use_downloader.py     # Download Historic Land Use dataset (based on Sanborn maps)
+├── transit_ridership
+    ├── transit_ridership_orchestrator.py         # Orchestrates all downloads
+    ├── ferry_ridership.py                        # Download NYC Ferry Ridership dataset (CSV)
+    ├── mta_bus_hourly_ridership_downloader.py    # Download MTA Bus Hourly Ridership dataset (CSV)
+    ├── mta_subway_hourly_ridership_downloader.py # Download MTA Subway Hourly Ridership dataset (CSV)
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -374,6 +379,22 @@ python land_use.py \
   --sidewalks /custom/path/sidewalks.csv \
   --nycha /custom/path/nycha.csv \
   --historic_land_use /custom/path/historic_land_use.csv
+```
+
+
+**Transit Ridership:**
+The `transit_ridership_orchestrator.py` script downloads bus, subway and ferry data:
+
+```bash
+python transit_ridership_orchestrator.py   # basic usage
+```
+
+You can specify custom output paths for each dataset:
+```bash
+python transit_ridership_orchestrator.py \
+  --subway /custom/mta_subway_hourly_ridership.csv \
+  --bus /custom/mta_bus_hourly_ridership.csv \
+  --ferry /custom/nyc_ferry_ridership.csv
 ```
 
 ## Base Class Benefits
