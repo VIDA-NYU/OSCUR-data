@@ -1,0 +1,113 @@
+dataset_id: "land_use"
+name: "Land Use Characteristics in NYC (Facilities, Businesses, Sidewalk Context, NYCHA, and Historic Land Use)"
+description: >
+  This data element consists of five datasets that together capture land use characteristics across New York City.
+
+  The following **three datasets were spatially merged**:
+  1) The **Facilities Database** — merged with NYC Planimetric Sidewalk geometries to associate public buildings
+     (e.g. schools, libraries, civic centers) with nearby sidewalks.
+  2) The **Issued Licenses Database** — also spatially joined to sidewalks to capture the proximity of
+     licensed businesses and commercial activity.
+  3) The **Sidewalk Geometries** — base polygon dataset representing NYC sidewalks, used as the spatial anchor
+     for proximity calculations in the merged output.
+
+  In addition, two datasets were **not merged**, but are included in raw form:
+  4) The **NYCHA Residential Addresses** dataset — a listing of New York City Housing Authority properties,
+     offering a reference for public housing locations.
+  5) The **Historic Land Use Data** — describing historical land uses for vacant or industrial-zoned lots based
+     on Sanborn map reviews over the past century.
+
+  This data element supports analysis of land use accessibility, pedestrian adjacency to facilities and businesses,
+  housing equity, and historical development trends.
+
+source_organization:
+  facilities: "New York City Department of City Planning (DCP)"
+  issued_licenses: "New York City Department of Consumer and Worker Protection (DCWP)"
+  sidewalks: "New York City Department of Information Technology & Telecommunications (DoITT)"
+  nycha: "New York City Housing Authority (NYCHA)"
+  historic_land_use: "New York City Department of Environmental Protection (DEP)"
+
+domain: "land_use"
+last_updated: "2025-07-25"
+update_frequency:
+  facilities: "Occasionally"
+  issued_licenses: "Daily"
+  sidewalks: "Occasionally"
+  nycha: "Occasionally"
+  historic_land_use: "Static"
+
+access:
+  primary_url: "https://data.cityofnewyork.us"
+  api_endpoint:
+    facilities: "https://data.cityofnewyork.us/resource/ji82-xba5.json"
+    issued_licenses: "https://data.cityofnewyork.us/resource/w7w3-xahh.json"
+    sidewalks: "https://data.cityofnewyork.us/resource/vfx9-tbb6.json"
+    nycha: "https://data.cityofnewyork.us/resource/3ub5-4ph8.json"
+    historic_land_use: "https://data.cityofnewyork.us/resource/r9ca-6t4q.json"
+  license: "Open Data License"
+  file_format:
+    facilities: ["CSV", "GeoJSON"]
+    issued_licenses: ["CSV", "GeoJSON"]
+    sidewalks: ["CSV", "GeoJSON"]
+    nycha: ["CSV"]
+    historic_land_use: ["CSV"]
+  rate_limits:
+    facilities: "Unknown"
+    issued_licenses: "Unknown"
+    sidewalks: "Unknown"
+    nycha: "Unknown"
+    historic_land_use: "Unknown"
+
+spatial:
+  geometry_type: "polygon (sidewalks), point (facilities, licenses, NYCHA)"
+  coordinate_system: "EPSG:4326"
+  coverage_area: "NYC"
+
+temporal:
+  temporal_type:
+    facilities: "facility update date"
+    issued_licenses: "license issue/expiry dates"
+    sidewalks: "last edit date"
+    nycha: "static address list"
+    historic_land_use: "map publication year"
+  temporal_resolution:
+    facilities: "static"
+    issued_licenses: "daily"
+    sidewalks: "static"
+    nycha: "static"
+    historic_land_use: "static"
+  time_column:
+    facilities: "last_modified_date"
+    issued_licenses: "license_expiration_date"
+    sidewalks: "last_edit_date"
+    nycha: "none"
+    historic_land_use: "historic_year"
+
+implementation:
+  downloader_module:
+    facilities: "downloaders.land_use.facilities_downloader"
+    issued_licenses: "downloaders.land_use.issued_licenses_downloader"
+    sidewalks: "downloaders.land_use.sidewalk_geometry_downloader"
+    nycha: "downloaders.land_use.nycha_residentiaL_downloader"
+    historic_land_use: "downloaders.land_use.historic_land_use_downloader"
+  orchestrator_downloader:
+    orchestrator: "downloaders.land_use.land_use"
+  processor_module: "processors.land_use"
+  example_notebook: "examples.land_use.ipynb"
+
+integration_opportunities:
+  spatial_joins:
+    - "Associate public facilities and businesses with pedestrian sidewalk infrastructure"
+    - "Overlay NYCHA housing with sidewalk access and civic facilities"
+    - "Compare current land use patterns to historic zoning"
+  temporal_alignment:
+    - "Link license expiration dates with commercial turnover"
+    - "Compare historic land uses with current facility types and zoning"
+
+map_algebra:
+  raster_conversion:
+    suitable_for_rasterization: true
+    recommended_cell_size: "30 meters"
+    interpolation_method: "proximity scoring or point density"
+
+data_name: "land_use"
