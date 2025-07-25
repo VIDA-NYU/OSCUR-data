@@ -19,6 +19,7 @@ code/processors/
 ├── curb_infrastructure.py             # Post-processing Curb Infrastructure dataset (CSV)
 ├── rail_routes_and_crossings.py       # Post-processing Rail Routes and Crossings dataset (CSV)
 ├── public_open_spaces.py              # Post-processing Public Open Spaces dataset (CSV)
+├── land_use.py                        # Post-processing Land Use dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
 ```
@@ -171,6 +172,17 @@ python code/processors/public_open_spaces.py  \
   --open_streets ../downloaders/data/public_open_spaces/open_streets.csv \
   --centerlines ../downloaders/data/public_open_spaces/centerline.csv \
   --output ../processors/processed_data/public_open_spaces_final.csv
+```
+
+#### Land Use Dataset
+This script processes the raw datasets for public facilities, licensed businesses, and sidewalks, merging them into a spatially enriched dataset. Facilities and licenses are spatially joined to sidewalk geometries to provide proximity-based land use context.
+
+```bash
+python code/processors/land_use.py \
+  --sidewalks ../downloaders/data/land_use/sidewalks.csv \
+  --facilities ../downloaders/data/land_use/facilities.csv \
+  --licenses ../downloaders/data/land_use/licenses.csv \
+  --output ../processors/processed_data/land_use/sidewalks_with_land_use.csv
 ```
 
 ### Other Datasets

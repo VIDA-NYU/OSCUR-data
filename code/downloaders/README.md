@@ -95,6 +95,13 @@ code/downloaders/
     ├── open_space_downloader.py              # Download NYC Planimetric Open Space (Other) dataset (GeoJSON/CSV)
     ├── open_streets_downloader.py            # Download NYC Open Streets dataset (GeoJSON/CSV)
     ├── street_centerline_downloader.py       # Download NYC CSCL Street Centerline dataset (GeoJSON/CSV)
+├── land_use/
+    ├── land_use.py                        # Orchestrates all land use–related dataset downloads
+    ├── facilities_downloader.py           # Download Facilities Database (schools, libraries, civic centers, etc.)
+    ├── issued_licenses_downloader.py      # Download Issued Licenses dataset (business licenses across NYC)
+    ├── sidewalk_geometry_downloader.py    # Download NYC Planimetric Sidewalk Geometries (polygon base layer)
+    ├── nycha_residential_downloader.py    # Download NYCHA Residential Addresses (public housing inventory)
+    ├── historic_land_use_downloader.py     # Download Historic Land Use dataset (based on Sanborn maps)
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -337,7 +344,7 @@ python injuries.py \
   --motor_vehicle_persons /custom/path/motor_vehicle_persons.csv
 ```
 
-** Multi Use Paths and Public Open Spaces:**
+**Multi Use Paths and Public Open Spaces:**
 The `public_open_spaces.py` script downloads and processes open space polygons, open streets, and street centerlines data:
 
 ```bash
@@ -352,6 +359,22 @@ python public_open_spaces.py \
   --centerlines /custom/path/centerline.csv
 ```
 
+**Land Use:**
+The land_use.py script downloads all datasets related to land use and urban function in NYC, including public facilities, business licenses, and sidewalk geometries.
+
+```bash
+python land_use_downloader.py    # basic usage
+```
+
+You can specify custom output paths for each dataset:
+```bash
+python land_use.py \
+  --facilities /custom/path/facilities.csv \
+  --licenses /custom/path/licenses.csv \
+  --sidewalks /custom/path/sidewalks.csv \
+  --nycha /custom/path/nycha.csv \
+  --historic_land_use /custom/path/historic_land_use.csv
+```
 
 ## Base Class Benefits
 
