@@ -1,0 +1,326 @@
+{
+  "nb_rows": 999999,
+  "nb_profiled_rows": 999999,
+  "nb_columns": 6,
+  "columns": [
+    {
+      "name": "transit_timestamp",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration",
+        "http://schema.org/DateTime"
+      ],
+      "num_distinct_values": 937,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "10/02/2024 02:00:00 AM",
+            "count": 9508
+          },
+          {
+            "bin": "10/02/2024 03:00:00 PM",
+            "count": 9511
+          },
+          {
+            "bin": "10/02/2024 06:00:00 PM",
+            "count": 9510
+          },
+          {
+            "bin": "10/02/2024 08:00:00 PM",
+            "count": 9508
+          },
+          {
+            "bin": "10/02/2024 11:00:00 AM",
+            "count": 9511
+          }
+        ]
+      }
+    },
+    {
+      "name": "bus_route",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 405,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "B82+",
+            "count": 2559
+          },
+          {
+            "bin": "M100",
+            "count": 2541
+          },
+          {
+            "bin": "S89",
+            "count": 2548
+          },
+          {
+            "bin": "SIM22",
+            "count": 2546
+          },
+          {
+            "bin": "SIM4C",
+            "count": 2546
+          }
+        ]
+      }
+    },
+    {
+      "name": "payment_method",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 2,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "metrocard",
+            "count": 502428
+          },
+          {
+            "bin": "omny",
+            "count": 497571
+          }
+        ]
+      }
+    },
+    {
+      "name": "fare_class_category",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "metrocard",
+            "count": 586797
+          },
+          {
+            "bin": "omny",
+            "count": 413202
+          },
+          {
+            "bin": "fare",
+            "count": 334042
+          },
+          {
+            "bin": "seniors",
+            "count": 167956
+          },
+          {
+            "bin": "disability",
+            "count": 167956
+          }
+        ]
+      }
+    },
+    {
+      "name": "ridership",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 646,
+      "mean": 6.003780003780004,
+      "stddev": 25.539084516637573,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 15.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 995769,
+            "bin_start": 0.0,
+            "bin_end": 173.4
+          },
+          {
+            "count": 3503,
+            "bin_start": 173.4,
+            "bin_end": 346.8
+          },
+          {
+            "count": 535,
+            "bin_start": 346.8,
+            "bin_end": 520.2
+          },
+          {
+            "count": 149,
+            "bin_start": 520.2,
+            "bin_end": 693.6
+          },
+          {
+            "count": 20,
+            "bin_start": 693.6,
+            "bin_end": 867.0
+          },
+          {
+            "count": 12,
+            "bin_start": 867.0,
+            "bin_end": 1040.4
+          },
+          {
+            "count": 4,
+            "bin_start": 1040.4,
+            "bin_end": 1213.8
+          },
+          {
+            "count": 1,
+            "bin_start": 1213.8,
+            "bin_end": 1387.2
+          },
+          {
+            "count": 3,
+            "bin_start": 1387.2,
+            "bin_end": 1560.6000000000001
+          },
+          {
+            "count": 3,
+            "bin_start": 1560.6000000000001,
+            "bin_end": 1734.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "transfers",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 233,
+      "mean": 1.1404531404531404,
+      "stddev": 6.2855142544564355,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 2.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 993385,
+            "bin_start": 0.0,
+            "bin_end": 34.6
+          },
+          {
+            "count": 5162,
+            "bin_start": 34.6,
+            "bin_end": 69.2
+          },
+          {
+            "count": 969,
+            "bin_start": 69.2,
+            "bin_end": 103.80000000000001
+          },
+          {
+            "count": 274,
+            "bin_start": 103.80000000000001,
+            "bin_end": 138.4
+          },
+          {
+            "count": 116,
+            "bin_start": 138.4,
+            "bin_end": 173.0
+          },
+          {
+            "count": 46,
+            "bin_start": 173.0,
+            "bin_end": 207.60000000000002
+          },
+          {
+            "count": 29,
+            "bin_start": 207.60000000000002,
+            "bin_end": 242.20000000000002
+          },
+          {
+            "count": 8,
+            "bin_start": 242.20000000000002,
+            "bin_end": 276.8
+          },
+          {
+            "count": 8,
+            "bin_start": 276.8,
+            "bin_end": 311.40000000000003
+          },
+          {
+            "count": 2,
+            "bin_start": 311.40000000000003,
+            "bin_end": 346.0
+          }
+        ]
+      }
+    }
+  ],
+  "nb_temporal_columns": 1,
+  "nb_categorical_columns": 2,
+  "nb_numerical_columns": 2,
+  "types": [
+    "categorical",
+    "numerical",
+    "temporal"
+  ],
+  "temporal_coverage": [
+    {
+      "type": "datetime",
+      "column_names": [
+        "transit_timestamp"
+      ],
+      "column_indexes": [
+        0
+      ],
+      "column_types": [
+        "http://schema.org/DateTime"
+      ],
+      "ranges": [
+        {
+          "range": {
+            "gte": 1727405952.0,
+            "lte": 1729709952.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1730955648.0,
+            "lte": 1733518848.0
+          }
+        }
+      ],
+      "temporal_resolution": "hour"
+    }
+  ],
+  "attribute_keywords": [
+    "transit_timestamp",
+    "transit",
+    "timestamp",
+    "bus_route",
+    "bus",
+    "route",
+    "payment_method",
+    "payment",
+    "method",
+    "fare_class_category",
+    "fare",
+    "class",
+    "category",
+    "ridership",
+    "transfers"
+  ],
+  "sample": "transit_timestamp,bus_route,payment_method,fare_class_category,ridership,transfers\r\n10/23/2024 06:00:00 PM,B4,metrocard,OMNY - Other,0,0\r\n10/23/2024 06:00:00 PM,Q33,metrocard,Metrocard - Unlimited 7-Day,47,0\r\n11/13/2024 05:00:00 PM,D90,omny,Metrocard - Students,0,0\r\n11/13/2024 08:00:00 PM,QM1,metrocard,OMNY - Other,0,0\r\n11/13/2024 04:00:00 PM,S44,omny,Metrocard - Seniors & Disability,0,0\r\n11/13/2024 03:00:00 PM,BX18,omny,Metrocard - Other,0,0\r\n10/02/2024 07:00:00 PM,Q72,omny,Metrocard - Unlimited 7-Day,0,0\r\n12/06/2024 11:00:00 PM,Q31,metrocard,OMNY - Students,0,0\r\n12/06/2024 04:00:00 PM,QM16,omny,OMNY - Fair Fare,0,0\r\n12/06/2024 11:00:00 AM,B12,metrocard,OMNY - Full Fare,0,0\r\n12/06/2024 07:00:00 PM,B84,metrocard,Metrocard - Other,0,0\r\n12/06/2024 06:00:00 AM,Q30,metrocard,Metrocard - Fair Fare,7,1\r\n12/06/2024 01:00:00 PM,M90,metrocard,Metrocard - Students,0,0\r\n12/06/2024 06:00:00 PM,QM2,omny,Metrocard - Students,0,0\r\n10/23/2024 05:00:00 AM,B94,omny,Metrocard - Unlimited 30-Day,0,0\r\n11/07/2024 10:00:00 AM,QM4,omny,OMNY - Other,0,0\r\n11/07/2024 12:00:00 PM,SIM24,omny,Metrocard - Full Fare,0,0\r\n11/07/2024 02:00:00 PM,S57,omny,Metrocard - Seniors & Disability,0,0\r\n09/27/2024 10:00:00 PM,B20,omny,Metrocard - Full Fare,0,0\r\n09/27/2024 03:00:00 AM,BXM8,omny,Metrocard - Seniors & Disability,0,0\r\n"
+}

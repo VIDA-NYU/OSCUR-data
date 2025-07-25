@@ -1,0 +1,1262 @@
+{
+  "nb_rows": 999999,
+  "nb_profiled_rows": 999999,
+  "nb_columns": 12,
+  "columns": [
+    {
+      "name": "transit_timestamp",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration",
+        "http://schema.org/DateTime"
+      ],
+      "num_distinct_values": 1356,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "02/19/2021 02:00:00 PM",
+            "count": 3154
+          },
+          {
+            "bin": "02/19/2021 03:00:00 PM",
+            "count": 3153
+          },
+          {
+            "bin": "02/19/2021 07:00:00 AM",
+            "count": 3187
+          },
+          {
+            "bin": "02/19/2021 08:00:00 AM",
+            "count": 3174
+          },
+          {
+            "bin": "09/22/2020 07:00:00 AM",
+            "count": 3183
+          }
+        ]
+      }
+    },
+    {
+      "name": "transit_mode",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 3,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "staten_island_railway",
+            "count": 3418
+          },
+          {
+            "bin": "subway",
+            "count": 992917
+          },
+          {
+            "bin": "tram",
+            "count": 3664
+          }
+        ]
+      }
+    },
+    {
+      "name": "station_complex_id",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/identifier"
+      ],
+      "unclean_values_ratio": 0.003664003664003664,
+      "num_distinct_values": 428,
+      "mean": 275.7583603908324,
+      "stddev": 168.7280342068743,
+      "coverage": [
+        {
+          "range": {
+            "gte": 10.0,
+            "lte": 224.0
+          }
+        },
+        {
+          "range": {
+            "gte": 252.0,
+            "lte": 458.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 122038,
+            "bin_start": 1.0,
+            "bin_end": 64.5
+          },
+          {
+            "count": 115647,
+            "bin_start": 64.5,
+            "bin_end": 128.0
+          },
+          {
+            "count": 111620,
+            "bin_start": 128.0,
+            "bin_end": 191.5
+          },
+          {
+            "count": 113828,
+            "bin_start": 191.5,
+            "bin_end": 255.0
+          },
+          {
+            "count": 132424,
+            "bin_start": 255.0,
+            "bin_end": 318.5
+          },
+          {
+            "count": 127986,
+            "bin_start": 318.5,
+            "bin_end": 382.0
+          },
+          {
+            "count": 130928,
+            "bin_start": 382.0,
+            "bin_end": 445.5
+          },
+          {
+            "count": 53566,
+            "bin_start": 445.5,
+            "bin_end": 509.0
+          },
+          {
+            "count": 0,
+            "bin_start": 509.0,
+            "bin_end": 572.5
+          },
+          {
+            "count": 88298,
+            "bin_start": 572.5,
+            "bin_end": 636.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "station_complex",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 428,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "14 St-Union Sq (L,N,Q,R,W,4,5,6)",
+            "count": 2944
+          },
+          {
+            "bin": "34 St-Herald Sq (B,D,F,M,N,Q,R,W)",
+            "count": 2946
+          },
+          {
+            "bin": "47-50 Sts-Rockefeller Ctr (B,D,F,M)",
+            "count": 2943
+          },
+          {
+            "bin": "74-Broadway (7)/Jackson Hts-Roosevelt Av (E,F,M,R)",
+            "count": 2942
+          },
+          {
+            "bin": "Times Sq-42 St (N,Q,R,W,S,1,2,3,7)/42 St (A,C,E)",
+            "count": 3025
+          }
+        ]
+      }
+    },
+    {
+      "name": "borough",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 5,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Bronx",
+            "count": 159282
+          },
+          {
+            "bin": "Brooklyn",
+            "count": 354112
+          },
+          {
+            "bin": "Manhattan",
+            "count": 308680
+          },
+          {
+            "bin": "Queens",
+            "count": 174507
+          },
+          {
+            "bin": "Staten Island",
+            "count": 3418
+          }
+        ]
+      }
+    },
+    {
+      "name": "payment_method",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 2,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "metrocard",
+            "count": 846062
+          },
+          {
+            "bin": "omny",
+            "count": 153937
+          }
+        ]
+      }
+    },
+    {
+      "name": "fare_class_category",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "metrocard",
+            "count": 846062
+          },
+          {
+            "bin": "fare",
+            "count": 431178
+          },
+          {
+            "bin": "full",
+            "count": 304582
+          },
+          {
+            "bin": "unlimited",
+            "count": 297406
+          },
+          {
+            "bin": "day",
+            "count": 297406
+          }
+        ]
+      }
+    },
+    {
+      "name": "ridership",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 1546,
+      "mean": 27.292826292826295,
+      "stddev": 72.9865812591055,
+      "coverage": [
+        {
+          "range": {
+            "gte": 1.0,
+            "lte": 63.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 994503,
+            "bin_start": 1.0,
+            "bin_end": 423.7
+          },
+          {
+            "count": 4140,
+            "bin_start": 423.7,
+            "bin_end": 846.4
+          },
+          {
+            "count": 916,
+            "bin_start": 846.4,
+            "bin_end": 1269.1
+          },
+          {
+            "count": 292,
+            "bin_start": 1269.1,
+            "bin_end": 1691.8
+          },
+          {
+            "count": 90,
+            "bin_start": 1691.8,
+            "bin_end": 2114.5
+          },
+          {
+            "count": 36,
+            "bin_start": 2114.5,
+            "bin_end": 2537.2
+          },
+          {
+            "count": 11,
+            "bin_start": 2537.2,
+            "bin_end": 2959.9
+          },
+          {
+            "count": 6,
+            "bin_start": 2959.9,
+            "bin_end": 3382.6
+          },
+          {
+            "count": 3,
+            "bin_start": 3382.6,
+            "bin_end": 3805.2999999999997
+          },
+          {
+            "count": 2,
+            "bin_start": 3805.2999999999997,
+            "bin_end": 4228.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "transfers",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 252,
+      "mean": 0.9408449408449409,
+      "stddev": 5.184944605879563,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 4.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 999102,
+            "bin_start": 0.0,
+            "bin_end": 66.7
+          },
+          {
+            "count": 674,
+            "bin_start": 66.7,
+            "bin_end": 133.4
+          },
+          {
+            "count": 139,
+            "bin_start": 133.4,
+            "bin_end": 200.10000000000002
+          },
+          {
+            "count": 45,
+            "bin_start": 200.10000000000002,
+            "bin_end": 266.8
+          },
+          {
+            "count": 19,
+            "bin_start": 266.8,
+            "bin_end": 333.5
+          },
+          {
+            "count": 10,
+            "bin_start": 333.5,
+            "bin_end": 400.20000000000005
+          },
+          {
+            "count": 5,
+            "bin_start": 400.20000000000005,
+            "bin_end": 466.90000000000003
+          },
+          {
+            "count": 1,
+            "bin_start": 466.90000000000003,
+            "bin_end": 533.6
+          },
+          {
+            "count": 3,
+            "bin_start": 533.6,
+            "bin_end": 600.3000000000001
+          },
+          {
+            "count": 1,
+            "bin_start": 600.3000000000001,
+            "bin_end": 667.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "latitude",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [
+        "http://schema.org/latitude"
+      ],
+      "unclean_values_ratio": 0.0,
+      "mean": 40.73298395173703,
+      "stddev": 0.07799972231520559,
+      "coverage": [
+        {
+          "range": {
+            "gte": 40.586895,
+            "lte": 40.68595
+          }
+        },
+        {
+          "range": {
+            "gte": 40.692337,
+            "lte": 40.77344
+          }
+        },
+        {
+          "range": {
+            "gte": 40.79164,
+            "lte": 40.888023
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 61426,
+            "bin_start": 40.576126,
+            "bin_end": 40.608826
+          },
+          {
+            "count": 63264,
+            "bin_start": 40.608826,
+            "bin_end": 40.641526
+          },
+          {
+            "count": 99260,
+            "bin_start": 40.641526,
+            "bin_end": 40.674226000000004
+          },
+          {
+            "count": 189909,
+            "bin_start": 40.674226000000004,
+            "bin_end": 40.706926
+          },
+          {
+            "count": 127194,
+            "bin_start": 40.706926,
+            "bin_end": 40.739626
+          },
+          {
+            "count": 171318,
+            "bin_start": 40.739626,
+            "bin_end": 40.772326
+          },
+          {
+            "count": 63667,
+            "bin_start": 40.772326,
+            "bin_end": 40.805026
+          },
+          {
+            "count": 100066,
+            "bin_start": 40.805026,
+            "bin_end": 40.837726
+          },
+          {
+            "count": 82041,
+            "bin_start": 40.837726,
+            "bin_end": 40.870426
+          },
+          {
+            "count": 41854,
+            "bin_start": 40.870426,
+            "bin_end": 40.903126
+          }
+        ]
+      }
+    },
+    {
+      "name": "longitude",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [
+        "http://schema.org/longitude"
+      ],
+      "unclean_values_ratio": 0.0,
+      "mean": -73.93554213119678,
+      "stddev": 0.05597353709285828,
+      "coverage": [
+        {
+          "range": {
+            "gte": -74.01379,
+            "lte": -73.95813
+          }
+        },
+        {
+          "range": {
+            "gte": -73.95326,
+            "lte": -73.891335
+          }
+        },
+        {
+          "range": {
+            "gte": -73.88202,
+            "lte": -73.78381
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 3418,
+            "bin_start": -74.07484,
+            "bin_end": -74.042896
+          },
+          {
+            "count": 33336,
+            "bin_start": -74.042896,
+            "bin_end": -74.01095199999999
+          },
+          {
+            "count": 239699,
+            "bin_start": -74.01095199999999,
+            "bin_end": -73.979008
+          },
+          {
+            "count": 231896,
+            "bin_start": -73.979008,
+            "bin_end": -73.947064
+          },
+          {
+            "count": 158822,
+            "bin_start": -73.947064,
+            "bin_end": -73.91512
+          },
+          {
+            "count": 151259,
+            "bin_start": -73.91512,
+            "bin_end": -73.88317599999999
+          },
+          {
+            "count": 89852,
+            "bin_start": -73.88317599999999,
+            "bin_end": -73.851232
+          },
+          {
+            "count": 60266,
+            "bin_start": -73.851232,
+            "bin_end": -73.819288
+          },
+          {
+            "count": 21311,
+            "bin_start": -73.819288,
+            "bin_end": -73.78734399999999
+          },
+          {
+            "count": 10140,
+            "bin_start": -73.78734399999999,
+            "bin_end": -73.7554
+          }
+        ]
+      }
+    },
+    {
+      "name": "Georeference",
+      "structural_type": "http://schema.org/GeoCoordinates",
+      "semantic_types": [],
+      "point_format": "long,lat",
+      "unclean_values_ratio": 0.0
+    }
+  ],
+  "nb_spatial_columns": 3,
+  "nb_temporal_columns": 1,
+  "nb_categorical_columns": 4,
+  "nb_numerical_columns": 3,
+  "types": [
+    "categorical",
+    "numerical",
+    "spatial",
+    "temporal"
+  ],
+  "spatial_coverage": [
+    {
+      "type": "latlong",
+      "column_names": [
+        "latitude",
+        "longitude"
+      ],
+      "column_indexes": [
+        9,
+        10
+      ],
+      "geohashes4": [
+        {
+          "hash": "1211302313302",
+          "number": 39309
+        },
+        {
+          "hash": "1211302313301",
+          "number": 41848
+        },
+        {
+          "hash": "1211302313300",
+          "number": 12778
+        },
+        {
+          "hash": "1211302313303",
+          "number": 7258
+        },
+        {
+          "hash": "1211302313310",
+          "number": 56664
+        },
+        {
+          "hash": "1211302313312",
+          "number": 36456
+        },
+        {
+          "hash": "1211302313313",
+          "number": 18619
+        },
+        {
+          "hash": "1211302313311",
+          "number": 41130
+        },
+        {
+          "hash": "1211302313331",
+          "number": 2819
+        },
+        {
+          "hash": "1211302313330",
+          "number": 24548
+        },
+        {
+          "hash": "1211302313332",
+          "number": 9510
+        },
+        {
+          "hash": "1211302313333",
+          "number": 2678
+        },
+        {
+          "hash": "1211302313320",
+          "number": 13338
+        },
+        {
+          "hash": "1211302313322",
+          "number": 10271
+        },
+        {
+          "hash": "1211302313323",
+          "number": 11932
+        },
+        {
+          "hash": "1211302313321",
+          "number": 2500
+        },
+        {
+          "hash": "1211302313232",
+          "number": 3566
+        },
+        {
+          "hash": "1211302313233",
+          "number": 19018
+        },
+        {
+          "hash": "1211302313231",
+          "number": 34502
+        },
+        {
+          "hash": "1211302313230",
+          "number": 17761
+        },
+        {
+          "hash": "1211302313201",
+          "number": 23898
+        },
+        {
+          "hash": "1211302313202",
+          "number": 5203
+        },
+        {
+          "hash": "1211302313200",
+          "number": 24029
+        },
+        {
+          "hash": "1211302313203",
+          "number": 6727
+        },
+        {
+          "hash": "1211302313211",
+          "number": 47559
+        },
+        {
+          "hash": "1211302313210",
+          "number": 24572
+        },
+        {
+          "hash": "1211302313213",
+          "number": 24375
+        },
+        {
+          "hash": "1211302313212",
+          "number": 23391
+        },
+        {
+          "hash": "1211302313221",
+          "number": 2088
+        },
+        {
+          "hash": "1211302313022",
+          "number": 4793
+        },
+        {
+          "hash": "1211302313023",
+          "number": 17097
+        },
+        {
+          "hash": "1211302313021",
+          "number": 3418
+        },
+        {
+          "hash": "1211302313122",
+          "number": 26580
+        },
+        {
+          "hash": "1211302313123",
+          "number": 12117
+        },
+        {
+          "hash": "1211302312311",
+          "number": 20022
+        },
+        {
+          "hash": "1211302312313",
+          "number": 7781
+        },
+        {
+          "hash": "1211302312310",
+          "number": 10711
+        },
+        {
+          "hash": "1211302312332",
+          "number": 1725
+        },
+        {
+          "hash": "1211302330111",
+          "number": 7134
+        },
+        {
+          "hash": "1211302330110",
+          "number": 642
+        },
+        {
+          "hash": "1211302330113",
+          "number": 7587
+        },
+        {
+          "hash": "1211302331011",
+          "number": 2574
+        },
+        {
+          "hash": "1211302331000",
+          "number": 679
+        },
+        {
+          "hash": "1211302331100",
+          "number": 16827
+        },
+        {
+          "hash": "1211302331102",
+          "number": 2553
+        },
+        {
+          "hash": "1211303202202",
+          "number": 20703
+        },
+        {
+          "hash": "1211303202201",
+          "number": 4864
+        },
+        {
+          "hash": "1211303202203",
+          "number": 40012
+        },
+        {
+          "hash": "1211303202200",
+          "number": 19269
+        },
+        {
+          "hash": "1211303202231",
+          "number": 21763
+        },
+        {
+          "hash": "1211303202232",
+          "number": 16397
+        },
+        {
+          "hash": "1211303202230",
+          "number": 23577
+        },
+        {
+          "hash": "1211303202233",
+          "number": 10530
+        },
+        {
+          "hash": "1211303202212",
+          "number": 25433
+        },
+        {
+          "hash": "1211303202213",
+          "number": 18547
+        },
+        {
+          "hash": "1211303202221",
+          "number": 19747
+        },
+        {
+          "hash": "1211303202320",
+          "number": 23257
+        },
+        {
+          "hash": "1211303202322",
+          "number": 15546
+        },
+        {
+          "hash": "1211303202323",
+          "number": 7149
+        },
+        {
+          "hash": "1211303220011",
+          "number": 2618
+        }
+      ],
+      "ranges": [
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -74.01403,
+                40.77789
+              ],
+              [
+                -73.931,
+                40.640915
+              ]
+            ]
+          }
+        },
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -73.99042,
+                40.71833
+              ],
+              [
+                -73.79692,
+                40.586895
+              ]
+            ]
+          }
+        },
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -73.95816,
+                40.886036
+              ],
+              [
+                -73.84295,
+                40.74967
+              ]
+            ]
+          }
+        }
+      ],
+      "number": 999999
+    },
+    {
+      "type": "point",
+      "column_names": [
+        "Georeference"
+      ],
+      "column_indexes": [
+        11
+      ],
+      "geohashes4": [
+        {
+          "hash": "1211302313302",
+          "number": 39309
+        },
+        {
+          "hash": "1211302313301",
+          "number": 41848
+        },
+        {
+          "hash": "1211302313300",
+          "number": 12778
+        },
+        {
+          "hash": "1211302313303",
+          "number": 7258
+        },
+        {
+          "hash": "1211302313310",
+          "number": 56664
+        },
+        {
+          "hash": "1211302313312",
+          "number": 36456
+        },
+        {
+          "hash": "1211302313313",
+          "number": 18619
+        },
+        {
+          "hash": "1211302313311",
+          "number": 41130
+        },
+        {
+          "hash": "1211302313331",
+          "number": 2819
+        },
+        {
+          "hash": "1211302313330",
+          "number": 24548
+        },
+        {
+          "hash": "1211302313332",
+          "number": 9510
+        },
+        {
+          "hash": "1211302313333",
+          "number": 2678
+        },
+        {
+          "hash": "1211302313320",
+          "number": 13338
+        },
+        {
+          "hash": "1211302313322",
+          "number": 10271
+        },
+        {
+          "hash": "1211302313323",
+          "number": 11932
+        },
+        {
+          "hash": "1211302313321",
+          "number": 2500
+        },
+        {
+          "hash": "1211302313232",
+          "number": 3566
+        },
+        {
+          "hash": "1211302313233",
+          "number": 19018
+        },
+        {
+          "hash": "1211302313231",
+          "number": 34502
+        },
+        {
+          "hash": "1211302313230",
+          "number": 17761
+        },
+        {
+          "hash": "1211302313201",
+          "number": 23898
+        },
+        {
+          "hash": "1211302313202",
+          "number": 5203
+        },
+        {
+          "hash": "1211302313200",
+          "number": 24029
+        },
+        {
+          "hash": "1211302313203",
+          "number": 6727
+        },
+        {
+          "hash": "1211302313211",
+          "number": 47559
+        },
+        {
+          "hash": "1211302313210",
+          "number": 24572
+        },
+        {
+          "hash": "1211302313213",
+          "number": 24375
+        },
+        {
+          "hash": "1211302313212",
+          "number": 23391
+        },
+        {
+          "hash": "1211302313221",
+          "number": 2088
+        },
+        {
+          "hash": "1211302313022",
+          "number": 4793
+        },
+        {
+          "hash": "1211302313023",
+          "number": 17097
+        },
+        {
+          "hash": "1211302313021",
+          "number": 3418
+        },
+        {
+          "hash": "1211302313122",
+          "number": 26580
+        },
+        {
+          "hash": "1211302313123",
+          "number": 12117
+        },
+        {
+          "hash": "1211302312311",
+          "number": 20022
+        },
+        {
+          "hash": "1211302312313",
+          "number": 7781
+        },
+        {
+          "hash": "1211302312310",
+          "number": 10711
+        },
+        {
+          "hash": "1211302312332",
+          "number": 1725
+        },
+        {
+          "hash": "1211302330111",
+          "number": 7134
+        },
+        {
+          "hash": "1211302330110",
+          "number": 642
+        },
+        {
+          "hash": "1211302330113",
+          "number": 7587
+        },
+        {
+          "hash": "1211302331011",
+          "number": 2574
+        },
+        {
+          "hash": "1211302331000",
+          "number": 679
+        },
+        {
+          "hash": "1211302331100",
+          "number": 16827
+        },
+        {
+          "hash": "1211302331102",
+          "number": 2553
+        },
+        {
+          "hash": "1211303202202",
+          "number": 20703
+        },
+        {
+          "hash": "1211303202201",
+          "number": 4864
+        },
+        {
+          "hash": "1211303202203",
+          "number": 40012
+        },
+        {
+          "hash": "1211303202200",
+          "number": 19269
+        },
+        {
+          "hash": "1211303202231",
+          "number": 21763
+        },
+        {
+          "hash": "1211303202232",
+          "number": 16397
+        },
+        {
+          "hash": "1211303202230",
+          "number": 23577
+        },
+        {
+          "hash": "1211303202233",
+          "number": 10530
+        },
+        {
+          "hash": "1211303202212",
+          "number": 25433
+        },
+        {
+          "hash": "1211303202213",
+          "number": 18547
+        },
+        {
+          "hash": "1211303202221",
+          "number": 19747
+        },
+        {
+          "hash": "1211303202320",
+          "number": 23257
+        },
+        {
+          "hash": "1211303202322",
+          "number": 15546
+        },
+        {
+          "hash": "1211303202323",
+          "number": 7149
+        },
+        {
+          "hash": "1211303220011",
+          "number": 2618
+        }
+      ],
+      "ranges": [
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -74.01403,
+                40.77789
+              ],
+              [
+                -73.931,
+                40.640915
+              ]
+            ]
+          }
+        },
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -73.99042,
+                40.71833
+              ],
+              [
+                -73.79692,
+                40.586895
+              ]
+            ]
+          }
+        },
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -73.95816,
+                40.886036
+              ],
+              [
+                -73.84295,
+                40.74967
+              ]
+            ]
+          }
+        }
+      ],
+      "number": 999999
+    }
+  ],
+  "temporal_coverage": [
+    {
+      "type": "datetime",
+      "column_names": [
+        "transit_timestamp"
+      ],
+      "column_indexes": [
+        0
+      ],
+      "column_types": [
+        "http://schema.org/DateTime"
+      ],
+      "ranges": [
+        {
+          "range": {
+            "gte": 1600754432.0,
+            "lte": 1613764864.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1622278784.0,
+            "lte": 1637510400.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1650790784.0,
+            "lte": 1689523200.0
+          }
+        }
+      ],
+      "temporal_resolution": "hour"
+    }
+  ],
+  "attribute_keywords": [
+    "transit_timestamp",
+    "transit",
+    "timestamp",
+    "transit_mode",
+    "transit",
+    "mode",
+    "station_complex_id",
+    "station",
+    "complex",
+    "id",
+    "station_complex",
+    "station",
+    "complex",
+    "borough",
+    "payment_method",
+    "payment",
+    "method",
+    "fare_class_category",
+    "fare",
+    "class",
+    "category",
+    "ridership",
+    "transfers",
+    "latitude",
+    "longitude",
+    "Georeference"
+  ],
+  "sample": "transit_timestamp,transit_mode,station_complex_id,station_complex,borough,payment_method,fare_class_category,ridership,transfers,latitude,longitude,Georeference\r\n07/24/2021 12:00:00 AM,subway,218,\"167 St (B,D)\",Bronx,metrocard,Metrocard - Unlimited 30-Day,2,0,40.83377,-73.91844,POINT (-73.91844 40.83377)\r\n10/24/2021 03:00:00 AM,subway,68,Bay Pkwy (D),Brooklyn,metrocard,Metrocard - Other,2,0,40.601875,-73.99373,POINT (-73.99373 40.601875)\r\n10/24/2021 08:00:00 PM,subway,369,Elder Av (6),Bronx,metrocard,Metrocard - Unlimited 7-Day,13,0,40.828583,-73.87916,POINT (-73.87916 40.828583)\r\n05/29/2021 01:00:00 PM,subway,125,Morgan Av (L),Brooklyn,metrocard,Metrocard - Other,8,0,40.706154,-73.93314,POINT (-73.93314 40.706154)\r\n10/24/2021 03:00:00 PM,subway,4,\"Broadway (N,W)\",Queens,omny,OMNY - Full Fare,80,1,40.76182,-73.92551,POINT (-73.92551 40.76182)\r\n07/16/2023 05:00:00 AM,subway,311,86 St (1),Manhattan,metrocard,Metrocard - Fair Fare,1,0,40.788643,-73.97622,POINT (-73.97622 40.788643)\r\n11/20/2022 07:00:00 PM,subway,160,\"72 St (C,B)\",Manhattan,metrocard,Metrocard - Full Fare,26,2,40.775593,-73.97641,POINT (-73.97641 40.775593)\r\n11/13/2022 11:00:00 PM,subway,630,\"Myrtle-Wyckoff Avs (L,M)\",Brooklyn,metrocard,Metrocard - Unlimited 7-Day,17,0,40.699814,-73.91158,POINT (-73.91158 40.699814)\r\n09/11/2022 05:00:00 PM,subway,206,Beach 44 St (A),Queens,metrocard,Metrocard - Seniors & Disability,1,0,40.59294,-73.77602,POINT (-73.77602 40.59294)\r\n11/13/2022 10:00:00 PM,subway,135,Livonia Av (L),Brooklyn,metrocard,Metrocard - Full Fare,4,2,40.66404,-73.90057,POINT (-73.90057 40.66404)\r\n02/19/2021 01:00:00 PM,subway,432,\"Prospect Av (2,5)\",Bronx,metrocard,Metrocard - Other,16,0,40.819584,-73.90177,POINT (-73.90177 40.819584)\r\n02/19/2021 09:00:00 PM,subway,16,\"8 St-NYU (R,W)\",Manhattan,metrocard,Metrocard - Full Fare,51,0,40.730328,-73.99263,POINT (-73.99263 40.730328)\r\n02/19/2021 06:00:00 AM,subway,158,\"86 St (C,B)\",Manhattan,metrocard,Metrocard - Unlimited 7-Day,1,0,40.78587,-73.96892,POINT (-73.96892 40.78587)\r\n09/22/2020 08:00:00 AM,subway,134,Sutter Av (L),Brooklyn,metrocard,Metrocard - Other,5,0,40.66937,-73.90198,POINT (-73.90198 40.66937)\r\n09/22/2020 02:00:00 PM,subway,147,175 St (A),Manhattan,metrocard,Metrocard - Unlimited 30-Day,28,0,40.84739,-73.939705,POINT (-73.939705 40.84739)\r\n09/22/2020 09:00:00 PM,subway,619,\"Broadway-Lafayette St (B,D,F,M)/Bleecker St (6)\",Manhattan,metrocard,Metrocard - Other,16,0,40.725914,-73.99466,POINT (-73.99466 40.725914)\r\n06/13/2021 05:00:00 AM,subway,213,\"Fordham Rd (B,D)\",Bronx,metrocard,Metrocard - Unlimited 30-Day,9,0,40.861298,-73.89775,POINT (-73.89775 40.861298)\r\n06/13/2021 12:00:00 PM,subway,97,\"Myrtle Av (M,J,Z)\",Brooklyn,metrocard,Metrocard - Unlimited 7-Day,36,0,40.69721,-73.93565,POINT (-73.93565 40.69721)\r\n12/24/2020 05:00:00 PM,subway,88,\"Norwood Av (J,Z)\",Brooklyn,metrocard,Metrocard - Unlimited 7-Day,7,0,40.68141,-73.880035,POINT (-73.880035 40.68141)\r\n01/29/2023 09:00:00 PM,subway,365,Castle Hill Av (6),Bronx,metrocard,Metrocard - Fair Fare,3,0,40.834255,-73.85122,POINT (-73.85122 40.834255)\r\n"
+}
