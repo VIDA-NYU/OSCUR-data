@@ -18,6 +18,7 @@ code/processors/
 ├── tree_cover_landscaping.py          # Post-processing Tree Cover and Landscaping dataset (CSV)
 ├── curb_infrastructure.py             # Post-processing Curb Infrastructure dataset (CSV)
 ├── rail_routes_and_crossings.py       # Post-processing Rail Routes and Crossings dataset (CSV)
+├── public_open_spaces.py              # Post-processing Public Open Spaces dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
 ```
@@ -161,6 +162,16 @@ No postprocessing script is needed, as the original datasets are being preserved
 #### Urban Design/Frontage
 No postprocessing script is needed, as the original datasets are being preserved without any merging.
 
+#### Multi Use Paths and Public Open Spaces Dataset
+This script processes open space polygons, open streets, and street centerlines data:
+
+```bash
+python code/processors/public_open_spaces.py  \
+  --open_spaces ../downloaders/data/public_open_spaces/open_spaces.csv \
+  --open_streets ../downloaders/data/public_open_spaces/open_streets.csv \
+  --centerlines ../downloaders/data/public_open_spaces/centerline.csv \
+  --output ../processors/processed_data/public_open_spaces_final.csv
+```
 
 ### Other Datasets
 To be added as needed.
