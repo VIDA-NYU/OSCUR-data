@@ -188,6 +188,9 @@ python code/processors/land_use.py \
 #### Transit Ridership
 No postprocessing script is needed, as the original datasets are being preserved without any merging.
 
+#### Social Determinants of Health Dataset
+No postprocessing script is needed, as the original datasets are being preserved without any merging.
+
 
 ### Other Datasets
 To be added as needed.
