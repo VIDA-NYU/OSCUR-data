@@ -1,0 +1,933 @@
+{
+  "nb_rows": 6911898,
+  "nb_profiled_rows": 6911898,
+  "nb_columns": 9,
+  "columns": [
+    {
+      "name": "countid",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/identifier"
+      ],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 6911898,
+      "mean": 38388702.44649516,
+      "stddev": 41924703.62602811,
+      "coverage": [
+        {
+          "range": {
+            "gte": 10593002.0,
+            "lte": 25672972.0
+          }
+        },
+        {
+          "range": {
+            "gte": 53691327.0,
+            "lte": 102986246.0
+          }
+        },
+        {
+          "range": {
+            "gte": 107707221.0,
+            "lte": 148444392.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 4835368,
+            "bin_start": 10089358.0,
+            "bin_end": 24188480.6
+          },
+          {
+            "count": 154635,
+            "bin_start": 24188480.6,
+            "bin_end": 38287603.2
+          },
+          {
+            "count": 148818,
+            "bin_start": 38287603.2,
+            "bin_end": 52386725.8
+          },
+          {
+            "count": 130217,
+            "bin_start": 52386725.8,
+            "bin_end": 66485848.4
+          },
+          {
+            "count": 228011,
+            "bin_start": 66485848.4,
+            "bin_end": 80584971.0
+          },
+          {
+            "count": 300739,
+            "bin_start": 80584971.0,
+            "bin_end": 94684093.6
+          },
+          {
+            "count": 319843,
+            "bin_start": 94684093.6,
+            "bin_end": 108783216.2
+          },
+          {
+            "count": 236525,
+            "bin_start": 108783216.2,
+            "bin_end": 122882338.8
+          },
+          {
+            "count": 311475,
+            "bin_start": 122882338.8,
+            "bin_end": 136981461.39999998
+          },
+          {
+            "count": 246267,
+            "bin_start": 136981461.39999998,
+            "bin_end": 151080584.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "id",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/identifier"
+      ],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 41,
+      "mean": 148368723.0273592,
+      "stddev": 85625965.98687904,
+      "coverage": [
+        {
+          "range": {
+            "gte": 100009424.0,
+            "lte": 100010022.0
+          }
+        },
+        {
+          "range": {
+            "gte": 100047029.0,
+            "lte": 100062893.0
+          }
+        },
+        {
+          "range": {
+            "gte": 300020241.0,
+            "lte": 300043077.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 5241226,
+            "bin_start": 100005020.0,
+            "bin_end": 120009997.3
+          },
+          {
+            "count": 0,
+            "bin_start": 120009997.3,
+            "bin_end": 140014974.6
+          },
+          {
+            "count": 0,
+            "bin_start": 140014974.6,
+            "bin_end": 160019951.9
+          },
+          {
+            "count": 0,
+            "bin_start": 160019951.9,
+            "bin_end": 180024929.2
+          },
+          {
+            "count": 0,
+            "bin_start": 180024929.2,
+            "bin_end": 200029906.5
+          },
+          {
+            "count": 0,
+            "bin_start": 200029906.5,
+            "bin_end": 220034883.8
+          },
+          {
+            "count": 0,
+            "bin_start": 220034883.8,
+            "bin_end": 240039861.1
+          },
+          {
+            "count": 0,
+            "bin_start": 240039861.1,
+            "bin_end": 260044838.4
+          },
+          {
+            "count": 0,
+            "bin_start": 260044838.4,
+            "bin_end": 280049815.70000005
+          },
+          {
+            "count": 1670672,
+            "bin_start": 280049815.70000005,
+            "bin_end": 300054793.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "date",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration",
+        "http://schema.org/DateTime"
+      ],
+      "num_distinct_values": 454398,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "07/17/2025 01:00:00 AM",
+            "count": 32
+          },
+          {
+            "bin": "07/17/2025 12:00:00 AM",
+            "count": 32
+          },
+          {
+            "bin": "07/17/2025 12:15:00 AM",
+            "count": 32
+          },
+          {
+            "bin": "07/17/2025 12:30:00 AM",
+            "count": 32
+          },
+          {
+            "bin": "07/17/2025 12:45:00 AM",
+            "count": 32
+          }
+        ]
+      }
+    },
+    {
+      "name": "counts",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 897,
+      "mean": 25.240316335686668,
+      "stddev": 37.87115535025638,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 30.0
+          }
+        },
+        {
+          "range": {
+            "gte": 36.0,
+            "lte": 103.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 6721552,
+            "bin_start": 0.0,
+            "bin_end": 113.3
+          },
+          {
+            "count": 171338,
+            "bin_start": 113.3,
+            "bin_end": 226.6
+          },
+          {
+            "count": 10065,
+            "bin_start": 226.6,
+            "bin_end": 339.9
+          },
+          {
+            "count": 3336,
+            "bin_start": 339.9,
+            "bin_end": 453.2
+          },
+          {
+            "count": 2744,
+            "bin_start": 453.2,
+            "bin_end": 566.5
+          },
+          {
+            "count": 1816,
+            "bin_start": 566.5,
+            "bin_end": 679.8
+          },
+          {
+            "count": 824,
+            "bin_start": 679.8,
+            "bin_end": 793.1
+          },
+          {
+            "count": 201,
+            "bin_start": 793.1,
+            "bin_end": 906.4
+          },
+          {
+            "count": 13,
+            "bin_start": 906.4,
+            "bin_end": 1019.6999999999999
+          },
+          {
+            "count": 9,
+            "bin_start": 1019.6999999999999,
+            "bin_end": 1133.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "status",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 2,
+      "mean": 0.7529856488044239,
+      "stddev": 1.5636352541603011,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.0
+          }
+        },
+        {
+          "range": {
+            "gte": 4.0,
+            "lte": 4.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 5610758,
+            "bin_start": 0.0,
+            "bin_end": 0.4
+          },
+          {
+            "count": 0,
+            "bin_start": 0.4,
+            "bin_end": 0.8
+          },
+          {
+            "count": 0,
+            "bin_start": 0.8,
+            "bin_end": 1.2000000000000002
+          },
+          {
+            "count": 0,
+            "bin_start": 1.2000000000000002,
+            "bin_end": 1.6
+          },
+          {
+            "count": 0,
+            "bin_start": 1.6,
+            "bin_end": 2.0
+          },
+          {
+            "count": 0,
+            "bin_start": 2.0,
+            "bin_end": 2.4000000000000004
+          },
+          {
+            "count": 0,
+            "bin_start": 2.4000000000000004,
+            "bin_end": 2.8000000000000003
+          },
+          {
+            "count": 0,
+            "bin_start": 2.8000000000000003,
+            "bin_end": 3.2
+          },
+          {
+            "count": 0,
+            "bin_start": 3.2,
+            "bin_end": 3.6
+          },
+          {
+            "count": 1301140,
+            "bin_start": 3.6,
+            "bin_end": 4.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "name",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "missing_values_ratio": 0.004003965336294026,
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "bridge",
+            "count": 3876843
+          },
+          {
+            "bin": "bike",
+            "count": 2057565
+          },
+          {
+            "bin": "st",
+            "count": 1822646
+          },
+          {
+            "bin": "path",
+            "count": 1771717
+          },
+          {
+            "bin": "ave",
+            "count": 1715085
+          }
+        ]
+      }
+    },
+    {
+      "name": "lon",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [
+        "http://schema.org/longitude"
+      ],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.004003965336294026,
+      "mean": -73.9726167037427,
+      "stddev": 0.04104358596290371,
+      "coverage": [
+        {
+          "range": {
+            "gte": -74.072075,
+            "lte": -73.98582
+          }
+        },
+        {
+          "range": {
+            "gte": -73.977165,
+            "lte": -73.924393
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 328287,
+            "bin_start": -74.072075,
+            "bin_end": -74.0501175
+          },
+          {
+            "count": 0,
+            "bin_start": -74.0501175,
+            "bin_end": -74.02816
+          },
+          {
+            "count": 0,
+            "bin_start": -74.02816,
+            "bin_end": -74.0062025
+          },
+          {
+            "count": 2854270,
+            "bin_start": -74.0062025,
+            "bin_end": -73.984245
+          },
+          {
+            "count": 1235827,
+            "bin_start": -73.984245,
+            "bin_end": -73.9622875
+          },
+          {
+            "count": 1407889,
+            "bin_start": -73.9622875,
+            "bin_end": -73.94033
+          },
+          {
+            "count": 638319,
+            "bin_start": -73.94033,
+            "bin_end": -73.9183725
+          },
+          {
+            "count": 0,
+            "bin_start": -73.9183725,
+            "bin_end": -73.896415
+          },
+          {
+            "count": 139036,
+            "bin_start": -73.896415,
+            "bin_end": -73.8744575
+          },
+          {
+            "count": 280595,
+            "bin_start": -73.8744575,
+            "bin_end": -73.8525
+          }
+        ]
+      }
+    },
+    {
+      "name": "lat",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [
+        "http://schema.org/latitude"
+      ],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.004003965336294026,
+      "mean": 40.72538848562956,
+      "stddev": 0.05041354865158487,
+      "coverage": [
+        {
+          "range": {
+            "gte": 40.624303,
+            "lte": 40.720959
+          }
+        },
+        {
+          "range": {
+            "gte": 40.73883,
+            "lte": 40.762348
+          }
+        },
+        {
+          "range": {
+            "gte": 40.7877,
+            "lte": 40.857669
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 155922,
+            "bin_start": 40.5841,
+            "bin_end": 40.6114569
+          },
+          {
+            "count": 68449,
+            "bin_start": 40.6114569,
+            "bin_end": 40.6388138
+          },
+          {
+            "count": 432517,
+            "bin_start": 40.6388138,
+            "bin_end": 40.6661707
+          },
+          {
+            "count": 306877,
+            "bin_start": 40.6661707,
+            "bin_end": 40.6935276
+          },
+          {
+            "count": 3105161,
+            "bin_start": 40.6935276,
+            "bin_end": 40.7208845
+          },
+          {
+            "count": 1058838,
+            "bin_start": 40.7208845,
+            "bin_end": 40.7482414
+          },
+          {
+            "count": 665568,
+            "bin_start": 40.7482414,
+            "bin_end": 40.7755983
+          },
+          {
+            "count": 406922,
+            "bin_start": 40.7755983,
+            "bin_end": 40.8029552
+          },
+          {
+            "count": 449041,
+            "bin_start": 40.8029552,
+            "bin_end": 40.8303121
+          },
+          {
+            "count": 234928,
+            "bin_start": 40.8303121,
+            "bin_end": 40.857669
+          }
+        ]
+      }
+    },
+    {
+      "name": "geom_wkt",
+      "structural_type": "http://schema.org/GeoCoordinates",
+      "semantic_types": [],
+      "point_format": "long,lat",
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.004003965336294026
+    }
+  ],
+  "nb_spatial_columns": 3,
+  "nb_temporal_columns": 1,
+  "nb_numerical_columns": 4,
+  "types": [
+    "numerical",
+    "spatial",
+    "temporal"
+  ],
+  "spatial_coverage": [
+    {
+      "type": "latlong",
+      "column_names": [
+        "lat",
+        "lon"
+      ],
+      "column_indexes": [
+        7,
+        6
+      ],
+      "geohashes4": [
+        {
+          "hash": "1211302313210313",
+          "number": 306877
+        },
+        {
+          "hash": "1211302313232012",
+          "number": 104230
+        },
+        {
+          "hash": "1211302313200330",
+          "number": 68449
+        },
+        {
+          "hash": "1211302313300113",
+          "number": 409847
+        },
+        {
+          "hash": "1211302313300101",
+          "number": 407293
+        },
+        {
+          "hash": "1211302313300332",
+          "number": 409517
+        },
+        {
+          "hash": "1211302313300330",
+          "number": 78478
+        },
+        {
+          "hash": "1211302313300032",
+          "number": 404469
+        },
+        {
+          "hash": "1211302313301232",
+          "number": 305606
+        },
+        {
+          "hash": "1211302313301002",
+          "number": 851284
+        },
+        {
+          "hash": "1211302313312122",
+          "number": 407920
+        },
+        {
+          "hash": "1211302313312003",
+          "number": 284846
+        },
+        {
+          "hash": "1211302313311023",
+          "number": 237104
+        },
+        {
+          "hash": "1211302313311022",
+          "number": 20544
+        },
+        {
+          "hash": "1211302313310200",
+          "number": 354557
+        },
+        {
+          "hash": "1211302313332033",
+          "number": 113829
+        },
+        {
+          "hash": "1211302313021123",
+          "number": 328287
+        },
+        {
+          "hash": "1211302313122333",
+          "number": 137140
+        },
+        {
+          "hash": "1211302313122332",
+          "number": 407133
+        },
+        {
+          "hash": "1211302312313202",
+          "number": 155922
+        },
+        {
+          "hash": "1211303202200212",
+          "number": 406922
+        },
+        {
+          "hash": "1211303202203221",
+          "number": 310005
+        },
+        {
+          "hash": "1211303202212312",
+          "number": 172392
+        },
+        {
+          "hash": "1211303202230202",
+          "number": 136047
+        },
+        {
+          "hash": "1211303202233031",
+          "number": 62536
+        },
+        {
+          "hash": "1211303202221310",
+          "number": 2989
+        }
+      ],
+      "ranges": [
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -74.072075,
+                40.7877
+              ],
+              [
+                -73.94045,
+                40.643387
+              ]
+            ]
+          }
+        },
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -73.93207,
+                40.857669
+              ],
+              [
+                -73.8525,
+                40.74563
+              ]
+            ]
+          }
+        }
+      ],
+      "number": 6884223
+    },
+    {
+      "type": "point",
+      "column_names": [
+        "geom_wkt"
+      ],
+      "column_indexes": [
+        8
+      ],
+      "geohashes4": [
+        {
+          "hash": "1211302313210313",
+          "number": 306877
+        },
+        {
+          "hash": "1211302313232012",
+          "number": 104230
+        },
+        {
+          "hash": "1211302313200330",
+          "number": 68449
+        },
+        {
+          "hash": "1211302313300113",
+          "number": 409847
+        },
+        {
+          "hash": "1211302313300101",
+          "number": 407293
+        },
+        {
+          "hash": "1211302313300332",
+          "number": 409517
+        },
+        {
+          "hash": "1211302313300330",
+          "number": 78478
+        },
+        {
+          "hash": "1211302313300032",
+          "number": 404469
+        },
+        {
+          "hash": "1211302313301232",
+          "number": 305606
+        },
+        {
+          "hash": "1211302313301002",
+          "number": 851284
+        },
+        {
+          "hash": "1211302313312122",
+          "number": 407920
+        },
+        {
+          "hash": "1211302313312003",
+          "number": 284846
+        },
+        {
+          "hash": "1211302313311023",
+          "number": 237104
+        },
+        {
+          "hash": "1211302313311022",
+          "number": 20544
+        },
+        {
+          "hash": "1211302313310200",
+          "number": 354557
+        },
+        {
+          "hash": "1211302313332033",
+          "number": 113829
+        },
+        {
+          "hash": "1211302313021123",
+          "number": 328287
+        },
+        {
+          "hash": "1211302313122333",
+          "number": 137140
+        },
+        {
+          "hash": "1211302313122332",
+          "number": 407133
+        },
+        {
+          "hash": "1211302312313202",
+          "number": 155922
+        },
+        {
+          "hash": "1211303202200212",
+          "number": 406922
+        },
+        {
+          "hash": "1211303202203221",
+          "number": 310005
+        },
+        {
+          "hash": "1211303202212312",
+          "number": 172392
+        },
+        {
+          "hash": "1211303202230202",
+          "number": 136047
+        },
+        {
+          "hash": "1211303202233031",
+          "number": 62536
+        },
+        {
+          "hash": "1211303202221310",
+          "number": 2989
+        }
+      ],
+      "ranges": [
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -74.072075,
+                40.7877
+              ],
+              [
+                -73.94045,
+                40.643387
+              ]
+            ]
+          }
+        },
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -73.93207,
+                40.857669
+              ],
+              [
+                -73.8525,
+                40.74563
+              ]
+            ]
+          }
+        }
+      ],
+      "number": 6884223
+    }
+  ],
+  "temporal_coverage": [
+    {
+      "type": "datetime",
+      "column_names": [
+        "date"
+      ],
+      "column_indexes": [
+        2
+      ],
+      "column_types": [
+        "http://schema.org/DateTime"
+      ],
+      "ranges": [
+        {
+          "range": {
+            "gte": 1386924288.0,
+            "lte": 1506210304.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1517829248.0,
+            "lte": 1633545856.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1649601920.0,
+            "lte": 1751091328.0
+          }
+        }
+      ],
+      "temporal_resolution": "minute"
+    }
+  ],
+  "attribute_keywords": [
+    "countid",
+    "id",
+    "date",
+    "counts",
+    "status",
+    "name",
+    "lon",
+    "lat",
+    "geom_wkt",
+    "geom",
+    "wkt"
+  ],
+  "sample": "countid,id,date,counts,status,name,lon,lat,geom_wkt\r\n33016804,100010019,08/21/2023 04:30:00 AM,1,0,Kent Ave btw North 8th St and North 9th St,-73.96093,40.720959,POINT (-73.96093 40.720959)\r\n58819164,100010022,01/18/2024 03:30:00 PM,0,0,Brooklyn Bridge Bike Path,-74.00099,40.709274,POINT (-74.00099 40.709274)\r\n10632346,100009425,05/02/2020 03:30:00 AM,0,0,Prospect Park West,-73.971382,40.671288,POINT (-73.971382 40.671288)\r\n10647997,100009425,10/12/2020 04:15:00 AM,0,0,Prospect Park West,-73.971382,40.671288,POINT (-73.971382 40.671288)\r\n10703324,100009425,05/11/2022 12:00:00 PM,32,4,Prospect Park West,-73.971382,40.671288,POINT (-73.971382 40.671288)\r\n11010166,100009426,05/09/2020 04:15:00 PM,2,0,Manhattan Bridge Ped Path,-73.99495,40.714573,POINT (-73.99495 40.714573)\r\n11102234,100009426,12/24/2022 05:15:00 PM,0,0,Manhattan Bridge Ped Path,-73.99495,40.714573,POINT (-73.99495 40.714573)\r\n11869960,100009428,05/15/2023 04:00:00 PM,124,0,Ed Koch Queensboro Bridge Shared Path,-73.94045,40.75101,POINT (-73.94045 40.75101)\r\n12725924,100010018,04/16/2020 01:45:00 AM,0,0,Pulaski Bridge,-73.951492,40.742563,POINT (-73.951492 40.742563)\r\n12737990,100010018,08/19/2020 06:15:00 PM,95,0,Pulaski Bridge,-73.951492,40.742563,POINT (-73.951492 40.742563)\r\n12740552,100010018,09/15/2020 10:45:00 AM,27,0,Pulaski Bridge,-73.951492,40.742563,POINT (-73.951492 40.742563)\r\n14214467,100047029,05/18/2017 08:00:00 PM,110,4,Manhattan Bridge Display Bike Counter,-73.99475,40.7156,POINT (-73.99475 40.7156)\r\n14781177,100051865,02/01/2018 11:45:00 PM,5,4,Manhattan Bridge 2012 to 2019 Bike Counter,-73.98589,40.69981,POINT (-73.98589 40.69981)\r\n16470703,100057320,07/27/2022 02:45:00 PM,22,0,Columbus Ave at 86th St.,-73.97505,40.7877,POINT (-73.97505 40.7877)\r\n17490530,300020904,02/28/2015 11:45:00 AM,3,4,Comprehensive Brooklyn Bridge Counter,-74.004109,40.711644,POINT (-74.004109 40.711644)\r\n17713757,300020904,07/11/2021 06:30:00 PM,51,4,Comprehensive Brooklyn Bridge Counter,-74.004109,40.711644,POINT (-74.004109 40.711644)\r\n19643494,300029648,10/15/2022 08:00:00 PM,15,0,Willis Ave Peds,-73.924393,40.807046,POINT (-73.924393 40.807046)\r\n101076690,300043076,09/05/2024 12:15:00 AM,0,0,Emmons Ave Bikes,-73.93099,40.5841,POINT (-73.93099 40.5841)\r\n105181935,300038506,10/23/2024 02:30:00 AM,3,0,High Bridge,-73.93207,40.84219,POINT (-73.93207 40.84219)\r\n131085882,300043073,03/01/2025 08:30:00 PM,0,0,Concrete Plant Park Peds,-73.88501,40.827664,POINT (-73.88501 40.827664)\r\n"
+}
