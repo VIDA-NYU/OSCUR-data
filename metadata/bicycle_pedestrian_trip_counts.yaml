@@ -1,0 +1,85 @@
+dataset_id: "bicycle_pedestrian_trip_counts"
+name: "Bicycle & Pedestrian Trip Counts (Bicycle + Pedestrian Counts)"
+description: >
+  This data element aggregates NYC DOT count programs focused on active transportation. It includes:
+  (1) Bicycle Counts (trip observations) merged with fixed-location Bicycle Counters to attach coordinates,
+  and (2) Bi-Annual Pedestrian Counts, which already contain location information.
+
+  The merged Bicycle dataset provides point locations (lon/lat + WKT), site descriptors, timestamps, and
+  count measures suitable for mapping trends, evaluating corridors, and supporting planning studies.
+  The pedestrian dataset is kept as-is since it is already spatially enriched.
+  
+  This data element consists of two data sets.
+
+source_organization:
+  bicycle_counts: "New York City Department of Transportation (NYC DOT)"
+  bicycle_counters: "New York City Department of Transportation (NYC DOT)"
+  bi_annual_pedestrian_counts: "New York City Department of Transportation (NYC DOT)"
+
+domain: "transportation"
+last_updated: "2025-08-17"
+update_frequency:
+  bicycle_counts: "Ongoing"
+  bicycle_counters: "Ongoing"
+  bi_annual_pedestrian_counts: "Bi-annual"
+
+access:
+  primary_url: "https://data.cityofnewyork.us"
+  api_endpoint:
+    bicycle_counts: "https://data.cityofnewyork.us/resource/uczf-rk3c.json"
+    bicycle_counters: "https://data.cityofnewyork.us/resource/smn3-rzf9.json"
+    bi_annual_pedestrian_counts: "https://data.cityofnewyork.us/resource/cqsj-cfgu.json"
+  license: "Open Data License"
+  file_format:
+    bicycle_counts: ["CSV", "JSON"]
+    bicycle_counters: ["CSV", "JSON"]
+    bi_annual_pedestrian_counts: ["CSV", "JSON"]
+  rate_limits:
+    bicycle_counts: "Unknown"
+    bicycle_counters: "Unknown"
+    bi_annual_pedestrian_counts: "Unknown"
+
+spatial:
+  geometry_type: "point"
+  coordinate_system: "EPSG:4326 (WGS84)"
+  coverage_area: "NYC"
+
+temporal:
+  temporal_type:
+    bicycle_counts: "timestamp or date of observation"
+    bicycle_counters: "timestamp of counter observation"
+    bi_annual_pedestrian_counts: "observation date"
+  temporal_resolution:
+    bicycle_counts: "hourly/daily (varies by table)"
+    bicycle_counters: "hourly/daily (varies by site)"
+    bi_annual_pedestrian_counts: "campaign snapshots (bi-annual)"
+  time_column:
+    bicycle_counts: "date, timestamp, or equivalent time fields when present"
+    bicycle_counters: "date, time, or timestamp fields when present"
+    bi_annual_pedestrian_counts: "count_date or equivalent"
+
+implementation:
+  downloader_module:
+    bicycle_counts: "downloaders.bicycle_pedestrian_trip_counts.bicycle_counts_downloader"
+    bicycle_counters: "downloaders.bicycle_pedestrian_trip_counts.bicycle_counters_downloader"
+    bi_annual_pedestrian_counts: "downloaders.bicycle_pedestrian_trip_counts.bi_annual_pedestrian_counts_downloader"
+  orchestrator_downloader:
+    orchestrator: "downloaders.bicycle_pedestrian_trip_counts.bicycle_pedestrian_trip_counts"
+  processor_module:
+    merged_bicycle_counts: "processors.bicycle_counts"
+  example_notebook: "examples/bicycle_pedestrian_trip_counts.ipynb"
+
+integration_opportunities:
+  spatial_joins:
+    - "Overlay with bike lanes, greenways, and bridge paths to assess usage"
+    - "Join with neighborhood boundaries or corridors for equity and demand analysis"
+    - "Combine with crash data or speed datasets for safety studies"
+  temporal_alignment:
+    - "Align with weather, events, or seasonality for demand modeling"
+    - "Aggregate by hour/day/week for corridor trend analysis"
+
+map_algebra:
+  raster_conversion:
+    suitable_for_rasterization: true
+    recommended_cell_size: "20 meters"
+    interpolation_method: "point density (counts per time unit)"
