@@ -20,6 +20,7 @@ code/processors/
 ├── rail_routes_and_crossings.py       # Post-processing Rail Routes and Crossings dataset (CSV)
 ├── public_open_spaces.py              # Post-processing Public Open Spaces dataset (CSV)
 ├── land_use.py                        # Post-processing Land Use dataset (CSV)
+├── vehicle_volumes_and_types.py       # Post-processing Vehicle Volumes and Types dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
 ```
@@ -187,6 +188,17 @@ python code/processors/land_use.py \
 
 #### Transit Ridership
 No postprocessing script is needed, as the original datasets are being preserved without any merging.
+
+#### Vehicle Volumes and Types Dataset
+
+This script processes the raw datasets for Automated Traffic Volume Counts (ATR), Vehicle Classification Counts (2011–2024), and the NYC Street Centerline, merging them into a single location-aware dataset keyed by `PHYSICALID`.
+```bash
+python merge_counts_with_centerline.py \
+  --classification ../downloaders/data/vehicle_volumes_and_types/vehicle_classification_counts_2011_2024.csv \
+  --centerline     ../downloaders/data/vehicle_volumes_and_types/nyc_street_centerline.csv \
+  --atr            ../downloaders/data/vehicle_volumes_and_types/automated_traffic_volume_counts.csv \
+  --output         ../processors/processed_data/vehicle_volumes_and_types.csv
+```
 
 
 ### Other Datasets
