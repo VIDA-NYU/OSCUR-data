@@ -107,6 +107,11 @@ code/downloaders/
     ├── ferry_ridership.py                        # Download NYC Ferry Ridership dataset (CSV)
     ├── mta_bus_hourly_ridership_downloader.py    # Download MTA Bus Hourly Ridership dataset (CSV)
     ├── mta_subway_hourly_ridership_downloader.py # Download MTA Subway Hourly Ridership dataset (CSV)
+├── vehicle_volumes_and_types
+    ├── vehicle_volumes_and_types.py              # Orchestrates all downloads
+    ├── volume_counts_downloader.py               # Download Automated Traffic Volume Counts (ATR) dataset (CSV)
+    ├── classification_counts_downloader.py       # Download Vehicle Classification Counts (2011–2024) dataset (CSV)
+    ├── nyc_centerlines_downloader.py             # Download NYC Street Centerline dataset (CSV)
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -395,6 +400,22 @@ python transit_ridership_orchestrator.py \
   --subway /custom/mta_subway_hourly_ridership.csv \
   --bus /custom/mta_bus_hourly_ridership.csv \
   --ferry /custom/nyc_ferry_ridership.csv
+```
+
+**Vehicle Volumes and Types:**
+The `vehicle_volumes_and_types.py` script downloads and integrates Automated Traffic counts, Vehicle Classification Counts, and NYC Street Centerline data.
+
+
+```bash
+python vehicle_volumes_and_types.py   # basic usage
+```
+
+Custom output paths:
+```bash
+python vehicle_volumes_and_types.py \
+  --atr_counts /custom/path/atr_counts.csv \
+  --vehicle_classification /custom/path/vehicle_classification.csv \
+  --centerline /custom/path/centerline.csv
 ```
 
 ## Base Class Benefits
