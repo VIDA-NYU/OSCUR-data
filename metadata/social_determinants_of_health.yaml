@@ -29,10 +29,9 @@ access:
     chs: "Unknown"
 
 spatial:
-  geometry_type: "tabular (no geometry)"
+  geometry_type: null
   coordinate_system: "N/A"
-  coverage_area: "NYC (records typically include geography attributes such as borough or neighborhood codes, but no geometry)"
-
+  coverage_area: null
 temporal:
   temporal_type:
     chs: "survey year"
