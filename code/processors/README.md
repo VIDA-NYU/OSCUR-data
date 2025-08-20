@@ -20,6 +20,7 @@ code/processors/
 ├── rail_routes_and_crossings.py       # Post-processing Rail Routes and Crossings dataset (CSV)
 ├── public_open_spaces.py              # Post-processing Public Open Spaces dataset (CSV)
 ├── land_use.py                        # Post-processing Land Use dataset (CSV)
+├── speed_distributions.py             # Post-processing Speed Distributions dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
 ```
@@ -190,6 +191,15 @@ No postprocessing script is needed, as the original datasets are being preserved
 
 #### Social Determinants of Health Dataset
 No postprocessing script is needed, as the original datasets are being preserved without any merging.
+
+#### Speed Distributions Dataset
+This script processes DOT Traffic Speeds (NBE) records by computing midpoint latitude and longitude from the link_points geometry and appending them as new columns.
+```bash
+python traffic_speeds.py \
+  --input ../downloaders/data/speed_distributions/traffic_speeds.csv \
+  --output ../processors/processed_data/speed_distributions/traffic_speeds_midpoints.csv 
+
+```
 
 
 ### Other Datasets
