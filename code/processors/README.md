@@ -189,7 +189,8 @@ python code/processors/land_use.py \
 #### Transit Ridership
 No postprocessing script is needed, as the original datasets are being preserved without any merging.
 
-#### Bicycle Counts 
+#### Bicycle Pedestrian Trip Counts  
+Bicycle Counts 
 This script merges the NYC DOT Bicycle Counts dataset with the Bicycle Counters dataset using the id field, enriching trip count records with location coordinates.
 ```bash
 python bicycle_counts.py \
@@ -197,6 +198,8 @@ python bicycle_counts.py \
   --bicycle_counters ../downloaders/data/bicycle_pedestrian_trip_counts/bicycle_counters.csv \
   --output ../processors/processed_data/bicycle_counts.csv
 ```
+Pedestrian Counts 
+No postprocessing script is needed, as the original datasets are being preserved without any merging.
 
 
 ### Other Datasets
