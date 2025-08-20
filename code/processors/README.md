@@ -198,6 +198,7 @@ python bicycle_counts.py \
   --bicycle_counters ../downloaders/data/bicycle_pedestrian_trip_counts/bicycle_counters.csv \
   --output ../processors/processed_data/bicycle_counts.csv
 ```
+
 Pedestrian Counts 
 No postprocessing script is needed, as the original datasets are being preserved without any merging.
 
