@@ -205,6 +205,9 @@ python bicycle_counts.py \
 **Pedestrian Counts:**
 No postprocessing script is needed, as the original datasets are being preserved without any merging.
 
+#### Signal Timing and Phasing
+No postprocessing script is needed, as the original datasets are being preserved without any merging.
+
 
 ### Other Datasets
 To be added as needed.

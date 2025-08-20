@@ -114,6 +114,8 @@ code/downloaders/
     ├── bicycle_counts_downloader.py                 # Download NYC DOT Bicycle Counts dataset (CSV)
     ├── bicycle_counters_downloader.py               # Download NYC DOT Bicycle Counters dataset (CSV)
     ├── bi_annual_pedestrian_counts_downloader.py    # Download NYC DOT Bi-Annual Pedestrian Counts dataset (CSV)
+├── signal_timing_and_phasing
+    ├── pedestrian_intervals.py            # Download Pedestrian Signal Intervals dataset (CSV)
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -145,6 +147,7 @@ python designed_goods_movement_routes/truck_routes.py --output data/designed_goo
 python bike_routes_downloader.py -o data/bike_routes.csv
 python urban_design_frontage_downloader.py -o data/urban_design.csv
 python community_health_survey_downloader.py -o data/community_health_survey.csv
+python pedestrian_intervals.py -o data/pedestrian_intervals.csv
 ```
 With API token and custom timeout:
 ```bash
