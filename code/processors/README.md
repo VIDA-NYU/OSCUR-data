@@ -20,6 +20,7 @@ code/processors/
 ├── rail_routes_and_crossings.py       # Post-processing Rail Routes and Crossings dataset (CSV)
 ├── public_open_spaces.py              # Post-processing Public Open Spaces dataset (CSV)
 ├── land_use.py                        # Post-processing Land Use dataset (CSV)
+├── roadway_feature.py                 # Post-processing Roadway Feature dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
 ```
@@ -190,6 +191,19 @@ No postprocessing script is needed, as the original datasets are being preserved
 
 #### Social Determinants of Health Dataset
 No postprocessing script is needed, as the original datasets are being preserved without any merging.
+
+#### Roadway Features Dataset
+This script integrates the NYC Street Centerline with multiple roadway-related datasets, including Vision Zero safety improvement projects (intersections and corridors), DOT bus lanes, and TreesCount! blockface attributes.  
+
+```bash
+python roadway_features.py \
+  --centerline ../downloaders/data/roadway_features/centerline.csv \
+  --sip_intersections ../downloaders/data/roadway_features/sip_intersections.csv \
+  --sip_corridors ../downloaders/data/roadway_features/sip_corridors.csv \
+  --bus_lanes ../downloaders/data/roadway_features/bus_lanes.csv \
+  --blockface ../downloaders/data/roadway_features/blockface.csv \
+  --output processed_data/roadway_features_final.csv
+```
 
 
 ### Other Datasets
