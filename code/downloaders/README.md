@@ -109,7 +109,11 @@ code/downloaders/
     ├── mta_subway_hourly_ridership_downloader.py # Download MTA Subway Hourly Ridership dataset (CSV)
 ├── social_determinants_of_health
     ├── community_health_survey_downloader.py   # Download NYC Community Health Survey dataset (CSV)
-
+├── bicycle_pedestrian_trip_counts
+    ├── bicycle_pedestrian_trip_counts.py            # Orchestrates all downloads
+    ├── bicycle_counts_downloader.py                 # Download NYC DOT Bicycle Counts dataset (CSV)
+    ├── bicycle_counters_downloader.py               # Download NYC DOT Bicycle Counters dataset (CSV)
+    ├── bi_annual_pedestrian_counts_downloader.py    # Download NYC DOT Bi-Annual Pedestrian Counts dataset (CSV)
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -399,6 +403,22 @@ python transit_ridership_orchestrator.py \
   --subway /custom/mta_subway_hourly_ridership.csv \
   --bus /custom/mta_bus_hourly_ridership.csv \
   --ferry /custom/nyc_ferry_ridership.csv
+```
+
+**Bicycle Pedestrian Trip Counts Dataset:**
+The `bicycle_pedestrian_trip_counts.py` script orchestrates downloads for bicycle and pedestrian volume datasets from NYC DOT. These include manual/automated bicycle counts, continuous counter data, and semiannual pedestrian counts.
+
+```bash
+python bicycle_pedestrian_trip_counts.py   # basic usage
+```
+
+Custom output paths:
+```bash
+python bicycle_pedestrian_trip_counts.py \
+  --bicycle_counts /custom/path/bicycle_counts.csv \
+  --bicycle_counters /custom/path/bicycle_counters.csv \
+  --bi_annual_pedestrian_counts /custom/path/pedestrian_counts.csv
+
 ```
 
 ## Base Class Benefits

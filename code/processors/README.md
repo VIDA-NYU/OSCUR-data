@@ -20,6 +20,7 @@ code/processors/
 ├── rail_routes_and_crossings.py       # Post-processing Rail Routes and Crossings dataset (CSV)
 ├── public_open_spaces.py              # Post-processing Public Open Spaces dataset (CSV)
 ├── land_use.py                        # Post-processing Land Use dataset (CSV)
+├── bicycle_counts.py                  # Post-processing Bicycle Pedestrian Trip Counts dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
 ```
@@ -189,6 +190,19 @@ python code/processors/land_use.py \
 No postprocessing script is needed, as the original datasets are being preserved without any merging.
 
 #### Social Determinants of Health Dataset
+No postprocessing script is needed, as the original datasets are being preserved without any merging.
+
+#### Bicycle Pedestrian Trip Counts  
+**Bicycle Counts:**
+This script merges the NYC DOT Bicycle Counts dataset with the Bicycle Counters dataset using the id field, enriching trip count records with location coordinates.
+```bash
+python bicycle_counts.py \
+  --bicycle_counts ../downloaders/data/bicycle_pedestrian_trip_counts/bicycle_counts.csv \
+  --bicycle_counters ../downloaders/data/bicycle_pedestrian_trip_counts/bicycle_counters.csv \
+  --output ../processors/processed_data/bicycle_counts.csv
+```
+
+**Pedestrian Counts:**
 No postprocessing script is needed, as the original datasets are being preserved without any merging.
 
 
