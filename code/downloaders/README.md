@@ -109,7 +109,8 @@ code/downloaders/
     ├── mta_subway_hourly_ridership_downloader.py # Download MTA Subway Hourly Ridership dataset (CSV)
 ├── social_determinants_of_health
     ├── community_health_survey_downloader.py   # Download NYC Community Health Survey dataset (CSV)
-
+├── topography
+    ├── elevation_downloader.py       # Download Elevation dataset (CSV)
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -399,6 +400,19 @@ python transit_ridership_orchestrator.py \
   --subway /custom/mta_subway_hourly_ridership.csv \
   --bus /custom/mta_bus_hourly_ridership.csv \
   --ferry /custom/nyc_ferry_ridership.csv
+```
+
+**Topography Dataset:**
+The `elevation_downloader.py` script downloads building elevation points from the NYC Planimetric Database:
+
+```bash
+python elevation_downloader.py    # basic usage
+```
+
+Custom output paths:
+```bash
+python elevation_downloader.py \
+  --output /custom/path/elevation_points.csv
 ```
 
 ## Base Class Benefits
