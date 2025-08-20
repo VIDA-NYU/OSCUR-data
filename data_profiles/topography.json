@@ -1,0 +1,616 @@
+{
+  "nb_rows": 1471855,
+  "nb_profiled_rows": 1471855,
+  "nb_columns": 6,
+  "columns": [
+    {
+      "name": "the_geom",
+      "structural_type": "http://schema.org/GeoCoordinates",
+      "semantic_types": [],
+      "point_format": "long,lat",
+      "unclean_values_ratio": 0.0
+    },
+    {
+      "name": "FEAT_CODE",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 3,
+      "mean": 3014.726532165193,
+      "stddev": 8.808452015477783,
+      "coverage": [
+        {
+          "range": {
+            "gte": 3000.0,
+            "lte": 3000.0
+          }
+        },
+        {
+          "range": {
+            "gte": 3020.0,
+            "lte": 3020.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 387566,
+            "bin_start": 3000.0,
+            "bin_end": 3002.0
+          },
+          {
+            "count": 0,
+            "bin_start": 3002.0,
+            "bin_end": 3004.0
+          },
+          {
+            "count": 0,
+            "bin_start": 3004.0,
+            "bin_end": 3006.0
+          },
+          {
+            "count": 0,
+            "bin_start": 3006.0,
+            "bin_end": 3008.0
+          },
+          {
+            "count": 0,
+            "bin_start": 3008.0,
+            "bin_end": 3010.0
+          },
+          {
+            "count": 1046,
+            "bin_start": 3010.0,
+            "bin_end": 3012.0
+          },
+          {
+            "count": 0,
+            "bin_start": 3012.0,
+            "bin_end": 3014.0
+          },
+          {
+            "count": 0,
+            "bin_start": 3014.0,
+            "bin_end": 3016.0
+          },
+          {
+            "count": 0,
+            "bin_start": 3016.0,
+            "bin_end": 3018.0
+          },
+          {
+            "count": 1083243,
+            "bin_start": 3018.0,
+            "bin_end": 3020.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "ELEVATION",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "mean": 75.59613266462983,
+      "stddev": 49.51184053301868,
+      "coverage": [
+        {
+          "range": {
+            "gte": 9.70949999,
+            "lte": 67.78791325
+          }
+        },
+        {
+          "range": {
+            "gte": 72.95,
+            "lte": 138.063904592
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 1368320,
+            "bin_start": -14.1257,
+            "bin_end": 149.888210011
+          },
+          {
+            "count": 99121,
+            "bin_start": 149.888210011,
+            "bin_end": 313.902120022
+          },
+          {
+            "count": 3986,
+            "bin_start": 313.902120022,
+            "bin_end": 477.916030033
+          },
+          {
+            "count": 289,
+            "bin_start": 477.916030033,
+            "bin_end": 641.929940044
+          },
+          {
+            "count": 97,
+            "bin_start": 641.929940044,
+            "bin_end": 805.943850055
+          },
+          {
+            "count": 24,
+            "bin_start": 805.943850055,
+            "bin_end": 969.957760066
+          },
+          {
+            "count": 11,
+            "bin_start": 969.957760066,
+            "bin_end": 1133.971670077
+          },
+          {
+            "count": 2,
+            "bin_start": 1133.971670077,
+            "bin_end": 1297.985580088
+          },
+          {
+            "count": 3,
+            "bin_start": 1297.985580088,
+            "bin_end": 1461.999490099
+          },
+          {
+            "count": 2,
+            "bin_start": 1461.999490099,
+            "bin_end": 1626.01340011
+          }
+        ]
+      }
+    },
+    {
+      "name": "SOURCE_ID",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/identifier"
+      ],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 1404887,
+      "mean": 12558561192.03908,
+      "stddev": 6003483510.078705,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 4302012627.0
+          }
+        },
+        {
+          "range": {
+            "gte": 5302023632.0,
+            "lte": 12300029565.0
+          }
+        },
+        {
+          "range": {
+            "gte": 13302027835.0,
+            "lte": 20302090080.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 92310,
+            "bin_start": 0.0,
+            "bin_end": 2130200882.2
+          },
+          {
+            "count": 56269,
+            "bin_start": 2130200882.2,
+            "bin_end": 4260401764.4
+          },
+          {
+            "count": 123648,
+            "bin_start": 4260401764.4,
+            "bin_end": 6390602646.6
+          },
+          {
+            "count": 171961,
+            "bin_start": 6390602646.6,
+            "bin_end": 8520803528.8
+          },
+          {
+            "count": 139697,
+            "bin_start": 8520803528.8,
+            "bin_end": 10651004411.0
+          },
+          {
+            "count": 111943,
+            "bin_start": 10651004411.0,
+            "bin_end": 12781205293.2
+          },
+          {
+            "count": 101821,
+            "bin_start": 12781205293.2,
+            "bin_end": 14911406175.4
+          },
+          {
+            "count": 189069,
+            "bin_start": 14911406175.4,
+            "bin_end": 17041607057.6
+          },
+          {
+            "count": 218146,
+            "bin_start": 17041607057.6,
+            "bin_end": 19171807939.8
+          },
+          {
+            "count": 266991,
+            "bin_start": 19171807939.8,
+            "bin_end": 21302008822.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "SUB_CODE",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 4,
+      "mean": 301472.8085714965,
+      "stddev": 880.5871813832235,
+      "coverage": [
+        {
+          "range": {
+            "gte": 300000.0,
+            "lte": 300000.0
+          }
+        },
+        {
+          "range": {
+            "gte": 302000.0,
+            "lte": 302000.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 387566,
+            "bin_start": 300000.0,
+            "bin_end": 300200.0
+          },
+          {
+            "count": 0,
+            "bin_start": 300200.0,
+            "bin_end": 300400.0
+          },
+          {
+            "count": 0,
+            "bin_start": 300400.0,
+            "bin_end": 300600.0
+          },
+          {
+            "count": 0,
+            "bin_start": 300600.0,
+            "bin_end": 300800.0
+          },
+          {
+            "count": 0,
+            "bin_start": 300800.0,
+            "bin_end": 301000.0
+          },
+          {
+            "count": 1046,
+            "bin_start": 301000.0,
+            "bin_end": 301200.0
+          },
+          {
+            "count": 0,
+            "bin_start": 301200.0,
+            "bin_end": 301400.0
+          },
+          {
+            "count": 0,
+            "bin_start": 301400.0,
+            "bin_end": 301600.0
+          },
+          {
+            "count": 0,
+            "bin_start": 301600.0,
+            "bin_end": 301800.0
+          },
+          {
+            "count": 1083243,
+            "bin_start": 301800.0,
+            "bin_end": 302000.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "STATUS",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 2,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "New",
+            "count": 66148
+          },
+          {
+            "bin": "Unchanged",
+            "count": 1405707
+          }
+        ]
+      }
+    }
+  ],
+  "nb_spatial_columns": 1,
+  "nb_categorical_columns": 1,
+  "nb_numerical_columns": 4,
+  "types": [
+    "categorical",
+    "numerical",
+    "spatial"
+  ],
+  "spatial_coverage": [
+    {
+      "type": "point",
+      "column_names": [
+        "the_geom"
+      ],
+      "column_indexes": [
+        0
+      ],
+      "geohashes4": [
+        {
+          "hash": "121130231322",
+          "number": 25946
+        },
+        {
+          "hash": "121130231323",
+          "number": 86941
+        },
+        {
+          "hash": "121130231321",
+          "number": 88577
+        },
+        {
+          "hash": "121130231320",
+          "number": 114516
+        },
+        {
+          "hash": "121130231332",
+          "number": 88914
+        },
+        {
+          "hash": "121130231330",
+          "number": 56937
+        },
+        {
+          "hash": "121130231333",
+          "number": 72483
+        },
+        {
+          "hash": "121130231331",
+          "number": 47390
+        },
+        {
+          "hash": "121130231312",
+          "number": 5374
+        },
+        {
+          "hash": "121130231313",
+          "number": 1298
+        },
+        {
+          "hash": "121130231302",
+          "number": 60178
+        },
+        {
+          "hash": "121130231300",
+          "number": 53741
+        },
+        {
+          "hash": "121130231303",
+          "number": 4854
+        },
+        {
+          "hash": "121130231230",
+          "number": 2381
+        },
+        {
+          "hash": "121130231232",
+          "number": 1259
+        },
+        {
+          "hash": "121130231233",
+          "number": 10096
+        },
+        {
+          "hash": "121130231231",
+          "number": 53480
+        },
+        {
+          "hash": "121130231213",
+          "number": 17300
+        },
+        {
+          "hash": "121130231211",
+          "number": 43994
+        },
+        {
+          "hash": "121130231210",
+          "number": 28698
+        },
+        {
+          "hash": "121130231033",
+          "number": 4538
+        },
+        {
+          "hash": "121130231032",
+          "number": 26201
+        },
+        {
+          "hash": "121130231023",
+          "number": 8483
+        },
+        {
+          "hash": "121130231122",
+          "number": 1067
+        },
+        {
+          "hash": "121130233011",
+          "number": 14346
+        },
+        {
+          "hash": "121130233013",
+          "number": 422
+        },
+        {
+          "hash": "121130233100",
+          "number": 6158
+        },
+        {
+          "hash": "121130233102",
+          "number": 48
+        },
+        {
+          "hash": "121130233103",
+          "number": 15786
+        },
+        {
+          "hash": "121130233101",
+          "number": 82874
+        },
+        {
+          "hash": "121130233111",
+          "number": 80111
+        },
+        {
+          "hash": "121130233113",
+          "number": 20774
+        },
+        {
+          "hash": "121130233110",
+          "number": 98739
+        },
+        {
+          "hash": "121130233112",
+          "number": 25358
+        },
+        {
+          "hash": "121130320222",
+          "number": 28410
+        },
+        {
+          "hash": "121130320220",
+          "number": 30572
+        },
+        {
+          "hash": "121130320221",
+          "number": 13939
+        },
+        {
+          "hash": "121130320223",
+          "number": 64645
+        },
+        {
+          "hash": "121130320230",
+          "number": 1193
+        },
+        {
+          "hash": "121130320232",
+          "number": 46624
+        },
+        {
+          "hash": "121130320233",
+          "number": 76
+        },
+        {
+          "hash": "121130322000",
+          "number": 22251
+        },
+        {
+          "hash": "121130322001",
+          "number": 12238
+        },
+        {
+          "hash": "121130322010",
+          "number": 2645
+        }
+      ],
+      "ranges": [
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -74.19777869114324,
+                40.684150806945304
+              ],
+              [
+                -73.92545158844604,
+                40.53903150111673
+              ]
+            ]
+          }
+        },
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -73.98039281133397,
+                40.886857669118356
+              ],
+              [
+                -73.82388598801265,
+                40.6915283715892
+              ]
+            ]
+          }
+        },
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -73.89596819055832,
+                40.770523506484224
+              ],
+              [
+                -73.7284397925473,
+                40.61016122810044
+              ]
+            ]
+          }
+        }
+      ],
+      "number": 1471855
+    }
+  ],
+  "attribute_keywords": [
+    "the_geom",
+    "the",
+    "geom",
+    "FEAT_CODE",
+    "FEAT",
+    "CODE",
+    "ELEVATION",
+    "SOURCE_ID",
+    "SOURCE",
+    "ID",
+    "SUB_CODE",
+    "SUB",
+    "CODE",
+    "STATUS"
+  ],
+  "sample": "the_geom,FEAT_CODE,ELEVATION,SOURCE_ID,SUB_CODE,STATUS\r\nPOINT (-73.92180396491405 40.56061313605064),3000,6.49147723,1300002882,300000,Unchanged\r\nPOINT (-74.01066068628296 40.71564894304219),3020,161.3,12302000814,302000,Unchanged\r\nPOINT (-73.97740132749577 40.781865603857646),3000,79.98896564,13300007112,300000,Unchanged\r\nPOINT (-73.98244279738294 40.782106325445696),3020,312.93,13302007220,302000,Unchanged\r\nPOINT (-73.82005260020706 40.82606198465662),3020,71.71,14302017630,302000,Unchanged\r\nPOINT (-73.88078292075163 40.85979285669051),3000,91.69412795,15300032893,300000,Unchanged\r\nPOINT (-74.08841182481146 40.60359384624281),3020,131.64,16302016414,302000,Unchanged\r\nPOINT (-74.1597798214629 40.61426704049728),3020,76.08,16302035753,302000,Unchanged\r\nPOINT (-74.14781980513956 40.63192663888403),3020,69.29,16302066652,302000,Unchanged\r\nPOINT (-74.10908045514422 40.64195288824182),3000,23.05417107,16300090606,300000,Unchanged\r\nPOINT (-74.19145280308771 40.59317203324508),3020,52.2156628,16302093548,302000,Unchanged\r\nPOINT (-74.18721825361699 40.54609837671287),3020,134.51,17302030705,302000,Unchanged\r\nPOINT (-73.95262354003923 40.63901591107589),3020,42.52,19302014750,302000,Unchanged\r\nPOINT (-73.99044577975778 40.66340117287492),3020,119.69394603,19302049152,302000,Unchanged\r\nPOINT (-73.95442331089191 40.69177822090969),3020,72.52,19302085201,302000,Unchanged\r\nPOINT (-73.91379762775695 40.61738779445307),3020,30.5,2302025111,302000,Unchanged\r\nPOINT (-73.84709132673834 40.69091293170134),3020,76.46761574,5302013341,302000,Unchanged\r\nPOINT (-73.76838303144201 40.73774258909939),3000,106.66551823,8300035740,300000,Unchanged\r\nPOINT (-73.70766191430131 40.747029517650134),3020,145.05515217,8302054421,302000,Unchanged\r\nPOINT (-73.8770778098324 40.71119880475593),3020,132.27,9302003880,302000,Unchanged\r\n"
+}
