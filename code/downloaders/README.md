@@ -107,6 +107,8 @@ code/downloaders/
     ├── ferry_ridership.py                        # Download NYC Ferry Ridership dataset (CSV)
     ├── mta_bus_hourly_ridership_downloader.py    # Download MTA Bus Hourly Ridership dataset (CSV)
     ├── mta_subway_hourly_ridership_downloader.py # Download MTA Subway Hourly Ridership dataset (CSV)
+├── social_determinants_of_health
+    ├── community_health_survey_downloader.py   # Download NYC Community Health Survey dataset (CSV)
 ├── bicycle_pedestrian_trip_counts
     ├── bicycle_pedestrian_trip_counts.py            # Orchestrates all downloads
     ├── bicycle_counts_downloader.py                 # Download NYC DOT Bicycle Counts dataset (CSV)
@@ -142,6 +144,7 @@ python nyc_311.py -o data/nyc_311.csv
 python designed_goods_movement_routes/truck_routes.py --output data/designed_goods_movement_routes/truck_routes.csv
 python bike_routes_downloader.py -o data/bike_routes.csv
 python urban_design_frontage_downloader.py -o data/urban_design.csv
+python community_health_survey_downloader.py -o data/community_health_survey.csv
 ```
 With API token and custom timeout:
 ```bash

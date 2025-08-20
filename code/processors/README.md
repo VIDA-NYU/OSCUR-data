@@ -189,8 +189,11 @@ python code/processors/land_use.py \
 #### Transit Ridership
 No postprocessing script is needed, as the original datasets are being preserved without any merging.
 
+#### Social Determinants of Health Dataset
+No postprocessing script is needed, as the original datasets are being preserved without any merging.
+
 #### Bicycle Pedestrian Trip Counts  
-Bicycle Counts 
+**Bicycle Counts:**
 This script merges the NYC DOT Bicycle Counts dataset with the Bicycle Counters dataset using the id field, enriching trip count records with location coordinates.
 ```bash
 python bicycle_counts.py \
@@ -199,7 +202,7 @@ python bicycle_counts.py \
   --output ../processors/processed_data/bicycle_counts.csv
 ```
 
-Pedestrian Counts 
+**Pedestrian Counts:**
 No postprocessing script is needed, as the original datasets are being preserved without any merging.
 
 

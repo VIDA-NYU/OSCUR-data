@@ -1,0 +1,1049 @@
+{
+  "nb_rows": 33,
+  "nb_profiled_rows": 33,
+  "nb_columns": 12,
+  "columns": [
+    {
+      "name": "Prevelance",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "95",
+            "count": 22
+          },
+          {
+            "bin": "ci",
+            "count": 22
+          },
+          {
+            "bin": "prevalence",
+            "count": 11
+          },
+          {
+            "bin": "lower",
+            "count": 11
+          },
+          {
+            "bin": "upper",
+            "count": 11
+          }
+        ]
+      }
+    },
+    {
+      "name": "Year",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/DateTime"
+      ],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 11,
+      "plot": {
+        "type": "histogram_temporal",
+        "data": [
+          {
+            "count": 6,
+            "date_start": "2010-01-01T00:00:00",
+            "date_end": "2011-01-01T04:48:00"
+          },
+          {
+            "count": 3,
+            "date_start": "2011-01-01T04:48:00",
+            "date_end": "2012-01-01T09:36:00"
+          },
+          {
+            "count": 0,
+            "date_start": "2012-01-01T09:36:00",
+            "date_end": "2012-12-31T14:24:00"
+          },
+          {
+            "count": 3,
+            "date_start": "2012-12-31T14:24:00",
+            "date_end": "2013-12-31T19:12:00"
+          },
+          {
+            "count": 3,
+            "date_start": "2013-12-31T19:12:00",
+            "date_end": "2015-01-01T00:00:00"
+          },
+          {
+            "count": 6,
+            "date_start": "2015-01-01T00:00:00",
+            "date_end": "2016-01-01T04:48:00"
+          },
+          {
+            "count": 0,
+            "date_start": "2016-01-01T04:48:00",
+            "date_end": "2016-12-31T09:36:00"
+          },
+          {
+            "count": 3,
+            "date_start": "2016-12-31T09:36:00",
+            "date_end": "2017-12-31T14:24:00"
+          },
+          {
+            "count": 3,
+            "date_start": "2017-12-31T14:24:00",
+            "date_end": "2018-12-31T19:12:00"
+          },
+          {
+            "count": 6,
+            "date_start": "2018-12-31T19:12:00",
+            "date_end": "2020-01-01T00:00:00"
+          }
+        ]
+      }
+    },
+    {
+      "name": "No Health Insurance",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "mean": 14.754545454545454,
+      "stddev": 3.572800523576319,
+      "coverage": [
+        {
+          "range": {
+            "gte": 10.0,
+            "lte": 12.8
+          }
+        },
+        {
+          "range": {
+            "gte": 13.6,
+            "lte": 17.0
+          }
+        },
+        {
+          "range": {
+            "gte": 18.0,
+            "lte": 22.2
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 4,
+            "bin_start": 10.0,
+            "bin_end": 11.22
+          },
+          {
+            "count": 6,
+            "bin_start": 11.22,
+            "bin_end": 12.44
+          },
+          {
+            "count": 7,
+            "bin_start": 12.44,
+            "bin_end": 13.66
+          },
+          {
+            "count": 4,
+            "bin_start": 13.66,
+            "bin_end": 14.879999999999999
+          },
+          {
+            "count": 1,
+            "bin_start": 14.879999999999999,
+            "bin_end": 16.1
+          },
+          {
+            "count": 2,
+            "bin_start": 16.1,
+            "bin_end": 17.32
+          },
+          {
+            "count": 2,
+            "bin_start": 17.32,
+            "bin_end": 18.54
+          },
+          {
+            "count": 2,
+            "bin_start": 18.54,
+            "bin_end": 19.759999999999998
+          },
+          {
+            "count": 3,
+            "bin_start": 19.759999999999998,
+            "bin_end": 20.98
+          },
+          {
+            "count": 2,
+            "bin_start": 20.98,
+            "bin_end": 22.2
+          }
+        ]
+      }
+    },
+    {
+      "name": "Did not get needed medical care",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "mean": 10.903030303030302,
+      "stddev": 1.1876855130334818,
+      "coverage": [
+        {
+          "range": {
+            "gte": 8.7,
+            "lte": 10.3
+          }
+        },
+        {
+          "range": {
+            "gte": 10.5,
+            "lte": 11.5
+          }
+        },
+        {
+          "range": {
+            "gte": 12.0,
+            "lte": 13.6
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 2,
+            "bin_start": 8.7,
+            "bin_end": 9.19
+          },
+          {
+            "count": 4,
+            "bin_start": 9.19,
+            "bin_end": 9.68
+          },
+          {
+            "count": 3,
+            "bin_start": 9.68,
+            "bin_end": 10.17
+          },
+          {
+            "count": 6,
+            "bin_start": 10.17,
+            "bin_end": 10.66
+          },
+          {
+            "count": 4,
+            "bin_start": 10.66,
+            "bin_end": 11.149999999999999
+          },
+          {
+            "count": 6,
+            "bin_start": 11.149999999999999,
+            "bin_end": 11.64
+          },
+          {
+            "count": 2,
+            "bin_start": 11.64,
+            "bin_end": 12.129999999999999
+          },
+          {
+            "count": 4,
+            "bin_start": 12.129999999999999,
+            "bin_end": 12.62
+          },
+          {
+            "count": 0,
+            "bin_start": 12.62,
+            "bin_end": 13.11
+          },
+          {
+            "count": 2,
+            "bin_start": 13.11,
+            "bin_end": 13.6
+          }
+        ]
+      }
+    },
+    {
+      "name": "No Personal Doctor",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.09090909090909091,
+      "mean": 17.913333333333334,
+      "stddev": 3.958512627518349,
+      "coverage": [
+        {
+          "range": {
+            "gte": 14.2,
+            "lte": 16.3
+          }
+        },
+        {
+          "range": {
+            "gte": 16.7,
+            "lte": 20.3
+          }
+        },
+        {
+          "range": {
+            "gte": 27.5,
+            "lte": 30.3
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 10,
+            "bin_start": 14.2,
+            "bin_end": 15.809999999999999
+          },
+          {
+            "count": 9,
+            "bin_start": 15.809999999999999,
+            "bin_end": 17.419999999999998
+          },
+          {
+            "count": 5,
+            "bin_start": 17.419999999999998,
+            "bin_end": 19.03
+          },
+          {
+            "count": 3,
+            "bin_start": 19.03,
+            "bin_end": 20.64
+          },
+          {
+            "count": 0,
+            "bin_start": 20.64,
+            "bin_end": 22.25
+          },
+          {
+            "count": 0,
+            "bin_start": 22.25,
+            "bin_end": 23.86
+          },
+          {
+            "count": 0,
+            "bin_start": 23.86,
+            "bin_end": 25.47
+          },
+          {
+            "count": 0,
+            "bin_start": 25.47,
+            "bin_end": 27.08
+          },
+          {
+            "count": 1,
+            "bin_start": 27.08,
+            "bin_end": 28.689999999999998
+          },
+          {
+            "count": 2,
+            "bin_start": 28.689999999999998,
+            "bin_end": 30.3
+          }
+        ]
+      }
+    },
+    {
+      "name": "Drinks 1 or more sugar-sweetened beverages per day",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "mean": 24.706060606060603,
+      "stddev": 3.1933585809661174,
+      "coverage": [
+        {
+          "range": {
+            "gte": 20.8,
+            "lte": 23.0
+          }
+        },
+        {
+          "range": {
+            "gte": 23.3,
+            "lte": 26.7
+          }
+        },
+        {
+          "range": {
+            "gte": 28.2,
+            "lte": 31.8
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 5,
+            "bin_start": 20.8,
+            "bin_end": 21.900000000000002
+          },
+          {
+            "count": 7,
+            "bin_start": 21.900000000000002,
+            "bin_end": 23.0
+          },
+          {
+            "count": 8,
+            "bin_start": 23.0,
+            "bin_end": 24.1
+          },
+          {
+            "count": 4,
+            "bin_start": 24.1,
+            "bin_end": 25.200000000000003
+          },
+          {
+            "count": 0,
+            "bin_start": 25.200000000000003,
+            "bin_end": 26.3
+          },
+          {
+            "count": 1,
+            "bin_start": 26.3,
+            "bin_end": 27.400000000000002
+          },
+          {
+            "count": 2,
+            "bin_start": 27.400000000000002,
+            "bin_end": 28.5
+          },
+          {
+            "count": 1,
+            "bin_start": 28.5,
+            "bin_end": 29.6
+          },
+          {
+            "count": 3,
+            "bin_start": 29.6,
+            "bin_end": 30.700000000000003
+          },
+          {
+            "count": 2,
+            "bin_start": 30.700000000000003,
+            "bin_end": 31.8
+          }
+        ]
+      }
+    },
+    {
+      "name": "Smoking Status (current smokers)",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "mean": 13.727272727272727,
+      "stddev": 1.7008505407540873,
+      "coverage": [
+        {
+          "range": {
+            "gte": 10.0,
+            "lte": 12.5
+          }
+        },
+        {
+          "range": {
+            "gte": 12.8,
+            "lte": 14.4
+          }
+        },
+        {
+          "range": {
+            "gte": 14.8,
+            "lte": 17.2
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 1,
+            "bin_start": 10.0,
+            "bin_end": 10.72
+          },
+          {
+            "count": 2,
+            "bin_start": 10.72,
+            "bin_end": 11.44
+          },
+          {
+            "count": 3,
+            "bin_start": 11.44,
+            "bin_end": 12.16
+          },
+          {
+            "count": 4,
+            "bin_start": 12.16,
+            "bin_end": 12.879999999999999
+          },
+          {
+            "count": 6,
+            "bin_start": 12.879999999999999,
+            "bin_end": 13.6
+          },
+          {
+            "count": 5,
+            "bin_start": 13.6,
+            "bin_end": 14.32
+          },
+          {
+            "count": 5,
+            "bin_start": 14.32,
+            "bin_end": 15.04
+          },
+          {
+            "count": 3,
+            "bin_start": 15.04,
+            "bin_end": 15.76
+          },
+          {
+            "count": 2,
+            "bin_start": 15.76,
+            "bin_end": 16.48
+          },
+          {
+            "count": 2,
+            "bin_start": 16.48,
+            "bin_end": 17.2
+          }
+        ]
+      }
+    },
+    {
+      "name": "Binge Drinking",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.09090909090909091,
+      "mean": 17.713333333333328,
+      "stddev": 1.368876262568031,
+      "coverage": [
+        {
+          "range": {
+            "gte": 15.4,
+            "lte": 16.7
+          }
+        },
+        {
+          "range": {
+            "gte": 17.0,
+            "lte": 18.4
+          }
+        },
+        {
+          "range": {
+            "gte": 18.9,
+            "lte": 20.9
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 3,
+            "bin_start": 15.4,
+            "bin_end": 15.95
+          },
+          {
+            "count": 3,
+            "bin_start": 15.95,
+            "bin_end": 16.5
+          },
+          {
+            "count": 5,
+            "bin_start": 16.5,
+            "bin_end": 17.05
+          },
+          {
+            "count": 2,
+            "bin_start": 17.05,
+            "bin_end": 17.6
+          },
+          {
+            "count": 6,
+            "bin_start": 17.6,
+            "bin_end": 18.15
+          },
+          {
+            "count": 4,
+            "bin_start": 18.15,
+            "bin_end": 18.7
+          },
+          {
+            "count": 2,
+            "bin_start": 18.7,
+            "bin_end": 19.25
+          },
+          {
+            "count": 3,
+            "bin_start": 19.25,
+            "bin_end": 19.799999999999997
+          },
+          {
+            "count": 1,
+            "bin_start": 19.799999999999997,
+            "bin_end": 20.349999999999998
+          },
+          {
+            "count": 1,
+            "bin_start": 20.349999999999998,
+            "bin_end": 20.9
+          }
+        ]
+      }
+    },
+    {
+      "name": "Obesity",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "mean": 24.393939393939398,
+      "stddev": 1.325722077446829,
+      "coverage": [
+        {
+          "range": {
+            "gte": 22.1,
+            "lte": 23.7
+          }
+        },
+        {
+          "range": {
+            "gte": 23.9,
+            "lte": 25.4
+          }
+        },
+        {
+          "range": {
+            "gte": 25.5,
+            "lte": 27.1
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 4,
+            "bin_start": 22.1,
+            "bin_end": 22.6
+          },
+          {
+            "count": 2,
+            "bin_start": 22.6,
+            "bin_end": 23.1
+          },
+          {
+            "count": 4,
+            "bin_start": 23.1,
+            "bin_end": 23.6
+          },
+          {
+            "count": 4,
+            "bin_start": 23.6,
+            "bin_end": 24.1
+          },
+          {
+            "count": 3,
+            "bin_start": 24.1,
+            "bin_end": 24.6
+          },
+          {
+            "count": 5,
+            "bin_start": 24.6,
+            "bin_end": 25.1
+          },
+          {
+            "count": 5,
+            "bin_start": 25.1,
+            "bin_end": 25.6
+          },
+          {
+            "count": 2,
+            "bin_start": 25.6,
+            "bin_end": 26.1
+          },
+          {
+            "count": 2,
+            "bin_start": 26.1,
+            "bin_end": 26.6
+          },
+          {
+            "count": 2,
+            "bin_start": 26.6,
+            "bin_end": 27.1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Colon cancer screening, adults age 50+ (colonoscopy)",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "mean": 69.36060606060606,
+      "stddev": 2.035583364220326,
+      "coverage": [
+        {
+          "range": {
+            "gte": 65.4,
+            "lte": 68.1
+          }
+        },
+        {
+          "range": {
+            "gte": 68.4,
+            "lte": 70.5
+          }
+        },
+        {
+          "range": {
+            "gte": 70.7,
+            "lte": 74.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 2,
+            "bin_start": 65.4,
+            "bin_end": 66.26
+          },
+          {
+            "count": 4,
+            "bin_start": 66.26,
+            "bin_end": 67.12
+          },
+          {
+            "count": 2,
+            "bin_start": 67.12,
+            "bin_end": 67.98
+          },
+          {
+            "count": 6,
+            "bin_start": 67.98,
+            "bin_end": 68.84
+          },
+          {
+            "count": 4,
+            "bin_start": 68.84,
+            "bin_end": 69.7
+          },
+          {
+            "count": 5,
+            "bin_start": 69.7,
+            "bin_end": 70.56
+          },
+          {
+            "count": 4,
+            "bin_start": 70.56,
+            "bin_end": 71.42
+          },
+          {
+            "count": 4,
+            "bin_start": 71.42,
+            "bin_end": 72.28
+          },
+          {
+            "count": 1,
+            "bin_start": 72.28,
+            "bin_end": 73.14
+          },
+          {
+            "count": 1,
+            "bin_start": 73.14,
+            "bin_end": 74.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Self-reported Health Status (excellent/very good/good)",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "mean": 77.89393939393939,
+      "stddev": 1.5602912303796468,
+      "coverage": [
+        {
+          "range": {
+            "gte": 75.2,
+            "lte": 76.9
+          }
+        },
+        {
+          "range": {
+            "gte": 77.4,
+            "lte": 79.1
+          }
+        },
+        {
+          "range": {
+            "gte": 79.6,
+            "lte": 82.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 4,
+            "bin_start": 75.2,
+            "bin_end": 75.88
+          },
+          {
+            "count": 1,
+            "bin_start": 75.88,
+            "bin_end": 76.56
+          },
+          {
+            "count": 7,
+            "bin_start": 76.56,
+            "bin_end": 77.24000000000001
+          },
+          {
+            "count": 7,
+            "bin_start": 77.24000000000001,
+            "bin_end": 77.92
+          },
+          {
+            "count": 4,
+            "bin_start": 77.92,
+            "bin_end": 78.6
+          },
+          {
+            "count": 4,
+            "bin_start": 78.6,
+            "bin_end": 79.28
+          },
+          {
+            "count": 3,
+            "bin_start": 79.28,
+            "bin_end": 79.96000000000001
+          },
+          {
+            "count": 1,
+            "bin_start": 79.96000000000001,
+            "bin_end": 80.64
+          },
+          {
+            "count": 1,
+            "bin_start": 80.64,
+            "bin_end": 81.32
+          },
+          {
+            "count": 1,
+            "bin_start": 81.32,
+            "bin_end": 82.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Flu shot in last 12 months, adults ages 65+ (not age-adjusted)",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "mean": 65.37575757575756,
+      "stddev": 3.463841824283368,
+      "coverage": [
+        {
+          "range": {
+            "gte": 58.5,
+            "lte": 62.4
+          }
+        },
+        {
+          "range": {
+            "gte": 62.7,
+            "lte": 66.8
+          }
+        },
+        {
+          "range": {
+            "gte": 67.4,
+            "lte": 73.2
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 3,
+            "bin_start": 58.5,
+            "bin_end": 59.97
+          },
+          {
+            "count": 1,
+            "bin_start": 59.97,
+            "bin_end": 61.44
+          },
+          {
+            "count": 5,
+            "bin_start": 61.44,
+            "bin_end": 62.91
+          },
+          {
+            "count": 5,
+            "bin_start": 62.91,
+            "bin_end": 64.38
+          },
+          {
+            "count": 5,
+            "bin_start": 64.38,
+            "bin_end": 65.85
+          },
+          {
+            "count": 3,
+            "bin_start": 65.85,
+            "bin_end": 67.32
+          },
+          {
+            "count": 5,
+            "bin_start": 67.32,
+            "bin_end": 68.79
+          },
+          {
+            "count": 3,
+            "bin_start": 68.79,
+            "bin_end": 70.26
+          },
+          {
+            "count": 2,
+            "bin_start": 70.26,
+            "bin_end": 71.73
+          },
+          {
+            "count": 1,
+            "bin_start": 71.73,
+            "bin_end": 73.2
+          }
+        ]
+      }
+    }
+  ],
+  "nb_temporal_columns": 1,
+  "nb_numerical_columns": 10,
+  "types": [
+    "numerical",
+    "temporal"
+  ],
+  "temporal_coverage": [
+    {
+      "type": "datetime",
+      "column_names": [
+        "Year"
+      ],
+      "column_indexes": [
+        1
+      ],
+      "column_types": [
+        "http://schema.org/DateTime"
+      ],
+      "ranges": [
+        {
+          "range": {
+            "gte": 1262304000.0,
+            "lte": 1325376000.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1356998400.0,
+            "lte": 1451606400.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1483228800.0,
+            "lte": 1577836800.0
+          }
+        }
+      ],
+      "temporal_resolution": "year"
+    }
+  ],
+  "attribute_keywords": [
+    "Prevelance",
+    "Year",
+    "No Health Insurance",
+    "No",
+    "Health",
+    "Insurance",
+    "Did not get needed medical care",
+    "Did",
+    "not",
+    "get",
+    "needed",
+    "medical",
+    "care",
+    "No Personal Doctor",
+    "No",
+    "Personal",
+    "Doctor",
+    "Drinks 1 or more sugar-sweetened beverages per day",
+    "Drinks",
+    "1",
+    "or",
+    "more",
+    "sugar",
+    "sweetened",
+    "beverages",
+    "per",
+    "day",
+    "Smoking Status (current smokers)",
+    "Smoking",
+    "Status",
+    "current",
+    "smokers",
+    "",
+    "Binge Drinking",
+    "Binge",
+    "Drinking",
+    "Obesity",
+    "Colon cancer screening, adults age 50+ (colonoscopy)",
+    "Colon",
+    "cancer",
+    "screening",
+    "adults",
+    "age",
+    "50",
+    "colonoscopy",
+    "",
+    "Self-reported Health Status (excellent/very good/good)",
+    "Self",
+    "reported",
+    "Health",
+    "Status",
+    "excellent",
+    "very",
+    "good",
+    "good",
+    "",
+    "Flu shot in last 12 months, adults ages 65+ (not age-adjusted)",
+    "Flu",
+    "shot",
+    "in",
+    "last",
+    "12",
+    "months",
+    "adults",
+    "ages",
+    "65",
+    "not",
+    "age",
+    "adjusted",
+    ""
+  ],
+  "sample": "Prevelance,Year,No Health Insurance,Did not get needed medical care,No Personal Doctor,Drinks 1 or more sugar-sweetened beverages per day,Smoking Status (current smokers),Binge Drinking,Obesity,\"Colon cancer screening, adults age 50+ (colonoscopy)\",Self-reported Health Status (excellent/very good/good),\"Flu shot in last 12 months, adults ages 65+ (not age-adjusted)\"\r\nUpper 95% CI 2020,2020,13.7,13.6,30.3,23.7,12.0,17.8,26.8,74.0,82.0,73.2\r\nPrevalence 2019,2019,12.7,12.4,16.2,22.1,11.9,18.9,24.8,70.7,76.6,67.6\r\nPrevalence 2018,2018,11.6,11.1,15.6,23.6,12.8,17.8,25.7,69.1,76.8,62.8\r\nPrevalence 2017,2017,11.8,10.3,15.2,23.0,13.4,17.3,25.1,69.9,76.8,66.1\r\nLower 95% CI 2017,2017,10.9,9.5,14.2,21.8,12.5,16.2,23.9,68.0,75.7,63.4\r\nPrevalence 2016,2016,10.9,10.5,16.8,22.7,13.1,17.0,23.6,68.5,78.0,65.4\r\nUpper 95% CI 2016,2016,11.8,11.5,17.9,23.9,14.1,18.1,24.9,70.4,79.1,68.3\r\nPrevalence 2015,2015,12.6,9.9,16.3,23.7,14.3,17.2,24.1,69.9,77.4,65.5\r\nLower 95% CI 2015,2015,11.7,9.1,15.2,22.5,13.3,16.1,23.0,68.1,76.3,62.7\r\nUpper 95% CI 2015,2015,13.6,10.8,17.4,24.9,15.3,18.3,25.3,71.6,78.4,68.1\r\nPrevalence 2013,2013,20.9,11.2,19.1,23.3,16.1,18.2,23.4,69.0,76.9,66.8\r\nUpper 95% CI 2013,2013,22.2,12.2,20.3,24.6,17.2,19.4,24.7,71.0,78.0,69.8\r\nPrevalence 2012,2012,19.8,11.1,18.3,28.2,15.5,19.6,24.2,68.5,78.7,61.8\r\nLower 95% CI 2012,2012,18.5,10.1,17.0,26.7,14.4,18.2,22.8,66.3,77.5,58.5\r\nUpper 95% CI 2012,2012,21.3,12.2,19.7,29.6,16.8,20.9,25.5,70.5,79.9,64.9\r\nPrevalence 2011,2011,18.6,10.7,16.9,29.9,14.8,17.9,23.7,68.6,78.2,67.4\r\nLower 95% CI 2011,2011,17.0,9.6,15.5,28.2,13.5,16.4,22.2,66.2,76.7,63.9\r\nUpper 95% CI 2011,2011,20.3,12.0,18.5,31.7,16.3,19.6,25.3,70.8,79.6,70.7\r\nLower 95% CI 2010,2010,15.4,9.4,,28.8,12.9,,22.1,65.4,77.8,59.4\r\nUpper 95% CI 2010,2010,18.0,11.4,,31.8,15.3,,24.8,69.4,80.3,65.1\r\n"
+}
