@@ -109,7 +109,13 @@ code/downloaders/
     ├── mta_subway_hourly_ridership_downloader.py # Download MTA Subway Hourly Ridership dataset (CSV)
 ├── social_determinants_of_health
     ├── community_health_survey_downloader.py   # Download NYC Community Health Survey dataset (CSV)
-
+├── roadway_features
+    ├── roadway_features_orchestrator.py     # Orchestrates all downloads
+    ├── centerlines_downloader.py            # Download NYC Street Centerline dataset (CSV/GeoJSON)
+    ├── intersections_downloader.py          # Download Vision Zero Safety Improvement Projects – Intersections (CSV/GeoJSON)
+    ├── corridor_downloader.py               # Download Vision Zero Safety Improvement Projects – Corridors (CSV/GeoJSON)
+    ├── bus_lanes_downloader.py              # Download NYC DOT Bus Lanes dataset (CSV/GeoJSON)
+    ├── block_face_downloader.py             # Download TreesCount! 2015 Blockface Attributes (CSV)
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -399,6 +405,23 @@ python transit_ridership_orchestrator.py \
   --subway /custom/mta_subway_hourly_ridership.csv \
   --bus /custom/mta_bus_hourly_ridership.csv \
   --ferry /custom/nyc_ferry_ridership.csv
+```
+
+**Roadway Features Dataset:**
+The `roadway_features.py` script downloads and prepares roadway-related datasets, including the NYC Street Centerline, Vision Zero Safety Improvement Projects (Intersections and Corridors), DOT Bus Lanes, and TreesCount! Blockface attributes:
+
+```bash
+python roadway_features.py   # basic usage
+```
+
+Custom output paths:
+```bash
+python roadway_features.py \
+  --centerline /custom/path/centerline.csv \
+  --sip_intersections /custom/path/sip_intersections.csv \
+  --sip_corridors /custom/path/sip_corridors.csv \
+  --bus_lanes /custom/path/bus_lanes.csv \
+  --blockface /custom/path/blockface.csv
 ```
 
 ## Base Class Benefits
