@@ -116,6 +116,8 @@ code/downloaders/
     ├── bi_annual_pedestrian_counts_downloader.py    # Download NYC DOT Bi-Annual Pedestrian Counts dataset (CSV)
 ├── signal_timing_and_phasing
     ├── pedestrian_intervals.py            # Download Pedestrian Signal Intervals dataset (CSV)
+├── topography
+    ├── elevation_downloader.py       # Download Elevation dataset (CSV)
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -421,8 +423,21 @@ python bicycle_pedestrian_trip_counts.py \
   --bicycle_counts /custom/path/bicycle_counts.csv \
   --bicycle_counters /custom/path/bicycle_counters.csv \
   --bi_annual_pedestrian_counts /custom/path/pedestrian_counts.csv
-
 ```
+
+**Topography Dataset:**
+The `elevation_downloader.py` script downloads building elevation points from the NYC Planimetric Database:
+
+```bash
+python elevation_downloader.py    # basic usage
+```
+
+Custom output paths:
+```bash
+python elevation_downloader.py \
+  --output /custom/path/elevation_points.csv
+```
+
 
 ## Base Class Benefits
 
