@@ -442,7 +442,7 @@ python elevation_downloader.py \
 ```
 
 **Socioeconomic and Demographic Dataset:**
-Since one of the datasets is not in a csv form at first there is no orchestrator. There are two downloader files. 
+Since one of the datasets is not in a csv form at first there is no orchestrator. There are two downloader files that will download demographic, economic, social and housing profiles. 
 
 ```bash
 python demographic_downloader.py    # basic usage
