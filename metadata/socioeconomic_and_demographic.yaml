@@ -1,16 +1,26 @@
 dataset_id: "socioeconomic_and_demographic"
 name: "Socioeconomic and Demographic Profiles by NYC Neighborhood Tabulation Area (NTA)"
 description: >
-  This dataset combines four ACS-derived profile tables (Demographic, Economic, Housing, and Social Characteristics) 
-  with a Neighborhood Tabulation Area (NTA) source, processed into a single wide-format table. Each column is 
-  prefixed to preserve source grouping:
-    - demo__* : demographic indicators (population, age, sex, race/ethnicity)
-    - econ__* : economic indicators (income, poverty, labor force)
-    - housing__* : housing indicators (occupancy, tenure, rent burden)
-    - socio__* : social indicators (education, language, household composition)
+  This dataset integrates four ACS-derived profile tables (Demographic, Economic, Housing, and Social Characteristics) 
+  with official NTA geometries into a single wide-format dataset. The process goes beyond simple concatenation: 
+  each ACS source is transformed, pivoted, and then merged relationally to align attributes by NTA code and name.
 
-  NTA polygons are attached from the NYC Housing Database by 2020 NTA (`kyz5-72x5`), ensuring spatial context.  
-  This file provides a segment-level foundation for spatial and socioeconomic analysis across New York City.
+  **Transformations**  
+  - Each ACS source (demographic, economic, housing, social) is normalized into tidy long format, then pivoted wide 
+    so that each NTA has one row and each indicator becomes a column with a domain-specific prefix:
+      - demo__* : demographic indicators (population, age, sex, race/ethnicity)  
+      - econ__* : economic indicators (income, poverty, labor force)  
+      - housing__* : housing indicators (occupancy, tenure, rent burden)  
+      - socio__* : social indicators (education, language, household composition)  
+
+  - NTA identifiers (`NTA_code`, `NTA_name`, `NTA_full`, and a normalized key) ensure consistent alignment across sources.  
+  - A relational join (pandas `.merge()`) combines the four wide tables horizontally, keyed by NTA.  
+  - NTA polygons are then joined by `NTA_code` from the 2020 NTA geometry dataset (`kyz5-72x5`), ensuring spatial context.  
+
+  **Result**  
+  The final dataset provides one row per NTA, with hundreds of indicators grouped by domain and paired with 
+  official polygon geometries. This file serves as a foundation for neighborhood-level socioeconomic and 
+  equity analysis across New York City.
 
 source_organization:
   acs_profiles: "NYC Department of City Planning (DCP)"
