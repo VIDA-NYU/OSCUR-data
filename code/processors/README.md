@@ -21,6 +21,7 @@ code/processors/
 ├── public_open_spaces.py              # Post-processing Public Open Spaces dataset (CSV)
 ├── land_use.py                        # Post-processing Land Use dataset (CSV)
 ├── bicycle_counts.py                  # Post-processing Bicycle Pedestrian Trip Counts dataset (CSV)
+├── housing_density.py                 # Post-processing Housing Database dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
 ```
@@ -210,6 +211,17 @@ No postprocessing script is needed, as the original datasets are being preserved
 
 #### Topography 
 No postprocessing script is needed, as the original datasets are being preserved without any merging.
+
+#### Housing Density Dataset
+This script processes the NYC Department of City Planning (DCP) Housing Database by 2020 CDTA.  
+It calculates housing density by combining the reported total number of housing units (`cenunits20`) with polygon areas of each Community District Tabulation Area (CDTA).  
+The output includes units per acre and units per square mile, along with the original CDTA geometries.
+
+```bash
+python housing_density.py \
+  --input ../downloaders/data/housing_density/housing_database.csv \
+  --output ../processors/processed_data/housing_density_processed.csv
+```
 
 
 ### Other Datasets
