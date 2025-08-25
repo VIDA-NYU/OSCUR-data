@@ -2,7 +2,7 @@ dataset_id: "speed_distributions"
 name: "DOT Traffic Speeds (Northbound East River Crossings)"
 description: >
   This dataset provides traffic speed records collected by the NYC Department of Transportation (DOT) 
-  for northbound approaches to East River bridge crossings (NBE). It contains link-based travel speed 
+  for northbound approaches to NYC major arterials and highways within city bounds. It contains link-based travel speed 
   measurements reported in near real-time, which can be aggregated for analysis of congestion patterns, 
   travel time variability, and roadway performance.
 
@@ -32,7 +32,7 @@ access:
 spatial:
   geometry_type: "point (midpoint of link segment)"
   coordinate_system: "EPSG:4326"
-  coverage_area: "East River Bridge Crossings, NYC"
+  coverage_area: "NYC major arterials and highways"
 
 temporal:
   temporal_type:
