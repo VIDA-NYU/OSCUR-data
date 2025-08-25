@@ -150,6 +150,7 @@ python bike_routes_downloader.py -o data/bike_routes.csv
 python urban_design_frontage_downloader.py -o data/urban_design.csv
 python community_health_survey_downloader.py -o data/community_health_survey.csv
 python pedestrian_intervals.py -o data/pedestrian_intervals.csv
+python disadvantaged_communities_downloader.py -o data/dac_2023.csv
 ```
 With API token and custom timeout:
 ```bash
