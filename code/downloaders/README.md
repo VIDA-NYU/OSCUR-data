@@ -125,6 +125,11 @@ code/downloaders/
     ├── corridor_downloader.py               # Download Vision Zero Safety Improvement Projects – Corridors (CSV/GeoJSON)
     ├── bus_lanes_downloader.py              # Download NYC DOT Bus Lanes dataset (CSV/GeoJSON)
     ├── block_face_downloader.py             # Download TreesCount! 2015 Blockface Attributes (CSV)
+├── vehicle_volumes_and_types
+    ├── vehicle_volumes_and_types.py              # Orchestrates all downloads
+    ├── volume_counts_downloader.py               # Download Automated Traffic Volume Counts (ATR) dataset (CSV)
+    ├── classification_counts_downloader.py       # Download Vehicle Classification Counts (2011–2024) dataset (CSV)
+    ├── nyc_centerlines_downloader.py             # Download NYC Street Centerline dataset (CSV)
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -459,6 +464,22 @@ python roadway_features.py \
   --sip_corridors /custom/path/sip_corridors.csv \
   --bus_lanes /custom/path/bus_lanes.csv \
   --blockface /custom/path/blockface.csv
+```
+
+**Vehicle Volumes and Types:**
+The `vehicle_volumes_and_types.py` script downloads and integrates Automated Traffic counts, Vehicle Classification Counts, and NYC Street Centerline data.
+
+
+```bash
+python vehicle_volumes_and_types.py   # basic usage
+```
+
+Custom output paths:
+```bash
+python vehicle_volumes_and_types.py \
+  --atr_counts /custom/path/atr_counts.csv \
+  --vehicle_classification /custom/path/vehicle_classification.csv \
+  --centerline /custom/path/centerline.csv
 ```
 
 ## Base Class Benefits
