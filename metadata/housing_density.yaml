@@ -1,0 +1,64 @@
+dataset_id: "housing_density"
+name: "NYC Housing Units by Community District Tabulation Areas (CDTAs)"
+description: >
+  Net housing units and total residential stock by Community District Tabulation Areas (CDTAs) in New York City.  
+  The dataset originates from the NYC Department of City Planning (DCP) Housing Database, which tracks approved housing construction and demolition jobs since 2010, including new buildings, major alterations, and demolitions.
+
+  This processor calculates housing density by combining the reported total number of residential units (`cenunits20`) with CDTA polygon geometries.  
+  Housing density is derived as:
+  - Units per acre  
+  - Units per square mile  
+
+  No merging of external datasets was required. Only the housing database (CDTA) source was used, and polygons provided by DCP were used directly to compute land area.  
+  An orchestrator file was not required for this data element.
+
+source_organization:
+  dcp: "New York City Department of City Planning (DCP)"
+
+domain: "housing_and_employment_density"
+last_updated: "2025-08-25"
+update_frequency:
+  dcp: "Biannually"
+
+access:
+  primary_url: "https://data.cityofnewyork.us"
+  api_endpoint:
+    dcp: "https://data.cityofnewyork.us/resource/48dt-mn3z.csv"
+  license: "Open Data License"
+  file_format:
+    dcp: ["CSV", "Shapefile", "GeoJSON"]
+  rate_limits:
+    dcp: "Variable (Socrata API)"
+
+spatial:
+  geometry_type: "polygon"
+  coordinate_system: "EPSG:4326"
+  coverage_area: "NYC (Community District Tabulation Areas)"
+
+temporal:
+  temporal_type: "census baseline with updates"
+  temporal_resolution: "biannual updates"
+  time_column: null
+
+implementation:
+  downloader_module: "downloaders.housing_density.housing_database_downloader"
+  orchestrator_downloader: null
+  processor_module: "processors.housing_density"
+  example_notebook: "examples/housing_density.ipynb"
+
+integration_opportunities:
+  spatial_joins:
+    - "Overlay with population datasets for persons-per-unit analysis"
+    - "Align with employment datasets for jobs-housing balance studies"
+    - "Combine with transit access or zoning datasets for planning scenarios"
+  temporal_alignment:
+    - "Track housing growth trends across CDTAs since 2010"
+    - "Compare density changes with policy interventions or rezonings"
+
+map_algebra:
+  raster_conversion:
+    suitable_for_rasterization: true
+    recommended_cell_size: "50 meters"
+    interpolation_method: "polygon-to-grid (aggregate housing density)"
+
+data_name: "housing_density"
