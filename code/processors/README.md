@@ -21,6 +21,7 @@ code/processors/
 ├── public_open_spaces.py              # Post-processing Public Open Spaces dataset (CSV)
 ├── land_use.py                        # Post-processing Land Use dataset (CSV)
 ├── bicycle_counts.py                  # Post-processing Bicycle Pedestrian Trip Counts dataset (CSV)
+├── socioeconomic_and_demographic.py   # Post-processing Socioeconomic and Demographics dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
 ```
@@ -210,6 +211,19 @@ No postprocessing script is needed, as the original datasets are being preserved
 
 #### Topography 
 No postprocessing script is needed, as the original datasets are being preserved without any merging.
+
+#### Socio Economic and Demographics Dataset
+This script processes raw or tidy ACS profile tables (demographics, economics, housing, and social characteristics) at the Neighborhood Tabulation Area (NTA) level.
+
+```bash
+ python socioeconomic_and_demographic.py \
+  --demo    ../downloaders/data/socioeconomic_and_demographic/nta_profiles/acs_demo_08to12_ntas.csv \
+  --econ    ../downloaders/data/socioeconomic_and_demographic/nta_profiles/acs_select_econ_08to12_ntas.csv \
+  --housing ../downloaders/data/socioeconomic_and_demographic/nta_profiles/acs_select_housing_08to12_ntas.csv \
+  --socio   ../downloaders/data/socioeconomic_and_demographic/nta_profiles/acs_socio_08to12_ntas.csv \
+  --nta_geo ../downloaders/data/socioeconomic_and_demographic/nta_population.csv \
+  --out     ../processors/processed_data/socioeconomic_and_demographic/acs_nta_all_wide.csv
+```
 
 
 ### Other Datasets
