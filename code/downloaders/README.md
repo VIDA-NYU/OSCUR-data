@@ -118,6 +118,8 @@ code/downloaders/
     ├── pedestrian_intervals.py            # Download Pedestrian Signal Intervals dataset (CSV)
 ├── topography
     ├── elevation_downloader.py       # Download Elevation dataset (CSV)
+├── housing_density
+    ├── housing_database_downloader.py       # Download Housing Database dataset (CSV)
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -150,6 +152,7 @@ python bike_routes_downloader.py -o data/bike_routes.csv
 python urban_design_frontage_downloader.py -o data/urban_design.csv
 python community_health_survey_downloader.py -o data/community_health_survey.csv
 python pedestrian_intervals.py -o data/pedestrian_intervals.csv
+python housing_database_downloader.py -o data/housing_database.csv
 ```
 With API token and custom timeout:
 ```bash
