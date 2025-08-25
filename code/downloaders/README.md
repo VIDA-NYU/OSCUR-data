@@ -118,6 +118,9 @@ code/downloaders/
     ├── pedestrian_intervals.py            # Download Pedestrian Signal Intervals dataset (CSV)
 ├── topography
     ├── elevation_downloader.py       # Download Elevation dataset (CSV)
+├── socioeconomic_and_demographic
+    ├── demographic_downloader.py             # Download ACS NTA Profile tables (Demographic / Economic / Housing / Social)
+    ├── nta_population_downloader.py          # Download NTA population + polygon attributes (geometry, codes, names)
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -436,6 +439,27 @@ Custom output paths:
 ```bash
 python elevation_downloader.py \
   --output /custom/path/elevation_points.csv
+```
+
+**Socioeconomic and Demographic Dataset:**
+Since one of the datasets is not in a csv form at first there is no orchestrator. There are two downloader files. 
+
+```bash
+python demographic_downloader.py    # basic usage
+python nta_population_downloader.py    # basic usage
+```
+
+Custom output paths:
+```bash
+python demographics_downloader.py \
+  --url "URL HERE" \
+  --outdir /custom/output/folder/nta_profiles.csv
+```
+
+Custom output paths:
+```bash
+python nta_population_downloader.py \
+  --output /custom/path/nta_population.csv
 ```
 
 
