@@ -1,0 +1,63 @@
+dataset_id: "environmental_justice"
+name: "Final Disadvantaged Communities (DAC) 2023 — NYC Subset"
+description: >
+  New York State’s 2023 Disadvantaged Communities (DAC) polygons as designated by the
+  Climate Justice Working Group (CJWG). Polygons represent census tracts meeting
+  environmental burden and socioeconomic criteria. This repository ingests the
+  state-published table from data.ny.gov and **does not merge it with any other
+  dataset**. A simple processor filters the statewide file to **only include
+  New York City records** (based on the REDC/region fields) and exports the result.
+
+source_organization:
+  nys_cjwg_nyserda: "New York State Climate Justice Working Group (CJWG) / NYSERDA"
+
+domain: "environmental_justice"
+last_updated: "2023-01-01"
+update_frequency:
+  nys_cjwg_nyserda: "Occasional (upon state release/update)"
+
+access:
+  primary_url: "https://data.ny.gov/Energy-Environment/Final-Disadvantaged-Communities-DAC-2023/2e6c-s6fp"
+  api_endpoint:
+    nys_cjwg_nyserda: "https://data.ny.gov/resource/2e6c-s6fp.csv"
+  license: "New York State Open Data License"
+  file_format:
+    nys_cjwg_nyserda: ["CSV", "GeoJSON"]
+  rate_limits:
+    nys_cjwg_nyserda: "Variable (Socrata API)"
+
+spatial:
+  geometry_type: "polygon"
+  coordinate_system: "EPSG:4326"
+  coverage_area: "NYC subset filtered from statewide DAC polygons"
+
+temporal:
+  temporal_type: "designation year"
+  temporal_resolution: "static (2023 release)"
+  time_column: null
+
+implementation:
+  downloader_module: "downloaders.environmental_justice.disadvantaged_communities_downloader"
+  processor_module: "processors.environmental_justice"
+  example_notebook: "examples/environmental_justice.ipynb"
+
+processing_notes:
+  - "No merges performed."
+  - "Processor filters statewide DAC to New York City only (e.g., REDC == 'New York City')."
+  - "Outputs written as both CSV (with WKT geometry) and GeoJSON."
+
+integration_opportunities:
+  spatial_joins:
+    - "Join to census tracts (GEOID) for demographic enrichment."
+    - "Overlay with crash, emissions, freight routes, or facility locations."
+    - "Intersect with transit access, sidewalk/curb data, or health indicators."
+  temporal_alignment:
+    - "Compare against prior/future DAC releases when available."
+
+map_algebra:
+  raster_conversion:
+    suitable_for_rasterization: true
+    recommended_cell_size: "50–100 meters"
+    interpolation_method: "None (categorical polygons)"
+
+data_name: "environmental_justice"
