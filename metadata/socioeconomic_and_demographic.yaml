@@ -1,0 +1,77 @@
+dataset_id: "socioeconomic_and_demographic"
+name: "Socioeconomic and Demographic Profiles by NYC Neighborhood Tabulation Area (NTA)"
+description: >
+  This dataset combines four ACS-derived profile tables (Demographic, Economic, Housing, and Social Characteristics) 
+  with a Neighborhood Tabulation Area (NTA) source, processed into a single wide-format table. Each column is 
+  prefixed to preserve source grouping:
+    - demo__* : demographic indicators (population, age, sex, race/ethnicity)
+    - econ__* : economic indicators (income, poverty, labor force)
+    - housing__* : housing indicators (occupancy, tenure, rent burden)
+    - socio__* : social indicators (education, language, household composition)
+
+  NTA polygons are attached from the NYC Housing Database by 2020 NTA (`kyz5-72x5`), ensuring spatial context.  
+  This file provides a segment-level foundation for spatial and socioeconomic analysis across New York City.
+
+source_organization:
+  acs_profiles: "NYC Department of City Planning (DCP)"
+  nta_geometries: "NYC Department of City Planning (DCP)"
+
+domain: "socioeconomic_and_demographic"
+last_updated: "2025-08-24"
+update_frequency:
+  acs_profiles: "Annually"
+  nta_geometries: "Occasionally"
+
+access:
+  primary_url: "https://data.cityofnewyork.us"
+  api_endpoint:
+    acs_profiles: "https://data.cityofnewyork.us/City-Government/Demographic-Social-Economic-and-Housing-Profiles-b/kvuc-fg9b"
+    nta_geometries: "https://data.cityofnewyork.us/Housing-Development/Housing-Database-by-2020-NTA/kyz5-72x5"
+  license: "Open Data License"
+  file_format:
+    acs_profiles: ["CSV", "XLSX"]
+    nta_geometries: ["CSV"]
+  rate_limits:
+    acs_profiles: "Unknown"
+    nta_geometries: "Unknown"
+
+spatial:
+  geometry_type: "polygon (NTA boundaries)"
+  coordinate_system: "EPSG:4326"
+  coverage_area: "NYC"
+
+temporal:
+  temporal_type:
+    acs_profiles: "ACS 5-year estimate period"
+    nta_geometries: "static snapshot"
+  temporal_resolution:
+    acs_profiles: "5-year rolling"
+    nta_geometries: "static"
+  time_column:
+    acs_profiles: "survey_period"
+    nta_geometries: null
+
+implementation:
+  downloader_module:
+    acs_profiles: "downloaders.socioeconomic_and_demographic.nta_population_downloader"
+    nta_geometries: "downloaders.socioeconomic_and_demographic.demographic_downloader"
+  orchestrator_downloader: null
+  processor_module: "processors.socioeconomic_and_demographic"
+  example_notebook: "examples/socioeconomic_and_demographic.ipynb"
+
+integration_opportunities:
+  spatial_joins:
+    - "Link with health, environment, and transportation indicators for equity analysis"
+    - "Overlay with crash or crime data to explore correlations with demographics"
+    - "Join to infrastructure layers (curbs, sidewalks, transit stops) for accessibility studies"
+  temporal_alignment:
+    - "Compare ACS periods to track neighborhood change over time"
+    - "Align with zoning or development timelines for planning analyses"
+
+map_algebra:
+  raster_conversion:
+    suitable_for_rasterization: true
+    recommended_cell_size: "100 meters"
+    interpolation_method: "choropleth-style categorical/continuous rendering by polygon"
+
+data_name: "socioeconomic_and_demographic"
