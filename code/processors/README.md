@@ -21,6 +21,7 @@ code/processors/
 ├── public_open_spaces.py              # Post-processing Public Open Spaces dataset (CSV)
 ├── land_use.py                        # Post-processing Land Use dataset (CSV)
 ├── bicycle_counts.py                  # Post-processing Bicycle Pedestrian Trip Counts dataset (CSV)
+├── environmental_justice.py           # Post-processing Environmental Justice dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
 ```
@@ -210,6 +211,14 @@ No postprocessing script is needed, as the original datasets are being preserved
 
 #### Topography 
 No postprocessing script is needed, as the original datasets are being preserved without any merging.
+
+#### Environmental Justice Dataset
+
+This script will only take the communities that are labaled New York City from data from all of New York State.
+```bash
+python environmental_justice.py \
+  --dac ../downloaders/data/environmental_justice/dac_2023_nyc_final.csv \
+```
 
 
 ### Other Datasets
