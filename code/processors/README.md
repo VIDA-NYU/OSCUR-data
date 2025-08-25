@@ -190,8 +190,7 @@ python code/processors/land_use.py \
 No postprocessing script is needed, as the original datasets are being preserved without any merging.
 
 #### Vehicle Volumes and Types Dataset
-
-This script processes the raw datasets for Automated Traffic Volume Counts (ATR), Vehicle Classification Counts (2011–2024), and the NYC Street Centerline, merging them into a single location-aware dataset keyed by `PHYSICALID`.
+This script processes the raw datasets for Automated Traffic Volume Counts (ATR), Vehicle Classification Counts (2011–2024), and the NYC Street Centerline, merging them into a single location-aware dataset keyed by `PHYSICALID`. Classification counts are joined directly to centerline segments using the SegmentID ↔ PHYSICALID relationship, while ATR point counts are snapped to the nearest centerline segment within a 120-foot search radius using spatial nearest-neighbor matching.
 ```bash
 python merge_counts_with_centerline.py \
   --classification ../downloaders/data/vehicle_volumes_and_types/vehicle_classification_counts_2011_2024.csv \
