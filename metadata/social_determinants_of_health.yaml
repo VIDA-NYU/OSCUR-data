@@ -1,0 +1,65 @@
+dataset_id: "social_determinants_of_health"
+name: "New York City Community Health Survey (CHS)"
+description: >
+  There was no merging or post processing. The Community Health Survey (CHS) is an annual, population-based telephone survey
+  conducted by the NYC Department of Health and Mental Hygiene (DOHMH). It captures
+  health behaviors, access to care, chronic conditions, and other indicators that
+  relate to social determinants of health across New York City.
+
+  This repository ingests the raw CHS table directly from NYC Open Data with **no additional
+  processing**. The download preserves the original columns as published by DOHMH so that
+  analysts can filter, aggregate, and join to other geographies as needed.
+
+source_organization:
+  chs: "NYC Department of Health and Mental Hygiene (DOHMH)"
+
+domain: "social_determinants_of_health"
+last_updated: "2025-08-17"
+update_frequency:
+  chs: "Annually"
+
+access:
+  primary_url: "https://data.cityofnewyork.us"
+  api_endpoint:
+    chs: "https://data.cityofnewyork.us/resource/csut-3wpr.json"
+  license: "Open Data License"
+  file_format:
+    chs: ["CSV", "JSON"]
+  rate_limits:
+    chs: "Unknown"
+
+spatial:
+  geometry_type: null
+  coordinate_system: "N/A"
+  coverage_area: null
+temporal:
+  temporal_type:
+    chs: "survey year"
+  temporal_resolution:
+    chs: "annual"
+  time_column:
+    chs: "year"
+
+implementation:
+  downloader_module:
+    chs: "downloaders.social_determinants_of_health.community_health_survey_downloader"
+  orchestrator_downloader: null
+  processor_module: null
+  example_notebook: "examples/social_determinants_of_health.ipynb"
+
+integration_opportunities:
+  spatial_joins:
+    - "Join to neighborhood or tract lookups using provided geography codes"
+    - "Combine with environmental exposure, transportation access, or housing indicators"
+    - "Link to equity frameworks for SDOH analyses"
+  temporal_alignment:
+    - "Compare indicators across survey years for trend analysis"
+    - "Align with policy or program timelines for evaluation"
+
+map_algebra:
+  raster_conversion:
+    suitable_for_rasterization: false
+    recommended_cell_size: null
+    interpolation_method: null
+
+data_name: "community_health_survey"

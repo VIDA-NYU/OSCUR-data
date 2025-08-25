@@ -1,0 +1,64 @@
+dataset_id: "signal_timing_and_phasing"
+name: "Vision Zero Leading Pedestrian Intervals (LPI)"
+description: >
+  A dataset of New York City intersections where Leading Pedestrian Intervals (LPIs) have been
+  implemented as part of the Vision Zero program. Each record represents a signalized
+  intersection with geometry, intersection name, borough, and LPI installation details.
+  LPIs provide pedestrians with a head start when crossing the street before vehicles
+  receive a green signal. This file needed no post processing.
+
+source_organization:
+  leading_pedestrian_intervals: "New York City Department of Transportation (NYC DOT)"
+
+domain: "transportation"
+last_updated: "2025-07-01"
+update_frequency:
+  leading_pedestrian_intervals: "Periodic (as projects are completed)"
+
+access:
+  primary_url: "https://data.cityofnewyork.us/Transportation/VZV_Leading-Pedestrian-Intervals/xc4v-ntf4"
+  api_endpoint:
+    leading_pedestrian_intervals: "https://data.cityofnewyork.us/resource/xc4v-ntf4.json"
+  license: "Open Data License"
+  file_format:
+    leading_pedestrian_intervals: ["CSV", "JSON", "Shapefile"]
+  rate_limits:
+    leading_pedestrian_intervals: "Unknown"
+
+spatial:
+  geometry_type: "point"
+  coordinate_system: "EPSG:4326"
+  coverage_area: "NYC"
+
+temporal:
+  temporal_type:
+    leading_pedestrian_intervals: "infrastructure installation"
+  temporal_resolution:
+    leading_pedestrian_intervals: "irregular (based on installation schedule)"
+  time_column:
+    leading_pedestrian_intervals: "date_inst"
+
+implementation:
+  downloader_module:
+    leading_pedestrian_intervals: "downloaders.signal_timing_and_phasing.pedestrian_intervals"
+  processor_module: null
+  example_notebook: "examples/signal_timing_and_phasing.ipynb"
+
+integration_opportunities:
+  spatial_joins:
+    - "street centerlines"
+    - "pedestrian crash locations"
+    - "priority corridors"
+    - "school zones"
+    - "bike lane infrastructure"
+  temporal_alignment:
+    - "crash data timelines"
+    - "Vision Zero project milestones"
+
+map_algebra:
+  raster_conversion:
+    suitable_for_rasterization: true
+    recommended_cell_size: "10 meters"
+    interpolation_method: "point density (count per area)"
+
+data_name: "signal_timing_and_phasing"

@@ -1,0 +1,60 @@
+dataset_id: "topography"
+name: "NYC Topography (Building Elevation Points)"
+description: >
+  Elevation points captured for all building footprint features in New York City.
+  This dataset is part of the NYC Planimetric Database and provides elevation values
+  associated with individual building footprints. Each record includes coordinates
+  and elevation attributes, enabling terrain and built environment analysis at
+  fine spatial resolution.
+
+  The dataset already contains geospatial point coordinates, so no processor was needed.
+  Data was ingested directly after download.
+
+source_organization:
+  nyc_dot: "New York City Department of Transportation (NYC DOT)"
+
+domain: "environment"
+last_updated: "2024-07-01"
+update_frequency:
+  nyc_dot: "Irregular (as part of Planimetric Database updates)"
+
+access:
+  primary_url: "https://data.cityofnewyork.us/Transportation/NYC-Planimetric-Database-Elevation-Points/9uxf-ng6q"
+  api_endpoint:
+    nyc_dot: "https://data.cityofnewyork.us/api/views/9uxf-ng6q/rows.csv?$accessType=DOWNLOAD"
+  license: "Open Data License"
+  file_format:
+    nyc_dot: ["CSV"]
+  rate_limits:
+    nyc_dot: "Variable (Socrata API)"
+
+spatial:
+  geometry_type: "point"
+  coordinate_system: "EPSG:4326"
+  coverage_area: "NYC"
+
+temporal:
+  temporal_type: "static survey"
+  temporal_resolution: "building-level"
+  time_column: null
+
+implementation:
+  downloader_module:
+    nyc_dot: "downloaders.elevation_downloader"
+  processor_module: null
+  example_notebook: "examples/topography.ipynb"
+
+integration_opportunities:
+  spatial_joins:
+    - "Building footprints for 3D modeling"
+    - "Sidewalk and curb infrastructure for slope analysis"
+    - "Floodplain and resilience planning"
+  temporal_alignment: []
+
+map_algebra:
+  raster_conversion:
+    suitable_for_rasterization: true
+    recommended_cell_size: "10 meters"
+    interpolation_method: "point elevation interpolation (e.g., IDW, kriging)"
+
+data_name: "topography"
