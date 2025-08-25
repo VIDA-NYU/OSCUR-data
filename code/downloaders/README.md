@@ -109,6 +109,15 @@ code/downloaders/
     ├── mta_subway_hourly_ridership_downloader.py # Download MTA Subway Hourly Ridership dataset (CSV)
 ├── social_determinants_of_health
     ├── community_health_survey_downloader.py   # Download NYC Community Health Survey dataset (CSV)
+├── bicycle_pedestrian_trip_counts
+    ├── bicycle_pedestrian_trip_counts.py            # Orchestrates all downloads
+    ├── bicycle_counts_downloader.py                 # Download NYC DOT Bicycle Counts dataset (CSV)
+    ├── bicycle_counters_downloader.py               # Download NYC DOT Bicycle Counters dataset (CSV)
+    ├── bi_annual_pedestrian_counts_downloader.py    # Download NYC DOT Bi-Annual Pedestrian Counts dataset (CSV)
+├── signal_timing_and_phasing
+    ├── pedestrian_intervals.py            # Download Pedestrian Signal Intervals dataset (CSV)
+├── topography
+    ├── elevation_downloader.py       # Download Elevation dataset (CSV)
 ├── roadway_features
     ├── roadway_features_orchestrator.py     # Orchestrates all downloads
     ├── centerlines_downloader.py            # Download NYC Street Centerline dataset (CSV/GeoJSON)
@@ -147,6 +156,7 @@ python designed_goods_movement_routes/truck_routes.py --output data/designed_goo
 python bike_routes_downloader.py -o data/bike_routes.csv
 python urban_design_frontage_downloader.py -o data/urban_design.csv
 python community_health_survey_downloader.py -o data/community_health_survey.csv
+python pedestrian_intervals.py -o data/pedestrian_intervals.csv
 ```
 With API token and custom timeout:
 ```bash
@@ -391,7 +401,6 @@ python land_use.py \
   --historic_land_use /custom/path/historic_land_use.csv
 ```
 
-
 **Transit Ridership:**
 The `transit_ridership_orchestrator.py` script downloads bus, subway and ferry data:
 
@@ -405,6 +414,34 @@ python transit_ridership_orchestrator.py \
   --subway /custom/mta_subway_hourly_ridership.csv \
   --bus /custom/mta_bus_hourly_ridership.csv \
   --ferry /custom/nyc_ferry_ridership.csv
+```
+
+**Bicycle Pedestrian Trip Counts Dataset:**
+The `bicycle_pedestrian_trip_counts.py` script orchestrates downloads for bicycle and pedestrian volume datasets from NYC DOT. These include manual/automated bicycle counts, continuous counter data, and semiannual pedestrian counts.
+
+```bash
+python bicycle_pedestrian_trip_counts.py   # basic usage
+```
+
+Custom output paths:
+```bash
+python bicycle_pedestrian_trip_counts.py \
+  --bicycle_counts /custom/path/bicycle_counts.csv \
+  --bicycle_counters /custom/path/bicycle_counters.csv \
+  --bi_annual_pedestrian_counts /custom/path/pedestrian_counts.csv
+```
+
+**Topography Dataset:**
+The `elevation_downloader.py` script downloads building elevation points from the NYC Planimetric Database:
+
+```bash
+python elevation_downloader.py    # basic usage
+```
+
+Custom output paths:
+```bash
+python elevation_downloader.py \
+  --output /custom/path/elevation_points.csv
 ```
 
 **Roadway Features Dataset:**
