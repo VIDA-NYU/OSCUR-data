@@ -130,6 +130,8 @@ code/downloaders/
     ├── volume_counts_downloader.py               # Download Automated Traffic Volume Counts (ATR) dataset (CSV)
     ├── classification_counts_downloader.py       # Download Vehicle Classification Counts (2011–2024) dataset (CSV)
     ├── nyc_centerlines_downloader.py             # Download NYC Street Centerline dataset (CSV)
+├── speed_distributions
+    ├── traffic_speeds.py                       # Download Traffic Speeds dataset (CSV)
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -162,6 +164,7 @@ python bike_routes_downloader.py -o data/bike_routes.csv
 python urban_design_frontage_downloader.py -o data/urban_design.csv
 python community_health_survey_downloader.py -o data/community_health_survey.csv
 python pedestrian_intervals.py -o data/pedestrian_intervals.csv
+python traffic_speeds.py -o data/traffic_speeds.csv
 ```
 With API token and custom timeout:
 ```bash

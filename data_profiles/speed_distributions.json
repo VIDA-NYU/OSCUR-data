@@ -1,0 +1,1374 @@
+{
+  "nb_rows": 1000000,
+  "nb_profiled_rows": 1000000,
+  "nb_columns": 15,
+  "columns": [
+    {
+      "name": "id",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/identifier"
+      ],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 124,
+      "mean": 285.969068,
+      "stddev": 118.0141294980827,
+      "coverage": [
+        {
+          "range": {
+            "gte": 3.0,
+            "lte": 221.0
+          }
+        },
+        {
+          "range": {
+            "gte": 258.0,
+            "lte": 351.0
+          }
+        },
+        {
+          "range": {
+            "gte": 369.0,
+            "lte": 450.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 32328,
+            "bin_start": 1.0,
+            "bin_end": 46.2
+          },
+          {
+            "count": 0,
+            "bin_start": 46.2,
+            "bin_end": 91.4
+          },
+          {
+            "count": 40328,
+            "bin_start": 91.4,
+            "bin_end": 136.60000000000002
+          },
+          {
+            "count": 177639,
+            "bin_start": 136.60000000000002,
+            "bin_end": 181.8
+          },
+          {
+            "count": 153180,
+            "bin_start": 181.8,
+            "bin_end": 227.0
+          },
+          {
+            "count": 64530,
+            "bin_start": 227.0,
+            "bin_end": 272.20000000000005
+          },
+          {
+            "count": 32229,
+            "bin_start": 272.20000000000005,
+            "bin_end": 317.40000000000003
+          },
+          {
+            "count": 136630,
+            "bin_start": 317.40000000000003,
+            "bin_end": 362.6
+          },
+          {
+            "count": 177459,
+            "bin_start": 362.6,
+            "bin_end": 407.8
+          },
+          {
+            "count": 185677,
+            "bin_start": 407.8,
+            "bin_end": 453.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "speed",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "mean": 29.038381639993315,
+      "stddev": 21.379219338379347,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 15.53
+          }
+        },
+        {
+          "range": {
+            "gte": 18.01,
+            "lte": 39.76
+          }
+        },
+        {
+          "range": {
+            "gte": 42.25,
+            "lte": 61.51
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 281873,
+            "bin_start": 0.0,
+            "bin_end": 9.631
+          },
+          {
+            "count": 101225,
+            "bin_start": 9.631,
+            "bin_end": 19.262
+          },
+          {
+            "count": 87040,
+            "bin_start": 19.262,
+            "bin_end": 28.893
+          },
+          {
+            "count": 111772,
+            "bin_start": 28.893,
+            "bin_end": 38.524
+          },
+          {
+            "count": 157319,
+            "bin_start": 38.524,
+            "bin_end": 48.155
+          },
+          {
+            "count": 198584,
+            "bin_start": 48.155,
+            "bin_end": 57.786
+          },
+          {
+            "count": 61334,
+            "bin_start": 57.786,
+            "bin_end": 67.417
+          },
+          {
+            "count": 800,
+            "bin_start": 67.417,
+            "bin_end": 77.048
+          },
+          {
+            "count": 33,
+            "bin_start": 77.048,
+            "bin_end": 86.679
+          },
+          {
+            "count": 20,
+            "bin_start": 86.679,
+            "bin_end": 96.31
+          }
+        ]
+      }
+    },
+    {
+      "name": "travel_time",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 5305,
+      "mean": 247.983795,
+      "stddev": 458.3247022918416,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 430.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 948359,
+            "bin_start": -37.0,
+            "bin_end": 939.7
+          },
+          {
+            "count": 37742,
+            "bin_start": 939.7,
+            "bin_end": 1916.4
+          },
+          {
+            "count": 7855,
+            "bin_start": 1916.4,
+            "bin_end": 2893.1000000000004
+          },
+          {
+            "count": 3380,
+            "bin_start": 2893.1000000000004,
+            "bin_end": 3869.8
+          },
+          {
+            "count": 1549,
+            "bin_start": 3869.8,
+            "bin_end": 4846.5
+          },
+          {
+            "count": 627,
+            "bin_start": 4846.5,
+            "bin_end": 5823.200000000001
+          },
+          {
+            "count": 246,
+            "bin_start": 5823.200000000001,
+            "bin_end": 6799.900000000001
+          },
+          {
+            "count": 153,
+            "bin_start": 6799.900000000001,
+            "bin_end": 7776.6
+          },
+          {
+            "count": 71,
+            "bin_start": 7776.6,
+            "bin_end": 8753.300000000001
+          },
+          {
+            "count": 18,
+            "bin_start": 8753.300000000001,
+            "bin_end": 9730.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "status",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 2,
+      "mean": -27.472202,
+      "stddev": 44.94408213881985,
+      "coverage": [
+        {
+          "range": {
+            "gte": -101.0,
+            "lte": -101.0
+          }
+        },
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 272002,
+            "bin_start": -101.0,
+            "bin_end": -90.9
+          },
+          {
+            "count": 0,
+            "bin_start": -90.9,
+            "bin_end": -80.8
+          },
+          {
+            "count": 0,
+            "bin_start": -80.8,
+            "bin_end": -70.7
+          },
+          {
+            "count": 0,
+            "bin_start": -70.7,
+            "bin_end": -60.6
+          },
+          {
+            "count": 0,
+            "bin_start": -60.6,
+            "bin_end": -50.5
+          },
+          {
+            "count": 0,
+            "bin_start": -50.5,
+            "bin_end": -40.400000000000006
+          },
+          {
+            "count": 0,
+            "bin_start": -40.400000000000006,
+            "bin_end": -30.299999999999997
+          },
+          {
+            "count": 0,
+            "bin_start": -30.299999999999997,
+            "bin_end": -20.200000000000003
+          },
+          {
+            "count": 0,
+            "bin_start": -20.200000000000003,
+            "bin_end": -10.100000000000009
+          },
+          {
+            "count": 727998,
+            "bin_start": -10.100000000000009,
+            "bin_end": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "data_as_of",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration",
+        "http://schema.org/DateTime"
+      ],
+      "num_distinct_values": 51001,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "2025-08-13T18:03:03.000",
+            "count": 94
+          },
+          {
+            "bin": "2025-08-13T18:28:03.000",
+            "count": 94
+          },
+          {
+            "bin": "2025-08-13T19:08:03.000",
+            "count": 93
+          },
+          {
+            "bin": "2025-08-13T19:33:03.000",
+            "count": 93
+          },
+          {
+            "bin": "2025-08-14T20:53:03.000",
+            "count": 93
+          }
+        ]
+      }
+    },
+    {
+      "name": "link_id",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/identifier"
+      ],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 124,
+      "mean": 4572835.626623,
+      "stddev": 95513.67436476216,
+      "coverage": [
+        {
+          "range": {
+            "gte": 4329473.0,
+            "lte": 4456510.0
+          }
+        },
+        {
+          "range": {
+            "gte": 4616195.0,
+            "lte": 4620315.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 88076,
+            "bin_start": 4329472.0,
+            "bin_end": 4372890.5
+          },
+          {
+            "count": 0,
+            "bin_start": 4372890.5,
+            "bin_end": 4416309.0
+          },
+          {
+            "count": 152821,
+            "bin_start": 4416309.0,
+            "bin_end": 4459727.5
+          },
+          {
+            "count": 0,
+            "bin_start": 4459727.5,
+            "bin_end": 4503146.0
+          },
+          {
+            "count": 0,
+            "bin_start": 4503146.0,
+            "bin_end": 4546564.5
+          },
+          {
+            "count": 8042,
+            "bin_start": 4546564.5,
+            "bin_end": 4589983.0
+          },
+          {
+            "count": 718897,
+            "bin_start": 4589983.0,
+            "bin_end": 4633401.5
+          },
+          {
+            "count": 0,
+            "bin_start": 4633401.5,
+            "bin_end": 4676820.0
+          },
+          {
+            "count": 0,
+            "bin_start": 4676820.0,
+            "bin_end": 4720238.5
+          },
+          {
+            "count": 32164,
+            "bin_start": 4720238.5,
+            "bin_end": 4763657.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "link_points",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "40",
+            "count": 10781618
+          },
+          {
+            "bin": "73",
+            "count": 7254335
+          },
+          {
+            "bin": "74",
+            "count": 3205062
+          },
+          {
+            "bin": "7",
+            "count": 88721
+          },
+          {
+            "bin": "836211",
+            "count": 32247
+          }
+        ]
+      }
+    },
+    {
+      "name": "encoded_poly_line",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 992,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "_ugxFlptaMlJj@bY[rKeAdKgBdOgDnR}A",
+            "count": 8082
+          },
+          {
+            "bin": "at{vFvzrcMbQsVlP{UjCkFbBsFxAkJ\\{HKiS",
+            "count": 8082
+          },
+          {
+            "bin": "mmdxFjq{aM}Bm\\aBwUa@sIeB_\\qCq`@sB{Y",
+            "count": 8082
+          },
+          {
+            "bin": "w`exF~xvaMmBaSkCiSw@iLScPW}Hy@eH_BmHcDeIaIaO{DwHyBiG_CsF_C{BmDuAgDIcC`@gDbAgCZ",
+            "count": 8082
+          },
+          {
+            "bin": "ys{vFrzrcM{LzRuRdf@sAvEQv@[lB",
+            "count": 8082
+          }
+        ]
+      }
+    },
+    {
+      "name": "encoded_poly_line_lvls",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 39,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "BBBBBBB",
+            "count": 72697
+          },
+          {
+            "bin": "BBBBBBBBB",
+            "count": 64571
+          },
+          {
+            "bin": "BBBBBBBBBB",
+            "count": 64512
+          },
+          {
+            "bin": "BBBBBBBBBBBBBB",
+            "count": 64465
+          },
+          {
+            "bin": "BBBBBBBBBBBBBBB",
+            "count": 64445
+          }
+        ]
+      }
+    },
+    {
+      "name": "owner",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 7,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "MTA Bridges & Tunnels",
+            "count": 72410
+          },
+          {
+            "bin": "NYC_DOT_LIC",
+            "count": 783205
+          },
+          {
+            "bin": "PA -Lincoln Tunnel",
+            "count": 32156
+          },
+          {
+            "bin": "PA-GWBridge",
+            "count": 40190
+          },
+          {
+            "bin": "Verrazano-Narrows-Bridge",
+            "count": 32164
+          }
+        ]
+      }
+    },
+    {
+      "name": "transcom_id",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/identifier"
+      ],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 124,
+      "mean": 4572835.626623,
+      "stddev": 95513.67436476216,
+      "coverage": [
+        {
+          "range": {
+            "gte": 4329473.0,
+            "lte": 4456510.0
+          }
+        },
+        {
+          "range": {
+            "gte": 4616195.0,
+            "lte": 4620315.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 88076,
+            "bin_start": 4329472.0,
+            "bin_end": 4372890.5
+          },
+          {
+            "count": 0,
+            "bin_start": 4372890.5,
+            "bin_end": 4416309.0
+          },
+          {
+            "count": 152821,
+            "bin_start": 4416309.0,
+            "bin_end": 4459727.5
+          },
+          {
+            "count": 0,
+            "bin_start": 4459727.5,
+            "bin_end": 4503146.0
+          },
+          {
+            "count": 0,
+            "bin_start": 4503146.0,
+            "bin_end": 4546564.5
+          },
+          {
+            "count": 8042,
+            "bin_start": 4546564.5,
+            "bin_end": 4589983.0
+          },
+          {
+            "count": 718897,
+            "bin_start": 4589983.0,
+            "bin_end": 4633401.5
+          },
+          {
+            "count": 0,
+            "bin_start": 4633401.5,
+            "bin_end": 4676820.0
+          },
+          {
+            "count": 0,
+            "bin_start": 4676820.0,
+            "bin_end": 4720238.5
+          },
+          {
+            "count": 32164,
+            "bin_start": 4720238.5,
+            "bin_end": 4763657.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "borough",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 5,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Bronx",
+            "count": 193583
+          },
+          {
+            "bin": "Brooklyn",
+            "count": 96820
+          },
+          {
+            "bin": "Manhattan",
+            "count": 209664
+          },
+          {
+            "bin": "Queens",
+            "count": 297926
+          },
+          {
+            "bin": "Staten Island",
+            "count": 202007
+          }
+        ]
+      }
+    },
+    {
+      "name": "link_name",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "s",
+            "count": 435683
+          },
+          {
+            "bin": "avenue",
+            "count": 420176
+          },
+          {
+            "bin": "n",
+            "count": 387396
+          },
+          {
+            "bin": "ave",
+            "count": 274440
+          },
+          {
+            "bin": "w",
+            "count": 225652
+          }
+        ]
+      }
+    },
+    {
+      "name": "lat",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [
+        "http://schema.org/latitude"
+      ],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.080639,
+      "mean": 40.72404781250863,
+      "stddev": 0.09057591182791588,
+      "coverage": [
+        {
+          "range": {
+            "gte": 40.53696,
+            "lte": 40.6687953
+          }
+        },
+        {
+          "range": {
+            "gte": 40.682730250000006,
+            "lte": 40.780975
+          }
+        },
+        {
+          "range": {
+            "gte": 40.792785,
+            "lte": 40.88906025
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 32328,
+            "bin_start": 40.53585,
+            "bin_end": 40.571915025
+          },
+          {
+            "count": 64574,
+            "bin_start": 40.571915025,
+            "bin_end": 40.60798005
+          },
+          {
+            "count": 153433,
+            "bin_start": 40.60798005,
+            "bin_end": 40.644045075
+          },
+          {
+            "count": 48492,
+            "bin_start": 40.644045075,
+            "bin_end": 40.6801101
+          },
+          {
+            "count": 96898,
+            "bin_start": 40.6801101,
+            "bin_end": 40.71617512500001
+          },
+          {
+            "count": 112643,
+            "bin_start": 40.71617512500001,
+            "bin_end": 40.752240150000006
+          },
+          {
+            "count": 153021,
+            "bin_start": 40.752240150000006,
+            "bin_end": 40.788305175000005
+          },
+          {
+            "count": 88599,
+            "bin_start": 40.788305175000005,
+            "bin_end": 40.824370200000004
+          },
+          {
+            "count": 153249,
+            "bin_start": 40.824370200000004,
+            "bin_end": 40.860435225
+          },
+          {
+            "count": 16124,
+            "bin_start": 40.860435225,
+            "bin_end": 40.89650025
+          }
+        ]
+      }
+    },
+    {
+      "name": "lon",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [
+        "http://schema.org/longitude"
+      ],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.080639,
+      "mean": -73.95215075712387,
+      "stddev": 0.15157315682821057,
+      "coverage": [
+        {
+          "range": {
+            "gte": -74.2264,
+            "lte": -74.0997905
+          }
+        },
+        {
+          "range": {
+            "gte": -74.045766,
+            "lte": -73.9192955
+          }
+        },
+        {
+          "range": {
+            "gte": -73.87273,
+            "lte": -73.49556050000001
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 8082,
+            "bin_start": -74.4155,
+            "bin_end": -74.3226885
+          },
+          {
+            "count": 0,
+            "bin_start": -74.3226885,
+            "bin_end": -74.229877
+          },
+          {
+            "count": 137351,
+            "bin_start": -74.229877,
+            "bin_end": -74.13706549999999
+          },
+          {
+            "count": 72656,
+            "bin_start": -74.13706549999999,
+            "bin_end": -74.044254
+          },
+          {
+            "count": 209627,
+            "bin_start": -74.044254,
+            "bin_end": -73.9514425
+          },
+          {
+            "count": 217560,
+            "bin_start": -73.9514425,
+            "bin_end": -73.858631
+          },
+          {
+            "count": 193648,
+            "bin_start": -73.858631,
+            "bin_end": -73.7658195
+          },
+          {
+            "count": 64273,
+            "bin_start": -73.7658195,
+            "bin_end": -73.673008
+          },
+          {
+            "count": 0,
+            "bin_start": -73.673008,
+            "bin_end": -73.5801965
+          },
+          {
+            "count": 16164,
+            "bin_start": -73.5801965,
+            "bin_end": -73.487385
+          }
+        ]
+      }
+    }
+  ],
+  "nb_spatial_columns": 2,
+  "nb_temporal_columns": 1,
+  "nb_categorical_columns": 4,
+  "nb_numerical_columns": 6,
+  "types": [
+    "categorical",
+    "numerical",
+    "spatial",
+    "temporal"
+  ],
+  "spatial_coverage": [
+    {
+      "type": "latlong",
+      "column_names": [
+        "lat",
+        "lon"
+      ],
+      "column_indexes": [
+        13,
+        14
+      ],
+      "geohashes4": [
+        {
+          "hash": "1211303202320311",
+          "number": 8042
+        },
+        {
+          "hash": "1211303202321203",
+          "number": 8082
+        },
+        {
+          "hash": "1211303202232002",
+          "number": 16164
+        },
+        {
+          "hash": "1211303202232030",
+          "number": 16164
+        },
+        {
+          "hash": "1211303202232230",
+          "number": 16164
+        },
+        {
+          "hash": "1211303202232203",
+          "number": 16164
+        },
+        {
+          "hash": "1211303202230332",
+          "number": 16164
+        },
+        {
+          "hash": "1211303202203221",
+          "number": 8082
+        },
+        {
+          "hash": "1211303202202312",
+          "number": 16123
+        },
+        {
+          "hash": "1211303202202332",
+          "number": 8041
+        },
+        {
+          "hash": "1211303202200022",
+          "number": 8038
+        },
+        {
+          "hash": "1211303202223330",
+          "number": 16124
+        },
+        {
+          "hash": "1211303202223232",
+          "number": 8082
+        },
+        {
+          "hash": "1211303202223223",
+          "number": 16082
+        },
+        {
+          "hash": "1211303202212333",
+          "number": 24158
+        },
+        {
+          "hash": "1211303202212130",
+          "number": 8081
+        },
+        {
+          "hash": "1211303202213020",
+          "number": 8038
+        },
+        {
+          "hash": "1211303202213021",
+          "number": 16076
+        },
+        {
+          "hash": "1211303202213222",
+          "number": 8038
+        },
+        {
+          "hash": "1211303202213221",
+          "number": 8038
+        },
+        {
+          "hash": "1211303220000212",
+          "number": 8082
+        },
+        {
+          "hash": "1211303220000320",
+          "number": 8024
+        },
+        {
+          "hash": "1211303220001203",
+          "number": 8041
+        },
+        {
+          "hash": "1211302313000212",
+          "number": 24246
+        },
+        {
+          "hash": "1211302313000222",
+          "number": 16164
+        },
+        {
+          "hash": "1211302313000230",
+          "number": 8082
+        },
+        {
+          "hash": "1211302313000313",
+          "number": 16164
+        },
+        {
+          "hash": "1211302313000122",
+          "number": 16164
+        },
+        {
+          "hash": "1211302313000010",
+          "number": 8082
+        },
+        {
+          "hash": "1211302313001323",
+          "number": 8039
+        },
+        {
+          "hash": "1211302313002023",
+          "number": 8082
+        },
+        {
+          "hash": "1211302313012002",
+          "number": 8082
+        },
+        {
+          "hash": "1211302313023213",
+          "number": 16164
+        },
+        {
+          "hash": "1211302313020002",
+          "number": 8082
+        },
+        {
+          "hash": "1211302313020222",
+          "number": 8082
+        },
+        {
+          "hash": "1211302313022311",
+          "number": 16164
+        },
+        {
+          "hash": "1211302313022000",
+          "number": 16082
+        },
+        {
+          "hash": "1211302313022030",
+          "number": 16082
+        },
+        {
+          "hash": "1211302313033331",
+          "number": 16082
+        },
+        {
+          "hash": "1211302313323232",
+          "number": 8082
+        },
+        {
+          "hash": "1211302313323233",
+          "number": 8082
+        },
+        {
+          "hash": "1211302313323112",
+          "number": 16105
+        },
+        {
+          "hash": "1211302313300003",
+          "number": 8082
+        },
+        {
+          "hash": "1211302313300103",
+          "number": 16162
+        },
+        {
+          "hash": "1211302313303023",
+          "number": 8082
+        },
+        {
+          "hash": "1211302313302002",
+          "number": 8082
+        },
+        {
+          "hash": "1211302313311013",
+          "number": 8082
+        },
+        {
+          "hash": "1211302313311012",
+          "number": 8082
+        },
+        {
+          "hash": "1211302313310101",
+          "number": 8082
+        },
+        {
+          "hash": "1211302313310203",
+          "number": 8082
+        },
+        {
+          "hash": "1211302313310232",
+          "number": 16082
+        },
+        {
+          "hash": "1211302313310332",
+          "number": 8082
+        },
+        {
+          "hash": "1211302313313333",
+          "number": 8041
+        },
+        {
+          "hash": "1211302313313331",
+          "number": 24123
+        },
+        {
+          "hash": "1211302313333230",
+          "number": 8082
+        },
+        {
+          "hash": "1211302313332330",
+          "number": 8082
+        },
+        {
+          "hash": "1211302313133223",
+          "number": 8039
+        },
+        {
+          "hash": "1211302313133222",
+          "number": 24117
+        },
+        {
+          "hash": "1211302313123330",
+          "number": 8082
+        },
+        {
+          "hash": "1211302313123220",
+          "number": 8041
+        },
+        {
+          "hash": "1211302313211100",
+          "number": 8082
+        },
+        {
+          "hash": "1211302310333302",
+          "number": 8082
+        },
+        {
+          "hash": "1211302310333320",
+          "number": 8082
+        },
+        {
+          "hash": "1211302310332301",
+          "number": 16164
+        },
+        {
+          "hash": "1211302310320332",
+          "number": 8082
+        },
+        {
+          "hash": "1211302310320333",
+          "number": 8082
+        },
+        {
+          "hash": "1211302310323130",
+          "number": 8082
+        },
+        {
+          "hash": "1211302312103321",
+          "number": 8082
+        },
+        {
+          "hash": "1211302311031302",
+          "number": 8082
+        },
+        {
+          "hash": "1211302331011132",
+          "number": 8082
+        },
+        {
+          "hash": "1211302331010313",
+          "number": 8082
+        },
+        {
+          "hash": "1211302331010330",
+          "number": 8082
+        },
+        {
+          "hash": "1211302331012112",
+          "number": 8082
+        },
+        {
+          "hash": "1211302331031003",
+          "number": 8082
+        },
+        {
+          "hash": "1211302331031121",
+          "number": 8081
+        },
+        {
+          "hash": "1211302331030113",
+          "number": 8082
+        },
+        {
+          "hash": "1211302331322210",
+          "number": 8082
+        },
+        {
+          "hash": "1211302331323330",
+          "number": 8082
+        },
+        {
+          "hash": "1211302331111333",
+          "number": 8024
+        },
+        {
+          "hash": "1211302331111111",
+          "number": 8041
+        },
+        {
+          "hash": "1211302331112211",
+          "number": 7761
+        },
+        {
+          "hash": "1211302331130111",
+          "number": 8024
+        },
+        {
+          "hash": "1211302331130012",
+          "number": 8081
+        },
+        {
+          "hash": "1211302331121030",
+          "number": 8081
+        },
+        {
+          "hash": "1211302331120030",
+          "number": 8081
+        }
+      ],
+      "ranges": [
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -74.2264,
+                40.651685
+              ],
+              [
+                -74.0187905,
+                40.53696
+              ]
+            ]
+          }
+        },
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -74.009585,
+                40.850260000000006
+              ],
+              [
+                -73.8621255,
+                40.693225
+              ]
+            ]
+          }
+        },
+        {
+          "range": {
+            "type": "envelope",
+            "coordinates": [
+              [
+                -73.864795005,
+                40.8307306
+              ],
+              [
+                -73.49556050000001,
+                40.6668503
+              ]
+            ]
+          }
+        }
+      ],
+      "number": 919361
+    }
+  ],
+  "temporal_coverage": [
+    {
+      "type": "datetime",
+      "column_names": [
+        "data_as_of"
+      ],
+      "column_indexes": [
+        4
+      ],
+      "column_types": [
+        "http://schema.org/DateTime"
+      ],
+      "ranges": [
+        {
+          "range": {
+            "gte": 1753121280.0,
+            "lte": 1753845504.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1753926784.0,
+            "lte": 1754661504.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1754743424.0,
+            "lte": 1755486464.0
+          }
+        }
+      ],
+      "temporal_resolution": "second"
+    }
+  ],
+  "attribute_keywords": [
+    "id",
+    "speed",
+    "travel_time",
+    "travel",
+    "time",
+    "status",
+    "data_as_of",
+    "data",
+    "as",
+    "of",
+    "link_id",
+    "link",
+    "id",
+    "link_points",
+    "link",
+    "points",
+    "encoded_poly_line",
+    "encoded",
+    "poly",
+    "line",
+    "encoded_poly_line_lvls",
+    "encoded",
+    "poly",
+    "line",
+    "lvls",
+    "owner",
+    "transcom_id",
+    "transcom",
+    "id",
+    "borough",
+    "link_name",
+    "link",
+    "name",
+    "lat",
+    "lon"
+  ],
+  "sample": "id,speed,travel_time,status,data_as_of,link_id,link_points,encoded_poly_line,encoded_poly_line_lvls,owner,transcom_id,borough,link_name,lat,lon\r\n324,0.0,0,-101,2025-08-17T18:03:05.000,4329473,\"40.7578106,-73.996801 40.7604506,-74.003221 40.762021,-74.00705 40.76621,-74.01712\",iowwF~nsbMoObg@yH\\\\|VeY\\\\|}@,BBBB,PA -Lincoln Tunnel,4329473,Manhattan,LINCOLN TUNNEL E CENTER TUBE NJ - NY,40.7620103,-74.0069605\r\n411,0.0,0,-101,2025-08-16T21:18:03.000,4763652,\"40.6040405,-74.052321 40.6047,-74.050301 40.60743,-74.041851 40.608031,-74.03998 40.6082705,-74.039211\",gnyvF~i~bMcCsKaPys@wBuJo@yC,BBBBB,Verrazano-Narrows-Bridge,4763652,Brooklyn,VNB E SI GANTRY UPPER LEVEL - BROOKLYN GANTRY UPPER LEVEL,40.6061555,-74.045766\r\n378,55.3,48,0,2025-08-16T00:24:03.000,4616197,\"40.6210105,-74.168861 40.6207604,-74.168 40.6182105,-74.162381 40.6154,-74.15806 40.6149404,-74.15748\",ix\\\\|vFjbucMp@kD\\\\|Ncb@pP_ZzAsB,BBBBB,NYC_DOT_LIC,4616197,Staten Island,SIE E SOUTH AVENUE - RICHMOND AVENUE,40.61797545,-74.1631705\r\n167,52.19,122,0,2025-08-14T00:48:03.000,4616312,\"40.7992604,-73.828251 40.79751,-73.827091 40.795711,-73.8258 40.7932906,-73.82419 40.7925904,-73.82378 40.791681,-73.823501...\",kr_xFpqraM\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|IgFfJaGbNaIjCqAtDw@vDOlLf@xHfBpOnBzJ`A\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|Cn@pEfBz[\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|O\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|HzE...,BBBBBBBBBBBBBBBBBBB,NYC_DOT_LIC,4616312,Queens,BWB S Queens Anchorage - WSE S Exit 14 (Linden Pl),,\r\n329,0.0,0,-101,2025-08-12T03:13:06.000,4329508,\"40.75766,-73.99687 40.7604,-74.00328 40.76197,-74.0071 40.76615,-74.01717\",knwwFlosbMcP`g@yHzVcY\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|}@,BBBB,PA -Lincoln Tunnel,4329508,Manhattan,LINCOLN TUNNEL W CENTER TUBE NY - NJ,40.761905,-74.00702\r\n172,50.95,84,0,2025-08-11T03:59:09.000,4616310,\"40.82495,-73.836211 40.82367,-73.83602 40.8202605,-73.835941 40.81888,-73.835951 40.81555,-73.83628 40.81275,-73.83627 40.8124306,-73.836...\",gxhxFp{fbMpAiE`@kGhEm[L{FQqIUeKm@}^?gTB{FLgG,BBBBBBBBBBB,NYC_DOT_LIC,4616310,Bronx,CBE AMSTERDAM AVE (L/LVL) - MORRIS AVE,40.81105,-73.8313905\r\n204,56.54,205,0,2025-08-05T06:39:03.000,4616320,\"40.7894406,-73.786291  40.78918,-73.78792  40.78876,-73.789521  40.7882704,-73.790631  40.7872906,-73.79263  40.7866804,-73.7941 ...\",_u}wFhkjaMr@dI~A~HtA\\\\\\\\\\\\|EbEnKxBdHv@~Cv@jGRhCJ~G[pTm@lT}@nS[vB@p@]dHiAlPo@tEiA\\\\\\\\\\\\|Fu@nCoDvKiAhFa@`DSxCAbAFfAb@lB`AbBjBjA??xHfBpOnBzJ...,BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,NYC_DOT_LIC,4616320,Queens,CIP N TNB - Whitestone Expwy S Exit 14 (Linden Pl),40.7878858,-73.7957705\r\n150,1.86,4292,0,2025-08-02T14:58:09.000,4616340,\"40.7016405,-73.991121 40.70158,-73.99033 40.7014405,-73.98932 40.70123,-73.98797 40.7011505,-73.987461 40.70094,-73.986521...\",gplwFnkrbMJ}CZiEh@mGNeBh@{Dh@wBb@cAr@iAl@s@\\\\|@u@d@YVGl@A^JTVVn@Dt@Gl@Uf@i@j@eA~@gCjAyDhBcCfA_A`@cB\\\\|@wIbEgF~BuPdI}SzI{KbFeGtC{CJ,BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,NYC_DOT_LIC,4616340,Manhattan,BQE N Atlantic Ave - MAN Bridge Manhattan Side,40.70054025,-73.49556050000001\r\n338,0.0,0,-101,2025-08-01T11:48:09.000,4616255,\"40.81376,-73.93128 40.8127206,-73.9316 40.8121104,-73.93169 40.81148,-73.93161 40.81091,-73.931261 40.81044,-73.93079 40.8082604,-73.9279...\",_mbxFnufbMnE~@xBP\\\\|BOpBeA\\\\|A}ArLaQjBgElFiQjHiVvFiPd@kBd@_EB{DQcBi@uB{@cCcEmL??wCcI_AyCgEwMo@wAa^{j@eGiJcAiAyB}Bya@gc@_A{@sFgJcC}CK_@cGm...,BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,NYC_DOT_LIC,4616255,Bronx,MDE N RFK Bridge - 142nd St,40.8085855,-73.92314\r\n295,56.54,79,0,2025-07-31T09:48:09.000,4616250,\"40.84064,-73.83831 40.83881,-73.83853 40.8346304,-73.83839 40.83261,-73.83804 40.83066,-73.837521 40.8280704,-73.83668 40.82495,-73.836211\",_ugxFlptaMlJj@bY[rKeAdKgBdOgDnR}A,BBBBBBB,NYC_DOT_LIC,4616250,Bronx,HRP N LAFAYETTE AVENUE - E TREMONT AVENUE,40.832795,-73.83726050000001\r\n431,60.27,82,0,2025-07-30T12:03:03.000,4616214,\"40.56042,-74.199391 40.55924,-74.20076 40.5585105,-74.20184 40.5579004,-74.203061 40.5571906,-74.204851 40.55606,-74.20935...\",s}pvFda{cMjFpGpCvExBrFlCdJ`Fb[`AzEjBbHtCxHtCfGfDbGlEvF~DlE\\\\\\\\\\\\\\\\|NvL,BBBBBBBBBBBBBB,NYC_DOT_LIC,4616214,Staten Island,WSE N BLOOMUINGDALE ROAD - ARDEN AVENUE,40.5561203,-74.20836600000001\r\n148,14.29,1041,0,2025-07-30T02:03:09.000,4616257,\"40.69153,-73.99911 40.6922605,-73.99937 40.6928906,-73.99937 40.6933406,-73.99925 40.69406,-73.99898 40.695,-73.99853 40.697371,-73.99741...\",aqjwFl}sbMqCr@}B?yAWoCu@{DyAyM_F{KeEcAk@iAgA}@sAcAkBy@kBy@}Ck@kDMmCA{CNyB`@qFbAcMXuB\\wAf@qAbA{AbCqCx@aAfGaHhCwChAkAnAkC`@wBP_DpBavAKkDiAk...,BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,NYC_DOT_LIC,4616257,Brooklyn,BQE N ATLANTIC AVENUE - LEONARD STREET,,\r\n376,25.47,216,0,2025-07-29T22:59:03.000,4616192,\"40.61052,-74.09769 40.610561,-74.09586 40.6102405,-74.093881 40.60983,-74.09251 40.60698,-74.08574 40.6065004,-74.083851...\",wvzvFnegcMGmJ~@kKpAoGxPki@~AyJbA}Kf@ac@`BeOzHgY,BBBBBBBBBB,NYC_DOT_LIC,4616192,Staten Island,SIE E CLOVE ROAD - FINGERBOARD ROAD,40.607205,-74.083455\r\n295,59.03,75,-101,2025-07-29T01:03:08.000,4616250,\"40.84064,-73.83831 40.83881,-73.83853 40.8346304,-73.83839 40.83261,-73.83804 40.83066,-73.837521 40.8280704,-73.83668 40.82495,-73.836211\",_ugxFlptaMlJj@bY[rKeAdKgBdOgDnR}A,BBBBBBB,NYC_DOT_LIC,4616250,Bronx,HRP N LAFAYETTE AVENUE - E TREMONT AVENUE,40.832795,-73.83726050000001\r\n204,52.81,219,0,2025-07-28T19:59:03.000,4616320,\"40.7894406,-73.786291  40.78918,-73.78792  40.78876,-73.789521  40.7882704,-73.790631  40.7872906,-73.79263  40.7866804,-73.7941 ...\",_u}wFhkjaMr@dI~A~HtA\\\\|EbEnKxBdHv@~Cv@jGRhCJ~G[pTm@lT}@nS[vB@p@]dHiAlPo@tEiA\\\\|Fu@nCoDvKiAhFa@`DSxCAbAFfAb@lB`AbBjBjA??xHfBpOnBzJ`A\\\\|Cn@...,BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,NYC_DOT_LIC,4616320,Queens,CIP N TNB - Whitestone Expwy S Exit 14 (Linden Pl),40.7878858,-73.7957705\r\n375,3.1,1826,-101,2025-07-28T11:28:03.000,4616193,\"40.61052,-74.09769 40.6101,-74.10893 40.61028,-74.1105 40.61097,-74.113 40.6110705,-74.115671 40.61079,-74.11726 40.60938,-74.12241...\",wvzvFpegcMrAfeAc@vHiCtNSrOv@\\\\|HxGf_@\\\\|Db^lAp\\,BBBBBBBBB,NYC_DOT_LIC,4616193,Staten Island,SIE E BRADLEY AVENUE - CLOVE ROAD,40.60928,-74.114905\r\n435,0.0,0,-101,2025-07-26T17:28:04.000,4616198,\"40.62102,-74.168861 40.6212304,-74.16992 40.6212304,-74.170961 40.6206306,-74.173561 40.6197105,-74.175091 40.6188605,-74.17597...\",kx\\\\|vFjbucMi@rE?nEvBfOvDpHhDnD`KhG~}@zd@nNdKfM~M,BBBBBBBBBB,NYC_DOT_LIC,4616198,Staten Island,WSE N-SIE E SOUTH AVENUE - SOUTH AVENUE,40.6115552,-74.178286\r\n170,13.67,267,0,2025-07-23T16:48:03.000,4616356,\"40.6665206,-73.76246 40.66738,-73.77021 40.66751,-73.77209 40.66752,-73.772861 40.66749,-73.775591 40.66722,-73.78108 40.66673,-73.786471\",wtewFjveaMkDlo@YvJAxCD`Pt@ha@`Bt`@,BBBBBBB,NYC_DOT_LIC,4616356,Queens,Belt Pkwy W 182nd St - JFK Expressway,40.6666253,-73.7744655\r\n177,42.87,99,0,2025-07-23T15:13:03.000,4616309,\"40.8464305,-73.93213 40.8458904,-73.930331 40.84516,-73.92739 40.84478,-73.925401 40.8447106,-73.92412 40.84478,-73.92246...\",eyhxFxzfbMjBiJpCiQjAoKL_GMiIUqKk@}^CgTBcFN_H,BBBBBBBBBBB,NYC_DOT_LIC,4616309,Bronx,CBE E AMSTERDAM AVE(U/LVL) - MORRIS AVE,40.84573025,-73.9207505\r\n1,0.0,0,-101,2025-07-22T14:29:03.000,4616337,\"40.74047,-74.009251 40.74137,-74.00893 40.7431706,-74.008591 40.7462304,-74.00797 40.74812,-74.007651 40.748701,-74.007691...\",}btwFx\\\\\\\\|ubMsD_AgJcAcR{ByJ_AsBFiEbByCXaFuAkLiDsTaNsPoKmCmB,BBBBBBBBBBBBB,NYC_DOT_LIC,4616337,Manhattan,11th ave n ganservoort - 12th ave @ 40th st,,\r\n"
+}

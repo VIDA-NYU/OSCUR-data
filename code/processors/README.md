@@ -23,6 +23,7 @@ code/processors/
 ├── bicycle_counts.py                  # Post-processing Bicycle Pedestrian Trip Counts dataset (CSV)
 ├── roadway_feature.py                 # Post-processing Roadway Feature dataset (CSV)
 ├── vehicle_volumes_and_types.py       # Post-processing Vehicle Volumes and Types dataset (CSV)
+├── speed_distributions.py             # Post-processing Speed Distributions dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
 ```
@@ -235,6 +236,14 @@ python merge_counts_with_centerline.py \
   --centerline     ../downloaders/data/vehicle_volumes_and_types/nyc_street_centerline.csv \
   --atr            ../downloaders/data/vehicle_volumes_and_types/automated_traffic_volume_counts.csv \
   --output         ../processors/processed_data/vehicle_volumes_and_types.csv
+```
+
+#### Speed Distributions Dataset
+This script processes DOT Traffic Speeds (NBE) records by computing midpoint latitude and longitude from the link_points geometry and appending them as new columns.
+```bash
+python traffic_speeds.py \
+  --input ../downloaders/data/speed_distributions/traffic_speeds.csv \
+  --output ../processors/processed_data/speed_distributions/traffic_speeds_midpoints.csv
 ```
 
 ### Other Datasets
