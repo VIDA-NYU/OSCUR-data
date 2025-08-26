@@ -20,6 +20,9 @@ code/processors/
 ├── rail_routes_and_crossings.py       # Post-processing Rail Routes and Crossings dataset (CSV)
 ├── public_open_spaces.py              # Post-processing Public Open Spaces dataset (CSV)
 ├── land_use.py                        # Post-processing Land Use dataset (CSV)
+├── bicycle_counts.py                  # Post-processing Bicycle Pedestrian Trip Counts dataset (CSV)
+├── roadway_feature.py                 # Post-processing Roadway Feature dataset (CSV)
+├── vehicle_volumes_and_types.py       # Post-processing Vehicle Volumes and Types dataset (CSV)
 ├── speed_distributions.py             # Post-processing Speed Distributions dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
@@ -192,15 +195,56 @@ No postprocessing script is needed, as the original datasets are being preserved
 #### Social Determinants of Health Dataset
 No postprocessing script is needed, as the original datasets are being preserved without any merging.
 
+#### Bicycle Pedestrian Trip Counts  
+**Bicycle Counts:**
+This script merges the NYC DOT Bicycle Counts dataset with the Bicycle Counters dataset using the id field, enriching trip count records with location coordinates.
+```bash
+python bicycle_counts.py \
+  --bicycle_counts ../downloaders/data/bicycle_pedestrian_trip_counts/bicycle_counts.csv \
+  --bicycle_counters ../downloaders/data/bicycle_pedestrian_trip_counts/bicycle_counters.csv \
+  --output ../processors/processed_data/bicycle_counts.csv
+```
+
+**Pedestrian Counts:**
+No postprocessing script is needed, as the original datasets are being preserved without any merging.
+
+#### Signal Timing and Phasing
+No postprocessing script is needed, as the original datasets are being preserved without any merging.
+
+#### Topography 
+No postprocessing script is needed, as the original datasets are being preserved without any merging.
+
+#### Roadway Features Dataset
+This script integrates the NYC Street Centerline with multiple roadway-related datasets, including Vision Zero safety improvement projects (intersections and corridors), DOT bus lanes, and TreesCount! blockface attributes.  
+
+```bash
+python roadway_features.py \
+  --centerline ../downloaders/data/roadway_features/centerline.csv \
+  --sip_intersections ../downloaders/data/roadway_features/sip_intersections.csv \
+  --sip_corridors ../downloaders/data/roadway_features/sip_corridors.csv \
+  --bus_lanes ../downloaders/data/roadway_features/bus_lanes.csv \
+  --blockface ../downloaders/data/roadway_features/blockface.csv \
+  --output processed_data/roadway_features_final.csv
+```
+
+#### Vehicle Volumes and Types Dataset
+This script processes the raw datasets for Automated Traffic Volume Counts (ATR), Vehicle Classification Counts (2011–2024), and the NYC Street Centerline, merging them into a single location-aware dataset keyed by `PHYSICALID`. Classification counts are joined directly to centerline segments using the SegmentID ↔ PHYSICALID relationship, while ATR point counts are snapped to the nearest centerline segment within a 120-foot search radius using spatial nearest-neighbor matching.
+
+```bash
+python merge_counts_with_centerline.py \
+  --classification ../downloaders/data/vehicle_volumes_and_types/vehicle_classification_counts_2011_2024.csv \
+  --centerline     ../downloaders/data/vehicle_volumes_and_types/nyc_street_centerline.csv \
+  --atr            ../downloaders/data/vehicle_volumes_and_types/automated_traffic_volume_counts.csv \
+  --output         ../processors/processed_data/vehicle_volumes_and_types.csv
+```
+
 #### Speed Distributions Dataset
 This script processes DOT Traffic Speeds (NBE) records by computing midpoint latitude and longitude from the link_points geometry and appending them as new columns.
 ```bash
 python traffic_speeds.py \
   --input ../downloaders/data/speed_distributions/traffic_speeds.csv \
-  --output ../processors/processed_data/speed_distributions/traffic_speeds_midpoints.csv 
-
+  --output ../processors/processed_data/speed_distributions/traffic_speeds_midpoints.csv
 ```
-
 
 ### Other Datasets
 To be added as needed.
