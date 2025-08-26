@@ -168,6 +168,7 @@ python community_health_survey_downloader.py -o data/community_health_survey.csv
 python pedestrian_intervals.py -o data/pedestrian_intervals.csv
 python traffic_speeds.py -o data/traffic_speeds.csv
 python housing_database_downloader.py -o data/housing_database.csv
+python disadvantaged_communities_downloader.py -o data/dac_2023.csv
 ```
 With API token and custom timeout:
 ```bash

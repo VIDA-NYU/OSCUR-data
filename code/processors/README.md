@@ -25,6 +25,7 @@ code/processors/
 ├── vehicle_volumes_and_types.py       # Post-processing Vehicle Volumes and Types dataset (CSV)
 ├── speed_distributions.py             # Post-processing Speed Distributions dataset (CSV)
 ├── housing_density.py                 # Post-processing Housing Database dataset (CSV)
+├── environmental_justice.py           # Post-processing Environmental Justice dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
 ```
@@ -256,6 +257,15 @@ The output includes units per acre and units per square mile, along with the ori
 python housing_density.py \
   --input ../downloaders/data/housing_density/housing_database.csv \
   --output ../processors/processed_data/housing_density_processed.csv
+```
+
+#### Environmental Justice Dataset
+
+This script will only take the communities that are labaled New York City from data from all of New York State.
+
+```bash
+python environmental_justice.py \
+  --dac ../downloaders/data/environmental_justice/dac_2023_nyc_final.csv \
 ```
 
 ### Other Datasets
