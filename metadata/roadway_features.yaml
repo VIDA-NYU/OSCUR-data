@@ -1,0 +1,104 @@
+dataset_id: "roadway_features"
+name: "Roadway Features (Centerlines, Safety Improvements, Bus Lanes, and Blockface Attributes)"
+description: >
+  This dataset supports the roadway features data element by combining multiple NYC sources:
+  (1) the NYC Street Centerline, (2) Vision Zero Safety Improvement Projects – Intersections,
+  (3) Vision Zero Safety Improvement Projects – Corridors, (4) NYC DOT Bus Lanes (local streets),
+  and (5) TreesCount! 2015 Blockface attributes.  
+  The processor attaches each feature set to the centerline network via spatial nearest-joins,
+  preserving all original columns while adding match-distance fields and WKT geometry for export.
+  The result can be used to characterize mid-block and intersection approaches, corridor treatments,
+  lane restrictions, and block-level context.
+
+source_organization:
+  centerline: "NYC Department of Information Technology & Telecommunications (DoITT) / NYC Open Data"
+  sip_intersections: "New York City Department of Transportation (NYC DOT)"
+  sip_corridors: "New York City Department of Transportation (NYC DOT)"
+  bus_lanes: "New York City Department of Transportation (NYC DOT)"
+  blockface: "New York City Department of Parks & Recreation (NYC Parks)"
+
+domain: "transportation"
+last_updated: "2025-08-19"
+update_frequency:
+  centerline: "Occasionally"
+  sip_intersections: "Periodic"
+  sip_corridors: "Periodic"
+  bus_lanes: "As needed"
+  blockface: "Static (2015 census)"
+
+access:
+  primary_url: "https://data.cityofnewyork.us"
+  api_endpoint:
+    centerline: "https://data.cityofnewyork.us/resource/inkn-q76z.json"
+    sip_intersections: "https://data.cityofnewyork.us/resource/shr7-eqdc.json"
+    sip_corridors: "https://data.cityofnewyork.us/resource/if4c-w48d.json"
+    bus_lanes: "https://data.cityofnewyork.us/resource/ycrg-ses3.json"
+    blockface: "https://data.cityofnewyork.us/resource/ju3b-rwpy.json"
+  license: "Open Data License"
+  file_format:
+    centerline: ["CSV", "GeoJSON", "Shapefile", "JSON"]
+    sip_intersections: ["CSV", "GeoJSON", "JSON"]
+    sip_corridors: ["CSV", "GeoJSON", "JSON"]
+    bus_lanes: ["CSV", "GeoJSON", "JSON"]
+    blockface: ["CSV", "JSON"]
+  rate_limits:
+    centerline: "Unknown"
+    sip_intersections: "Unknown"
+    sip_corridors: "Unknown"
+    bus_lanes: "Unknown"
+    blockface: "Unknown"
+
+spatial:
+  geometry_type: "polyline (centerline, corridors, bus lanes), point (intersections), polyline (blockface as street segments)"
+  coordinate_system: "EPSG:4326 (WGS84), reprojected to EPSG:2263 for analysis"
+  coverage_area: "NYC"
+
+temporal:
+  temporal_type:
+    centerline: "last update date"
+    sip_intersections: "project install/operational year"
+    sip_corridors: "project install/operational year"
+    bus_lanes: "regulation effective/updated date"
+    blockface: "census year (2015)"
+  temporal_resolution:
+    centerline: "static with periodic updates"
+    sip_intersections: "event/project-based"
+    sip_corridors: "event/project-based"
+    bus_lanes: "as posted/updated"
+    blockface: "static"
+  time_column:
+    centerline: null
+    sip_intersections: "Year"
+    sip_corridors: "Year"
+    bus_lanes: "Date"
+    blockface: "census_year"
+
+implementation:
+  downloader_module:
+    centerline: "downloaders.roadway_features.centerlines_downloader"
+    sip_intersections: "downloaders.roadway_features.intersections_downloader"
+    sip_corridors: "downloaders.roadway_features.corridor_downloader"
+    bus_lanes: "downloaders.roadway_features.bus_lanes_downloader"
+    blockface: "downloaders.roadway_features.block_face_downloader"
+  orchestrator_downloader:
+    orchestrator: "downloaders.roadway_features.roadway_features"
+  processor_module: "processors.roadway_features"
+  example_notebook: "examples/roadway_features.ipynb"
+
+integration_opportunities:
+  spatial_joins:
+    - "Join with curb regulations, loading zones, and parking meters to evaluate block/approach controls"
+    - "Overlay with bike facilities and truck routes to assess multimodal operations"
+    - "Combine with signal timing/phasing or LPIs for intersection safety studies"
+    - "Merge with collision datasets for before/after evaluations of corridor/intersection treatments"
+  temporal_alignment:
+    - "Align SIP install years with crash trends and enforcement data"
+    - "Compare bus lane effective dates with transit speed performance"
+
+map_algebra:
+  raster_conversion:
+    suitable_for_rasterization: true
+    recommended_cell_size: "10–20 meters"
+    interpolation_method: "count/length per segment (nearest attribution) or categorical encoding by treatment"
+
+data_name: "roadway_features"

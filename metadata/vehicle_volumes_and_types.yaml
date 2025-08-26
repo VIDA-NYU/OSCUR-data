@@ -1,0 +1,86 @@
+dataset_id: "vehicle_volumes_and_types"
+name: "Vehicle Volumes and Types (ATR Counts, Vehicle Classification, and Street Centerline)"
+description: >
+  This dataset supports the vehicle volumes and types data element by combining three primary NYC DOT sources:
+  Automated Traffic Recorders (ATR) sample counts, Vehicle Classification Counts (2011–2024), and the NYC Street Centerline.
+  It links traffic volumes and vehicle type distributions to specific roadway segments via PHYSICALID, enabling spatially
+  precise analysis of roadway usage.
+
+  The dataset provides segment-level traffic volumes, temporal breakdowns (hourly, daily, monthly), vehicle type categories
+  (cars, trucks, buses, etc.), and spatial geometries of the centerline. This unified dataset is relevant for studies involving
+  freight movement, roadway demand, multimodal traffic assessment, congestion monitoring, and transportation planning.
+
+source_organization:
+  atr_counts: "New York City Department of Transportation (NYC DOT)"
+  vehicle_classification_counts: "New York City Department of Transportation (NYC DOT)"
+  centerline: "NYC Department of Information Technology and Telecommunications (DoITT)"
+
+domain: "transportation"
+last_updated: "2025-08-17"
+update_frequency:
+  atr_counts: "Quarterly"
+  vehicle_classification_counts: "Annually"
+  centerline: "Occasionally"
+
+access:
+  primary_url: "https://data.cityofnewyork.us"
+  api_endpoint:
+    atr_counts: "https://data.cityofnewyork.us/resource/7ym2-wayt.json"
+    vehicle_classification_counts: "https://data.cityofnewyork.us/resource/96ay-ea4r.json"
+    centerline: "https://data.cityofnewyork.us/resource/inkn-q76z.json"
+  license: "Open Data License"
+  file_format:
+    atr_counts: ["CSV", "JSON"]
+    vehicle_classification_counts: ["CSV", "JSON"]
+    centerline: ["CSV", "GeoJSON", "Shapefile"]
+  rate_limits:
+    atr_counts: "Unknown"
+    vehicle_classification_counts: "Unknown"
+    centerline: "Unknown"
+
+spatial:
+  geometry_type: "point (ATR), polyline (centerline)"
+  coordinate_system: "EPSG:4326 (WGS84), reprojected to EPSG:2263 for analysis"
+  coverage_area: "NYC"
+
+temporal:
+  temporal_type:
+    atr_counts: "date/time of counts"
+    vehicle_classification_counts: "date of survey"
+    centerline: "last update date"
+  temporal_resolution:
+    atr_counts: "hourly, daily"
+    vehicle_classification_counts: "annual samples"
+    centerline: "static"
+  time_column:
+    atr_counts: "CountDate, HH, MM"
+    vehicle_classification_counts: "CountDate"
+    centerline: null
+
+implementation:
+  downloader_module:
+    atr_counts: "downloaders.vehicle_volumes_and_types.volume_counts_downloader"
+    vehicle_classification_counts: "downloaders.vehicle_volumes_and_types.classification_counts_downloader"
+    centerline: "downloaders.vehicle_volumes_and_types.nyc_centerlines_downloader"
+  orchestrator_downloader:
+    orchestrator: "downloaders.vehicle_volumes_and_types.vehicle_volumes_and_types"
+  processor_module: "processors.vehicle_volumes_and_types"
+  example_notebook: "examples/vehicle_volumes_and_types.ipynb"
+
+integration_opportunities:
+  spatial_joins:
+    - "Join with freight routes, truck restrictions, and curb regulation datasets"
+    - "Overlay with census tracts or neighborhoods for exposure analysis"
+    - "Align with traffic signal timing or congestion datasets"
+  temporal_alignment:
+    - "Align ATR hourly counts with weather or incident datasets"
+    - "Aggregate classification counts to match ATR time frames"
+    - "Use centerline PHYSICALID for cross-dataset joins"
+
+map_algebra:
+  raster_conversion:
+    suitable_for_rasterization: true
+    recommended_cell_size: "20 meters"
+    interpolation_method: "volume density raster (vehicles/hour)"
+
+data_name: "vehicle_volumes_and_types"
