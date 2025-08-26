@@ -24,6 +24,7 @@ code/processors/
 ├── roadway_feature.py                 # Post-processing Roadway Feature dataset (CSV)
 ├── vehicle_volumes_and_types.py       # Post-processing Vehicle Volumes and Types dataset (CSV)
 ├── speed_distributions.py             # Post-processing Speed Distributions dataset (CSV)
+├── housing_density.py                 # Post-processing Housing Database dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
 ```
@@ -244,6 +245,17 @@ This script processes DOT Traffic Speeds (NBE) records by computing midpoint lat
 python traffic_speeds.py \
   --input ../downloaders/data/speed_distributions/traffic_speeds.csv \
   --output ../processors/processed_data/speed_distributions/traffic_speeds_midpoints.csv
+```
+
+#### Housing Density Dataset
+This script processes the NYC Department of City Planning (DCP) Housing Database by 2020 CDTA.  
+It calculates housing density by combining the reported total number of housing units (`cenunits20`) with polygon areas of each Community District Tabulation Area (CDTA).  
+The output includes units per acre and units per square mile, along with the original CDTA geometries.
+
+```bash
+python housing_density.py \
+  --input ../downloaders/data/housing_density/housing_database.csv \
+  --output ../processors/processed_data/housing_density_processed.csv
 ```
 
 ### Other Datasets

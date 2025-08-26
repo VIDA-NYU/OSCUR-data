@@ -1,0 +1,2044 @@
+{
+  "nb_rows": 71,
+  "nb_profiled_rows": 71,
+  "nb_columns": 27,
+  "columns": [
+    {
+      "name": "the_geom",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "40",
+            "count": 99240
+          },
+          {
+            "bin": "73",
+            "count": 85609
+          },
+          {
+            "bin": "74",
+            "count": 13631
+          },
+          {
+            "bin": "multipolygon",
+            "count": 71
+          },
+          {
+            "bin": "97139631534189",
+            "count": 5
+          }
+        ]
+      }
+    },
+    {
+      "name": "cdta2020",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [],
+      "num_distinct_values": 71
+    },
+    {
+      "name": "cdtaname20",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "cd",
+            "count": 59
+          },
+          {
+            "bin": "approximation",
+            "count": 57
+          },
+          {
+            "bin": "park",
+            "count": 16
+          },
+          {
+            "bin": "equivalent",
+            "count": 14
+          },
+          {
+            "bin": "jia",
+            "count": 12
+          }
+        ]
+      }
+    },
+    {
+      "name": "comp2010ap",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 56,
+      "mean": 241.2394366197183,
+      "stddev": 296.77959122671604,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 156.0
+          }
+        },
+        {
+          "range": {
+            "gte": 197.0,
+            "lte": 479.0
+          }
+        },
+        {
+          "range": {
+            "gte": 588.0,
+            "lte": 1385.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 32,
+            "bin_start": -17.0,
+            "bin_end": 123.19999999999999
+          },
+          {
+            "count": 16,
+            "bin_start": 123.19999999999999,
+            "bin_end": 263.4
+          },
+          {
+            "count": 10,
+            "bin_start": 263.4,
+            "bin_end": 403.59999999999997
+          },
+          {
+            "count": 3,
+            "bin_start": 403.59999999999997,
+            "bin_end": 543.8
+          },
+          {
+            "count": 3,
+            "bin_start": 543.8,
+            "bin_end": 684.0
+          },
+          {
+            "count": 3,
+            "bin_start": 684.0,
+            "bin_end": 824.1999999999999
+          },
+          {
+            "count": 1,
+            "bin_start": 824.1999999999999,
+            "bin_end": 964.3999999999999
+          },
+          {
+            "count": 1,
+            "bin_start": 964.3999999999999,
+            "bin_end": 1104.6
+          },
+          {
+            "count": 1,
+            "bin_start": 1104.6,
+            "bin_end": 1244.8
+          },
+          {
+            "count": 1,
+            "bin_start": 1244.8,
+            "bin_end": 1385.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "comp2010",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 58,
+      "mean": 331.2535211267606,
+      "stddev": 475.3427145654161,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 343.0
+          }
+        },
+        {
+          "range": {
+            "gte": 452.0,
+            "lte": 1357.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 49,
+            "bin_start": 0.0,
+            "bin_end": 304.4
+          },
+          {
+            "count": 14,
+            "bin_start": 304.4,
+            "bin_end": 608.8
+          },
+          {
+            "count": 2,
+            "bin_start": 608.8,
+            "bin_end": 913.1999999999999
+          },
+          {
+            "count": 2,
+            "bin_start": 913.1999999999999,
+            "bin_end": 1217.6
+          },
+          {
+            "count": 2,
+            "bin_start": 1217.6,
+            "bin_end": 1522.0
+          },
+          {
+            "count": 0,
+            "bin_start": 1522.0,
+            "bin_end": 1826.3999999999999
+          },
+          {
+            "count": 1,
+            "bin_start": 1826.3999999999999,
+            "bin_end": 2130.7999999999997
+          },
+          {
+            "count": 0,
+            "bin_start": 2130.7999999999997,
+            "bin_end": 2435.2
+          },
+          {
+            "count": 0,
+            "bin_start": 2435.2,
+            "bin_end": 2739.6
+          },
+          {
+            "count": 1,
+            "bin_start": 2739.6,
+            "bin_end": 3044.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "comp2011",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 58,
+      "mean": 252.14084507042253,
+      "stddev": 361.2577908229408,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 375.0
+          }
+        },
+        {
+          "range": {
+            "gte": 418.0,
+            "lte": 877.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 39,
+            "bin_start": -22.0,
+            "bin_end": 178.9
+          },
+          {
+            "count": 19,
+            "bin_start": 178.9,
+            "bin_end": 379.8
+          },
+          {
+            "count": 5,
+            "bin_start": 379.8,
+            "bin_end": 580.7
+          },
+          {
+            "count": 2,
+            "bin_start": 580.7,
+            "bin_end": 781.6
+          },
+          {
+            "count": 3,
+            "bin_start": 781.6,
+            "bin_end": 982.5
+          },
+          {
+            "count": 0,
+            "bin_start": 982.5,
+            "bin_end": 1183.4
+          },
+          {
+            "count": 1,
+            "bin_start": 1183.4,
+            "bin_end": 1384.3
+          },
+          {
+            "count": 0,
+            "bin_start": 1384.3,
+            "bin_end": 1585.2
+          },
+          {
+            "count": 1,
+            "bin_start": 1585.2,
+            "bin_end": 1786.1000000000001
+          },
+          {
+            "count": 1,
+            "bin_start": 1786.1000000000001,
+            "bin_end": 1987.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "comp2012",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 58,
+      "mean": 148.88732394366198,
+      "stddev": 212.49765859825405,
+      "coverage": [
+        {
+          "range": {
+            "gte": -70.0,
+            "lte": 173.0
+          }
+        },
+        {
+          "range": {
+            "gte": 209.0,
+            "lte": 536.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 23,
+            "bin_start": -108.0,
+            "bin_end": 22.69999999999999
+          },
+          {
+            "count": 24,
+            "bin_start": 22.69999999999999,
+            "bin_end": 153.39999999999998
+          },
+          {
+            "count": 11,
+            "bin_start": 153.39999999999998,
+            "bin_end": 284.09999999999997
+          },
+          {
+            "count": 5,
+            "bin_start": 284.09999999999997,
+            "bin_end": 414.79999999999995
+          },
+          {
+            "count": 6,
+            "bin_start": 414.79999999999995,
+            "bin_end": 545.5
+          },
+          {
+            "count": 0,
+            "bin_start": 545.5,
+            "bin_end": 676.1999999999999
+          },
+          {
+            "count": 1,
+            "bin_start": 676.1999999999999,
+            "bin_end": 806.8999999999999
+          },
+          {
+            "count": 0,
+            "bin_start": 806.8999999999999,
+            "bin_end": 937.5999999999999
+          },
+          {
+            "count": 0,
+            "bin_start": 937.5999999999999,
+            "bin_end": 1068.3
+          },
+          {
+            "count": 1,
+            "bin_start": 1068.3,
+            "bin_end": 1199.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "comp2013",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 57,
+      "mean": 204.91549295774647,
+      "stddev": 441.31939653721116,
+      "coverage": [
+        {
+          "range": {
+            "gte": -37.0,
+            "lte": 179.0
+          }
+        },
+        {
+          "range": {
+            "gte": 216.0,
+            "lte": 564.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 40,
+            "bin_start": -172.0,
+            "bin_end": 94.80000000000001
+          },
+          {
+            "count": 22,
+            "bin_start": 94.80000000000001,
+            "bin_end": 361.6
+          },
+          {
+            "count": 6,
+            "bin_start": 361.6,
+            "bin_end": 628.4000000000001
+          },
+          {
+            "count": 0,
+            "bin_start": 628.4000000000001,
+            "bin_end": 895.2
+          },
+          {
+            "count": 0,
+            "bin_start": 895.2,
+            "bin_end": 1162.0
+          },
+          {
+            "count": 0,
+            "bin_start": 1162.0,
+            "bin_end": 1428.8000000000002
+          },
+          {
+            "count": 0,
+            "bin_start": 1428.8000000000002,
+            "bin_end": 1695.6000000000001
+          },
+          {
+            "count": 1,
+            "bin_start": 1695.6000000000001,
+            "bin_end": 1962.4
+          },
+          {
+            "count": 1,
+            "bin_start": 1962.4,
+            "bin_end": 2229.2000000000003
+          },
+          {
+            "count": 1,
+            "bin_start": 2229.2000000000003,
+            "bin_end": 2496.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "comp2014",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 59,
+      "mean": 175.45070422535213,
+      "stddev": 279.0979326699336,
+      "coverage": [
+        {
+          "range": {
+            "gte": -10.0,
+            "lte": 158.0
+          }
+        },
+        {
+          "range": {
+            "gte": 195.0,
+            "lte": 622.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 1,
+            "bin_start": -362.0,
+            "bin_end": -183.3
+          },
+          {
+            "count": 2,
+            "bin_start": -183.3,
+            "bin_end": -4.600000000000023
+          },
+          {
+            "count": 45,
+            "bin_start": -4.600000000000023,
+            "bin_end": 174.0999999999999
+          },
+          {
+            "count": 14,
+            "bin_start": 174.0999999999999,
+            "bin_end": 352.79999999999995
+          },
+          {
+            "count": 3,
+            "bin_start": 352.79999999999995,
+            "bin_end": 531.5
+          },
+          {
+            "count": 2,
+            "bin_start": 531.5,
+            "bin_end": 710.1999999999998
+          },
+          {
+            "count": 1,
+            "bin_start": 710.1999999999998,
+            "bin_end": 888.8999999999999
+          },
+          {
+            "count": 1,
+            "bin_start": 888.8999999999999,
+            "bin_end": 1067.6
+          },
+          {
+            "count": 1,
+            "bin_start": 1067.6,
+            "bin_end": 1246.3
+          },
+          {
+            "count": 1,
+            "bin_start": 1246.3,
+            "bin_end": 1425.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "comp2015",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 53,
+      "mean": 219.57746478873239,
+      "stddev": 373.70190959994204,
+      "coverage": [
+        {
+          "range": {
+            "gte": -20.0,
+            "lte": 303.0
+          }
+        },
+        {
+          "range": {
+            "gte": 411.0,
+            "lte": 959.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 22,
+            "bin_start": -170.0,
+            "bin_end": 31.400000000000006
+          },
+          {
+            "count": 30,
+            "bin_start": 31.400000000000006,
+            "bin_end": 232.8
+          },
+          {
+            "count": 9,
+            "bin_start": 232.8,
+            "bin_end": 434.20000000000005
+          },
+          {
+            "count": 5,
+            "bin_start": 434.20000000000005,
+            "bin_end": 635.6
+          },
+          {
+            "count": 0,
+            "bin_start": 635.6,
+            "bin_end": 837.0
+          },
+          {
+            "count": 2,
+            "bin_start": 837.0,
+            "bin_end": 1038.4
+          },
+          {
+            "count": 0,
+            "bin_start": 1038.4,
+            "bin_end": 1239.8
+          },
+          {
+            "count": 0,
+            "bin_start": 1239.8,
+            "bin_end": 1441.2
+          },
+          {
+            "count": 1,
+            "bin_start": 1441.2,
+            "bin_end": 1642.6000000000001
+          },
+          {
+            "count": 2,
+            "bin_start": 1642.6000000000001,
+            "bin_end": 1844.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "comp2016",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 58,
+      "mean": 334.1830985915493,
+      "stddev": 470.67237820129867,
+      "coverage": [
+        {
+          "range": {
+            "gte": -2.0,
+            "lte": 388.0
+          }
+        },
+        {
+          "range": {
+            "gte": 554.0,
+            "lte": 1264.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 44,
+            "bin_start": -13.0,
+            "bin_end": 211.9
+          },
+          {
+            "count": 9,
+            "bin_start": 211.9,
+            "bin_end": 436.8
+          },
+          {
+            "count": 5,
+            "bin_start": 436.8,
+            "bin_end": 661.7
+          },
+          {
+            "count": 6,
+            "bin_start": 661.7,
+            "bin_end": 886.6
+          },
+          {
+            "count": 0,
+            "bin_start": 886.6,
+            "bin_end": 1111.5
+          },
+          {
+            "count": 4,
+            "bin_start": 1111.5,
+            "bin_end": 1336.4
+          },
+          {
+            "count": 0,
+            "bin_start": 1336.4,
+            "bin_end": 1561.3
+          },
+          {
+            "count": 2,
+            "bin_start": 1561.3,
+            "bin_end": 1786.2
+          },
+          {
+            "count": 0,
+            "bin_start": 1786.2,
+            "bin_end": 2011.1000000000001
+          },
+          {
+            "count": 1,
+            "bin_start": 2011.1000000000001,
+            "bin_end": 2236.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "comp2017",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 58,
+      "mean": 372.19718309859155,
+      "stddev": 596.4410793354408,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 242.0
+          }
+        },
+        {
+          "range": {
+            "gte": 436.0,
+            "lte": 1257.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 48,
+            "bin_start": 0.0,
+            "bin_end": 282.3
+          },
+          {
+            "count": 8,
+            "bin_start": 282.3,
+            "bin_end": 564.6
+          },
+          {
+            "count": 7,
+            "bin_start": 564.6,
+            "bin_end": 846.9000000000001
+          },
+          {
+            "count": 3,
+            "bin_start": 846.9000000000001,
+            "bin_end": 1129.2
+          },
+          {
+            "count": 1,
+            "bin_start": 1129.2,
+            "bin_end": 1411.5
+          },
+          {
+            "count": 0,
+            "bin_start": 1411.5,
+            "bin_end": 1693.8000000000002
+          },
+          {
+            "count": 0,
+            "bin_start": 1693.8000000000002,
+            "bin_end": 1976.1000000000001
+          },
+          {
+            "count": 1,
+            "bin_start": 1976.1000000000001,
+            "bin_end": 2258.4
+          },
+          {
+            "count": 1,
+            "bin_start": 2258.4,
+            "bin_end": 2540.7000000000003
+          },
+          {
+            "count": 2,
+            "bin_start": 2540.7000000000003,
+            "bin_end": 2823.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "comp2018",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 57,
+      "mean": 411.53521126760563,
+      "stddev": 591.1321872852752,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 460.0
+          }
+        },
+        {
+          "range": {
+            "gte": 691.0,
+            "lte": 1696.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 45,
+            "bin_start": 0.0,
+            "bin_end": 256.3
+          },
+          {
+            "count": 9,
+            "bin_start": 256.3,
+            "bin_end": 512.6
+          },
+          {
+            "count": 3,
+            "bin_start": 512.6,
+            "bin_end": 768.9000000000001
+          },
+          {
+            "count": 5,
+            "bin_start": 768.9000000000001,
+            "bin_end": 1025.2
+          },
+          {
+            "count": 2,
+            "bin_start": 1025.2,
+            "bin_end": 1281.5
+          },
+          {
+            "count": 2,
+            "bin_start": 1281.5,
+            "bin_end": 1537.8000000000002
+          },
+          {
+            "count": 2,
+            "bin_start": 1537.8000000000002,
+            "bin_end": 1794.1000000000001
+          },
+          {
+            "count": 0,
+            "bin_start": 1794.1000000000001,
+            "bin_end": 2050.4
+          },
+          {
+            "count": 1,
+            "bin_start": 2050.4,
+            "bin_end": 2306.7000000000003
+          },
+          {
+            "count": 2,
+            "bin_start": 2306.7000000000003,
+            "bin_end": 2563.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "comp2019",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 58,
+      "mean": 376.4225352112676,
+      "stddev": 444.78305083384816,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 298.0
+          }
+        },
+        {
+          "range": {
+            "gte": 378.0,
+            "lte": 981.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1055.0,
+            "lte": 2063.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 35,
+            "bin_start": -11.0,
+            "bin_end": 196.4
+          },
+          {
+            "count": 12,
+            "bin_start": 196.4,
+            "bin_end": 403.8
+          },
+          {
+            "count": 9,
+            "bin_start": 403.8,
+            "bin_end": 611.2
+          },
+          {
+            "count": 3,
+            "bin_start": 611.2,
+            "bin_end": 818.6
+          },
+          {
+            "count": 4,
+            "bin_start": 818.6,
+            "bin_end": 1026.0
+          },
+          {
+            "count": 3,
+            "bin_start": 1026.0,
+            "bin_end": 1233.4
+          },
+          {
+            "count": 3,
+            "bin_start": 1233.4,
+            "bin_end": 1440.8
+          },
+          {
+            "count": 1,
+            "bin_start": 1440.8,
+            "bin_end": 1648.2
+          },
+          {
+            "count": 0,
+            "bin_start": 1648.2,
+            "bin_end": 1855.6000000000001
+          },
+          {
+            "count": 1,
+            "bin_start": 1855.6000000000001,
+            "bin_end": 2063.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "comp2020",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 59,
+      "mean": 302.09859154929575,
+      "stddev": 349.10727819419225,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 382.0
+          }
+        },
+        {
+          "range": {
+            "gte": 491.0,
+            "lte": 1029.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 32,
+            "bin_start": -12.0,
+            "bin_end": 153.6
+          },
+          {
+            "count": 13,
+            "bin_start": 153.6,
+            "bin_end": 319.2
+          },
+          {
+            "count": 11,
+            "bin_start": 319.2,
+            "bin_end": 484.79999999999995
+          },
+          {
+            "count": 4,
+            "bin_start": 484.79999999999995,
+            "bin_end": 650.4
+          },
+          {
+            "count": 6,
+            "bin_start": 650.4,
+            "bin_end": 816.0
+          },
+          {
+            "count": 1,
+            "bin_start": 816.0,
+            "bin_end": 981.5999999999999
+          },
+          {
+            "count": 1,
+            "bin_start": 981.5999999999999,
+            "bin_end": 1147.2
+          },
+          {
+            "count": 1,
+            "bin_start": 1147.2,
+            "bin_end": 1312.8
+          },
+          {
+            "count": 1,
+            "bin_start": 1312.8,
+            "bin_end": 1478.3999999999999
+          },
+          {
+            "count": 1,
+            "bin_start": 1478.3999999999999,
+            "bin_end": 1644.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "comp2021",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 59,
+      "mean": 409.6619718309859,
+      "stddev": 565.8354397630874,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 521.0
+          }
+        },
+        {
+          "range": {
+            "gte": 637.0,
+            "lte": 1851.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 46,
+            "bin_start": 0.0,
+            "bin_end": 368.6
+          },
+          {
+            "count": 12,
+            "bin_start": 368.6,
+            "bin_end": 737.2
+          },
+          {
+            "count": 9,
+            "bin_start": 737.2,
+            "bin_end": 1105.8000000000002
+          },
+          {
+            "count": 1,
+            "bin_start": 1105.8000000000002,
+            "bin_end": 1474.4
+          },
+          {
+            "count": 1,
+            "bin_start": 1474.4,
+            "bin_end": 1843.0
+          },
+          {
+            "count": 1,
+            "bin_start": 1843.0,
+            "bin_end": 2211.6000000000004
+          },
+          {
+            "count": 0,
+            "bin_start": 2211.6000000000004,
+            "bin_end": 2580.2000000000003
+          },
+          {
+            "count": 0,
+            "bin_start": 2580.2000000000003,
+            "bin_end": 2948.8
+          },
+          {
+            "count": 0,
+            "bin_start": 2948.8,
+            "bin_end": 3317.4
+          },
+          {
+            "count": 1,
+            "bin_start": 3317.4,
+            "bin_end": 3686.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "comp2022",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 58,
+      "mean": 373.5492957746479,
+      "stddev": 486.06945509418756,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 526.0
+          }
+        },
+        {
+          "range": {
+            "gte": 723.0,
+            "lte": 1559.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 40,
+            "bin_start": 0.0,
+            "bin_end": 225.3
+          },
+          {
+            "count": 10,
+            "bin_start": 225.3,
+            "bin_end": 450.6
+          },
+          {
+            "count": 7,
+            "bin_start": 450.6,
+            "bin_end": 675.9000000000001
+          },
+          {
+            "count": 4,
+            "bin_start": 675.9000000000001,
+            "bin_end": 901.2
+          },
+          {
+            "count": 3,
+            "bin_start": 901.2,
+            "bin_end": 1126.5
+          },
+          {
+            "count": 3,
+            "bin_start": 1126.5,
+            "bin_end": 1351.8000000000002
+          },
+          {
+            "count": 2,
+            "bin_start": 1351.8000000000002,
+            "bin_end": 1577.1000000000001
+          },
+          {
+            "count": 0,
+            "bin_start": 1577.1000000000001,
+            "bin_end": 1802.4
+          },
+          {
+            "count": 1,
+            "bin_start": 1802.4,
+            "bin_end": 2027.7
+          },
+          {
+            "count": 1,
+            "bin_start": 2027.7,
+            "bin_end": 2253.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "comp2023",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 59,
+      "mean": 424.85915492957747,
+      "stddev": 573.006238340169,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 298.0
+          }
+        },
+        {
+          "range": {
+            "gte": 503.0,
+            "lte": 1214.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 37,
+            "bin_start": -67.0,
+            "bin_end": 233.8
+          },
+          {
+            "count": 11,
+            "bin_start": 233.8,
+            "bin_end": 534.6
+          },
+          {
+            "count": 13,
+            "bin_start": 534.6,
+            "bin_end": 835.4000000000001
+          },
+          {
+            "count": 5,
+            "bin_start": 835.4000000000001,
+            "bin_end": 1136.2
+          },
+          {
+            "count": 2,
+            "bin_start": 1136.2,
+            "bin_end": 1437.0
+          },
+          {
+            "count": 0,
+            "bin_start": 1437.0,
+            "bin_end": 1737.8000000000002
+          },
+          {
+            "count": 0,
+            "bin_start": 1737.8000000000002,
+            "bin_end": 2038.6
+          },
+          {
+            "count": 0,
+            "bin_start": 2038.6,
+            "bin_end": 2339.4
+          },
+          {
+            "count": 2,
+            "bin_start": 2339.4,
+            "bin_end": 2640.2000000000003
+          },
+          {
+            "count": 1,
+            "bin_start": 2640.2000000000003,
+            "bin_end": 2941.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "comp2024",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 60,
+      "mean": 531.4929577464789,
+      "stddev": 626.9717264159962,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 733.0
+          }
+        },
+        {
+          "range": {
+            "gte": 854.0,
+            "lte": 2028.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 36,
+            "bin_start": 0.0,
+            "bin_end": 349.8
+          },
+          {
+            "count": 15,
+            "bin_start": 349.8,
+            "bin_end": 699.6
+          },
+          {
+            "count": 11,
+            "bin_start": 699.6,
+            "bin_end": 1049.4
+          },
+          {
+            "count": 1,
+            "bin_start": 1049.4,
+            "bin_end": 1399.2
+          },
+          {
+            "count": 4,
+            "bin_start": 1399.2,
+            "bin_end": 1749.0
+          },
+          {
+            "count": 3,
+            "bin_start": 1749.0,
+            "bin_end": 2098.8
+          },
+          {
+            "count": 0,
+            "bin_start": 2098.8,
+            "bin_end": 2448.6
+          },
+          {
+            "count": 0,
+            "bin_start": 2448.6,
+            "bin_end": 2798.4
+          },
+          {
+            "count": 0,
+            "bin_start": 2798.4,
+            "bin_end": 3148.2000000000003
+          },
+          {
+            "count": 1,
+            "bin_start": 3148.2000000000003,
+            "bin_end": 3498.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "cenunits20",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 70,
+      "mean": 50966.69014084507,
+      "stddev": 30051.405561368443,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 19655.0
+          }
+        },
+        {
+          "range": {
+            "gte": 36640.0,
+            "lte": 72623.0
+          }
+        },
+        {
+          "range": {
+            "gte": 82589.0,
+            "lte": 138922.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 12,
+            "bin_start": 0.0,
+            "bin_end": 13892.2
+          },
+          {
+            "count": 1,
+            "bin_start": 13892.2,
+            "bin_end": 27784.4
+          },
+          {
+            "count": 6,
+            "bin_start": 27784.4,
+            "bin_end": 41676.600000000006
+          },
+          {
+            "count": 20,
+            "bin_start": 41676.600000000006,
+            "bin_end": 55568.8
+          },
+          {
+            "count": 17,
+            "bin_start": 55568.8,
+            "bin_end": 69461.0
+          },
+          {
+            "count": 8,
+            "bin_start": 69461.0,
+            "bin_end": 83353.20000000001
+          },
+          {
+            "count": 3,
+            "bin_start": 83353.20000000001,
+            "bin_end": 97245.40000000001
+          },
+          {
+            "count": 2,
+            "bin_start": 97245.40000000001,
+            "bin_end": 111137.6
+          },
+          {
+            "count": 0,
+            "bin_start": 111137.6,
+            "bin_end": 125029.8
+          },
+          {
+            "count": 2,
+            "bin_start": 125029.8,
+            "bin_end": 138922.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "filed",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 58,
+      "mean": 529.4366197183099,
+      "stddev": 589.3471377718238,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 507.0
+          }
+        },
+        {
+          "range": {
+            "gte": 634.0,
+            "lte": 1631.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 33,
+            "bin_start": 0.0,
+            "bin_end": 298.8
+          },
+          {
+            "count": 13,
+            "bin_start": 298.8,
+            "bin_end": 597.6
+          },
+          {
+            "count": 10,
+            "bin_start": 597.6,
+            "bin_end": 896.4000000000001
+          },
+          {
+            "count": 7,
+            "bin_start": 896.4000000000001,
+            "bin_end": 1195.2
+          },
+          {
+            "count": 2,
+            "bin_start": 1195.2,
+            "bin_end": 1494.0
+          },
+          {
+            "count": 3,
+            "bin_start": 1494.0,
+            "bin_end": 1792.8000000000002
+          },
+          {
+            "count": 1,
+            "bin_start": 1792.8000000000002,
+            "bin_end": 2091.6
+          },
+          {
+            "count": 1,
+            "bin_start": 2091.6,
+            "bin_end": 2390.4
+          },
+          {
+            "count": 0,
+            "bin_start": 2390.4,
+            "bin_end": 2689.2000000000003
+          },
+          {
+            "count": 1,
+            "bin_start": 2689.2000000000003,
+            "bin_end": 2988.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "approved",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 57,
+      "mean": 167.35211267605635,
+      "stddev": 204.27164312668916,
+      "coverage": [
+        {
+          "range": {
+            "gte": -40.0,
+            "lte": 138.0
+          }
+        },
+        {
+          "range": {
+            "gte": 207.0,
+            "lte": 459.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 3,
+            "bin_start": -139.0,
+            "bin_end": -24.099999999999994
+          },
+          {
+            "count": 31,
+            "bin_start": -24.099999999999994,
+            "bin_end": 90.80000000000001
+          },
+          {
+            "count": 11,
+            "bin_start": 90.80000000000001,
+            "bin_end": 205.70000000000005
+          },
+          {
+            "count": 14,
+            "bin_start": 205.70000000000005,
+            "bin_end": 320.6
+          },
+          {
+            "count": 5,
+            "bin_start": 320.6,
+            "bin_end": 435.5
+          },
+          {
+            "count": 3,
+            "bin_start": 435.5,
+            "bin_end": 550.4000000000001
+          },
+          {
+            "count": 2,
+            "bin_start": 550.4000000000001,
+            "bin_end": 665.3000000000001
+          },
+          {
+            "count": 0,
+            "bin_start": 665.3000000000001,
+            "bin_end": 780.2
+          },
+          {
+            "count": 1,
+            "bin_start": 780.2,
+            "bin_end": 895.1000000000001
+          },
+          {
+            "count": 1,
+            "bin_start": 895.1000000000001,
+            "bin_end": 1010.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "permitted",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 60,
+      "mean": 1367.112676056338,
+      "stddev": 1647.092312499714,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 1487.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1791.0,
+            "lte": 4199.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 35,
+            "bin_start": 0.0,
+            "bin_end": 817.9
+          },
+          {
+            "count": 18,
+            "bin_start": 817.9,
+            "bin_end": 1635.8
+          },
+          {
+            "count": 5,
+            "bin_start": 1635.8,
+            "bin_end": 2453.7
+          },
+          {
+            "count": 5,
+            "bin_start": 2453.7,
+            "bin_end": 3271.6
+          },
+          {
+            "count": 3,
+            "bin_start": 3271.6,
+            "bin_end": 4089.5
+          },
+          {
+            "count": 1,
+            "bin_start": 4089.5,
+            "bin_end": 4907.4
+          },
+          {
+            "count": 1,
+            "bin_start": 4907.4,
+            "bin_end": 5725.3
+          },
+          {
+            "count": 2,
+            "bin_start": 5725.3,
+            "bin_end": 6543.2
+          },
+          {
+            "count": 0,
+            "bin_start": 6543.2,
+            "bin_end": 7361.099999999999
+          },
+          {
+            "count": 1,
+            "bin_start": 7361.099999999999,
+            "bin_end": 8179.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "withdrawn",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 57,
+      "mean": 532.8732394366198,
+      "stddev": 740.8745294844477,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 489.0
+          }
+        },
+        {
+          "range": {
+            "gte": 652.0,
+            "lte": 1605.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 32,
+            "bin_start": -162.0,
+            "bin_end": 266.7
+          },
+          {
+            "count": 19,
+            "bin_start": 266.7,
+            "bin_end": 695.4
+          },
+          {
+            "count": 11,
+            "bin_start": 695.4,
+            "bin_end": 1124.1
+          },
+          {
+            "count": 5,
+            "bin_start": 1124.1,
+            "bin_end": 1552.8
+          },
+          {
+            "count": 1,
+            "bin_start": 1552.8,
+            "bin_end": 1981.5
+          },
+          {
+            "count": 0,
+            "bin_start": 1981.5,
+            "bin_end": 2410.2
+          },
+          {
+            "count": 0,
+            "bin_start": 2410.2,
+            "bin_end": 2838.9
+          },
+          {
+            "count": 2,
+            "bin_start": 2838.9,
+            "bin_end": 3267.6
+          },
+          {
+            "count": 0,
+            "bin_start": 3267.6,
+            "bin_end": 3696.2999999999997
+          },
+          {
+            "count": 1,
+            "bin_start": 3696.2999999999997,
+            "bin_end": 4125.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "inactive",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 59,
+      "mean": 503.5774647887324,
+      "stddev": 527.0917460821587,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 474.0
+          }
+        },
+        {
+          "range": {
+            "gte": 548.0,
+            "lte": 1398.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 26,
+            "bin_start": 0.0,
+            "bin_end": 233.6
+          },
+          {
+            "count": 15,
+            "bin_start": 233.6,
+            "bin_end": 467.2
+          },
+          {
+            "count": 12,
+            "bin_start": 467.2,
+            "bin_end": 700.8
+          },
+          {
+            "count": 10,
+            "bin_start": 700.8,
+            "bin_end": 934.4
+          },
+          {
+            "count": 2,
+            "bin_start": 934.4,
+            "bin_end": 1168.0
+          },
+          {
+            "count": 1,
+            "bin_start": 1168.0,
+            "bin_end": 1401.6
+          },
+          {
+            "count": 1,
+            "bin_start": 1401.6,
+            "bin_end": 1635.2
+          },
+          {
+            "count": 0,
+            "bin_start": 1635.2,
+            "bin_end": 1868.8
+          },
+          {
+            "count": 2,
+            "bin_start": 1868.8,
+            "bin_end": 2102.4
+          },
+          {
+            "count": 2,
+            "bin_start": 2102.4,
+            "bin_end": 2336.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "shape_area",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "mean": 118633788.78954506,
+      "stddev": 113130212.91334331,
+      "coverage": [
+        {
+          "range": {
+            "gte": 30591949.3097,
+            "lte": 131322365.789
+          }
+        },
+        {
+          "range": {
+            "gte": 165456104.522,
+            "lte": 377286687.027
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 37,
+            "bin_start": 24009736.3462,
+            "bin_end": 82225480.48348
+          },
+          {
+            "count": 17,
+            "bin_start": 82225480.48348,
+            "bin_end": 140441224.62076
+          },
+          {
+            "count": 7,
+            "bin_start": 140441224.62076,
+            "bin_end": 198656968.75804
+          },
+          {
+            "count": 3,
+            "bin_start": 198656968.75804,
+            "bin_end": 256872712.89532
+          },
+          {
+            "count": 2,
+            "bin_start": 256872712.89532,
+            "bin_end": 315088457.0326
+          },
+          {
+            "count": 2,
+            "bin_start": 315088457.0326,
+            "bin_end": 373304201.16988003
+          },
+          {
+            "count": 1,
+            "bin_start": 373304201.16988003,
+            "bin_end": 431519945.30716
+          },
+          {
+            "count": 0,
+            "bin_start": 431519945.30716,
+            "bin_end": 489735689.44444
+          },
+          {
+            "count": 0,
+            "bin_start": 489735689.44444,
+            "bin_end": 547951433.58172
+          },
+          {
+            "count": 2,
+            "bin_start": 547951433.58172,
+            "bin_end": 606167177.719
+          }
+        ]
+      }
+    },
+    {
+      "name": "shape_leng",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "mean": 76416.78037524364,
+      "stddev": 53612.23202978913,
+      "coverage": [
+        {
+          "range": {
+            "gte": 31529.7246726,
+            "lte": 79202.5540094
+          }
+        },
+        {
+          "range": {
+            "gte": 90174.1962936,
+            "lte": 153716.45354
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 26,
+            "bin_start": 24199.0684264,
+            "bin_end": 47504.32247766
+          },
+          {
+            "count": 16,
+            "bin_start": 47504.32247766,
+            "bin_end": 70809.57652892
+          },
+          {
+            "count": 13,
+            "bin_start": 70809.57652892,
+            "bin_end": 94114.83058018
+          },
+          {
+            "count": 6,
+            "bin_start": 94114.83058018,
+            "bin_end": 117420.08463144
+          },
+          {
+            "count": 0,
+            "bin_start": 117420.08463144,
+            "bin_end": 140725.3386827
+          },
+          {
+            "count": 4,
+            "bin_start": 140725.3386827,
+            "bin_end": 164030.59273396002
+          },
+          {
+            "count": 1,
+            "bin_start": 164030.59273396002,
+            "bin_end": 187335.84678521997
+          },
+          {
+            "count": 1,
+            "bin_start": 187335.84678521997,
+            "bin_end": 210641.10083647998
+          },
+          {
+            "count": 2,
+            "bin_start": 210641.10083647998,
+            "bin_end": 233946.35488774
+          },
+          {
+            "count": 2,
+            "bin_start": 233946.35488774,
+            "bin_end": 257251.608939
+          }
+        ]
+      }
+    }
+  ],
+  "nb_numerical_columns": 24,
+  "types": [
+    "numerical"
+  ],
+  "attribute_keywords": [
+    "the_geom",
+    "the",
+    "geom",
+    "cdta2020",
+    "cdta",
+    "2020",
+    "cdtaname20",
+    "cdtaname",
+    "20",
+    "comp2010ap",
+    "comp",
+    "2010",
+    "ap",
+    "comp2010",
+    "comp",
+    "2010",
+    "comp2011",
+    "comp",
+    "2011",
+    "comp2012",
+    "comp",
+    "2012",
+    "comp2013",
+    "comp",
+    "2013",
+    "comp2014",
+    "comp",
+    "2014",
+    "comp2015",
+    "comp",
+    "2015",
+    "comp2016",
+    "comp",
+    "2016",
+    "comp2017",
+    "comp",
+    "2017",
+    "comp2018",
+    "comp",
+    "2018",
+    "comp2019",
+    "comp",
+    "2019",
+    "comp2020",
+    "comp",
+    "2020",
+    "comp2021",
+    "comp",
+    "2021",
+    "comp2022",
+    "comp",
+    "2022",
+    "comp2023",
+    "comp",
+    "2023",
+    "comp2024",
+    "comp",
+    "2024",
+    "cenunits20",
+    "cenunits",
+    "20",
+    "filed",
+    "approved",
+    "permitted",
+    "withdrawn",
+    "inactive",
+    "shape_area",
+    "shape",
+    "area",
+    "shape_leng",
+    "shape",
+    "leng"
+  ],
+  "sample": "the_geom,cdta2020,cdtaname20,comp2010ap,comp2010,comp2011,comp2012,comp2013,comp2014,comp2015,comp2016,comp2017,comp2018,comp2019,comp2020,comp2021,comp2022,comp2023,comp2024,cenunits20,filed,approved,permitted,withdrawn,inactive,shape_area,shape_leng\r\n\"MULTIPOLYGON (((-73.9180460689238 40.68721324844061, -73.91799890633425 40.686965779610425, -73.91791548323842 40.686565936971334,...\",BK03,BK03 Bedford-Stuyvesant (CD 3 Approximation),733.0,343.0,569.0,521.0,531.0,321.0,568.0,1153.0,988.0,1044.0,1055.0,1029.0,1089.0,945.0,960.0,970.0,72623,507.0,213.0,3164.0,1605.0,783.0,78196399.5011,37550.8575444\r\n\"MULTIPOLYGON (((-73.89652644148296 40.682403299743406, -73.89660943688652 40.682010586814634, -73.89667461511563 40.68187717081883,...\",BK04,BK04 Bushwick (CD 4 Equivalent),525.0,471.0,264.0,141.0,280.0,250.0,424.0,421.0,658.0,1696.0,1327.0,719.0,496.0,526.0,560.0,960.0,47292,229.0,179.0,1337.0,1106.0,851.0,56653206.6545,36981.7265662\r\n\"MULTIPOLYGON (((-73.9729943393888 40.608814142304894, -73.97295947932575 40.60862950827245, -73.9725898234111 40.60667153404359,...\",BK11,BK11 Bensonhurst-Bath Beach (CD 11 Approximation),38.0,213.0,106.0,46.0,102.0,36.0,39.0,89.0,50.0,184.0,128.0,61.0,118.0,203.0,93.0,513.0,71001,72.0,41.0,283.0,287.0,110.0,103026590.34,49043.5712992\r\n\"MULTIPOLYGON (((-73.97139631534189 40.64825778611375, -73.97121038966947 40.647620155153994, -73.97084113663675 40.64637857157479,...\",BK12,BK12 Borough Park-Kensington (CD 12 Approximation),479.0,231.0,215.0,32.0,56.0,46.0,83.0,118.0,139.0,103.0,267.0,506.0,261.0,35.0,178.0,156.0,64309,142.0,131.0,603.0,369.0,215.0,101058100.172,54264.1704232\r\n\"MULTIPOLYGON (((-73.94405560778165 40.61199284290626, -73.94380031914149 40.610719119832076, -73.94369953786351 40.6102140397765,...\",BK15,BK15 Sheepshead Bay-Gravesend (East) (CD 15 Approximation),128.0,101.0,103.0,40.0,75.0,26.0,66.0,7.0,436.0,201.0,109.0,240.0,228.0,25.0,156.0,121.0,64571,110.0,209.0,411.0,321.0,171.0,125629573.762,114221.4234\r\n\"MULTIPOLYGON (((-73.90404639720796 40.679220598521056, -73.90349049948958 40.67889804920417, -73.9032074547784 40.67874076570463,...\",BK16,BK16 Ocean Hill-Brownsville (CD 16 Approximation),302.0,303.0,280.0,219.0,179.0,105.0,46.0,291.0,561.0,232.0,114.0,340.0,892.0,975.0,433.0,561.0,37069,407.0,315.0,2030.0,284.0,303.0,50875624.1992,35823.0477242\r\n\"MULTIPOLYGON (((-73.89680883223778 40.795808445159835, -73.89693872998787 40.79563587285368, -73.89723603843935 40.79572003753717,...\",BX02,BX02 Longwood-Hunts Point (CD 2 Approximation),446.0,158.0,244.0,17.0,109.0,-1.0,0.0,107.0,78.0,78.0,400.0,529.0,279.0,418.0,131.0,224.0,19655,296.0,429.0,753.0,68.0,431.0,61354571.055,52368.1103935\r\n\"MULTIPOLYGON (((-73.8678979849636 40.90294017640123, -73.86795532386107 40.90281208630654, -73.86799626715214 40.902716801600704,...\",BX26,BX26 Van Cortlandt Park (JIA 26 Equivalent),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,72,0.0,0.0,0.0,0.0,0.0,50658598.3497,32864.1142206\r\n\"MULTIPOLYGON (((-74.01092841113987 40.684491473213214, -74.01193259911071 40.68388774982516, -74.01217596614636 40.68409518562852,...\",MN01,MN01 Financial District-Tribeca (CD 1 Equivalent),246.0,460.0,1598.0,503.0,438.0,-11.0,850.0,1174.0,1257.0,1166.0,431.0,382.0,840.0,27.0,594.0,870.0,41977,1631.0,41.0,3158.0,468.0,603.0,44812089.7502,96270.2130266\r\n\"MULTIPOLYGON (((-73.98245898564491 40.70554241497233, -73.9824228717988 40.70582205494946, -73.98102390618274 40.7058989138936,...\",MN03,MN03 Lower East Side-Chinatown (CD 3 Equivalent),311.0,592.0,122.0,70.0,184.0,422.0,56.0,290.0,656.0,1432.0,449.0,315.0,181.0,379.0,539.0,323.0,82589,268.0,61.0,2886.0,458.0,723.0,47000543.2681,38250.7879447\r\n\"MULTIPOLYGON (((-73.92133752419392 40.800852106497096, -73.9211359464301 40.800475459593585, -73.92103317578996 40.800265281857676,...\",MN11,MN11 East Harlem (CD 11 Equivalent),773.0,983.0,609.0,497.0,270.0,622.0,265.0,96.0,512.0,316.0,323.0,787.0,503.0,530.0,521.0,476.0,54738,616.0,29.0,2033.0,1038.0,1005.0,66224981.4189,75804.2623917\r\n\"MULTIPOLYGON (((-73.94923327016316 40.79687200057526, -73.94942287749448 40.79660638483059, -73.94968682842202 40.7962169853802,...\",MN64,MN64 Central Park (JIA 64 Equivalent),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5,0.0,0.0,0.0,0.0,0.0,38312378.2439,32721.0971792\r\n\"MULTIPOLYGON (((-73.86093691422813 40.76372861599371, -73.86063695524167 40.76333606615712, -73.8601220700945 40.762662231730864,...\",QN03,QN03 Jackson Heights-East Elmhurst (CD 3 Approximation),36.0,235.0,193.0,171.0,175.0,90.0,51.0,82.0,64.0,78.0,43.0,74.0,162.0,143.0,298.0,65.0,58912,220.0,54.0,587.0,216.0,548.0,82040240.2643,35966.9619405\r\n\"MULTIPOLYGON (((-73.75678272715538 40.7263057848626, -73.75688011226616 40.726278606013175, -73.75681882580895 40.72623193851245,...\",QN08,QN08 Fresh Meadows-Hillcrest-Briarwood (CD 8 Approximation),136.0,180.0,323.0,84.0,93.0,22.0,60.0,77.0,81.0,153.0,174.0,141.0,412.0,103.0,134.0,262.0,58218,937.0,59.0,301.0,149.0,354.0,202044440.383,75535.6413669\r\n\"MULTIPOLYGON (((-73.81647531193624 40.70245042741837, -73.81622619939907 40.701922635254235, -73.81612523527731 40.70170871787196,...\",QN09,QN09 Kew Gardens-Richmond Hill-Woodhaven (CD 9 Approximation),44.0,58.0,163.0,113.0,229.0,30.0,20.0,197.0,19.0,30.0,15.0,62.0,56.0,24.0,159.0,241.0,50621,93.0,122.0,368.0,147.0,474.0,108218585.712,57049.8052939\r\n\"MULTIPOLYGON (((-73.85722330896276 40.65027867104293, -73.85902154804735 40.65266017703533, -73.85991264937397 40.65384023844913,...\",QN10,QN10 South Ozone Park-Howard Beach (CD 10 Approximation),29.0,57.0,69.0,19.0,132.0,47.0,55.0,34.0,10.0,30.0,49.0,31.0,10.0,62.0,48.0,66.0,43508,104.0,59.0,151.0,168.0,314.0,171397336.408,111148.498649\r\n\"MULTIPOLYGON (((-73.87287195837615 40.7859750284742, -73.87282839783694 40.78595446173838, -73.8728226286446 40.785963974666906,...\",QN80,QN80 LaGuardia Airport (JIA 80 Approximation),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0.0,0.0,30591949.3097,42122.4724308\r\n\"MULTIPOLYGON (((-73.8684051888302 40.69473118691323, -73.8689176262472 40.69514656151332, -73.87051403531432 40.69759907173786,...\",QN82,QN82 Forest Park (JIA 82 Approximation),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1,0.0,0.0,0.0,0.0,0.0,24009736.3462,29485.1242492\r\n\"MULTIPOLYGON (((-73.74699391102739 40.63715064585509, -73.74699985138024 40.63712702843046, -73.74701102390156 40.63712870635772,...\",QN83,QN83 JFK International Airport (JIA 83 Approximation),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2,0.0,0.0,0.0,0.0,0.0,197189856.823,108138.38113\r\n\"MULTIPOLYGON (((-73.86361132820453 40.573823057519625, -73.86449302823243 40.57354277642835, -73.86457245212188 40.57369001247379,...\",QN84,QN84 Jamaica Bay (East) (JIA 84 Approximation),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,14,0.0,0.0,0.0,0.0,0.0,122558580.504,239900.063831\r\n"
+}
