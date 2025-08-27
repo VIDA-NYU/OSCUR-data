@@ -1,0 +1,66 @@
+dataset_id: "speed_distributions"
+name: "DOT Traffic Speeds (Northbound East River Crossings)"
+description: >
+  This dataset provides traffic speed records collected by the NYC Department of Transportation (DOT) 
+  for northbound approaches to NYC major arterials and highways within city bounds. It contains link-based travel speed 
+  measurements reported in near real-time, which can be aggregated for analysis of congestion patterns, 
+  travel time variability, and roadway performance.
+
+  The dataset is relevant for studies on traffic operations, network monitoring, travel demand management, 
+  and multimodal planning. Each record includes segment identifiers, reference markers, timestamps, 
+  and measured speeds. Midpoint coordinates can be derived for spatial mapping and integration with other 
+  roadway infrastructure datasets.
+
+source_organization:
+  traffic_speeds_nbe: "New York City Department of Transportation (NYC DOT)"
+
+domain: "transportation"
+last_updated: "2025-08-19"
+update_frequency:
+  traffic_speeds_nbe: "Daily"
+
+access:
+  primary_url: "https://data.cityofnewyork.us/Transportation/DOT-Traffic-Speeds-NBE/i4gi-tjb9"
+  api_endpoint:
+    traffic_speeds_nbe: "https://data.cityofnewyork.us/resource/i4gi-tjb9.csv"
+  license: "Open Data License"
+  file_format:
+    traffic_speeds_nbe: ["CSV", "JSON"]
+  rate_limits:
+    traffic_speeds_nbe: "Unknown"
+
+spatial:
+  geometry_type: "point (midpoint of link segment)"
+  coordinate_system: "EPSG:4326"
+  coverage_area: "NYC major arterials and highways"
+
+temporal:
+  temporal_type:
+    traffic_speeds_nbe: "timestamp"
+  temporal_resolution:
+    traffic_speeds_nbe: "minute-level"
+  time_column:
+    traffic_speeds_nbe: "data_as_of"
+
+implementation:
+  downloader_module:
+    traffic_speeds_nbe: "downloaders.speed_distributions.traffic_speeds"
+  processor_module: "processors.speed_distributions"
+  example_notebook: "examples.speed_distributions.ipynb"
+
+integration_opportunities:
+  spatial_joins:
+    - "Join with roadway centerlines or bridge approaches for context"
+    - "Overlay with congestion management zones"
+    - "Combine with vehicle counts or classification datasets"
+  temporal_alignment:
+    - "Align with collision or incident reports by timestamp"
+    - "Aggregate speeds to hourly or daily averages for trend analysis"
+
+map_algebra:
+  raster_conversion:
+    suitable_for_rasterization: true
+    recommended_cell_size: "30 meters"
+    interpolation_method: "continuous rasterization of speed values"
+
+data_name: "speed_distributions"

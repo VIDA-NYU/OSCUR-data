@@ -21,6 +21,11 @@ code/processors/
 ├── public_open_spaces.py              # Post-processing Public Open Spaces dataset (CSV)
 ├── land_use.py                        # Post-processing Land Use dataset (CSV)
 ├── bicycle_counts.py                  # Post-processing Bicycle Pedestrian Trip Counts dataset (CSV)
+├── roadway_feature.py                 # Post-processing Roadway Feature dataset (CSV)
+├── vehicle_volumes_and_types.py       # Post-processing Vehicle Volumes and Types dataset (CSV)
+├── speed_distributions.py             # Post-processing Speed Distributions dataset (CSV)
+├── housing_density.py                 # Post-processing Housing Database dataset (CSV)
+├── environmental_justice.py           # Post-processing Environmental Justice dataset (CSV)
 ├── socioeconomic_and_demographic.py   # Post-processing Socioeconomic and Demographics dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
@@ -212,6 +217,58 @@ No postprocessing script is needed, as the original datasets are being preserved
 #### Topography 
 No postprocessing script is needed, as the original datasets are being preserved without any merging.
 
+#### Roadway Features Dataset
+This script integrates the NYC Street Centerline with multiple roadway-related datasets, including Vision Zero safety improvement projects (intersections and corridors), DOT bus lanes, and TreesCount! blockface attributes.  
+
+```bash
+python roadway_features.py \
+  --centerline ../downloaders/data/roadway_features/centerline.csv \
+  --sip_intersections ../downloaders/data/roadway_features/sip_intersections.csv \
+  --sip_corridors ../downloaders/data/roadway_features/sip_corridors.csv \
+  --bus_lanes ../downloaders/data/roadway_features/bus_lanes.csv \
+  --blockface ../downloaders/data/roadway_features/blockface.csv \
+  --output processed_data/roadway_features_final.csv
+```
+
+#### Vehicle Volumes and Types Dataset
+This script processes the raw datasets for Automated Traffic Volume Counts (ATR), Vehicle Classification Counts (2011–2024), and the NYC Street Centerline, merging them into a single location-aware dataset keyed by `PHYSICALID`. Classification counts are joined directly to centerline segments using the SegmentID ↔ PHYSICALID relationship, while ATR point counts are snapped to the nearest centerline segment within a 120-foot search radius using spatial nearest-neighbor matching.
+
+```bash
+python merge_counts_with_centerline.py \
+  --classification ../downloaders/data/vehicle_volumes_and_types/vehicle_classification_counts_2011_2024.csv \
+  --centerline     ../downloaders/data/vehicle_volumes_and_types/nyc_street_centerline.csv \
+  --atr            ../downloaders/data/vehicle_volumes_and_types/automated_traffic_volume_counts.csv \
+  --output         ../processors/processed_data/vehicle_volumes_and_types.csv
+```
+
+#### Speed Distributions Dataset
+This script processes DOT Traffic Speeds (NBE) records by computing midpoint latitude and longitude from the link_points geometry and appending them as new columns.
+```bash
+python traffic_speeds.py \
+  --input ../downloaders/data/speed_distributions/traffic_speeds.csv \
+  --output ../processors/processed_data/speed_distributions/traffic_speeds_midpoints.csv
+```
+
+#### Housing Density Dataset
+This script processes the NYC Department of City Planning (DCP) Housing Database by 2020 CDTA.  
+It calculates housing density by combining the reported total number of housing units (`cenunits20`) with polygon areas of each Community District Tabulation Area (CDTA).  
+The output includes units per acre and units per square mile, along with the original CDTA geometries.
+
+```bash
+python housing_density.py \
+  --input ../downloaders/data/housing_density/housing_database.csv \
+  --output ../processors/processed_data/housing_density_processed.csv
+```
+
+#### Environmental Justice Dataset
+
+This script will only take the communities that are labaled New York City from data from all of New York State.
+
+```bash
+python environmental_justice.py \
+  --dac ../downloaders/data/environmental_justice/dac_2023_nyc_final.csv \
+```
+
 #### Socio Economic and Demographics Dataset
 This script processes raw or tidy ACS profile tables (demographics, economics, housing, and social characteristics) at the Neighborhood Tabulation Area (NTA) level.
 
@@ -224,7 +281,6 @@ This script processes raw or tidy ACS profile tables (demographics, economics, h
   --nta_geo ../downloaders/data/socioeconomic_and_demographic/nta_population.csv \
   --out     ../processors/processed_data/socioeconomic_and_demographic/acs_nta_all_wide.csv
 ```
-
 
 ### Other Datasets
 To be added as needed.

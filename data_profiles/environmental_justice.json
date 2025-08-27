@@ -1,0 +1,5017 @@
+{
+  "nb_rows": 2167,
+  "nb_profiled_rows": 2167,
+  "nb_columns": 65,
+  "columns": [
+    {
+      "name": "the_geom",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "40",
+            "count": 73046
+          },
+          {
+            "bin": "73",
+            "count": 61555
+          },
+          {
+            "bin": "74",
+            "count": 11491
+          },
+          {
+            "bin": "multipolygon",
+            "count": 2167
+          },
+          {
+            "bin": "87895399999998",
+            "count": 10
+          }
+        ]
+      }
+    },
+    {
+      "name": "GEOID",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [
+        "http://schema.org/identifier"
+      ],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 2167,
+      "mean": 36054758377.29534,
+      "stddev": 25942763.42976908,
+      "coverage": [
+        {
+          "range": {
+            "gte": 36005003800.0,
+            "lte": 36005043500.0
+          }
+        },
+        {
+          "range": {
+            "gte": 36047007100.0,
+            "lte": 36061022800.0
+          }
+        },
+        {
+          "range": {
+            "gte": 36081005400.0,
+            "lte": 36085018100.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 339,
+            "bin_start": 36005000100.0,
+            "bin_end": 36013099100.0
+          },
+          {
+            "count": 0,
+            "bin_start": 36013099100.0,
+            "bin_end": 36021198100.0
+          },
+          {
+            "count": 0,
+            "bin_start": 36021198100.0,
+            "bin_end": 36029297100.0
+          },
+          {
+            "count": 0,
+            "bin_start": 36029297100.0,
+            "bin_end": 36037396100.0
+          },
+          {
+            "count": 0,
+            "bin_start": 36037396100.0,
+            "bin_end": 36045495100.0
+          },
+          {
+            "count": 761,
+            "bin_start": 36045495100.0,
+            "bin_end": 36053594100.0
+          },
+          {
+            "count": 288,
+            "bin_start": 36053594100.0,
+            "bin_end": 36061693100.0
+          },
+          {
+            "count": 0,
+            "bin_start": 36061693100.0,
+            "bin_end": 36069792100.0
+          },
+          {
+            "count": 0,
+            "bin_start": 36069792100.0,
+            "bin_end": 36077891100.0
+          },
+          {
+            "count": 779,
+            "bin_start": 36077891100.0,
+            "bin_end": 36085990100.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "DAC_Designation",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Text"
+      ],
+      "plot": {
+        "type": "histogram_text",
+        "data": [
+          {
+            "bin": "designated",
+            "count": 2167
+          },
+          {
+            "bin": "as",
+            "count": 2167
+          },
+          {
+            "bin": "dac",
+            "count": 2167
+          },
+          {
+            "bin": "not",
+            "count": 1209
+          }
+        ]
+      }
+    },
+    {
+      "name": "REDC",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 1,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "New York City",
+            "count": 2167
+          }
+        ]
+      }
+    },
+    {
+      "name": "County",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 5,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "Bronx",
+            "count": 339
+          },
+          {
+            "bin": "Kings",
+            "count": 761
+          },
+          {
+            "bin": "New York",
+            "count": 288
+          },
+          {
+            "bin": "Queens",
+            "count": 669
+          },
+          {
+            "bin": "Richmond",
+            "count": 110
+          }
+        ]
+      }
+    },
+    {
+      "name": "City_Town",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 1,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "New York city",
+            "count": 2167
+          }
+        ]
+      }
+    },
+    {
+      "name": "NYC_Region",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "num_distinct_values": 1,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "NYC",
+            "count": 2167
+          }
+        ]
+      }
+    },
+    {
+      "name": "Urban_Rural",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Enumeration"
+      ],
+      "missing_values_ratio": 0.0009229349330872173,
+      "num_distinct_values": 2,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "rural",
+            "count": 6
+          },
+          {
+            "bin": "urban",
+            "count": 2159
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tribal_Designation",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Boolean",
+        "http://schema.org/Enumeration"
+      ],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 1,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "No",
+            "count": 2167
+          }
+        ]
+      }
+    },
+    {
+      "name": "Household_Low_Count_Flag",
+      "structural_type": "http://schema.org/Text",
+      "semantic_types": [
+        "http://schema.org/Boolean",
+        "http://schema.org/Enumeration"
+      ],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 2,
+      "plot": {
+        "type": "histogram_categorical",
+        "data": [
+          {
+            "bin": "No",
+            "count": 2095
+          },
+          {
+            "bin": "Yes",
+            "count": 72
+          }
+        ]
+      }
+    },
+    {
+      "name": "Population_Count",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 1816,
+      "mean": 3885.2404245500693,
+      "stddev": 2246.1803564486536,
+      "coverage": [
+        {
+          "range": {
+            "gte": 14.0,
+            "lte": 3193.0
+          }
+        },
+        {
+          "range": {
+            "gte": 3432.0,
+            "lte": 6054.0
+          }
+        },
+        {
+          "range": {
+            "gte": 6459.0,
+            "lte": 12165.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 752,
+            "bin_start": 0.0,
+            "bin_end": 2810.9
+          },
+          {
+            "count": 1032,
+            "bin_start": 2810.9,
+            "bin_end": 5621.8
+          },
+          {
+            "count": 300,
+            "bin_start": 5621.8,
+            "bin_end": 8432.7
+          },
+          {
+            "count": 64,
+            "bin_start": 8432.7,
+            "bin_end": 11243.6
+          },
+          {
+            "count": 13,
+            "bin_start": 11243.6,
+            "bin_end": 14054.5
+          },
+          {
+            "count": 5,
+            "bin_start": 14054.5,
+            "bin_end": 16865.4
+          },
+          {
+            "count": 0,
+            "bin_start": 16865.4,
+            "bin_end": 19676.3
+          },
+          {
+            "count": 0,
+            "bin_start": 19676.3,
+            "bin_end": 22487.2
+          },
+          {
+            "count": 0,
+            "bin_start": 22487.2,
+            "bin_end": 25298.100000000002
+          },
+          {
+            "count": 1,
+            "bin_start": 25298.100000000002,
+            "bin_end": 28109.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Household_Count",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 1467,
+      "mean": 1461.483156437471,
+      "stddev": 1011.020590581697,
+      "coverage": [
+        {
+          "range": {
+            "gte": 31.0,
+            "lte": 1362.0
+          }
+        },
+        {
+          "range": {
+            "gte": 1468.0,
+            "lte": 2912.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 1131,
+            "bin_start": 0.0,
+            "bin_end": 1299.8
+          },
+          {
+            "count": 811,
+            "bin_start": 1299.8,
+            "bin_end": 2599.6
+          },
+          {
+            "count": 157,
+            "bin_start": 2599.6,
+            "bin_end": 3899.3999999999996
+          },
+          {
+            "count": 52,
+            "bin_start": 3899.3999999999996,
+            "bin_end": 5199.2
+          },
+          {
+            "count": 8,
+            "bin_start": 5199.2,
+            "bin_end": 6499.0
+          },
+          {
+            "count": 5,
+            "bin_start": 6499.0,
+            "bin_end": 7798.799999999999
+          },
+          {
+            "count": 2,
+            "bin_start": 7798.799999999999,
+            "bin_end": 9098.6
+          },
+          {
+            "count": 0,
+            "bin_start": 9098.6,
+            "bin_end": 10398.4
+          },
+          {
+            "count": 0,
+            "bin_start": 10398.4,
+            "bin_end": 11698.199999999999
+          },
+          {
+            "count": 1,
+            "bin_start": 11698.199999999999,
+            "bin_end": 12998.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Percentile_Rank_Combined_Statewide",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "mean": 0.6366908915551467,
+      "stddev": 0.2518820313316402,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.386901
+          }
+        },
+        {
+          "range": {
+            "gte": 0.424566,
+            "lte": 0.703913
+          }
+        },
+        {
+          "range": {
+            "gte": 0.731743,
+            "lte": 0.988073
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 79,
+            "bin_start": 0.0,
+            "bin_end": 0.1
+          },
+          {
+            "count": 51,
+            "bin_start": 0.1,
+            "bin_end": 0.2
+          },
+          {
+            "count": 118,
+            "bin_start": 0.2,
+            "bin_end": 0.30000000000000004
+          },
+          {
+            "count": 144,
+            "bin_start": 0.30000000000000004,
+            "bin_end": 0.4
+          },
+          {
+            "count": 211,
+            "bin_start": 0.4,
+            "bin_end": 0.5
+          },
+          {
+            "count": 270,
+            "bin_start": 0.5,
+            "bin_end": 0.6000000000000001
+          },
+          {
+            "count": 294,
+            "bin_start": 0.6000000000000001,
+            "bin_end": 0.7000000000000001
+          },
+          {
+            "count": 315,
+            "bin_start": 0.7000000000000001,
+            "bin_end": 0.8
+          },
+          {
+            "count": 319,
+            "bin_start": 0.8,
+            "bin_end": 0.9
+          },
+          {
+            "count": 366,
+            "bin_start": 0.9,
+            "bin_end": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Percentile_Rank_Combined_NYC",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "mean": 0.4833871712044304,
+      "stddev": 0.29777827990170735,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.290353
+          }
+        },
+        {
+          "range": {
+            "gte": 0.324737,
+            "lte": 0.634193
+          }
+        },
+        {
+          "range": {
+            "gte": 0.668577,
+            "lte": 0.982808
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 282,
+            "bin_start": 0.0,
+            "bin_end": 0.1
+          },
+          {
+            "count": 209,
+            "bin_start": 0.1,
+            "bin_end": 0.2
+          },
+          {
+            "count": 210,
+            "bin_start": 0.2,
+            "bin_end": 0.30000000000000004
+          },
+          {
+            "count": 209,
+            "bin_start": 0.30000000000000004,
+            "bin_end": 0.4
+          },
+          {
+            "count": 209,
+            "bin_start": 0.4,
+            "bin_end": 0.5
+          },
+          {
+            "count": 210,
+            "bin_start": 0.5,
+            "bin_end": 0.6000000000000001
+          },
+          {
+            "count": 209,
+            "bin_start": 0.6000000000000001,
+            "bin_end": 0.7000000000000001
+          },
+          {
+            "count": 210,
+            "bin_start": 0.7000000000000001,
+            "bin_end": 0.8
+          },
+          {
+            "count": 209,
+            "bin_start": 0.8,
+            "bin_end": 0.9
+          },
+          {
+            "count": 210,
+            "bin_start": 0.9,
+            "bin_end": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Percentile_Rank_Combined_ROS",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 1,
+      "mean": 0.0,
+      "stddev": 0.0,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 0,
+            "bin_start": -0.5,
+            "bin_end": -0.4
+          },
+          {
+            "count": 0,
+            "bin_start": -0.4,
+            "bin_end": -0.3
+          },
+          {
+            "count": 0,
+            "bin_start": -0.3,
+            "bin_end": -0.19999999999999996
+          },
+          {
+            "count": 0,
+            "bin_start": -0.19999999999999996,
+            "bin_end": -0.09999999999999998
+          },
+          {
+            "count": 0,
+            "bin_start": -0.09999999999999998,
+            "bin_end": 0.0
+          },
+          {
+            "count": 2167,
+            "bin_start": 0.0,
+            "bin_end": 0.10000000000000009
+          },
+          {
+            "count": 0,
+            "bin_start": 0.10000000000000009,
+            "bin_end": 0.20000000000000007
+          },
+          {
+            "count": 0,
+            "bin_start": 0.20000000000000007,
+            "bin_end": 0.30000000000000004
+          },
+          {
+            "count": 0,
+            "bin_start": 0.30000000000000004,
+            "bin_end": 0.4
+          },
+          {
+            "count": 0,
+            "bin_start": 0.4,
+            "bin_end": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "name": "Combined_Score",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.03322565759113982,
+      "mean": 90.73983658682253,
+      "stddev": 14.802365674625602,
+      "coverage": [
+        {
+          "range": {
+            "gte": 61.7128176701556,
+            "lte": 80.7354483192351
+          }
+        },
+        {
+          "range": {
+            "gte": 82.0309707823083,
+            "lte": 97.7762955972734
+          }
+        },
+        {
+          "range": {
+            "gte": 99.9978114620593,
+            "lte": 124.258458163006
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 11,
+            "bin_start": 48.8346912883855,
+            "bin_end": 58.21159876328625
+          },
+          {
+            "count": 105,
+            "bin_start": 58.21159876328625,
+            "bin_end": 67.588506238187
+          },
+          {
+            "count": 249,
+            "bin_start": 67.588506238187,
+            "bin_end": 76.96541371308776
+          },
+          {
+            "count": 487,
+            "bin_start": 76.96541371308776,
+            "bin_end": 86.3423211879885
+          },
+          {
+            "count": 507,
+            "bin_start": 86.3423211879885,
+            "bin_end": 95.71922866288925
+          },
+          {
+            "count": 332,
+            "bin_start": 95.71922866288925,
+            "bin_end": 105.09613613779001
+          },
+          {
+            "count": 288,
+            "bin_start": 105.09613613779001,
+            "bin_end": 114.47304361269076
+          },
+          {
+            "count": 85,
+            "bin_start": 114.47304361269076,
+            "bin_end": 123.8499510875915
+          },
+          {
+            "count": 25,
+            "bin_start": 123.8499510875915,
+            "bin_end": 133.22685856249225
+          },
+          {
+            "count": 6,
+            "bin_start": 133.22685856249225,
+            "bin_end": 142.603766037393
+          }
+        ]
+      }
+    },
+    {
+      "name": "Burden_Score_Percentile",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "mean": 0.6222384005537615,
+      "stddev": 0.2503966748882425,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.406741
+          }
+        },
+        {
+          "range": {
+            "gte": 0.433002,
+            "lte": 0.70244
+          }
+        },
+        {
+          "range": {
+            "gte": 0.732423,
+            "lte": 0.990488
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 67,
+            "bin_start": 0.0,
+            "bin_end": 0.1
+          },
+          {
+            "count": 56,
+            "bin_start": 0.1,
+            "bin_end": 0.2
+          },
+          {
+            "count": 124,
+            "bin_start": 0.2,
+            "bin_end": 0.30000000000000004
+          },
+          {
+            "count": 184,
+            "bin_start": 0.30000000000000004,
+            "bin_end": 0.4
+          },
+          {
+            "count": 248,
+            "bin_start": 0.4,
+            "bin_end": 0.5
+          },
+          {
+            "count": 275,
+            "bin_start": 0.5,
+            "bin_end": 0.6000000000000001
+          },
+          {
+            "count": 286,
+            "bin_start": 0.6000000000000001,
+            "bin_end": 0.7000000000000001
+          },
+          {
+            "count": 285,
+            "bin_start": 0.7000000000000001,
+            "bin_end": 0.8
+          },
+          {
+            "count": 310,
+            "bin_start": 0.8,
+            "bin_end": 0.9
+          },
+          {
+            "count": 332,
+            "bin_start": 0.9,
+            "bin_end": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Vulnerability_Score_Percentile",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "mean": 0.5996377157360404,
+      "stddev": 0.27718915784590326,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.35656
+          }
+        },
+        {
+          "range": {
+            "gte": 0.400502,
+            "lte": 0.699937
+          }
+        },
+        {
+          "range": {
+            "gte": 0.725256,
+            "lte": 0.983888
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 144,
+            "bin_start": 0.0,
+            "bin_end": 0.0999791
+          },
+          {
+            "count": 116,
+            "bin_start": 0.0999791,
+            "bin_end": 0.1999582
+          },
+          {
+            "count": 122,
+            "bin_start": 0.1999582,
+            "bin_end": 0.2999373
+          },
+          {
+            "count": 150,
+            "bin_start": 0.2999373,
+            "bin_end": 0.3999164
+          },
+          {
+            "count": 170,
+            "bin_start": 0.3999164,
+            "bin_end": 0.4998955
+          },
+          {
+            "count": 226,
+            "bin_start": 0.4998955,
+            "bin_end": 0.5998746
+          },
+          {
+            "count": 292,
+            "bin_start": 0.5998746,
+            "bin_end": 0.6998537
+          },
+          {
+            "count": 317,
+            "bin_start": 0.6998537,
+            "bin_end": 0.7998328
+          },
+          {
+            "count": 315,
+            "bin_start": 0.7998328,
+            "bin_end": 0.8998119
+          },
+          {
+            "count": 315,
+            "bin_start": 0.8998119,
+            "bin_end": 0.999791
+          }
+        ]
+      }
+    },
+    {
+      "name": "Burden_Score",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.02768804799261652,
+      "mean": 36.53961382131708,
+      "stddev": 7.215172114582239,
+      "coverage": [
+        {
+          "range": {
+            "gte": 25.5542647548576,
+            "lte": 34.5453356181726
+          }
+        },
+        {
+          "range": {
+            "gte": 35.2937275299478,
+            "lte": 43.9207302082897
+          }
+        },
+        {
+          "range": {
+            "gte": 45.6500490991921,
+            "lte": 59.1997517285731
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 6,
+            "bin_start": 18.2206304169715,
+            "bin_end": 22.9480267020907
+          },
+          {
+            "count": 134,
+            "bin_start": 22.9480267020907,
+            "bin_end": 27.6754229872099
+          },
+          {
+            "count": 531,
+            "bin_start": 27.6754229872099,
+            "bin_end": 32.4028192723291
+          },
+          {
+            "count": 608,
+            "bin_start": 32.4028192723291,
+            "bin_end": 37.130215557448295
+          },
+          {
+            "count": 415,
+            "bin_start": 37.130215557448295,
+            "bin_end": 41.85761184256749
+          },
+          {
+            "count": 193,
+            "bin_start": 41.85761184256749,
+            "bin_end": 46.5850081276867
+          },
+          {
+            "count": 117,
+            "bin_start": 46.5850081276867,
+            "bin_end": 51.312404412805904
+          },
+          {
+            "count": 65,
+            "bin_start": 51.312404412805904,
+            "bin_end": 56.0398006979251
+          },
+          {
+            "count": 31,
+            "bin_start": 56.0398006979251,
+            "bin_end": 60.7671969830443
+          },
+          {
+            "count": 7,
+            "bin_start": 60.7671969830443,
+            "bin_end": 65.4945932681635
+          }
+        ]
+      }
+    },
+    {
+      "name": "Vulnerability_Score",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.03322565759113982,
+      "mean": 54.23801188451386,
+      "stddev": 13.786515292038203,
+      "coverage": [
+        {
+          "range": {
+            "gte": 22.5406445819723,
+            "lte": 42.2387799418347
+          }
+        },
+        {
+          "range": {
+            "gte": 44.3007205230359,
+            "lte": 59.3893565573893
+          }
+        },
+        {
+          "range": {
+            "gte": 60.9931519523255,
+            "lte": 77.7732590765038
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 30,
+            "bin_start": 17.0192079427643,
+            "bin_end": 23.566175184241352
+          },
+          {
+            "count": 89,
+            "bin_start": 23.566175184241352,
+            "bin_end": 30.1131424257184
+          },
+          {
+            "count": 130,
+            "bin_start": 30.1131424257184,
+            "bin_end": 36.66010966719546
+          },
+          {
+            "count": 201,
+            "bin_start": 36.66010966719546,
+            "bin_end": 43.207076908672505
+          },
+          {
+            "count": 302,
+            "bin_start": 43.207076908672505,
+            "bin_end": 49.754044150149554
+          },
+          {
+            "count": 402,
+            "bin_start": 49.754044150149554,
+            "bin_end": 56.3010113916266
+          },
+          {
+            "count": 333,
+            "bin_start": 56.3010113916266,
+            "bin_end": 62.84797863310365
+          },
+          {
+            "count": 275,
+            "bin_start": 62.84797863310365,
+            "bin_end": 69.3949458745807
+          },
+          {
+            "count": 245,
+            "bin_start": 69.3949458745807,
+            "bin_end": 75.94191311605775
+          },
+          {
+            "count": 88,
+            "bin_start": 75.94191311605775,
+            "bin_end": 82.4888803575348
+          }
+        ]
+      }
+    },
+    {
+      "name": "Benzene_Concentration",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.012459621596677434,
+      "mean": 0.7734903759427352,
+      "stddev": 0.1381382178872306,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.478028747433265,
+            "lte": 0.670636550308008
+          }
+        },
+        {
+          "range": {
+            "gte": 0.685831622176591,
+            "lte": 0.830800821355236
+          }
+        },
+        {
+          "range": {
+            "gte": 0.846817248459959,
+            "lte": 0.991991786447639
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 9,
+            "bin_start": 0.351334702258727,
+            "bin_end": 0.4162012320328543
+          },
+          {
+            "count": 26,
+            "bin_start": 0.4162012320328543,
+            "bin_end": 0.4810677618069816
+          },
+          {
+            "count": 77,
+            "bin_start": 0.4810677618069816,
+            "bin_end": 0.5459342915811088
+          },
+          {
+            "count": 193,
+            "bin_start": 0.5459342915811088,
+            "bin_end": 0.6108008213552362
+          },
+          {
+            "count": 273,
+            "bin_start": 0.6108008213552362,
+            "bin_end": 0.6756673511293635
+          },
+          {
+            "count": 299,
+            "bin_start": 0.6756673511293635,
+            "bin_end": 0.7405338809034907
+          },
+          {
+            "count": 315,
+            "bin_start": 0.7405338809034907,
+            "bin_end": 0.805400410677618
+          },
+          {
+            "count": 316,
+            "bin_start": 0.805400410677618,
+            "bin_end": 0.8702669404517454
+          },
+          {
+            "count": 316,
+            "bin_start": 0.8702669404517454,
+            "bin_end": 0.9351334702258727
+          },
+          {
+            "count": 316,
+            "bin_start": 0.9351334702258727,
+            "bin_end": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Particulate_Matter_25",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.02030456852791878,
+      "mean": 0.7679862250214183,
+      "stddev": 0.14323453274446163,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.492269635126778,
+            "lte": 0.660276231704803
+          }
+        },
+        {
+          "range": {
+            "gte": 0.676149247577819,
+            "lte": 0.828901257472686
+          }
+        },
+        {
+          "range": {
+            "gte": 0.846011131725417,
+            "lte": 0.992166563595135
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 80,
+            "bin_start": 0.4568130282416,
+            "bin_end": 0.51113172541744
+          },
+          {
+            "count": 161,
+            "bin_start": 0.51113172541744,
+            "bin_end": 0.56545042259328
+          },
+          {
+            "count": 156,
+            "bin_start": 0.56545042259328,
+            "bin_end": 0.61976911976912
+          },
+          {
+            "count": 201,
+            "bin_start": 0.61976911976912,
+            "bin_end": 0.67408781694496
+          },
+          {
+            "count": 236,
+            "bin_start": 0.67408781694496,
+            "bin_end": 0.7284065141208
+          },
+          {
+            "count": 253,
+            "bin_start": 0.7284065141208,
+            "bin_end": 0.7827252112966401
+          },
+          {
+            "count": 256,
+            "bin_start": 0.7827252112966401,
+            "bin_end": 0.83704390847248
+          },
+          {
+            "count": 252,
+            "bin_start": 0.83704390847248,
+            "bin_end": 0.8913626056483199
+          },
+          {
+            "count": 264,
+            "bin_start": 0.8913626056483199,
+            "bin_end": 0.94568130282416
+          },
+          {
+            "count": 264,
+            "bin_start": 0.94568130282416,
+            "bin_end": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Traffic_Truck_Highways",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.0023073373327180432,
+      "mean": 0.6381974281370383,
+      "stddev": 0.22340999483233553,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.150153217568948,
+            "lte": 0.473340143003064
+          }
+        },
+        {
+          "range": {
+            "gte": 0.496016343207354,
+            "lte": 0.737487231869254
+          }
+        },
+        {
+          "range": {
+            "gte": 0.763023493360572,
+            "lte": 0.991419816138917
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 18,
+            "bin_start": 0.001838610827375,
+            "bin_end": 0.10165474974463751
+          },
+          {
+            "count": 48,
+            "bin_start": 0.10165474974463751,
+            "bin_end": 0.2014708886619
+          },
+          {
+            "count": 98,
+            "bin_start": 0.2014708886619,
+            "bin_end": 0.30128702757916254
+          },
+          {
+            "count": 169,
+            "bin_start": 0.30128702757916254,
+            "bin_end": 0.401103166496425
+          },
+          {
+            "count": 279,
+            "bin_start": 0.401103166496425,
+            "bin_end": 0.5009193054136875
+          },
+          {
+            "count": 316,
+            "bin_start": 0.5009193054136875,
+            "bin_end": 0.60073544433095
+          },
+          {
+            "count": 321,
+            "bin_start": 0.60073544433095,
+            "bin_end": 0.7005515832482125
+          },
+          {
+            "count": 326,
+            "bin_start": 0.7005515832482125,
+            "bin_end": 0.800367722165475
+          },
+          {
+            "count": 257,
+            "bin_start": 0.800367722165475,
+            "bin_end": 0.9001838610827375
+          },
+          {
+            "count": 330,
+            "bin_start": 0.9001838610827375,
+            "bin_end": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Traffic_Number_Vehicles",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.02030456852791878,
+      "mean": 0.6825477327940944,
+      "stddev": 0.2210884868462706,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.133514986376022,
+            "lte": 0.482498428002515
+          }
+        },
+        {
+          "range": {
+            "gte": 0.50765038775938,
+            "lte": 0.749109201425278
+          }
+        },
+        {
+          "range": {
+            "gte": 0.773632362188221,
+            "lte": 0.990568015091176
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 13,
+            "bin_start": 0.018654370153008,
+            "bin_end": 0.1167889331377072
+          },
+          {
+            "count": 52,
+            "bin_start": 0.1167889331377072,
+            "bin_end": 0.2149234961224064
+          },
+          {
+            "count": 83,
+            "bin_start": 0.2149234961224064,
+            "bin_end": 0.3130580591071056
+          },
+          {
+            "count": 127,
+            "bin_start": 0.3130580591071056,
+            "bin_end": 0.41119262209180485
+          },
+          {
+            "count": 206,
+            "bin_start": 0.41119262209180485,
+            "bin_end": 0.509327185076504
+          },
+          {
+            "count": 272,
+            "bin_start": 0.509327185076504,
+            "bin_end": 0.6074617480612032
+          },
+          {
+            "count": 290,
+            "bin_start": 0.6074617480612032,
+            "bin_end": 0.7055963110459024
+          },
+          {
+            "count": 319,
+            "bin_start": 0.7055963110459024,
+            "bin_end": 0.8037308740306016
+          },
+          {
+            "count": 343,
+            "bin_start": 0.8037308740306016,
+            "bin_end": 0.9018654370153009
+          },
+          {
+            "count": 418,
+            "bin_start": 0.9018654370153009,
+            "bin_end": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Wastewater_Discharge",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.02030456852791878,
+      "mean": 0.25649480053625134,
+      "stddev": 0.37557225606247047,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.080143112701252
+          }
+        },
+        {
+          "range": {
+            "gte": 0.425044722719141,
+            "lte": 0.753130590339893
+          }
+        },
+        {
+          "range": {
+            "gte": 0.788550983899821,
+            "lte": 0.993202146690519
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 1400,
+            "bin_start": 0.0,
+            "bin_end": 0.1
+          },
+          {
+            "count": 45,
+            "bin_start": 0.1,
+            "bin_end": 0.2
+          },
+          {
+            "count": 2,
+            "bin_start": 0.2,
+            "bin_end": 0.30000000000000004
+          },
+          {
+            "count": 10,
+            "bin_start": 0.30000000000000004,
+            "bin_end": 0.4
+          },
+          {
+            "count": 33,
+            "bin_start": 0.4,
+            "bin_end": 0.5
+          },
+          {
+            "count": 92,
+            "bin_start": 0.5,
+            "bin_end": 0.6000000000000001
+          },
+          {
+            "count": 89,
+            "bin_start": 0.6000000000000001,
+            "bin_end": 0.7000000000000001
+          },
+          {
+            "count": 89,
+            "bin_start": 0.7000000000000001,
+            "bin_end": 0.8
+          },
+          {
+            "count": 91,
+            "bin_start": 0.8,
+            "bin_end": 0.9
+          },
+          {
+            "count": 272,
+            "bin_start": 0.9,
+            "bin_end": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Housing_Vacancy_Rate",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.03322565759113982,
+      "mean": 0.4494482142829961,
+      "stddev": 0.26439238878142646,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.000849798172934,
+            "lte": 0.28064584661143
+          }
+        },
+        {
+          "range": {
+            "gte": 0.305289993626514,
+            "lte": 0.589547482472913
+          }
+        },
+        {
+          "range": {
+            "gte": 0.619502868068834,
+            "lte": 0.938602082005524
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 236,
+            "bin_start": 0.0,
+            "bin_end": 0.09936265137029951
+          },
+          {
+            "count": 219,
+            "bin_start": 0.09936265137029951,
+            "bin_end": 0.19872530274059902
+          },
+          {
+            "count": 238,
+            "bin_start": 0.19872530274059902,
+            "bin_end": 0.2980879541108985
+          },
+          {
+            "count": 237,
+            "bin_start": 0.2980879541108985,
+            "bin_end": 0.39745060548119804
+          },
+          {
+            "count": 250,
+            "bin_start": 0.39745060548119804,
+            "bin_end": 0.4968132568514976
+          },
+          {
+            "count": 233,
+            "bin_start": 0.4968132568514976,
+            "bin_end": 0.596175908221797
+          },
+          {
+            "count": 226,
+            "bin_start": 0.596175908221797,
+            "bin_end": 0.6955385595920965
+          },
+          {
+            "count": 203,
+            "bin_start": 0.6955385595920965,
+            "bin_end": 0.7949012109623961
+          },
+          {
+            "count": 173,
+            "bin_start": 0.7949012109623961,
+            "bin_end": 0.8942638623326956
+          },
+          {
+            "count": 80,
+            "bin_start": 0.8942638623326956,
+            "bin_end": 0.993626513702995
+          }
+        ]
+      }
+    },
+    {
+      "name": "Industrial_Land_Use",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "mean": 0.20452917237006688,
+      "stddev": 0.30775202435636767,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.130090497737557
+          }
+        },
+        {
+          "range": {
+            "gte": 0.233031674208145,
+            "lte": 0.589366515837104
+          }
+        },
+        {
+          "range": {
+            "gte": 0.6289592760181,
+            "lte": 0.981900452488688
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 1373,
+            "bin_start": 0.0,
+            "bin_end": 0.103262940139404
+          },
+          {
+            "count": 91,
+            "bin_start": 0.103262940139404,
+            "bin_end": 0.206525880278808
+          },
+          {
+            "count": 91,
+            "bin_start": 0.206525880278808,
+            "bin_end": 0.309788820418212
+          },
+          {
+            "count": 93,
+            "bin_start": 0.309788820418212,
+            "bin_end": 0.413051760557616
+          },
+          {
+            "count": 91,
+            "bin_start": 0.413051760557616,
+            "bin_end": 0.51631470069702
+          },
+          {
+            "count": 91,
+            "bin_start": 0.51631470069702,
+            "bin_end": 0.619577640836424
+          },
+          {
+            "count": 90,
+            "bin_start": 0.619577640836424,
+            "bin_end": 0.722840580975828
+          },
+          {
+            "count": 92,
+            "bin_start": 0.722840580975828,
+            "bin_end": 0.826103521115232
+          },
+          {
+            "count": 91,
+            "bin_start": 0.826103521115232,
+            "bin_end": 0.929366461254636
+          },
+          {
+            "count": 64,
+            "bin_start": 0.929366461254636,
+            "bin_end": 1.03262940139404
+          }
+        ]
+      }
+    },
+    {
+      "name": "Landfills",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 1,
+      "mean": 0.0,
+      "stddev": 0.0,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 0,
+            "bin_start": -0.5,
+            "bin_end": -0.4
+          },
+          {
+            "count": 0,
+            "bin_start": -0.4,
+            "bin_end": -0.3
+          },
+          {
+            "count": 0,
+            "bin_start": -0.3,
+            "bin_end": -0.19999999999999996
+          },
+          {
+            "count": 0,
+            "bin_start": -0.19999999999999996,
+            "bin_end": -0.09999999999999998
+          },
+          {
+            "count": 0,
+            "bin_start": -0.09999999999999998,
+            "bin_end": 0.0
+          },
+          {
+            "count": 2167,
+            "bin_start": 0.0,
+            "bin_end": 0.10000000000000009
+          },
+          {
+            "count": 0,
+            "bin_start": 0.10000000000000009,
+            "bin_end": 0.20000000000000007
+          },
+          {
+            "count": 0,
+            "bin_start": 0.20000000000000007,
+            "bin_end": 0.30000000000000004
+          },
+          {
+            "count": 0,
+            "bin_start": 0.30000000000000004,
+            "bin_end": 0.4
+          },
+          {
+            "count": 0,
+            "bin_start": 0.4,
+            "bin_end": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "name": "Oil_Storage",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "mean": 0.022651216052231277,
+      "stddev": 0.13377043950108786,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 2101,
+            "bin_start": 0.0,
+            "bin_end": 0.0996296296296296
+          },
+          {
+            "count": 3,
+            "bin_start": 0.0996296296296296,
+            "bin_end": 0.1992592592592592
+          },
+          {
+            "count": 1,
+            "bin_start": 0.1992592592592592,
+            "bin_end": 0.29888888888888876
+          },
+          {
+            "count": 4,
+            "bin_start": 0.29888888888888876,
+            "bin_end": 0.3985185185185184
+          },
+          {
+            "count": 3,
+            "bin_start": 0.3985185185185184,
+            "bin_end": 0.498148148148148
+          },
+          {
+            "count": 7,
+            "bin_start": 0.498148148148148,
+            "bin_end": 0.5977777777777775
+          },
+          {
+            "count": 3,
+            "bin_start": 0.5977777777777775,
+            "bin_end": 0.6974074074074071
+          },
+          {
+            "count": 7,
+            "bin_start": 0.6974074074074071,
+            "bin_end": 0.7970370370370368
+          },
+          {
+            "count": 18,
+            "bin_start": 0.7970370370370368,
+            "bin_end": 0.8966666666666664
+          },
+          {
+            "count": 20,
+            "bin_start": 0.8966666666666664,
+            "bin_end": 0.996296296296296
+          }
+        ]
+      }
+    },
+    {
+      "name": "Municipal_Waste_Combustors",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "num_distinct_values": 1,
+      "mean": 0.0,
+      "stddev": 0.0,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 0,
+            "bin_start": -0.5,
+            "bin_end": -0.4
+          },
+          {
+            "count": 0,
+            "bin_start": -0.4,
+            "bin_end": -0.3
+          },
+          {
+            "count": 0,
+            "bin_start": -0.3,
+            "bin_end": -0.19999999999999996
+          },
+          {
+            "count": 0,
+            "bin_start": -0.19999999999999996,
+            "bin_end": -0.09999999999999998
+          },
+          {
+            "count": 0,
+            "bin_start": -0.09999999999999998,
+            "bin_end": 0.0
+          },
+          {
+            "count": 2167,
+            "bin_start": 0.0,
+            "bin_end": 0.10000000000000009
+          },
+          {
+            "count": 0,
+            "bin_start": 0.10000000000000009,
+            "bin_end": 0.20000000000000007
+          },
+          {
+            "count": 0,
+            "bin_start": 0.20000000000000007,
+            "bin_end": 0.30000000000000004
+          },
+          {
+            "count": 0,
+            "bin_start": 0.30000000000000004,
+            "bin_end": 0.4
+          },
+          {
+            "count": 0,
+            "bin_start": 0.4,
+            "bin_end": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "name": "Power_Generation_Facilities",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "mean": 0.09549277149095331,
+      "stddev": 0.24812481417649207,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 1849,
+            "bin_start": 0.0,
+            "bin_end": 0.1
+          },
+          {
+            "count": 17,
+            "bin_start": 0.1,
+            "bin_end": 0.2
+          },
+          {
+            "count": 22,
+            "bin_start": 0.2,
+            "bin_end": 0.30000000000000004
+          },
+          {
+            "count": 32,
+            "bin_start": 0.30000000000000004,
+            "bin_end": 0.4
+          },
+          {
+            "count": 22,
+            "bin_start": 0.4,
+            "bin_end": 0.5
+          },
+          {
+            "count": 25,
+            "bin_start": 0.5,
+            "bin_end": 0.6000000000000001
+          },
+          {
+            "count": 26,
+            "bin_start": 0.6000000000000001,
+            "bin_end": 0.7000000000000001
+          },
+          {
+            "count": 71,
+            "bin_start": 0.7000000000000001,
+            "bin_end": 0.8
+          },
+          {
+            "count": 39,
+            "bin_start": 0.8,
+            "bin_end": 0.9
+          },
+          {
+            "count": 64,
+            "bin_start": 0.9,
+            "bin_end": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "RMP_Sites",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.02030456852791878,
+      "mean": 60.57777669412784,
+      "stddev": 21.474280904152078,
+      "coverage": [
+        {
+          "range": {
+            "gte": 17.9830892967622,
+            "lte": 46.256960197979
+          }
+        },
+        {
+          "range": {
+            "gte": 48.8966797277789,
+            "lte": 71.0661992163333
+          }
+        },
+        {
+          "range": {
+            "gte": 73.3553309960817,
+            "lte": 96.3910084553516
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 86,
+            "bin_start": 13.281088884306,
+            "bin_end": 21.94679315322743
+          },
+          {
+            "count": 133,
+            "bin_start": 21.94679315322743,
+            "bin_end": 30.612497422148856
+          },
+          {
+            "count": 192,
+            "bin_start": 30.612497422148856,
+            "bin_end": 39.27820169107029
+          },
+          {
+            "count": 246,
+            "bin_start": 39.27820169107029,
+            "bin_end": 47.94390595999172
+          },
+          {
+            "count": 232,
+            "bin_start": 47.94390595999172,
+            "bin_end": 56.60961022891315
+          },
+          {
+            "count": 273,
+            "bin_start": 56.60961022891315,
+            "bin_end": 65.27531449783457
+          },
+          {
+            "count": 292,
+            "bin_start": 65.27531449783457,
+            "bin_end": 73.941018766756
+          },
+          {
+            "count": 271,
+            "bin_start": 73.941018766756,
+            "bin_end": 82.60672303567743
+          },
+          {
+            "count": 261,
+            "bin_start": 82.60672303567743,
+            "bin_end": 91.27242730459886
+          },
+          {
+            "count": 137,
+            "bin_start": 91.27242730459886,
+            "bin_end": 99.9381315735203
+          }
+        ]
+      }
+    },
+    {
+      "name": "Remediation_Sites",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "mean": 0.10447308494424763,
+      "stddev": 0.2538383684168147,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 1838,
+            "bin_start": 0.0,
+            "bin_end": 0.0996290801186944
+          },
+          {
+            "count": 0,
+            "bin_start": 0.0996290801186944,
+            "bin_end": 0.1992581602373888
+          },
+          {
+            "count": 0,
+            "bin_start": 0.1992581602373888,
+            "bin_end": 0.29888724035608316
+          },
+          {
+            "count": 0,
+            "bin_start": 0.29888724035608316,
+            "bin_end": 0.3985163204747776
+          },
+          {
+            "count": 0,
+            "bin_start": 0.3985163204747776,
+            "bin_end": 0.498145400593472
+          },
+          {
+            "count": 202,
+            "bin_start": 0.498145400593472,
+            "bin_end": 0.5977744807121663
+          },
+          {
+            "count": 0,
+            "bin_start": 0.5977744807121663,
+            "bin_end": 0.6974035608308607
+          },
+          {
+            "count": 49,
+            "bin_start": 0.6974035608308607,
+            "bin_end": 0.7970326409495552
+          },
+          {
+            "count": 32,
+            "bin_start": 0.7970326409495552,
+            "bin_end": 0.8966617210682496
+          },
+          {
+            "count": 46,
+            "bin_start": 0.8966617210682496,
+            "bin_end": 0.996290801186944
+          }
+        ]
+      }
+    },
+    {
+      "name": "Scrap_Metal_Processing",
+      "structural_type": "http://schema.org/Integer",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.01661282879556991,
+      "num_distinct_values": 6,
+      "mean": 0.014115694359676663,
+      "stddev": 0.1078723565458446,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 2130,
+            "bin_start": 0.0,
+            "bin_end": 0.1
+          },
+          {
+            "count": 0,
+            "bin_start": 0.1,
+            "bin_end": 0.2
+          },
+          {
+            "count": 0,
+            "bin_start": 0.2,
+            "bin_end": 0.30000000000000004
+          },
+          {
+            "count": 0,
+            "bin_start": 0.30000000000000004,
+            "bin_end": 0.4
+          },
+          {
+            "count": 0,
+            "bin_start": 0.4,
+            "bin_end": 0.5
+          },
+          {
+            "count": 0,
+            "bin_start": 0.5,
+            "bin_end": 0.6000000000000001
+          },
+          {
+            "count": 0,
+            "bin_start": 0.6000000000000001,
+            "bin_end": 0.7000000000000001
+          },
+          {
+            "count": 22,
+            "bin_start": 0.7000000000000001,
+            "bin_end": 0.8
+          },
+          {
+            "count": 0,
+            "bin_start": 0.8,
+            "bin_end": 0.9
+          },
+          {
+            "count": 15,
+            "bin_start": 0.9,
+            "bin_end": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Agricultural_Land_Use",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.00046146746654360867,
+      "mean": 0.01058453987087899,
+      "stddev": 0.058336199769230615,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 2082,
+            "bin_start": 0.0,
+            "bin_end": 0.0760121457489879
+          },
+          {
+            "count": 20,
+            "bin_start": 0.0760121457489879,
+            "bin_end": 0.1520242914979758
+          },
+          {
+            "count": 17,
+            "bin_start": 0.1520242914979758,
+            "bin_end": 0.2280364372469637
+          },
+          {
+            "count": 16,
+            "bin_start": 0.2280364372469637,
+            "bin_end": 0.3040485829959516
+          },
+          {
+            "count": 14,
+            "bin_start": 0.3040485829959516,
+            "bin_end": 0.3800607287449395
+          },
+          {
+            "count": 10,
+            "bin_start": 0.3800607287449395,
+            "bin_end": 0.4560728744939274
+          },
+          {
+            "count": 3,
+            "bin_start": 0.4560728744939274,
+            "bin_end": 0.5320850202429153
+          },
+          {
+            "count": 2,
+            "bin_start": 0.5320850202429153,
+            "bin_end": 0.6080971659919032
+          },
+          {
+            "count": 1,
+            "bin_start": 0.6080971659919032,
+            "bin_end": 0.6841093117408912
+          },
+          {
+            "count": 1,
+            "bin_start": 0.6841093117408912,
+            "bin_end": 0.760121457489879
+          }
+        ]
+      }
+    },
+    {
+      "name": "Coastal_Flooding_Storm_Risk",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "mean": 0.12344426279285596,
+      "stddev": 0.2706259324872487,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.0
+          }
+        },
+        {
+          "range": {
+            "gte": 0.644052044609665,
+            "lte": 0.988847583643123
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 1723,
+            "bin_start": 0.0,
+            "bin_end": 0.1
+          },
+          {
+            "count": 44,
+            "bin_start": 0.1,
+            "bin_end": 0.2
+          },
+          {
+            "count": 42,
+            "bin_start": 0.2,
+            "bin_end": 0.30000000000000004
+          },
+          {
+            "count": 36,
+            "bin_start": 0.30000000000000004,
+            "bin_end": 0.4
+          },
+          {
+            "count": 41,
+            "bin_start": 0.4,
+            "bin_end": 0.5
+          },
+          {
+            "count": 43,
+            "bin_start": 0.5,
+            "bin_end": 0.6000000000000001
+          },
+          {
+            "count": 52,
+            "bin_start": 0.6000000000000001,
+            "bin_end": 0.7000000000000001
+          },
+          {
+            "count": 54,
+            "bin_start": 0.7000000000000001,
+            "bin_end": 0.8
+          },
+          {
+            "count": 56,
+            "bin_start": 0.8,
+            "bin_end": 0.9
+          },
+          {
+            "count": 76,
+            "bin_start": 0.9,
+            "bin_end": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Days_Above_90_Degrees_2050",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "mean": 0.7187000671908735,
+      "stddev": 0.2211023083817584,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.439332247557003,
+            "lte": 0.516083061889251
+          }
+        },
+        {
+          "range": {
+            "gte": 0.78521986970684,
+            "lte": 0.837337133550488
+          }
+        },
+        {
+          "range": {
+            "gte": 0.962947882736156,
+            "lte": 1.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 748,
+            "bin_start": 0.439332247557003,
+            "bin_end": 0.4953990228013027
+          },
+          {
+            "count": 12,
+            "bin_start": 0.4953990228013027,
+            "bin_end": 0.5514657980456024
+          },
+          {
+            "count": 31,
+            "bin_start": 0.5514657980456024,
+            "bin_end": 0.6075325732899022
+          },
+          {
+            "count": 28,
+            "bin_start": 0.6075325732899022,
+            "bin_end": 0.6635993485342018
+          },
+          {
+            "count": 0,
+            "bin_start": 0.6635993485342018,
+            "bin_end": 0.7196661237785016
+          },
+          {
+            "count": 0,
+            "bin_start": 0.7196661237785016,
+            "bin_end": 0.7757328990228012
+          },
+          {
+            "count": 630,
+            "bin_start": 0.7757328990228012,
+            "bin_end": 0.831799674267101
+          },
+          {
+            "count": 58,
+            "bin_start": 0.831799674267101,
+            "bin_end": 0.8878664495114006
+          },
+          {
+            "count": 0,
+            "bin_start": 0.8878664495114006,
+            "bin_end": 0.9439332247557004
+          },
+          {
+            "count": 660,
+            "bin_start": 0.9439332247557004,
+            "bin_end": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Drive_Time_Healthcare",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.0013844023996308261,
+      "mean": 0.31194830587101513,
+      "stddev": 0.20707493484387704,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.01041028781384,
+            "lte": 0.220044907123903
+          }
+        },
+        {
+          "range": {
+            "gte": 0.244131455399061,
+            "lte": 0.467238211879976
+          }
+        },
+        {
+          "range": {
+            "gte": 0.492549499897938,
+            "lte": 0.816697285160237
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 400,
+            "bin_start": 0.000204123290467,
+            "bin_end": 0.1001837109614203
+          },
+          {
+            "count": 376,
+            "bin_start": 0.1001837109614203,
+            "bin_end": 0.20016329863237362
+          },
+          {
+            "count": 332,
+            "bin_start": 0.20016329863237362,
+            "bin_end": 0.3001428863033269
+          },
+          {
+            "count": 342,
+            "bin_start": 0.3001428863033269,
+            "bin_end": 0.4001224739742802
+          },
+          {
+            "count": 289,
+            "bin_start": 0.4001224739742802,
+            "bin_end": 0.5001020616452335
+          },
+          {
+            "count": 219,
+            "bin_start": 0.5001020616452335,
+            "bin_end": 0.6000816493161869
+          },
+          {
+            "count": 112,
+            "bin_start": 0.6000816493161869,
+            "bin_end": 0.7000612369871402
+          },
+          {
+            "count": 58,
+            "bin_start": 0.7000612369871402,
+            "bin_end": 0.8000408246580935
+          },
+          {
+            "count": 28,
+            "bin_start": 0.8000408246580935,
+            "bin_end": 0.9000204123290467
+          },
+          {
+            "count": 8,
+            "bin_start": 0.9000204123290467,
+            "bin_end": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Inland_Flooding_Risk",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "mean": 0.04942062727031905,
+      "stddev": 0.18927663154186583,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 2011,
+            "bin_start": 0.0,
+            "bin_end": 0.0976022566995769
+          },
+          {
+            "count": 10,
+            "bin_start": 0.0976022566995769,
+            "bin_end": 0.1952045133991538
+          },
+          {
+            "count": 11,
+            "bin_start": 0.1952045133991538,
+            "bin_end": 0.2928067700987307
+          },
+          {
+            "count": 7,
+            "bin_start": 0.2928067700987307,
+            "bin_end": 0.3904090267983076
+          },
+          {
+            "count": 6,
+            "bin_start": 0.3904090267983076,
+            "bin_end": 0.4880112834978845
+          },
+          {
+            "count": 8,
+            "bin_start": 0.4880112834978845,
+            "bin_end": 0.5856135401974614
+          },
+          {
+            "count": 14,
+            "bin_start": 0.5856135401974614,
+            "bin_end": 0.6832157968970383
+          },
+          {
+            "count": 32,
+            "bin_start": 0.6832157968970383,
+            "bin_end": 0.7808180535966152
+          },
+          {
+            "count": 27,
+            "bin_start": 0.7808180535966152,
+            "bin_end": 0.878420310296192
+          },
+          {
+            "count": 41,
+            "bin_start": 0.878420310296192,
+            "bin_end": 0.976022566995769
+          }
+        ]
+      }
+    },
+    {
+      "name": "Low_Vegetative_Cover",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.00046146746654360867,
+      "mean": 0.810543574305618,
+      "stddev": 0.16733661968362906,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.291456182736657,
+            "lte": 0.628157258950143
+          }
+        },
+        {
+          "range": {
+            "gte": 0.64968152866242,
+            "lte": 0.844058862288601
+          }
+        },
+        {
+          "range": {
+            "gte": 0.865143861190424,
+            "lte": 1.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 1,
+            "bin_start": 0.0,
+            "bin_end": 0.1
+          },
+          {
+            "count": 2,
+            "bin_start": 0.1,
+            "bin_end": 0.2
+          },
+          {
+            "count": 16,
+            "bin_start": 0.2,
+            "bin_end": 0.30000000000000004
+          },
+          {
+            "count": 27,
+            "bin_start": 0.30000000000000004,
+            "bin_end": 0.4
+          },
+          {
+            "count": 63,
+            "bin_start": 0.4,
+            "bin_end": 0.5
+          },
+          {
+            "count": 148,
+            "bin_start": 0.5,
+            "bin_end": 0.6000000000000001
+          },
+          {
+            "count": 265,
+            "bin_start": 0.6000000000000001,
+            "bin_end": 0.7000000000000001
+          },
+          {
+            "count": 398,
+            "bin_start": 0.7000000000000001,
+            "bin_end": 0.8
+          },
+          {
+            "count": 445,
+            "bin_start": 0.8,
+            "bin_end": 0.9
+          },
+          {
+            "count": 801,
+            "bin_start": 0.9,
+            "bin_end": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Asian_Percent",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.03322565759113982,
+      "mean": 0.6164114308029753,
+      "stddev": 0.294352390895179,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.321253890618053
+          }
+        },
+        {
+          "range": {
+            "gte": 0.365273454868831,
+            "lte": 0.686971987550022
+          }
+        },
+        {
+          "range": {
+            "gte": 0.722098710538017,
+            "lte": 0.988661627389951
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 166,
+            "bin_start": 0.0,
+            "bin_end": 0.1
+          },
+          {
+            "count": 101,
+            "bin_start": 0.1,
+            "bin_end": 0.2
+          },
+          {
+            "count": 119,
+            "bin_start": 0.2,
+            "bin_end": 0.30000000000000004
+          },
+          {
+            "count": 126,
+            "bin_start": 0.30000000000000004,
+            "bin_end": 0.4
+          },
+          {
+            "count": 175,
+            "bin_start": 0.4,
+            "bin_end": 0.5
+          },
+          {
+            "count": 186,
+            "bin_start": 0.5,
+            "bin_end": 0.6000000000000001
+          },
+          {
+            "count": 201,
+            "bin_start": 0.6000000000000001,
+            "bin_end": 0.7000000000000001
+          },
+          {
+            "count": 275,
+            "bin_start": 0.7000000000000001,
+            "bin_end": 0.8
+          },
+          {
+            "count": 335,
+            "bin_start": 0.8,
+            "bin_end": 0.9
+          },
+          {
+            "count": 411,
+            "bin_start": 0.9,
+            "bin_end": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Black_African_American_Percent",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.03322565759113982,
+      "mean": 0.5792198243905645,
+      "stddev": 0.30134694343818874,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.333046100818613
+          }
+        },
+        {
+          "range": {
+            "gte": 0.3707453683757,
+            "lte": 0.683326152520465
+          }
+        },
+        {
+          "range": {
+            "gte": 0.72404136148212,
+            "lte": 0.989659629470056
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 171,
+            "bin_start": 0.0,
+            "bin_end": 0.1
+          },
+          {
+            "count": 142,
+            "bin_start": 0.1,
+            "bin_end": 0.2
+          },
+          {
+            "count": 163,
+            "bin_start": 0.2,
+            "bin_end": 0.30000000000000004
+          },
+          {
+            "count": 171,
+            "bin_start": 0.30000000000000004,
+            "bin_end": 0.4
+          },
+          {
+            "count": 178,
+            "bin_start": 0.4,
+            "bin_end": 0.5
+          },
+          {
+            "count": 181,
+            "bin_start": 0.5,
+            "bin_end": 0.6000000000000001
+          },
+          {
+            "count": 188,
+            "bin_start": 0.6000000000000001,
+            "bin_end": 0.7000000000000001
+          },
+          {
+            "count": 228,
+            "bin_start": 0.7000000000000001,
+            "bin_end": 0.8
+          },
+          {
+            "count": 294,
+            "bin_start": 0.8,
+            "bin_end": 0.9
+          },
+          {
+            "count": 379,
+            "bin_start": 0.9,
+            "bin_end": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Redlining_Updated",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.0641439778495616,
+      "mean": 0.608990618923072,
+      "stddev": 0.296905933655621,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.025194516487588,
+            "lte": 0.321600592812153
+          }
+        },
+        {
+          "range": {
+            "gte": 0.623564283067803,
+            "lte": 0.790663208595776
+          }
+        },
+        {
+          "range": {
+            "gte": 1.0,
+            "lte": 1.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 51,
+            "bin_start": 0.011856243052983,
+            "bin_end": 0.11067061874768469
+          },
+          {
+            "count": 302,
+            "bin_start": 0.11067061874768469,
+            "bin_end": 0.20948499444238639
+          },
+          {
+            "count": 151,
+            "bin_start": 0.20948499444238639,
+            "bin_end": 0.3082993701370881
+          },
+          {
+            "count": 51,
+            "bin_start": 0.3082993701370881,
+            "bin_end": 0.4071137458317898
+          },
+          {
+            "count": 0,
+            "bin_start": 0.4071137458317898,
+            "bin_end": 0.5059281215264915
+          },
+          {
+            "count": 0,
+            "bin_start": 0.5059281215264915,
+            "bin_end": 0.6047424972211932
+          },
+          {
+            "count": 785,
+            "bin_start": 0.6047424972211932,
+            "bin_end": 0.7035568729158949
+          },
+          {
+            "count": 195,
+            "bin_start": 0.7035568729158949,
+            "bin_end": 0.8023712486105966
+          },
+          {
+            "count": 28,
+            "bin_start": 0.8023712486105966,
+            "bin_end": 0.9011856243052984
+          },
+          {
+            "count": 465,
+            "bin_start": 0.9011856243052984,
+            "bin_end": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Latino_Percent",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.03322565759113982,
+      "mean": 0.6518202690067613,
+      "stddev": 0.24322825427081932,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.08532206969377,
+            "lte": 0.439070749736008
+          }
+        },
+        {
+          "range": {
+            "gte": 0.46948257655755,
+            "lte": 0.731362196409715
+          }
+        },
+        {
+          "range": {
+            "gte": 0.760084477296726,
+            "lte": 0.990496304118268
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 33,
+            "bin_start": 0.0,
+            "bin_end": 0.1
+          },
+          {
+            "count": 55,
+            "bin_start": 0.1,
+            "bin_end": 0.2
+          },
+          {
+            "count": 132,
+            "bin_start": 0.2,
+            "bin_end": 0.30000000000000004
+          },
+          {
+            "count": 151,
+            "bin_start": 0.30000000000000004,
+            "bin_end": 0.4
+          },
+          {
+            "count": 216,
+            "bin_start": 0.4,
+            "bin_end": 0.5
+          },
+          {
+            "count": 231,
+            "bin_start": 0.5,
+            "bin_end": 0.6000000000000001
+          },
+          {
+            "count": 284,
+            "bin_start": 0.6000000000000001,
+            "bin_end": 0.7000000000000001
+          },
+          {
+            "count": 268,
+            "bin_start": 0.7000000000000001,
+            "bin_end": 0.8
+          },
+          {
+            "count": 322,
+            "bin_start": 0.8,
+            "bin_end": 0.9
+          },
+          {
+            "count": 403,
+            "bin_start": 0.9,
+            "bin_end": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "English_Proficiency",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.03322565759113982,
+      "mean": 0.6437056015723709,
+      "stddev": 0.2643024947125476,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.366421568627451
+          }
+        },
+        {
+          "range": {
+            "gte": 0.40343137254902,
+            "lte": 0.701960784313725
+          }
+        },
+        {
+          "range": {
+            "gte": 0.732598039215686,
+            "lte": 0.987745098039216
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 97,
+            "bin_start": 0.0,
+            "bin_end": 0.1
+          },
+          {
+            "count": 81,
+            "bin_start": 0.1,
+            "bin_end": 0.2
+          },
+          {
+            "count": 86,
+            "bin_start": 0.2,
+            "bin_end": 0.30000000000000004
+          },
+          {
+            "count": 131,
+            "bin_start": 0.30000000000000004,
+            "bin_end": 0.4
+          },
+          {
+            "count": 187,
+            "bin_start": 0.4,
+            "bin_end": 0.5
+          },
+          {
+            "count": 204,
+            "bin_start": 0.5,
+            "bin_end": 0.6000000000000001
+          },
+          {
+            "count": 263,
+            "bin_start": 0.6000000000000001,
+            "bin_end": 0.7000000000000001
+          },
+          {
+            "count": 309,
+            "bin_start": 0.7000000000000001,
+            "bin_end": 0.8
+          },
+          {
+            "count": 353,
+            "bin_start": 0.8,
+            "bin_end": 0.9
+          },
+          {
+            "count": 384,
+            "bin_start": 0.9,
+            "bin_end": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Native_Indigenous",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.03322565759113982,
+      "mean": 0.38627404654738884,
+      "stddev": 0.3396388136810492,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.207494407158837
+          }
+        },
+        {
+          "range": {
+            "gte": 0.262304250559284,
+            "lte": 0.604306487695749
+          }
+        },
+        {
+          "range": {
+            "gte": 0.646532438478747,
+            "lte": 0.977908277404922
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 689,
+            "bin_start": 0.0,
+            "bin_end": 0.09983221476510071
+          },
+          {
+            "count": 140,
+            "bin_start": 0.09983221476510071,
+            "bin_end": 0.19966442953020141
+          },
+          {
+            "count": 149,
+            "bin_start": 0.19966442953020141,
+            "bin_end": 0.2994966442953021
+          },
+          {
+            "count": 141,
+            "bin_start": 0.2994966442953021,
+            "bin_end": 0.39932885906040283
+          },
+          {
+            "count": 138,
+            "bin_start": 0.39932885906040283,
+            "bin_end": 0.49916107382550357
+          },
+          {
+            "count": 157,
+            "bin_start": 0.49916107382550357,
+            "bin_end": 0.5989932885906042
+          },
+          {
+            "count": 158,
+            "bin_start": 0.5989932885906042,
+            "bin_end": 0.6988255033557049
+          },
+          {
+            "count": 170,
+            "bin_start": 0.6988255033557049,
+            "bin_end": 0.7986577181208057
+          },
+          {
+            "count": 184,
+            "bin_start": 0.7986577181208057,
+            "bin_end": 0.8984899328859064
+          },
+          {
+            "count": 169,
+            "bin_start": 0.8984899328859064,
+            "bin_end": 0.998322147651007
+          }
+        ]
+      }
+    },
+    {
+      "name": "LMI_80_AMI",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.03322565759113982,
+      "mean": 61.60198243540648,
+      "stddev": 27.23678759920865,
+      "coverage": [
+        {
+          "range": {
+            "gte": 3.80912515696944,
+            "lte": 37.7982419422352
+          }
+        },
+        {
+          "range": {
+            "gte": 42.3398911678527,
+            "lte": 71.2013394725827
+          }
+        },
+        {
+          "range": {
+            "gte": 73.6500627877773,
+            "lte": 98.7023859355379
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 94,
+            "bin_start": 0.041858518208455,
+            "bin_end": 10.037672666387609
+          },
+          {
+            "count": 137,
+            "bin_start": 10.037672666387609,
+            "bin_end": 20.03348681456676
+          },
+          {
+            "count": 128,
+            "bin_start": 20.03348681456676,
+            "bin_end": 30.029300962745914
+          },
+          {
+            "count": 148,
+            "bin_start": 30.029300962745914,
+            "bin_end": 40.02511511092507
+          },
+          {
+            "count": 162,
+            "bin_start": 40.02511511092507,
+            "bin_end": 50.02092925910422
+          },
+          {
+            "count": 202,
+            "bin_start": 50.02092925910422,
+            "bin_end": 60.01674340728338
+          },
+          {
+            "count": 242,
+            "bin_start": 60.01674340728338,
+            "bin_end": 70.01255755546254
+          },
+          {
+            "count": 323,
+            "bin_start": 70.01255755546254,
+            "bin_end": 80.00837170364169
+          },
+          {
+            "count": 315,
+            "bin_start": 80.00837170364169,
+            "bin_end": 90.00418585182084
+          },
+          {
+            "count": 344,
+            "bin_start": 90.00418585182084,
+            "bin_end": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "LMI_Poverty_Federal",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.03322565759113982,
+      "mean": 0.5819692909990838,
+      "stddev": 0.2677713039409082,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.042285953527318,
+            "lte": 0.377014862884656
+          }
+        },
+        {
+          "range": {
+            "gte": 0.402135231316726,
+            "lte": 0.684320703370316
+          }
+        },
+        {
+          "range": {
+            "gte": 0.710906426627591,
+            "lte": 0.980322378061545
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 89,
+            "bin_start": 0.0,
+            "bin_end": 0.0999162654385598
+          },
+          {
+            "count": 133,
+            "bin_start": 0.0999162654385598,
+            "bin_end": 0.1998325308771196
+          },
+          {
+            "count": 155,
+            "bin_start": 0.1998325308771196,
+            "bin_end": 0.2997487963156794
+          },
+          {
+            "count": 217,
+            "bin_start": 0.2997487963156794,
+            "bin_end": 0.3996650617542392
+          },
+          {
+            "count": 206,
+            "bin_start": 0.3996650617542392,
+            "bin_end": 0.499581327192799
+          },
+          {
+            "count": 223,
+            "bin_start": 0.499581327192799,
+            "bin_end": 0.5994975926313588
+          },
+          {
+            "count": 227,
+            "bin_start": 0.5994975926313588,
+            "bin_end": 0.6994138580699186
+          },
+          {
+            "count": 280,
+            "bin_start": 0.6994138580699186,
+            "bin_end": 0.7993301235084784
+          },
+          {
+            "count": 295,
+            "bin_start": 0.7993301235084784,
+            "bin_end": 0.8992463889470382
+          },
+          {
+            "count": 270,
+            "bin_start": 0.8992463889470382,
+            "bin_end": 0.999162654385598
+          }
+        ]
+      }
+    },
+    {
+      "name": "Population_No_College",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.03322565759113982,
+      "mean": 0.49554697875994913,
+      "stddev": 0.29460617312942744,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.008577405857741,
+            "lte": 0.315481171548117
+          }
+        },
+        {
+          "range": {
+            "gte": 0.352719665271967,
+            "lte": 0.6581589958159
+          }
+        },
+        {
+          "range": {
+            "gte": 0.692677824267782,
+            "lte": 0.985146443514644
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 267,
+            "bin_start": 0.00020920502092,
+            "bin_end": 0.1001673640167359
+          },
+          {
+            "count": 177,
+            "bin_start": 0.1001673640167359,
+            "bin_end": 0.2001255230125518
+          },
+          {
+            "count": 189,
+            "bin_start": 0.2001255230125518,
+            "bin_end": 0.30008368200836766
+          },
+          {
+            "count": 179,
+            "bin_start": 0.30008368200836766,
+            "bin_end": 0.40004184100418355
+          },
+          {
+            "count": 214,
+            "bin_start": 0.40004184100418355,
+            "bin_end": 0.49999999999999944
+          },
+          {
+            "count": 240,
+            "bin_start": 0.49999999999999944,
+            "bin_end": 0.5999581589958154
+          },
+          {
+            "count": 219,
+            "bin_start": 0.5999581589958154,
+            "bin_end": 0.6999163179916313
+          },
+          {
+            "count": 202,
+            "bin_start": 0.6999163179916313,
+            "bin_end": 0.7998744769874472
+          },
+          {
+            "count": 197,
+            "bin_start": 0.7998744769874472,
+            "bin_end": 0.899832635983263
+          },
+          {
+            "count": 211,
+            "bin_start": 0.899832635983263,
+            "bin_end": 0.999790794979079
+          }
+        ]
+      }
+    },
+    {
+      "name": "Household_Single_Parent",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.03322565759113982,
+      "mean": 0.5233796962856001,
+      "stddev": 0.31551724104724005,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.298411335337055
+          }
+        },
+        {
+          "range": {
+            "gte": 0.341348218119365,
+            "lte": 0.659081150708459
+          }
+        },
+        {
+          "range": {
+            "gte": 0.696006869901245,
+            "lte": 0.985401459854015
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 278,
+            "bin_start": 0.0,
+            "bin_end": 0.1
+          },
+          {
+            "count": 185,
+            "bin_start": 0.1,
+            "bin_end": 0.2
+          },
+          {
+            "count": 170,
+            "bin_start": 0.2,
+            "bin_end": 0.30000000000000004
+          },
+          {
+            "count": 148,
+            "bin_start": 0.30000000000000004,
+            "bin_end": 0.4
+          },
+          {
+            "count": 176,
+            "bin_start": 0.4,
+            "bin_end": 0.5
+          },
+          {
+            "count": 179,
+            "bin_start": 0.5,
+            "bin_end": 0.6000000000000001
+          },
+          {
+            "count": 184,
+            "bin_start": 0.6000000000000001,
+            "bin_end": 0.7000000000000001
+          },
+          {
+            "count": 211,
+            "bin_start": 0.7000000000000001,
+            "bin_end": 0.8
+          },
+          {
+            "count": 274,
+            "bin_start": 0.8,
+            "bin_end": 0.9
+          },
+          {
+            "count": 290,
+            "bin_start": 0.9,
+            "bin_end": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Unemployment_Rate",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.03322565759113982,
+      "mean": 0.555662297443465,
+      "stddev": 0.2885159529579765,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.007991587802313,
+            "lte": 0.324079915878023
+          }
+        },
+        {
+          "range": {
+            "gte": 0.360462670872766,
+            "lte": 0.661619348054679
+          }
+        },
+        {
+          "range": {
+            "gte": 0.697371188222923,
+            "lte": 0.981913774973712
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 155,
+            "bin_start": 0.0,
+            "bin_end": 0.0999789695057834
+          },
+          {
+            "count": 169,
+            "bin_start": 0.0999789695057834,
+            "bin_end": 0.1999579390115668
+          },
+          {
+            "count": 169,
+            "bin_start": 0.1999579390115668,
+            "bin_end": 0.2999369085173502
+          },
+          {
+            "count": 189,
+            "bin_start": 0.2999369085173502,
+            "bin_end": 0.3999158780231336
+          },
+          {
+            "count": 194,
+            "bin_start": 0.3999158780231336,
+            "bin_end": 0.499894847528917
+          },
+          {
+            "count": 207,
+            "bin_start": 0.499894847528917,
+            "bin_end": 0.5998738170347004
+          },
+          {
+            "count": 219,
+            "bin_start": 0.5998738170347004,
+            "bin_end": 0.6998527865404838
+          },
+          {
+            "count": 246,
+            "bin_start": 0.6998527865404838,
+            "bin_end": 0.7998317560462672
+          },
+          {
+            "count": 258,
+            "bin_start": 0.7998317560462672,
+            "bin_end": 0.8998107255520507
+          },
+          {
+            "count": 289,
+            "bin_start": 0.8998107255520507,
+            "bin_end": 0.999789695057834
+          }
+        ]
+      }
+    },
+    {
+      "name": "Asthma_ED_Rate",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.03599446239040148,
+      "mean": 0.645798542532319,
+      "stddev": 0.2719409928972622,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.07000210216523,
+            "lte": 0.425268026066849
+          }
+        },
+        {
+          "range": {
+            "gte": 0.472987176792096,
+            "lte": 0.748370821946605
+          }
+        },
+        {
+          "range": {
+            "gte": 0.779693083876393,
+            "lte": 0.990750472987177
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 113,
+            "bin_start": 0.054235862938827,
+            "bin_end": 0.14881227664494429
+          },
+          {
+            "count": 152,
+            "bin_start": 0.14881227664494429,
+            "bin_end": 0.2433886903510616
+          },
+          {
+            "count": 106,
+            "bin_start": 0.2433886903510616,
+            "bin_end": 0.3379651040571789
+          },
+          {
+            "count": 162,
+            "bin_start": 0.3379651040571789,
+            "bin_end": 0.4325415177632962
+          },
+          {
+            "count": 125,
+            "bin_start": 0.4325415177632962,
+            "bin_end": 0.5271179314694135
+          },
+          {
+            "count": 168,
+            "bin_start": 0.5271179314694135,
+            "bin_end": 0.6216943451755308
+          },
+          {
+            "count": 232,
+            "bin_start": 0.6216943451755308,
+            "bin_end": 0.716270758881648
+          },
+          {
+            "count": 271,
+            "bin_start": 0.716270758881648,
+            "bin_end": 0.8108471725877654
+          },
+          {
+            "count": 337,
+            "bin_start": 0.8108471725877654,
+            "bin_end": 0.9054235862938828
+          },
+          {
+            "count": 423,
+            "bin_start": 0.9054235862938828,
+            "bin_end": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "COPD_ED_Rate",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.03599446239040148,
+      "mean": 0.38958595999164247,
+      "stddev": 0.24006390926920235,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.021021652301871,
+            "lte": 0.267185200756779
+          }
+        },
+        {
+          "range": {
+            "gte": 0.309648938406559,
+            "lte": 0.558124868614673
+          }
+        },
+        {
+          "range": {
+            "gte": 0.5797771704856,
+            "lte": 0.878284633172167
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 247,
+            "bin_start": 0.005675846121505,
+            "bin_end": 0.0980660079882277
+          },
+          {
+            "count": 283,
+            "bin_start": 0.0980660079882277,
+            "bin_end": 0.19045616985495042
+          },
+          {
+            "count": 286,
+            "bin_start": 0.19045616985495042,
+            "bin_end": 0.2828463317216731
+          },
+          {
+            "count": 251,
+            "bin_start": 0.2828463317216731,
+            "bin_end": 0.37523649358839584
+          },
+          {
+            "count": 229,
+            "bin_start": 0.37523649358839584,
+            "bin_end": 0.46762665545511856
+          },
+          {
+            "count": 238,
+            "bin_start": 0.46762665545511856,
+            "bin_end": 0.5600168173218412
+          },
+          {
+            "count": 193,
+            "bin_start": 0.5600168173218412,
+            "bin_end": 0.6524069791885639
+          },
+          {
+            "count": 160,
+            "bin_start": 0.6524069791885639,
+            "bin_end": 0.7447971410552866
+          },
+          {
+            "count": 126,
+            "bin_start": 0.7447971410552866,
+            "bin_end": 0.8371873029220093
+          },
+          {
+            "count": 76,
+            "bin_start": 0.8371873029220093,
+            "bin_end": 0.929577464788732
+          }
+        ]
+      }
+    },
+    {
+      "name": "Households_Disabled",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.03322565759113982,
+      "mean": 0.42616171198609926,
+      "stddev": 0.2838499817225976,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.011087866108787,
+            "lte": 0.279916317991632
+          }
+        },
+        {
+          "range": {
+            "gte": 0.315481171548117,
+            "lte": 0.612133891213389
+          }
+        },
+        {
+          "range": {
+            "gte": 0.651255230125523,
+            "lte": 0.978451882845188
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 313,
+            "bin_start": 0.00020920502092,
+            "bin_end": 0.100188284518828
+          },
+          {
+            "count": 262,
+            "bin_start": 0.100188284518828,
+            "bin_end": 0.200167364016736
+          },
+          {
+            "count": 253,
+            "bin_start": 0.200167364016736,
+            "bin_end": 0.300146443514644
+          },
+          {
+            "count": 238,
+            "bin_start": 0.300146443514644,
+            "bin_end": 0.40012552301255194
+          },
+          {
+            "count": 201,
+            "bin_start": 0.40012552301255194,
+            "bin_end": 0.50010460251046
+          },
+          {
+            "count": 214,
+            "bin_start": 0.50010460251046,
+            "bin_end": 0.600083682008368
+          },
+          {
+            "count": 170,
+            "bin_start": 0.600083682008368,
+            "bin_end": 0.700062761506276
+          },
+          {
+            "count": 155,
+            "bin_start": 0.700062761506276,
+            "bin_end": 0.800041841004184
+          },
+          {
+            "count": 157,
+            "bin_start": 0.800041841004184,
+            "bin_end": 0.9000209205020919
+          },
+          {
+            "count": 132,
+            "bin_start": 0.9000209205020919,
+            "bin_end": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Low_Birth_Weight",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.03599446239040148,
+      "mean": 0.5860544406017543,
+      "stddev": 0.27764530951547045,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.070487345743568,
+            "lte": 0.374398661367915
+          }
+        },
+        {
+          "range": {
+            "gte": 0.405145367078017,
+            "lte": 0.678309976992261
+          }
+        },
+        {
+          "range": {
+            "gte": 0.723070487345744,
+            "lte": 0.978665551139929
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 123,
+            "bin_start": 0.0399498012968,
+            "bin_end": 0.1355364986404519
+          },
+          {
+            "count": 165,
+            "bin_start": 0.1355364986404519,
+            "bin_end": 0.2311231959841038
+          },
+          {
+            "count": 215,
+            "bin_start": 0.2311231959841038,
+            "bin_end": 0.3267098933277557
+          },
+          {
+            "count": 175,
+            "bin_start": 0.3267098933277557,
+            "bin_end": 0.42229659067140757
+          },
+          {
+            "count": 173,
+            "bin_start": 0.42229659067140757,
+            "bin_end": 0.5178832880150595
+          },
+          {
+            "count": 182,
+            "bin_start": 0.5178832880150595,
+            "bin_end": 0.6134699853587114
+          },
+          {
+            "count": 181,
+            "bin_start": 0.6134699853587114,
+            "bin_end": 0.7090566827023633
+          },
+          {
+            "count": 248,
+            "bin_start": 0.7090566827023633,
+            "bin_end": 0.8046433800460152
+          },
+          {
+            "count": 312,
+            "bin_start": 0.8046433800460152,
+            "bin_end": 0.9002300773896671
+          },
+          {
+            "count": 315,
+            "bin_start": 0.9002300773896671,
+            "bin_end": 0.995816774733319
+          }
+        ]
+      }
+    },
+    {
+      "name": "MI_Hospitalization_Rate",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.03599446239040148,
+      "mean": 0.45172007324249636,
+      "stddev": 0.2882196583060789,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.013049884234898,
+            "lte": 0.254051778572932
+          }
+        },
+        {
+          "range": {
+            "gte": 0.274468532940434,
+            "lte": 0.567038518206693
+          }
+        },
+        {
+          "range": {
+            "gte": 0.640286255525153,
+            "lte": 0.962955167333193
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 289,
+            "bin_start": 0.005683014102294,
+            "bin_end": 0.10437802567880419
+          },
+          {
+            "count": 233,
+            "bin_start": 0.10437802567880419,
+            "bin_end": 0.2030730372553144
+          },
+          {
+            "count": 240,
+            "bin_start": 0.2030730372553144,
+            "bin_end": 0.3017680488318246
+          },
+          {
+            "count": 298,
+            "bin_start": 0.3017680488318246,
+            "bin_end": 0.4004630604083348
+          },
+          {
+            "count": 170,
+            "bin_start": 0.4004630604083348,
+            "bin_end": 0.49915807198484496
+          },
+          {
+            "count": 106,
+            "bin_start": 0.49915807198484496,
+            "bin_end": 0.5978530835613552
+          },
+          {
+            "count": 172,
+            "bin_start": 0.5978530835613552,
+            "bin_end": 0.6965480951378654
+          },
+          {
+            "count": 267,
+            "bin_start": 0.6965480951378654,
+            "bin_end": 0.7952431067143756
+          },
+          {
+            "count": 182,
+            "bin_start": 0.7952431067143756,
+            "bin_end": 0.8939381182908858
+          },
+          {
+            "count": 132,
+            "bin_start": 0.8939381182908858,
+            "bin_end": 0.992633129867396
+          }
+        ]
+      }
+    },
+    {
+      "name": "Health_Insurance_Rate",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.03322565759113982,
+      "mean": 0.6177510725829557,
+      "stddev": 0.27425590385458337,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.014693534844668,
+            "lte": 0.361880772460118
+          }
+        },
+        {
+          "range": {
+            "gte": 0.401973131821998,
+            "lte": 0.69647355163728
+          }
+        },
+        {
+          "range": {
+            "gte": 0.725650713685978,
+            "lte": 0.986146095717884
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 108,
+            "bin_start": 0.0,
+            "bin_end": 0.1
+          },
+          {
+            "count": 110,
+            "bin_start": 0.1,
+            "bin_end": 0.2
+          },
+          {
+            "count": 136,
+            "bin_start": 0.2,
+            "bin_end": 0.30000000000000004
+          },
+          {
+            "count": 141,
+            "bin_start": 0.30000000000000004,
+            "bin_end": 0.4
+          },
+          {
+            "count": 178,
+            "bin_start": 0.4,
+            "bin_end": 0.5
+          },
+          {
+            "count": 199,
+            "bin_start": 0.5,
+            "bin_end": 0.6000000000000001
+          },
+          {
+            "count": 239,
+            "bin_start": 0.6000000000000001,
+            "bin_end": 0.7000000000000001
+          },
+          {
+            "count": 296,
+            "bin_start": 0.7000000000000001,
+            "bin_end": 0.8
+          },
+          {
+            "count": 343,
+            "bin_start": 0.8,
+            "bin_end": 0.9
+          },
+          {
+            "count": 345,
+            "bin_start": 0.9,
+            "bin_end": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Age_Over_65",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.03322565759113982,
+      "mean": 0.4114512527710492,
+      "stddev": 0.2882209817107044,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.014856664574179,
+            "lte": 0.286252354048964
+          }
+        },
+        {
+          "range": {
+            "gte": 0.315128688010044,
+            "lte": 0.619376438585478
+          }
+        },
+        {
+          "range": {
+            "gte": 0.666875915463486,
+            "lte": 0.98911906256539
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 323,
+            "bin_start": 0.001046243984097,
+            "bin_end": 0.1009416195856873
+          },
+          {
+            "count": 317,
+            "bin_start": 0.1009416195856873,
+            "bin_end": 0.2008369951872776
+          },
+          {
+            "count": 272,
+            "bin_start": 0.2008369951872776,
+            "bin_end": 0.3007323707888679
+          },
+          {
+            "count": 234,
+            "bin_start": 0.3007323707888679,
+            "bin_end": 0.4006277463904582
+          },
+          {
+            "count": 201,
+            "bin_start": 0.4006277463904582,
+            "bin_end": 0.5005231219920485
+          },
+          {
+            "count": 173,
+            "bin_start": 0.5005231219920485,
+            "bin_end": 0.6004184975936389
+          },
+          {
+            "count": 134,
+            "bin_start": 0.6004184975936389,
+            "bin_end": 0.7003138731952291
+          },
+          {
+            "count": 146,
+            "bin_start": 0.7003138731952291,
+            "bin_end": 0.8002092487968194
+          },
+          {
+            "count": 134,
+            "bin_start": 0.8002092487968194,
+            "bin_end": 0.9001046243984098
+          },
+          {
+            "count": 161,
+            "bin_start": 0.9001046243984098,
+            "bin_end": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Premature_Deaths",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.03599446239040148,
+      "mean": 0.5790149972231109,
+      "stddev": 0.28644474194800096,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.018919487071684,
+            "lte": 0.332772755938617
+          }
+        },
+        {
+          "range": {
+            "gte": 0.372293462266134,
+            "lte": 0.659239016186672
+          }
+        },
+        {
+          "range": {
+            "gte": 0.702543619928526,
+            "lte": 0.98044986335926
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 134,
+            "bin_start": 0.005465629598486,
+            "bin_end": 0.1043935253310906
+          },
+          {
+            "count": 158,
+            "bin_start": 0.1043935253310906,
+            "bin_end": 0.20332142106369522
+          },
+          {
+            "count": 175,
+            "bin_start": 0.20332142106369522,
+            "bin_end": 0.3022493167962998
+          },
+          {
+            "count": 185,
+            "bin_start": 0.3022493167962998,
+            "bin_end": 0.4011772125289044
+          },
+          {
+            "count": 155,
+            "bin_start": 0.4011772125289044,
+            "bin_end": 0.500105108261509
+          },
+          {
+            "count": 162,
+            "bin_start": 0.500105108261509,
+            "bin_end": 0.5990330039941135
+          },
+          {
+            "count": 195,
+            "bin_start": 0.5990330039941135,
+            "bin_end": 0.6979608997267182
+          },
+          {
+            "count": 286,
+            "bin_start": 0.6979608997267182,
+            "bin_end": 0.7968887954593228
+          },
+          {
+            "count": 340,
+            "bin_start": 0.7968887954593228,
+            "bin_end": 0.8958166911919274
+          },
+          {
+            "count": 299,
+            "bin_start": 0.8958166911919274,
+            "bin_end": 0.994744586924532
+          }
+        ]
+      }
+    },
+    {
+      "name": "Internet_Access",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.03322565759113982,
+      "mean": 0.5420645645419694,
+      "stddev": 0.2824634360922824,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.011769651113913,
+            "lte": 0.342370744010088
+          }
+        },
+        {
+          "range": {
+            "gte": 0.37494745691467,
+            "lte": 0.670659941151744
+          }
+        },
+        {
+          "range": {
+            "gte": 0.705128205128205,
+            "lte": 0.988230348886087
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 161,
+            "bin_start": 0.0,
+            "bin_end": 0.0998738965952081
+          },
+          {
+            "count": 156,
+            "bin_start": 0.0998738965952081,
+            "bin_end": 0.1997477931904162
+          },
+          {
+            "count": 176,
+            "bin_start": 0.1997477931904162,
+            "bin_end": 0.2996216897856243
+          },
+          {
+            "count": 204,
+            "bin_start": 0.2996216897856243,
+            "bin_end": 0.3994955863808324
+          },
+          {
+            "count": 231,
+            "bin_start": 0.3994955863808324,
+            "bin_end": 0.49936948297604045
+          },
+          {
+            "count": 216,
+            "bin_start": 0.49936948297604045,
+            "bin_end": 0.5992433795712486
+          },
+          {
+            "count": 231,
+            "bin_start": 0.5992433795712486,
+            "bin_end": 0.6991172761664567
+          },
+          {
+            "count": 226,
+            "bin_start": 0.6991172761664567,
+            "bin_end": 0.7989911727616648
+          },
+          {
+            "count": 229,
+            "bin_start": 0.7989911727616648,
+            "bin_end": 0.8988650693568728
+          },
+          {
+            "count": 265,
+            "bin_start": 0.8988650693568728,
+            "bin_end": 0.998738965952081
+          }
+        ]
+      }
+    },
+    {
+      "name": "Home_Energy_Affordability",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.03368712505768343,
+      "mean": 0.5847078279426948,
+      "stddev": 0.2962485566604597,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.063206362494768,
+            "lte": 0.257639179573043
+          }
+        },
+        {
+          "range": {
+            "gte": 0.584972791963165,
+            "lte": 0.584972791963165
+          }
+        },
+        {
+          "range": {
+            "gte": 0.825240686479699,
+            "lte": 0.97697781498535
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 273,
+            "bin_start": 0.063206362494768,
+            "bin_end": 0.1565508580996236
+          },
+          {
+            "count": 0,
+            "bin_start": 0.1565508580996236,
+            "bin_end": 0.24989535370447924
+          },
+          {
+            "count": 330,
+            "bin_start": 0.24989535370447924,
+            "bin_end": 0.3432398493093349
+          },
+          {
+            "count": 0,
+            "bin_start": 0.3432398493093349,
+            "bin_end": 0.43658434491419046
+          },
+          {
+            "count": 0,
+            "bin_start": 0.43658434491419046,
+            "bin_end": 0.529928840519046
+          },
+          {
+            "count": 611,
+            "bin_start": 0.529928840519046,
+            "bin_end": 0.6232733361239017
+          },
+          {
+            "count": 0,
+            "bin_start": 0.6232733361239017,
+            "bin_end": 0.7166178317287573
+          },
+          {
+            "count": 0,
+            "bin_start": 0.7166178317287573,
+            "bin_end": 0.8099623273336128
+          },
+          {
+            "count": 567,
+            "bin_start": 0.8099623273336128,
+            "bin_end": 0.9033068229384684
+          },
+          {
+            "count": 313,
+            "bin_start": 0.9033068229384684,
+            "bin_end": 0.996651318543324
+          }
+        ]
+      }
+    },
+    {
+      "name": "Homes_Built_Before_1960",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.03322565759113982,
+      "mean": 0.6063491477017406,
+      "stddev": 0.2624820225200868,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.014016736401674,
+            "lte": 0.36652719665272
+          }
+        },
+        {
+          "range": {
+            "gte": 0.404393305439331,
+            "lte": 0.691213389121339
+          }
+        },
+        {
+          "range": {
+            "gte": 0.721129707112971,
+            "lte": 0.986192468619247
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 108,
+            "bin_start": 0.00020920502092,
+            "bin_end": 0.100188284518828
+          },
+          {
+            "count": 94,
+            "bin_start": 0.100188284518828,
+            "bin_end": 0.200167364016736
+          },
+          {
+            "count": 112,
+            "bin_start": 0.200167364016736,
+            "bin_end": 0.300146443514644
+          },
+          {
+            "count": 154,
+            "bin_start": 0.300146443514644,
+            "bin_end": 0.40012552301255194
+          },
+          {
+            "count": 208,
+            "bin_start": 0.40012552301255194,
+            "bin_end": 0.50010460251046
+          },
+          {
+            "count": 263,
+            "bin_start": 0.50010460251046,
+            "bin_end": 0.600083682008368
+          },
+          {
+            "count": 274,
+            "bin_start": 0.600083682008368,
+            "bin_end": 0.700062761506276
+          },
+          {
+            "count": 282,
+            "bin_start": 0.700062761506276,
+            "bin_end": 0.800041841004184
+          },
+          {
+            "count": 296,
+            "bin_start": 0.800041841004184,
+            "bin_end": 0.9000209205020919
+          },
+          {
+            "count": 304,
+            "bin_start": 0.9000209205020919,
+            "bin_end": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Mobile_Homes",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.03322565759113982,
+      "mean": 0.03714494660477103,
+      "stddev": 0.1124309661636872,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.0,
+            "lte": 0.0
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 1865,
+            "bin_start": 0.0,
+            "bin_end": 0.0974189278623428
+          },
+          {
+            "count": 48,
+            "bin_start": 0.0974189278623428,
+            "bin_end": 0.1948378557246856
+          },
+          {
+            "count": 53,
+            "bin_start": 0.1948378557246856,
+            "bin_end": 0.2922567835870284
+          },
+          {
+            "count": 53,
+            "bin_start": 0.2922567835870284,
+            "bin_end": 0.3896757114493712
+          },
+          {
+            "count": 41,
+            "bin_start": 0.3896757114493712,
+            "bin_end": 0.487094639311714
+          },
+          {
+            "count": 30,
+            "bin_start": 0.487094639311714,
+            "bin_end": 0.5845135671740568
+          },
+          {
+            "count": 3,
+            "bin_start": 0.5845135671740568,
+            "bin_end": 0.6819324950363996
+          },
+          {
+            "count": 1,
+            "bin_start": 0.6819324950363996,
+            "bin_end": 0.7793514228987424
+          },
+          {
+            "count": 0,
+            "bin_start": 0.7793514228987424,
+            "bin_end": 0.8767703507610851
+          },
+          {
+            "count": 1,
+            "bin_start": 0.8767703507610851,
+            "bin_end": 0.974189278623428
+          }
+        ]
+      }
+    },
+    {
+      "name": "Rent_Percent_Income",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.03322565759113982,
+      "mean": 0.549530459932851,
+      "stddev": 0.2649941837583687,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.033262711864407,
+            "lte": 0.350635593220339
+          }
+        },
+        {
+          "range": {
+            "gte": 0.385169491525424,
+            "lte": 0.661016949152542
+          }
+        },
+        {
+          "range": {
+            "gte": 0.691313559322034,
+            "lte": 0.972245762711864
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 103,
+            "bin_start": 0.0,
+            "bin_end": 0.1
+          },
+          {
+            "count": 158,
+            "bin_start": 0.1,
+            "bin_end": 0.2
+          },
+          {
+            "count": 199,
+            "bin_start": 0.2,
+            "bin_end": 0.30000000000000004
+          },
+          {
+            "count": 199,
+            "bin_start": 0.30000000000000004,
+            "bin_end": 0.4
+          },
+          {
+            "count": 215,
+            "bin_start": 0.4,
+            "bin_end": 0.5
+          },
+          {
+            "count": 249,
+            "bin_start": 0.5,
+            "bin_end": 0.6000000000000001
+          },
+          {
+            "count": 253,
+            "bin_start": 0.6000000000000001,
+            "bin_end": 0.7000000000000001
+          },
+          {
+            "count": 274,
+            "bin_start": 0.7000000000000001,
+            "bin_end": 0.8
+          },
+          {
+            "count": 241,
+            "bin_start": 0.8,
+            "bin_end": 0.9
+          },
+          {
+            "count": 204,
+            "bin_start": 0.9,
+            "bin_end": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Renter_Percent",
+      "structural_type": "http://schema.org/Float",
+      "semantic_types": [],
+      "unclean_values_ratio": 0.0,
+      "missing_values_ratio": 0.03322565759113982,
+      "mean": 0.6802351055196433,
+      "stddev": 0.23701962837299778,
+      "coverage": [
+        {
+          "range": {
+            "gte": 0.068676716917923,
+            "lte": 0.449958123953099
+          }
+        },
+        {
+          "range": {
+            "gte": 0.480946398659967,
+            "lte": 0.741834170854271
+          }
+        },
+        {
+          "range": {
+            "gte": 0.772403685092127,
+            "lte": 0.989740368509213
+          }
+        }
+      ],
+      "plot": {
+        "type": "histogram_numerical",
+        "data": [
+          {
+            "count": 37,
+            "bin_start": 0.002931323283082,
+            "bin_end": 0.1026381909547738
+          },
+          {
+            "count": 65,
+            "bin_start": 0.1026381909547738,
+            "bin_end": 0.2023450586264656
+          },
+          {
+            "count": 77,
+            "bin_start": 0.2023450586264656,
+            "bin_end": 0.3020519262981574
+          },
+          {
+            "count": 126,
+            "bin_start": 0.3020519262981574,
+            "bin_end": 0.4017587939698492
+          },
+          {
+            "count": 166,
+            "bin_start": 0.4017587939698492,
+            "bin_end": 0.501465661641541
+          },
+          {
+            "count": 224,
+            "bin_start": 0.501465661641541,
+            "bin_end": 0.6011725293132328
+          },
+          {
+            "count": 269,
+            "bin_start": 0.6011725293132328,
+            "bin_end": 0.7008793969849246
+          },
+          {
+            "count": 318,
+            "bin_start": 0.7008793969849246,
+            "bin_end": 0.8005862646566164
+          },
+          {
+            "count": 390,
+            "bin_start": 0.8005862646566164,
+            "bin_end": 0.9002931323283082
+          },
+          {
+            "count": 423,
+            "bin_start": 0.9002931323283082,
+            "bin_end": 1.0
+          }
+        ]
+      }
+    }
+  ],
+  "nb_categorical_columns": 7,
+  "nb_numerical_columns": 56,
+  "types": [
+    "categorical",
+    "numerical"
+  ],
+  "attribute_keywords": [
+    "the_geom",
+    "the",
+    "geom",
+    "GEOID",
+    "DAC_Designation",
+    "DAC",
+    "Designation",
+    "REDC",
+    "County",
+    "City_Town",
+    "City",
+    "Town",
+    "NYC_Region",
+    "NYC",
+    "Region",
+    "Urban_Rural",
+    "Urban",
+    "Rural",
+    "Tribal_Designation",
+    "Tribal",
+    "Designation",
+    "Household_Low_Count_Flag",
+    "Household",
+    "Low",
+    "Count",
+    "Flag",
+    "Population_Count",
+    "Population",
+    "Count",
+    "Household_Count",
+    "Household",
+    "Count",
+    "Percentile_Rank_Combined_Statewide",
+    "Percentile",
+    "Rank",
+    "Combined",
+    "Statewide",
+    "Percentile_Rank_Combined_NYC",
+    "Percentile",
+    "Rank",
+    "Combined",
+    "NYC",
+    "Percentile_Rank_Combined_ROS",
+    "Percentile",
+    "Rank",
+    "Combined",
+    "ROS",
+    "Combined_Score",
+    "Combined",
+    "Score",
+    "Burden_Score_Percentile",
+    "Burden",
+    "Score",
+    "Percentile",
+    "Vulnerability_Score_Percentile",
+    "Vulnerability",
+    "Score",
+    "Percentile",
+    "Burden_Score",
+    "Burden",
+    "Score",
+    "Vulnerability_Score",
+    "Vulnerability",
+    "Score",
+    "Benzene_Concentration",
+    "Benzene",
+    "Concentration",
+    "Particulate_Matter_25",
+    "Particulate",
+    "Matter",
+    "25",
+    "Traffic_Truck_Highways",
+    "Traffic",
+    "Truck",
+    "Highways",
+    "Traffic_Number_Vehicles",
+    "Traffic",
+    "Number",
+    "Vehicles",
+    "Wastewater_Discharge",
+    "Wastewater",
+    "Discharge",
+    "Housing_Vacancy_Rate",
+    "Housing",
+    "Vacancy",
+    "Rate",
+    "Industrial_Land_Use",
+    "Industrial",
+    "Land",
+    "Use",
+    "Landfills",
+    "Oil_Storage",
+    "Oil",
+    "Storage",
+    "Municipal_Waste_Combustors",
+    "Municipal",
+    "Waste",
+    "Combustors",
+    "Power_Generation_Facilities",
+    "Power",
+    "Generation",
+    "Facilities",
+    "RMP_Sites",
+    "RMP",
+    "Sites",
+    "Remediation_Sites",
+    "Remediation",
+    "Sites",
+    "Scrap_Metal_Processing",
+    "Scrap",
+    "Metal",
+    "Processing",
+    "Agricultural_Land_Use",
+    "Agricultural",
+    "Land",
+    "Use",
+    "Coastal_Flooding_Storm_Risk",
+    "Coastal",
+    "Flooding",
+    "Storm",
+    "Risk",
+    "Days_Above_90_Degrees_2050",
+    "Days",
+    "Above",
+    "90",
+    "Degrees",
+    "2050",
+    "Drive_Time_Healthcare",
+    "Drive",
+    "Time",
+    "Healthcare",
+    "Inland_Flooding_Risk",
+    "Inland",
+    "Flooding",
+    "Risk",
+    "Low_Vegetative_Cover",
+    "Low",
+    "Vegetative",
+    "Cover",
+    "Asian_Percent",
+    "Asian",
+    "Percent",
+    "Black_African_American_Percent",
+    "Black",
+    "African",
+    "American",
+    "Percent",
+    "Redlining_Updated",
+    "Redlining",
+    "Updated",
+    "Latino_Percent",
+    "Latino",
+    "Percent",
+    "English_Proficiency",
+    "English",
+    "Proficiency",
+    "Native_Indigenous",
+    "Native",
+    "Indigenous",
+    "LMI_80_AMI",
+    "LMI",
+    "80",
+    "AMI",
+    "LMI_Poverty_Federal",
+    "LMI",
+    "Poverty",
+    "Federal",
+    "Population_No_College",
+    "Population",
+    "No",
+    "College",
+    "Household_Single_Parent",
+    "Household",
+    "Single",
+    "Parent",
+    "Unemployment_Rate",
+    "Unemployment",
+    "Rate",
+    "Asthma_ED_Rate",
+    "Asthma",
+    "ED",
+    "Rate",
+    "COPD_ED_Rate",
+    "COPD",
+    "ED",
+    "Rate",
+    "Households_Disabled",
+    "Households",
+    "Disabled",
+    "Low_Birth_Weight",
+    "Low",
+    "Birth",
+    "Weight",
+    "MI_Hospitalization_Rate",
+    "MI",
+    "Hospitalization",
+    "Rate",
+    "Health_Insurance_Rate",
+    "Health",
+    "Insurance",
+    "Rate",
+    "Age_Over_65",
+    "Age",
+    "Over",
+    "65",
+    "Premature_Deaths",
+    "Premature",
+    "Deaths",
+    "Internet_Access",
+    "Internet",
+    "Access",
+    "Home_Energy_Affordability",
+    "Home",
+    "Energy",
+    "Affordability",
+    "Homes_Built_Before_1960",
+    "Homes",
+    "Built",
+    "Before",
+    "1960",
+    "Mobile_Homes",
+    "Mobile",
+    "Homes",
+    "Rent_Percent_Income",
+    "Rent",
+    "Percent",
+    "Income",
+    "Renter_Percent",
+    "Renter",
+    "Percent"
+  ],
+  "sample": "the_geom,GEOID,DAC_Designation,REDC,County,City_Town,NYC_Region,Urban_Rural,Tribal_Designation,Household_Low_Count_Flag,Population_Count,Household_Count,Percentile_Rank_Combined_Statewide,Percentile_Rank_Combined_NYC,Percentile_Rank_Combined_ROS,Combined_Score,Burden_Score_Percentile,Vulnerability_Score_Percentile,Burden_Score,Vulnerability_Score,Benzene_Concentration,Particulate_Matter_25,Traffic_Truck_Highways,Traffic_Number_Vehicles,Wastewater_Discharge,Housing_Vacancy_Rate,Industrial_Land_Use,Landfills,Oil_Storage,Municipal_Waste_Combustors,Power_Generation_Facilities,RMP_Sites,Remediation_Sites,Scrap_Metal_Processing,Agricultural_Land_Use,Coastal_Flooding_Storm_Risk,Days_Above_90_Degrees_2050,Drive_Time_Healthcare,Inland_Flooding_Risk,Low_Vegetative_Cover,Asian_Percent,Black_African_American_Percent,Redlining_Updated,Latino_Percent,English_Proficiency,Native_Indigenous,LMI_80_AMI,LMI_Poverty_Federal,Population_No_College,Household_Single_Parent,Unemployment_Rate,Asthma_ED_Rate,COPD_ED_Rate,Households_Disabled,Low_Birth_Weight,MI_Hospitalization_Rate,Health_Insurance_Rate,Age_Over_65,Premature_Deaths,Internet_Access,Home_Energy_Affordability,Homes_Built_Before_1960,Mobile_Homes,Rent_Percent_Income,Renter_Percent\r\n\"MULTIPOLYGON (((-73.90735999999998 40.70080399999999, -73.90620799999998 40.70193099999999, -73.90528399999998 40.70283799999999,...\",36081055100,Designated as DAC,New York City,Queens,New York city,NYC,urban,No,No,4244,1555,0.756225,0.609838,0.0,94.0736812105474,0.648883,0.743042,35.1441260722813,58.9295551382661,0.8,0.786641929499072,0.48314606741573,0.590861454621673,0.0,0.726364988315275,0.305429864253394,0.0,0.0,0.0,0.0,88.6162095277377,0.0,0.0,0.0,0.0,0.78521986970684,0.19636660542968,0.0,1.0,0.732103156958648,0.498276604911676,0.623564283067803,0.877719112988384,0.765441176470588,0.305089485458613,80.2218501465048,0.580280510780825,0.44581589958159,0.664233576642336,0.69484752891693,0.689089762455329,0.481395837712844,0.084309623430962,0.3398870529178,0.775415701957483,0.92632241813602,0.094789704959196,0.798612570948076,0.773644388398487,0.257639179573043,0.910251046025105,0.0,0.331779661016949,0.926716917922948\r\n\"MULTIPOLYGON (((-73.75047099999998 40.70563999999999, -73.74951299999998 40.70588899999999, -73.74889699999997 40.704525999999994,...\",36081051600,Not Designated as DAC,New York City,Queens,New York city,NYC,urban,No,No,2183,583,0.546976,0.308978,0.0,82.778484799672,0.200165,0.708935,26.0416436587184,56.7368411409536,0.607392197125257,0.507730364873222,0.428396322778345,0.526304757912387,0.0,0.117484597408116,0.0,0.0,0.0,0.0,0.0,29.2637657248917,0.0,0.0,0.0,0.0,0.439332247557003,0.43335374566238,0.0,0.87370964199429,0.242552245442419,0.9569151227919,0.623564283067803,0.582259767687434,0.657352941176471,0.611017897091723,23.6500627877773,0.584257902449236,0.478451882845188,0.226277372262774,0.978338590956888,0.681101534580618,0.330039941139374,0.521548117154812,0.939552394896465,0.31635445169438,0.709487825356843,0.460765850596359,0.624343073365566,0.718158890290038,0.940351611552951,0.665062761506276,0.0,0.685169491525424,0.41143216080402\r\n\"MULTIPOLYGON (((-73.76089799999997 40.661318, -73.76086799999997 40.66145999999999, -73.76081999999998 40.66159899999999,...\",36081069000,Not Designated as DAC,New York City,Queens,New York city,NYC,urban,No,No,3752,978,0.605357,0.390162,0.0,85.6041086601092,0.499793,0.642394,32.0874593339853,53.5166493261239,0.562833675564682,0.502989074417646,0.251072522982635,0.526723957241668,0.0,0.626938602082005,0.75,0.0,0.0,0.0,0.0,45.8857496391009,0.0,0.0,0.0,0.127323420074349,0.439332247557003,0.711573790569504,0.0,0.854162090929058,0.256780791462872,0.983627746660922,1.0,0.024920802534319,0.413970588235294,0.647371364653244,43.386354123064,0.200334938245761,0.692468619246862,0.888149420352082,0.564879074658255,0.799033003994114,0.394576413706117,0.176569037656904,0.934950847103116,0.307724689539044,0.429471032745592,0.419334588826114,0.78011351692243,0.89344262295082,0.825240686479699,0.427405857740586,0.258107213765718,0.521186440677966,0.559673366834171\r\n\"MULTIPOLYGON (((-73.994829 40.693672999999976, -73.994619 40.69411999999999, -73.994298 40.694791999999985, -73.993978 40.69546299999999,...\",36047000502,Not Designated as DAC,New York City,Kings,New York city,NYC,urban,No,No,2697,1534,0.31471,0.092646,0.0,70.8231688205142,0.899711,0.106926,43.0437408313012,27.779427989213,0.82258726899384,0.980004122861266,0.621246169560776,0.908195346887445,0.954203935599284,0.354578287656682,0.0,0.0,0.0,0.0,0.529850746268657,74.4070942462363,0.0,0.0,0.0,0.0,0.836115635179153,0.315370483772198,0.0,0.899187349000659,0.772787905735883,0.388625592417062,0.180066691367173,0.264836325237592,0.425735294117647,0.0,6.15320217664295,0.048775382038937,0.008995815899582,0.105195362816659,0.381913774973712,0.360311120454068,0.842968257305024,0.261924686192469,0.329638151014432,0.115554620079983,0.30352644836272,0.683197321615401,0.031112045406769,0.072929802437999,0.063206362494768,0.777615062761506,0.195234943745864,0.08728813559322,0.646147403685092\r\n\"MULTIPOLYGON (((-73.93130699999999 40.62385, -73.93039299999998 40.624441999999995, -73.92948199999998 40.625032, -73.92860599999999...\",36047067600,Not Designated as DAC,New York City,Kings,New York city,NYC,urban,No,No,1760,572,0.569575,0.339542,0.0,83.8665223859455,0.558519,0.574597,33.2183951242261,50.6481272617194,0.697946611909651,0.786023500309215,0.565270684371808,0.688954097673444,0.0,0.376673040152964,0.504524886877828,0.0,0.0,0.0,0.0,54.402969684471,0.0,0.0,0.0,0.0,0.439332247557003,0.523984486629925,0.0,0.904897869536569,0.217207647843486,0.962947005601034,0.182289736939607,0.648363252375924,0.0,0.381431767337808,39.2005023022185,0.452166631777266,0.382845188284519,0.869471876341778,0.78527865404837,0.717679209585874,0.21336977086399,0.015062761506276,0.834135118176114,0.349400126289202,0.754617968094039,0.354467461812095,0.659239016186672,0.341740226986129,0.825240686479699,0.859414225941423,0.0,0.494067796610169,0.515284757118928\r\n\"MULTIPOLYGON (((-73.94007899999998 40.830463999999985, -73.93998899999998 40.830731, -73.939959 40.830832999999984, -73.93991099999998...\",36061024302,Designated as DAC,New York City,New York,New York city,NYC,urban,No,No,7756,2688,0.994769,0.990449,0.0,126.042920237459,0.979322,0.945386,52.1943033366465,73.8486169008127,0.917659137577002,0.754483611626469,0.948518896833504,0.959966464053658,0.734168157423971,0.153601019757808,0.0,0.0,0.0,0.0,0.0,73.479067849041,0.0,0.0,0.0,0.678438661710037,0.78521986970684,0.430904266176771,0.928067700987306,0.555677575225126,0.190529124055136,0.893580353295993,0.623564283067803,0.929461457233369,0.808088235294118,0.88003355704698,99.4976977814985,0.962319447351894,0.965271966527197,0.982610562473164,0.998527865404837,0.995795669539626,0.878284633172167,0.824686192468619,0.864881823886216,0.43401389181225,0.653652392947103,0.196903117807073,0.854319949548034,0.883144178226145,0.257639179573043,0.322175732217573,0.0,0.508262711864407,0.983458961474037\r\n\"MULTIPOLYGON (((-73.93725699999999 40.793469999999985, -73.936808 40.79408499999999, -73.93636099999998 40.79469799999998,...\",36061017800,Designated as DAC,New York City,New York,New York city,NYC,urban,No,No,3987,1778,0.995815,0.992359,0.0,127.781748075678,0.998966,0.851643,61.715568389456,66.0661796862223,0.904928131416838,0.783549783549784,0.928907048008172,0.944246489205617,0.644364937388193,0.726364988315275,0.311085972850679,0.0,0.0,0.0,0.522388059701493,90.0804289544236,0.944362017804154,0.0,0.262651821862348,0.843866171003718,0.78521986970684,0.222290263319045,0.970380818053597,0.66285965297606,0.522232103156959,0.760663507109005,1.0,0.913621964097149,0.67843137254902,0.530201342281879,91.6701548765174,0.801130416579443,0.287866108786611,0.622799484757407,0.467297581493165,0.988227874710952,0.794408240487702,0.403765690376569,0.908805689186363,0.691012418438224,0.978589420654912,0.015693659761456,0.79482867353374,0.758722152164775,0.257639179573043,0.613807531380753,0.0,0.393220338983051,0.965452261306533\r\n\"MULTIPOLYGON (((-73.94827299999999 40.80395699999999, -73.947891 40.804478999999986, -73.94781299999998 40.804586999999984,...\",36061020000,Designated as DAC,New York City,New York,New York city,NYC,urban,No,No,3606,1356,0.752459,0.604585,0.0,93.7823344016324,0.757858,0.694288,37.7894014026726,55.9929329989597,0.908008213552361,0.789115646258503,0.747701736465781,0.62481660029344,0.570304114490161,0.86148289781177,0.0,0.0,0.0,0.0,0.0,80.2021035265003,0.0,0.0,0.0,0.0,0.78521986970684,0.048377219840784,0.0,0.962661981111355,0.495108937305469,0.893149504523912,1.0,0.689545934530095,0.551960784313726,0.476510067114094,78.212641272499,0.480427046263345,0.26673640167364,0.674753112924002,0.014931650893796,0.979608997267185,0.805759932730713,0.234518828451883,0.705919263752353,0.146495474636919,0.794290512174643,0.145009416195857,0.843809123397099,0.377049180327869,0.257639179573043,0.854811715481171,0.0,0.348728813559322,0.857621440536013\r\n\"MULTIPOLYGON (((-73.91746999999998 40.621512999999986, -73.91699099999998 40.621824999999994, -73.91618199999999 40.62237699999999,...\",36047069602,Not Designated as DAC,New York City,Kings,New York city,NYC,urban,No,No,5812,2136,0.491525,0.244986,0.0,80.2164776531495,0.707196,0.410128,36.3638802028811,43.8525974502684,0.653593429158111,0.747474747474748,0.368335035750766,0.306434709704464,0.0,0.446144040790312,0.02262443438914,0.0,0.0,0.0,0.0,65.2299443184162,0.787091988130564,0.0,0.0,0.770446096654275,0.439332247557003,0.653398652786283,0.0,0.618932571930595,0.610493552690084,0.552348125807841,0.687291589477584,0.65934530095037,0.784313725490196,0.0,27.7731268313102,0.631149256855767,0.405230125523013,0.771361099184199,0.072975814931651,0.328147992432205,0.158713474879125,0.211297071129707,0.106463083037022,0.57230056830141,0.50335852225021,0.760828625235405,0.419171746899306,0.204287515762926,0.825240686479699,0.084100418410042,0.0,0.760169491525424,0.347361809045226\r\n\"MULTIPOLYGON (((-73.93675799999998 40.691556, -73.93383299999998 40.69189299999998, -73.93090699999998 40.692227999999986,...\",36047029100,Designated as DAC,New York City,Kings,New York city,NYC,urban,No,No,2991,1202,0.764804,0.623687,0.0,94.6668704236637,0.671423,0.746181,35.5935136340618,59.0733567896019,0.796303901437372,0.873840445269017,0.513993871297242,0.387759379584993,0.0,0.845761631612492,0.70814479638009,0.0,0.0,0.0,0.0,81.0063930707362,0.0,0.0,0.0,0.0,0.78521986970684,0.271279853031231,0.0,0.883593235229519,0.170075589150734,0.914691943127962,1.0,0.606546990496304,0.557107843137255,0.16079418344519,82.9426538300544,0.378898890517061,0.376569037656904,0.665306998711893,0.395373291272345,0.977506832036998,0.704225352112676,0.804602510460251,0.8598619535662,0.756682803620291,0.595927791771621,0.261979493617912,0.904771915072525,0.426860025220681,0.584972791963165,0.694142259414226,0.0,0.239618644067797,0.831658291457286\r\n\"MULTIPOLYGON (((-73.83784599999998 40.702892999999975, -73.83775099999998 40.70295799999999, -73.83767099999999 40.703023999999985,...\",36081013200,Not Designated as DAC,New York City,Queens,New York city,NYC,urban,No,No,2265,625,0.676711,0.488539,0.0,89.3476048887714,0.208023,0.808956,26.2744828221832,63.0731220665882,0.654004106776181,0.613275613275613,0.413687436159346,0.63299098721442,0.0,0.062672615253877,0.447963800904977,0.0,0.0,0.0,0.0,61.8890492885131,0.0,0.0,0.0,0.0,0.439332247557003,0.244131455399061,0.0,0.704590379969251,0.753668297020898,0.373761309780267,0.623564283067803,0.876874340021119,0.707107843137255,0.963646532438479,61.8041021347844,0.819552020096295,0.618619246861925,0.262988407041649,0.726603575184017,0.779693083876393,0.495480344755098,0.377196652719665,0.871156661786237,0.96021890128394,0.921074727120067,0.452814396317221,0.870296405297456,0.603194619588062,0.584972791963165,0.601882845188285,0.0,0.357415254237288,0.6892797319933\r\n\"MULTIPOLYGON (((-73.73662799999997 40.709843, -73.73553899999997 40.71186, -73.73470499999998 40.711600000000004, -73.73356099999997...\",36081058000,Not Designated as DAC,New York City,Queens,New York city,NYC,urban,No,No,4140,1127,0.539025,0.300382,0.0,82.4801544906477,0.253515,0.675037,27.3965198469422,55.0836346437056,0.605133470225873,0.49721706864564,0.4755873340143,0.906937748899602,0.0,0.00913533035904,0.0,0.0,0.0,0.0,0.0,22.4994844297793,0.0,0.0,0.0,0.0,0.439332247557003,0.544600938967136,0.0,0.734680430485394,0.380613606047132,0.950883239982766,0.623564283067803,0.524604012671595,0.658333333333333,0.769295302013423,30.6404353285894,0.347079757169772,0.45418410041841,0.741734650064405,0.906414300736067,0.681101534580618,0.330039941139374,0.195397489539749,0.939552394896465,0.31635445169438,0.302896725440806,0.627955639255074,0.624343073365566,0.394493484657419,0.940351611552951,0.850627615062761,0.248180013236267,0.409322033898305,0.404522613065327\r\n\"MULTIPOLYGON (((-73.92308199999998 40.69919999999999, -73.92163099999998 40.700675, -73.92007499999998 40.702259, -73.91932299999998...\",36047043100,Designated as DAC,New York City,Kings,New York city,NYC,urban,No,No,4694,1765,0.835949,0.725406,0.0,100.025431922077,0.457403,0.883239,31.3744883433677,68.6509435787092,0.808213552361396,0.833436404864976,0.410010214504597,0.390903374554601,0.0,0.446144040790312,0.179864253393665,0.0,0.0,0.0,0.0,89.7917096308517,0.0,0.0,0.0,0.0,0.78521986970684,0.028169014084507,0.0,0.978036459477268,0.625833703868386,0.422878069797501,0.718414227491664,0.931573389651531,0.852696078431373,0.930369127516778,96.2955211385517,0.876072849068453,0.345397489539749,0.629454701588665,0.391377497371188,0.92179945343704,0.748370821946605,0.252301255230126,0.653838109182179,0.919806356556514,0.992443324937028,0.051265955220758,0.927685516081564,0.557166876839008,0.584972791963165,0.803138075313808,0.0,0.767796610169491,0.961683417085427\r\n\"MULTIPOLYGON (((-73.96837 40.714127, -73.968041 40.71496599999999, -73.96799899999998 40.715106, -73.967716 40.71603999999999,...\",36047055100,Designated as DAC,New York City,Kings,New York city,NYC,urban,No,No,5361,2321,0.894957,0.815664,0.0,105.663095372633,0.983044,0.618749,53.14821514145,52.5148802311829,0.900205338809035,0.933828076685219,0.778345250255363,0.875916998532802,0.964579606440072,0.541321436158912,0.786199095022624,0.0,0.0,0.0,0.927238805970149,82.5118581150753,0.0,0.0,0.0,0.486988847583643,0.78521986970684,0.407225964482547,0.0,1.0,0.431747443308137,0.664153382162861,1.0,0.910242872228089,0.497303921568627,0.79837807606264,84.1356215989954,0.380154908938664,0.121757322175732,0.232503220266209,0.471713985278654,0.751524069791886,0.375656926634433,0.365690376569038,0.131144112110437,0.652915175752473,0.804995801847187,0.210295040803515,0.774858103846962,0.309373686422867,0.257639179573043,0.605020920502092,0.0,0.353177966101695,0.818886097152429\r\n\"MULTIPOLYGON (((-73.95246899999998 40.65067, -73.95137799999999 40.650715999999974, -73.94957099999998 40.650806999999986,...\",36047082400,Designated as DAC,New York City,Kings,New York city,NYC,urban,No,No,4910,1640,0.720025,0.551098,0.0,91.8905014254165,0.443548,0.769199,31.1770560785576,60.7134453468589,0.763039014373717,0.885178313749742,0.644739530132788,0.638440578495074,0.0,0.779689823666879,0.125565610859729,0.0,0.0,0.0,0.0,34.8525469168901,0.0,0.0,0.0,0.0,0.439332247557003,0.168197591345172,0.0,0.956951460575445,0.344819919964429,0.9829814735028,0.712115598369767,0.370855332629356,0.590441176470588,0.0,77.3545416492256,0.58572325727444,0.680543933054393,0.913911550021468,0.69863301787592,0.850746268656716,0.260878705066218,0.020292887029289,0.87596737084292,0.180383077246895,0.93303946263644,0.21929273906675,0.886483077569897,0.791929382093317,0.825240686479699,0.795606694560669,0.0,0.578389830508475,0.847780569514238\r\n\"MULTIPOLYGON (((-73.89734199999998 40.65090899999999, -73.895861 40.65188099999998, -73.89760999999999 40.653453999999996,...\",36047098200,Designated as DAC,New York City,Kings,New York city,NYC,urban,No,No,4532,1735,0.783009,0.649952,0.0,95.7931615305518,0.286394,0.871312,28.1649696623255,67.6281918682263,0.683572895277207,0.750566893424036,0.634320735444331,0.509536784741144,0.0,0.127894625026556,0.0,0.0,0.0,0.0,0.0,89.9566921014642,0.0,0.0,0.321356275303644,0.0,0.439332247557003,0.13329250867524,0.0,0.596529760597408,0.095598043574922,0.949375269280483,1.0,0.724392819429778,0.558333333333333,0.0,96.9233989116785,0.988067824994767,0.984309623430962,0.996779733791327,0.941535226077813,0.829514399831827,0.349379861257095,0.538702928870293,0.929721815519766,0.392969901073458,0.580604534005038,0.265745971960661,0.80618036577675,0.934846574190836,0.257639179573043,0.552928870292887,0.0,0.365042372881356,0.989112227805695\r\n\"MULTIPOLYGON (((-73.92577999999999 40.839232999999986, -73.92526799999999 40.84017599999998, -73.92509199999998 40.84108799999999,...\",36005021100,Designated as DAC,New York City,Bronx,New York city,NYC,urban,No,No,5343,1935,0.976355,0.959885,0.0,116.850847203606,0.805831,0.98598,39.0778840433257,77.7729631602807,0.943737166324435,0.732014017728303,0.940755873340143,0.931041710333263,0.63613595706619,0.226258763543658,0.0,0.0,0.0,0.0,0.0,57.5376366261085,0.0,0.0,0.0,0.0,0.78521986970684,0.315370483772198,0.0,0.81133318690973,0.179413072476656,0.825290822921155,0.623564283067803,0.961140443505808,0.896078431372549,0.925055928411633,97.5722059439096,0.922336194264183,0.946234309623431,0.977028767711464,0.960042060988433,0.940508723985705,0.648728190035737,0.556903765690377,0.819075507216064,0.46895390444117,0.710537363560034,0.112785101485666,0.993693504309439,0.914670029424128,0.940351611552951,0.596652719665272,0.0,0.952330508474576,0.950167504187605\r\n\"MULTIPOLYGON (((-73.86759499999998 40.85898899999999, -73.86751999999998 40.859567999999996, -73.867486 40.86134599999999,...\",36005033000,Designated as DAC,New York City,Bronx,New York city,NYC,urban,No,No,5776,2204,0.825277,0.708691,0.0,99.0988940129571,0.570513,0.847039,33.4320931258275,65.6668008871296,0.744147843942505,0.661925376211091,0.6,0.783902745755607,0.086583184257603,0.027830890163586,0.0,0.0,0.0,0.0,0.0,58.5687770674366,0.0,0.0,0.0,0.0,0.962947882736156,0.235966523780363,0.0,0.882495058203382,0.0,0.699913830245584,0.623564283067803,0.847940865892291,0.882352941176471,0.722315436241611,81.0799497697782,0.738957504710069,0.904811715481172,0.031129240017175,0.986961093585699,0.894891738490645,0.428211057389111,0.642677824267782,0.789583769085965,0.312144811618607,0.960117548278757,0.315128688010044,0.77044355686357,0.58953341740227,0.825240686479699,0.500627615062762,0.0,0.781779661016949,0.930067001675042\r\n\"MULTIPOLYGON (((-73.998134 40.68681399999999, -73.997873 40.68735799999999, -73.997562 40.688, -73.997333 40.688484999999986, -73.997203...\",36047004500,Not Designated as DAC,New York City,Kings,New York city,NYC,urban,No,No,3385,1649,0.424566,0.172397,0.0,76.825777993903,0.911497,0.187696,43.8080557729557,33.0177222209472,0.797946611909651,0.981859410430839,0.830847803881512,0.933137706979669,0.936314847942755,0.495857233906947,0.0,0.0,0.0,0.0,0.0,67.3747164363786,0.0,0.0,0.0,0.0,1.0,0.291488058787508,0.0,0.887546672523611,0.737661182747888,0.518741921585523,1.0,0.213516367476241,0.18578431372549,0.0,14.3784010046044,0.120159095666736,0.010251046025105,0.248389866895663,0.186540483701367,0.742905192348119,0.622661341181417,0.009205020920502,0.371679564944572,0.752894127552094,0.162888329135181,0.387110274115924,0.602900988017658,0.122530474989491,0.063206362494768,0.916108786610879,0.0,0.041737288135593,0.666457286432161\r\n\"MULTIPOLYGON (((-73.919744 40.66077099999999, -73.91966299999999 40.661404999999995, -73.91958399999999 40.66199400000001,...\",36047089000,Designated as DAC,New York City,Kings,New York city,NYC,urban,No,No,5912,2262,0.827997,0.712989,0.0,99.5099197253647,0.495244,0.868383,32.0165478116348,67.4933719137299,0.732443531827515,0.816120387548959,0.786516853932584,0.721861245022008,0.0,0.70405778627576,0.0,0.0,0.0,0.0,0.0,80.4495772324191,0.0,0.0,0.0,0.0,0.439332247557003,0.069810165339865,0.0,0.995826927300681,0.103823921742997,0.975010771219302,0.663579103371619,0.449208025343189,0.408333333333333,0.064317673378076,88.9284219338635,0.744400251203684,0.814435146443515,0.834693001288107,0.724921135646688,0.904351482026487,0.406348538995165,0.564016736401674,0.918636268563062,0.233424542201642,0.891477749790092,0.684034316802678,0.813537944082405,0.807482135350988,0.825240686479699,0.855648535564854,0.0,0.844915254237288,0.901381909547739\r\n"
+}

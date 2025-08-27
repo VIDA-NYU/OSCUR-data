@@ -118,6 +118,22 @@ code/downloaders/
     ├── pedestrian_intervals.py            # Download Pedestrian Signal Intervals dataset (CSV)
 ├── topography
     ├── elevation_downloader.py       # Download Elevation dataset (CSV)
+├── roadway_features
+    ├── roadway_features_orchestrator.py     # Orchestrates all downloads
+    ├── centerlines_downloader.py            # Download NYC Street Centerline dataset (CSV/GeoJSON)
+    ├── intersections_downloader.py          # Download Vision Zero Safety Improvement Projects – Intersections (CSV/GeoJSON)
+    ├── corridor_downloader.py               # Download Vision Zero Safety Improvement Projects – Corridors (CSV/GeoJSON)
+    ├── bus_lanes_downloader.py              # Download NYC DOT Bus Lanes dataset (CSV/GeoJSON)
+    ├── block_face_downloader.py             # Download TreesCount! 2015 Blockface Attributes (CSV)
+├── vehicle_volumes_and_types
+    ├── vehicle_volumes_and_types.py              # Orchestrates all downloads
+    ├── volume_counts_downloader.py               # Download Automated Traffic Volume Counts (ATR) dataset (CSV)
+    ├── classification_counts_downloader.py       # Download Vehicle Classification Counts (2011–2024) dataset (CSV)
+    ├── nyc_centerlines_downloader.py             # Download NYC Street Centerline dataset (CSV)
+├── speed_distributions
+    ├── traffic_speeds.py                       # Download Traffic Speeds dataset (CSV)
+├── housing_density
+    ├── housing_database_downloader.py       # Download Housing Database dataset (CSV)
 ├── socioeconomic_and_demographic
     ├── demographic_downloader.py             # Download ACS NTA Profile tables (Demographic / Economic / Housing / Social)
     ├── nta_population_downloader.py          # Download NTA population + polygon attributes (geometry, codes, names)
@@ -153,6 +169,9 @@ python bike_routes_downloader.py -o data/bike_routes.csv
 python urban_design_frontage_downloader.py -o data/urban_design.csv
 python community_health_survey_downloader.py -o data/community_health_survey.csv
 python pedestrian_intervals.py -o data/pedestrian_intervals.csv
+python traffic_speeds.py -o data/traffic_speeds.csv
+python housing_database_downloader.py -o data/housing_database.csv
+python disadvantaged_communities_downloader.py -o data/dac_2023.csv
 ```
 With API token and custom timeout:
 ```bash
@@ -397,7 +416,6 @@ python land_use.py \
   --historic_land_use /custom/path/historic_land_use.csv
 ```
 
-
 **Transit Ridership:**
 The `transit_ridership_orchestrator.py` script downloads bus, subway and ferry data:
 
@@ -441,8 +459,41 @@ python elevation_downloader.py \
   --output /custom/path/elevation_points.csv
 ```
 
+**Roadway Features Dataset:**
+The `roadway_features.py` script downloads and prepares roadway-related datasets, including the NYC Street Centerline, Vision Zero Safety Improvement Projects (Intersections and Corridors), DOT Bus Lanes, and TreesCount! Blockface attributes:
+
+```bash
+python roadway_features.py   # basic usage
+```
+
+Custom output paths:
+```bash
+python roadway_features.py \
+  --centerline /custom/path/centerline.csv \
+  --sip_intersections /custom/path/sip_intersections.csv \
+  --sip_corridors /custom/path/sip_corridors.csv \
+  --bus_lanes /custom/path/bus_lanes.csv \
+  --blockface /custom/path/blockface.csv
+```
+
+**Vehicle Volumes and Types:**
+The `vehicle_volumes_and_types.py` script downloads and integrates Automated Traffic counts, Vehicle Classification Counts, and NYC Street Centerline data.
+
+
+```bash
+python vehicle_volumes_and_types.py   # basic usage
+```
+
+Custom output paths:
+```bash
+python vehicle_volumes_and_types.py \
+  --atr_counts /custom/path/atr_counts.csv \
+  --vehicle_classification /custom/path/vehicle_classification.csv \
+  --centerline /custom/path/centerline.csv
+```
+
 **Socioeconomic and Demographic Dataset:**
-Since one of the datasets is not in a csv format at first there is no orchestrator script. There are two downloader files that will download demographic, economic, social and housing profiles. The demographic downlaoder uses only a custom output path. Additionally, you must add the URL to download from NYC open data. The URL is written below in the custom path. 
+Since one of the datasets is not in a CSV format at first, there is no orchestrator script. There are two downloader files that will download demographic, economic, social, and housing profiles. The demographic downloader uses only a custom output path. Additionally, you must add the URL to download from NYC Open Data. The URL is written below in the custom path. 
 
 ```bash
 python nta_population_downloader.py    # basic usage
@@ -460,7 +511,6 @@ Custom output paths:
 python nta_population_downloader.py \
   --output /custom/path/nta_population.csv
 ```
-
 
 ## Base Class Benefits
 
