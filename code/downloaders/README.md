@@ -442,18 +442,17 @@ python elevation_downloader.py \
 ```
 
 **Socioeconomic and Demographic Dataset:**
-Since one of the datasets is not in a csv form at first there is no orchestrator. There are two downloader files that will download demographic, economic, social and housing profiles. 
+Since one of the datasets is not in a csv format at first there is no orchestrator script. There are two downloader files that will download demographic, economic, social and housing profiles. The demographic downlaoder uses only a custom output path. Additionally, you must add the URL to download from NYC open data. The URL is written below in the custom path. 
 
 ```bash
-python demographic_downloader.py    # basic usage
 python nta_population_downloader.py    # basic usage
 ```
 
 Custom output paths:
 ```bash
-python demographics_downloader.py \
-  --url "URL HERE" \
-  --outdir /custom/output/folder/nta_profiles.csv
+python demographic_downloader \
+  --url "https://data.cityofnewyork.us/download/hyuz-tij8/application%2Fzip" \
+  --outdir data/socio_demographics/nta_profiles
 ```
 
 Custom output paths:
