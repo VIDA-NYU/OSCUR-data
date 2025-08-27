@@ -26,6 +26,7 @@ code/processors/
 ├── speed_distributions.py             # Post-processing Speed Distributions dataset (CSV)
 ├── housing_density.py                 # Post-processing Housing Database dataset (CSV)
 ├── environmental_justice.py           # Post-processing Environmental Justice dataset (CSV)
+├── socioeconomic_and_demographic.py   # Post-processing Socioeconomic and Demographics dataset (CSV)
 ├── README.md                          # This file
 └── ...                                # Add one script per dataset as needed
 ```
@@ -266,6 +267,19 @@ This script will only take the communities that are labaled New York City from d
 ```bash
 python environmental_justice.py \
   --dac ../downloaders/data/environmental_justice/dac_2023_nyc_final.csv \
+```
+
+#### Socio Economic and Demographics Dataset
+This script processes raw or tidy ACS profile tables (demographics, economics, housing, and social characteristics) at the Neighborhood Tabulation Area (NTA) level.
+
+```bash
+ python socioeconomic_and_demographic.py \
+  --demo    ../downloaders/data/socioeconomic_and_demographic/nta_profiles/acs_demo_08to12_ntas.csv \
+  --econ    ../downloaders/data/socioeconomic_and_demographic/nta_profiles/acs_select_econ_08to12_ntas.csv \
+  --housing ../downloaders/data/socioeconomic_and_demographic/nta_profiles/acs_select_housing_08to12_ntas.csv \
+  --socio   ../downloaders/data/socioeconomic_and_demographic/nta_profiles/acs_socio_08to12_ntas.csv \
+  --nta_geo ../downloaders/data/socioeconomic_and_demographic/nta_population.csv \
+  --out     ../processors/processed_data/socioeconomic_and_demographic/acs_nta_all_wide.csv
 ```
 
 ### Other Datasets

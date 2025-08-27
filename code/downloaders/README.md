@@ -134,6 +134,9 @@ code/downloaders/
     ├── traffic_speeds.py                       # Download Traffic Speeds dataset (CSV)
 ├── housing_density
     ├── housing_database_downloader.py       # Download Housing Database dataset (CSV)
+├── socioeconomic_and_demographic
+    ├── demographic_downloader.py             # Download ACS NTA Profile tables (Demographic / Economic / Housing / Social)
+    ├── nta_population_downloader.py          # Download NTA population + polygon attributes (geometry, codes, names)
 ├── README.md                         # This file
 └── ...                               # Add one script per dataset as needed
 ```
@@ -487,6 +490,26 @@ python vehicle_volumes_and_types.py \
   --atr_counts /custom/path/atr_counts.csv \
   --vehicle_classification /custom/path/vehicle_classification.csv \
   --centerline /custom/path/centerline.csv
+```
+
+**Socioeconomic and Demographic Dataset:**
+Since one of the datasets is not in a CSV format at first, there is no orchestrator script. There are two downloader files that will download demographic, economic, social, and housing profiles. The demographic downloader uses only a custom output path. Additionally, you must add the URL to download from NYC Open Data. The URL is written below in the custom path. 
+
+```bash
+python nta_population_downloader.py    # basic usage
+```
+
+Custom output paths:
+```bash
+python demographic_downloader \
+  --url "https://data.cityofnewyork.us/download/hyuz-tij8/application%2Fzip" \
+  --outdir data/socio_demographics/nta_profiles
+```
+
+Custom output paths:
+```bash
+python nta_population_downloader.py \
+  --output /custom/path/nta_population.csv
 ```
 
 ## Base Class Benefits
