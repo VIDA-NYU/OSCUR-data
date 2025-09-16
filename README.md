@@ -56,11 +56,17 @@ To contribute a new dataset to this repository, follow these steps:
 
 - **Uploader:**
    - Upload your cleaned dataset to the [OSCUR HuggingFace Hub](https://huggingface.co/oscur) repository.
-   - Follow the guide in [upload_to_hugging_face/README.md](upload_to_hugging_face/README.md) for instructions.
+   - Follow the guide in [code/upload_to_hugging_face/README.md](code/upload_to_hugging_face/README.md) for instructions.
 
 **3. Data Profile**
 
-Generate a profile summary of the dataset (recommended: use [``datamart-profiler``](https://pypi.org/project/datamart-profiler/)) and save it as a ``.json`` file in [data_profiles/](./data_profiles).
+Generate a profile summary of the dataset (recommended: use [``datamart-profiler``](https://pypi.org/project/datamart-profiler/), [usage examples](https://gitlab.com/ViDA-NYU/auctus/auctus/-/blob/master/examples/profile.ipynb?ref_type=heads)) and save it as a ``.json`` file in [data_profiles/](./data_profiles).
+Note: The data profile JSON file must include both plots and sample data. To ensure this, set the `include_sample` and `plots` parameters to `True` when generating the profile.
+```
+import datamart_profiler
+metadata = datamart_profiler.process_dataset(df, include_sample=True, plots=True)
+```
+
 
 **4. Usage Example**
    - Provide a ``Jupyter notebook`` demonstrating how to use or visualize the dataset.

@@ -8,15 +8,20 @@ This folder contains scripts and documentation for uploading datasets from this 
 
 You can use the provided bash script to upload your dataset without modifying any Python files. Pass the required parameters directly to the script.
 
+Notes:
+
+- Make sure you have the [Hugging Face tools](https://huggingface.co/docs/datasets/en/installation) installed.
+- You need a valid Hugging Face `token` with write access. Please contact [s.castelo@nyu.edu](mailto:s.castelo@nyu.edu) to obtain the token for the [oscur](https://huggingface.co/oscur) organization.
+
 ### Steps:
 1. Run the script with the required parameters:
    ```bash
-   bash /fullpath/to/upload_csv_hugging_face.sh "<HUGGING_FACE_TOKEN>" "<ORGANIZATION>" "<REPO_NAME>" "<CSV_FILE_PATH>"
+   bash /fullpath/to/OSCUR-data/code/upload_to_hugging_face/upload_csv_hugging_face.sh "<HUGGING_FACE_TOKEN>" "<ORGANIZATION>" "<REPO_NAME>" "<CSV_FILE_PATH>"
    ```
 
    Example:
    ```bash
-   bash /Users/soniacq/Urban/csai-datagathering/upload_to_hugging_face/upload_csv_hugging_face.sh "<hf_your_actual_token_here>" "oscur" "test5-pluto" "/Users/soniacq/Downloads/pluto.csv"
+   bash /Users/soniacq/Urban/OSCUR-data/code/upload_to_hugging_face/upload_csv_hugging_face.sh "<hf_your_actual_token_here>" "oscur" "test5-pluto" "/Users/soniacq/Downloads/pluto.csv"
    ```
 
 This will:
