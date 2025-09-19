@@ -7,7 +7,8 @@ from code.downloaders.nyc_base_downloader import NYCDataDownloader
 
 
 class NYC2000CensusTractsDownloader(NYCDataDownloader):
-    BASE_URL = "https://data.cityofnewyork.us/resource/7igh-afai.csv"
+    BASE_URL = "https://data.cityofnewyork.us/resource/7igh-afai.csv?$limit=3000"
+    # BASE_URL = "https://data.cityofnewyork.us/api/views/7igh-afai/rows.csv?accessType=DOWNLOAD" # Use this if the above fails  
     DATASET_NAME = "NYC 2000 Census Tract Boundaries (nyct2000)"
 
 
