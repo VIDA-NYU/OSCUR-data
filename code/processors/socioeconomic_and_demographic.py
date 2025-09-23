@@ -146,203 +146,12 @@ def _pivot_wide(long_df: pd.DataFrame, prefix: str) -> pd.DataFrame:
     wide.columns.name = None
     return wide
 
-def _load_nta_geo_old(nta_geo_csv: str) -> pd.DataFrame:
-    """
-    Read NTA geometry CSV and return polygons keyed by code.
-    Must contain:
-      - 'the_geom' (WKT MULTIPOLYGON)
-      - 'nta2020' or 'nta2010' or 'ntacode'
-    """
-    gdf = pd.read_csv(nta_geo_csv)
-
-    # --- pick code column ---
-    code_cols = ["nta2020", "nta2010", "ntacode", "NTA2020", "NTA2010"]
-    code_col = next((c for c in code_cols if c in gdf.columns), None)
-    if not code_col:
-        raise ValueError(
-            "NTA geo CSV must contain one of these code columns: " + ", ".join(code_cols)
-        )
-
-    # --- geometry column ---
-    geom_col = "the_geom"
-    if geom_col not in gdf.columns:
-        raise ValueError("NTA geo CSV must contain 'the_geom' column (WKT polygons).")
-
-    out = gdf[[code_col, geom_col]].copy()
-    out = out.rename(columns={code_col: "NTA_code"})
-    return out.drop_duplicates("NTA_code")
-
-def _load_nta_geo_(nta_geo_csv: str) -> pd.DataFrame:
-    """
-    Read NTA geometry CSV and return polygons keyed by code.
-    Returns:
-      - NTA_code
-      - the_geom (first polygon for that code)
-      - multi_the_geom (list of all polygons for that code)
-    Must contain:
-      - 'the_geom' (WKT MULTIPOLYGON)
-      - 'nta2020' or 'nta2010' or 'ntacode'
-    """
-    gdf = pd.read_csv(nta_geo_csv)
-
-    # --- pick code column ---
-    code_cols = ["nta2020", "nta2010", "ntacode", "NTA2020", "NTA2010"]
-    code_col = next((c for c in code_cols if c in gdf.columns), None)
-    if not code_col:
-        raise ValueError(
-            "NTA geo CSV must contain one of these code columns: " + ", ".join(code_cols)
-        )
-
-    # --- geometry column ---
-    geom_col = "the_geom"
-    if geom_col not in gdf.columns:
-        raise ValueError("NTA geo CSV must contain 'the_geom' column (WKT polygons).")
-
-    # keep only relevant columns
-    out = gdf[[code_col, geom_col]].copy()
-    out = out.rename(columns={code_col: "NTA_code"})
-
-    # aggregate all polygons per NTA_code
-    multi_geom = out.groupby("NTA_code")[geom_col].agg(list).reset_index()
-    # also keep first polygon as 'the_geom' for compatibility
-    first_geom = out.groupby("NTA_code")[geom_col].first().reset_index()
-    
-    # merge first_geom and multi_geom
-    out_final = first_geom.merge(multi_geom, on="NTA_code", how="left")
-    out_final = out_final.rename(columns={geom_col + "_x": "the_geom", geom_col + "_y": "multi_the_geom"})
-    
-    return out_final
-
-def _load_nta_geo_work(nta_geo_csv: str) -> pd.DataFrame:
-    """
-    Read NTA geometry CSV and return polygons keyed by code.
-    Returns:
-      - NTA_code
-      - the_geom (first polygon for that code)
-      - multi_the_geom (list of all polygons for that code)
-      - merge_the_geom (single MultiPolygon containing all polygons in multi_the_geom)
-    Must contain:
-      - 'the_geom' (WKT MULTIPOLYGON)
-      - 'nta2020' or 'nta2010' or 'ntacode'
-    """
-    gdf = pd.read_csv(nta_geo_csv)
-
-    # --- pick code column ---
-    code_cols = ["nta2020", "nta2010", "ntacode", "NTA2020", "NTA2010"]
-    code_col = next((c for c in code_cols if c in gdf.columns), None)
-    if not code_col:
-        raise ValueError(
-            "NTA geo CSV must contain one of these code columns: " + ", ".join(code_cols)
-        )
-
-    # --- geometry column ---
-    geom_col = "the_geom"
-    if geom_col not in gdf.columns:
-        raise ValueError("NTA geo CSV must contain 'the_geom' column (WKT polygons).")
-
-    # keep only relevant columns
-    out = gdf[[code_col, geom_col]].copy()
-    out = out.rename(columns={code_col: "NTA_code"})
-
-    # aggregate all polygons per NTA_code
-    multi_geom = out.groupby("NTA_code")[geom_col].agg(list).reset_index()
-    # also keep first polygon as 'the_geom' for compatibility
-    first_geom = out.groupby("NTA_code")[geom_col].first().reset_index()
-    
-    # merge first_geom and multi_geom
-    out_final = first_geom.merge(multi_geom, on="NTA_code", how="left")
-    out_final = out_final.rename(columns={geom_col + "_x": "the_geom", geom_col + "_y": "multi_the_geom"})
-
-    # --- create merge_the_geom column ---
-    def combine_to_multipolygon(wkt_list):
-        if not isinstance(wkt_list, list) or len(wkt_list) == 0:
-            return None
-        polygons = []
-        for g in wkt_list:
-            geom = wkt.loads(g)
-            if geom.geom_type == "Polygon":
-                polygons.append(geom)
-            elif geom.geom_type == "MultiPolygon":
-                polygons.extend(geom.geoms)
-        return MultiPolygon(polygons) if polygons else None
-
-    out_final["merge_the_geom"] = out_final["multi_the_geom"].apply(combine_to_multipolygon)
-
-    return out_final
-
-from shapely import wkt
-from shapely.geometry import MultiPolygon
-import pandas as pd
-
-def _load_nta_geo_mm(nta_geo_csv: str) -> pd.DataFrame:
-    """
-    Read NTA geometry CSV and return polygons keyed by code.
-    Returns:
-      - NTA_code
-      - the_geom (first polygon for that code, WKT string)
-      - merge_the_geom (single MultiPolygon containing all polygons for that code, WKT string)
-    """
-    gdf = pd.read_csv(nta_geo_csv)
-
-    # --- pick code column ---
-    code_cols = ["nta2020", "nta2010", "ntacode", "NTA2020", "NTA2010"]
-    code_col = next((c for c in code_cols if c in gdf.columns), None)
-    if not code_col:
-        raise ValueError(
-            "NTA geo CSV must contain one of these code columns: " + ", ".join(code_cols)
-        )
-
-    # --- geometry column ---
-    geom_col = "the_geom"
-    if geom_col not in gdf.columns:
-        raise ValueError("NTA geo CSV must contain 'the_geom' column (WKT polygons).")
-
-    # keep only relevant columns
-    out = gdf[[code_col, geom_col]].copy()
-    out = out.rename(columns={code_col: "NTA_code"})
-
-    # aggregate all polygons per NTA_code
-    multi_geom = out.groupby("NTA_code")[geom_col].agg(list).reset_index()
-    # also keep first polygon as 'the_geom' for compatibility
-    first_geom = out.groupby("NTA_code")[geom_col].first().reset_index()
-    
-    # merge first_geom and multi_geom
-    out_final = first_geom.merge(multi_geom, on="NTA_code", how="left")
-    out_final = out_final.rename(columns={geom_col + "_x": "the_geom", geom_col + "_y": "multi_the_geom"})
-
-    # --- create merge_the_geom column as WKT (combine all parts) ---
-    def combine_to_multipolygon(wkt_list):
-        if not isinstance(wkt_list, list) or len(wkt_list) == 0:
-            return None
-        polygons = []
-        for g in wkt_list:
-            if not isinstance(g, str) or not g.strip():
-                continue
-            geom = wkt.loads(g)
-            if geom.geom_type == "Polygon":
-                polygons.append(geom)
-            elif geom.geom_type == "MultiPolygon":
-                polygons.extend(geom.geoms)
-        return MultiPolygon(polygons).wkt if polygons else None
-
-    out_final["merge_the_geom"] = out_final["multi_the_geom"].apply(combine_to_multipolygon)
-
-    # Drop the intermediate list-column and return only the requested columns
-    out_final = out_final[["NTA_code", "the_geom", "merge_the_geom"]]
-
-    return out_final
-
-from shapely import wkt
-from shapely.geometry import MultiPolygon
-import pandas as pd
-
 def _load_nta_geo(nta_geo_csv: str) -> pd.DataFrame:
     """
     Read NTA geometry CSV and return polygons keyed by code.
     Returns:
       - NTA_code
-      - the_geom (first polygon for that code, WKT)
-      - merge_the_geom (single MultiPolygon containing all polygons for that code, WKT)
+      - the_geom (single MultiPolygon containing all polygons for that code, WKT)
     """
     gdf = pd.read_csv(nta_geo_csv)
 
@@ -373,18 +182,14 @@ def _load_nta_geo(nta_geo_csv: str) -> pd.DataFrame:
                 polygons.extend(geom.geoms)
         return MultiPolygon(polygons).wkt if polygons else None
 
-    # --- aggregate ---
+    # --- aggregate to single multipolygon per code ---
     out_final = (
-        out.groupby("NTA_code")
-        .agg(
-            the_geom=(geom_col, "first"),  # first polygon
-            merge_the_geom=(geom_col, combine_to_multipolygon),  # merged
-        )
-        .reset_index()
+        out.groupby("NTA_code")[geom_col]
+        .apply(combine_to_multipolygon)
+        .reset_index(name="the_geom")
     )
 
     return out_final
-
 
 def _order_columns(df: pd.DataFrame) -> pd.DataFrame:
     ident = [c for c in ["NTA_full","NTA_code","NTA_name","the_geom"] if c in df.columns]
