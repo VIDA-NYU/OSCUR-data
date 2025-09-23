@@ -27,6 +27,7 @@ import re
 import pandas as pd
 import geopandas as gpd
 from shapely import wkt
+from shapely.geometry import MultiPolygon, Polygon
 
 def _slug(s: str) -> str:
     s = str(s)
@@ -148,9 +149,9 @@ def _pivot_wide(long_df: pd.DataFrame, prefix: str) -> pd.DataFrame:
 def _load_nta_geo(nta_geo_csv: str) -> pd.DataFrame:
     """
     Read NTA geometry CSV and return polygons keyed by code.
-    Must contain:
-      - 'the_geom' (WKT MULTIPOLYGON)
-      - 'nta2020' or 'nta2010' or 'ntacode'
+    Returns:
+      - NTA_code
+      - the_geom (single MultiPolygon containing all polygons for that code, WKT)
     """
     gdf = pd.read_csv(nta_geo_csv)
 
@@ -167,9 +168,28 @@ def _load_nta_geo(nta_geo_csv: str) -> pd.DataFrame:
     if geom_col not in gdf.columns:
         raise ValueError("NTA geo CSV must contain 'the_geom' column (WKT polygons).")
 
-    out = gdf[[code_col, geom_col]].copy()
-    out = out.rename(columns={code_col: "NTA_code"})
-    return out.drop_duplicates("NTA_code")
+    # keep only relevant columns
+    out = gdf[[code_col, geom_col]].rename(columns={code_col: "NTA_code"})
+
+    # --- combine into multipolygon ---
+    def combine_to_multipolygon(wkt_list):
+        polygons = []
+        for g in wkt_list:
+            geom = wkt.loads(g)
+            if geom.geom_type == "Polygon":
+                polygons.append(geom)
+            elif geom.geom_type == "MultiPolygon":
+                polygons.extend(geom.geoms)
+        return MultiPolygon(polygons).wkt if polygons else None
+
+    # --- aggregate to single multipolygon per code ---
+    out_final = (
+        out.groupby("NTA_code")[geom_col]
+        .apply(combine_to_multipolygon)
+        .reset_index(name="the_geom")
+    )
+
+    return out_final
 
 def _order_columns(df: pd.DataFrame) -> pd.DataFrame:
     ident = [c for c in ["NTA_full","NTA_code","NTA_name","the_geom"] if c in df.columns]
@@ -208,9 +228,14 @@ def main():
     socio_w = _pivot_wide(socio_long, "socio")
 
     print("• Merging the four wide tables by NTA…")
-    merged = demo_w.merge(econ_w,  on=["NTA_full","NTA_code","NTA_name","NTA_name_key"], how="outer")
-    merged = merged.merge(house_w, on=["NTA_full","NTA_code","NTA_name","NTA_name_key"], how="outer")
-    merged = merged.merge(socio_w, on=["NTA_full","NTA_code","NTA_name","NTA_name_key"], how="outer")
+    # merged = demo_w.merge(econ_w,  on=["NTA_full","NTA_code","NTA_name","NTA_name_key"], how="outer")
+    # merged = merged.merge(house_w, on=["NTA_full","NTA_code","NTA_name","NTA_name_key"], how="outer")
+    # merged = merged.merge(socio_w, on=["NTA_full","NTA_code","NTA_name","NTA_name_key"], how="outer")
+
+    # keep the name columns from demo_w only
+    merged = demo_w.merge(econ_w.drop(columns=["NTA_full","NTA_name","NTA_name_key"]), on="NTA_code", how="outer")
+    merged = merged.merge(house_w.drop(columns=["NTA_full","NTA_name","NTA_name_key"]), on="NTA_code", how="outer")
+    merged = merged.merge(socio_w.drop(columns=["NTA_full","NTA_name","NTA_name_key"]), on="NTA_code", how="outer")
 
     print("• Attaching polygons from NTA geometry (code-based join)…")
     geo = _load_nta_geo(args.nta_geo)
