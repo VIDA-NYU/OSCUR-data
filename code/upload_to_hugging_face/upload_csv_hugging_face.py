@@ -153,7 +153,7 @@ except Exception as e:
 # Upload the profiling JSON data to the repository
 try:
     import json
-    profile = datamart_profiler.process_dataset(csv_filename)
+    profile = datamart_profiler.process_dataset(csv_filename, include_sample=True, plots=True)
     profile_json = json.dumps(profile, indent=4)
     profile_filename = "profiling_metadata.json"
     api.upload_file(
