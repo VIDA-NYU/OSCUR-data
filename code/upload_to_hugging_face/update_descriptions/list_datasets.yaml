@@ -1,0 +1,47 @@
+oscur/automated-traffic-volume-counts-sample: automated-traffic-volume-counts-sample.yaml
+oscur/automated-traffic-volume-counts: automated-traffic-volume-counts.yaml
+oscur/NYC_vehicle_collisions_issue: NYC_vehicle_collisions_issue.yaml
+# oscur/NYC_vehicle_collisions: NYC_vehicle_collisions.yaml
+oscur/pluto: pluto.yaml
+# oscur/NYC_311: NYC_311.yaml
+oscur/taxisvis1M: taxisvis1M.yaml
+oscur/NYC_raised_crosswalk: NYC_raised_crosswalk.yaml
+# oscur/NYC_speed_humps: speed_humps.yaml
+oscur/NYC_on_street_curb_management: NYC_on_street_curb_management.yaml
+oscur/NYC_signals_markings_signs: NYC_signals_markings_signs.yaml
+oscur/NYC_transit_stop_accessibility: NYC_transit_stop_accessibility.yaml
+oscur/NYC_sidewalk_surface_condition: NYC_sidewalk_surface_condition.yaml
+# oscur/NYC_facilities: NYC_vehicle_collisions.yaml
+oscur/NYC_issued_licenses: NYC_issued_licenses.yaml
+oscur/NYC_truck_routes: NYC_truck_routes.yaml
+oscur/NYC_open_space: NYC_open_space.yaml
+oscur/NYC_parks: NYC_parks.yaml
+oscur/NYC_heat_vulnerability: NYC_heat_vulnerability.yaml
+oscur/NYC_fixed_obstructions_on_sidewalks: NYC_fixed_obstructions_on_sidewalks.yaml
+oscur/NYC_motor_vehicle_crashes: NYC_motor_vehicle_crashes.yaml
+oscur/NYC_motor_vehicle_persons: NYC_motor_vehicle_persons.yaml
+oscur/NYC_tree_cover_landscaping: NYC_tree_cover_landscaping.yaml
+oscur/NYC_subway_stations: NYC_subway_stations.yaml
+oscur/NYC_intercity_bus_stops: NYC_intercity_bus_stops.yaml
+oscur/NYC_rail_routes_and_crossings: NYC_rail_routes_and_crossings.yaml
+oscur/NYC_urban_design_and_frontage: NYC_urban_design_and_frontage.yaml
+oscur/NYC_public_open_spaces: NYC_public_open_spaces.yaml
+# oscur/NYC_bicycle_facilities: bicycle_facilities.yaml
+oscur/NYC_ferry_ridership: NYC_ferry_ridership.yaml
+oscur/NYC_1M_mta_bus_hourly: NYC_1M_mta_bus_hourly.yaml
+oscur/NYC_1M_mta_subway_hourly: NYC_1M_mta_subway_hourly.yaml
+oscur/NYC_NYCHA_residential_sites: NYC_NYCHA_residential_sites.yaml
+oscur/NYC_sidewalks_with_land_use: NYC_sidewalks_with_land_use.yaml
+oscur/NYC_historic_land_use: NYC_historic_land_use.yaml
+# oscur/NYC_curb_infrastructure: curb_infrastructure.yaml
+oscur/NYC_speed_distributions: NYC_speed_distributions.yaml
+oscur/NYC_Bi_Annual_Pedestrian_Counts: NYC_Bi_Annual_Pedestrian_Counts.yaml
+# oscur/NYC_bicycle_counts: bicycle_pedestrian_trip_counts.yaml
+oscur/NYC_pedestrian_intervals: NYC_pedestrian_intervals.yaml
+oscur/NYC_community_health_survey: NYC_community_health_survey.yaml
+oscur/NYC_roadway_features: NYC_roadway_features.yaml
+oscur/NYC_socioeconomic_and_demographic: NYC_socioeconomic_and_demographic.yaml
+oscur/NYC_final_disadvantaged_communities: NYC_final_disadvantaged_communities.yaml
+oscur/NYC_housing_density: NYC_housing_density.yaml
+oscur/NYC_vehicle_volume_and_types: NYC_vehicle_volume_and_types.yaml
+oscur/NYC_topography: NYC_topography.yaml
